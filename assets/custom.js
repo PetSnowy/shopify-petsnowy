@@ -274,12 +274,15 @@ $(document).ready(function () {
 			return uri + separator + key + "=" + value;
 		}
 	}
-	// First-tab-Qty
-	$(document).on("click", ".itg_drop_var > .itg_drop_var_align_div", function () {
+	$(".itg_drop_var > .itg_drop_var_align_div").click(function () {
+		console.log($(this).index());
 		const newUrl = updateQueryStringParameter(window.location.href, 'id', `${shoppingUrl.get($(this).index())}`);
 		window.history.replaceState({
 			path: newUrl
 		}, '', newUrl);
+	})
+	// First-tab-Qty
+	$(document).on("click", ".itg_drop_var label", function () {
 
 		var option_image = $(this).find('img').attr('src');
 		$(this).closest('.product_details_show').find(".prod_cus_images img").attr('src', option_image);
