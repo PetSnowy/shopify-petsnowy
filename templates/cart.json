@@ -1,0 +1,61 @@
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+      }
+    },
+    "da910963-b046-4caf-8b91-06c92bbeb782": {
+      "type": "choose-features",
+      "settings": {
+        "logo_index": "shopify:\/\/shop_images\/logo_1_b5fcdb8a-18b3-4cd0-9532-38d7b3d15274.png",
+        "logo_width": 150,
+        "tab_1": "1. Products",
+        "configure_head": "Select your Product",
+        "collection_list": "snow",
+        "text_tb_1": "Choose you PetSnowy product.",
+        "tab_2": "2. Add-ons",
+        "text_tb_2": "Get 20% discount on every add-on products.",
+        "tab_3": "3.Warranty",
+        "text_tb_3": "Extended 2-year warranty.",
+        "collection_insurance": "insurance",
+        "tab_4": "3. Summary",
+        "text_tb_4": "",
+        "icon_text_1": "US Free Delivery Over $49",
+        "icon_text_2": "30-Day Home Trial",
+        "icon_text_3": "12-Month Warranty",
+        "summary_addonstitle": "Add-ons",
+        "summary_warrantytitle": "Warranty ",
+        "delivery_terms": ""
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "cart-footer",
+    "da910963-b046-4caf-8b91-06c92bbeb782"
+  ]
+}

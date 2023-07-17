@@ -1,0 +1,728 @@
+<style>
+:root {
+  --gutter: 20px;
+  --baseFontSize: 16px;
+  --baseLineHeight: 1.4;
+  --intercomWidgetWidth: 60px;
+  --headerHeight: 66px;
+}
+@media (min-width: 1024px) {
+  :root {
+    --headerHeight: 73px;
+  }
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.scroll-down:not(.scroll-stopped) .page-container,
+.show-menu .page-container {
+  transform: none;
+}
+
+.section.section--generic:first-of-type {
+  padding-top: calc(var(--gutter) * 3);
+}
+
+
+picture.media--item,
+picture.media--item img {
+  display: block;
+  margin: auto;
+}
+ 
+@media (min-width: 1024px) {
+  .page-main {
+    overflow-y: scroll;
+    -ms-scroll-snap-type: y proximity;
+    scroll-snap-type: y proximity;
+    height: 100vh;
+  }
+}
+
+.section--app {
+  background: #fff;
+  text-align: center;
+  z-index: 2;
+  padding-bottom: 0;
+}
+@media (min-width: 1024px) {
+  .section--app {
+    overflow: hidden;
+  }
+}
+.section--app .section-content {
+  margin-bottom: calc(var(--gutter) * -6);
+  padding-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .section--app .section-content {
+    padding-top: calc(var(--headerHeight) + var(--gutter) * 1);
+  }
+}
+.section--app .h3 {
+  position: relative;
+  width: 100%;
+  margin-bottom: var(--gutter);
+}
+.section--app .h3,
+.section--app p {
+  opacity: 1;
+  transform: translateY(15px);
+}
+.section--app p {
+  max-width: 440px;
+  margin: 0 auto;
+  font-size: calc(var(--baseFontSize) * 1.125);
+}
+.section--app p:not(:last-of-type) {
+  margin-bottom: calc(var(--gutter) * 2);
+}
+.section--app .media {
+  margin-top: calc(var(--gutter) * 6);
+  pointer-events: none;
+  height: auto;
+  width: 260vw;
+  transform: translate(calc(-80vw + var(--gutter) * -1));
+  display: -ms-grid;
+  display: grid;
+  grid-gap: calc(var(--gutter) * 1);
+  -ms-grid-columns: 1fr 1fr 1fr 1.8fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1.8fr 1fr 1fr 1fr;
+  position: relative;
+}
+@media (min-width: 1024px) {
+ .section--app .media {
+    width: 100%;
+     transform: translate(calc(0vw + var(--gutter) * 0));
+  }
+}
+.section--app .media > * {
+  position: relative;
+  will-change: opacity, transform;
+  transform: translateZ(0);
+  transition: 0.6s cubic-bezier(0.28, 0.44, 0.49, 1);
+}
+.section--app .media > :first-child {
+  padding-top: 13.33333333vw;
+}
+.section--app .media > :nth-child(2) {
+  padding-top: 5.694444444vw;
+}
+.section--app .media > :nth-child(3) {
+  padding-top: 7.986111111vw;
+}
+.section--app .media > :nth-child(5) {
+  padding-top: 12.08333333vw;
+}
+.section--app .media > :nth-child(6) {
+  padding-top: 6.180555556vw;
+}
+.section--app .media > :nth-child(7) {
+  padding-top: 10.06944444vw;
+}
+.section--app .media--item {
+  position: relative;
+  margin: 0 0 var(--gutter);
+}
+.section--app .media--item img {
+  width: 100%;
+  height: auto;
+  transition: 0.6s ease-in-out;
+}
+@media (min-width: 1024px) {
+  .section--app .media--item {
+    margin: 0 0 calc(var(--gutter) * 2);
+  }
+}
+.section--app.in-view .h3,
+.section--app.in-view p {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.65s cubic-bezier(0.42, 0, 0.002, 1),
+    transform 0.65s cubic-bezier(0.42, 0, 0.002, 1);
+}
+.section--app.in-view p {
+  transition-delay: 0.12s;
+}
+
+.section--app .media> * {
+    position: relative !important;
+}
+.popular_component h3 {
+    margin-bottom: -10px;
+    margin-top: 5px;
+}
+.app_main_div span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: inherit;
+    text-transform: uppercase;
+    color: #595F69;
+}
+.app_main_div h2 {
+    font-size: 56px;
+    line-height: 1.2;
+    color: #231F20;
+    margin: 10px 0 0;
+}
+a.btn.btn--plain.btn--rounded {
+    padding: 15px 30px;
+    background: #231F20;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: .3s all linear;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #fff;
+    border: 1px solid transparent;
+    width: auto;
+    line-height: 18px;
+}
+a.btn.btn--plain.btn--rounded:hover {
+    background: #fff;
+    color: #231f20;
+    border-color: #231f20;
+}
+  .app_main_div .media {
+    background: #fff;
+}
+.app_main_div p {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.popular_component {
+  text-align: center;
+  padding: 8vh 15px;
+}
+@media screen and (max-width: 989px){
+  .app_main_div {
+    padding-top: 40px;
+}
+.section--app .section-content {
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.app_main_div h2 {
+    font-size: 30px;
+}
+a.btn.btn--plain.btn--rounded {
+    padding: 15px 20px;
+}
+.section--app .media {
+    margin-top: calc(var(--gutter) * 3);
+}  
+.popular_component {
+  padding: 15px 15px;
+} 
+}
+</style>
+    
+<script type="text/javascript" src="https://cdn.shopify.com/s/files/1/1772/1703/t/23/assets/vendors@layout.checkout@layout.invest@layout.teaser@layout.theme.js?v=109986188115280564151671628767" defer="defer"></script>
+<script type="text/javascript" src="https://cdn.shopify.com/s/files/1/1772/1703/t/23/assets/template.index.js?v=138369780742749433121671628769" defer="defer"></script>
+
+
+<section class="app_main_div section section--app" id="app">
+	<div class="section-content">
+		{% if section.settings.span != blank %}
+        <span data-aos="fade-up" data-aos-duration="800">{{ section.settings.span }}</span>
+      {% endif %}
+      {% if section.settings.heading != blank %}
+        <h2 data-aos="fade-up" data-aos-duration="700">{{ section.settings.heading }}</h2>
+      {% endif %}     
+      
+        {% if section.settings.text != blank %}
+          {{ section.settings.text }}
+        {% endif %}
+        
+      {%- if section.settings.button_label != blank -%}
+        <a class="btn btn--plain btn--rounded vbutton button--primary" href="{{ section.settings.button_link }}" data-aos="fade-up" data-aos-duration="800">
+          {{- section.settings.button_label }}
+        </a>
+      {%- endif -%}        
+
+		<div class="media">
+			<div>
+              
+              <picture class="media--item">
+               <div class="popular_component" style="background:{{ section.settings.clr_1 }};">
+              {% if section.settings.catn != blank %}
+              <span style="color:{{ section.settings.catn_clr_1 }};">
+              {{ section.settings.catn }}
+              </span>
+              {% endif %}
+              {% if section.settings.hdng_1 != blank %}
+              <h3 style="color:{{ section.settings.hdng_clr_1 }};">{{ section.settings.hdng_1 }}</h3>
+              {% endif %}
+              <div style="color:{{ section.settings.txt_clr_1 }};">
+              {% if section.settings.txt_1 != blank %}
+              {{ section.settings.txt_1 }}
+              {% endif %}
+              </div>
+              </div>
+			</picture>
+              
+              <picture class="media--item">
+                {% if section.settings.L_img_1 != blank %}
+                <img src="{{ section.settings.L_img_1 | img_url: 'master' }}">
+                {% endif %}
+				</picture>
+			</div>
+          
+        <div data-factor="0.4">
+        <picture class="media--item">
+        {% if section.settings.img_lc1 != blank %}
+        <img src="{{ section.settings.img_lc1 | img_url: 'master' }}">
+        {% endif %}
+        </picture>
+          
+        <picture class="media--item">
+         {% if section.settings.img_lc2 != blank %}
+            <img src="{{ section.settings.img_lc2 | img_url: 'master' }}">
+         {% endif %}
+        </picture>
+      
+    <picture class="media--item">
+      <div class="popular_component" style="background:{{ section.settings.clr_lc }};">
+      {% if section.settings.catn_lc != blank %}
+      <span style="color:{{ section.settings.catn_clr_2 }};">
+      {{ section.settings.catn_lc }}
+      </span>
+      {% endif %}
+      {% if section.settings.hdng_lc != blank %}
+      <h3 style="color:{{ section.settings.hdng_clr_2 }};">{{ section.settings.hdng_lc }}</h3>
+      {% endif %}
+      <div style="color:{{ section.settings.txt_clr_2}};">
+      {% if section.settings.txt_lc != blank %}
+      {{ section.settings.txt_lc }}
+      {% endif %}
+      </div>
+      </div>
+    </picture>      
+	</div>
+  
+        <div data-factor="0.1">
+          
+   <picture class="media--item">
+        <div class="popular_component" style="background:{{ section.settings.clr_ltd }};">
+        {% if section.settings.catn_ltd != blank %}
+        <span style="color:{{ section.settings.catn_clr_3 }};">
+        {{ section.settings.catn_ltd }}
+        </span>
+        {% endif %}
+        {% if section.settings.hdng_ltd != blank %}
+        <h3 style="color:{{ section.settings.hdng_clr_3 }};">{{ section.settings.hdng_ltd }}</h3>
+        {% endif %}
+        <div style="color:{{ section.settings.txt_clr_3 }};">
+        {% if section.settings.txt_ltd != blank %}
+        {{ section.settings.txt_ltd }}
+        {% endif %}
+        </div>
+        </div>
+   </picture>
+          
+    <picture class="media--item">
+    {% if section.settings.img_ltd != blank %}
+    <img src="{{ section.settings.img_ltd | img_url: 'master' }}">
+    {% endif %}
+    </picture>
+</div>
+
+    <div class="motion">
+      <picture class="media--item">
+        {% if section.settings.img_cntr != blank %}
+          <img src="{{ section.settings.img_cntr | img_url: 'master' }}">
+        {% endif %}
+      </picture>
+    </div>
+
+  <div data-factor="0.2">
+  <picture class="media--item">
+    <div class="popular_component" style="background:{{ section.settings.clr_rf}};">
+    {% if section.settings.catn_rf != blank %}
+      <span style="color:{{ section.settings.catn_clr_4 }};">
+        {{ section.settings.catn_rf }}
+      </span>
+    {% endif %}
+    {% if section.settings.hdng_rf != blank %}
+      <h3 style="color:{{ section.settings.hdng_clr_4 }};">{{ section.settings.hdng_rf }}</h3>
+    {% endif %}
+    <div style="color:{{ section.settings.txt_clr_4 }};">
+      {% if section.settings.txt_rf != blank %}
+        {{ section.settings.txt_rf }}
+      {% endif %}
+    </div>
+    </div>             
+  </picture>
+    
+  <picture class="media--item">
+    {% if section.settings.img_rf != blank %}
+      <img src="{{ section.settings.img_rf | img_url: 'master' }}">
+    {% endif %}
+  </picture>
+</div>
+  
+<div data-factor="0.3">              
+    <picture class="media--item">
+     {% if section.settings.img_rgc1 != blank %}
+      <img src="{{ section.settings.img_rgc1 | img_url: 'master' }}">
+    {% endif %}
+    </picture>
+              
+    <picture class="media--item">
+    {% if section.settings.img_rgc2 != blank %}
+    <img src="{{ section.settings.img_rgc2 | img_url: 'master' }}">
+    {% endif %}
+    </picture>
+  
+  <picture class="media--item">
+    <div class="popular_component" style="background:{{ section.settings.clr_rgc }};">
+    {% if section.settings.catn_rgc != blank %}
+    <span style="color:{{ section.settings.catn_clr_5 }};">
+    {{ section.settings.catn_rgc }}
+    </span>
+    {% endif %}
+    {% if section.settings.hdng_rgc != blank %}
+    <h3 style="color:{{ section.settings.hdng_clr_5 }};">{{ section.settings.hdng_rgc }}</h3>
+    {% endif %}
+    <div style="color:{{ section.settings.txt_clr_5 }};">
+    {% if section.settings.txt_rgc != blank %}
+    {{ section.settings.txt_rgc }}
+    {% endif %}
+    </div>
+    </div>
+  </picture>
+	</div>
+  
+ <div>
+<picture class="media--item">
+  <div class="popular_component" style="background:{{ section.settings.clr_rhtd }};">
+    {% if section.settings.catn_rhtd != blank %}
+      <span style="color:{{ section.settings.catn_clr_6 }};">
+        {{ section.settings.catn_rhtd }}
+      </span>
+    {% endif %}
+    {% if section.settings.hdng_rhtd != blank %}
+      <h3 style="color:{{ section.settings.hdng_clr_6 }};">{{ section.settings.hdng_rhtd }}</h3>
+    {% endif %}
+    <div style="color:{{ section.settings.txt_clr_6 }};">
+      {% if section.settings.txt_rhtd != blank %}
+        {{ section.settings.txt_rhtd }}
+      {% endif %}
+    </div>
+  </div>
+</picture>
+   
+<picture class="media--item">
+{% if section.settings.L_img_rhtd != blank %}
+  <img src="{{ section.settings.L_img_rhtd | img_url: 'master' }}">
+{% endif %}
+</picture>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% schema %}
+  {
+    "name": "App Section",
+    "settings": [
+        {
+      "type":"text",
+      "id":"span",
+      "label":"Sub Heading"
+    },
+    {
+      "type":"text",
+      "id":"heading",
+      "label":"Heading"
+    },
+    {
+      "type":"richtext",
+      "id":"text",
+      "label":"Text"
+    },
+    {
+      "type":"text",
+      "id":"button_label",
+      "label":"Button"
+    },
+    {
+      "type":"url",
+      "id":"button_link",
+      "label":"Url"
+    },
+     {
+          "type":"text",
+          "id":"catn",
+          "label":"First List Sub Heading"
+        },
+        {
+          "type":"color",
+          "id":"catn_clr_1",
+          "label":"Color"
+        },
+        {
+          "type":"text",
+          "id":"hdng_1",
+          "label":"First List Heading"
+        },
+        {
+          "type":"color",
+          "id":"hdng_clr_1",
+          "label":"Color"
+        },
+        {
+          "type":"richtext",
+          "id":"txt_1",
+          "label":"First List Text"
+        },
+        {
+          "type":"color",
+          "id":"txt_clr_1",
+          "label":"Color"
+        },
+        {
+          "type":"color",
+          "id":"clr_1",
+          "label":"Background"
+        },
+        {
+          "type":"image_picker",
+          "id":"L_img_1",
+          "label":"Image"
+        },
+        {
+          "type":"image_picker",
+          "id":"img_lc1",
+          "label":"Image"
+        },
+        {
+          "type":"image_picker",
+          "id":"img_lc2",
+          "label":"Image"
+        },
+        {
+          "type":"text",
+          "id":"catn_lc",
+          "label":"Sub Heading"
+        },
+        {
+          "type":"color",
+          "id":"catn_clr_2",
+          "label":"Color"
+        },
+        {
+          "type":"text",
+          "id":"hdng_lc",
+          "label":"Heading"
+        },
+        {
+          "type":"color",
+          "id":"hdng_clr_2",
+          "label":"Color"
+        },
+        {
+          "type":"richtext",
+          "id":"txt_lc",
+          "label":"Text"
+        },
+        {
+          "type":"color",
+          "id":"txt_clr_2",
+          "label":"Color"
+        },
+        {
+          "type":"color",
+          "id":"clr_lc",
+          "label":"Background"
+        },
+        {
+          "type":"text",
+          "id":"catn_ltd",
+          "label":"Sub Heading"
+        },
+        {
+          "type":"color",
+          "id":"catn_clr_3",
+          "label":"Color"
+        },
+        {
+          "type":"text",
+          "id":"hdng_ltd",
+          "label":"Heading"
+        },
+        {
+          "type":"color",
+          "id":"hdng_clr_3",
+          "label":"Color"
+        },
+        {
+          "type":"richtext",
+          "id":"txt_ltd",
+          "label":"Text"
+        },
+        {
+          "type":"color",
+          "id":"txt_clr_3",
+          "label":"Color"
+        },
+        {
+          "type":"color",
+          "id":"clr_ltd",
+          "label":"Background"
+        },
+        {
+          "type":"image_picker",
+          "id":"img_ltd",
+          "label":"Image"
+        },
+      {
+          "type":"image_picker",
+          "id":"img_cntr",
+          "label":"Image"
+        },
+        {
+          "type":"text",
+          "id":"catn_rf",
+          "label":"Sub Heading"
+        },
+        {
+          "type":"color",
+          "id":"catn_clr_4",
+          "label":"Color"
+        },
+        {
+          "type":"text",
+          "id":"hdng_rf",
+          "label":"Heading"
+        },
+        {
+          "type":"color",
+          "id":"hdng_clr_4",
+          "label":"Color"
+        },
+        {
+          "type":"richtext",
+          "id":"txt_rf",
+          "label":"Text"
+        },
+        {
+          "type":"color",
+          "id":"txt_clr_4",
+          "label":"Color"
+        },
+        {
+          "type":"color",
+          "id":"clr_rf",
+          "label":"Background"
+        },
+        {
+          "type":"image_picker",
+          "id":"img_rf",
+          "label":"Image"
+        },
+        {
+          "type":"image_picker",
+          "id":"img_rgc1",
+          "label":"Image"
+        },
+        {
+          "type":"image_picker",
+          "id":"img_rgc2",
+          "label":"Image"
+        },
+        {
+          "type":"text",
+          "id":"catn_rgc",
+          "label":"Sub Heading"
+        },
+        {
+          "type":"color",
+          "id":"catn_clr_5",
+          "label":"Color"
+        },
+        {
+          "type":"text",
+          "id":"hdng_rgc",
+          "label":"Heading"
+        },
+        {
+          "type":"color",
+          "id":"hdng_clr_5",
+          "label":"Color"
+        },
+        {
+          "type":"richtext",
+          "id":"txt_rgc",
+          "label":"Text"
+        },
+        {
+          "type":"color",
+          "id":"txt_clr_5",
+          "label":"Color"
+        },
+        {
+          "type":"color",
+          "id":"clr_rgc",
+          "label":"Background"
+        },
+       {
+          "type":"text",
+          "id":"catn_rhtd",
+          "label":"Sub Heading"
+        },
+        {
+          "type":"color",
+          "id":"catn_clr_6",
+          "label":"Color"
+        },
+        {
+          "type":"text",
+          "id":"hdng_rhtd",
+          "label":"Heading"
+        },
+        {
+          "type":"color",
+          "id":"hdng_clr_6",
+          "label":"Color"
+        },
+        {
+          "type":"richtext",
+          "id":"txt_rhtd",
+          "label":"Text"
+        },
+        {
+          "type":"color",
+          "id":"txt_clr_6",
+          "label":"Color"
+        },
+        {
+          "type":"color",
+          "id":"clr_rhtd",
+          "label":"Background"
+        },
+        {
+          "type":"image_picker",
+          "id":"L_img_rhtd",
+          "label":"Image"
+        }
+    ],
+"presets":[
+ {
+    "name": "App Section"
+ }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

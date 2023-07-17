@@ -1,0 +1,84 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="extra_div_section">
+  <div class="page-width section-{{ section.id }}-padding">   
+         {% for block in section.blocks %}
+          <div class="extra_list_text" data-aos="fade-up" data-aos-duration="800">
+            <h3 class="accordion_head">{{ block.settings.title }}  <span class="plusminus">+</span></h3>
+            
+            <div class="accordion_body">
+              {{ block.settings.description }}         
+            </div>
+          </div>
+        {% endfor %}   
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Text Blocks Section",
+    "settings": [
+     {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 20
+    }
+    ],
+"blocks":[
+  {
+    "name": "Text Blocks Section",
+    "type":"title",
+    "settings": [
+      {
+       "type":"text",
+        "id":"title",
+        "label":"Title"
+      },
+      {
+       "type":"richtext",
+        "id":"description",
+        "label":"Description"
+      }
+    ]
+  }
+],
+"presets":[
+  {
+  "name": "Text Blocks Section"
+  }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

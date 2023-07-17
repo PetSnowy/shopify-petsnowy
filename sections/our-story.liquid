@@ -1,0 +1,106 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div id="section-one" class="ourstory_section">
+  <div class="page-width section-{{ section.id }}-padding">
+    <div class="main_division_divs">
+     {% for block in section.blocks %}
+       <div class="ourstory_lists {% if block.settings.image_first %}change_layoutss{% endif %}">
+         <div class="ourstorydata">
+        {% if block.settings.title != blank %}<h2>{{ block.settings.title }}</h2>{% endif %}
+     {% if block.settings.subtitle != blank %}<h4>{{ block.settings.subtitle }}</h4>{% endif %}
+       {% if block.settings.richtext != blank %}{{ block.settings.richtext }}{% endif %}
+         </div>
+         <div class="ourstoryimage">
+       {% if block.settings.image != blank %}
+           <img src="{{ block.settings.image | img_url: '500X500' }}">
+       {% endif %}
+         </div>
+       </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Our Block Section",
+    "settings": [      
+      {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 20
+    }
+    ],
+"blocks":[
+   {
+    "name": "Our Block Section",
+    "type":"title",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "image_first",
+        "label":"Show Image First"
+      }, 
+       {
+        "type": "text",
+        "id": "title",
+        "label":"Heading"
+      }, 
+       {
+        "type": "text",
+        "id": "subtitle",
+        "label":"Sub Heading"
+      }, 
+      {
+        "type": "richtext",
+        "id": "richtext",
+        "label":"Content"
+      }, 
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label":"Image"
+      }
+    ]  
+   }
+],
+  "presets":[
+    {
+    "name": "Our Block Section"
+    }
+  ] 
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

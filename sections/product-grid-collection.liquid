@@ -1,0 +1,212 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="itg_product_collections half_showproduct">
+  <div class="page-width section-{{ section.id }}-padding">
+    <div class="product_colls__textblocks">
+      <div class="rich-text__text rte" data-aos="fade-up" data-aos-duration="700">
+        {{ section.settings.richtext }}
+      </div>
+    </div>
+    <div class="product_colls">
+      <div class="product_colls_two gutter_div">
+        <a href="{{ section.settings.urls }}">
+          {% if section.settings.images != blank %}
+            <img src="{{ section.settings.images | img_url: 'master' }}">
+            <div class="product_colls_text">
+              <h2 data-aos="fade-up" data-aos-duration="800">{{ section.settings.titles }}</h2>
+              <span data-aos="fade-up" data-aos-duration="900">{{ section.settings.texts }}</span>
+            </div>
+          {% endif %}
+        </a>
+        <div class="product_half_image">
+          {% if section.settings.half_img != blank %}
+            <img src="{{ section.settings.half_img | img_url: 'master' }}">
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="product_colls_one gutter_div">
+        <a href="{{ section.settings.url }}">
+          {% if section.settings.image != blank %}
+            <img src="{{ section.settings.image | img_url: 'master' }}">
+            <div class="product_colls_text">
+              <h2 data-aos="fade-up" data-aos-duration="800" data-aos="fade-up" data-aos-duration="700">
+                {{ section.settings.title }}
+              </h2>
+              <span data-aos="fade-up" data-aos-duration="900">{{ section.settings.text }}</span>
+            </div>
+          {% endif %}
+        </a>
+      </div>
+    </div>
+
+    <div class="product_colls bottom_product_colls">
+      <div class="product_colls_one gutter_div">
+        <a href="{{ section.settings.url2 }}">
+          {% if section.settings.image2 != blank %}
+            <img src="{{ section.settings.image2 | img_url: 'master' }}">
+            <div class="product_colls_text">
+              <h2 data-aos="fade-up" data-aos-duration="800">{{ section.settings.title2 }}</h2>
+              <span data-aos="fade-up" data-aos-duration="900">{{ section.settings.text2 }}</span>
+            </div>
+          {% endif %}
+        </a>
+      </div>
+      <div class="product_colls_two gutter_div">
+        {% if section.settings.images2 != blank %}
+          <img src="{{ section.settings.images2 | img_url: 'master' }}">
+          <div class="product_colls_textss">
+            <h2 data-aos="fade-up" data-aos-duration="800">{{ section.settings.titles2 }}</h2>
+           <div data-aos="fade-up" data-aos-duration="800"> {{ section.settings.texts2 }}</div>
+            <div class="product_colls_btns">
+              <a href="{{ section.settings.urls2 }}" data-aos="fade-up" data-aos-duration="900">
+                {{- section.settings.btns -}}
+                {%- render 'arrow-right-icon' -%}
+              </a>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product Grid Collections",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "richtext",
+      "label": "Product content"
+    },
+     {
+      "type": "image_picker",
+      "id": "images",
+      "label": "Select Collection Image"
+    },
+    {
+      "type": "text",
+      "id": "titles",
+      "label": "Collection Title"
+    },
+     {
+      "type": "text",
+      "id": "texts",
+      "label": "Collection Text"
+    },
+     {
+      "type": "url",
+      "id": "urls",
+      "label": "Collection Link"
+    },
+     {
+      "type": "image_picker",
+      "id": "half_img",
+      "label": "Select Half Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Select Collection Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Collection Title"
+    },
+     {
+      "type": "text",
+      "id": "text",
+      "label": "Collection Text"
+    },
+     {
+      "type": "url",
+      "id": "url",
+      "label": "Collection Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Select Bottom Collection Image"
+    },
+    {
+      "type": "text",
+      "id": "title2",
+      "label": "Bottom Collection Title"
+    },
+     {
+      "type": "text",
+      "id": "text2",
+      "label": "Bottom Collection Text"
+    },
+     {
+      "type": "url",
+      "id": "url2",
+      "label": "Bottom Collection Link"
+    },
+     {
+      "type": "image_picker",
+      "id": "images2",
+      "label": "Select Bottom Collection Image"
+    },
+    {
+      "type": "text",
+      "id": "titles2",
+      "label": "Bottom Collection Title"
+    },
+     {
+      "type": "richtext",
+      "id": "texts2",
+      "label": "Bottom Collection Text"
+    },
+     {
+      "type": "url",
+      "id": "urls2",
+      "label": "Bottom Collection Link"
+    },
+    {
+      "type": "text",
+      "id": "btns",
+      "label": "Button Title"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Grid Collections"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,96 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div id="section-two" class="innovative_section">
+<div class="page-width section-{{ section.id }}-padding">
+   <div class="innovative_texts">
+     {% if section.settings.imagerow != blank %}
+     <div class="inno_img">
+       <img src="{{ section.settings.imagerow | img_url: 'master' }}">
+    </div>
+      {% else %}
+       <div class="inno_img">
+        <iframe src="https://www.youtube.com/embed/{{ section.settings.videourl.id }}?enablejsapi=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.videourl | escape }}" width="100%" height="453px"></iframe>
+       </div>
+         {% endif %}
+    <div class="innotext_div">
+      <h2>{{ section.settings.heading }}</h2>
+      {{ section.settings.richtext }}
+    </div>
+   </div>
+ </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Innovative Section",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"imagerow",
+        "label":"Image"
+      },
+      {
+        "type": "video_url",
+        "id": "videourl",
+        "label": "Video",
+        "accept": [
+          "youtube",
+          "vimeo"
+        ]
+      },
+      {
+        "type":"text",
+        "id":"heading",
+        "label":"Title"
+      },
+      {
+        "type":"richtext",
+        "id":"richtext",
+        "label":"Content"
+      },
+       {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 20
+    }
+    ],
+"presets":[
+  {
+   "name": "Innovative Section"
+  }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

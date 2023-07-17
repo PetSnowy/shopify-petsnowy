@@ -1,0 +1,63 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 40
+      }
+    },
+    "a2987480-c65a-4a67-bbfd-ec89bb7a9812": {
+      "type": "page-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/slider-01.jpg",
+        "image_mbl": "shopify:\/\/shop_images\/moblie-1.jpg",
+        "hedaing": "FAQ",
+        "text": "<p>View our most frequently asked questions about the Petsnowy<\/p>"
+      }
+    },
+    "1da5a395-8b0d-4a51-b02c-9559890d9d9d": {
+      "type": "Q-and-A",
+      "blocks": {
+        "ac982418-96a8-41cf-b6dc-cb9d23128252": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: When is the official launch date?",
+            "text": "<p>A:  We don't have a locked time, but it will be in late February!<\/p>"
+          }
+        },
+        "ddb1deff-0271-42d7-a435-7b4208218f69": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Where can I buy it?",
+            "text": "<p>A：Please click the link below to bookmark our official pre-sale page. The official SNOW+ purchase page will be updated at the end of February!<\/p><p><a href=\"https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/coming_soon\"><span style=\"text-decoration:underline\">https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/coming_soon<\/span><\/a><\/p>"
+          }
+        },
+        "aad21124-5e82-46b3-aa3c-62d9bec35e1e": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: How much is it？",
+            "text": "<p>Exclusive Super Early Bird Deals starting at just $479. <\/p><p>The SNOW+ is listed for $519 on Indiegogo, which is 40% off the tag price of $865. <\/p><p>There’s also a TiO2-free deodorant version at $479 if you don’t have much concern with odour control. <\/p><p>The 40% Super Early Bird Perk and the $30 Off are stackable discounts. <a href=\"https:\/\/www.petsnowy.com\/products\/petsnowy-indiegogo-launch-discount-30-off\" target=\"_blank\" title=\"https:\/\/www.petsnowy.com\/products\/petsnowy-indiegogo-launch-discount-30-off\">Reserve the limited-time offer here<\/a>.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "ac982418-96a8-41cf-b6dc-cb9d23128252",
+        "ddb1deff-0271-42d7-a435-7b4208218f69",
+        "aad21124-5e82-46b3-aa3c-62d9bec35e1e"
+      ],
+      "settings": {
+        "h2": "SNOW⁺ Self-cleaning Litter Box",
+        "sub_txt": "(Indiegogo Launch)",
+        "padding_top": 20,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a2987480-c65a-4a67-bbfd-ec89bb7a9812",
+    "1da5a395-8b0d-4a51-b02c-9559890d9d9d"
+  ]
+}

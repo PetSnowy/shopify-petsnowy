@@ -1,0 +1,122 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 4,
+        "image_ratio": "portrait",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "4b6daf6b-8cfe-4379-ae6c-86aefe76398c": {
+      "type": "top-banner",
+      "disabled": true,
+      "settings": {
+        "img": "shopify:\/\/shop_images\/Slider.jpg",
+        "sub_text": "PetSnowy",
+        "heading": "The Home Of Stylish Cat Products"
+      }
+    },
+    "fb3b9da1-2961-4648-a1f1-6c99275cd302": {
+      "type": "custom-filter",
+      "blocks": {
+        "deb46eb4-6fea-49c7-a856-06f350476b27": {
+          "type": "title",
+          "settings": {
+            "title": "Trending",
+            "collection_list": "#Trending"
+          }
+        },
+        "74f594c4-d926-4622-af2d-95cd22e5dd8a": {
+          "type": "title",
+          "settings": {
+            "title": "Best Sellers",
+            "collection_list": "#BestSellers"
+          }
+        },
+        "fe24f5cc-4afe-40f1-9e14-a35d31a8a9c5": {
+          "type": "title",
+          "settings": {
+            "title": "Newest",
+            "collection_list": "#Newest"
+          }
+        }
+      },
+      "block_order": [
+        "deb46eb4-6fea-49c7-a856-06f350476b27",
+        "74f594c4-d926-4622-af2d-95cd22e5dd8a",
+        "fe24f5cc-4afe-40f1-9e14-a35d31a8a9c5"
+      ],
+      "settings": {
+        "heading": "",
+        "padding_top": 40,
+        "padding_bottom": 32
+      }
+    },
+    "5864c783-5105-467c-9380-6199b75162a8": {
+      "type": "collection-featured-product",
+      "settings": {
+        "product": "snow-self-cleaning-litter-box",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "5ead79d5-623a-407e-8571-61d1492bc27d": {
+      "type": "shop-all-collection",
+      "settings": {
+        "collection_id": "Trending",
+        "collection": "smart-pet-products",
+        "collection_idtwo": "BestSellers",
+        "collection_two": "smart-pet-products-1",
+        "collection_idthree": "Newest",
+        "collection_three": "smart-pet-products-2",
+        "collection_idfour": "",
+        "collection_four": "",
+        "collection_idfive": "",
+        "collection_five": "",
+        "collection_idsix": "",
+        "collection_six": "",
+        "collection_idseven": "",
+        "collection_seven": "",
+        "collection_ideight": "",
+        "collection_eight": "",
+        "collection_idnine": "",
+        "collection_nine": "",
+        "collection_idten": "",
+        "collection_ten": "",
+        "collection_ideleven": "",
+        "collection_eleven": "",
+        "products_to_show": 10,
+        "columns_desktop": 3,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "4b6daf6b-8cfe-4379-ae6c-86aefe76398c",
+    "fb3b9da1-2961-4648-a1f1-6c99275cd302",
+    "5864c783-5105-467c-9380-6199b75162a8",
+    "5ead79d5-623a-407e-8571-61d1492bc27d"
+  ]
+}

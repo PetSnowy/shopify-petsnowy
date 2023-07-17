@@ -1,0 +1,7 @@
+{% if content_for_header contains 'shopifyorderlimits.s3.amazonaws.com' %}
+{% if shop.permanent_domain == 'petsnowy.myshopify.com' %}
+<script src="https://shopifyorderlimits.s3.amazonaws.com/limits/petsnowy.myshopify.com?v=95b&r=20230131105039&shop=petsnowy.myshopify.com"></script>
+{% endif %}
+{% else %}
+<script type="text/javascript">console.error("MinMaxify is deactivated for this website. Please don't forget to remove minmaxify-head.liquid still being referenced by theme.liquid")</script>
+{% endif %}

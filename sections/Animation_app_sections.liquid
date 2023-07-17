@@ -1,0 +1,712 @@
+<section class="custom_img_wrpr app_main_div">
+<div class="section-content">
+	{% if section.settings.span != blank %}
+	<span data-aos="fade-up" data-aos-duration="700">{{ section.settings.span }}</span>
+  {% endif %}
+  {% if section.settings.heading != blank %}
+	<h2 data-aos="fade-up" data-aos-duration="700">{{ section.settings.heading }}</h2>
+  {% endif %}     
+
+  <div class="image-with-text" data-aos="fade-up" data-aos-duration="800">
+	{% if section.settings.text != blank %}
+	  {{ section.settings.text }}
+	{% endif %}
+  </div>
+  
+  {%- if section.settings.button_label != blank -%}
+	<a href="{{ section.settings.button_link }}" class="btn btn--plain btn--rounded vbutton button--primary" data-aos="fade-up" data-aos-duration="700">
+	  {{- section.settings.button_label }}
+	</a>
+  {%- endif -%}   
+</div>
+
+  <div class="custom_img_sec">
+    <div class="custom_img_box_1">
+      <div class="img img_1">
+		<div class="popular_component" style="background:{{ section.settings.clr_1 }};">
+		  {% if section.settings.catn != blank %}
+		  <span style="color:{{ section.settings.catn_clr_1 }};">
+		  {{ section.settings.catn }}
+		  </span>
+		  {% endif %}
+		  {% if section.settings.hdng_1 != blank %}
+		  <h3 style="color:{{ section.settings.hdng_clr_1 }};">{{ section.settings.hdng_1 }}</h3>
+		  {% endif %}
+		  <div style="color:{{ section.settings.txt_clr_1 }};">
+		  {% if section.settings.txt_1 != blank %}
+		  {{ section.settings.txt_1 }}
+		  {% endif %}
+		  </div>
+		</div>
+	</div>
+	
+      <div class="img img_1">
+		{% if section.settings.L_img_1 != blank %}
+		<img src="{{ section.settings.L_img_1 | img_url: 'master' }}">
+		{% endif %}
+      </div>
+    </div>
+    <div class="custom_img_box_2">
+      <div class="img img_2">
+		{% if section.settings.img_lc1 != blank %}
+        <img src="{{ section.settings.img_lc1 | img_url: 'master' }}">
+        {% endif %}
+      </div>
+	  
+      <div class="img img_2">
+		{% if section.settings.img_lc2 != blank %}
+            <img src="{{ section.settings.img_lc2 | img_url: 'master' }}">
+         {% endif %}
+      </div>
+	  
+      <div class="img img_2">
+		<div class="popular_component" style="background:{{ section.settings.clr_lc }};">
+		  {% if section.settings.catn_lc != blank %}
+		  <span style="color:{{ section.settings.catn_clr_2 }};">
+		  {{ section.settings.catn_lc }}
+		  </span>
+		  {% endif %}
+		  {% if section.settings.hdng_lc != blank %}
+		  <h3 style="color:{{ section.settings.hdng_clr_2 }};">{{ section.settings.hdng_lc }}</h3>
+		  {% endif %}
+		  <div style="color:{{ section.settings.txt_clr_2}};">
+		  {% if section.settings.txt_lc != blank %}
+		  {{ section.settings.txt_lc }}
+		  {% endif %}
+		</div>
+      </div>
+      </div>
+    </div>
+    <div class="custom_img_box_3 container">
+      <div class="img img_3">
+		  <div class="popular_component" style="background:{{ section.settings.clr_ltd }};">
+			{% if section.settings.catn_ltd != blank %}
+			<span style="color:{{ section.settings.catn_clr_3 }};">
+			{{ section.settings.catn_ltd }}
+			</span>
+			{% endif %}
+			{% if section.settings.hdng_ltd != blank %}
+			<h3 style="color:{{ section.settings.hdng_clr_3 }};">{{ section.settings.hdng_ltd }}</h3>
+			{% endif %}
+			<div style="color:{{ section.settings.txt_clr_3 }};">
+			{% if section.settings.txt_ltd != blank %}
+			{{ section.settings.txt_ltd }}
+			{% endif %}
+			</div>
+		</div>
+	</div>
+	<div class="img img_3">
+	{% if section.settings.img_ltd != blank %}
+	<img src="{{ section.settings.img_ltd | img_url: 'master' }}">
+	{% endif %}
+	</div>
+    </div>
+    <div class="custom_img_box_4">
+      <div class="img img_4">
+		{% if section.settings.img_cntr != blank %}
+          <img src="{{ section.settings.img_cntr | img_url: 'master' }}">
+        {% endif %}
+      </div>
+    </div>
+    <div class="custom_img_box_5">
+      <div class="img img_5">
+		<div class="popular_component" style="background:{{ section.settings.clr_rf}};">
+		{% if section.settings.catn_rf != blank %}
+		  <span style="color:{{ section.settings.catn_clr_4 }};">
+			{{ section.settings.catn_rf }}
+		  </span>
+		{% endif %}
+		{% if section.settings.hdng_rf != blank %}
+		  <h3 style="color:{{ section.settings.hdng_clr_4 }};">{{ section.settings.hdng_rf }}</h3>
+		{% endif %}
+		<div style="color:{{ section.settings.txt_clr_4 }};">
+		  {% if section.settings.txt_rf != blank %}
+			{{ section.settings.txt_rf }}
+		  {% endif %}
+		</div>
+		</div> 
+      </div>
+      <div class="img img_5">
+		{% if section.settings.img_rf != blank %}
+		<img src="{{ section.settings.img_rf | img_url: 'master' }}">
+		{% endif %}
+      </div>
+    </div>
+    <div class="custom_img_box_6">
+      <div class="img img_6">
+		 {% if section.settings.img_rgc1 != blank %}
+		  <img src="{{ section.settings.img_rgc1 | img_url: 'master' }}">
+		{% endif %}
+      </div>
+      <div class="img img_6">
+		{% if section.settings.img_rgc2 != blank %}
+		<img src="{{ section.settings.img_rgc2 | img_url: 'master' }}">
+		{% endif %}
+      </div>
+      <div class="img img_6">
+		<div class="popular_component" style="background:{{ section.settings.clr_rgc }};">
+		{% if section.settings.catn_rgc != blank %}
+		<span style="color:{{ section.settings.catn_clr_5 }};">
+		{{ section.settings.catn_rgc }}
+		</span>
+		{% endif %}
+		{% if section.settings.hdng_rgc != blank %}
+		<h3 style="color:{{ section.settings.hdng_clr_5 }};">{{ section.settings.hdng_rgc }}</h3>
+		{% endif %}
+		<div style="color:{{ section.settings.txt_clr_5 }};">
+		{% if section.settings.txt_rgc != blank %}
+		{{ section.settings.txt_rgc }}
+		{% endif %}
+		</div>
+		</div>
+      </div>
+    </div>
+    <div class="custom_img_box_7">
+	<div class="img img_7">
+		<div class="popular_component" style="background:{{ section.settings.clr_rhtd }};">
+		{% if section.settings.catn_rhtd != blank %}
+		  <span style="color:{{ section.settings.catn_clr_6 }};">
+			{{ section.settings.catn_rhtd }}
+		  </span>
+		{% endif %}
+		{% if section.settings.hdng_rhtd != blank %}
+		  <h3 style="color:{{ section.settings.hdng_clr_6 }};">{{ section.settings.hdng_rhtd }}</h3>
+		{% endif %}
+		<div style="color:{{ section.settings.txt_clr_6 }};">
+		  {% if section.settings.txt_rhtd != blank %}
+			{{ section.settings.txt_rhtd }}
+		  {% endif %}
+		</div>
+	  </div>
+	</div>
+      <div class="img img_7">
+		{% if section.settings.L_img_rhtd != blank %}
+		<img src="{{ section.settings.L_img_rhtd | img_url: 'master' }}">
+		{% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+ <script>
+  $(document).ready(function(){
+    var $window = $(window);
+    $window.on('scroll', function(){
+      var $topOfVideo =  $('.custom_img_wrpr').offset().top;
+
+      var $topOfScreen = $window.scrollTop();
+
+      var scroll_amt = $topOfScreen - $topOfVideo;
+
+      if($topOfVideo){
+         $( '.custom_img_box_2, .custom_img_box_6' ).css({
+            transform: 'translateY('+  ( -0.38 * scroll_amt ) +'px)',
+         });
+
+         $( '.custom_img_box_3, .custom_img_box_5' ).css({
+           transform: 'translateY('+  ( -0.25 * scroll_amt ) +'px)',
+         });
+      }
+
+      });
+    });
+</script> 
+
+<style>
+.custom_img_box_2, .custom_img_box_6{
+  transition: .5s cubic-bezier(.28,.44,.49,1);
+}
+.custom_img_box_3, .custom_img_box_5{
+  transition: .5s cubic-bezier(.28,.44,.49,1);
+}
+.new_banner {
+  padding-top: 100px;
+}
+.custom_img_box_1 {
+    padding-top: 8vw;
+}
+.custom_img_box_7 {
+    padding-top: 8vw;
+}  
+.custom_img_sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.8fr 1fr 1fr 1fr;
+    position: relative;
+    grid-gap: 20px;
+    padding-top:100px;
+    height: 780px;
+}
+.custom_img_sec img {
+    width: 100%;
+}
+.custom_img_box_2 {
+  transition: .5s linear all;
+    padding-top: 5.694444444vw;
+}
+.custom_img_box_3 {
+    padding-top: 12vw;
+}
+.custom_img_box_5 {
+    padding-top: 12vw;
+}
+.custom_img_box_6 {
+    padding-top: 6.180555556vw;
+}
+.popular_component {
+    text-align: center;
+    padding: 8vh 15px;
+}
+.img.img_2, .img.img_6 {
+  display: grid;
+}
+.img.img_1, .img.img_2, .img.img_3, .img.img_5, .img.img_6, .img.img_7 {
+    margin: 20px 0;
+}
+.app_main_div span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: inherit;
+    text-transform: uppercase;
+    color: #595F69;
+}
+.app_main_div .section-content h2 {
+    font-size: 56px;
+    line-height: 1.2;
+    color: #231F20;
+    margin: 20px 0 15px;
+}
+.app_main_div p {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 30px;    
+}
+.section-content p{
+   max-width: 440px;
+    margin: 0 auto;
+}
+a.btn.btn--plain.btn--rounded {
+    padding: 15px 30px;
+    background: #231F20;
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #fff;
+    border: 1px solid transparent;
+    width: auto;
+    line-height: 15px;
+    display: inline-block;
+    transition: 0.3s all linear;
+}
+a.btn.btn--plain.btn--rounded:hover {
+    background: #fff;
+    color: #231f20;
+    border-color: #231f20;
+}
+.app_main_div {
+    width: 100%;
+    text-align: center;
+}
+section.custom_img_wrpr {
+    padding-top: 80px;
+}
+.section-content {
+    padding: 0px 20px;
+}
+.popular_component h3 {
+    font-size: 25px;
+}
+.popular_component h3 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.custom_img_sec p {
+    padding-bottom: 0;
+    margin: 5px 0;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .popular_component h3 {
+    font-size: 22px;
+}
+}
+@media screen and (max-width: 989px){
+a.btn.btn--plain.btn--rounded {
+    padding: 15px 20px;
+}
+.popular_component {
+  padding: 10px 10px;
+} 
+section.custom_img_wrpr {
+    padding-top: 40px;
+}
+.custom_img_sec {
+    padding-top: 100px;
+    overflow: hidden;
+}
+.popular_component h3 {
+    font-size: 18px;
+}
+.custom_img_sec {
+    display: flex !important;
+    justify-content: center;
+}
+  .app_main_div .section-content h2 {
+    font-size: 28px;
+  }
+  .custom_img_box_1, .custom_img_box_7 {
+    display: none;
+}
+.custom_img_box_2, .custom_img_box_3, .custom_img_box_4, .custom_img_box_5, .custom_img_box_6 {
+    width: 20%;
+}
+}
+
+@media  screen and (max-width: 767px){ 
+.custom_img_sec {
+    height: 100%;
+    max-height: 100%;
+}
+.custom_img_box_1, .custom_img_box_2, .custom_img_box_6, .custom_img_box_7 {
+    display: none;
+}
+.custom_img_box_3, .custom_img_box_5 {
+  width: 80%;
+}
+.custom_img_box_4 {
+  width: 100%;
+  height: 100%;
+}
+.custom_img_box_3, .custom_img_box_5 {
+ padding-top: unset;
+}
+.app_main_div p {
+ font-size: 8px;
+}
+.popular_component h3 {
+ font-size: 14px;
+ margin-top: 5px;
+}
+.popular_component {
+    padding: 15px 10px;
+}
+.app_main_div span {
+ font-size: 10px;
+}
+.img.img_1, .img.img_2, .img.img_3, .img.img_5, .img.img_6, .img.img_7 {
+    margin: 0px 6px 15px;
+}
+.custom_img_sec {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding-bottom: 20px;
+}  
+.img.img_1, .img.img_2, .img.img_3, .img.img_5, .img.img_6, .img.img_7 {
+    margin: 0px 6px 15px;
+}
+}
+  
+</style>
+
+
+
+{% schema %}
+  {
+    "name": "Animation App Section",
+    "settings": [
+        {
+      "type":"text",
+      "id":"span",
+      "label":"Sub Heading"
+    },
+    {
+      "type":"text",
+      "id":"heading",
+      "label":"Heading"
+    },
+    {
+      "type":"richtext",
+      "id":"text",
+      "label":"Text"
+    },
+    {
+      "type":"text",
+      "id":"button_label",
+      "label":"Button"
+    },
+    {
+      "type":"url",
+      "id":"button_link",
+      "label":"Url"
+    },
+     {
+          "type":"text",
+          "id":"catn",
+          "label":"First List Sub Heading"
+        },
+        {
+          "type":"color",
+          "id":"catn_clr_1",
+          "label":"Color"
+        },
+        {
+          "type":"text",
+          "id":"hdng_1",
+          "label":"First List Heading"
+        },
+        {
+          "type":"color",
+          "id":"hdng_clr_1",
+          "label":"Color"
+        },
+        {
+          "type":"richtext",
+          "id":"txt_1",
+          "label":"First List Text"
+        },
+        {
+          "type":"color",
+          "id":"txt_clr_1",
+          "label":"Color"
+        },
+        {
+          "type":"color",
+          "id":"clr_1",
+          "label":"Background"
+        },
+        {
+          "type":"image_picker",
+          "id":"L_img_1",
+          "label":"Image"
+        },
+        {
+          "type":"image_picker",
+          "id":"img_lc1",
+          "label":"Image"
+        },
+        {
+          "type":"image_picker",
+          "id":"img_lc2",
+          "label":"Image"
+        },
+        {
+          "type":"text",
+          "id":"catn_lc",
+          "label":"Sub Heading"
+        },
+        {
+          "type":"color",
+          "id":"catn_clr_2",
+          "label":"Color"
+        },
+        {
+          "type":"text",
+          "id":"hdng_lc",
+          "label":"Heading"
+        },
+        {
+          "type":"color",
+          "id":"hdng_clr_2",
+          "label":"Color"
+        },
+        {
+          "type":"richtext",
+          "id":"txt_lc",
+          "label":"Text"
+        },
+        {
+          "type":"color",
+          "id":"txt_clr_2",
+          "label":"Color"
+        },
+        {
+          "type":"color",
+          "id":"clr_lc",
+          "label":"Background"
+        },
+        {
+          "type":"text",
+          "id":"catn_ltd",
+          "label":"Sub Heading"
+        },
+        {
+          "type":"color",
+          "id":"catn_clr_3",
+          "label":"Color"
+        },
+        {
+          "type":"text",
+          "id":"hdng_ltd",
+          "label":"Heading"
+        },
+        {
+          "type":"color",
+          "id":"hdng_clr_3",
+          "label":"Color"
+        },
+        {
+          "type":"richtext",
+          "id":"txt_ltd",
+          "label":"Text"
+        },
+        {
+          "type":"color",
+          "id":"txt_clr_3",
+          "label":"Color"
+        },
+        {
+          "type":"color",
+          "id":"clr_ltd",
+          "label":"Background"
+        },
+        {
+          "type":"image_picker",
+          "id":"img_ltd",
+          "label":"Image"
+        },
+      {
+          "type":"image_picker",
+          "id":"img_cntr",
+          "label":"Image"
+        },
+        {
+          "type":"text",
+          "id":"catn_rf",
+          "label":"Sub Heading"
+        },
+        {
+          "type":"color",
+          "id":"catn_clr_4",
+          "label":"Color"
+        },
+        {
+          "type":"text",
+          "id":"hdng_rf",
+          "label":"Heading"
+        },
+        {
+          "type":"color",
+          "id":"hdng_clr_4",
+          "label":"Color"
+        },
+        {
+          "type":"richtext",
+          "id":"txt_rf",
+          "label":"Text"
+        },
+        {
+          "type":"color",
+          "id":"txt_clr_4",
+          "label":"Color"
+        },
+        {
+          "type":"color",
+          "id":"clr_rf",
+          "label":"Background"
+        },
+        {
+          "type":"image_picker",
+          "id":"img_rf",
+          "label":"Image"
+        },
+        {
+          "type":"image_picker",
+          "id":"img_rgc1",
+          "label":"Image"
+        },
+        {
+          "type":"image_picker",
+          "id":"img_rgc2",
+          "label":"Image"
+        },
+        {
+          "type":"text",
+          "id":"catn_rgc",
+          "label":"Sub Heading"
+        },
+        {
+          "type":"color",
+          "id":"catn_clr_5",
+          "label":"Color"
+        },
+        {
+          "type":"text",
+          "id":"hdng_rgc",
+          "label":"Heading"
+        },
+        {
+          "type":"color",
+          "id":"hdng_clr_5",
+          "label":"Color"
+        },
+        {
+          "type":"richtext",
+          "id":"txt_rgc",
+          "label":"Text"
+        },
+        {
+          "type":"color",
+          "id":"txt_clr_5",
+          "label":"Color"
+        },
+        {
+          "type":"color",
+          "id":"clr_rgc",
+          "label":"Background"
+        },
+       {
+          "type":"text",
+          "id":"catn_rhtd",
+          "label":"Sub Heading"
+        },
+        {
+          "type":"color",
+          "id":"catn_clr_6",
+          "label":"Color"
+        },
+        {
+          "type":"text",
+          "id":"hdng_rhtd",
+          "label":"Heading"
+        },
+        {
+          "type":"color",
+          "id":"hdng_clr_6",
+          "label":"Color"
+        },
+        {
+          "type":"richtext",
+          "id":"txt_rhtd",
+          "label":"Text"
+        },
+        {
+          "type":"color",
+          "id":"txt_clr_6",
+          "label":"Color"
+        },
+        {
+          "type":"color",
+          "id":"clr_rhtd",
+          "label":"Background"
+        },
+        {
+          "type":"image_picker",
+          "id":"L_img_rhtd",
+          "label":"Image"
+        }
+    ],
+"presets":[
+ {
+    "name": "Animation App Section"
+ }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

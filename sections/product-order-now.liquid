@@ -1,0 +1,71 @@
+<div style="background: #dfdbd0">
+    {%- form 'product',
+      product,
+      id: product_form_id,
+      class: 'form',
+      novalidate: 'novalidate',
+      data-type: 'add-to-cart-form'
+    -%}
+      <input
+        type="hidden"
+        name="id"
+        value="{{ product.selected_or_first_available_variant.id }}"
+       {% if product.selected_or_first_available_variant.available == false %}
+        disabled
+         {% endif %}
+      >
+      <div class="product-form__buttons" style="padding: 5px 0">
+        <button
+          type="submit"
+          name="add"                    
+          class="product-form__submit button button--primary purchase_btn_one"
+          style=" margin-left: 10%;"
+        >
+          <span> Order now <svg style="vertical-align: middle;" t="1683863554186" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1775" width="16" height="16"><path d="M703.591061 511.573281 383.764895 831.356468 383.764895 639.740336 511.93195 511.402389 383.764895 383.78792 383.764895 191.70516Z" p-id="1776" fill="#000000"></path></svg></span>
+          <div class="loading-overlay__spinner hidden">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              role="presentation"
+              class="spinner"
+              viewBox="0 0 66 66"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+            </svg>
+          </div>
+        </button>
+      </div>
+    {%- endform -%}
+</div>
+
+<style>
+  #shopify-section-template--19036535554370__f4ce3e07-3dd8-4933-9781-d63d26050dca{
+    position: sticky;
+    bottom: 0;
+    z-index: 9999
+  }
+  @media screen and (max-width: 1024px){
+    .product-form__buttons>button>span>svg{
+      display: none;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "product-order-btn",
+    "settings": [],
+     "presets": [
+      {
+        "name": "Product order now"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,109 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  class="section-{{ section.id }}-padding video_popup_main">
+  <div class="page-width">
+    <div class="video-section_pop">
+      <div class="cs_video_big owl-carousel owl-theme">
+        {% for block in section.blocks %}
+          <div class="top_img item">
+            <div class="top_img_div">
+            {% if block.settings.ml_img != blank %}
+              <img src="{{ block.settings.ml_img | img_url: 'master'}}">
+              <div class="img_icon_svg" data-video-url="https://www.youtube-nocookie.com/embed/{{ block.settings.video_url.id }}?autoplay=1">
+              {% render 'image-icon' %}
+              </div>
+            {% endif %}      
+            </div>
+            <div class="top_img_text">
+              {{ block.settings.ml_text }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+       <div class="cs_video_small">
+        {% for block in section.blocks %}
+          <div class="bottom_img">
+            {% if block.settings.ml_imgaa != blank %}
+              <img src="{{ block.settings.ml_imgaa | img_url: '200X'}}">             
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Video popup",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks":[
+    {
+      "type":"block",
+      "name":"Video Popup",
+      "settings":[ 
+        {
+          "type":"image_picker",
+          "id":"ml_img",
+          "label":"Large Image"
+        },
+         {
+          "type":"richtext",
+          "id":"ml_text",
+          "label":"Content"
+        },
+        {
+          "type":"image_picker",
+          "id":"ml_imgaa",
+          "label":"Small Image"
+        },  
+        {
+           "type": "video_url",
+            "accept": ["vimeo", "youtube"],
+          "id":"video_url",
+          "label":"Video Url"
+        } 
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video popup"
+    }
+  ]
+}
+{% endschema %}

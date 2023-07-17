@@ -1,0 +1,90 @@
+<div class="page_baner_main">
+  <div class="page_bnr_banner">
+    {% comment %}<img src="{{ section.settings.image | img_url: 'master' }}">{% endcomment %}
+    {%- if section.settings.image != blank -%}
+      <div class="banner__media {% if section.settings.image_mbl != blank %}banner_desktop{% endif %}">
+        {%- liquid
+          assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
+          if section.settings.image_2 != blank
+            assign image_class = 'banner__media-image-half'
+          endif
+          if section.settings.image_2 != blank and section.settings.stack_images_on_mobile
+            assign sizes = '(min-width: 750px) 50vw, 100vw'
+          elsif section.settings.image_2 != blank
+            assign sizes = '50vw'
+          else
+            assign sizes = '100vw'
+          endif
+        -%}
+        {{
+          section.settings.image
+          | image_url: width: 1500
+          | image_tag:
+            loading: 'lazy',
+            width: section.settings.image.width,
+            class: image_class,
+            sizes: sizes,
+            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+            alt: section.settings.image.alt
+          | escape
+        }}
+      </div>
+      {% if section.settings.image_mbl != blank %}
+        <div class="banner_mobile banner__media media">
+          <img src="{{ section.settings.image_mbl | img_url: 'master' }}">
+        </div>
+      {% endif %}
+    {%- endif -%}
+    <div class="page-width">
+      <div class="page_bnr_contn">
+        {% if section.settings.hedaing != blank %}
+          <h2 data-aos="fade-up" data-aos-duration="800">{{ section.settings.hedaing }}</h2>
+        {% endif %}
+        <div data-aos="fade-up" data-aos-duration="800">
+          {% if section.settings.text != blank %}
+            {{ section.settings.text }}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Page Banner",
+  "settings": [
+    {
+      "type":"image_picker",
+      "id":"image",
+      "label":"Image"
+    },
+    {
+      "type":"image_picker",
+      "id":"image_mbl",
+      "label":"Mobile Image"
+    },
+    {
+      "type":"text",
+      "id":"hedaing",
+      "label":"Heading"
+    },
+    {
+      "type":"richtext",
+      "id":"text",
+      "label":"Text"
+    }
+  ],
+  "presets":[
+    {
+      "name":"Page Banner"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

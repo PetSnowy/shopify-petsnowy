@@ -1,0 +1,1006 @@
+{
+  "sections": {
+    "ec8a39b8-e172-48e1-97d9-303c35a74add": {
+      "type": "custom-banner",
+      "settings": {
+        "vdio_img": "shopify:\/\/shop_images\/1_0175_2.jpg",
+        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6a66fde5ecf844cb8c4260f81e879f8d.mp4",
+        "mobvdio_img": "shopify:\/\/shop_images\/1_0175_2.jpg",
+        "mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/befa39c0bb4e4d188d8a7107b4739431.mp4",
+        "heading": "meet the SNOW<sup><sup>+<\/sup><\/sup>",
+        "url": "#",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1675073699d2592d6f": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "96cf2d8f-6b1b-4e8d-a8e0-8a3893561b06": {
+      "type": "newsletter",
+      "disabled": true,
+      "blocks": {
+        "template--17467597848898__96cf2d8f-6b1b-4e8d-a8e0-8a3893561b06-1674893767c87ae71e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Something new, coming you way.",
+            "heading_size": "h1"
+          }
+        },
+        "template--17467597848898__96cf2d8f-6b1b-4e8d-a8e0-8a3893561b06-1674893767c87ae71e-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Sign-up now for an exclusive discount & rewards when we launch on Indiegogo.<\/p>"
+          }
+        },
+        "template--17467597848898__96cf2d8f-6b1b-4e8d-a8e0-8a3893561b06-1674893767c87ae71e-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--17467597848898__96cf2d8f-6b1b-4e8d-a8e0-8a3893561b06-1674893767c87ae71e-0",
+        "template--17467597848898__96cf2d8f-6b1b-4e8d-a8e0-8a3893561b06-1674893767c87ae71e-1",
+        "template--17467597848898__96cf2d8f-6b1b-4e8d-a8e0-8a3893561b06-1674893767c87ae71e-2"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "7d1d48f6-00fe-4356-99c7-9d214d6d40f5": {
+      "type": "Signup-banner",
+      "disabled": true,
+      "settings": {
+        "bg_color": "#9b8e84",
+        "heading": "LAUNCHING SOON",
+        "color_1": "#ffffff",
+        "text": "<p>Sign-up now for an exclusive discount & rewards when we launch on Indiegogo.<\/p>",
+        "color_2": "#ffffff",
+        "btn": "Sign Up Now",
+        "checked": false,
+        "color_3": "",
+        "bg_color_1": "",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "587d7593-4e25-4243-8dae-eca9c97405ff": {
+      "type": "order-banner",
+      "disabled": true,
+      "settings": {
+        "bg_color": "#9b8e84",
+        "heading": "Launching soon",
+        "color_1": "#ffffff",
+        "text": "<p>Sign-up now for an exclusive discount & super early bird price when we launch on Indiegogo.<\/p>",
+        "color_2": "#231f20",
+        "btn": "Claim Discount",
+        "url": "https:\/\/www.indiegogo.com\/projects\/--326662\/coming_soon\/x\/31445254",
+        "checked": false,
+        "color_3": "#ffffff",
+        "bg_color_1": "",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "e99f3d28-6eeb-4201-a162-82c8ea639dbd": {
+      "type": "order-banner",
+      "disabled": true,
+      "settings": {
+        "bg_color": "#9b8e84",
+        "heading": "Order now from $241\/month or $2.890",
+        "color_1": "#ffffff",
+        "text": "<p>Lorem Ipsum has been the industry's standard dummy text ever since the <\/p>",
+        "color_2": "#ffffff",
+        "btn": "Shop Now",
+        "url": "https:\/\/www.indiegogo.com\/projects\/--326662\/coming_soon\/x\/31445254",
+        "checked": true,
+        "color_3": "#ffffff",
+        "bg_color_1": "#9b8e84",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "5adf9f25-788e-4bc2-9df4-6dd4b70dcd25": {
+      "type": "image-banner",
+      "blocks": {
+        "template--17349241372994__5adf9f25-788e-4bc2-9df4-6dd4b70dcd25-1672387544f71f1a07-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Most Funded Pet Project on Indiegogo",
+            "heading_size": "h1"
+          }
+        },
+        "567a91de-8df6-4099-9025-5d5a681414ad": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Introducing SNOW⁺: The Self Cleaning and Packing Litter Box with Over 3000 Backers!<\/p>"
+          }
+        },
+        "427a5215-65a7-4d20-bf2b-8b4f3b35febd": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Order Now",
+            "button_link_1": "shopify:\/\/products\/snow-self-cleaning-litter-box",
+            "button_style_secondary_1": false,
+            "button_label_2": "PetSnowy on Indiegogo",
+            "button_link_2": "https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/reft\/5\/official",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17349241372994__5adf9f25-788e-4bc2-9df4-6dd4b70dcd25-1672387544f71f1a07-0",
+        "567a91de-8df6-4099-9025-5d5a681414ad",
+        "427a5215-65a7-4d20-bf2b-8b4f3b35febd"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/10000_fb799e03-3787-4c4e-9355-a8f582edaaa9.jpg",
+        "image_mbl": "shopify:\/\/shop_images\/10071137_02_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "top-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "9d073bf4-1f1f-4ef2-9353-1ab70e3af03f": {
+      "type": "image-banner",
+      "blocks": {
+        "b7fd714b-effd-4555-a931-ce29f66139a5": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cat Toy",
+            "heading_size": "h1"
+          }
+        },
+        "dc241193-d048-4b0b-ad86-3d398b3a6ec6": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Roly-Poly, Simply Wow-y!<\/p>"
+          }
+        },
+        "b6179f64-2747-4913-8df8-06b31cf23939": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Order Now",
+            "button_link_1": "shopify:\/\/products\/snow-roly-poly-cat-toy",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "2a20e708-274c-4223-86d0-b6d258d031a6": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "PRE ORDER DISCOUNT",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "b7fd714b-effd-4555-a931-ce29f66139a5",
+        "dc241193-d048-4b0b-ad86-3d398b3a6ec6",
+        "b6179f64-2747-4913-8df8-06b31cf23939",
+        "2a20e708-274c-4223-86d0-b6d258d031a6"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1_e5524c89-6989-4d71-964b-77b3f01879dd.png",
+        "image_mbl": "shopify:\/\/shop_images\/41.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-2",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "df50b571-6844-460d-9370-da015c04fe08": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "6c54edea-772c-4836-9199-716d7e826f06": {
+          "type": "caption",
+          "settings": {
+            "caption": "PetSnowy SNOW+",
+            "text_style": "subtitle",
+            "text_size": "large"
+          }
+        },
+        "template--17349241372994__df50b571-6844-460d-9370-da015c04fe08-1672389657950c3fdb-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Innovative Self-Cleaning Litter Box",
+            "heading_size": "h1"
+          }
+        },
+        "template--17349241372994__df50b571-6844-460d-9370-da015c04fe08-1672389657950c3fdb-1": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        },
+        "template--17349241372994__df50b571-6844-460d-9370-da015c04fe08-1672389657950c3fdb-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover",
+            "button_link": "shopify:\/\/products\/snow-self-cleaning-litter-box"
+          }
+        }
+      },
+      "block_order": [
+        "6c54edea-772c-4836-9199-716d7e826f06",
+        "template--17349241372994__df50b571-6844-460d-9370-da015c04fe08-1672389657950c3fdb-0",
+        "template--17349241372994__df50b571-6844-460d-9370-da015c04fe08-1672389657950c3fdb-1",
+        "template--17349241372994__df50b571-6844-460d-9370-da015c04fe08-1672389657950c3fdb-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/01_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "chek_wth": true,
+        "mobile_content_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "4353e4b5-17b8-45b2-854b-23a61108cc1d": {
+      "type": "custom-app",
+      "disabled": true,
+      "settings": {
+        "span": "New 2023",
+        "heading": "Popular On Today's List",
+        "text": "<p>Lorem Ipsum is simply dummy text for the printing and typesetting industry. Lorem Ipsum has been...<\/p>",
+        "button_label": "Discover the app",
+        "button_link": "#",
+        "catn": "On Sale",
+        "catn_clr_1": "#9b8e84",
+        "hdng_1": "flash Deals",
+        "hdng_clr_1": "#535254",
+        "txt_1": "<p>Lorem Ipsum is simply dummy text for ...<\/p>",
+        "txt_clr_1": "#595f69",
+        "clr_1": "#ebe1d9",
+        "L_img_1": "shopify:\/\/shop_images\/Image_Here_6_a8580d24-52b9-4894-ae76-0cc6c2cde810.png",
+        "img_lc1": "shopify:\/\/shop_images\/Image_Here_7_996a101a-9504-4050-a2ae-5f7624edcc61.png",
+        "img_lc2": "shopify:\/\/shop_images\/Image_Here_8_db416a6a-87aa-4df1-bb20-1e2105442de1.png",
+        "catn_lc": "On Sale",
+        "catn_clr_2": "#9b8e84",
+        "hdng_lc": "flash Deals",
+        "hdng_clr_2": "#535254",
+        "txt_lc": "<p>Lorem Ipsum is simply dummy text for ...<\/p>",
+        "txt_clr_2": "#595f69",
+        "clr_lc": "#ebe1d9",
+        "catn_ltd": "On Sale",
+        "catn_clr_3": "#ffffff",
+        "hdng_ltd": "flash Deals",
+        "hdng_clr_3": "#ffffff",
+        "txt_ltd": "<p>Lorem Ipsum is simply dummy text for ...<\/p>",
+        "txt_clr_3": "#ffffff",
+        "clr_ltd": "#9b8e84",
+        "img_ltd": "shopify:\/\/shop_images\/Image_Here_9.png",
+        "img_cntr": "shopify:\/\/shop_images\/Image_Here_10.png",
+        "catn_rf": "On Sale",
+        "catn_clr_4": "#9b8e84",
+        "hdng_rf": "flash Deals",
+        "hdng_clr_4": "#535254",
+        "txt_rf": "<p>Lorem Ipsum is simply dummy text for ...<\/p>",
+        "txt_clr_4": "#595f69",
+        "clr_rf": "#ebe1d9",
+        "img_rf": "shopify:\/\/shop_images\/Image_Here_6_a8580d24-52b9-4894-ae76-0cc6c2cde810.png",
+        "img_rgc1": "shopify:\/\/shop_images\/Image_Here_7_996a101a-9504-4050-a2ae-5f7624edcc61.png",
+        "img_rgc2": "shopify:\/\/shop_images\/Image_Here_8_db416a6a-87aa-4df1-bb20-1e2105442de1.png",
+        "catn_rgc": "On Sale",
+        "catn_clr_5": "#9b8e84",
+        "hdng_rgc": "flash Deals",
+        "hdng_clr_5": "#535254",
+        "txt_rgc": "<p>Lorem Ipsum is simply dummy text for ...<\/p>",
+        "txt_clr_5": "#595f69",
+        "clr_rgc": "#ebe1d9",
+        "catn_rhtd": "On Sale",
+        "catn_clr_6": "#ffffff",
+        "hdng_rhtd": "flash Deals",
+        "hdng_clr_6": "#ffffff",
+        "txt_rhtd": "<p>Lorem Ipsum is simply dummy text for ...<\/p>",
+        "txt_clr_6": "#ffffff",
+        "clr_rhtd": "#9b8e84",
+        "L_img_rhtd": "shopify:\/\/shop_images\/Image_Here_11.png"
+      }
+    },
+    "e185eedd-f6fa-487a-8f06-87235f3962d7": {
+      "type": "Animation_app_sections",
+      "disabled": true,
+      "settings": {
+        "span": "New 2023",
+        "heading": "Popular On Today's List",
+        "text": "<p>Lorem Ipsum is simply dummy text for the printing and typesetting industry. Lorem Ipsum has been...<\/p>",
+        "button_label": "Discover the app",
+        "button_link": "#",
+        "catn": "On Sale",
+        "catn_clr_1": "#9b8e84",
+        "hdng_1": "flash Deals",
+        "hdng_clr_1": "#535254",
+        "txt_1": "<p>Lorem Ipsum is simply dummy text for ...<\/p>",
+        "txt_clr_1": "#595f69",
+        "clr_1": "#ebe1d9",
+        "L_img_1": "shopify:\/\/shop_images\/Image_Here_6_a8580d24-52b9-4894-ae76-0cc6c2cde810.png",
+        "img_lc1": "shopify:\/\/shop_images\/Image_Here_7_996a101a-9504-4050-a2ae-5f7624edcc61.png",
+        "img_lc2": "shopify:\/\/shop_images\/Image_Here_8_db416a6a-87aa-4df1-bb20-1e2105442de1.png",
+        "catn_lc": "On Sale",
+        "catn_clr_2": "#9b8e84",
+        "hdng_lc": "flash Deals",
+        "hdng_clr_2": "#535254",
+        "txt_lc": "<p>Lorem Ipsum is simply dummy text for ...<\/p>",
+        "txt_clr_2": "#595f69",
+        "clr_lc": "#ebe1d9",
+        "catn_ltd": "On Sale",
+        "catn_clr_3": "#ffffff",
+        "hdng_ltd": "flash Deals",
+        "hdng_clr_3": "#ffffff",
+        "txt_ltd": "<p>Lorem Ipsum is simply dummy text for ...<\/p>",
+        "txt_clr_3": "#ffffff",
+        "clr_ltd": "#9b8e84",
+        "img_ltd": "shopify:\/\/shop_images\/Image_Here_11.png",
+        "img_cntr": "shopify:\/\/shop_images\/mobile_49883fb8-c3c1-43df-bfac-93db49dcad3a.png",
+        "catn_rf": "On Sale",
+        "catn_clr_4": "#9b8e84",
+        "hdng_rf": "flash Deals",
+        "hdng_clr_4": "#535254",
+        "txt_rf": "<p>Lorem Ipsum is simply dummy text for ...<\/p>",
+        "txt_clr_4": "#595f69",
+        "clr_rf": "#ebe1d9",
+        "img_rf": "shopify:\/\/shop_images\/Image_Here_6_a8580d24-52b9-4894-ae76-0cc6c2cde810.png",
+        "img_rgc1": "shopify:\/\/shop_images\/Image_Here_7_996a101a-9504-4050-a2ae-5f7624edcc61.png",
+        "img_rgc2": "shopify:\/\/shop_images\/Image_Here_8_db416a6a-87aa-4df1-bb20-1e2105442de1.png",
+        "catn_rgc": "On Sale",
+        "catn_clr_5": "#9b8e84",
+        "hdng_rgc": "flash Deals",
+        "hdng_clr_5": "#535254",
+        "txt_rgc": "<p>Lorem Ipsum is simply dummy text for ...<\/p>",
+        "txt_clr_5": "#595f69",
+        "clr_rgc": "#ebe1d9",
+        "catn_rhtd": "On Sale",
+        "catn_clr_6": "#ffffff",
+        "hdng_rhtd": "flash Deals",
+        "hdng_clr_6": "#ffffff",
+        "txt_rhtd": "<p>Lorem Ipsum is simply dummy text for ...<\/p>",
+        "txt_clr_6": "#ffffff",
+        "clr_rhtd": "#9b8e84",
+        "L_img_rhtd": "shopify:\/\/shop_images\/Image_Here_11.png"
+      }
+    },
+    "cbbdfcad-ab0a-472e-bbc7-014a03018817": {
+      "type": "custom-collection",
+      "disabled": true,
+      "blocks": {
+        "e4f39e6e-0b6c-4081-83e3-da97a3cbc2d3": {
+          "type": "block",
+          "settings": {
+            "collection": "smart-pet-products"
+          }
+        },
+        "84137610-39de-4ab1-be83-573878a2574d": {
+          "type": "block",
+          "settings": {
+            "collection": "smart-pet-products-1"
+          }
+        },
+        "802affbe-9d80-4eb4-a4c4-ab4d8d71b4d4": {
+          "type": "block",
+          "settings": {
+            "collection": "smart-pet-products-2"
+          }
+        }
+      },
+      "block_order": [
+        "e4f39e6e-0b6c-4081-83e3-da97a3cbc2d3",
+        "84137610-39de-4ab1-be83-573878a2574d",
+        "802affbe-9d80-4eb4-a4c4-ab4d8d71b4d4"
+      ],
+      "settings": {
+        "bgclr": "#ebe1d9",
+        "h5": "Petsnowy at your service",
+        "title": "Best pet gadgets to help them live a life of luxury",
+        "heading_size": "h1",
+        "btn": "Learn more",
+        "url": "#",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "9c771907-c1de-4e4e-be72-6f07dd064f05": {
+      "type": "order-banner",
+      "disabled": true,
+      "settings": {
+        "bg_color": "#9b8e84",
+        "heading": "LAUNCHING SOON",
+        "color_1": "#ffffff",
+        "text": "<p>Sign-up now for an exclusive discount & rewards when we launch on Indiegogo.<\/p>",
+        "color_2": "#231f20",
+        "btn": "Sign Up Now",
+        "url": "",
+        "checked": false,
+        "color_3": "#ffffff",
+        "bg_color_1": "",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "f116373d-7e8f-4acc-8617-7f4054321218": {
+      "type": "order-banner",
+      "disabled": true,
+      "settings": {
+        "bg_color": "#9b8e84",
+        "heading": "WE'VE LAUNCHED ON INDIEGOGO",
+        "color_1": "#ffffff",
+        "text": "<p>Pre-order & save 40% today.<\/p>",
+        "color_2": "#231f20",
+        "btn": "GET 40% OFF",
+        "url": "https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/reft\/31445254\/official",
+        "checked": false,
+        "color_3": "#ffffff",
+        "bg_color_1": "",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "474a142c-30b6-42b8-b833-e96a0de7922c": {
+      "type": "image-with-text",
+      "blocks": {
+        "114a6a9c-d081-433f-9c5a-b8237832d62d": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cat Water Fountain",
+            "heading_size": "h1"
+          }
+        },
+        "26ddd2d8-64aa-4dc9-9c76-5ef8c492307f": {
+          "type": "caption",
+          "disabled": true,
+          "settings": {
+            "caption": "Odor free • Perfectly safe • Eco friendly",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "c9b3591e-43bd-4702-a221-39745862b472": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Easy Way to Keep Your Pet Hydrated<\/p>",
+            "text_style": "body"
+          }
+        },
+        "bdb97ceb-daab-4df5-adcb-e065f97587a4": {
+          "type": "button",
+          "settings": {
+            "button_label": "Order Now",
+            "button_link": "shopify:\/\/products\/snow-water-fountain"
+          }
+        }
+      },
+      "block_order": [
+        "114a6a9c-d081-433f-9c5a-b8237832d62d",
+        "26ddd2d8-64aa-4dc9-9c76-5ef8c492307f",
+        "c9b3591e-43bd-4702-a221-39745862b472",
+        "bdb97ceb-daab-4df5-adcb-e065f97587a4"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2.png",
+        "image_mob": "shopify:\/\/shop_images\/pet_water_fountain.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "chek_wth": true,
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "6f0b4fa8-7e93-4e1a-afa6-f5d4251a03bb": {
+      "type": "image-with-text",
+      "blocks": {
+        "fc4fb405-237f-49ad-8360-08d59e943c3d": {
+          "type": "heading",
+          "settings": {
+            "heading": "Pet Feeder",
+            "heading_size": "h1"
+          }
+        },
+        "e608b2f7-eaaa-4229-ae14-3b78d9950643": {
+          "type": "caption",
+          "disabled": true,
+          "settings": {
+            "caption": "Odor free • Perfectly safe • Eco friendly",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "6a6d3929-789c-4f10-9adf-208661400374": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Always Fresh, Always Tasty<\/p>",
+            "text_style": "body"
+          }
+        },
+        "c89c77a0-e141-48f4-ad24-9fdc00a779f8": {
+          "type": "button",
+          "settings": {
+            "button_label": "Order Now",
+            "button_link": "shopify:\/\/products\/snow-pet-feeder"
+          }
+        }
+      },
+      "block_order": [
+        "fc4fb405-237f-49ad-8360-08d59e943c3d",
+        "e608b2f7-eaaa-4229-ae14-3b78d9950643",
+        "6a6d3929-789c-4f10-9adf-208661400374",
+        "c89c77a0-e141-48f4-ad24-9fdc00a779f8"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3_9428679a-9340-47d4-a9f2-2a29b948cb8d.png",
+        "image_mob": "shopify:\/\/shop_images\/9.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "chek_wth": true,
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "2156df71-f54e-4c02-9cf2-21ca2e6640b3": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17467597848898__2156df71-f54e-4c02-9cf2-21ca2e6640b3-1674893959ac81b555-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Accessories",
+            "heading_size": "h1"
+          }
+        },
+        "e30db171-09c3-4b6c-904f-9843e040c85c": {
+          "type": "caption",
+          "disabled": true,
+          "settings": {
+            "caption": "Odor free • Perfectly safe • Eco friendly",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--17467597848898__2156df71-f54e-4c02-9cf2-21ca2e6640b3-1674893959ac81b555-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Seamlessly switch and choose the accessories you need with PetSnowy.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--17467597848898__2156df71-f54e-4c02-9cf2-21ca2e6640b3-1674893959ac81b555-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Order Now",
+            "button_link": "shopify:\/\/collections\/accessories"
+          }
+        }
+      },
+      "block_order": [
+        "template--17467597848898__2156df71-f54e-4c02-9cf2-21ca2e6640b3-1674893959ac81b555-0",
+        "e30db171-09c3-4b6c-904f-9843e040c85c",
+        "template--17467597848898__2156df71-f54e-4c02-9cf2-21ca2e6640b3-1674893959ac81b555-1",
+        "template--17467597848898__2156df71-f54e-4c02-9cf2-21ca2e6640b3-1674893959ac81b555-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/6.png",
+        "image_mob": "shopify:\/\/shop_images\/20000_90dd37c3-17fd-448d-95d7-fb451ddbec3b.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "chek_wth": true,
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "59cbf865-96b8-4f8e-bbc8-a09e5361bd0a": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "template--17467597848898__59cbf865-96b8-4f8e-bbc8-a09e5361bd0a-1674893959ac81b555-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Effortless, Convenient, and Sanitary",
+            "heading_size": "h1"
+          }
+        },
+        "502459ec-b352-4c06-8d74-c526c3de791c": {
+          "type": "caption",
+          "settings": {
+            "caption": "self-sealing • 2 weeks free of scooping • Patented design",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--17467597848898__59cbf865-96b8-4f8e-bbc8-a09e5361bd0a-1674893959ac81b555-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Always find an odorless and dry waste bag ready to be disposed of. The cleanest cat waste disposal experience ever.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--17467597848898__59cbf865-96b8-4f8e-bbc8-a09e5361bd0a-1674893959ac81b555-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17467597848898__59cbf865-96b8-4f8e-bbc8-a09e5361bd0a-1674893959ac81b555-0",
+        "502459ec-b352-4c06-8d74-c526c3de791c",
+        "template--17467597848898__59cbf865-96b8-4f8e-bbc8-a09e5361bd0a-1674893959ac81b555-1",
+        "template--17467597848898__59cbf865-96b8-4f8e-bbc8-a09e5361bd0a-1674893959ac81b555-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2_3_d6d3015b-46b7-4d0e-8d41-53838683a50e.jpg",
+        "image_mob": "shopify:\/\/shop_images\/2_3_d6d3015b-46b7-4d0e-8d41-53838683a50e.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "chek_wth": true,
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "63ae6bb5-a879-46a7-b71a-11f65c5a7540": {
+      "type": "order-banner",
+      "disabled": true,
+      "settings": {
+        "bg_color": "#9b8e84",
+        "heading": "WE'VE LAUNCHED ON INDIEGOGO",
+        "color_1": "#ffffff",
+        "text": "<p>Pre-order & save 40% today.<\/p>",
+        "color_2": "#231f20",
+        "btn": "GET 40% OFF",
+        "url": "https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/reft\/31445254\/official",
+        "checked": false,
+        "color_3": "#ffffff",
+        "bg_color_1": "",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "795de943-6d66-469a-a56d-fcb3eae9b719": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "template--17467597848898__795de943-6d66-469a-a56d-fcb3eae9b719-1674893959ac81b555-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Cleanest Litter Box Yet",
+            "heading_size": "h1"
+          }
+        },
+        "437d7119-9ff3-434f-aeda-0fe4194f036a": {
+          "type": "caption",
+          "settings": {
+            "caption": "curved walkway • SNOW⁺ litter mat • side entrance",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--17467597848898__795de943-6d66-469a-a56d-fcb3eae9b719-1674893959ac81b555-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Designed with intention, the curved walkway with mat was crafted to both leave the litter in and the doorway clean. <\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--17467597848898__795de943-6d66-469a-a56d-fcb3eae9b719-1674893959ac81b555-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17467597848898__795de943-6d66-469a-a56d-fcb3eae9b719-1674893959ac81b555-0",
+        "437d7119-9ff3-434f-aeda-0fe4194f036a",
+        "template--17467597848898__795de943-6d66-469a-a56d-fcb3eae9b719-1674893959ac81b555-1",
+        "template--17467597848898__795de943-6d66-469a-a56d-fcb3eae9b719-1674893959ac81b555-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3_5.jpg",
+        "image_mob": "shopify:\/\/shop_images\/3_5_8ca7eb0b-8ad1-4a55-9920-4eab9a45b9fb.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "chek_wth": true,
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "de4fda5f-1bfb-4e31-bc30-d09f6003b3b0": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "1a8d2345-4373-4343-8389-ca6eadafe472": {
+          "type": "heading",
+          "settings": {
+            "heading": "And Safest, Ever",
+            "heading_size": "h1"
+          }
+        },
+        "1c9554fc-6ac9-4d4a-b7e8-b891ce8dbd53": {
+          "type": "caption",
+          "settings": {
+            "caption": "smart sensors • anti-clamp • app notification",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "64de43ac-ab84-4ae8-adf0-c08ae5756c4c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Safety is of utmost important, the integrated SnowSafe⁺ System continuously analyzes 4 zones to ensure kitty’s safety.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "a3be7240-58d5-42a2-bfc0-20072efd72c4": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1a8d2345-4373-4343-8389-ca6eadafe472",
+        "1c9554fc-6ac9-4d4a-b7e8-b891ce8dbd53",
+        "64de43ac-ab84-4ae8-adf0-c08ae5756c4c",
+        "a3be7240-58d5-42a2-bfc0-20072efd72c4"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/5_17_e5407a1a-2006-4aa7-87a8-59fcfbdca28f.jpg",
+        "image_mob": "shopify:\/\/shop_images\/5_17_5b1f9aec-966f-4c8a-bc06-4cf8a0872bdc.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "chek_wth": true,
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1a68b06c-9a8f-424a-828f-27b2a7caa93f": {
+      "type": "order-banner",
+      "disabled": true,
+      "settings": {
+        "bg_color": "#9b8e84",
+        "heading": "WE'VE LAUNCHED ON INDIEGOGO",
+        "color_1": "#ffffff",
+        "text": "<p>Pre-order & save 40% today.<\/p>",
+        "color_2": "#231f20",
+        "btn": "GET 40% OFF",
+        "url": "https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/reft\/31445254\/official",
+        "checked": false,
+        "color_3": "#ffffff",
+        "bg_color_1": "",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "6f24ef9b-1b0a-4c9f-a933-f24eb5a7519c": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "f5b1ced4-5365-40f5-85fd-b2d70aea8deb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Mobile Control",
+            "heading_size": "h1"
+          }
+        },
+        "60746cde-f2f7-413b-96fd-a992ea4457b5": {
+          "type": "caption",
+          "settings": {
+            "caption": "Real-Time Tracking • Cat Recognition • Health Insights • Multi-cat friendly",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "cdb84009-4dfc-49a0-9bc4-5fd5c2e0539d": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Check kitty’s usage, waste drawer fullness, and more with just a tap in the PetSnowy app.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "fe40bb62-f0d0-4f41-b1bd-7adad09eac21": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "f5b1ced4-5365-40f5-85fd-b2d70aea8deb",
+        "60746cde-f2f7-413b-96fd-a992ea4457b5",
+        "cdb84009-4dfc-49a0-9bc4-5fd5c2e0539d",
+        "fe40bb62-f0d0-4f41-b1bd-7adad09eac21"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/6_1_dc205fa0-eba3-4afe-9077-7d7161831b77.jpg",
+        "image_mob": "shopify:\/\/shop_images\/6_1_92c42148-4bb9-404a-9f75-814e30ec2682.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "chek_wth": true,
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "c6039a2c-5205-40be-b384-dc3d8dad5ae5": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "504657c9-7966-4843-a9bc-86153279d9de": {
+          "type": "heading",
+          "settings": {
+            "heading": "Super Easy to Assemble, Extremely Easy to Clean",
+            "heading_size": "h1"
+          }
+        },
+        "aa05ac42-462a-4dc5-8480-506de60a8b88": {
+          "type": "caption",
+          "settings": {
+            "caption": "Everything Magnetic • high-grade materials • fine craftsmanship",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "3db08574-e82e-4cd4-91eb-7dd2dfea17cf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Each part seamlessly attaches to and detaches from the next one. Effortlessly assemble and disassemble to clean when necessary.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "e68b81ed-f1de-4544-a3dd-442076c7a18c": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "504657c9-7966-4843-a9bc-86153279d9de",
+        "aa05ac42-462a-4dc5-8480-506de60a8b88",
+        "3db08574-e82e-4cd4-91eb-7dd2dfea17cf",
+        "e68b81ed-f1de-4544-a3dd-442076c7a18c"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/4_11.jpg",
+        "image_mob": "shopify:\/\/shop_images\/4_11_a945091b-6b52-4ad6-ae88-c8a518eed752.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "chek_wth": true,
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "3444a146-c629-42e2-9633-14507157400c": {
+      "type": "order-banner",
+      "disabled": true,
+      "settings": {
+        "bg_color": "#9b8e84",
+        "heading": "WE'VE LAUNCHED ON INDIEGOGO",
+        "color_1": "#ffffff",
+        "text": "<p>Pre-order & save 40% today.<\/p>",
+        "color_2": "#231f20",
+        "btn": "GET 40% OFF",
+        "url": "https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/reft\/31445254\/official",
+        "checked": false,
+        "color_3": "#ffffff",
+        "bg_color_1": "",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    }
+  },
+  "order": [
+    "ec8a39b8-e172-48e1-97d9-303c35a74add",
+    "1675073699d2592d6f",
+    "96cf2d8f-6b1b-4e8d-a8e0-8a3893561b06",
+    "7d1d48f6-00fe-4356-99c7-9d214d6d40f5",
+    "587d7593-4e25-4243-8dae-eca9c97405ff",
+    "e99f3d28-6eeb-4201-a162-82c8ea639dbd",
+    "5adf9f25-788e-4bc2-9df4-6dd4b70dcd25",
+    "9d073bf4-1f1f-4ef2-9353-1ab70e3af03f",
+    "df50b571-6844-460d-9370-da015c04fe08",
+    "4353e4b5-17b8-45b2-854b-23a61108cc1d",
+    "e185eedd-f6fa-487a-8f06-87235f3962d7",
+    "cbbdfcad-ab0a-472e-bbc7-014a03018817",
+    "9c771907-c1de-4e4e-be72-6f07dd064f05",
+    "f116373d-7e8f-4acc-8617-7f4054321218",
+    "474a142c-30b6-42b8-b833-e96a0de7922c",
+    "6f0b4fa8-7e93-4e1a-afa6-f5d4251a03bb",
+    "2156df71-f54e-4c02-9cf2-21ca2e6640b3",
+    "59cbf865-96b8-4f8e-bbc8-a09e5361bd0a",
+    "63ae6bb5-a879-46a7-b71a-11f65c5a7540",
+    "795de943-6d66-469a-a56d-fcb3eae9b719",
+    "de4fda5f-1bfb-4e31-bc30-d09f6003b3b0",
+    "1a68b06c-9a8f-424a-828f-27b2a7caa93f",
+    "6f24ef9b-1b0a-4c9f-a933-f24eb5a7519c",
+    "c6039a2c-5205-40be-b384-dc3d8dad5ae5",
+    "3444a146-c629-42e2-9633-14507157400c"
+  ]
+}

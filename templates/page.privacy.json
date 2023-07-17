@@ -1,0 +1,65 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "f6ba4064-d571-4e5f-b741-780fdf670d0e": {
+      "type": "information-section",
+      "disabled": true,
+      "settings": {
+        "heading": "Privacy",
+        "text": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>",
+        "padding_top": 50,
+        "padding_bottom": 60
+      }
+    },
+    "2124b9b6-07ef-4416-868f-339de8545666": {
+      "type": "custom-image-text",
+      "disabled": true,
+      "blocks": {
+        "327a8596-cb01-41ec-90bf-7a4fe6615683": {
+          "type": "heading",
+          "settings": {
+            "heading": "Effortless, Convenient, and Sanitary",
+            "heading_size": "h2"
+          }
+        },
+        "f5fb4328-6540-42a8-a2c4-bb52374f8c9b": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry.<\/p><p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p><p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<\/p><p><strong> It was popularised in the 1960s.<\/strong><\/p><p><strong> <\/strong>with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p><p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p><p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "327a8596-cb01-41ec-90bf-7a4fe6615683",
+        "f5fb4328-6540-42a8-a2c4-bb52374f8c9b"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1_3_b3611787-0b37-4063-973e-d27ad48f3266.jpg",
+        "image_mob": "shopify:\/\/shop_images\/1_3_b3611787-0b37-4063-973e-d27ad48f3266.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "chek_wth": false,
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f6ba4064-d571-4e5f-b741-780fdf670d0e",
+    "2124b9b6-07ef-4416-868f-339de8545666"
+  ]
+}
