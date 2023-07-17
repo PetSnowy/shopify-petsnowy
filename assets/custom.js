@@ -275,7 +275,6 @@ $(document).ready(function () {
 		}
 	}
 	$(".itg_drop_var > .itg_drop_var_align_div").click(function () {
-		console.log($(this).index());
 		const newUrl = updateQueryStringParameter(window.location.href, 'id', `${shoppingUrl.get($(this).index())}`);
 		window.history.replaceState({
 			path: newUrl
