@@ -2964,7 +2964,6 @@ html {
   right: 0;
   left: 0;
   width: 100%;
-  border: none;
 }
 .shopify-section-header-sticky sticky-header.itg_overlap_header.header-wrapper {
   background-color: #231f20 !important;
@@ -2998,6 +2997,7 @@ html {
   color: #fff;
 }
 .header__menu-item svg.icon.icon-caret {
+	transition: all 0.3s ease;
   color: #000;
   top: calc(35% - 0rem);
   height: 0.7rem;

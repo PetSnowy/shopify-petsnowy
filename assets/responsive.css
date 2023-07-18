@@ -123,10 +123,6 @@
 }
 
 @media screen and (max-width: 989px) {
-  .itg_overlap_header {
-    position: relative;
-    background-color: #231f20 !important;
-  }
   a.menu-drawer__menu-item {
     font-size: 15px;
     text-transform: uppercase;
@@ -973,10 +969,6 @@ h2.footer-block__heading {
     width: 40px;
     height: 40px;
     font-size: 35px;
-  }
-  .index .itg_overlap_header {
-    background-color: transparent !important;
-    position: absolute;
   }
 }
 

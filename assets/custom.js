@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 	$(".slide_arrow svg").click(function () {
-		$("html, body").animate({ scrollTop: "+=850px" }, 500);
+		document.querySelector('.banner__box').scrollIntoView({ behavior: "smooth", block: "center" })
 	});
 
 	//Contact scroll js 
