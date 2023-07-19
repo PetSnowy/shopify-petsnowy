@@ -1,15 +1,15 @@
 {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
 
 {% comment %}
-{%- assign pageUrlWithoutHost = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | replace:'\/','/' | replace:'%20',' ' | replace:'\u0026','&' | replace:'www.petsnowy.com/cart?customcart=',''-%}
-{%- assign pageUrlWithoutHost = contentForQuerystring | split: '"pageurl":"' | last | split: '"' | first | split: '.myshopify.com' | last | split: '/cart?customcart=' | last-%}
+  {%- assign pageUrlWithoutHost = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | replace:'\/','/' | replace:'%20',' ' | replace:'\u0026','&' | replace:'www.petsnowy.com/cart?customcart=',''-%}
+  {%- assign pageUrlWithoutHost = contentForQuerystring | split: '"pageurl":"' | last | split: '"' | first | split: '.myshopify.com' | last | split: '/cart?customcart=' | last-%}
 {% endcomment %}
 
 {% comment %}
-{%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last | replace:'\/','/' | replace:'%20',' ' | replace:'\u0026','&' -%}
-{% assign handle = pageUrl|split:'=' %}
-{% assign mainProduct  = handle[1] %}
-{%- assign main_product = all_products[mainProduct] -%}
+  {%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last | replace:'\/','/' | replace:'%20',' ' | replace:'\u0026','&' -%}
+  {% assign handle = pageUrl|split:'=' %}
+  {% assign mainProduct  = handle[1] %}
+  {%- assign main_product = all_products[mainProduct] -%}
 {% endcomment %}
 
 {%- capture sizes -%}
@@ -18,10 +18,14 @@
 
 {%- assign main_collection = collections[section.settings.collection_list] -%}
 
-<div class="custom_product_data" id="custom_product_data" data-carthandle="{{ mainProduct}}" cart-url="cart?customcart=">
- <div class="product_details_show">
-   
-  {% comment %}mian_image_div{% endcomment %}
+<div
+  class="custom_product_data"
+  id="custom_product_data"
+  data-carthandle="{{ mainProduct}}"
+  cart-url="cart?customcart="
+>
+  <div class="product_details_show">
+    {% comment %}mian_image_div{% endcomment %}
     <div class="product_details_image">
       <div class="page-width">
         <div class="logo_show">
@@ -46,7 +50,12 @@
         </div>
         <div class="prod_cus_images">
           {%- for main_product_detail in main_collection.products -%}
-            <div class="main_full_img main_prodcut_contain" data-id="{{ main_product_detail.id }}" data-handle="{{ main_product_detail.handle }}" style="display:none;">
+            <div
+              class="main_full_img main_prodcut_contain"
+              data-id="{{ main_product_detail.id }}"
+              data-handle="{{ main_product_detail.handle }}"
+              style="display:none;"
+            >
               {% if main_product_detail.featured_image != blank %}
                 <img src="{{ main_product_detail.featured_image | img_url: 'master' }}">
               {% endif %}
@@ -59,24 +68,24 @@
                 <div class="policy_list">
                   <div>{% render 'policy-icon' %}</div>
                   {% if section.settings.icon_text_1 != blank %}
-                   <span>{{ section.settings.icon_text_1 }}</span>
-                  {% endif %} 
+                    <span>{{ section.settings.icon_text_1 }}</span>
+                  {% endif %}
                 </div>
               </li>
               <li class="returns">
                 <div class="policy_list">
                   <div>{% render 'return-icon' %}</div>
                   {% if section.settings.icon_text_2 != blank %}
-                   <span>{{ section.settings.icon_text_2 }}</span>
-                  {% endif %} 
+                    <span>{{ section.settings.icon_text_2 }}</span>
+                  {% endif %}
                 </div>
               </li>
               <li class="warranty">
                 <div class="policy_list">
                   <div>{% render 'warranty-icon' %}</div>
                   {% if section.settings.icon_text_3 != blank %}
-                   <span>{{ section.settings.icon_text_3 }}</span>
-                  {% endif %} 
+                    <span>{{ section.settings.icon_text_3 }}</span>
+                  {% endif %}
                 </div>
               </li>
             </ul>
@@ -84,421 +93,521 @@
         </div>
       </div>
     </div>
-  {% comment %}end_mian_image_div{% endcomment %}
+    {% comment %}end_mian_image_div{% endcomment %}
 
- {% comment %}main_right_sidebar{% endcomment %}
-   <div class="product_details_data">
-    
-
+    {% comment %}main_right_sidebar{% endcomment %}
+    <div class="product_details_data">
       <div class="tab_buttons">
-      
-        <button id="itg_tabs_links" class="tablinks active" data-tab="first_step">{{ section.settings.tab_1 }}</button>      
-        <button id="itg_tabs_links" class="tablinks" data-tab="second_step">{{ section.settings.tab_2 }}</button> 
-      {% comment %}
-        <button class="tablinks" data-tab="third_step">{{ section.settings.tab_3 }}</button>
-      {% endcomment %}
-      
+        <button id="itg_tabs_links" class="tablinks active" data-tab="first_step">{{ section.settings.tab_1 }}</button>
+        <button id="itg_tabs_links" class="tablinks" data-tab="second_step">{{ section.settings.tab_2 }}</button>
+        {% comment %}
+          <button class="tablinks" data-tab="third_step">{{ section.settings.tab_3 }}</button>
+        {% endcomment %}
+
         <button id="itg_tabs_links" class="tablinks" data-tab="fourth_step">{{ section.settings.tab_4 }}</button>
       </div>
 
-     <div class="tab_button_contents">
-
-    
+      <div class="tab_button_contents">
         <div id="tab1" class="tabcontent tabcontent_first" data-content="first_step">
-          
-           <h3 class="choose_configure_product">{{ section.settings.configure_head }}</h3>
-           {% if section.settings.text_tb_1 != blank %}
-             <div class="tabs_extradata">{{ section.settings.text_tb_1 }}</div>
-           {% endif %}
+          <h3 class="choose_configure_product">{{ section.settings.configure_head }}</h3>
+          {% if section.settings.text_tb_1 != blank %}
+            <div class="tabs_extradata">{{ section.settings.text_tb_1 }}</div>
+          {% endif %}
 
-            
-               <div class="chs_align_div">
-                 {% for main_product_detail in main_collection.products %}
-                   <h2 class="main_prodcut_contain" data-handle="{{ main_product_detail.handle }}" style="display:none;">{{ main_product_detail.title }}</h2>
-                 {% endfor %}
-                 <button id="btn_change_product" class="btn_change_product">Change</button>
-              </div>
+          <div class="chs_align_div">
+            {% for main_product_detail in main_collection.products %}
+              <h2 class="main_prodcut_contain" data-handle="{{ main_product_detail.handle }}" style="display:none;">
+                {{ main_product_detail.title }}
+              </h2>
+            {% endfor %}
+            <button id="btn_change_product" class="btn_change_product">Change</button>
+          </div>
 
-              <div class="change_selected_product">
-                <ul>
-                 {% for product_change in main_collection.products %}
-                   {% assign variantid = '' %}
-                   {% assign variantprice = '' %}
-                     {% for variant_change in product_change.variants %}                
-                       {% assign variantid = product_change.selected_or_first_available_variant.id %} 
-                       {% assign variantprice = variant_change.price %}
-                     {% endfor %}
-                   
-                     <li class="replace_products_li" replace_data="{{ product_change.handle }}" value="{{ variantid }}">
-                       <div class="replace_product_main">
-                        <input class="replace_input" type="checkbox" id="{{ product_change.handle }}" value="{{ variantid }}"
-                          data-replaceprice="{{ variantprice | money }}">
-                   
-                          <label class="{% unless product_change.has_only_default_variant %}hide_change_mainproduct {% endunless %} productlabel_info main_product_label" data-chnage="{{ product_change.handle }}" for="?customcart={{ product_change.handle }}">
-                            
-                            <div class="add_list_product_image">
-                             <img src="{{  product_change.featured_image | img_url: '100X100' }}">
-                            </div>
-                            
-                            <div class="add_list_product_data">
-                              <div class="price_title_align">
-                                <h3>{{ product_change.title }}</h3>
-                                  <div class="replace_product_pricealign">
-                                    <span class="replace_product_pricecompare">{{ product_change.compare_at_price_min | money }}</span>
-                                  <span>{{ variantprice | money }}</span>                       
-                                 </div>
+          <div class="change_selected_product">
+            <ul>
+              {% for product_change in main_collection.products %}
+                {% assign variantid = '' %}
+                {% assign variantprice = '' %}
+                {% for variant_change in product_change.variants %}
+                  {% assign variantid = product_change.selected_or_first_available_variant.id %}
+                  {% assign variantprice = variant_change.price %}
+                {% endfor %}
+
+                <li class="replace_products_li" replace_data="{{ product_change.handle }}" value="{{ variantid }}">
+                  <div class="replace_product_main">
+                    <input
+                      class="replace_input"
+                      type="checkbox"
+                      id="{{ product_change.handle }}"
+                      value="{{ variantid }}"
+                      data-replaceprice="{{ variantprice | money }}"
+                    >
+
+                    <label
+                      class="{% unless product_change.has_only_default_variant %}hide_change_mainproduct {% endunless %} productlabel_info main_product_label"
+                      data-chnage="{{ product_change.handle }}"
+                      for="?customcart={{ product_change.handle }}"
+                    >
+                      <div class="add_list_product_image">
+                        <img src="{{  product_change.featured_image | img_url: '100X100' }}">
+                      </div>
+
+                      <div class="add_list_product_data">
+                        <div class="price_title_align">
+                          <h3>{{ product_change.title }}</h3>
+                          <div class="replace_product_pricealign">
+                            <span class="replace_product_pricecompare">
+                              {{- product_change.compare_at_price_min | money -}}
+                            </span>
+                            <span>{{ variantprice | money }}</span>
+                          </div>
+                        </div>
+                        <div class="add_descriptions">{{ product_change.description }}</div>
+                      </div>
+
+                      <div class="check_product_addons">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="#231f20"
+                          stroke-width="2.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-check"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </div>
+                    </label>
+
+                    <!-- Changed Product Related variants -->
+                    {% if product_change.has_only_default_variant %}
+                    {% else %}
+                      <div class="product_related_variant_list">
+                        {% for variant in product_change.variants %}
+                          {% assign changedvarimg = variant.image | img_url: 'master' %}
+                          {% assign changedvarprice = variant.price %}
+                          {% if variant.compare_at_price > variant.price %}
+                            {% assign changedcompareprice = variant.compare_at_price %}
+                          {% endif %}
+                          {% assign changedvarid = variant.id %}
+                          {% assign Changedtitle = variant.title %}
+                          <label
+                            class="itg_variant_labledata main_productvaraint_label"
+                            variant-main-title="{{ Changedtitle | handleize }}"
+                            variant-main-id="{{ changedvarid }}"
+                            for="?customcart={{ product_change.handle }}"
+                            variant-main-compareprice="{{ changedcompareprice | money_without_currency }}"
+                            variant-main-price="{{ changedvarprice | money_without_currency }}"
+                            variant-main-image="{{ changedvarimg }}"
+                            variant-main-lablename="{{ Changedtitle }}"
+                          >
+                            <div class="changed_pro_variantlist">
+                              <div class="change_variant_img">
+                                {% if changedvarimg != blank %}
+                                  <img src="{{ changedvarimg }}">
+                                {% endif %}
                               </div>
-                              <div class="add_descriptions">{{ product_change.description }}</div>
+                              <div class="change_variant_datatext">
+                                <div class="change_variant_datatext_price">
+                                  <h3>{{ Changedtitle }}</h3>
+                                  <div class="changed_variant_price_align">
+                                    <span class="changed_variant_price_compare">{{ changedcompareprice | money }}</span>
+                                    <span class="changed_variant_price_main">{{ changedvarprice | money }}</span>
+                                  </div>
+                                </div>
+                                <p>{{ variant.metafields.custom.variant_description }}</p>
+                              </div>
                             </div>
-                            
-                            <div class="check_product_addons">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                            <div class="check_product_variant">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#231f20"
+                                stroke-width="2.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-check"
+                              >
                                 <polyline points="20 6 9 17 4 12"></polyline>
                               </svg>
-                            </div>         
+                            </div>
                           </label>
-
-                <!-- Changed Product Related variants -->
-                    {% if product_change.has_only_default_variant %}                
-                    {% else %} 
-                         
-                     <div class="product_related_variant_list">     
-                     {% for variant in product_change.variants %}
-                      {% assign changedvarimg = variant.image | img_url: 'master' %}
-                      {% assign changedvarprice = variant.price %}
-                      {% if variant.compare_at_price > variant.price %}
-                        {% assign changedcompareprice = variant.compare_at_price %}
-                      {% endif %}
-                      {% assign changedvarid = variant.id %} 
-                      {% assign Changedtitle = variant.title %}                                            
-                      <label class="itg_variant_labledata main_productvaraint_label" variant-main-title="{{ Changedtitle | handleize }}"
-                       variant-main-id="{{ changedvarid }}" for="?customcart={{ product_change.handle }}" 
-                       variant-main-compareprice="{{ changedcompareprice | money_without_currency }}" variant-main-price="{{ changedvarprice | money_without_currency }}"
-                       variant-main-image="{{ changedvarimg }}" variant-main-lablename="{{ Changedtitle }}">                      
-                        <div class="changed_pro_variantlist">
-                          <div class="change_variant_img">
-                            {% if changedvarimg != blank %}
-                              <img src="{{ changedvarimg }}">              
-                            {% endif %}
-                          </div>
-                          <div class="change_variant_datatext">
-                           <div class="change_variant_datatext_price">
-                              <h3>{{ Changedtitle }}</h3>
-                             <div class="changed_variant_price_align">
-                             <span class="changed_variant_price_compare">{{ changedcompareprice | money }}</span>
-                             <span class="changed_variant_price_main">{{ changedvarprice | money }}</span>
-                           </div>
-                           </div>
-                            <p>{{ variant.metafields.custom.variant_description }}</p>
-                          </div>  
-                        </div>
-                          <div class="check_product_variant">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                              fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"
-                             ><polyline points="20 6 9 17 4 12"></polyline></svg>
-                          </div>                       
-                        </label>  
-                       {% endfor %}
-                     </div>
-                                    
+                        {% endfor %}
+                      </div>
                     {% endif %}
-                      <!-- Changed Product Related variants --> 
-                         
-                       </div>
-                     </li>
-                  
-                 {% endfor %}
-                 </ul>
-              </div>
+                    <!-- Changed Product Related variants -->
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
 
-              {% for main_product_detail in main_collection.products %}
-                 <div class="variant_data_loop main_prodcut_contain" data-handle="{{ main_product_detail.handle }}" style="display:none;">
-                  {% if main_product_detail.has_only_default_variant %}
-                     <span id="first_product" data-first="{{ main_product_detail.selected_or_first_available_variant.id }}"></span>
-                  {% else %}
-                      {% for option in main_product_detail.options_with_values %}
-                         <legend class="form__label">
-                          {{ option.name }}
-                          <span class="variant-label__value" data-color-label="{{ option.selected_value }}">
-                            {{- option.selected_value -}}
-                          </span>
-                        </legend>
-                        <div class="itg_drop_var">
-                          {%- for value in option.values -%}
-                          <div class="itg_drop_var_align_div">    
-                            <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" name="{{ option.name }}"
-                               data-value="{{ value | handleize }}"  value="{{ value | escape }}" form="{{ product_form_id }}"
-                             {% if option.selected_value == value %}checked{% endif %} {% if option_disabled %}class="disabled"{% endif %}
-                            >
-                            {% assign varimg = '' %}
-                            {% assign varprice = '' %}
-                            {% assign compareprice = '' %}
-                            {% assign variantdescription = '' %}
-                            {% for variant in main_product_detail.variants %}
-                              {% if variant.title contains value %}
-                                {% assign varimg = variant.image | img_url: 'master' %}
-                                {% assign varprice = variant.price | money_without_currency %}
-                                {% assign varid = variant.id %}
-                                {% assign variantdescription = variant.metafields.custom.variant_description %}
-                                  {% if variant.compare_at_price > variant.price %}
-                                    {% assign compareprice = variant.compare_at_price | money_without_currency %}
-                                  {% endif %}
-                              {% endif %}
-                            {% endfor %}
+          {% for main_product_detail in main_collection.products %}
+            <div
+              class="variant_data_loop main_prodcut_contain"
+              data-handle="{{ main_product_detail.handle }}"
+              style="display:none;"
+            >
+              {% if main_product_detail.has_only_default_variant %}
+                <span
+                  id="first_product"
+                  data-first="{{ main_product_detail.selected_or_first_available_variant.id }}"
+                ></span>
+              {% else %}
+                {% for option in main_product_detail.options_with_values %}
+                  <legend class="form__label">
+                    {{ option.name }}
+                    <span class="variant-label__value" data-color-label="{{ option.selected_value }}">
+                      {{- option.selected_value -}}
+                    </span>
+                  </legend>
+                  <div class="itg_drop_var">
+                    {%- for value in option.values -%}
+                      <div class="itg_drop_var_align_div">
+                        <input
+                          type="radio"
+                          id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                          name="{{ option.name }}"
+                          data-value="{{ value | handleize }}"
+                          value="{{ value | escape }}"
+                          form="{{ product_form_id }}"
+                          {% if option.selected_value == value %}
+                            checked
+                          {% endif %}
+                          {% if option_disabled %}
+                            class="disabled"
+                          {% endif %}
+                        >
+                        {% assign varimg = '' %}
+                        {% assign varprice = '' %}
+                        {% assign compareprice = '' %}
+                        {% assign variantdescription = '' %}
+                        {% for variant in main_product_detail.variants %}
+                          {% if variant.title contains value %}
+                            {% assign varimg = variant.image | img_url: 'master' %}
+                            {% assign varprice = variant.price | money_without_currency %}
+                            {% assign varid = variant.id %}
+                            {% assign variantdescription = variant.metafields.custom.variant_description %}
+                            {% if variant.compare_at_price > variant.price %}
+                              {% assign compareprice = variant.compare_at_price | money_without_currency %}
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
 
-                           <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                            data_var_price="{{ varprice }}"
-                            main-id="{{ varid }}"
-                            main-compare="{{ compareprice }}"
-                           >
-                             
-                          <div class="itg_drop_var_align_img">  
+                        <label
+                          for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                          data_var_price="{{ varprice }}"
+                          main-id="{{ varid }}"
+                          main-compare="{{ compareprice }}"
+                        >
+                          <div class="itg_drop_var_align_img">
                             {% if varimg != blank %}
                               <img src="{{ varimg }}">
                             {% else %}
                               <p>{{ value }}</p>
                             {% endif %}
                           </div>
-                          <div class="itg_drop_var_align_content">   
+                          <div class="itg_drop_var_align_content">
                             <p>{{ variantdescription }}</p>
                           </div>
-                             
-                            <div class="check_product_variant">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"
-                               >
+
+                          <div class="check_product_variant">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="#231f20"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-check"
+                            >
                               <polyline points="20 6 9 17 4 12"></polyline>
-                              </svg>
-                            </div>
-                             
-                           </label>    
-                        </div>
-                          {%- endfor -%}
-                        </div>
-                      {% endfor %}
-                  {% endif %}
-                </div>
-              {% endfor %}
-              
+                            </svg>
+                          </div>
+                        </label>
+                      </div>
+                    {%- endfor -%}
+                  </div>
+                {% endfor %}
+              {% endif %}
+            </div>
+          {% endfor %}
         </div>
 
-       <div id="tab2" class="tabcontent tabcontent_second" data-content="second_step">
-         
+        <div id="tab2" class="tabcontent tabcontent_second" data-content="second_step">
           {% if section.settings.text_tb_2 != blank %}
             <div class="tabs_extradata">{{ section.settings.text_tb_2 }}</div>
           {% endif %}
-           <div class="addons_productlist first_addons">
-              {% for main_product_detail in main_collection.products %}
-                 {%- assign product_list = main_product_detail.metafields.custom.addons_product.value -%}
-                
-                <div class="main_addons_product main_prodcut_contain" data-handle="{{ main_product_detail.handle }}" style="display:none;">
-                  {% for product_addons in product_list %}
-                    
-                    {% assign inc_value = product_addons.first_available_variant.price | times: 20 | divided_by: 100  %}
-                    {% assign product_price = product_addons.first_available_variant.price  %}
-                    {% assign final_inc = inc_value | minus: product_price %}
+          <div class="addons_productlist first_addons">
+            {% for main_product_detail in main_collection.products %}
+              {%- assign product_list = main_product_detail.metafields.custom.addons_product.value -%}
 
-                    <div class="add_list_product first_addons_qty">
-                      
-                      <input class="addons_input" type="checkbox" id="{{ product_addons.title }}" value="{{ product_addons.first_available_variant.id }}"
-                       data-addonprice="{{ final_inc | money_without_currency | remove: '-' }}"
-                       >
-                      <label class="productlabel_info" for="{{ product_addons.title }}">
-                        
-                         <div class="add_list_product_image">
-                            <img src="{{  product_addons.featured_image | img_url: '100X100' }}">
-                         </div>
-                    
-                         <div class="add_list_product_data">
+              <div
+                class="main_addons_product main_prodcut_contain"
+                data-handle="{{ main_product_detail.handle }}"
+                style="display:none;"
+              >
+                {% for product_addons in product_list %}
+                  {% assign inc_value = product_addons.first_available_variant.price | times: 20 | divided_by: 100 %}
+                  {% assign product_price = product_addons.first_available_variant.price %}
+                  {% assign final_inc = inc_value | minus: product_price %}
 
-                           <div class="price_title_align">
-                            <h3>{{ product_addons.title }}</h3>
-                            <span class="price_without_discount">{{ product_addons.first_available_variant.price | money }}</span>
-                            <span class="price_with_discount">{{ final_inc | money | remove: '-' }}</span>
-                           </div>
-                    
-                           {{ product_addons.description }}
-
-                            <div class="quantity_addons">
-                                <label class="form__label" for="Quantity-{{ section.id }}">
-                                  {{ 'products.product.quantity.label' | t }}
-                                </label>
-                                <quantity-input class="quantity">
-                                  <button class="quantity__button qty_itg no-js-hidden" name="minus" type="button">
-                                    {% render 'icon-minus' %}
-                                  </button>
-                                  <input
-                                    class="quantity__input"
-                                    type="number"
-                                    name="quantity"
-                                    id="Quantity-{{ section.id }}"
-                                    min="1"
-                                    value="1"
-                                    qty-price="{{ final_inc | money_without_currency | remove: '-'  }}"
-                                    form="{{ product_form_id }}"
-                                    readonly
-                                  >
-                                  <button class="quantity__button qty_itg no-js-hidden" name="plus" type="button">
-                                    {% render 'icon-plus' %}
-                                  </button>
-                                </quantity-input>
-                            </div>
-                           
-                         </div>
-
-                         <div class="check_product_addons">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                              width="24"  height="24" viewBox="0 0 24 24" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round"
-                              stroke-linejoin="round" class="feather feather-check">
-                              <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                         </div>
-                        
-                      </label>
-                      
-                    </div>
-                     
-                  {% endfor %}
-                </div>
-             
-              {% endfor %}
-           </div>
-         
-       </div>
-
-       <div id="tab3" class="tabcontent tabcontent_third" data-content="third_step">
-         
-         {% for main_product_detail in main_collection.products %}
-           
-          {% if main_product_detail.metafields.custom.insurance_product.value != blank %}
-            <div class="tabs_extradata main_prodcut_contain" data-handle="{{ main_product_detail.handle }}" style="display:none;">
-              {{ section.settings.text_tb_3 }}
-            </div>
-          {% endif %}
-
-          <div class="insurance_product insurance_product_first main_prodcut_contain" data-handle="{{ main_product_detail.handle }}" style="display:none;">
-             {% if main_product_detail.metafields.custom.insurance_product.value != blank %} 
-                 {%- assign collection_insurance_coll = main_product_detail.metafields.custom.insurance_product.value -%}
-                 <ul>
-                   {% for product_insurance in collection_insurance_coll %}
-                      <li class="insurance_product_li" replace_data="{{ product_insurance.handle }}" value="{{ product_insurance.first_available_variant.id }}">
-                      <div class="insurance_product_main">
-                       <input class="insurance_product_input" type="checkbox" id="{{ product_insurance.handle }}" value="{{ product_insurance.first_available_variant.id }}"
-                      data-replaceprice="{{ product_insurance.first_available_variant.price | money_without_currency }}"
+                  <div class="add_list_product first_addons_qty">
+                    <input
+                      class="addons_input"
+                      type="checkbox"
+                      id="{{ product_addons.title }}"
+                      value="{{ product_addons.first_available_variant.id }}"
+                      data-addonprice="{{ final_inc | money_without_currency | remove: '-' }}"
                     >
-                     <label class="productlabel_info" for="{{ product_insurance.handle }}">
-                        <div class="add_list_product_image">
-                          <img src="{{  product_insurance.featured_image | img_url: '100X100' }}">
+                    <label class="productlabel_info" for="{{ product_addons.title }}">
+                      <div class="add_list_product_image">
+                        <img src="{{  product_addons.featured_image | img_url: '100X100' }}">
+                      </div>
+
+                      <div class="add_list_product_data">
+                        <div class="price_title_align">
+                          <h3>{{ product_addons.title }}</h3>
+                          <span class="price_without_discount">
+                            {{- product_addons.first_available_variant.price | money -}}
+                          </span>
+                          <span class="price_with_discount">{{ final_inc | money | remove: '-' }}</span>
                         </div>
-                        <div class="add_list_product_data">
-                          <div class="price_title_align">
-                            <h3>{{ product_insurance.title }}</h3>
-                            <span>{{ product_insurance.first_available_variant.price | money }}</span>
-                          </div>
-                          {{ product_insurance.description }}
+
+                        {{ product_addons.description }}
+
+                        <div class="quantity_addons">
+                          <label class="form__label" for="Quantity-{{ section.id }}">
+                            {{ 'products.product.quantity.label' | t }}
+                          </label>
+                          <quantity-input class="quantity">
+                            <button class="quantity__button qty_itg no-js-hidden" name="minus" type="button">
+                              {% render 'icon-minus' %}
+                            </button>
+                            <input
+                              class="quantity__input"
+                              type="number"
+                              name="quantity"
+                              id="Quantity-{{ section.id }}"
+                              min="1"
+                              value="1"
+                              qty-price="{{ final_inc | money_without_currency | remove: '-'  }}"
+                              form="{{ product_form_id }}"
+                              readonly
+                            >
+                            <button class="quantity__button qty_itg no-js-hidden" name="plus" type="button">
+                              {% render 'icon-plus' %}
+                            </button>
+                          </quantity-input>
                         </div>
-                       <div class="check_product_addons">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#231f20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                      </div>
+
+                      <div class="check_product_addons">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="#231f20"
+                          stroke-width="2.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-check"
+                        >
                           <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                       </div>
-                      </label>
+                    </label>
+                  </div>
+                {% endfor %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div id="tab3" class="tabcontent tabcontent_third" data-content="third_step">
+          {% for main_product_detail in main_collection.products %}
+            {% if main_product_detail.metafields.custom.insurance_product.value != blank %}
+              <div
+                class="tabs_extradata main_prodcut_contain"
+                data-handle="{{ main_product_detail.handle }}"
+                style="display:none;"
+              >
+                {{ section.settings.text_tb_3 }}
+              </div>
+            {% endif %}
+
+            <div
+              class="insurance_product insurance_product_first main_prodcut_contain"
+              data-handle="{{ main_product_detail.handle }}"
+              style="display:none;"
+            >
+              {% if main_product_detail.metafields.custom.insurance_product.value != blank %}
+                {%- assign collection_insurance_coll = main_product_detail.metafields.custom.insurance_product.value -%}
+                <ul>
+                  {% for product_insurance in collection_insurance_coll %}
+                    <li
+                      class="insurance_product_li"
+                      replace_data="{{ product_insurance.handle }}"
+                      value="{{ product_insurance.first_available_variant.id }}"
+                    >
+                      <div class="insurance_product_main">
+                        <input
+                          class="insurance_product_input"
+                          type="checkbox"
+                          id="{{ product_insurance.handle }}"
+                          value="{{ product_insurance.first_available_variant.id }}"
+                          data-replaceprice="{{ product_insurance.first_available_variant.price | money_without_currency }}"
+                        >
+                        <label class="productlabel_info" for="{{ product_insurance.handle }}">
+                          <div class="add_list_product_image">
+                            <img src="{{  product_insurance.featured_image | img_url: '100X100' }}">
+                          </div>
+                          <div class="add_list_product_data">
+                            <div class="price_title_align">
+                              <h3>{{ product_insurance.title }}</h3>
+                              <span>{{ product_insurance.first_available_variant.price | money }}</span>
+                            </div>
+                            {{ product_insurance.description }}
+                          </div>
+                          <div class="check_product_addons">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="#231f20"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="feather feather-check"
+                            >
+                              <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                          </div>
+                        </label>
                       </div>
                     </li>
-                   {%  endfor %}
-                 </ul>
-             {%  endif %}
-         </div>
-         
-        {% endfor %}
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
 
-       </div>
-
-       <div id="tab4" class="tabcontent tabcontent_fourth" data-content="fourth_step">
-
-  
+        <div id="tab4" class="tabcontent tabcontent_fourth" data-content="fourth_step">
           {% if section.settings.text_tb_4 != blank %}
             <div class="tabs_extradata">{{ section.settings.text_tb_4 }}</div>
           {% endif %}
 
-           <div class="main_product_summary">
-             
-             <div class="summary_list_products">
-               <h3>Product</h3>
-               <a href="javascript:void(0);" id="edit_step-nav-trigger" class="step-nav-trigger">Edit configuration</a>
-             </div>
+          <div class="main_product_summary">
+            <div class="summary_list_products">
+              <h3>Product</h3>
+              <a href="javascript:void(0);" id="edit_step-nav-trigger" class="step-nav-trigger">Edit configuration</a>
+            </div>
 
-              <ul>
-                {% for main_product_detail in main_collection.products %}
-                  
-                   {% assign variantid = main_product_detail.variants.first.id %} 
-                   {% assign variantprice = main_product_detail.first_available_variant.price %}
-                   {% assign variantprice_comapre = main_product_detail.first_available_variant.compare_at_price %}
-                    
-                  <li class="replace_products_li" replace_data="{{ main_product_detail.handle }}" value="{{ variantid }}">
-                    <div class="replace_product_main">
-                     <input class="replace_input" type="checkbox" id="{{ main_product_detail.handle }}" value="{{ variantid }}"
-                      data-replaceprice="{{ variantprice | money }}">
+            <ul>
+              {% for main_product_detail in main_collection.products %}
+                {% assign variantid = main_product_detail.variants.first.id %}
+                {% assign variantprice = main_product_detail.first_available_variant.price %}
+                {% assign variantprice_comapre = main_product_detail.first_available_variant.compare_at_price %}
 
-                      <div class="productlabel_info" for="{{ main_product_detail.handle }}">
-                        <div class="add_list_product_data">
-                          <div class="price_title_align">
-                            <h3>{{ main_product_detail.title }}</h3>
+                <li class="replace_products_li" replace_data="{{ main_product_detail.handle }}" value="{{ variantid }}">
+                  <div class="replace_product_main">
+                    <input
+                      class="replace_input"
+                      type="checkbox"
+                      id="{{ main_product_detail.handle }}"
+                      value="{{ variantid }}"
+                      data-replaceprice="{{ variantprice | money }}"
+                    >
 
-                            <button type="button" id="main_product_remove" remove-handle="{{ main_product_detail.handle }}" class="bin_icon" data-del="{{ variantid }}">
-                              {% render 'icon-remove' %}
-                            </button>
-                            
-                            <div class="quantity_main_product_summary">
-                                <quantity-input class="quantity">
-                                  <button class="quantity__button qty_itg no-js-hidden" name="minus" type="button">
-                                    {% render 'icon-minus' %}
-                                  </button>
-                                  <input
-                                    class="quantity__input"
-                                    type="number"
-                                    name="quantity"
-                                    min="1"
-                                    value="1"
-                                    form="{{ product_form_id }}"
-                                    readonly
-                                  >
-                                  <button class="quantity__button qty_itg no-js-hidden" name="plus" type="button">
-                                    {% render 'icon-plus' %}
-                                  </button>
-                                </quantity-input>
-                            </div>
-                            
-                           <div class="main_price_compare_arrange">
-                            <span class="price_without_discount"><span>$ {{ variantprice_comapre | money_without_currency }}</span></span>
-                            <span class="price_with_discount"> <span>{{- variantprice | money -}} </span></span>
-                           </div> 
-                          
+                    <div class="productlabel_info" for="{{ main_product_detail.handle }}">
+                      <div class="add_list_product_data">
+                        <div class="price_title_align">
+                          <h3>{{ main_product_detail.title }}</h3>
+
+                          <button
+                            type="button"
+                            id="main_product_remove"
+                            remove-handle="{{ main_product_detail.handle }}"
+                            class="bin_icon"
+                            data-del="{{ variantid }}"
+                          >
+                            {% render 'icon-remove' %}
+                          </button>
+
+                          <div class="quantity_main_product_summary">
+                            <quantity-input class="quantity">
+                              <button class="quantity__button qty_itg no-js-hidden" name="minus" type="button">
+                                {% render 'icon-minus' %}
+                              </button>
+                              <input
+                                class="quantity__input"
+                                type="number"
+                                name="quantity"
+                                min="1"
+                                value="1"
+                                form="{{ product_form_id }}"
+                                readonly
+                              >
+                              <button class="quantity__button qty_itg no-js-hidden" name="plus" type="button">
+                                {% render 'icon-plus' %}
+                              </button>
+                            </quantity-input>
+                          </div>
+
+                          <div class="main_price_compare_arrange">
+                            <span class="price_without_discount"
+                              ><span>$ {{ variantprice_comapre | money_without_currency }}</span></span
+                            >
+                            <span class="price_with_discount">
+                              <span>{{- variantprice | money -}}</span></span
+                            >
                           </div>
                         </div>
                       </div>
-                    </div>  
-                 </li>
-                {% endfor %}
-              </ul>
-           </div>
+                    </div>
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
 
-
-         {% for main_product_detail in main_collection.products %} 
-  	       <ul class="summary_productlist second_addons main_prodcut_contain" data-handle="{{ main_product_detail.handle }}" style="display:none;">
-            <h3>{{ section.settings.summary_addonstitle }}</h3>
+          {% for main_product_detail in main_collection.products %}
+            <ul
+              class="summary_productlist second_addons main_prodcut_contain"
+              data-handle="{{ main_product_detail.handle }}"
+              style="display:none;"
+            >
+              <h3>{{ section.settings.summary_addonstitle }}</h3>
               {%- assign product_list = main_product_detail.metafields.custom.addons_product.value -%}
               {% for product_addons in product_list %}
                 <li class="add_list_product second_addons_qty">
-                  
-                  <div class="summarylist_product_data" data-finlid="{{ product_addons.first_available_variant.id }}" data-finalqty="1">
+                  <div
+                    class="summarylist_product_data"
+                    data-finlid="{{ product_addons.first_available_variant.id }}"
+                    data-finalqty="1"
+                  >
                     <div class="summary_title_align">
                       <h3>{{ product_addons.title }}</h3>
-          
-  				  <button type="button" class="bin_icon" data-del="{{ product_addons.first_available_variant.id }}">
-  				  {% render 'icon-remove' %}
-  				  </button>
-         
+
+                      <button type="button" class="bin_icon" data-del="{{ product_addons.first_available_variant.id }}">
+                        {% render 'icon-remove' %}
+                      </button>
+
                       <div class="quantity_addons_summary">
                         <label class="form__label" for="Quantity-{{ section.id }}">
                           {{ 'products.product.quantity.label' | t }}
@@ -521,22 +630,27 @@
                           </button>
                         </quantity-input>
                       </div>
-                      
-                  {% assign inc_value = product_addons.first_available_variant.price | times: 20 | divided_by: 100  %}
-                  {% assign product_price = product_addons.first_available_variant.price  %}
-                  {% assign final_inc = inc_value | minus: product_price %}              
-                       <div class="second_adones_price" style="display:none;">{{ final_inc | money_without_currency | remove: '-' }}</div>
-                     <div class="main_price_compare_arrange">
-                      <span class="cart_add_spanprice price_without_discount">
-                        <span class="summary_price" data-summary="">
-                          {{- product_addons.first_available_variant.price | money -}}                 
-                        </span>                     
-                      </span>
-                      <span class="price_with_discount">{{ final_inc | money | remove: '-' }}</span>
-                    </div>
+
+                      {% assign inc_value = product_addons.first_available_variant.price
+                        | times: 20
+                        | divided_by: 100
+                      %}
+                      {% assign product_price = product_addons.first_available_variant.price %}
+                      {% assign final_inc = inc_value | minus: product_price %}
+                      <div class="second_adones_price" style="display:none;">
+                        {{ final_inc | money_without_currency | remove: '-' }}
+                      </div>
+                      <div class="main_price_compare_arrange">
+                        <span class="cart_add_spanprice price_without_discount">
+                          <span class="summary_price" data-summary="">
+                            {{- product_addons.first_available_variant.price | money -}}
+                          </span>
+                        </span>
+                        <span class="price_with_discount">{{ final_inc | money | remove: '-' }}</span>
+                      </div>
                     </div>
                   </div>
-  				
+
                   <div class="check_product_addons">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -555,124 +669,140 @@
                   </div>
                 </li>
               {% endfor %}
-           </ul>
-		{% endfor %}
-
-    {% for main_product_detail in main_collection.products %} 
-  		<div class="insurance_product insurance_product_second main_prodcut_contain" data-handle="{{ main_product_detail.handle }}" style="display:none;">
-  	   {%- assign collection_insurance_coll = main_product_detail.metafields.custom.insurance_product.value -%}
-  		  {% if main_product_detail.metafields.custom.insurance_product.value != blank %}
-  			<h3>{{ section.settings.summary_warrantytitle }}</h3>
-  		  {% endif %}
-  		<ul>
-  		  {%- for product_insurance in collection_insurance_coll -%}          
-  			<li class="insurance_product_li" replace_data="{{ product_insurance.handle }}" value="{{ product_insurance.first_available_variant.id }}">
-  			  <div class="insurance_product_main">
-  				  <div class="price_title_align">
-  				<h3>{{ product_insurance.title }}</h3>
-  				<button type="button" class="service_remove_items" data-del="{{ product_insurance.first_available_variant.id }}">
-  				{% render 'icon-remove' %}
-  				</button>
-  					<span>{{ product_insurance.first_available_variant.price | money }}</span>
-  				  </div>
-  			  </div>
-  			</li>
-  		  {%- endfor -%}
-  		</ul>
-  	  </div>
-  	{% endfor %}
-
-      </div>
-         
-  </div>
-       
-    <footer id="subtotal" data-subtotal-standalone="0">
-      <div class="total_prices">
-        <h3 class="h6">Total</h3>
-         <div class="amount">
-           {% for main_product_detail in main_collection.products %}
-            <strong class="total-price main_prodcut_contain" data-handle="{{ main_product_detail.handle }}" style="display:none;">
-              {% assign varmainprice = '' %}
-              {% assign varmainprice = main_product_detail.first_available_variant.price %}
-              <span class="total_price_add" data-addon="{{ varmainprice | money_without_currency }}" data_price="{{ varmainprice | money_without_currency }}">
-                {{- varmainprice | money -}}
-              </span>
-            </strong>
+            </ul>
           {% endfor %}
-         </div>
+
+          {% for main_product_detail in main_collection.products %}
+            <div
+              class="insurance_product insurance_product_second main_prodcut_contain"
+              data-handle="{{ main_product_detail.handle }}"
+              style="display:none;"
+            >
+              {%- assign collection_insurance_coll = main_product_detail.metafields.custom.insurance_product.value -%}
+              {% if main_product_detail.metafields.custom.insurance_product.value != blank %}
+                <h3>{{ section.settings.summary_warrantytitle }}</h3>
+              {% endif %}
+              <ul>
+                {%- for product_insurance in collection_insurance_coll -%}
+                  <li
+                    class="insurance_product_li"
+                    replace_data="{{ product_insurance.handle }}"
+                    value="{{ product_insurance.first_available_variant.id }}"
+                  >
+                    <div class="insurance_product_main">
+                      <div class="price_title_align">
+                        <h3>{{ product_insurance.title }}</h3>
+                        <button
+                          type="button"
+                          class="service_remove_items"
+                          data-del="{{ product_insurance.first_available_variant.id }}"
+                        >
+                          {% render 'icon-remove' %}
+                        </button>
+                        <span>{{ product_insurance.first_available_variant.price | money }}</span>
+                      </div>
+                    </div>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </div>
+          {% endfor %}
+        </div>
       </div>
-      <div class="action_buttons">
+
+      <footer id="subtotal" data-subtotal-standalone="0">
+        <div class="total_prices">
+          <h3 class="h6">Total</h3>
+          <div class="amount">
+            {% for main_product_detail in main_collection.products %}
+              <strong
+                class="total-price main_prodcut_contain"
+                data-handle="{{ main_product_detail.handle }}"
+                style="display:none;"
+              >
+                {% assign varmainprice = '' %}
+                {% assign varmainprice = main_product_detail.first_available_variant.price %}
+                <span
+                  class="total_price_add"
+                  data-addon="{{ varmainprice | money_without_currency }}"
+                  data_price="{{ varmainprice | money_without_currency }}"
+                >
+                  {{- varmainprice | money -}}
+                </span>
+              </strong>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="action_buttons">
           {% if section.settings.delivery_terms != blank %}
             <span class="delivery_terms">{{ section.settings.delivery_terms }}</span>
           {% endif %}
 
-          
           <ul class="addons_pagination previous_pagination_addons">
-            <li class="next prv_step_second" data-tab="prv_step_second" data-step="first_step" style="display:none;">{% render 'icon-arrow' %} Previous step </li>
-            <li class="next prv_step_fourth" data-tab="prv_step_fourth" data-step="second_step" style="display:none;">{% render 'icon-arrow' %} Previous step </li>
-          </ul>
-        
-          <ul class="addons_pagination next_pagination_addons">
-            <li class="next first_step" data-tab="first_step">Next step {% render 'icon-arrow' %}</li>
-            <li class="next second_step" data-tab="second_step" style="display:none;">Next step {% render 'icon-arrow' %}</li>
-
-          {% comment %}
-            <li class="next third_step" data-tab="third_step" style="display:none;">Next step {% render 'icon-arrow' %}</li>
-          {% endcomment %}  
-            <li id="final_order" class="next_four fourth_step" data-tab="fourth_step" style="display:none;">
-              <span class="final_order_texts">  Order now {% render 'icon-arrow' %}</span>
-               <span class="final_order_loader">{% render 'loader' %}</span>
+            <li class="next prv_step_second" data-tab="prv_step_second" data-step="first_step" style="display:none;">
+              {% render 'icon-arrow' %} Previous step
+            </li>
+            <li class="next prv_step_fourth" data-tab="prv_step_fourth" data-step="second_step" style="display:none;">
+              {% render 'icon-arrow' %} Previous step
             </li>
           </ul>
-        
-      </div>
-    </footer>
-     
-     
-   </div>
- {% comment %}end_main_right_sidebar{% endcomment %}
-    
- </div>
+
+          <ul class="addons_pagination next_pagination_addons">
+            <li class="next first_step" data-tab="first_step">Next step {% render 'icon-arrow' %}</li>
+            <li class="next second_step" data-tab="second_step" style="display:none;">
+              Next step {% render 'icon-arrow' %}
+            </li>
+
+            {% comment %}
+              <li class="next third_step" data-tab="third_step" style="display:none;">Next step {% render 'icon-arrow' %}</li>
+            {% endcomment %}
+            <li id="final_order" class="next_four fourth_step" data-tab="fourth_step" style="display:none;">
+              <span class="final_order_texts"> Order now {% render 'icon-arrow' %}</span>
+              <span class="final_order_loader">{% render 'loader' %}</span>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    {% comment %}end_main_right_sidebar{% endcomment %}
+  </div>
 </div>
 
-  <script>
-  $(document).ready(function(){
+<script>
+  $(document).ready(function () {
+    var pathname = window.location.href;
 
-   var pathname = window.location.href;  
- 
-   if(pathname == 'https://www.petsnowy.com/cart'){
-   
-       $.ajax({
-          type: "POST",
-          url: '/cart/clear.js',
-          dataType: 'json',
-          success: function(res) {
-            clear();
-          },
-          error:function(error) {
-             clear();
-          }
+    if (pathname == 'https://www.petsnowy.com/cart') {
+      $.ajax({
+        type: 'POST',
+        url: '/cart/clear.js',
+        dataType: 'json',
+        success: function (res) {
+          clear();
+        },
+        error: function (error) {
+          clear();
+        },
       });
 
-       function clear(){
-          var product_handle = localStorage.getItem("product_handle");
-          var addons_data = localStorage.getItem("addons_data");
-          if(product_handle != null){
-             var origin = window.location.origin;
-             var cart_url_final = origin+'/cart?customcart='+product_handle;
-             var obj = { Title: 'ChangeUrl', Url: cart_url_final };  
-             history.pushState(obj, obj.Title, obj.Url);
-             //window.location.assign(cart_url_final);
-          }
-          if(addons_data != null){
-            $(document).find("#custom_product_data").html(addons_data);
-          }
-          $(document).find("span.final_order_loader").hide();
-          $(document).find("span.final_order_texts").show();
-       }
-        
-   }
-  
+      function clear() {
+        var product_handle = localStorage.getItem('product_handle');
+        var addons_data = localStorage.getItem('addons_data');
+        if (product_handle != null) {
+          var origin = window.location.origin;
+          var cart_url_final = origin + '/cart?customcart=' + product_handle;
+          var obj = { Title: 'ChangeUrl', Url: cart_url_final };
+          history.pushState(obj, obj.Title, obj.Url);
+          //window.location.assign(cart_url_final);
+        }
+        if (addons_data != null) {
+          $(document).find('#custom_product_data').html(addons_data);
+        }
+        $(document).find('span.final_order_loader').hide();
+        $(document).find('span.final_order_texts').show();
+      }
+    }
+
     // var searchParams = new URLSearchParams(window.location.search);
     // var paramhandle = searchParams.get('customcart');
     // if(paramhandle != undefined){
@@ -686,15 +816,14 @@
     //   });
     // }
 
-     $(document).on("click",".next_four.fourth_step",function() {
-        $(document).find("span.final_order_loader").show();
-        $(document).find("span.final_order_texts").hide();
-      
-      setTimeout(function() {
-        $('span.final_order_loader').hide();  
+    $(document).on('click', '.next_four.fourth_step', function () {
+      $(document).find('span.final_order_loader').show();
+      $(document).find('span.final_order_texts').hide();
+
+      setTimeout(function () {
+        $('span.final_order_loader').hide();
       }, 8000);
     });
-    
   });
 </script>
 {% schema %}
@@ -726,12 +855,12 @@
       "id": "configure_head",
       "label": "Choose Product heading"
     },
-     {
+    {
       "type": "collection",
       "id": "collection_list",
       "label": "Choose Collection list"
     },
-     {
+    {
       "type": "textarea",
       "id": "text_tb_1",
       "label": "Tab Content"
@@ -751,7 +880,7 @@
       "id": "tab_3",
       "label": "Tab Third"
     },
-     {
+    {
       "type": "textarea",
       "id": "text_tb_3",
       "label": "Tab Content"
@@ -766,7 +895,7 @@
       "id": "tab_4",
       "label": "Tab Fourth"
     },
-   {
+    {
       "type": "textarea",
       "id": "text_tb_4",
       "label": "Tab Content"
@@ -790,7 +919,7 @@
       "id": "icon_text_3",
       "label": " Text 3"
     },
-   {
+    {
       "type": "text",
       "id": "summary_addonstitle",
       "label": "Summary Add-ons Title"
@@ -815,962 +944,979 @@
 {% endschema %}
 
 <style>
-.itg_drop_var {
-  display: block;
-}
-.itg_drop_var input {
-  display: none;
-}
-.itg_drop_var label {
-  cursor: pointer;
-  flex: 1;
-  position: relative;
-  border: 1px solid #e9e9e9;
-  border-radius: 8px;
-  padding: 12px 10px;
-  background: none;
-  text-align: center;
-  line-height: normal;
-}
-.itg_drop_var_align_img {
+  .itg_drop_var {
+    display: block;
+  }
+  .itg_drop_var input {
+    display: none;
+  }
+  .itg_drop_var label {
+    cursor: pointer;
+    flex: 1;
+    position: relative;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    padding: 12px 10px;
+    background: none;
+    text-align: center;
+    line-height: normal;
+  }
+  .itg_drop_var_align_img {
     width: 20%;
-}
-.itg_drop_var_align_content {
+  }
+  .itg_drop_var_align_content {
     width: 80%;
     padding-left: 15px;
-}
-.itg_drop_var input:checked+label {
-  background: #f4f4f4;
-  border-color: #231f20;
-}
-.prod_cus_images img {
+  }
+  .itg_drop_var input:checked + label {
+    background: #f4f4f4;
+    border-color: #231f20;
+  }
+  .prod_cus_images img {
     margin: 0 auto;
     display: block;
     width: 100%;
     height: 100%;
     object-fit: contain;
-}
-.product_details_show {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.prod_cus_images {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.main_full_img {
+  }
+  .product_details_show {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .prod_cus_images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .main_full_img {
     width: 500px;
     height: 600px;
     margin: 0 auto;
     padding: 20px 0;
-}
-.listed_main_data {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 20px 0;
-}
-legend.form__label {
-  font-size: 18px;
-  color: #231F20;
-}
-legend.form__label span.variant-label__value {
-  opacity: 0.9;
-  font-size: 16px;
-  padding-left: 5px;
-}
-.product_details_image {
-  width: 65%;
-  padding: 20px 0;
-  position: relative;
-}
-.product_details_data {
-  width: 35%;
-  background: #fff;
-  padding: 20px;
-  position: relative;
-  height: 100vh;
-}
-.variant_data_loop option {
-  cursor: pointer;
-}
-.variant_data_loop fieldset {
-  border: none;
-}
-.variant_data_loop img {
-  width: 100%;
-  background: #ece2da;
-  object-fit: cover;
-}
-.adds_cart .announcement-bar-section, .adds_cart sticky-header.header-wrapper, .adds_cart footer.footer {
-  display: none;
-}
-.addons_productlist {
-  padding: 20px 0;
-}
-label.productlabel_info {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px 12px;
-  border: 1px solid #e9e9e9;
-  border-radius: 8px;
-  position: relative;
-}
-.add_list_product, .replace_product_main, .insurance_product_main {
-  margin: 10px 0;
-}
-.add_list_product_image {
-  width: 20%;
-}
-.add_list_product_data {
-  width: 80%;
-  padding-left: 15px;
-}
-.price_title_align {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.price_title_align h3 {
-  color: #231f20;
-  margin: 0;
-  font-size: 15px;
-}
-.price_title_align span, .summary_title_align span{
-  color: #231f20;
-  font-weight: 700;
-  font-size: 16px;
-}
-.add_list_product_data p {
-  margin-bottom: 0;
-  margin-top: 2px;
-  font-size: 14px;
-  line-height: 1.5;
-}
-.amount strong.total-price span.total_price_add, .total_prices h3.h6 {
-   font-size: 20px;
-   color: #231f20;
-}
-.tabcontent {
-  display: none; 
-}
-div#tab1 {
-  display: block;
-}
-.tab_buttons {
-  padding: 10px 0 20px;
-  border-bottom: 1px solid #d2d2d2;
-  margin-bottom: 20px;
-}
-button.tablinks {
-  font-size: 18px;
-  background: transparent;
-  border: none;
-  padding-right: 10px;
-  color: #231f20;
-  font-family: SUISSE_INT_L_MEDIUM!important;
-  font-weight: 500!important;
-  opacity: 0.3;
-  transition: .35s cubic-bezier(.42,0,.002,1);
-  cursor: pointer;
-}
-button.tablinks.active {
-  opacity: 1;
-}
-body.adds_cart {
-  background: #ece2da;
-}
-button.btn.btn--rounded.btn--plain span {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border: 0;
-  padding: 12px 18px;
-  cursor: pointer;
-  font: inherit;
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: rgb(var(--color-button-text));
-  transition: box-shadow var(--duration-short) ease;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: rgba(var(--color-button),var(--alpha-button-background));
-  border-radius: 50px;
-}
-button.btn.btn--rounded.btn--plain {
-  background: transparent;
-  border: none;
-}
-.add_list_product_image img {
-  width: 100%;
-  height: 90px;
-  object-fit: contain;
-  display: block;
-}
-footer#subtotal {
-  position: absolute;
-  bottom: 0;
-  background: #f4f4f4;
-  right: 0;
-  left: 0;
-  padding: 20px;
-  z-index: 1;
-}
-.tab_button_contents {
-  overflow-y: scroll;
-  height: 400px;
-  overflow-x: hidden;
-}
-.add_list_product input.addons_input, .replace_product_main input {
-  display: none;
-}
-.total_prices {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 20px;
-}
-.total_prices h3.h6 {
-  margin: 0;
-}
-.action_buttons {
-  border-top: 1px solid #d2d2d2;
-  padding-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-}
-span.delivery_terms {
-    font-family: SUISSE_INT_L_MEDIUM!important;
-    font-weight: 500!important;
-    font-size: 14px;
-    color: #231f20;
-}
-.itg_drop_var label p {
-  margin-bottom: 0;
-  margin-top: 0;
-  font-size: 14px;
-  line-height: 1.5;
-  text-align: left;
-}
-.tab_button_contents::-webkit-scrollbar {
-   width: 4px;   
-   border-radius: 10px;
-}
-.tab_button_contents::-webkit-scrollbar-thumb {
-    background: #231f20;
-}
-.tab_button_contents::-webkit-scrollbar-track {
-    background: #fff;
-}
-.tabs_extradata {
-  border-bottom: 1px solid #d2d2d2;
-  padding-bottom: 20px;
-  font-size: 18px;
-  text-transform: capitalize;
-  line-height: 1.5;
-}
-.add_list_product input:checked+label,
-.replace_product_main input:checked+label,
-.insurance_product_main input:checked+label.productlabel_info{
-  background: #f4f4f4;
-  border-color: #231f20;
-}
-.check_product_addons {
-  position: absolute;
-  top: 8%;
-  left: 70px;
-  right: auto;
-  transform: translateY(-8%);
-  background: #ffffff;
-  padding: 4px;
-  border-radius: 50px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  display: none;
-  text-align: center;
-}
-.add_list_product input:checked+label .check_product_addons,
-.itg_drop_var input:checked+label .check_product_variant,
-.replace_product_main input:checked+label .check_product_addons,
-.insurance_product_main input:checked+label .check_product_addons{
-  display: block;
-}
-.check_product_variant {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
-  width: max-content;
-  margin: 0 auto;
-  background: #ffffff;
-  padding: 4px;
-  border-radius: 50px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  display: none;
-  text-align: center;
-}
-svg.feather.feather-check {
-  width: 16px;
-  font-size: 16px;
-  line-height: 16px;
-}
-ul.listed_ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-ul.listed_ul li {
-  width: 33.33%;
-  text-align: center;
-  list-style-type: none;
-}
-.policy_list span {
-  font-family: SUISSE_INT_L_MEDIUM!important;
-  font-weight: 500!important;
-  font-size: 14px;
-  color: #231f20;
-}
-.policy_list {
-  line-height: 20px;
-}
-.quantity_addons label.form__label, .quantity_addons {
-  display: none;
-}
-.add_list_product input:checked+label  .quantity_addons {
-  display: block;
-}
-.quantity_addons .quantity {
-  width: calc(11rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
-  min-height: calc((var(--inputs-border-width) * 2) + 4rem);
-}
-.quantity_addons .quantity .quantity__input {
-  padding:0;
-}
-.quantity_addons_summary label.form__label, .quantity_main_product_summary label.form__label {
-  display: none;
-}
-.quantity_addons_summary .quantity:before, .quantity_addons_summary .quantity:after, 
-.quantity_main_product_summary .quantity:before, .quantity_main_product_summary .quantity:after{
-  box-shadow: none;
-}
-li.add_list_product {
-  list-style-type: none;
-}
-ul.summary_productlist {
-  padding: 0;
-}
-.summary_title_align {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.summary_title_align h3 {
-  width: 60%;
-  font-size: 14px;
-  text-align: left;
-}
-.summary_title_align .quantity_addons_summary {
-  width: 20%;
-}
-.summary_title_align span {
-  width: 20%;
-  text-align: right;
-}
-.summary_title_align .quantity_addons_summary quantity-input.quantity {
-  width: calc(12rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
-}
-.summary_title_align .quantity_addons_summary .quantity__button {
-  width: calc(5rem / var(--font-body-scale));
-}
-ul.second_addons li.add_list_product .summarylist_product_data{
-  display: none;
-}
-ul.second_addons li.add_list_product .summarylist_product_data.show_product {
-  display: block;
-}
-.insurance_product_second li {
-    display: none;
-}
-.insurance_product_second li.show_product {
-    display: block;
-}
-ul.addons_pagination {
-  padding: 0;
-  margin: 0;
-}
-ul.addons_pagination li.next {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0;
-  padding: 10px 18px;
-  cursor: pointer;
-  font: inherit;
-  width: max-content;
-  font-size: 16px;
-  text-decoration: none;
-  color: rgb(var(--color-button-text));
-  transition: box-shadow var(--duration-short) ease;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: rgba(var(--color-button),var(--alpha-button-background));
-  border-radius: 50px;
-  grid-gap: 5px;
-}
-ul.addons_pagination li.next_four {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  border: 0;
-  padding: 12px 18px;
-  cursor: pointer;
-  font: inherit;
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: rgb(var(--color-button-text));
-  transition: box-shadow var(--duration-short) ease;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: rgba(var(--color-button),var(--alpha-button-background));
-  border-radius: 50px;
-}
-.chs_align_div {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
-  align-items: center;
-}
-.chs_align_div h2 {
-  width: 80%;
-  font-size: 20px;
-  margin: 0;
-  color: #231f20;
-  line-height: 1.5;
-}
-.chs_align_div button {
-  font-size: 16px;
-  text-transform: capitalize;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid;
-  width: auto;
-  padding: 0;
-  height: 100%;
-  cursor: pointer;
-  line-height: 0.9;
-}
-.change_selected_product ul, .insurance_product ul {
-    padding: 0;
-}
-.change_selected_product ul li, .insurance_product ul li {
-    list-style-type: none;
-}
-.change_selected_product {
-    border-bottom: 1px solid #d2d2d2;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-h3.choose_configure_product,
-.change_selected_product,
-.insurance_product_main input{
-    display: none;
-}
-.minified_layout h3.choose_configure_product,
-.minified_layout .change_selected_product{
-    display: block;
-}
-.minified_layout button.btn_change_product{
-  display: none;
-}
-ul.summary_productlist.second_addons {
-  border-bottom: 1px solid #e9e9e9;
-  padding: 10px 0;
-}
-button.bin_icon,button.service_remove_items{
-    min-width: 30px;
-    min-height: 30px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-.insurance_product_second .price_title_align h3 {
-    width: 75%;
-}
-.insurance_product_second .price_title_align span {
-    width: 30%;
-    text-align: right;
-}
-.second_addons_qty .summary_title_align {
-    flex-wrap: nowrap;
-}
-.add_descriptions {
-    line-height: 1.5;
-}
-.summary_list_products {
-    display: flex;
-    align-items: center;
-}
-.summary_list_products a {
-    color: #1d1d1d;
-    font-size: 12px;
-    font-weight: normal !important;
-    margin-left: 10px;
-    opacity: 0;
-    transition: .3s cubic-bezier(.42,0,.002,1);
-}
-.summary_list_products:hover a#edit_step-nav-trigger {
-    opacity: 1;
-}
-.summary_list_products h3, ul.summary_productlist.second_addons h3 {
-    margin: 0;
-}
-.main_product_summary ul {
-    padding: 0;
-    margin: 0;
-    border-bottom: 1px solid #e9e9e9;
-}
-.main_product_summary ul li {
-    list-style-type: none;
-}
-.main_product_summary ul li label.productlabel_info {
-    border: none;
-    padding: 5px 0 15px;
-}
-.main_product_summary ul li label.productlabel_info .add_list_product_data {
-    padding: 0;
-  width: 100%;
-}
-.main_product_summary {
-    padding-top: 10px;
-}
-.no_warranty_text {
-    text-align: center;
+  }
+  .listed_main_data {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+  }
+  legend.form__label {
     font-size: 18px;
-}
-span.price_without_discount span {
-    color: #666 !important;
-    font-size: 13px;
-    text-decoration: line-through;
-}
-span.price_without_discount {
-    margin-right: 5px;
-}
-.quantity_main_product_summary input {
-    display: block;
-}
-.quantity_main_product_summary .quantity {
-    width: calc(12rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
-}
-ul.addons_pagination.previous_pagination_addons li svg {
-    transform: rotate(180deg);
-}
-span.final_order_loader {
-    display: none;
-}
-
-span.final_order_loader svg {
-    -webkit-animation: rotating 2s linear infinite;
-}
-@-webkit-keyframes rotating {
-    from{
-        -webkit-transform: rotate(0deg);
-    }
-    to{
-        -webkit-transform: rotate(360deg);
-    }
-}
-ul.addons_pagination li {
-    width: 140px;
-    text-align: center;
-}
-.main_product_summary ul li .productlabel_info {
+    color: #231f20;
+  }
+  legend.form__label span.variant-label__value {
+    opacity: 0.9;
+    font-size: 16px;
+    padding-left: 5px;
+  }
+  .product_details_image {
+    width: 65%;
+    padding: 20px 0;
+    position: relative;
+  }
+  .product_details_data {
+    width: 35%;
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    height: 100vh;
+  }
+  .variant_data_loop option {
+    cursor: pointer;
+  }
+  .variant_data_loop fieldset {
     border: none;
-    padding: 5px 0 15px;
-}
-.main_product_summary .productlabel_info {
+  }
+  .variant_data_loop img {
+    width: 100%;
+    background: #ece2da;
+    object-fit: cover;
+  }
+  .adds_cart .announcement-bar-section,
+  .adds_cart sticky-header.header-wrapper,
+  .adds_cart footer.footer {
+    display: none;
+  }
+  .addons_productlist {
+    padding: 20px 0;
+  }
+  label.productlabel_info {
     display: flex;
     flex-wrap: wrap;
     padding: 10px 12px;
     border: 1px solid #e9e9e9;
     border-radius: 8px;
     position: relative;
-}
-.main_product_summary .add_list_product_data {
-    width: 100%;
-    padding-left: 0px;
-}
-.main_product_summary span {
-  text-align: right;
-}
-.quantity_main_product_summary {
+  }
+  .add_list_product,
+  .replace_product_main,
+  .insurance_product_main {
+    margin: 10px 0;
+  }
+  .add_list_product_image {
     width: 20%;
-}
-.main_product_summary  button.quantity__button {
-    width: calc(5rem / var(--font-body-scale));
-}
-.main_product_summary .price_title_align h3 {
+  }
+  .add_list_product_data {
+    width: 80%;
+    padding-left: 15px;
+  }
+  .price_title_align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .price_title_align h3 {
+    color: #231f20;
+    margin: 0;
+    font-size: 15px;
+  }
+  .price_title_align span,
+  .summary_title_align span {
+    color: #231f20;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .add_list_product_data p {
+    margin-bottom: 0;
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .amount strong.total-price span.total_price_add,
+  .total_prices h3.h6 {
+    font-size: 20px;
+    color: #231f20;
+  }
+  .tabcontent {
+    display: none;
+  }
+  div#tab1 {
+    display: block;
+  }
+  .tab_buttons {
+    padding: 10px 0 20px;
+    border-bottom: 1px solid #d2d2d2;
+    margin-bottom: 20px;
+  }
+  button.tablinks {
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    padding-right: 10px;
+    color: #231f20;
+    font-family: SUISSE_INT_L_MEDIUM !important;
+    font-weight: 500 !important;
+    opacity: 0.3;
+    transition: 0.35s cubic-bezier(0.42, 0, 0.002, 1);
+    cursor: pointer;
+  }
+  button.tablinks.active {
+    opacity: 1;
+  }
+  body.adds_cart {
+    background: #ece2da;
+  }
+  button.btn.btn--rounded.btn--plain span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 12px 18px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(var(--color-button-text));
+    transition: box-shadow var(--duration-short) ease;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgba(var(--color-button), var(--alpha-button-background));
+    border-radius: 50px;
+  }
+  button.btn.btn--rounded.btn--plain {
+    background: transparent;
+    border: none;
+  }
+  .add_list_product_image img {
+    width: 100%;
+    height: 90px;
+    object-fit: contain;
+    display: block;
+  }
+  footer#subtotal {
+    position: absolute;
+    bottom: 0;
+    background: #f4f4f4;
+    right: 0;
+    left: 0;
+    padding: 20px;
+    z-index: 1;
+  }
+  .tab_button_contents {
+    overflow-y: scroll;
+    height: 400px;
+    overflow-x: hidden;
+  }
+  .add_list_product input.addons_input,
+  .replace_product_main input {
+    display: none;
+  }
+  .total_prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  .total_prices h3.h6 {
+    margin: 0;
+  }
+  .action_buttons {
+    border-top: 1px solid #d2d2d2;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  span.delivery_terms {
+    font-family: SUISSE_INT_L_MEDIUM !important;
+    font-weight: 500 !important;
+    font-size: 14px;
+    color: #231f20;
+  }
+  .itg_drop_var label p {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .tab_button_contents::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 10px;
+  }
+  .tab_button_contents::-webkit-scrollbar-thumb {
+    background: #231f20;
+  }
+  .tab_button_contents::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  .tabs_extradata {
+    border-bottom: 1px solid #d2d2d2;
+    padding-bottom: 20px;
+    font-size: 18px;
+    text-transform: capitalize;
+    line-height: 1.5;
+  }
+  .add_list_product input:checked + label,
+  .replace_product_main input:checked + label,
+  .insurance_product_main input:checked + label.productlabel_info {
+    background: #f4f4f4;
+    border-color: #231f20;
+  }
+  .check_product_addons {
+    position: absolute;
+    top: 8%;
+    left: 70px;
+    right: auto;
+    transform: translateY(-8%);
+    background: #ffffff;
+    padding: 4px;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: none;
+    text-align: center;
+  }
+  .add_list_product input:checked + label .check_product_addons,
+  .itg_drop_var input:checked + label .check_product_variant,
+  .replace_product_main input:checked + label .check_product_addons,
+  .insurance_product_main input:checked + label .check_product_addons {
+    display: block;
+  }
+  .check_product_variant {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    width: max-content;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 4px;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: none;
+    text-align: center;
+  }
+  svg.feather.feather-check {
+    width: 16px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  ul.listed_ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  ul.listed_ul li {
+    width: 33.33%;
+    text-align: center;
+    list-style-type: none;
+  }
+  .policy_list span {
+    font-family: SUISSE_INT_L_MEDIUM !important;
+    font-weight: 500 !important;
+    font-size: 14px;
+    color: #231f20;
+  }
+  .policy_list {
+    line-height: 20px;
+  }
+  .quantity_addons label.form__label,
+  .quantity_addons {
+    display: none;
+  }
+  .add_list_product input:checked + label .quantity_addons {
+    display: block;
+  }
+  .quantity_addons .quantity {
+    width: calc(11rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
+    min-height: calc((var(--inputs-border-width) * 2) + 4rem);
+  }
+  .quantity_addons .quantity .quantity__input {
+    padding: 0;
+  }
+  .quantity_addons_summary label.form__label,
+  .quantity_main_product_summary label.form__label {
+    display: none;
+  }
+  .quantity_addons_summary .quantity:before,
+  .quantity_addons_summary .quantity:after,
+  .quantity_main_product_summary .quantity:before,
+  .quantity_main_product_summary .quantity:after {
+    box-shadow: none;
+  }
+  li.add_list_product {
+    list-style-type: none;
+  }
+  ul.summary_productlist {
+    padding: 0;
+  }
+  .summary_title_align {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .summary_title_align h3 {
     width: 60%;
     font-size: 14px;
     text-align: left;
-}
-.main_price_compare_arrange {
+  }
+  .summary_title_align .quantity_addons_summary {
+    width: 20%;
+  }
+  .summary_title_align span {
+    width: 20%;
+    text-align: right;
+  }
+  .summary_title_align .quantity_addons_summary quantity-input.quantity {
+    width: calc(12rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
+  }
+  .summary_title_align .quantity_addons_summary .quantity__button {
+    width: calc(5rem / var(--font-body-scale));
+  }
+  ul.second_addons li.add_list_product .summarylist_product_data {
+    display: none;
+  }
+  ul.second_addons li.add_list_product .summarylist_product_data.show_product {
+    display: block;
+  }
+  .insurance_product_second li {
+    display: none;
+  }
+  .insurance_product_second li.show_product {
+    display: block;
+  }
+  ul.addons_pagination {
+    padding: 0;
+    margin: 0;
+  }
+  ul.addons_pagination li.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 10px 18px;
+    cursor: pointer;
+    font: inherit;
+    width: max-content;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(var(--color-button-text));
+    transition: box-shadow var(--duration-short) ease;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgba(var(--color-button), var(--alpha-button-background));
+    border-radius: 50px;
+    grid-gap: 5px;
+  }
+  ul.addons_pagination li.next_four {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 12px 18px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(var(--color-button-text));
+    transition: box-shadow var(--duration-short) ease;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgba(var(--color-button), var(--alpha-button-background));
+    border-radius: 50px;
+  }
+  .chs_align_div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+  }
+  .chs_align_div h2 {
+    width: 80%;
+    font-size: 20px;
+    margin: 0;
+    color: #231f20;
+    line-height: 1.5;
+  }
+  .chs_align_div button {
+    font-size: 16px;
+    text-transform: capitalize;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    width: auto;
+    padding: 0;
+    height: 100%;
+    cursor: pointer;
+    line-height: 0.9;
+  }
+  .change_selected_product ul,
+  .insurance_product ul {
+    padding: 0;
+  }
+  .change_selected_product ul li,
+  .insurance_product ul li {
+    list-style-type: none;
+  }
+  .change_selected_product {
+    border-bottom: 1px solid #d2d2d2;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  h3.choose_configure_product,
+  .change_selected_product,
+  .insurance_product_main input {
+    display: none;
+  }
+  .minified_layout h3.choose_configure_product,
+  .minified_layout .change_selected_product {
+    display: block;
+  }
+  .minified_layout button.btn_change_product {
+    display: none;
+  }
+  ul.summary_productlist.second_addons {
+    border-bottom: 1px solid #e9e9e9;
+    padding: 10px 0;
+  }
+  button.bin_icon,
+  button.service_remove_items {
+    min-width: 30px;
+    min-height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .insurance_product_second .price_title_align h3 {
+    width: 75%;
+  }
+  .insurance_product_second .price_title_align span {
+    width: 30%;
+    text-align: right;
+  }
+  .second_addons_qty .summary_title_align {
+    flex-wrap: nowrap;
+  }
+  .add_descriptions {
+    line-height: 1.5;
+  }
+  .summary_list_products {
+    display: flex;
+    align-items: center;
+  }
+  .summary_list_products a {
+    color: #1d1d1d;
+    font-size: 12px;
+    font-weight: normal !important;
+    margin-left: 10px;
+    opacity: 0;
+    transition: 0.3s cubic-bezier(0.42, 0, 0.002, 1);
+  }
+  .summary_list_products:hover a#edit_step-nav-trigger {
+    opacity: 1;
+  }
+  .summary_list_products h3,
+  ul.summary_productlist.second_addons h3 {
+    margin: 0;
+  }
+  .main_product_summary ul {
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #e9e9e9;
+  }
+  .main_product_summary ul li {
+    list-style-type: none;
+  }
+  .main_product_summary ul li label.productlabel_info {
+    border: none;
+    padding: 5px 0 15px;
+  }
+  .main_product_summary ul li label.productlabel_info .add_list_product_data {
+    padding: 0;
+    width: 100%;
+  }
+  .main_product_summary {
+    padding-top: 10px;
+  }
+  .no_warranty_text {
+    text-align: center;
+    font-size: 18px;
+  }
+  span.price_without_discount span {
+    color: #666 !important;
+    font-size: 13px;
+    text-decoration: line-through;
+  }
+  span.price_without_discount {
+    margin-right: 5px;
+  }
+  .quantity_main_product_summary input {
+    display: block;
+  }
+  .quantity_main_product_summary .quantity {
+    width: calc(12rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
+  }
+  ul.addons_pagination.previous_pagination_addons li svg {
+    transform: rotate(180deg);
+  }
+  span.final_order_loader {
+    display: none;
+  }
+
+  span.final_order_loader svg {
+    -webkit-animation: rotating 2s linear infinite;
+  }
+  @-webkit-keyframes rotating {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  ul.addons_pagination li {
+    width: 140px;
+    text-align: center;
+  }
+  .main_product_summary ul li .productlabel_info {
+    border: none;
+    padding: 5px 0 15px;
+  }
+  .main_product_summary .productlabel_info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 12px;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    position: relative;
+  }
+  .main_product_summary .add_list_product_data {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .main_product_summary span {
+    text-align: right;
+  }
+  .quantity_main_product_summary {
+    width: 20%;
+  }
+  .main_product_summary button.quantity__button {
+    width: calc(5rem / var(--font-body-scale));
+  }
+  .main_product_summary .price_title_align h3 {
+    width: 60%;
+    font-size: 14px;
+    text-align: left;
+  }
+  .main_price_compare_arrange {
     display: flex;
     flex-wrap: wrap;
     width: 40%;
     justify-content: space-evenly;
-}
-.replace_product_main .price_title_align h3 {
+  }
+  .replace_product_main .price_title_align h3 {
     width: 60%;
-}
-.replace_product_pricealign {
-  width: 35%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: end;
-}
-.replace_product_main .price_title_align {
+  }
+  .replace_product_pricealign {
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+  .replace_product_main .price_title_align {
     align-items: baseline;
-}  
-span.replace_product_pricecompare span {
-  color: #666 !important;
-  font-size: 13px;
-  text-decoration: line-through;
-  padding-right: 8px;
-}
-.main_product_summary .replace_product_main .price_title_align {
+  }
+  span.replace_product_pricecompare span {
+    color: #666 !important;
+    font-size: 13px;
+    text-decoration: line-through;
+    padding-right: 8px;
+  }
+  .main_product_summary .replace_product_main .price_title_align {
     align-items: center;
-}
-.product_related_variant_list label {
-  cursor: pointer;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px 12px;
-  border: 1px solid #e9e9e9;
-  border-radius: 8px;
-  position: relative;
-  margin: 5px 0;
-}
-.changed_pro_variantlist {
-  display: flex;
-  flex-wrap: wrap;
-}
-.change_variant_img {
-  width: 20%;
-}
-.change_variant_datatext {
-  width: 80%;
-  padding-left: 15px;
-}
-.change_variant_img img {
-  width: 100%;
-}
-.change_variant_datatext h3 {
-  color: #231f20;
-  margin: 0;
-  font-size: 15px;
-  width: 80%;
-}
-.change_variant_datatext p {
-  margin-bottom: 0;
-  margin-top: 0;
-  font-size: 14px;
-  line-height: 1.5;
-}
-.change_variant_datatext_price {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-.change_variant_datatext_price span {
-  color: #231f20;
-  font-weight: 700;
-  font-size: 16px;
-}
-span.changed_variant_price_compare span {
-  color: #666 !important;
-  font-size: 13px;
-  text-decoration: line-through;
-  padding-right: 8px;
-}
-.changed_variant_price_align {
+  }
+  .product_related_variant_list label {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 12px;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    position: relative;
+    margin: 5px 0;
+  }
+  .changed_pro_variantlist {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .change_variant_img {
+    width: 20%;
+  }
+  .change_variant_datatext {
+    width: 80%;
+    padding-left: 15px;
+  }
+  .change_variant_img img {
+    width: 100%;
+  }
+  .change_variant_datatext h3 {
+    color: #231f20;
+    margin: 0;
+    font-size: 15px;
+    width: 80%;
+  }
+  .change_variant_datatext p {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .change_variant_datatext_price {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .change_variant_datatext_price span {
+    color: #231f20;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  span.changed_variant_price_compare span {
+    color: #666 !important;
+    font-size: 13px;
+    text-decoration: line-through;
+    padding-right: 8px;
+  }
+  .changed_variant_price_align {
     display: flex;
     justify-content: end;
-}
-.itg_drop_var_align_div label {
-  cursor: pointer;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px 12px;
-  border: 1px solid #E9E9F1;
-  border-radius: 8px;
-  position: relative;
-  margin: 10px 0;
-}
-.itg_drop_var_align_div input:checked+label .check_product_variant {
-  display: none;
-}
-label.hide_change_mainproduct {
-display: none;
-}
+  }
+  .itg_drop_var_align_div label {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 12px;
+    border: 1px solid #e9e9f1;
+    border-radius: 8px;
+    position: relative;
+    margin: 10px 0;
+  }
+  .itg_drop_var_align_div input:checked + label .check_product_variant {
+    display: none;
+  }
+  label.hide_change_mainproduct {
+    display: none;
+  }
 
+  /* Responsive Css Start */
+  @media screen and (min-width: 1200px) {
+    .tab_button_contents {
+      height: 380px;
+    }
+  }
+  @media screen and (min-width: 989px) and (max-width: 1300px) {
+    .main_price_compare_arrange {
+      display: block;
+      text-align: right;
+    }
+    ul.summary_productlist.second_addons .summary_title_align h3,
+    .main_product_summary .price_title_align h3 {
+      width: 50%;
+    }
+    ul.summary_productlist.second_addons .quantity_addons_summary,
+    .quantity_main_product_summary {
+      width: 35%;
+    }
+    .replace_product_pricealign {
+      display: block;
+      text-align: right;
+      line-height: 1.5;
+    }
+    .replace_product_pricealign span.replace_product_pricecompare span {
+      padding: 0;
+    }
+    .addons_productlist.first_addons .add_list_product_data {
+      padding-left: 10px;
+    }
+    .addons_productlist.first_addons .add_list_product_data .price_title_align h3 {
+      font-size: 14px;
+      padding-right: 10px;
+    }
+    .changed_variant_price_align {
+      display: block;
+      text-align: right;
+      line-height: 1.5;
+    }
+    span.changed_variant_price_compare span {
+      padding-right: 0;
+    }
+  }
+  @media screen and (max-width: 989px) {
+    .product_details_show {
+      display: block;
+    }
+    .product_details_image {
+      width: 100%;
+    }
+    .prod_cus_images img {
+      width: 100%;
+    }
+    .product_details_data {
+      width: 100%;
+    }
+    .logo_show {
+      width: 180px;
+      margin: 0 auto;
+      padding-bottom: 20px;
+    }
+    .prod_cus_images {
+      height: 100%;
+    }
+    .listed_main_data {
+      position: relative;
+      padding: 20px 0 0;
+    }
+    ul.listed_ul li {
+      padding: 0 5px;
+    }
+    .policy_list span,
+    .price_title_align h3 {
+      font-size: 12px;
+    }
+    .tab_buttons {
+      margin-left: -7px;
+    }
+    button.tablinks {
+      font-size: 15px;
+      padding-right: 0;
+      padding-left: 7px;
+    }
+    .tabs_extradata,
+    .tabcontent_first h2,
+    legend.form__label,
+    .price_title_align span {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    legend.form__label span.variant-label__value {
+      font-size: 14px;
+    }
+    ul.addons_pagination li {
+      padding: 8px 15px !important;
+    }
+    footer#subtotal {
+      padding: 15px 20px;
+    }
+    .price_title_align {
+      align-items: unset;
+    }
+    .price_title_align span {
+      padding-left: 5px;
+    }
+    .add_list_product_image img {
+      height: 100%;
+    }
+    .tab_button_contents {
+      padding: 0 0 30px;
+    }
+    .quantity_addons {
+      padding-top: 5px;
+    }
+    .quantity_addons .quantity {
+      min-height: calc((var(--inputs-border-width) * 2) + 3.5rem);
+    }
+    .summary_title_align h3 {
+      width: 50%;
+      font-size: 12px;
+      margin: 0;
+    }
+    .summary_title_align .quantity_addons_summary,
+    .summary_title_align span {
+      width: 25%;
+    }
+    .main_product_summary .price_title_align {
+      align-items: center;
+    }
+    .main_product_summary .add_list_product_data {
+      padding-left: 0px;
+    }
+    ul.summary_productlist.second_addons .second_addons_qty .summary_title_align span {
+      text-align: right;
+    }
+    .main_product_summary .price_title_align h3 {
+      width: 50%;
+      font-size: 12px;
+      text-align: left;
+    }
+    span.replace_product_pricecompare span {
+      padding-right: 0;
+    }
+    .change_variant_datatext h3 {
+      margin: 0 0 5px;
+      font-size: 12px;
+      width: 75%;
+    }
+    .change_variant_datatext_price span {
+      font-size: 14px;
+    }
+    .change_variant_datatext_price {
+      align-items: baseline;
+    }
+  }
 
-  
-/* Responsive Css Start */  
-@media screen and (min-width: 1200px){
-.tab_button_contents {
-  height: 380px;
-}
-}
-@media screen and (min-width: 989px) and (max-width: 1300px){
-.main_price_compare_arrange {
-    display: block;
-    text-align: right;
-}  
-ul.summary_productlist.second_addons .summary_title_align h3, .main_product_summary .price_title_align h3 {
-    width: 50%;
-}
-ul.summary_productlist.second_addons .quantity_addons_summary, .quantity_main_product_summary {
-    width: 35%;
-}
-.replace_product_pricealign {
-    display: block;
-    text-align: right;
-    line-height: 1.5;
-}
-.replace_product_pricealign span.replace_product_pricecompare span {
-    padding: 0;
-}
-.addons_productlist.first_addons .add_list_product_data {
-    padding-left: 10px;
-}
-.addons_productlist.first_addons .add_list_product_data .price_title_align h3 {
-    font-size: 14px;
-    padding-right: 10px;
-}
-.changed_variant_price_align {
-  display: block;
-  text-align: right;
-  line-height: 1.5;
-}
-span.changed_variant_price_compare span {
-  padding-right: 0;
-}  
-}
-@media screen and (max-width: 989px){
-.product_details_show {
-  display: block;
-}
-.product_details_image {
-  width: 100%;
-}
-.prod_cus_images img {
-  width: 100%;
-}
-.product_details_data {
-  width: 100%;
-}
-.logo_show {
-  width: 180px;
-  margin: 0 auto;
-  padding-bottom: 20px;
-}
-.prod_cus_images {
-  height: 100%;
-}
-.listed_main_data {
-  position: relative;
-  padding: 20px 0 0;
-}
-ul.listed_ul li {
-  padding: 0 5px;
-}
-.policy_list span, .price_title_align h3 {
-  font-size: 12px;
-}
-.tab_buttons {
-  margin-left: -7px;
-}
-button.tablinks {
-  font-size: 15px;
-  padding-right: 0;
-  padding-left: 7px;
-}
-.tabs_extradata, .tabcontent_first h2,
-legend.form__label, .price_title_align span {
-  font-size: 16px;
-  line-height: 1.5;
-}
-legend.form__label span.variant-label__value {
-  font-size: 14px;
-}
-ul.addons_pagination li{
-  padding: 8px 15px !important;
-}
-footer#subtotal {
-  padding: 15px 20px;
-}
-.price_title_align {
-  align-items: unset;
-}
-.price_title_align span {
-  padding-left: 5px;
-}
-.add_list_product_image img {
-  height: 100%;
-}
-.tab_button_contents {
- padding: 0 0 30px;
-}
-.quantity_addons {
-  padding-top: 5px;
-}
-.quantity_addons .quantity {
-  min-height: calc((var(--inputs-border-width) * 2) + 3.5rem);
-}
-.summary_title_align h3 {
-  width: 50%;
-  font-size: 12px;
-  margin: 0;
-}
-.summary_title_align .quantity_addons_summary, .summary_title_align span {
-  width: 25%;
-}
-.main_product_summary .price_title_align {
-    align-items: center;
-}
-.main_product_summary .add_list_product_data {
-    padding-left: 0px;
-}
-ul.summary_productlist.second_addons .second_addons_qty .summary_title_align span {
-    text-align: right;
-}
-.main_product_summary .price_title_align h3 {
-  width: 50%;
-  font-size: 12px;
-  text-align: left;
-}
-span.replace_product_pricecompare span {
- padding-right: 0;
-}
-.change_variant_datatext h3 {
-  margin: 0 0 5px;
-  font-size: 12px;  
-  width: 75%;
-}  
-.change_variant_datatext_price span {
-  font-size: 14px;
-}
-.change_variant_datatext_price {
-  align-items: baseline;
-}   
-}
-  
-@media screen and (min-width: 451px) and (max-width: 988px){
-.quantity_main_product_summary {
-    width: 25%;
-}  
-.main_product_summary span {
-  text-align: center;
-}
-.main_product_summary .main_price_compare_arrange {
-  display: block;
-  text-align: right;
-}
-}
-  
-@media screen and (max-width: 600px){
-.changed_variant_price_align {
-  display: block;
-  text-align: right;
-  line-height: normal;
-}
-span.changed_variant_price_compare span {
-  padding-right: 0;
-}
-.itg_drop_var_align_div label {
-  align-items: center;
-}
-}
+  @media screen and (min-width: 451px) and (max-width: 988px) {
+    .quantity_main_product_summary {
+      width: 25%;
+    }
+    .main_product_summary span {
+      text-align: center;
+    }
+    .main_product_summary .main_price_compare_arrange {
+      display: block;
+      text-align: right;
+    }
+  }
 
-@media screen and (max-width: 450px){
-.summary_title_align h3 {
-  width: 50%;
-}
-.summary_title_align .quantity_addons_summary {
-  width: 50%;
-  text-align: -webkit-right;
-}
-.summary_title_align span {
-  width: 100%;
-  text-align: left;
-}
-ul.summary_productlist.second_addons li.add_list_product.second_addons_qty .summary_title_align h3 {
-    width: 100%;
-}  
-ul.summary_productlist.second_addons .second_addons_qty .summary_title_align {
-    justify-content: space-between;
-}
-.insurance_product.insurance_product_second .insurance_product_main .price_title_align {
-    align-items: center;
-}
-ul.summary_productlist.second_addons span.cart_add_spanprice {
-    text-align: right;
-}
-.chs_align_div button {
-    font-size: 14px;
-}
-.chs_align_div {
-    align-items: baseline;
-}
-.price_title_align span {
-    font-size: 14px;
-}
-.main_product_summary span.price_without_discount {
-    margin-right: 0;
-}
-span.price_without_discount {
-    margin-right: 0;
-}
-.main_product_summary .price_title_align h3 {
-  font-size: 12px;
-  text-align: left;
-}
-.main_price_compare_arrange {
- display: block;
- text-align: right;
-}
-.main_price_compare_arrange span.price_with_discount span {
-    font-size: 16px;
-}
-.action_buttons {
-    flex-wrap: nowrap;
-}
-ul.addons_pagination li {
-    padding: 8px 10px !important;
-}
-.replace_product_pricealign {
-  display: block;
-  line-height: 1;
-  text-align: right;
-}
-.main_product_summary .main_price_compare_arrange {
-    width: 50%;
-}
-.main_product_summary .quantity_main_product_summary {
-    width: 30%;
-}
-}
+  @media screen and (max-width: 600px) {
+    .changed_variant_price_align {
+      display: block;
+      text-align: right;
+      line-height: normal;
+    }
+    span.changed_variant_price_compare span {
+      padding-right: 0;
+    }
+    .itg_drop_var_align_div label {
+      align-items: center;
+    }
+  }
 
-
+  @media screen and (max-width: 450px) {
+    .summary_title_align h3 {
+      width: 50%;
+    }
+    .summary_title_align .quantity_addons_summary {
+      width: 50%;
+      text-align: -webkit-right;
+    }
+    .summary_title_align span {
+      width: 100%;
+      text-align: left;
+    }
+    ul.summary_productlist.second_addons li.add_list_product.second_addons_qty .summary_title_align h3 {
+      width: 100%;
+    }
+    ul.summary_productlist.second_addons .second_addons_qty .summary_title_align {
+      justify-content: space-between;
+    }
+    .insurance_product.insurance_product_second .insurance_product_main .price_title_align {
+      align-items: center;
+    }
+    ul.summary_productlist.second_addons span.cart_add_spanprice {
+      text-align: right;
+    }
+    .chs_align_div button {
+      font-size: 14px;
+    }
+    .chs_align_div {
+      align-items: baseline;
+    }
+    .price_title_align span {
+      font-size: 14px;
+    }
+    .main_product_summary span.price_without_discount {
+      margin-right: 0;
+    }
+    span.price_without_discount {
+      margin-right: 0;
+    }
+    .main_product_summary .price_title_align h3 {
+      font-size: 12px;
+      text-align: left;
+    }
+    .main_price_compare_arrange {
+      display: block;
+      text-align: right;
+    }
+    .main_price_compare_arrange span.price_with_discount span {
+      font-size: 16px;
+    }
+    .action_buttons {
+      flex-wrap: nowrap;
+    }
+    ul.addons_pagination li {
+      padding: 8px 10px !important;
+    }
+    .replace_product_pricealign {
+      display: block;
+      line-height: 1;
+      text-align: right;
+    }
+    .main_product_summary .main_price_compare_arrange {
+      width: 50%;
+    }
+    .main_product_summary .quantity_main_product_summary {
+      width: 30%;
+    }
+  }
 </style>
