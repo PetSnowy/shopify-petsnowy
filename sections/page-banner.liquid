@@ -31,7 +31,7 @@
       </div>
       {% if section.settings.image_mbl != blank %}
         <div class="banner_mobile banner__media media">
-          <img src="{{ section.settings.image_mbl | img_url: 'master' }}">
+          <img src="{{ section.settings.image_mbl | img_url: 'master' }}" alt="petsnowy" loading="lazy">
         </div>
       {% endif %}
     {%- endif -%}
@@ -55,29 +55,29 @@
   "name": "Page Banner",
   "settings": [
     {
-      "type":"image_picker",
-      "id":"image",
-      "label":"Image"
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
     },
     {
-      "type":"image_picker",
-      "id":"image_mbl",
-      "label":"Mobile Image"
+      "type": "image_picker",
+      "id": "image_mbl",
+      "label": "Mobile Image"
     },
     {
-      "type":"text",
-      "id":"hedaing",
-      "label":"Heading"
+      "type": "text",
+      "id": "hedaing",
+      "label": "Heading"
     },
     {
-      "type":"richtext",
-      "id":"text",
-      "label":"Text"
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
     }
   ],
-  "presets":[
+  "presets": [
     {
-      "name":"Page Banner"
+      "name": "Page Banner"
     }
   ]
 }
