@@ -45,57 +45,64 @@
                 {{ block.settings.text }}
               </div>
 
-
- <div class="purchase_data_btns">
-      {% if product.template_suffix == "purchase-product" %}        
-       <product-form class="product-form" data-aos="fade-up"
-                    data-aos-duration="800">
-              {%- form 'product',
-                product,
-                id: product_form_id,
-                class: 'form',
-                novalidate: 'novalidate',
-                data-type: 'add-to-cart-form'
-              -%}
-                <input
-                  type="hidden"
-                  name="id"
-                  value="{{ product.selected_or_first_available_variant.id }}"                
-                >
-                <div class="product-form__buttons">
-                {% comment %}  <button
-                    type="submit"
-                    name="add"                    
-                    class="product-form__submit button button--primary purchase_btn_one"
+              <div class="purchase_data_btns">
+                {% if product.template_suffix == 'purchase-product' %}
+                  <product-form
+                    class="product-form"
+                    data-aos="fade-up"
+                    data-aos-duration="800"
                   >
-                    <span> Claim Now</span>
-                    <div class="loading-overlay__spinner hidden">
-                      <svg
-                        aria-hidden="true"
-                        focusable="false"
-                        role="presentation"
-                        class="spinner"
-                        viewBox="0 0 66 66"
-                        xmlns="http://www.w3.org/2000/svg"
+                    {%- form 'product',
+                      product,
+                      id: product_form_id,
+                      class: 'form',
+                      novalidate: 'novalidate',
+                      data-type: 'add-to-cart-form'
+                    -%}
+                      <input
+                        type="hidden"
+                        name="id"
+                        value="{{ product.selected_or_first_available_variant.id }}"
                       >
-                        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                      </svg>
-                    </div>
-                  </button>        {% endcomment %}
-        
-              <span class="ctms_buy_btns">  {{ form | payment_button }}  </span>
-            
-                </div>
-              {%- endform -%}
-            </product-form>
-        {% else %}
-        <a data-aos="fade-up" data-aos-duration="800" class="purchase_btn_first" href="/cart?customcart={{ product.handle }}">
-        Claim Now
-        </a>
-        {% endif %}
-          </div>
+                      <div class="product-form__buttons">
+                        {% comment %}
+                          <button
+                            type="submit"
+                            name="add"
+                            class="product-form__submit button button--primary purchase_btn_one"
+                          >
+                            <span> Claim Now</span>
+                            <div class="loading-overlay__spinner hidden">
+                              <svg
+                                aria-hidden="true"
+                                focusable="false"
+                                role="presentation"
+                                class="spinner"
+                                viewBox="0 0 66 66"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                              </svg>
+                            </div>
+                          </button>
+                        {% endcomment %}
 
-            
+                        <span class="ctms_buy_btns"> {{ form | payment_button }} </span>
+                      </div>
+                    {%- endform -%}
+                  </product-form>
+                {% else %}
+                  <a
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    class="purchase_btn_first"
+                    href="/cart?customcart={{ product.handle }}"
+                  >
+                    Claim Now
+                  </a>
+                {% endif %}
+              </div>
+
             {%- when 'button' -%}
               <div
                 class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}"

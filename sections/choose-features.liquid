@@ -122,7 +122,6 @@
             {% endfor %}
             <button id="btn_change_product" class="btn_change_product">Change</button>
           </div>
-
           <div class="change_selected_product">
             <ul>
               {% for product_change in main_collection.products %}
@@ -132,7 +131,9 @@
                   {% assign variantid = product_change.selected_or_first_available_variant.id %}
                   {% assign variantprice = variant_change.price %}
                 {% endfor %}
-
+                {% if variantid == 44760100503874 %}
+                  {% continue %}
+                {% endif %}
                 <li class="replace_products_li" replace_data="{{ product_change.handle }}" value="{{ variantid }}">
                   <div class="replace_product_main">
                     <input
@@ -944,16 +945,18 @@
 {% endschema %}
 
 <style>
-
-  .itg_drop_var::-webkit-scrollbar,.tab_button_contents::-webkit-scrollbar {
+  .itg_drop_var::-webkit-scrollbar,
+  .tab_button_contents::-webkit-scrollbar {
     width: 4px;
     border-radius: 10px;
   }
-  .itg_drop_var::-webkit-scrollbar-thumb,.tab_button_contents::-webkit-scrollbar-thumb {
+  .itg_drop_var::-webkit-scrollbar-thumb,
+  .tab_button_contents::-webkit-scrollbar-thumb {
     background: #231f20;
-    border-radius: 10px
+    border-radius: 10px;
   }
-  .itg_drop_var::-webkit-scrollbar-track,.tab_button_contents::-webkit-scrollbar-track {
+  .itg_drop_var::-webkit-scrollbar-track,
+  .tab_button_contents::-webkit-scrollbar-track {
     background: #fff;
   }
   .itg_drop_var input {
@@ -1167,8 +1170,8 @@
   }
   .tab_button_contents {
     overflow: overlay;
-		flex: 1;
-		margin-bottom: 10px;
+    flex: 1;
+    margin-bottom: 10px;
   }
   .add_list_product input.addons_input,
   .replace_product_main input {

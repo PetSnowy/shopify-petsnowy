@@ -14,15 +14,15 @@
   data-color=""
   class="no-js header-packed intercom-loaded banner-active scroll-down scroll-stopped"
   style="--top-banner-height:48px; --header-height:73px; --scroll-y:4202px;"
-><meta name="google-site-verification" content="mtbzJrfOl9PxeseV5Y-sD1mxIrmmR4Lr_QmsC9YFPBY" />
+>
+  <meta name="google-site-verification" content="mtbzJrfOl9PxeseV5Y-sD1mxIrmmR4Lr_QmsC9YFPBY">
   <head>
-    
-{% comment %}   
-<script id="__st">var __st={"a":68352934210,"offset":-25200,"reqid":"2ae19a08-8708-4976-ac74-623af6219dcb","pageurl":"www.petsnowy.com\/cart?customcart=copy-of-snow-pet-water-fountain","u":"583ee163660d"};</script>
-{% endcomment %}  
-    
- {%- render 'ecom_header' -%}
-  <meta name="facebook-domain-verification" content="93n0ui1v6s8qrkyzga946a18wyfcwf" />
+    {% comment %}
+      <script id="__st">var __st={"a":68352934210,"offset":-25200,"reqid":"2ae19a08-8708-4976-ac74-623af6219dcb","pageurl":"www.petsnowy.com\/cart?customcart=copy-of-snow-pet-water-fountain","u":"583ee163660d"};</script>
+    {% endcomment %}
+
+    {%- render 'ecom_header' -%}
+    <meta name="facebook-domain-verification" content="93n0ui1v6s8qrkyzga946a18wyfcwf">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -56,7 +56,7 @@
     <script src="{{ 'scroll_parachute.js' | asset_url }}"></script>
     <script src="{{ 'aos-animation.js' | asset_url }}"></script>
     <script src="{{ 'custom.js' | asset_url }}"></script>
-   	<script src=" {{'owl.carousel.min.js' | asset_url }}"></script>
+    <script src=" {{'owl.carousel.min.js' | asset_url }}"></script>
 
     {{ content_for_header }}
 
@@ -242,14 +242,14 @@
           font-size: 1.6rem;
         }
       }
-    {% endstyle %}   
+    {% endstyle %}
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'responsive.css' | asset_url | stylesheet_tag }}
     {{ 'aos-animation.css' | asset_url | stylesheet_tag }}
-      {{'owl.carousel.min.css' | asset_url | stylesheet_tag}}
-      {{ 'D-style.css' | asset_url | stylesheet_tag }}
+    {{ 'owl.carousel.min.css' | asset_url | stylesheet_tag }}
+    {{ 'D-style.css' | asset_url | stylesheet_tag }}
     {%- unless settings.type_body_font.system? -%}
-     <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
+      <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
     {%- unless settings.type_header_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
@@ -270,23 +270,22 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
-  
 
-	{{ shop.metafields.loox["global_html_head"] }}
-</head>
+    {{ shop.metafields.loox.global_html_head }}
+  </head>
 
   {% for item in cart.items %}
-    {% assign product_template_cart = item.product.template_suffix  %}
+    {% assign product_template_cart = item.product.template_suffix %}
   {% endfor %}
-  
+
   <body class="{% if product_template_cart == 'purchase-product' %}purchase_product_items {% else %}non_purchase_template{% endif %} gradient {{ template.name}} {{ page.handle}}  adds_{{ template.name }}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
 
-  {% if template contains 'why-petsnowy' %} 
-    {% section 'iframe-popup' %}
-  {% endif %}
+    {% if template contains 'why-petsnowy' %}
+      {% section 'iframe-popup' %}
+    {% endif %}
 
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
@@ -295,7 +294,7 @@
     {% section 'announcement-bar' %}
 
     {% section 'header' %}
-    
+
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
@@ -306,34 +305,32 @@
     </ul>
 
     <script>
-      
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
         cart_change_url: '{{ routes.cart_change_url }}',
         cart_update_url: '{{ routes.cart_update_url }}',
         cart_url: '{{ routes.cart_url }}',
-        predictive_search_url: '{{ routes.predictive_search_url }}'
+        predictive_search_url: '{{ routes.predictive_search_url }}',
       };
 
       window.cartStrings = {
         error: `{{ 'sections.cart.cart_error' | t }}`,
-        quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`
-      }
+        quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`,
+      };
 
       window.variantStrings = {
         addToCart: `{{ 'products.product.add_to_cart' | t }}`,
         soldOut: `{{ 'products.product.sold_out' | t }}`,
         unavailable: `{{ 'products.product.unavailable' | t }}`,
-      }
+      };
 
       window.accessibilityStrings = {
         imageAvailable: `{{ 'products.product.media.image_available' | t: index: '[index]' }}`,
         shareSuccess: `{{ 'general.share.success_message' | t }}`,
         pauseSlideshow: `{{ 'sections.slideshow.pause_slideshow' | t }}`,
         playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
-      }
-
+      };
     </script>
 
     {%- if settings.predictive_search_enabled -%}
@@ -344,7 +341,7 @@
       AOS.init();
     </script>
 
-  {%- render "ecom_footer"-%}
-	{{ shop.metafields.loox["global_html_body"] }}
-</body>
+    {%- render 'ecom_footer' -%}
+    {{ shop.metafields.loox.global_html_body }}
+  </body>
 </html>
