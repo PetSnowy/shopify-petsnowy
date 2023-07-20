@@ -944,8 +944,17 @@
 {% endschema %}
 
 <style>
-  .itg_drop_var {
-    display: block;
+
+  .itg_drop_var::-webkit-scrollbar,.tab_button_contents::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 10px;
+  }
+  .itg_drop_var::-webkit-scrollbar-thumb,.tab_button_contents::-webkit-scrollbar-thumb {
+    background: #231f20;
+    border-radius: 10px
+  }
+  .itg_drop_var::-webkit-scrollbar-track,.tab_button_contents::-webkit-scrollbar-track {
+    background: #fff;
   }
   .itg_drop_var input {
     display: none;
@@ -1023,6 +1032,9 @@
     padding: 20px;
     position: relative;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
   .variant_data_loop option {
     cursor: pointer;
@@ -1147,18 +1159,16 @@
     display: block;
   }
   footer#subtotal {
-    position: absolute;
-    bottom: 0;
     background: #f4f4f4;
-    right: 0;
-    left: 0;
+    margin-top: auto;
+    flex-shrink: 1;
     padding: 20px;
     z-index: 1;
   }
   .tab_button_contents {
-    overflow-y: scroll;
-    height: 400px;
-    overflow-x: hidden;
+    overflow: overlay;
+		flex: 1;
+		margin-bottom: 10px;
   }
   .add_list_product input.addons_input,
   .replace_product_main input {
@@ -1194,16 +1204,6 @@
     font-size: 14px;
     line-height: 1.5;
     text-align: left;
-  }
-  .tab_button_contents::-webkit-scrollbar {
-    width: 4px;
-    border-radius: 10px;
-  }
-  .tab_button_contents::-webkit-scrollbar-thumb {
-    background: #231f20;
-  }
-  .tab_button_contents::-webkit-scrollbar-track {
-    background: #fff;
   }
   .tabs_extradata {
     border-bottom: 1px solid #d2d2d2;
@@ -1668,12 +1668,6 @@
     display: none;
   }
 
-  /* Responsive Css Start */
-  @media screen and (min-width: 1200px) {
-    .tab_button_contents {
-      height: 380px;
-    }
-  }
   @media screen and (min-width: 989px) and (max-width: 1300px) {
     .main_price_compare_arrange {
       display: block;
