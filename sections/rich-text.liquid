@@ -92,14 +92,14 @@
                     {%- endform -%}
                   </product-form>
                 {% else %}
-                  <a
+                  {% comment %} <a
                     data-aos="fade-up"
                     data-aos-duration="800"
                     class="purchase_btn_first"
                     href="/cart?customcart={{ product.handle }}"
                   >
                     Claim Now
-                  </a>
+                  </a> {% endcomment %}
                 {% endif %}
               </div>
 

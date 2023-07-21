@@ -258,7 +258,7 @@
     {%- if settings.predictive_search_enabled -%}
       <link
         rel="stylesheet"
-        href="{{ 'component-predictive-search.css' | asset_url }}"
+        href="{{ 'component-.css' | asset_url }}"
         media="print"
         onload="this.media='all'"
       >
@@ -331,6 +331,7 @@
         pauseSlideshow: `{{ 'sections.slideshow.pause_slideshow' | t }}`,
         playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
       };
+      const MtPopUpList = null;
     </script>
 
     {%- if settings.predictive_search_enabled -%}
