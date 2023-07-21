@@ -698,14 +698,12 @@
     },
     "16879203322247258f": {
       "type": "apps",
-      "disabled": true,
       "blocks": {
         "042ecd86-3111-463a-a041-b74ad0850cad": {
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "disabled": true,
           "settings": {
             "only_photos": false,
-            "aggregated": false,
+            "aggregated": true,
             "limit": 20,
             "hide_thumbnails": false,
             "maxwidth": 1080
