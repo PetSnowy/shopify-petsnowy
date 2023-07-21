@@ -704,7 +704,7 @@
           "settings": {
             "only_photos": false,
             "aggregated": true,
-            "limit": 20,
+            "limit": 8,
             "hide_thumbnails": false,
             "maxwidth": 1080
           }
