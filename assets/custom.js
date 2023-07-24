@@ -104,6 +104,10 @@ $(document).ready(function () {
 
 	var product_handle = localStorage.getItem("product_handle");
 
+	if (product_handle !== null) {
+		localStorage.removeItem("product_handle");
+		localStorage.removeItem("addons_data");
+	}
 	if (product_handle == null) {
 
 		if (paramhandle != undefined) {
