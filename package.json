@@ -7,6 +7,7 @@
     "serve": "shopify theme serve",
     "dev": "shopify theme dev",
     "login": "shopify login --store=petsnowy.myshopify.com",
+		"theme": "shopify theme dev --store petsnowy.myshopify.com",
     "lint": "eslint ."
   },
   "repository": {
