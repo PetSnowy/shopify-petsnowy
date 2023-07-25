@@ -182,13 +182,21 @@
               "menunav_name": "Accessories",
               "megamenu_img": "shopify:\/\/shop_images\/accessories1980.png"
             }
+          },
+          "783e7645-b7cd-45b6-8f05-fa8e492a9c3b": {
+            "type": "image_picker",
+            "settings": {
+              "menunav_name": "SNOW⁺ Cat Toy",
+              "megamenu_img": "shopify:\/\/shop_images\/10071137_17_1.png"
+            }
           }
         },
         "block_order": [
           "6c310758-4832-4434-b7a3-1396a20f9bf7",
           "176bdf94-2a41-4767-b1e0-2f4066329964",
           "c45448b7-55ad-4ec5-8258-c0d4a8548c7d",
-          "60cd942d-5e93-4241-b289-3958f7a6626a"
+          "60cd942d-5e93-4241-b289-3958f7a6626a",
+          "783e7645-b7cd-45b6-8f05-fa8e492a9c3b"
         ],
         "settings": {
           "color_scheme": "background-1",
