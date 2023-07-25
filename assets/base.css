@@ -2185,7 +2185,8 @@ input[type="checkbox"] {
 /* Main Header Layout */
 .header-wrapper {
   display: block;
-  position: relative;
+  position: fixed;
+	width: 100%;
   background-color: #fff;
   z-index: 1;
 }
@@ -2239,7 +2240,7 @@ input[type="checkbox"] {
 }
 
 .header__heading {
-  margin: 0;
+  margin: auto;
   line-height: 0;
 }
 
@@ -2283,7 +2284,7 @@ input[type="checkbox"] {
   .header--mobile-left .header__heading,
   .header--mobile-left .header__heading-link {
     text-align: center;
-    justify-self: start;
+    justify-self: center;
   }
 
   .header--mobile-left {
@@ -2959,7 +2960,7 @@ html {
 }
 /* Header Css Start */
 .itg_overlap_header {
-  position: absolute;
+  position: fixed;
   background-color: transparent !important;
   right: 0;
   left: 0;
