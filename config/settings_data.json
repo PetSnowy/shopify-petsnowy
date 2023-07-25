@@ -159,35 +159,35 @@
             "type": "image_picker",
             "settings": {
               "menunav_name": "SNOW⁺ Self Cleaning Litter Box",
-              "megamenu_img": "shopify:\/\/shop_images\/1_42f5793f-42d6-4a54-9556-064afa3146b8.jpg"
+              "megamenu_img": "shopify:\/\/shop_images\/header_img.jpg"
             }
           },
           "176bdf94-2a41-4767-b1e0-2f4066329964": {
             "type": "image_picker",
             "settings": {
               "menunav_name": "SNOW⁺ Automatic Pet Feeder",
-              "megamenu_img": "shopify:\/\/shop_images\/2_1_4414eab9-bf6b-4c4a-899b-836afd95450a.jpg"
+              "megamenu_img": "shopify:\/\/shop_images\/header_img_1.jpg"
             }
           },
           "c45448b7-55ad-4ec5-8258-c0d4a8548c7d": {
             "type": "image_picker",
             "settings": {
               "menunav_name": "SNOW⁺ Pet Water Fountain",
-              "megamenu_img": "shopify:\/\/shop_images\/3_1.jpg"
+              "megamenu_img": "shopify:\/\/shop_images\/header_img_2.jpg"
             }
           },
           "60cd942d-5e93-4241-b289-3958f7a6626a": {
             "type": "image_picker",
             "settings": {
               "menunav_name": "Accessories",
-              "megamenu_img": "shopify:\/\/shop_images\/accessories1980.png"
+              "megamenu_img": "shopify:\/\/shop_images\/header_img_4.jpg"
             }
           },
           "783e7645-b7cd-45b6-8f05-fa8e492a9c3b": {
             "type": "image_picker",
             "settings": {
               "menunav_name": "SNOW⁺ Cat Toy",
-              "megamenu_img": "shopify:\/\/shop_images\/10071137_17_1.png"
+              "megamenu_img": "shopify:\/\/shop_images\/header_img_3.jpg"
             }
           }
         },
