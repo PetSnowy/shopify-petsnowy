@@ -19,19 +19,10 @@
           "settings": {
             "text": "<h1>SNOW<sup>+<\/sup> Self-cleaning Litter Box<\/h1><span>Order now, and save <b>$60<\/b><\/span><br><span>Note: Discount already deducted from the original price<\/span>"
           }
-        },
-        "e41cef55-a297-4c09-a549-24d35be2b565": {
-          "type": "caption",
-          "settings": {
-            "caption": "Limited Time Offer!",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
         }
       },
       "block_order": [
-        "b504c877-67df-4d07-b421-9fac2e31e94f",
-        "e41cef55-a297-4c09-a549-24d35be2b565"
+        "b504c877-67df-4d07-b421-9fac2e31e94f"
       ],
       "settings": {
         "desktop_content_position": "left",
