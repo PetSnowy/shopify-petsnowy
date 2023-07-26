@@ -800,6 +800,18 @@
   // }
 
   // customElements.define('sticky-header', StickyHeader);
+ 	const header =	document.querySelector('.itg_overlap_header')
+
+	function scroll () {
+		const scrollTop = document.documentElement.scrollTop || document.body.scrollTop
+		if(scrollTop > 0){
+			header.style.backgroundColor = '#231f20'
+		}
+		if(scrollTop <= 0) {
+			header.style.backgroundColor = 'transparent'
+		}
+	}
+	if(header) window.addEventListener('scroll', scroll)
 {% endjavascript %}
 
 <script type="application/ld+json">

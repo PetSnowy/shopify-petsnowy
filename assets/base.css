@@ -2961,7 +2961,7 @@ html {
 /* Header Css Start */
 .itg_overlap_header {
   position: fixed;
-  background-color: transparent !important;
+  background-color: transparent;
   right: 0;
   left: 0;
   width: 100%;
