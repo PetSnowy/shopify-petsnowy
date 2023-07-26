@@ -48,6 +48,45 @@
         "padding_bottom": 40
       }
     },
+    "30307903-7dfd-43fd-a94b-e8afddaa806b": {
+      "type": "image-text-block",
+      "blocks": {
+        "9d1b52ba-657b-424d-a6c2-057a19a15eed": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
+          }
+        },
+        "9ecc1e22-b451-440f-a65c-c2d0f68d6df7": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
+          }
+        },
+        "64e8ed2c-3e0c-47e8-856a-4a4355769102": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "9d1b52ba-657b-424d-a6c2-057a19a15eed",
+        "9ecc1e22-b451-440f-a65c-c2d0f68d6df7",
+        "64e8ed2c-3e0c-47e8-856a-4a4355769102"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/petsnowy_cat_toy_ba27dcc3-e038-4fba-95df-1dcc75c14504.jpg",
+        "mobimg": "shopify:\/\/shop_images\/interactive_cat_toy_75985c75-c067-4672-9107-8537a18175a3.jpg",
+        "heading": "",
+        "richtext": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "791f1fc8-f2ee-402a-919b-0cbf3a977591": {
       "type": "image-banner",
       "blocks": {
@@ -518,45 +557,6 @@
         "padding_bottom": 60
       }
     },
-    "30307903-7dfd-43fd-a94b-e8afddaa806b": {
-      "type": "image-text-block",
-      "disabled": true,
-      "blocks": {
-        "9d1b52ba-657b-424d-a6c2-057a19a15eed": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
-          }
-        },
-        "9ecc1e22-b451-440f-a65c-c2d0f68d6df7": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
-          }
-        },
-        "64e8ed2c-3e0c-47e8-856a-4a4355769102": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "9d1b52ba-657b-424d-a6c2-057a19a15eed",
-        "9ecc1e22-b451-440f-a65c-c2d0f68d6df7",
-        "64e8ed2c-3e0c-47e8-856a-4a4355769102"
-      ],
-      "settings": {
-        "img": "shopify:\/\/shop_images\/Bg_Image_10.png",
-        "heading": "Your Text Here",
-        "richtext": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
-        "padding_top": 20,
-        "padding_bottom": 40
-      }
-    },
     "7956ec82-bee1-4347-a954-e5194f282217": {
       "type": "product-grid-image",
       "disabled": true,
@@ -837,6 +837,7 @@
   "order": [
     "24aa800b-1cc6-4355-bb54-110ba4e11787",
     "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
+    "30307903-7dfd-43fd-a94b-e8afddaa806b",
     "791f1fc8-f2ee-402a-919b-0cbf3a977591",
     "6bbb9f5f-efc8-428f-9807-f54235735aad",
     "8e620d02-c614-4dad-8253-0fe07f42a3ef",
@@ -848,7 +849,6 @@
     "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8",
     "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b",
     "f594996b-4dbf-425f-9059-9821e6ea4e6b",
-    "30307903-7dfd-43fd-a94b-e8afddaa806b",
     "7956ec82-bee1-4347-a954-e5194f282217",
     "a01e7f6a-6040-4334-97af-966598236644",
     "c79d2326-cdd9-44c2-bea3-56cd03cff554",

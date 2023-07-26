@@ -3,8 +3,8 @@
     "24aa800b-1cc6-4355-bb54-110ba4e11787": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/10071137_13_1_d9e5b129-6383-4cd8-86e1-4b9fce1ed588.png",
-        "image_mbl": "shopify:\/\/shop_images\/10071137_13_1.png",
+        "image": "shopify:\/\/shop_images\/1_e5524c89-6989-4d71-964b-77b3f01879dd.png",
+        "image_mbl": "shopify:\/\/shop_images\/header_img_3.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
@@ -23,7 +23,7 @@
         "b504c877-67df-4d07-b421-9fac2e31e94f": {
           "type": "text",
           "settings": {
-            "text": "<h1><span>SNOW+ Pet Water Fountain<\/span><\/h1>br&gt;<span>Order now, and save 15%<\/span><span>*Only one discount can be applied per purchase.<\/span>"
+            "text": "<p>SNOW<sup>+<\/sup> Automatic Pet Feeder  \n<br>Order now, and save <b>15%<\/b>  <\/p>\n<p><small><small>*Only one discount can be applied per purchase.<\/small><\/small><\/p>"
           }
         }
       },
@@ -417,56 +417,8 @@
         "156fc469-c971-47d5-8ea0-ec3670c7f418"
       ],
       "settings": {
-        "img": "shopify:\/\/shop_images\/cat_water_fountain.jpg",
-        "mobimg": "shopify:\/\/shop_images\/water_fountain_for_cats_60c3cdb1-80a0-4159-bdc0-91fcc5bb24fe.jpg",
-        "heading": "",
-        "richtext": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "159dfafd-7d99-4872-b6e0-61b238b8999a": {
-      "type": "image-text-block",
-      "blocks": {
-        "bdcac435-23f5-4084-b9e5-434c3977b66e": {
-          "type": "title",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "texts": ""
-          }
-        }
-      },
-      "block_order": [
-        "bdcac435-23f5-4084-b9e5-434c3977b66e"
-      ],
-      "settings": {
-        "img": "shopify:\/\/shop_images\/pet_water_fountain.jpg",
-        "mobimg": "shopify:\/\/shop_images\/pet_fountain.png",
-        "heading": "",
-        "richtext": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "4e1a7ea3-1deb-4828-8422-5b84ac8efed1": {
-      "type": "image-text-block",
-      "blocks": {
-        "b18da27e-5901-4199-bf09-76add9a69e5c": {
-          "type": "title",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "texts": ""
-          }
-        }
-      },
-      "block_order": [
-        "b18da27e-5901-4199-bf09-76add9a69e5c"
-      ],
-      "settings": {
-        "img": "shopify:\/\/shop_images\/water_fountain_for_cats.jpg",
-        "mobimg": "shopify:\/\/shop_images\/pet_water_fountain_0b5b29bb-8d9b-4696-8542-badfa45089c8.png",
+        "img": "shopify:\/\/shop_images\/petsnowy_cat_toy_ba27dcc3-e038-4fba-95df-1dcc75c14504.jpg",
+        "mobimg": "shopify:\/\/shop_images\/interactive_cat_toy_75985c75-c067-4672-9107-8537a18175a3.jpg",
         "heading": "",
         "richtext": "",
         "padding_top": 0,
@@ -489,8 +441,56 @@
         "1bf14780-ca73-419f-b93f-82fea0af7d62"
       ],
       "settings": {
-        "img": "shopify:\/\/shop_images\/dog_water_fountain.png",
-        "mobimg": "shopify:\/\/shop_images\/cat_water_dispenser.png",
+        "img": "shopify:\/\/shop_images\/cat_toys_049396c5-2d64-4595-a1cf-faee322d7638.jpg",
+        "mobimg": "shopify:\/\/shop_images\/automatic_cat_toy_9f9d254c-30b2-458d-80cd-54694ce204b6.jpg",
+        "heading": "",
+        "richtext": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "159dfafd-7d99-4872-b6e0-61b238b8999a": {
+      "type": "image-text-block",
+      "blocks": {
+        "bdcac435-23f5-4084-b9e5-434c3977b66e": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "texts": ""
+          }
+        }
+      },
+      "block_order": [
+        "bdcac435-23f5-4084-b9e5-434c3977b66e"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/automatic_cat_toy_0166f611-8401-427a-a774-793f90019ef1.jpg",
+        "mobimg": "shopify:\/\/shop_images\/cat_toys_a1e4e4ae-f33e-48b4-a9e9-6054fd732bea.jpg",
+        "heading": "",
+        "richtext": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "4e1a7ea3-1deb-4828-8422-5b84ac8efed1": {
+      "type": "image-text-block",
+      "blocks": {
+        "b18da27e-5901-4199-bf09-76add9a69e5c": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "texts": ""
+          }
+        }
+      },
+      "block_order": [
+        "b18da27e-5901-4199-bf09-76add9a69e5c"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/interactive_cat_toys_4895e26f-e318-42a9-8c8c-306f97a37a26.jpg",
+        "mobimg": "shopify:\/\/shop_images\/petsnowy_cat_toys_86999795-5621-4770-a5fe-4604878a0302.jpg",
         "heading": "",
         "richtext": "",
         "padding_top": 0,
@@ -513,8 +513,8 @@
         "d0bda6f4-fed6-4757-96ab-61c91fcc801c"
       ],
       "settings": {
-        "img": "shopify:\/\/shop_images\/petsnowy_cat_water_fountain.jpg",
-        "mobimg": "shopify:\/\/shop_images\/cat_fountain.png",
+        "img": "shopify:\/\/shop_images\/fun.jpg",
+        "mobimg": "shopify:\/\/shop_images\/fun.jpg",
         "heading": "",
         "richtext": "",
         "padding_top": 0,
@@ -663,9 +663,9 @@
     "a01e7f6a-6040-4334-97af-966598236644",
     "c79d2326-cdd9-44c2-bea3-56cd03cff554",
     "9ebcbf44-6bc3-4356-a04f-63dbfca91b59",
+    "3a2ece32-4149-4f21-a57c-a9aad69b1b5c",
     "159dfafd-7d99-4872-b6e0-61b238b8999a",
     "4e1a7ea3-1deb-4828-8422-5b84ac8efed1",
-    "3a2ece32-4149-4f21-a57c-a9aad69b1b5c",
     "8e104c0e-1cc6-4d18-8f96-60fa59160afc",
     "d2b3bceb-28f8-409f-ac63-f76725ba9041",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
