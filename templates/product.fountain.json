@@ -23,7 +23,7 @@
         "b504c877-67df-4d07-b421-9fac2e31e94f": {
           "type": "text",
           "settings": {
-            "text": "<h1>\n<span>SNOW+ Pet Water Fountain<\/span><span>Order now, and save 15%<\/span>\n<\/h1><br><span>*Only one discount can be applied per purchase.<\/span>"
+            "text": "<h1>\n<span>SNOW+ Pet Water Fountain<\/span><br><span>Order now, and save 15%<\/span>\n<\/h1><span>*Only one discount can be applied per purchase.<\/span>"
           }
         }
       },
