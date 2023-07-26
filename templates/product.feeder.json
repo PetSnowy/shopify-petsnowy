@@ -1,19 +1,7 @@
 {
   "sections": {
-    "a01ea6b4-6ac5-4f90-8922-bd36ec52a26d": {
-      "type": "image-text-block",
-      "settings": {
-        "img": "shopify:\/\/shop_images\/automatic_pet_feeder_petsnowy_cat_feeder_c81159d8-f3a8-483c-99db-e052d90e81ee.jpg",
-        "mobimg": "shopify:\/\/shop_images\/pet_feeder_7a4388a2-05ea-44cc-93d4-054484ed93af.jpg",
-        "heading": "",
-        "richtext": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "24aa800b-1cc6-4355-bb54-110ba4e11787": {
       "type": "image-banner",
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/3_9428679a-9340-47d4-a9f2-2a29b948cb8d.png",
         "image_mbl": "shopify:\/\/shop_images\/10071137_07_2_edb94e79-d6da-4f9b-9efb-7a65eee4874d.jpg",
@@ -59,6 +47,17 @@
         "full_width": true,
         "padding_top": 56,
         "padding_bottom": 40
+      }
+    },
+    "a01ea6b4-6ac5-4f90-8922-bd36ec52a26d": {
+      "type": "image-text-block",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/automatic_pet_feeder_petsnowy_cat_feeder_c81159d8-f3a8-483c-99db-e052d90e81ee.jpg",
+        "mobimg": "shopify:\/\/shop_images\/pet_feeder_7a4388a2-05ea-44cc-93d4-054484ed93af.jpg",
+        "heading": "",
+        "richtext": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "635deaad-6797-4ca6-9a10-c443617e9573": {
@@ -659,9 +658,9 @@
     }
   },
   "order": [
-    "a01ea6b4-6ac5-4f90-8922-bd36ec52a26d",
     "24aa800b-1cc6-4355-bb54-110ba4e11787",
     "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
+    "a01ea6b4-6ac5-4f90-8922-bd36ec52a26d",
     "635deaad-6797-4ca6-9a10-c443617e9573",
     "b6e45bc2-2133-4106-a9db-61ab406abfe6",
     "main",
