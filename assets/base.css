@@ -423,6 +423,9 @@ h5,
 .hxl {
   font-size: calc(var(--font-heading-scale) * 5rem);
 }
+h1 {
+	margin: 10px 0px;
+}
 
 @media only screen and (min-width: 750px) {
   .hxl {
@@ -448,7 +451,7 @@ h1,
 @media only screen and (min-width: 750px) {
   h1,
   .h1 {
-    font-size: calc(var(--font-heading-scale) * 4rem);
+    font-size: calc(var(--font-heading-scale) * 3rem);
   }
 }
 
@@ -2696,8 +2699,8 @@ details-disclosure > details {
   line-height: 1;
   padding: 0.5rem 1.3rem 0.6rem 1.3rem;
   text-align: center;
-  background-color: rgb(var(--color-badge-background));
-  border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
+  background-color: rgb(207, 111, 78);
+  border-color: rgb(207, 111, 78);
   color: rgb(var(--color-foreground));
   word-break: break-word;
 }
