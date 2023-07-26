@@ -4915,7 +4915,9 @@ a.purchase_btn_first:hover {
 .rich-text__blocks a.purchase_btn_first:hover {
   border-color: #231f20;
 }
-
+.rich-text__blocks .affirm-as-low-as:not(:last-child) {
+	display: none;
+}
 body.purchase_product_items.cart.adds_cart .custom_product_data,
 .non_purchase_template cart-items.page-width.is-empty,
 .non_purchase_template.cart cart-items,

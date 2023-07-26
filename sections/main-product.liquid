@@ -664,9 +664,11 @@
                           </svg>
                         </div>
                       </button>
-                      {% comment %} {%- if block.settings.show_dynamic_checkout -%}
-                        {{ form | payment_button }}
-                      {%- endif -%} {% endcomment %}
+                      {% comment %}
+                        {%- if block.settings.show_dynamic_checkout -%}
+                          {{ form | payment_button }}
+                        {%- endif -%}
+                      {% endcomment %}
                     </div>
                   {%- endform -%}
                 </product-form>
@@ -885,6 +887,7 @@
           {{ 'products.product.view_full_details' | t }}
           {% render 'icon-arrow' %}
         </a>
+        <span id="product_price" style="display: none">{{ product.price }}</span>
       </div>
     </div>
     {%- if section.settings.media_position == 'right' -%}
