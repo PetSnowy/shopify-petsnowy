@@ -23,7 +23,7 @@
         "b504c877-67df-4d07-b421-9fac2e31e94f": {
           "type": "text",
           "settings": {
-            "text": "<p>SNOW<sup>+<\/sup> Pet Water Fountain  \n<br>Order now, and save <b>15%<\/b>  <\/p>\n<p><small><small>*Only one discount can be applied per purchase.<\/small><\/small><\/p>"
+            "text": "<h1>SNOW<sup>+<\/sup> Pet Water Fountain <\/h1> \n<br>Order now, and save <b>15%<\/b>  <p><\/p>\n<p><small><small>*Only one discount can be applied per purchase.<\/small><\/small><\/p>"
           }
         },
         "e41cef55-a297-4c09-a549-24d35be2b565": {
@@ -428,8 +428,8 @@
       "settings": {
         "img": "shopify:\/\/shop_images\/cat_water_fountain.jpg",
         "mobimg": "shopify:\/\/shop_images\/water_fountain_for_cats_60c3cdb1-80a0-4159-bdc0-91fcc5bb24fe.jpg",
-        "heading": "",
-        "richtext": "",
+        "heading": "Long-lasting & Continuous Hydration",
+        "richtext": "<p>The SNOW+ Cat Water Fountain is built to provide reliable and long-lasting performance. Our fountain has been rigorously tested and can operate continuously for an impressive duration of <strong>up to 900 days without interruption<\/strong>. This ensures that your feline friend will always have access to fresh and flowing water, promoting their hydration and overall well-being.<\/p>",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -452,8 +452,8 @@
       "settings": {
         "img": "shopify:\/\/shop_images\/pet_water_fountain.jpg",
         "mobimg": "shopify:\/\/shop_images\/pet_fountain.png",
-        "heading": "",
-        "richtext": "",
+        "heading": "Changing Filter Monthly for Healthier Hydration",
+        "richtext": "<p>Make sure to give the SNOW+ Cat Water Fountain's filter a proper soak before use! <strong>The filter needs to be soaked at least twice for 5 minutes each time. <\/strong>One little pack of filter can keep your pet's healthy hydration for a whole month. You'll also get a reminder from the PetSnowy App when it's time to give the filter a swap.<\/p>",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -477,7 +477,7 @@
         "img": "shopify:\/\/shop_images\/water_fountain_for_cats.jpg",
         "mobimg": "shopify:\/\/shop_images\/pet_water_fountain_0b5b29bb-8d9b-4696-8542-badfa45089c8.png",
         "heading": "",
-        "richtext": "",
+        "richtext": "<p>With a 68oz capacity and a larger water dispenser tank, the SNOW+ cat water fountain enables your feline friend to access water from every direction.<\/p>",
         "padding_top": 0,
         "padding_bottom": 0
       }
