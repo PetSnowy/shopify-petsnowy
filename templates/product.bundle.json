@@ -1,0 +1,808 @@
+{
+  "sections": {
+    "4d44ea99-36fa-4b09-b6c5-b92fc20bca96": {
+      "type": "banner-video",
+      "settings": {
+        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e62ade0547cf430bbd64ff3316993dae.mp4",
+        "mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e62ade0547cf430bbd64ff3316993dae.mp4",
+        "heading": "",
+        "sub_heading": "",
+        "btn_text": "",
+        "btn_url": ""
+      }
+    },
+    "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "b504c877-67df-4d07-b421-9fac2e31e94f": {
+          "type": "text",
+          "settings": {
+            "text": "<p><b>SNOW<sup>+<\/sup> Self-cleaning Litter Box<\/b>\n<br>Order now, and save <b>$100<\/b> <br><small><small><i>Note: Discount already deducted from the original price<\/i><\/small><\/small><\/p>"
+          }
+        },
+        "e41cef55-a297-4c09-a549-24d35be2b565": {
+          "type": "caption",
+          "settings": {
+            "caption": "Limited Time $100 OFF",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "2c894b36-d272-47ee-93fd-e441d2b637ea": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP",
+            "button_link": "shopify:\/\/products\/snow-automatic-litter-box",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "b504c877-67df-4d07-b421-9fac2e31e94f",
+        "e41cef55-a297-4c09-a549-24d35be2b565",
+        "2c894b36-d272-47ee-93fd-e441d2b637ea"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 40
+      }
+    },
+    "635deaad-6797-4ca6-9a10-c443617e9573": {
+      "type": "product-collection-list",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Bg_Image.png",
+        "title": "Your Collection Text Here",
+        "text": "Your Text Here",
+        "url": "",
+        "images": "shopify:\/\/shop_images\/Bg_Image_1.png",
+        "titles": "Your Collection Text Here",
+        "texts": "Your Text Here",
+        "urls": "",
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "b6e45bc2-2133-4106-a9db-61ab406abfe6": {
+      "type": "Product-video",
+      "disabled": true,
+      "settings": {
+        "vdio_img": "shopify:\/\/shop_images\/video.png",
+        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/86480277b00d435bbbba6e62c6b5f781.mp4",
+        "heading": "Your Video Text Here",
+        "text": "Your Video Text Here",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping",
+            "icon": "truck",
+            "content": "",
+            "page": "shipping"
+          }
+        },
+        "f69dbd09-d478-41ad-b7e8-9051e3ecbc16": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Dimension",
+            "icon": "ruler",
+            "content": "",
+            "page": "dimension"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "f69dbd09-d478-41ad-b7e8-9051e3ecbc16"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "gallery_layout": "stacked",
+        "media_size": "medium",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "815a64f2-a2d1-497f-9dac-1cabc60918d0": {
+      "type": "Explore-products",
+      "disabled": true,
+      "blocks": {
+        "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        }
+      },
+      "block_order": [
+        "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1"
+      ],
+      "settings": {
+        "description": "<p>Cannot foresee Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
+        "product": "petsnowy-indiegogo-launch-discount-30-off",
+        "padding_top": 0,
+        "padding_bottom": 80
+      }
+    },
+    "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8": {
+      "type": "product-grid-collection",
+      "disabled": true,
+      "settings": {
+        "richtext": "",
+        "images": "shopify:\/\/shop_images\/2-ZERO-OROR_04.gif",
+        "titles": "Your Collection Text Here",
+        "texts": "Your Text Here",
+        "urls": "",
+        "half_img": "shopify:\/\/shop_images\/11_5d9b5548-f0cc-4f26-bc86-b0468a725a83.jpg",
+        "image": "shopify:\/\/shop_images\/3_20b9b2cb-b93c-488c-9d7c-341b75f7f603.jpg",
+        "title": "The Ultimate Solution for Odor-Free Living",
+        "text": "Your Text Here",
+        "url": "",
+        "title2": "",
+        "text2": "",
+        "url2": "",
+        "titles2": "",
+        "texts2": "",
+        "urls2": "",
+        "btns": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b": {
+      "type": "product-grid-image",
+      "disabled": true,
+      "settings": {
+        "flex_data": false,
+        "heading": "Your Text Here",
+        "richtext": "<p>Ban not foresee of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
+        "link": "",
+        "btn_title": "",
+        "img_pet": "shopify:\/\/shop_images\/Bg_Image_7.png",
+        "title2": "",
+        "text2": "",
+        "url2": "",
+        "titles2": "Your Text Here",
+        "texts2": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the.<\/p>",
+        "urls2": "",
+        "btns": "Explore accessories",
+        "padding_top": 50,
+        "padding_bottom": 0
+      }
+    },
+    "f594996b-4dbf-425f-9059-9821e6ea4e6b": {
+      "type": "Information-video",
+      "disabled": true,
+      "settings": {
+        "richtext": "<p>pleasure of the moment, cannot foresee so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
+        "vdio_img": "shopify:\/\/shop_images\/Rectangle_14_1.png",
+        "vdio": "",
+        "heading": "The power you need",
+        "text": "Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.",
+        "padding_top": 20,
+        "padding_bottom": 60
+      }
+    },
+    "30307903-7dfd-43fd-a94b-e8afddaa806b": {
+      "type": "image-text-block",
+      "disabled": true,
+      "blocks": {
+        "9d1b52ba-657b-424d-a6c2-057a19a15eed": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
+          }
+        },
+        "9ecc1e22-b451-440f-a65c-c2d0f68d6df7": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
+          }
+        },
+        "64e8ed2c-3e0c-47e8-856a-4a4355769102": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "9d1b52ba-657b-424d-a6c2-057a19a15eed",
+        "9ecc1e22-b451-440f-a65c-c2d0f68d6df7",
+        "64e8ed2c-3e0c-47e8-856a-4a4355769102"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/Bg_Image_10.png",
+        "heading": "Your Text Here",
+        "richtext": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "7956ec82-bee1-4347-a954-e5194f282217": {
+      "type": "product-grid-image",
+      "disabled": true,
+      "settings": {
+        "flex_data": false,
+        "heading": "The Ultimate Solution for Odor-Free Living",
+        "richtext": "<p>Cutting-Edge Triple Deodorization System with TiO2<\/p>",
+        "link": "#",
+        "btn_title": "",
+        "image2": "shopify:\/\/shop_images\/3_20b9b2cb-b93c-488c-9d7c-341b75f7f603.jpg",
+        "title2": "",
+        "text2": "",
+        "url2": "",
+        "images2": "shopify:\/\/shop_images\/2-ZERO-OROR_04.gif",
+        "titles2": "Your Text Here",
+        "texts2": "<p>Demoralized by the charms of pleasure of the moment by desire, that they cannot foresee the pain and trouble.<\/p>",
+        "urls2": "#",
+        "btns": "Explore accessories",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1": {
+      "type": "grid-image-text",
+      "disabled": true,
+      "settings": {
+        "title": "Your Text Here",
+        "texts": "<p>That they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
+        "title1": "Your Text Here",
+        "texts1": "<p>Ghat they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
+        "title2": "Your Text Here",
+        "textss2": "<p>Qhat they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
+        "flex_data": true,
+        "richtexxt": "<p>Linded by desire, that they cannot foresee Demoralized by the charms of pleasure of the moment, so  the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
+        "images2": "shopify:\/\/shop_images\/2-ZERO-OROR_04.gif",
+        "vdioses": "",
+        "vdios": "",
+        "texts2": "<p>Your Text Here 2<\/p>",
+        "titles2": "Your Text Here",
+        "textext": "<p>That they cannot foresee the pain and trouble that are bound to ensue and  That they cannot foresee the pain.<\/p>",
+        "urls2": "#",
+        "btns": "Explore accessories",
+        "image2": "shopify:\/\/shop_images\/3_20b9b2cb-b93c-488c-9d7c-341b75f7f603.jpg",
+        "vdio": "",
+        "url2": "",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "a01e7f6a-6040-4334-97af-966598236644": {
+      "type": "extra-text-blocks",
+      "disabled": true,
+      "blocks": {
+        "03d34236-6eee-4408-bf76-43f3607fd691": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+          }
+        },
+        "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+          }
+        },
+        "c59af14b-539c-4fa1-a0de-8fd8435255cf": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "03d34236-6eee-4408-bf76-43f3607fd691",
+        "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74",
+        "c59af14b-539c-4fa1-a0de-8fd8435255cf"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "c79d2326-cdd9-44c2-bea3-56cd03cff554": {
+      "type": "compare-section",
+      "disabled": true,
+      "settings": {
+        "main_title": "Compare",
+        "collection": "smart-pet-products",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_17.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "8182050c-943a-4a32-ab7c-994213dca849": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18597232574786__8182050c-943a-4a32-ab7c-994213dca849-16837919518e59bda4-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cutting-Edge Triple Deodorization System",
+            "heading_size": "h1"
+          }
+        },
+        "8849905a-14b4-4979-ab7a-5456bfd3ce9f": {
+          "type": "caption",
+          "settings": {
+            "caption": "Odor free • Perfectly safe • Eco friendly",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--18597232574786__8182050c-943a-4a32-ab7c-994213dca849-16837919518e59bda4-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Remove the root of unpleasant smell, add a fresh and luscious aroma to your SNOW⁺ litter box.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--18597232574786__8182050c-943a-4a32-ab7c-994213dca849-16837919518e59bda4-0",
+        "8849905a-14b4-4979-ab7a-5456bfd3ce9f",
+        "template--18597232574786__8182050c-943a-4a32-ab7c-994213dca849-16837919518e59bda4-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1_3_b3611787-0b37-4063-973e-d27ad48f3266.jpg",
+        "image_mob": "shopify:\/\/shop_images\/1_3_b3611787-0b37-4063-973e-d27ad48f3266.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "chek_wth": true,
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "6c8b3f43-2aa2-4945-be93-92dc90208d43": {
+      "type": "image-with-text",
+      "blocks": {
+        "0a936c4f-1090-460a-84f1-ffc74e2f1fe6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Effortless, Convenient, and Sanitary",
+            "heading_size": "h1"
+          }
+        },
+        "29429228-f2c2-4b01-a351-de3c245dc20f": {
+          "type": "caption",
+          "settings": {
+            "caption": "self-sealing • 2 weeks free of scooping • Patented design",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "10ae94d6-61db-4fa7-9351-767ff351dc71": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Always find an odorless and dry waste bag ready to be disposed of. The cleanest cat waste disposal experience ever.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "0a936c4f-1090-460a-84f1-ffc74e2f1fe6",
+        "29429228-f2c2-4b01-a351-de3c245dc20f",
+        "10ae94d6-61db-4fa7-9351-767ff351dc71"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2_3_d6d3015b-46b7-4d0e-8d41-53838683a50e.jpg",
+        "image_mob": "shopify:\/\/shop_images\/2_3_d6d3015b-46b7-4d0e-8d41-53838683a50e.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "chek_wth": true,
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "58321a20-dbda-462b-98d1-9ac45de56483": {
+      "type": "image-with-text",
+      "blocks": {
+        "ce00eb3e-edc9-415f-a93e-cbaa04039092": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Cleanest Litter Box Yet",
+            "heading_size": "h1"
+          }
+        },
+        "7573ac64-8c42-4866-b56e-e0d394976a62": {
+          "type": "caption",
+          "settings": {
+            "caption": "curved walkway • SNOW⁺ litter mat • side entrance",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "9563dc4c-c660-45f8-a17a-a336b29a4f40": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Designed with intention, the curved walkway with mat was crafted to both leave the litter in and the doorway clean. <\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "ce00eb3e-edc9-415f-a93e-cbaa04039092",
+        "7573ac64-8c42-4866-b56e-e0d394976a62",
+        "9563dc4c-c660-45f8-a17a-a336b29a4f40"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3_5_8ca7eb0b-8ad1-4a55-9920-4eab9a45b9fb.jpg",
+        "image_mob": "shopify:\/\/shop_images\/3_5_8ca7eb0b-8ad1-4a55-9920-4eab9a45b9fb.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "chek_wth": true,
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "19e9f25b-39eb-48f1-8c86-9308c2fe2f3d": {
+      "type": "image-with-text",
+      "blocks": {
+        "e81bcd58-b345-4c9a-8f97-e49cddbd08b7": {
+          "type": "heading",
+          "settings": {
+            "heading": "And Safest, Ever",
+            "heading_size": "h1"
+          }
+        },
+        "d22d9df0-d285-4c75-9c31-e1599789dc61": {
+          "type": "caption",
+          "settings": {
+            "caption": "smart sensors • anti-clamp • app notification",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "3ccf5e97-2e62-45c4-816e-faeaab032cec": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Safety is of utmost important, the integrated SnowSafe⁺ System continuously analyzes 4 zones to ensure kitty’s safety.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "e81bcd58-b345-4c9a-8f97-e49cddbd08b7",
+        "d22d9df0-d285-4c75-9c31-e1599789dc61",
+        "3ccf5e97-2e62-45c4-816e-faeaab032cec"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/5_17_5b1f9aec-966f-4c8a-bc06-4cf8a0872bdc.jpg",
+        "image_mob": "shopify:\/\/shop_images\/5_17_5b1f9aec-966f-4c8a-bc06-4cf8a0872bdc.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "chek_wth": true,
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "58d276f3-46b1-43b3-88fd-33aecbac841a": {
+      "type": "image-with-text",
+      "blocks": {
+        "f2d3099e-7f82-4dfa-adf8-fc126b1de423": {
+          "type": "heading",
+          "settings": {
+            "heading": "Mobile Control",
+            "heading_size": "h1"
+          }
+        },
+        "ae54ae90-8a4a-4842-8254-a8757a667737": {
+          "type": "caption",
+          "settings": {
+            "caption": "Real-Time Tracking • Cat Recognition • Health Insights • Multi-cat friendly",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "e40294b3-aa83-405e-b467-cab4eb3f4c07": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Check kitty’s usage, waste drawer status, and more with just a tap in the PetSnowy app.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "f2d3099e-7f82-4dfa-adf8-fc126b1de423",
+        "ae54ae90-8a4a-4842-8254-a8757a667737",
+        "e40294b3-aa83-405e-b467-cab4eb3f4c07"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/6_1_92c42148-4bb9-404a-9f75-814e30ec2682.jpg",
+        "image_mob": "shopify:\/\/shop_images\/6_1_92c42148-4bb9-404a-9f75-814e30ec2682.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "chek_wth": true,
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "03727ca6-4d51-464a-9105-edc5bf54883b": {
+      "type": "image-with-text",
+      "blocks": {
+        "d36ec3ea-ef89-42f5-ae3a-d7bd8a425f45": {
+          "type": "heading",
+          "settings": {
+            "heading": "Super Easy to Assemble, Extremely Easy to Clean",
+            "heading_size": "h1"
+          }
+        },
+        "e93e8df0-984c-4842-a211-a828b0b61908": {
+          "type": "caption",
+          "settings": {
+            "caption": "Everything Magnetic • high-grade materials • fine craftsmanship",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "78461c76-059e-4db0-b880-28dd051ceb54": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Each part seamlessly attaches to and detaches from the next one. Effortlessly assemble and disassemble to clean when necessary.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "d36ec3ea-ef89-42f5-ae3a-d7bd8a425f45",
+        "e93e8df0-984c-4842-a211-a828b0b61908",
+        "78461c76-059e-4db0-b880-28dd051ceb54"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/4_11_a945091b-6b52-4ad6-ae88-c8a518eed752.jpg",
+        "image_mob": "shopify:\/\/shop_images\/4_11_a945091b-6b52-4ad6-ae88-c8a518eed752.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "chek_wth": true,
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "16879203322247258f": {
+      "type": "apps",
+      "blocks": {
+        "042ecd86-3111-463a-a041-b74ad0850cad": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": true,
+            "limit": 8,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "042ecd86-3111-463a-a041-b74ad0850cad"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "d14f1052-f0b1-4254-8d9a-a84aeb986bdd": {
+      "type": "social-image-text",
+      "blocks": {
+        "12ee67c8-1af4-46ca-9aa7-64db4191e694": {
+          "type": "image",
+          "settings": {
+            "blk_img": "shopify:\/\/shop_images\/8c1a9dbc-786b-4948-b999-dd72dfa82811.jpg"
+          }
+        },
+        "ef490cd3-7a6b-4bf9-9fd9-5ecef72a2214": {
+          "type": "image",
+          "settings": {
+            "blk_img": "shopify:\/\/shop_images\/58c5c335-4c67-4a44-9c68-31275c874762.jpg"
+          }
+        },
+        "25153b1b-e008-4818-bb39-f716431c24e4": {
+          "type": "image",
+          "settings": {
+            "blk_img": "shopify:\/\/shop_images\/20230313195840.png"
+          }
+        },
+        "2cad361c-19e5-4f4b-a613-ac6890e2dafe": {
+          "type": "image",
+          "settings": {
+            "blk_img": "shopify:\/\/shop_images\/4185.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "12ee67c8-1af4-46ca-9aa7-64db4191e694",
+        "ef490cd3-7a6b-4bf9-9fd9-5ecef72a2214",
+        "25153b1b-e008-4818-bb39-f716431c24e4",
+        "2cad361c-19e5-4f4b-a613-ac6890e2dafe"
+      ],
+      "settings": {
+        "heading": "Comfort · Future",
+        "insta_txt": "Follow us on Instagram",
+        "app_url": "http:\/\/instagram.com\/petsnowy_official",
+        "img": "shopify:\/\/shop_images\/4182.jpg",
+        "space_top": 60,
+        "space_bottom": 40
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "4d44ea99-36fa-4b09-b6c5-b92fc20bca96",
+    "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
+    "635deaad-6797-4ca6-9a10-c443617e9573",
+    "b6e45bc2-2133-4106-a9db-61ab406abfe6",
+    "main",
+    "815a64f2-a2d1-497f-9dac-1cabc60918d0",
+    "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8",
+    "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b",
+    "f594996b-4dbf-425f-9059-9821e6ea4e6b",
+    "30307903-7dfd-43fd-a94b-e8afddaa806b",
+    "7956ec82-bee1-4347-a954-e5194f282217",
+    "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1",
+    "a01e7f6a-6040-4334-97af-966598236644",
+    "c79d2326-cdd9-44c2-bea3-56cd03cff554",
+    "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a",
+    "8182050c-943a-4a32-ab7c-994213dca849",
+    "6c8b3f43-2aa2-4945-be93-92dc90208d43",
+    "58321a20-dbda-462b-98d1-9ac45de56483",
+    "19e9f25b-39eb-48f1-8c86-9308c2fe2f3d",
+    "58d276f3-46b1-43b3-88fd-33aecbac841a",
+    "03727ca6-4d51-464a-9105-edc5bf54883b",
+    "16879203322247258f",
+    "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
+    "product-recommendations"
+  ]
+}
