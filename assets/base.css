@@ -2185,7 +2185,8 @@ input[type="checkbox"] {
 /* Main Header Layout */
 .header-wrapper {
   display: block;
-  position: relative;
+  position: fixed;
+	width: 100%;
   background-color: #fff;
   z-index: 1;
 }
@@ -2959,7 +2960,7 @@ html {
 }
 /* Header Css Start */
 .itg_overlap_header {
-  position: absolute;
+  position: fixed;
   background-color: transparent !important;
   right: 0;
   left: 0;
