@@ -143,11 +143,7 @@
             "content": "",
             "page": "dimension"
           }
-        },
-				"bundle_list":{
-					"type": "bundle_list",
-					"settings": {}
-				}
+        }
       },
       "block_order": [
         "vendor",
@@ -159,8 +155,7 @@
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
-        "f69dbd09-d478-41ad-b7e8-9051e3ecbc16",
-				"bundle_list"
+        "f69dbd09-d478-41ad-b7e8-9051e3ecbc16"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -493,6 +488,62 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "82364e4d-219f-4773-82b0-2d50586e92a0": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--20172440174914__82364e4d-219f-4773-82b0-2d50586e92a0-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/petsnowy_automatic_cat_litter_box_extra_large_1918487e-7e20-49c4-860a-be0898f534db.jpg",
+            "title": "No Scooping",
+            "text": "<p>TIME-SAVER FOR BUSY FAMILIES <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20172440174914__82364e4d-219f-4773-82b0-2d50586e92a0-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/self_cleaning_litter_box_with_tio2_system.jpg",
+            "title": "No Smell",
+            "text": "<p>Triple Odor-elimination <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20172440174914__82364e4d-219f-4773-82b0-2d50586e92a0-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/self_cleaning_litter_box_with_fragrance_box.jpg",
+            "title": "No Mess",
+            "text": "<p>Always find a sealed and dry waste bag ready<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20172440174914__82364e4d-219f-4773-82b0-2d50586e92a0-column-1",
+        "template--20172440174914__82364e4d-219f-4773-82b0-2d50586e92a0-column-2",
+        "template--20172440174914__82364e4d-219f-4773-82b0-2d50586e92a0-column-3"
+      ],
+      "settings": {
+        "title": "Litter Box",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -512,6 +563,7 @@
     "03727ca6-4d51-464a-9105-edc5bf54883b",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
-    "product-recommendations"
+    "product-recommendations",
+    "82364e4d-219f-4773-82b0-2d50586e92a0"
   ]
 }
