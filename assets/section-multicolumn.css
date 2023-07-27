@@ -184,6 +184,13 @@
     display: grid;
     row-gap: 2.6667vw;
   }
+	.slider-mobile-gutter ul li {
+    border-radius: 2vw;
+    overflow: hidden;
+  }
+	.slider-mobile-gutter ul li img {
+		border-radius: 2vw !important;
+	}
   .slider-mobile-gutter .multicolumn-card__image-wrapper .button {
     width: 20.6667vw;
   }
