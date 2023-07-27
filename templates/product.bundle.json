@@ -154,13 +154,13 @@
         "title",
         "price",
         "variant_picker",
+				"bundle_list",
         "quantity_selector",
         "buy_buttons",
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
-        "f69dbd09-d478-41ad-b7e8-9051e3ecbc16",
-				"bundle_list"
+        "f69dbd09-d478-41ad-b7e8-9051e3ecbc16"
       ],
       "settings": {
         "enable_sticky_info": true,
