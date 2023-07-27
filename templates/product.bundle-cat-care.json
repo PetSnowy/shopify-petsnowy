@@ -99,6 +99,11 @@
             "picker_type": "button"
           }
         },
+        "bundle_list": {
+          "type": "bundle_list",
+          "settings": {
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -143,11 +148,6 @@
             "content": "",
             "page": "dimension"
           }
-        },
-        "bundle_list": {
-          "type": "bundle_list",
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -177,6 +177,7 @@
     },
     "6e49d3e7-25d2-4666-a7fa-5471ae234bc7": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "template--20172440174914__6e49d3e7-25d2-4666-a7fa-5471ae234bc7-column-1": {
           "type": "column",
