@@ -403,8 +403,6 @@
                   </div>
                 </details>
               </div>
-            {% when 'bundle_list' %}
-              {% render 'bundle-list' %}
             {%- when 'quantity_selector' -%}
               <div
                 class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
@@ -1375,12 +1373,6 @@
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
         }
       ]
-    },
-    {
-      "type": "bundle_list",
-      "name": "t:sections.main-product.blocks.bundle_list.name",
-      "limit": 1,
-      "settings": []
     },
     {
       "type": "description",

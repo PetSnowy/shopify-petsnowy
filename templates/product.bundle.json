@@ -143,18 +143,13 @@
             "content": "",
             "page": "dimension"
           }
-        },
-				"bundle_list":{
-					"type": "bundle_list",
-					"settings":{}
-				}
+        }
       },
       "block_order": [
         "vendor",
         "title",
         "price",
         "variant_picker",
-				"bundle_list",
         "quantity_selector",
         "buy_buttons",
         "description",
