@@ -187,6 +187,9 @@
 .slider-mobile-gutter ul li {
   border-radius: 0px !important;
 }
+.multicolumn-card.content-container {
+  border-radius: 15px 15px 0 0;
+}
 @media screen and (min-width: 990px) {
   .multicolumn-list__item--empty {
     display: list-item;
