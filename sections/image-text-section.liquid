@@ -1,0 +1,27 @@
+<div class="image-text-section">
+  <img src="{{ section.settings.section_image | img_url }}" alt="Section Image">
+  <p>{{ section.settings.section_text }}</p>
+</div>
+{% schema %}
+{
+  "name": "Image Text Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "section_image",
+      "label": "Section Image"
+    },
+    {
+      "type": "textarea",
+      "id": "section_text",
+      "label": "Section Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
