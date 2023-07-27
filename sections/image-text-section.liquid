@@ -1,26 +1,25 @@
-<div class="image-text-section">
-  <img src="{{ section.settings.section_image | img_url }}" alt="Section Image">
-  <p>{{ section.settings.section_text }}</p>
+<div class="icon-text-wrapper">
+  <div class="icon">
+    {{ section.settings.section_icon }}
+  </div>
+  <div class="text">
+    <p>{{ section.settings.section_text }}</p>
+  </div>
 </div>
+
 {% schema %}
 {
-  "name": "Image Text Section",
+  "name": "Icon Text Section",
   "settings": [
     {
-      "type": "image_picker",
-      "id": "section_image",
-      "label": "Section Image"
+      "type": "icon_picker",
+      "id": "section_icon",
+      "label": "Section Icon"
     },
     {
       "type": "textarea",
       "id": "section_text",
       "label": "Section Text"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Custom",
-      "category": "Custom"
     }
   ]
 }
