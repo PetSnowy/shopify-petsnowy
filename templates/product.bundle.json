@@ -176,8 +176,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/petsnowy_automatic_cat_litter_box_extra_large_1918487e-7e20-49c4-860a-be0898f534db.jpg",
-            "title": "No Scooping",
-            "text": "<p>TIME-SAVER FOR BUSY FAMILIES<\/p>",
+            "title": "",
+            "text": "<p>No Scooping, No Smell, No Mess<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -186,8 +186,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/self_cleaning_litter_box_with_tio2_system.jpg",
-            "title": "No Smell",
-            "text": "<p>TRIPLE ODOR ELIMINATION<\/p>",
+            "title": "",
+            "text": "<p>Remove the root of unpleasant smell, add a fresh and luscious aroma to your SNOW⁺ litter box.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -196,7 +196,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/self_cleaning_litter_box_with_fragrance_box.jpg",
-            "title": "No Mess",
+            "title": "",
             "text": "<p>ALWAYS FIND A SEALED AND DRY WASTE BAG READY.<\/p>",
             "link_label": "",
             "link": ""
@@ -232,8 +232,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/cat_water_fountain.jpg",
-            "title": "Healthy Hydration",
-            "text": "<p>UP TO 900 DAYS WITHOUT INTERRUPTION<\/p>",
+            "title": "",
+            "text": "<p>Made to ensure your pets enjoy the cleanest water possible and keep your pet safe from urinary disease.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -242,8 +242,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/pet_water_fountain.jpg",
-            "title": "Extra Large Tray and Tank",
-            "text": "<p>MULTIPLE PET FRIENDLY<\/p>",
+            "title": "",
+            "text": "<p>With this extra-large capacity pet water fountain, multiple pets won't have to fight for their turn to stay hydrated.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -252,8 +252,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/dog_water_fountain.png",
-            "title": "App Control",
-            "text": "<p>EFFORTLESSLY CARE FOR YOUR CATS AT HOME OR ON THE GO.<\/p>",
+            "title": "",
+            "text": "<p>With the PetSnowy app, taking care of your cats at home or on the go is effortless.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -288,7 +288,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/automatic_pet_feeder_petsnowy_cat_feeder_9642ac6b-0532-4fe2-bf74-93bf02594415.jpg",
-            "title": "Healthy Hydration",
+            "title": "",
             "text": "<p>LOCK-IN FRESHNESS, STRAIGHT TO YOUR PET'S DISH<\/p>",
             "link_label": "",
             "link": ""
@@ -298,7 +298,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/petsnowy_automatic_cat_feeder_a29d313f-a198-45da-a0d3-2109ac897308.jpg",
-            "title": "1.05 Gallon Capacity",
+            "title": "",
             "text": "<p>THOUGHTFUL DESIGN ENSURES EVERY HAPPY MEAL<\/p>",
             "link_label": "",
             "link": ""
@@ -308,8 +308,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/cat_feeder_automatic_8055330a-5bb4-4b28-b569-c07a90b8f4a5.jpg",
-            "title": "Dual Power Supply",
-            "text": "<p>KEEP YOUR FEEDING PLAN EVEN WITHOUT POWER OR THE INTERNET.<\/p>",
+            "title": "",
+            "text": "<p>Dual Power Supply. continue with your feeding plan even without power or internet.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -343,9 +343,9 @@
         "b55000e5-f548-46a7-a88f-8ced6171e140": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/automatic_pet_feeder_petsnowy_cat_feeder_9642ac6b-0532-4fe2-bf74-93bf02594415.jpg",
-            "title": "Healthy Hydration",
-            "text": "<p>LOCK-IN FRESHNESS, STRAIGHT TO YOUR PET'S DISH<\/p>",
+            "image": "shopify:\/\/shop_images\/petsnowy_cat_toy_ba27dcc3-e038-4fba-95df-1dcc75c14504.jpg",
+            "title": "",
+            "text": "<p>Keep your kitty friend accompanied and your work uninterrupted, even on busy days.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -353,9 +353,9 @@
         "adddd2ec-a997-48ba-8535-d8a9c7f6aca4": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/petsnowy_automatic_cat_feeder_a29d313f-a198-45da-a0d3-2109ac897308.jpg",
-            "title": "1.05 Gallon Capacity",
-            "text": "<p>THOUGHTFUL DESIGN ENSURES EVERY HAPPY MEAL<\/p>",
+            "image": "shopify:\/\/shop_images\/interactive_cat_toys_4895e26f-e318-42a9-8c8c-306f97a37a26.jpg",
+            "title": "",
+            "text": "<p>Boasting a whisper-quiet motor, our cat toys create a harmonious environment where your feline friend can happily engage in play.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -363,9 +363,9 @@
         "94f53e53-2fce-4347-9591-a47c61b874ac": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cat_feeder_automatic_8055330a-5bb4-4b28-b569-c07a90b8f4a5.jpg",
-            "title": "Dual Power Supply",
-            "text": "<p>KEEP YOUR FEEDING PLAN EVEN WITHOUT POWER OR THE INTERNET.<\/p>",
+            "image": "shopify:\/\/shop_images\/automatic_cat_toy_0166f611-8401-427a-a774-793f90019ef1.jpg",
+            "title": "",
+            "text": "<p>Overplaying may damage kitty's heart. Our interactive cat toys has a 15-minute auto shutdown trait to promote cat wellness. <\/p>",
             "link_label": "",
             "link": ""
           }
@@ -377,7 +377,7 @@
         "94f53e53-2fce-4347-9591-a47c61b874ac"
       ],
       "settings": {
-        "title": "Pet Feeder",
+        "title": "Cat Toy",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
