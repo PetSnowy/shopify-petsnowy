@@ -1,5 +1,102 @@
 {
   "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping",
+            "icon": "truck",
+            "content": "",
+            "page": "shipping"
+          }
+        },
+        "f69dbd09-d478-41ad-b7e8-9051e3ecbc16": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Dimension",
+            "icon": "ruler",
+            "content": "",
+            "page": "dimension"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "f69dbd09-d478-41ad-b7e8-9051e3ecbc16"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "gallery_layout": "stacked",
+        "media_size": "medium",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8": {
       "type": "rich-text",
       "disabled": true,
@@ -100,273 +197,60 @@
         "padding_bottom": 36
       }
     },
-    "635deaad-6797-4ca6-9a10-c443617e9573": {
-      "type": "product-collection-list",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Bg_Image.png",
-        "title": "Your Collection Text Here",
-        "text": "Your Text Here",
-        "url": "",
-        "images": "shopify:\/\/shop_images\/Bg_Image_1.png",
-        "titles": "Your Collection Text Here",
-        "texts": "Your Text Here",
-        "urls": "",
-        "padding_top": 40,
-        "padding_bottom": 12
-      }
-    },
-    "b6e45bc2-2133-4106-a9db-61ab406abfe6": {
-      "type": "Product-video",
-      "disabled": true,
-      "settings": {
-        "vdio_img": "shopify:\/\/shop_images\/video.png",
-        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/86480277b00d435bbbba6e62c6b5f781.mp4",
-        "heading": "Your Video Text Here",
-        "text": "Your Video Text Here",
-        "padding_top": 20,
-        "padding_bottom": 40
-      }
-    },
-    "main": {
-      "type": "main-product",
+    "199ceb80-f0d7-4392-94fc-bbf30e7f1ed8": {
+      "type": "multicolumn",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "disabled": true,
+        "dc8d7de6-56f5-4d87-b57f-953110e2add3": {
+          "type": "column",
           "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
+            "image": "shopify:\/\/shop_images\/automatic_pet_feeder_petsnowy_cat_feeder_c81159d8-f3a8-483c-99db-e052d90e81ee.jpg",
+            "title": "No Scooping",
+            "text": "<p>TIME-SAVER FOR BUSY FAMILIES <\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "title": {
-          "type": "title",
+        "6e01be86-a29b-4d6d-9849-0d2776763600": {
+          "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/self_cleaning_litter_box_with_tio2_system.jpg",
+            "title": "No Smell",
+            "text": "<p>Triple Odor-elimination <\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "price": {
-          "type": "price",
+        "0beaf97c-42e8-4464-9402-d74145a86493": {
+          "type": "column",
           "settings": {
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping",
-            "icon": "truck",
-            "content": "",
-            "page": "shipping"
-          }
-        },
-        "f69dbd09-d478-41ad-b7e8-9051e3ecbc16": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Dimension",
-            "icon": "ruler",
-            "content": "",
-            "page": "dimension"
+            "image": "shopify:\/\/shop_images\/self_cleaning_litter_box_with_fragrance_box.jpg",
+            "title": "No Mess",
+            "text": "<p>Always find a sealed and dry waste bag ready<\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "vendor",
-        "title",
-        "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "f69dbd09-d478-41ad-b7e8-9051e3ecbc16"
+        "dc8d7de6-56f5-4d87-b57f-953110e2add3",
+        "6e01be86-a29b-4d6d-9849-0d2776763600",
+        "0beaf97c-42e8-4464-9402-d74145a86493"
       ],
       "settings": {
-        "enable_sticky_info": true,
-        "media_position": "left",
-        "gallery_layout": "stacked",
-        "media_size": "medium",
-        "mobile_thumbnails": "hide",
-        "hide_variants": true,
-        "enable_video_looping": false,
+        "title": "Feeder",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "815a64f2-a2d1-497f-9dac-1cabc60918d0": {
-      "type": "Explore-products",
-      "disabled": true,
-      "blocks": {
-        "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        }
-      },
-      "block_order": [
-        "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1"
-      ],
-      "settings": {
-        "description": "<p>Cannot foresee Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
-        "product": "petsnowy-indiegogo-launch-discount-30-off",
-        "padding_top": 0,
-        "padding_bottom": 80
-      }
-    },
-    "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8": {
-      "type": "product-grid-collection",
-      "disabled": true,
-      "settings": {
-        "richtext": "",
-        "images": "shopify:\/\/shop_images\/2-ZERO-OROR_04.gif",
-        "titles": "Your Collection Text Here",
-        "texts": "Your Text Here",
-        "urls": "",
-        "half_img": "shopify:\/\/shop_images\/11_5d9b5548-f0cc-4f26-bc86-b0468a725a83.jpg",
-        "image": "shopify:\/\/shop_images\/3_20b9b2cb-b93c-488c-9d7c-341b75f7f603.jpg",
-        "title": "The Ultimate Solution for Odor-Free Living",
-        "text": "Your Text Here",
-        "url": "",
-        "title2": "",
-        "text2": "",
-        "url2": "",
-        "titles2": "",
-        "texts2": "",
-        "urls2": "",
-        "btns": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b": {
-      "type": "product-grid-image",
-      "disabled": true,
-      "settings": {
-        "flex_data": false,
-        "heading": "Your Text Here",
-        "richtext": "<p>Ban not foresee of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
-        "link": "",
-        "btn_title": "",
-        "img_pet": "shopify:\/\/shop_images\/Bg_Image_7.png",
-        "title2": "",
-        "text2": "",
-        "url2": "",
-        "titles2": "Your Text Here",
-        "texts2": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the.<\/p>",
-        "urls2": "",
-        "btns": "Explore accessories",
-        "padding_top": 50,
-        "padding_bottom": 0
-      }
-    },
-    "f594996b-4dbf-425f-9059-9821e6ea4e6b": {
-      "type": "Information-video",
-      "disabled": true,
-      "settings": {
-        "richtext": "<p>pleasure of the moment, cannot foresee so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
-        "vdio_img": "shopify:\/\/shop_images\/Rectangle_14_1.png",
-        "vdio": "",
-        "heading": "The power you need",
-        "text": "Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.",
-        "padding_top": 20,
-        "padding_bottom": 60
-      }
-    },
-    "a01e7f6a-6040-4334-97af-966598236644": {
-      "type": "extra-text-blocks",
-      "blocks": {
-        "03d34236-6eee-4408-bf76-43f3607fd691": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
-          }
-        },
-        "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
-          }
-        },
-        "c59af14b-539c-4fa1-a0de-8fd8435255cf": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "03d34236-6eee-4408-bf76-43f3607fd691",
-        "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74",
-        "c59af14b-539c-4fa1-a0de-8fd8435255cf"
-      ],
-      "settings": {
-        "padding_top": 20,
-        "padding_bottom": 40
-      }
-    },
-    "c79d2326-cdd9-44c2-bea3-56cd03cff554": {
-      "type": "compare-section",
-      "disabled": true,
-      "settings": {
-        "main_title": "Compare",
-        "collection": "smart-pet-products",
-        "products_to_show": 3,
-        "columns_desktop": 3,
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a": {
-      "type": "image-banner",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Rectangle_17.png",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     },
     "16879203322247258f": {
@@ -453,18 +337,10 @@
     }
   },
   "order": [
+    "main",
     "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
     "82364e4d-219f-4773-82b0-2d50586e92a0",
-    "635deaad-6797-4ca6-9a10-c443617e9573",
-    "b6e45bc2-2133-4106-a9db-61ab406abfe6",
-    "main",
-    "815a64f2-a2d1-497f-9dac-1cabc60918d0",
-    "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8",
-    "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b",
-    "f594996b-4dbf-425f-9059-9821e6ea4e6b",
-    "a01e7f6a-6040-4334-97af-966598236644",
-    "c79d2326-cdd9-44c2-bea3-56cd03cff554",
-    "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a",
+    "199ceb80-f0d7-4392-94fc-bbf30e7f1ed8",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
     "product-recommendations"
