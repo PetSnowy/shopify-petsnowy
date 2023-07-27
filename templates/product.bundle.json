@@ -1,5 +1,77 @@
 {
   "sections": {
+    "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "b504c877-67df-4d07-b421-9fac2e31e94f": {
+          "type": "text",
+          "settings": {
+            "text": "<p><b>SNOW<sup>+<\/sup> Self-cleaning Litter Box<\/b>\n<br>Order now, and save <b>$100<\/b> <br><small><small><i>Note: Discount already deducted from the original price<\/i><\/small><\/small><\/p>"
+          }
+        },
+        "e41cef55-a297-4c09-a549-24d35be2b565": {
+          "type": "caption",
+          "settings": {
+            "caption": "Limited Time $100 OFF",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "2c894b36-d272-47ee-93fd-e441d2b637ea": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP",
+            "button_link": "shopify:\/\/products\/snow-automatic-litter-box",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "b504c877-67df-4d07-b421-9fac2e31e94f",
+        "e41cef55-a297-4c09-a549-24d35be2b565",
+        "2c894b36-d272-47ee-93fd-e441d2b637ea"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 40
+      }
+    },
+    "635deaad-6797-4ca6-9a10-c443617e9573": {
+      "type": "product-collection-list",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Bg_Image.png",
+        "title": "Your Collection Text Here",
+        "text": "Your Text Here",
+        "url": "",
+        "images": "shopify:\/\/shop_images\/Bg_Image_1.png",
+        "titles": "Your Collection Text Here",
+        "texts": "Your Text Here",
+        "urls": "",
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "b6e45bc2-2133-4106-a9db-61ab406abfe6": {
+      "type": "Product-video",
+      "disabled": true,
+      "settings": {
+        "vdio_img": "shopify:\/\/shop_images\/video.png",
+        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/86480277b00d435bbbba6e62c6b5f781.mp4",
+        "heading": "Your Video Text Here",
+        "text": "Your Video Text Here",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -97,160 +169,242 @@
         "padding_bottom": 36
       }
     },
-    "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8": {
-      "type": "rich-text",
+    "815a64f2-a2d1-497f-9dac-1cabc60918d0": {
+      "type": "Explore-products",
       "disabled": true,
       "blocks": {
-        "b504c877-67df-4d07-b421-9fac2e31e94f": {
-          "type": "text",
+        "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1": {
+          "type": "variant_picker",
           "settings": {
-            "text": "<p><b>SNOW<sup>+<\/sup> Self-cleaning Litter Box<\/b>\n<br>Order now, and save <b>$100<\/b> <br><small><small><i>Note: Discount already deducted from the original price<\/i><\/small><\/small><\/p>"
+            "picker_type": "button"
+          }
+        }
+      },
+      "block_order": [
+        "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1"
+      ],
+      "settings": {
+        "description": "<p>Cannot foresee Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
+        "product": "petsnowy-indiegogo-launch-discount-30-off",
+        "padding_top": 0,
+        "padding_bottom": 80
+      }
+    },
+    "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8": {
+      "type": "product-grid-collection",
+      "disabled": true,
+      "settings": {
+        "richtext": "",
+        "images": "shopify:\/\/shop_images\/2-ZERO-OROR_04.gif",
+        "titles": "Your Collection Text Here",
+        "texts": "Your Text Here",
+        "urls": "",
+        "half_img": "shopify:\/\/shop_images\/11_5d9b5548-f0cc-4f26-bc86-b0468a725a83.jpg",
+        "image": "shopify:\/\/shop_images\/3_20b9b2cb-b93c-488c-9d7c-341b75f7f603.jpg",
+        "title": "The Ultimate Solution for Odor-Free Living",
+        "text": "Your Text Here",
+        "url": "",
+        "title2": "",
+        "text2": "",
+        "url2": "",
+        "titles2": "",
+        "texts2": "",
+        "urls2": "",
+        "btns": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b": {
+      "type": "product-grid-image",
+      "disabled": true,
+      "settings": {
+        "flex_data": false,
+        "heading": "Your Text Here",
+        "richtext": "<p>Ban not foresee of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
+        "link": "",
+        "btn_title": "",
+        "img_pet": "shopify:\/\/shop_images\/Bg_Image_7.png",
+        "title2": "",
+        "text2": "",
+        "url2": "",
+        "titles2": "Your Text Here",
+        "texts2": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the.<\/p>",
+        "urls2": "",
+        "btns": "Explore accessories",
+        "padding_top": 50,
+        "padding_bottom": 0
+      }
+    },
+    "f594996b-4dbf-425f-9059-9821e6ea4e6b": {
+      "type": "Information-video",
+      "disabled": true,
+      "settings": {
+        "richtext": "<p>pleasure of the moment, cannot foresee so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
+        "vdio_img": "shopify:\/\/shop_images\/Rectangle_14_1.png",
+        "vdio": "",
+        "heading": "The power you need",
+        "text": "Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.",
+        "padding_top": 20,
+        "padding_bottom": 60
+      }
+    },
+    "7956ec82-bee1-4347-a954-e5194f282217": {
+      "type": "product-grid-image",
+      "settings": {
+        "flex_data": false,
+        "heading": "Snow+ Automatic Cat Feeders",
+        "richtext": "",
+        "link": "shopify:\/\/products\/snow-water-fountain",
+        "btn_title": "",
+        "image2": "shopify:\/\/shop_images\/3_20b9b2cb-b93c-488c-9d7c-341b75f7f603.jpg",
+        "title2": "",
+        "text2": "",
+        "url2": "",
+        "images2": "shopify:\/\/shop_images\/2-ZERO-OROR_04.gif",
+        "titles2": "Your Text Here",
+        "texts2": "<p>Demoralized by the charms of pleasure of the moment by desire, that they cannot foresee the pain and trouble.<\/p>",
+        "urls2": "#",
+        "btns": "Explore accessories",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1": {
+      "type": "grid-image-text",
+      "settings": {
+        "title": "Your Text Here",
+        "texts": "<p>That they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
+        "title1": "Your Text Here",
+        "texts1": "<p>Ghat they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
+        "title2": "Your Text Here",
+        "textss2": "<p>Qhat they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
+        "flex_data": true,
+        "richtexxt": "<p>Linded by desire, that they cannot foresee Demoralized by the charms of pleasure of the moment, so  the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
+        "images2": "shopify:\/\/shop_images\/2-ZERO-OROR_04.gif",
+        "vdioses": "",
+        "vdios": "",
+        "texts2": "<p>Your Text Here 2<\/p>",
+        "titles2": "Your Text Here",
+        "textext": "<p>That they cannot foresee the pain and trouble that are bound to ensue and  That they cannot foresee the pain.<\/p>",
+        "urls2": "#",
+        "btns": "Explore accessories",
+        "image2": "shopify:\/\/shop_images\/3_20b9b2cb-b93c-488c-9d7c-341b75f7f603.jpg",
+        "vdio": "",
+        "url2": "",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "a01e7f6a-6040-4334-97af-966598236644": {
+      "type": "extra-text-blocks",
+      "blocks": {
+        "03d34236-6eee-4408-bf76-43f3607fd691": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
           }
         },
-        "e41cef55-a297-4c09-a549-24d35be2b565": {
+        "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+          }
+        },
+        "c59af14b-539c-4fa1-a0de-8fd8435255cf": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "03d34236-6eee-4408-bf76-43f3607fd691",
+        "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74",
+        "c59af14b-539c-4fa1-a0de-8fd8435255cf"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "c79d2326-cdd9-44c2-bea3-56cd03cff554": {
+      "type": "compare-section",
+      "disabled": true,
+      "settings": {
+        "main_title": "Compare",
+        "collection": "smart-pet-products",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_17.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "03727ca6-4d51-464a-9105-edc5bf54883b": {
+      "type": "image-with-text",
+      "blocks": {
+        "d36ec3ea-ef89-42f5-ae3a-d7bd8a425f45": {
+          "type": "heading",
+          "settings": {
+            "heading": "Super Easy to Assemble, Extremely Easy to Clean",
+            "heading_size": "h1"
+          }
+        },
+        "e93e8df0-984c-4842-a211-a828b0b61908": {
           "type": "caption",
           "settings": {
-            "caption": "Limited Time $100 OFF",
+            "caption": "Everything Magnetic • high-grade materials • fine craftsmanship",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
         },
-        "2c894b36-d272-47ee-93fd-e441d2b637ea": {
-          "type": "button",
+        "78461c76-059e-4db0-b880-28dd051ceb54": {
+          "type": "text",
           "settings": {
-            "button_label": "SHOP",
-            "button_link": "shopify:\/\/products\/snow-automatic-litter-box",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "<p>Each part seamlessly attaches to and detaches from the next one. Effortlessly assemble and disassemble to clean when necessary.<\/p>",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "b504c877-67df-4d07-b421-9fac2e31e94f",
-        "e41cef55-a297-4c09-a549-24d35be2b565",
-        "2c894b36-d272-47ee-93fd-e441d2b637ea"
+        "d36ec3ea-ef89-42f5-ae3a-d7bd8a425f45",
+        "e93e8df0-984c-4842-a211-a828b0b61908",
+        "78461c76-059e-4db0-b880-28dd051ceb54"
       ],
       "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
+        "image": "shopify:\/\/shop_images\/4_11_a945091b-6b52-4ad6-ae88-c8a518eed752.jpg",
+        "image_mob": "shopify:\/\/shop_images\/4_11_a945091b-6b52-4ad6-ae88-c8a518eed752.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
         "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 56,
-        "padding_bottom": 40
-      }
-    },
-    "82364e4d-219f-4773-82b0-2d50586e92a0": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--20172440174914__82364e4d-219f-4773-82b0-2d50586e92a0-column-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/petsnowy_automatic_cat_litter_box_extra_large_1918487e-7e20-49c4-860a-be0898f534db.jpg",
-            "title": "No Scooping",
-            "text": "<p>TIME-SAVER FOR BUSY FAMILIES <\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--20172440174914__82364e4d-219f-4773-82b0-2d50586e92a0-column-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/self_cleaning_litter_box_with_tio2_system.jpg",
-            "title": "No Smell",
-            "text": "<p>Triple Odor-elimination <\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--20172440174914__82364e4d-219f-4773-82b0-2d50586e92a0-column-3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/self_cleaning_litter_box_with_fragrance_box.jpg",
-            "title": "No Mess",
-            "text": "<p>Always find a sealed and dry waste bag ready<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--20172440174914__82364e4d-219f-4773-82b0-2d50586e92a0-column-1",
-        "template--20172440174914__82364e4d-219f-4773-82b0-2d50586e92a0-column-2",
-        "template--20172440174914__82364e4d-219f-4773-82b0-2d50586e92a0-column-3"
-      ],
-      "settings": {
-        "title": "Litter Box",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "199ceb80-f0d7-4392-94fc-bbf30e7f1ed8": {
-      "type": "multicolumn",
-      "blocks": {
-        "dc8d7de6-56f5-4d87-b57f-953110e2add3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/automatic_pet_feeder_petsnowy_cat_feeder_c81159d8-f3a8-483c-99db-e052d90e81ee.jpg",
-            "title": "No Scooping",
-            "text": "<p>TIME-SAVER FOR BUSY FAMILIES <\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "6e01be86-a29b-4d6d-9849-0d2776763600": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/self_cleaning_litter_box_with_tio2_system.jpg",
-            "title": "No Smell",
-            "text": "<p>Triple Odor-elimination <\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "0beaf97c-42e8-4464-9402-d74145a86493": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/self_cleaning_litter_box_with_fragrance_box.jpg",
-            "title": "No Mess",
-            "text": "<p>Always find a sealed and dry waste bag ready<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "dc8d7de6-56f5-4d87-b57f-953110e2add3",
-        "6e01be86-a29b-4d6d-9849-0d2776763600",
-        "0beaf97c-42e8-4464-9402-d74145a86493"
-      ],
-      "settings": {
-        "title": "Feeder",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "chek_wth": true,
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "16879203322247258f": {
@@ -337,10 +491,20 @@
     }
   },
   "order": [
-    "main",
     "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
-    "82364e4d-219f-4773-82b0-2d50586e92a0",
-    "199ceb80-f0d7-4392-94fc-bbf30e7f1ed8",
+    "635deaad-6797-4ca6-9a10-c443617e9573",
+    "b6e45bc2-2133-4106-a9db-61ab406abfe6",
+    "main",
+    "815a64f2-a2d1-497f-9dac-1cabc60918d0",
+    "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8",
+    "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b",
+    "f594996b-4dbf-425f-9059-9821e6ea4e6b",
+    "7956ec82-bee1-4347-a954-e5194f282217",
+    "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1",
+    "a01e7f6a-6040-4334-97af-966598236644",
+    "c79d2326-cdd9-44c2-bea3-56cd03cff554",
+    "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a",
+    "03727ca6-4d51-464a-9105-edc5bf54883b",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
     "product-recommendations"
