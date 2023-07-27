@@ -174,6 +174,230 @@
         "padding_bottom": 36
       }
     },
+    "6e49d3e7-25d2-4666-a7fa-5471ae234bc7": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--20172440174914__6e49d3e7-25d2-4666-a7fa-5471ae234bc7-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/petsnowy_automatic_cat_litter_box_extra_large_1918487e-7e20-49c4-860a-be0898f534db.jpg",
+            "title": "",
+            "text": "<p>No Scooping, No Smell, No Mess<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20172440174914__6e49d3e7-25d2-4666-a7fa-5471ae234bc7-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/self_cleaning_litter_box_with_tio2_system.jpg",
+            "title": "",
+            "text": "<p>Remove the root of unpleasant smell, add a fresh and luscious aroma to your SNOW⁺ litter box.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20172440174914__6e49d3e7-25d2-4666-a7fa-5471ae234bc7-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/self_cleaning_litter_box_with_fragrance_box.jpg",
+            "title": "",
+            "text": "<p>ALWAYS FIND A SEALED AND DRY WASTE BAG READY.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20172440174914__6e49d3e7-25d2-4666-a7fa-5471ae234bc7-column-1",
+        "template--20172440174914__6e49d3e7-25d2-4666-a7fa-5471ae234bc7-column-2",
+        "template--20172440174914__6e49d3e7-25d2-4666-a7fa-5471ae234bc7-column-3"
+      ],
+      "settings": {
+        "title": "Litter Box",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "62dbaf64-0339-46a7-8373-8679a4e556ac": {
+      "type": "multicolumn",
+      "blocks": {
+        "50be4c76-07dc-4bf0-8b1b-93694afe056e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cat_water_fountain.jpg",
+            "title": "",
+            "text": "<p>Made to ensure your pets enjoy the cleanest water possible and keep your pet safe from urinary disease.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "eeb4e708-f48f-4568-826a-45939026fe60": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pet_water_fountain.jpg",
+            "title": "",
+            "text": "<p>With this extra-large capacity pet water fountain, multiple pets won't have to fight for their turn to stay hydrated.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "02f71b77-7ecc-47ea-88d1-405e9ddc1c0b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dog_water_fountain.png",
+            "title": "",
+            "text": "<p>With the PetSnowy app, taking care of your cats at home or on the go is effortless.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "50be4c76-07dc-4bf0-8b1b-93694afe056e",
+        "eeb4e708-f48f-4568-826a-45939026fe60",
+        "02f71b77-7ecc-47ea-88d1-405e9ddc1c0b"
+      ],
+      "settings": {
+        "title": "Water Fountain",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "7f5adda0-962e-4d51-abb3-f71fa873102f": {
+      "type": "multicolumn",
+      "blocks": {
+        "976570e2-a1ac-4fc9-9205-e6ffbbb37800": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/automatic_pet_feeder_petsnowy_cat_feeder_9642ac6b-0532-4fe2-bf74-93bf02594415.jpg",
+            "title": "",
+            "text": "<p>LOCK-IN FRESHNESS, STRAIGHT TO YOUR PET'S DISH<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "048fa562-4a5c-4c24-9d0a-c404ea0516cb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/petsnowy_automatic_cat_feeder_a29d313f-a198-45da-a0d3-2109ac897308.jpg",
+            "title": "",
+            "text": "<p>THOUGHTFUL DESIGN ENSURES EVERY HAPPY MEAL<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "77534d40-7003-4432-9d62-8d219dbcd361": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cat_feeder_automatic_8055330a-5bb4-4b28-b569-c07a90b8f4a5.jpg",
+            "title": "",
+            "text": "<p>Dual Power Supply. continue with your feeding plan even without power or internet.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "976570e2-a1ac-4fc9-9205-e6ffbbb37800",
+        "048fa562-4a5c-4c24-9d0a-c404ea0516cb",
+        "77534d40-7003-4432-9d62-8d219dbcd361"
+      ],
+      "settings": {
+        "title": "Pet Feeder",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "6e876fd6-d72e-48c0-a290-fafe9e880d5f": {
+      "type": "multicolumn",
+      "blocks": {
+        "b55000e5-f548-46a7-a88f-8ced6171e140": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/petsnowy_cat_toy_ba27dcc3-e038-4fba-95df-1dcc75c14504.jpg",
+            "title": "",
+            "text": "<p>Keep your kitty friend accompanied and your work uninterrupted, even on busy days.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "adddd2ec-a997-48ba-8535-d8a9c7f6aca4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/interactive_cat_toys_4895e26f-e318-42a9-8c8c-306f97a37a26.jpg",
+            "title": "",
+            "text": "<p>Boasting a whisper-quiet motor, our cat toys create a harmonious environment where your feline friend can happily engage in play.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "94f53e53-2fce-4347-9591-a47c61b874ac": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/automatic_cat_toy_0166f611-8401-427a-a774-793f90019ef1.jpg",
+            "title": "",
+            "text": "<p>Overplaying may damage kitty's heart. Our interactive cat toys has a 15-minute auto shutdown trait to promote cat wellness. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "b55000e5-f548-46a7-a88f-8ced6171e140",
+        "adddd2ec-a997-48ba-8535-d8a9c7f6aca4",
+        "94f53e53-2fce-4347-9591-a47c61b874ac"
+      ],
+      "settings": {
+        "title": "Cat Toy",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "815a64f2-a2d1-497f-9dac-1cabc60918d0": {
       "type": "Explore-products",
       "disabled": true,
@@ -254,88 +478,6 @@
         "padding_bottom": 60
       }
     },
-    "7956ec82-bee1-4347-a954-e5194f282217": {
-      "type": "product-grid-image",
-      "settings": {
-        "flex_data": false,
-        "heading": "Snow+ Automatic Cat Feeders",
-        "richtext": "",
-        "link": "shopify:\/\/products\/snow-water-fountain",
-        "btn_title": "",
-        "image2": "shopify:\/\/shop_images\/3_20b9b2cb-b93c-488c-9d7c-341b75f7f603.jpg",
-        "title2": "",
-        "text2": "",
-        "url2": "",
-        "images2": "shopify:\/\/shop_images\/2-ZERO-OROR_04.gif",
-        "titles2": "Your Text Here",
-        "texts2": "<p>Demoralized by the charms of pleasure of the moment by desire, that they cannot foresee the pain and trouble.<\/p>",
-        "urls2": "#",
-        "btns": "Explore accessories",
-        "padding_top": 20,
-        "padding_bottom": 40
-      }
-    },
-    "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1": {
-      "type": "grid-image-text",
-      "settings": {
-        "title": "Your Text Here",
-        "texts": "<p>That they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
-        "title1": "Your Text Here",
-        "texts1": "<p>Ghat they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
-        "title2": "Your Text Here",
-        "textss2": "<p>Qhat they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
-        "flex_data": true,
-        "richtexxt": "<p>Linded by desire, that they cannot foresee Demoralized by the charms of pleasure of the moment, so  the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
-        "images2": "shopify:\/\/shop_images\/2-ZERO-OROR_04.gif",
-        "vdioses": "",
-        "vdios": "",
-        "texts2": "<p>Your Text Here 2<\/p>",
-        "titles2": "Your Text Here",
-        "textext": "<p>That they cannot foresee the pain and trouble that are bound to ensue and  That they cannot foresee the pain.<\/p>",
-        "urls2": "#",
-        "btns": "Explore accessories",
-        "image2": "shopify:\/\/shop_images\/3_20b9b2cb-b93c-488c-9d7c-341b75f7f603.jpg",
-        "vdio": "",
-        "url2": "",
-        "padding_top": 20,
-        "padding_bottom": 40
-      }
-    },
-    "a01e7f6a-6040-4334-97af-966598236644": {
-      "type": "extra-text-blocks",
-      "blocks": {
-        "03d34236-6eee-4408-bf76-43f3607fd691": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
-          }
-        },
-        "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
-          }
-        },
-        "c59af14b-539c-4fa1-a0de-8fd8435255cf": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "03d34236-6eee-4408-bf76-43f3607fd691",
-        "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74",
-        "c59af14b-539c-4fa1-a0de-8fd8435255cf"
-      ],
-      "settings": {
-        "padding_top": 20,
-        "padding_bottom": 40
-      }
-    },
     "c79d2326-cdd9-44c2-bea3-56cd03cff554": {
       "type": "compare-section",
       "disabled": true,
@@ -363,53 +505,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "03727ca6-4d51-464a-9105-edc5bf54883b": {
-      "type": "image-with-text",
-      "blocks": {
-        "d36ec3ea-ef89-42f5-ae3a-d7bd8a425f45": {
-          "type": "heading",
-          "settings": {
-            "heading": "Super Easy to Assemble, Extremely Easy to Clean",
-            "heading_size": "h1"
-          }
-        },
-        "e93e8df0-984c-4842-a211-a828b0b61908": {
-          "type": "caption",
-          "settings": {
-            "caption": "Everything Magnetic • high-grade materials • fine craftsmanship",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "78461c76-059e-4db0-b880-28dd051ceb54": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Each part seamlessly attaches to and detaches from the next one. Effortlessly assemble and disassemble to clean when necessary.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "d36ec3ea-ef89-42f5-ae3a-d7bd8a425f45",
-        "e93e8df0-984c-4842-a211-a828b0b61908",
-        "78461c76-059e-4db0-b880-28dd051ceb54"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/4_11_a945091b-6b52-4ad6-ae88-c8a518eed752.jpg",
-        "image_mob": "shopify:\/\/shop_images\/4_11_a945091b-6b52-4ad6-ae88-c8a518eed752.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "chek_wth": true,
-        "mobile_content_alignment": "center",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "16879203322247258f": {
@@ -500,16 +595,16 @@
     "635deaad-6797-4ca6-9a10-c443617e9573",
     "b6e45bc2-2133-4106-a9db-61ab406abfe6",
     "main",
+    "6e49d3e7-25d2-4666-a7fa-5471ae234bc7",
+    "62dbaf64-0339-46a7-8373-8679a4e556ac",
+    "7f5adda0-962e-4d51-abb3-f71fa873102f",
+    "6e876fd6-d72e-48c0-a290-fafe9e880d5f",
     "815a64f2-a2d1-497f-9dac-1cabc60918d0",
     "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8",
     "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b",
     "f594996b-4dbf-425f-9059-9821e6ea4e6b",
-    "7956ec82-bee1-4347-a954-e5194f282217",
-    "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1",
-    "a01e7f6a-6040-4334-97af-966598236644",
     "c79d2326-cdd9-44c2-bea3-56cd03cff554",
     "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a",
-    "03727ca6-4d51-464a-9105-edc5bf54883b",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
     "product-recommendations"
