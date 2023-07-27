@@ -143,7 +143,11 @@
             "content": "",
             "page": "dimension"
           }
-        }
+        },
+				"bundle_list":{
+					"type": "bundle_list",
+					"settings":{}
+				}
       },
       "block_order": [
         "vendor",
@@ -155,7 +159,8 @@
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
-        "f69dbd09-d478-41ad-b7e8-9051e3ecbc16"
+        "f69dbd09-d478-41ad-b7e8-9051e3ecbc16",
+				"bundle_list"
       ],
       "settings": {
         "enable_sticky_info": true,

@@ -605,6 +605,8 @@
                   </div>
                 </div>
               </noscript>
+            {%- when 'bundle_list' -%}
+              {% render 'bundle_list' %}
             {%- when 'buy_buttons' -%}
               <div {{ block.shopify_attributes }}>
                 <product-form class="product-form">
@@ -1375,6 +1377,12 @@
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
         }
       ]
+    },
+    {
+      "type": "bundle_list",
+      "name": "t:sections.main-product.blocks.bundle_list.name",
+      "limit": 1,
+      "settings": []
     },
     {
       "type": "description",
