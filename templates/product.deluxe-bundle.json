@@ -1,0 +1,607 @@
+{
+  "sections": {
+    "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "b504c877-67df-4d07-b421-9fac2e31e94f": {
+          "type": "text",
+          "settings": {
+            "text": "<p><b>SNOW<sup>+<\/sup> Self-cleaning Litter Box<\/b>\n<br>Order now, and save <b>$100<\/b> <br><small><small><i>Note: Discount already deducted from the original price<\/i><\/small><\/small><\/p>"
+          }
+        },
+        "e41cef55-a297-4c09-a549-24d35be2b565": {
+          "type": "caption",
+          "settings": {
+            "caption": "Limited Time $100 OFF",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "2c894b36-d272-47ee-93fd-e441d2b637ea": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP",
+            "button_link": "shopify:\/\/products\/snow-automatic-litter-box",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "b504c877-67df-4d07-b421-9fac2e31e94f",
+        "e41cef55-a297-4c09-a549-24d35be2b565",
+        "2c894b36-d272-47ee-93fd-e441d2b637ea"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 40
+      }
+    },
+    "635deaad-6797-4ca6-9a10-c443617e9573": {
+      "type": "product-collection-list",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Bg_Image.png",
+        "title": "Your Collection Text Here",
+        "text": "Your Text Here",
+        "url": "",
+        "images": "shopify:\/\/shop_images\/Bg_Image_1.png",
+        "titles": "Your Collection Text Here",
+        "texts": "Your Text Here",
+        "urls": "",
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "b6e45bc2-2133-4106-a9db-61ab406abfe6": {
+      "type": "Product-video",
+      "disabled": true,
+      "settings": {
+        "vdio_img": "shopify:\/\/shop_images\/video.png",
+        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/86480277b00d435bbbba6e62c6b5f781.mp4",
+        "heading": "Your Video Text Here",
+        "text": "Your Video Text Here",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping",
+            "icon": "truck",
+            "content": "",
+            "page": "shipping"
+          }
+        },
+        "f69dbd09-d478-41ad-b7e8-9051e3ecbc16": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Dimension",
+            "icon": "ruler",
+            "content": "",
+            "page": "dimension"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "f69dbd09-d478-41ad-b7e8-9051e3ecbc16"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "medium",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "6e49d3e7-25d2-4666-a7fa-5471ae234bc7": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--20172440174914__6e49d3e7-25d2-4666-a7fa-5471ae234bc7-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/petsnowy_automatic_cat_litter_box_extra_large_1918487e-7e20-49c4-860a-be0898f534db.jpg",
+            "title": "",
+            "text": "<p>No Scooping, No Smell, No Mess<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20172440174914__6e49d3e7-25d2-4666-a7fa-5471ae234bc7-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/self_cleaning_litter_box_with_tio2_system.jpg",
+            "title": "",
+            "text": "<p>Remove the root of unpleasant smell, add a fresh and luscious aroma to your SNOW⁺ litter box.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20172440174914__6e49d3e7-25d2-4666-a7fa-5471ae234bc7-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/self_cleaning_litter_box_with_fragrance_box.jpg",
+            "title": "",
+            "text": "<p>ALWAYS FIND A SEALED AND DRY WASTE BAG READY.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20172440174914__6e49d3e7-25d2-4666-a7fa-5471ae234bc7-column-1",
+        "template--20172440174914__6e49d3e7-25d2-4666-a7fa-5471ae234bc7-column-2",
+        "template--20172440174914__6e49d3e7-25d2-4666-a7fa-5471ae234bc7-column-3"
+      ],
+      "settings": {
+        "title": "Litter Box",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "62dbaf64-0339-46a7-8373-8679a4e556ac": {
+      "type": "multicolumn",
+      "blocks": {
+        "50be4c76-07dc-4bf0-8b1b-93694afe056e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cat_water_fountain.jpg",
+            "title": "",
+            "text": "<p>Made to ensure your pets enjoy the cleanest water possible and keep your pet safe from urinary disease.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "eeb4e708-f48f-4568-826a-45939026fe60": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pet_water_fountain.jpg",
+            "title": "",
+            "text": "<p>With this extra-large capacity pet water fountain, multiple pets won't have to fight for their turn to stay hydrated.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "02f71b77-7ecc-47ea-88d1-405e9ddc1c0b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dog_water_fountain.png",
+            "title": "",
+            "text": "<p>With the PetSnowy app, taking care of your cats at home or on the go is effortless.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "50be4c76-07dc-4bf0-8b1b-93694afe056e",
+        "eeb4e708-f48f-4568-826a-45939026fe60",
+        "02f71b77-7ecc-47ea-88d1-405e9ddc1c0b"
+      ],
+      "settings": {
+        "title": "Water Fountain",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "7f5adda0-962e-4d51-abb3-f71fa873102f": {
+      "type": "multicolumn",
+      "blocks": {
+        "976570e2-a1ac-4fc9-9205-e6ffbbb37800": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/automatic_pet_feeder_petsnowy_cat_feeder_9642ac6b-0532-4fe2-bf74-93bf02594415.jpg",
+            "title": "",
+            "text": "<p>LOCK-IN FRESHNESS, STRAIGHT TO YOUR PET'S DISH<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "048fa562-4a5c-4c24-9d0a-c404ea0516cb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/petsnowy_automatic_cat_feeder_a29d313f-a198-45da-a0d3-2109ac897308.jpg",
+            "title": "",
+            "text": "<p>THOUGHTFUL DESIGN ENSURES EVERY HAPPY MEAL<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "77534d40-7003-4432-9d62-8d219dbcd361": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cat_feeder_automatic_8055330a-5bb4-4b28-b569-c07a90b8f4a5.jpg",
+            "title": "",
+            "text": "<p>Dual Power Supply. continue with your feeding plan even without power or internet.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "976570e2-a1ac-4fc9-9205-e6ffbbb37800",
+        "048fa562-4a5c-4c24-9d0a-c404ea0516cb",
+        "77534d40-7003-4432-9d62-8d219dbcd361"
+      ],
+      "settings": {
+        "title": "Pet Feeder",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "6e876fd6-d72e-48c0-a290-fafe9e880d5f": {
+      "type": "multicolumn",
+      "blocks": {
+        "b55000e5-f548-46a7-a88f-8ced6171e140": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/petsnowy_cat_toy_ba27dcc3-e038-4fba-95df-1dcc75c14504.jpg",
+            "title": "",
+            "text": "<p>Keep your kitty friend accompanied and your work uninterrupted, even on busy days.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "adddd2ec-a997-48ba-8535-d8a9c7f6aca4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/interactive_cat_toys_4895e26f-e318-42a9-8c8c-306f97a37a26.jpg",
+            "title": "",
+            "text": "<p>Boasting a whisper-quiet motor, our cat toys create a harmonious environment where your feline friend can happily engage in play.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "94f53e53-2fce-4347-9591-a47c61b874ac": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/automatic_cat_toy_0166f611-8401-427a-a774-793f90019ef1.jpg",
+            "title": "",
+            "text": "<p>Overplaying may damage kitty's heart. Our interactive cat toys has a 15-minute auto shutdown trait to promote cat wellness. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "b55000e5-f548-46a7-a88f-8ced6171e140",
+        "adddd2ec-a997-48ba-8535-d8a9c7f6aca4",
+        "94f53e53-2fce-4347-9591-a47c61b874ac"
+      ],
+      "settings": {
+        "title": "Cat Toy",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "815a64f2-a2d1-497f-9dac-1cabc60918d0": {
+      "type": "Explore-products",
+      "disabled": true,
+      "blocks": {
+        "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        }
+      },
+      "block_order": [
+        "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1"
+      ],
+      "settings": {
+        "description": "<p>Cannot foresee Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
+        "product": "petsnowy-indiegogo-launch-discount-30-off",
+        "padding_top": 0,
+        "padding_bottom": 80
+      }
+    },
+    "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8": {
+      "type": "product-grid-collection",
+      "disabled": true,
+      "settings": {
+        "richtext": "",
+        "images": "shopify:\/\/shop_images\/2-ZERO-OROR_04.gif",
+        "titles": "Your Collection Text Here",
+        "texts": "Your Text Here",
+        "urls": "",
+        "half_img": "shopify:\/\/shop_images\/11_5d9b5548-f0cc-4f26-bc86-b0468a725a83.jpg",
+        "image": "shopify:\/\/shop_images\/3_20b9b2cb-b93c-488c-9d7c-341b75f7f603.jpg",
+        "title": "The Ultimate Solution for Odor-Free Living",
+        "text": "Your Text Here",
+        "url": "",
+        "title2": "",
+        "text2": "",
+        "url2": "",
+        "titles2": "",
+        "texts2": "",
+        "urls2": "",
+        "btns": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b": {
+      "type": "product-grid-image",
+      "disabled": true,
+      "settings": {
+        "flex_data": false,
+        "heading": "Your Text Here",
+        "richtext": "<p>Ban not foresee of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
+        "link": "",
+        "btn_title": "",
+        "img_pet": "shopify:\/\/shop_images\/Bg_Image_7.png",
+        "title2": "",
+        "text2": "",
+        "url2": "",
+        "titles2": "Your Text Here",
+        "texts2": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the.<\/p>",
+        "urls2": "",
+        "btns": "Explore accessories",
+        "padding_top": 50,
+        "padding_bottom": 0
+      }
+    },
+    "f594996b-4dbf-425f-9059-9821e6ea4e6b": {
+      "type": "Information-video",
+      "disabled": true,
+      "settings": {
+        "richtext": "<p>pleasure of the moment, cannot foresee so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
+        "vdio_img": "shopify:\/\/shop_images\/Rectangle_14_1.png",
+        "vdio": "",
+        "heading": "The power you need",
+        "text": "Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.",
+        "padding_top": 20,
+        "padding_bottom": 60
+      }
+    },
+    "c79d2326-cdd9-44c2-bea3-56cd03cff554": {
+      "type": "compare-section",
+      "disabled": true,
+      "settings": {
+        "main_title": "Compare",
+        "collection": "smart-pet-products",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_17.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "16879203322247258f": {
+      "type": "apps",
+      "blocks": {
+        "042ecd86-3111-463a-a041-b74ad0850cad": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": true,
+            "limit": 8,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "042ecd86-3111-463a-a041-b74ad0850cad"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "d14f1052-f0b1-4254-8d9a-a84aeb986bdd": {
+      "type": "social-image-text",
+      "blocks": {
+        "12ee67c8-1af4-46ca-9aa7-64db4191e694": {
+          "type": "image",
+          "settings": {
+            "blk_img": "shopify:\/\/shop_images\/8c1a9dbc-786b-4948-b999-dd72dfa82811.jpg"
+          }
+        },
+        "ef490cd3-7a6b-4bf9-9fd9-5ecef72a2214": {
+          "type": "image",
+          "settings": {
+            "blk_img": "shopify:\/\/shop_images\/58c5c335-4c67-4a44-9c68-31275c874762.jpg"
+          }
+        },
+        "25153b1b-e008-4818-bb39-f716431c24e4": {
+          "type": "image",
+          "settings": {
+            "blk_img": "shopify:\/\/shop_images\/20230313195840.png"
+          }
+        },
+        "2cad361c-19e5-4f4b-a613-ac6890e2dafe": {
+          "type": "image",
+          "settings": {
+            "blk_img": "shopify:\/\/shop_images\/4185.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "12ee67c8-1af4-46ca-9aa7-64db4191e694",
+        "ef490cd3-7a6b-4bf9-9fd9-5ecef72a2214",
+        "25153b1b-e008-4818-bb39-f716431c24e4",
+        "2cad361c-19e5-4f4b-a613-ac6890e2dafe"
+      ],
+      "settings": {
+        "heading": "Comfort · Future",
+        "insta_txt": "Follow us on Instagram",
+        "app_url": "http:\/\/instagram.com\/petsnowy_official",
+        "img": "shopify:\/\/shop_images\/4182.jpg",
+        "space_top": 60,
+        "space_bottom": 40
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
+    "635deaad-6797-4ca6-9a10-c443617e9573",
+    "b6e45bc2-2133-4106-a9db-61ab406abfe6",
+    "main",
+    "6e49d3e7-25d2-4666-a7fa-5471ae234bc7",
+    "62dbaf64-0339-46a7-8373-8679a4e556ac",
+    "7f5adda0-962e-4d51-abb3-f71fa873102f",
+    "6e876fd6-d72e-48c0-a290-fafe9e880d5f",
+    "815a64f2-a2d1-497f-9dac-1cabc60918d0",
+    "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8",
+    "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b",
+    "f594996b-4dbf-425f-9059-9821e6ea4e6b",
+    "c79d2326-cdd9-44c2-bea3-56cd03cff554",
+    "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a",
+    "16879203322247258f",
+    "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
+    "product-recommendations"
+  ]
+}
