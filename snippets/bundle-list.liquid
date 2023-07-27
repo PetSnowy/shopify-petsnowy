@@ -1,8 +1,19 @@
-<div class="bundle_list" id="bundle_list"></div>
+<div class="bundle_list" id="bundle_list">
+  <div class="custom-image">
+    {% if page.image_src %}
+      <img src="{{ page.image_src }}" alt="{{ page.title }}">
+    {% endif %}
+  </div>
+  <div class="custom-text">
+    {% if page.text_content %}
+      <p>{{ page.text_content }}</p>
+    {% endif %}
+  </div>
+</div>
+
 <style>
   .bundle_list {
     display: block !important;
     width: 100%;
-    height: 100px;
   }
 </style>
