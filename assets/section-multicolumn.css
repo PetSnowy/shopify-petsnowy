@@ -175,7 +175,7 @@
   button {
   border-radius: 10px;
   box-shadow: none !important;
-  border: 1px solid transparent;
+  transition: all 0.3s ease;
 }
 [id^="Slider-Thumbnails-template"].list-unstyled.slider.slider--mobile
   li
