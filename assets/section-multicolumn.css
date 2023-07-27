@@ -10,17 +10,6 @@
   margin-top: 0;
 }
 
-@media screen and (max-width: 749px) {
-  .multicolumn .title-wrapper-with-link {
-    margin-bottom: 3rem;
-  }
-
-  .multicolumn .page-width {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 .multicolumn-card__image-wrapper--third-width {
   width: 33%;
 }
@@ -30,7 +19,9 @@
 }
 
 .multicolumn-list__item.center
-  .multicolumn-card__image-wrapper:not(.multicolumn-card__image-wrapper--full-width),
+  .multicolumn-card__image-wrapper:not(
+    .multicolumn-card__image-wrapper--full-width
+  ),
 .multicolumn-list__item:only-child {
   margin-left: auto;
   margin-right: auto;
@@ -38,12 +29,6 @@
 
 .multicolumn .button {
   margin-top: 1.5rem;
-}
-
-@media screen and (min-width: 750px) {
-  .multicolumn .button {
-    margin-top: 4rem;
-  }
 }
 
 .multicolumn-list {
@@ -66,7 +51,11 @@
 }
 
 .multicolumn.background-primary .multicolumn-card {
-  background: rgb(var(--color-background)) linear-gradient(rgba(var(--color-foreground), 0.04), rgba(var(--color-foreground), 0.04));
+  background: rgb(var(--color-background))
+    linear-gradient(
+      rgba(var(--color-foreground), 0.04),
+      rgba(var(--color-foreground), 0.04)
+    );
 }
 
 .multicolumn-list h3 {
@@ -96,35 +85,6 @@
 .multicolumn-list__item.center .media--adapt img {
   left: 50%;
   transform: translateX(-50%);
-}
-
-@media screen and (max-width: 749px) {
-  .multicolumn-list {
-    margin: 0;
-    width: 100%;
-  }
-
-  .multicolumn-list:not(.slider) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-
-@media screen and (min-width: 750px) {
-  .multicolumn-list.slider,
-  .multicolumn-list.grid--4-col-desktop {
-    padding: 0;
-  }
-
-  .multicolumn-list__item,
-  .grid--4-col-desktop .multicolumn-list__item {
-    padding-bottom: 0;
-  }
-
-  .background-none .grid--2-col-tablet .multicolumn-list__item {
-    margin-top: 4rem;
-  }
 }
 
 .background-none .multicolumn-card-spacing {
@@ -169,40 +129,21 @@
   padding-right: 2.5rem;
 }
 
-@media screen and (max-width: 749px) {
-  .background-none .slider .multicolumn-card__info {
-    padding-bottom: 1rem;
-  }
-
-  .multicolumn.background-none .slider.slider--mobile {
-    margin-bottom: 0rem;
-  }
-}
-
-@media screen and (min-width: 750px) {
-  .background-none .multicolumn-card__image-wrapper {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
-  .background-none .multicolumn-list .multicolumn-card__info,
-  .background-none
-    .multicolumn-list:not(.slider)
-    .center
-    .multicolumn-card__info {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
 .multicolumn-card {
   position: relative;
   box-sizing: border-box;
 }
 
-.multicolumn-card > .multicolumn-card__image-wrapper--full-width:not(.multicolumn-card-spacing) {
-  border-top-left-radius: calc(var(--text-boxes-radius) - var(--text-boxes-border-width));
-  border-top-right-radius: calc(var(--text-boxes-radius) - var(--text-boxes-border-width));
+.multicolumn-card
+  > .multicolumn-card__image-wrapper--full-width:not(
+    .multicolumn-card-spacing
+  ) {
+  border-top-left-radius: calc(
+    var(--text-boxes-radius) - var(--text-boxes-border-width)
+  );
+  border-top-right-radius: calc(
+    var(--text-boxes-radius) - var(--text-boxes-border-width)
+  );
   overflow: hidden;
 }
 
@@ -224,5 +165,38 @@
 @media screen and (min-width: 990px) {
   .multicolumn-list__item--empty {
     display: list-item;
+  }
+}
+@media screen and (max-width: 765px) {
+  .slider-mobile-gutter .multicolumn-card__image-wrapper {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .slider-mobile-gutter .multicolumn-card__image-wrapper .media {
+    padding-bottom: 1.3333vw !important;
+  }
+  .slider-mobile-gutter .multicolumn-card__image-wrapper .media img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .slider-mobile-gutter ul {
+    display: grid;
+    row-gap: 2.6667vw;
+  }
+  .slider-mobile-gutter .multicolumn-card__image-wrapper .button {
+    width: 20.6667vw;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .slider-mobile-gutter ul li {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .multicolumn-card.content-container .multicolumn-card__image-wrapper {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
   }
 }
