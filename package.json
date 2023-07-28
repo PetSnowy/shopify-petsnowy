@@ -7,7 +7,7 @@
     "serve": "shopify theme serve",
     "dev": "shopify theme dev",
     "login": "shopify login --store=petsnowy.myshopify.com",
-		"theme": "shopify theme dev --store petsnowy.myshopify.com",
+    "theme": "shopify theme dev --store petsnowy.myshopify.com",
     "lint": "eslint ."
   },
   "repository": {
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/ddz2456820347/shopify-petsnowy/issues"
   },
-  "homepage": "https://github.com/ddz2456820347/shopify-petsnowy#readme"
+  "homepage": "https://github.com/ddz2456820347/shopify-petsnowy#readme",
+  "devDependencies": {
+    "eslint": "^8.45.0"
+  }
 }
