@@ -19,8 +19,5 @@
   "bugs": {
     "url": "https://github.com/ddz2456820347/shopify-petsnowy/issues"
   },
-  "homepage": "https://github.com/ddz2456820347/shopify-petsnowy#readme",
-  "devDependencies": {
-    "eslint": "^8.45.0"
-  }
+  "homepage": "https://github.com/ddz2456820347/shopify-petsnowy#readme"
 }
