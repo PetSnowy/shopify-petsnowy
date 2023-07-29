@@ -5,7 +5,6 @@ const uglify = require("gulp-uglify");
 
 const SOURCES = {
   scss: "styles/**/*.scss",
-  css: "styles/**/*.css",
   scripts: "script/**/*.js",
 };
 
@@ -20,12 +19,9 @@ const compileSass = () =>
     .pipe(cleanCSS())
     .pipe(gulp.dest(DESTINATIONS.assets));
 
-const watch = () => gulp.watch(SOURCES.styles, gulp.series(compileSass));
-
-const minifyCSS = () =>
-  gulp.src(SOURCES.css).pipe(cleanCSS()).pipe(gulp.dest(DESTINATIONS.assets));
+const watch = () => gulp.watch(SOURCES.scss, gulp.series(compileSass));
 
 const minifyJS = () =>
   gulp.src(SOURCES.scripts).pipe(uglify()).pipe(gulp.dest(DESTINATIONS.assets));
 
-exports.default = gulp.series(gulp.parallel(minifyCSS, minifyJS));
+exports.default = gulp.series(watch, gulp.parallel(compileSass, minifyJS));
