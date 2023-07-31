@@ -5,6 +5,23 @@
   </h1>
   <div class="page-width">
     <aside></aside>
-		{% section 'Q-and-A' %}
+    {% section 'Q-and-A' %}
   </div>
 </div>
+{% schema %}
+{
+  "name": "Q And A",
+  "settings": [
+    {
+      "type": "text",
+      "id": "h1",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "sub_txt",
+      "label": "Sub Heading"
+    }
+  ]
+}
+{% endschema %}
