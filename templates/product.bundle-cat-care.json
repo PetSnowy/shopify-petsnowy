@@ -99,11 +99,6 @@
             "picker_type": "button"
           }
         },
-        "bundle_list": {
-          "type": "bundle_list",
-          "settings": {
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -155,7 +150,6 @@
         "title",
         "price",
         "variant_picker",
-        "bundle_list",
         "quantity_selector",
         "buy_buttons",
         "description",
