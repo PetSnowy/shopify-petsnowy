@@ -44,9 +44,10 @@
               >
                 {{ block.settings.text }}
               </div>
-              <span id="product_price" data-aos="fade-up" class="aos-init aos-animate" data-aos-duration="800">
-                {{- product.price | money -}}
-              </span>
+              <div id="product_price" data-aos="fade-up" class="aos-init aos-animate" data-aos-duration="800">
+                <span>{{ product.compare_at_price | money }}</span>
+                <span>{{- product.price | money -}}</span>
+              </div>
               <div class="purchase_data_btns">
                 {% if product.template_suffix == 'purchase-product' %}
                   <product-form
