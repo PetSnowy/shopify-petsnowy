@@ -1,0 +1,29 @@
+@media screen and (max-width: 900px) {
+}
+@media screen and (min-width: 901px) {
+  .faq_qa_mian {
+    .faq_qa_heading {
+      padding: 0px;
+    }
+    .content-wrapper {
+      display: flex;
+    }
+    .page-sidebar {
+      flex-shrink: 0;
+      margin-right: 20px;
+      width: 240px;
+      display: grid;
+      height: fit-content;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      row-gap: 10px;
+      div,
+      p {
+        margin: 0px;
+        cursor: pointer;
+      }
+    }
+    .faq_qna_iner {
+      flex: 1;
+    }
+  }
+}
