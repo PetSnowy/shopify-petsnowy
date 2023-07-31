@@ -1,62 +1,46 @@
-{%- style -%}
-  .faq_qa_mian {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .faq_qa_mian {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
 {{ 'q-and-a.css' | asset_url | stylesheet_tag }}
 <div class="faq_qa_mian">
-  <div class="page-width">
+  <div class="content">
     <div class="faq_qa_heading">
       {% if section.settings.h2 != blank %}
-        <h1>
+        <h2>
           {{ section.settings.h2 }}
           <small>{{ section.settings.sub_txt }}</small>
-        </h1>
+        </h2>
       {% endif %}
     </div>
-    <div class="content-wrapper">
-      <div class="faq_qna_iner">
-        <div class="quetion_item">
-          {% for block in section.blocks %}
-            <div class="qn_group_main">
-              <div class="ques_title">
-                {% if block.settings.h3 != blank %}
-                  <h3>{{ block.settings.h3 }}</h3>
-
-                  <span class="onc_arrow">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="feather feather-chevron-up"
-                    >
-                      <polyline points="18 15 12 9 6 15"></polyline>
-                    </svg>
-                  </span>
-                {% endif %}
-              </div>
-              <div class="answer_txt">
-                {% if block.settings.text %}
-                  {{ block.settings.text }}
-                {% endif %}
-              </div>
+    <div class="faq_qna_iner">
+      <div class="quetion_item">
+        {% for block in section.blocks %}
+          <div class="qn_group_main">
+            <div class="ques_title">
+              {% if block.settings.h3 != blank %}
+                <h3>{{ block.settings.h3 }}</h3>
+                <span class="onc_arrow">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-chevron-up"
+                  >
+                    <polyline points="18 15 12 9 6 15"></polyline>
+                  </svg>
+                </span>
+              {% endif %}
             </div>
-            <hr class="qna_hr">
-          {% endfor %}
-        </div>
+            <div class="answer_txt">
+              {% if block.settings.text %}
+                {{ block.settings.text }}
+              {% endif %}
+            </div>
+          </div>
+          <hr class="qna_hr">
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -64,50 +48,40 @@
 
 {% schema %}
 {
-  "name": "Question",
-  "class": "question",
+  "name": "Q And A",
   "settings": [
     {
       "type": "text",
       "id": "h2",
       "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "sub_txt",
+      "label": "Sub Heading"
     }
   ],
   "blocks": [
     {
-      "type": "blocks",
-      "name": "Q And A",
-      "label": "Q And A",
+      "type": "block",
+      "name": "Q&A",
       "settings": [
         {
           "type": "text",
           "id": "h3",
-          "label": "Heading"
-        }
-      ],
-      "blocks": [
+          "label": "Question"
+        },
         {
-          "type": "block",
-          "name": "Q&A",
-          "settings": [
-            {
-              "type": "text",
-              "id": "h4",
-              "label": "Question"
-            },
-            {
-              "type": "richtext",
-              "id": "text",
-              "label": "Answer"
-            }
-          ]
+          "type": "richtext",
+          "id": "text",
+          "label": "Answer"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Question"
+      "name": "Q And A"
     }
   ]
 }
