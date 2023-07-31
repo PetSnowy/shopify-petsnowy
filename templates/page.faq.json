@@ -20,29 +20,33 @@
     "1da5a395-8b0d-4a51-b02c-9559890d9d9d": {
       "type": "Q-and-A",
       "blocks": {
+        "1cd89a85-bf41-42c1-9e8e-0a4fd08dc8ff": {
+          "type": "title",
+          "settings": {
+            "h3": ""
+          }
+        },
         "ac982418-96a8-41cf-b6dc-cb9d23128252": {
           "type": "block",
           "settings": {
-            "h3": "We don't have a locked time, but it will be in late February!",
             "text": "<p>A:  We don't have a locked time, but it will be in late February!<\/p>"
           }
         },
         "ddb1deff-0271-42d7-a435-7b4208218f69": {
           "type": "block",
           "settings": {
-            "h3": "We don't have a locked time, but it will be in late February!",
             "text": "<p>A：Please click the link below to bookmark our official pre-sale page. The official SNOW+ purchase page will be updated at the end of February!<\/p><p><a href=\"https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/coming_soon\"><span style=\"text-decoration:underline\">https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/coming_soon<\/span><\/a><\/p>"
           }
         },
         "aad21124-5e82-46b3-aa3c-62d9bec35e1e": {
           "type": "block",
           "settings": {
-            "h3": "We don't have a locked time, but it will be in late February!",
             "text": "<p>Exclusive Super Early Bird Deals starting at just $479. <\/p><p>The SNOW+ is listed for $519 on Indiegogo, which is 40% off the tag price of $865. <\/p><p>There’s also a TiO2-free deodorant version at $479 if you don’t have much concern with odour control. <\/p><p>The 40% Super Early Bird Perk and the $30 Off are stackable discounts. <a href=\"https:\/\/www.petsnowy.com\/products\/petsnowy-indiegogo-launch-discount-30-off\" target=\"_blank\" title=\"https:\/\/www.petsnowy.com\/products\/petsnowy-indiegogo-launch-discount-30-off\">Reserve the limited-time offer here<\/a>.<\/p>"
           }
         }
       },
       "block_order": [
+        "1cd89a85-bf41-42c1-9e8e-0a4fd08dc8ff",
         "ac982418-96a8-41cf-b6dc-cb9d23128252",
         "ddb1deff-0271-42d7-a435-7b4208218f69",
         "aad21124-5e82-46b3-aa3c-62d9bec35e1e"
@@ -58,21 +62,18 @@
         "d5de3880-8953-49cd-b2f0-6acf8b58a05b": {
           "type": "block",
           "settings": {
-            "h3": "We don't have a locked time, but it will be in late February!",
             "text": "<p>A:  We don't have a locked time, but it will be in late February!<\/p>"
           }
         },
         "a10bafd7-2a4e-4e38-9207-5c2dcbf9dd08": {
           "type": "block",
           "settings": {
-            "h3": "We don't have a locked time, but it will be in late February!",
             "text": "<p>A：Please click the link below to bookmark our official pre-sale page. The official SNOW+ purchase page will be updated at the end of February!<\/p><p><a href=\"https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/coming_soon\"><span style=\"text-decoration:underline\">https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/coming_soon<\/span><\/a><\/p>"
           }
         },
         "a9835543-299a-46c7-932a-31410d9bef4c": {
           "type": "block",
           "settings": {
-            "h3": "We don't have a locked time, but it will be in late February!",
             "text": "<p>Exclusive Super Early Bird Deals starting at just $479. <\/p><p>The SNOW+ is listed for $519 on Indiegogo, which is 40% off the tag price of $865. <\/p><p>There’s also a TiO2-free deodorant version at $479 if you don’t have much concern with odour control. <\/p><p>The 40% Super Early Bird Perk and the $30 Off are stackable discounts. <a href=\"https:\/\/www.petsnowy.com\/products\/petsnowy-indiegogo-launch-discount-30-off\" target=\"_blank\" title=\"https:\/\/www.petsnowy.com\/products\/petsnowy-indiegogo-launch-discount-30-off\">Reserve the limited-time offer here<\/a>.<\/p>"
           }
         }
@@ -93,21 +94,18 @@
         "32507bcf-f642-4065-b810-f7a193ab77c7": {
           "type": "block",
           "settings": {
-            "h3": "We don't have a locked time, but it will be in late February!",
             "text": "<p>A:  We don't have a locked time, but it will be in late February!<\/p>"
           }
         },
         "4289fb0d-dd58-4a76-8228-2a5df1b7e8b8": {
           "type": "block",
           "settings": {
-            "h3": "We don't have a locked time, but it will be in late February!",
             "text": "<p>A：Please click the link below to bookmark our official pre-sale page. The official SNOW+ purchase page will be updated at the end of February!<\/p><p><a href=\"https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/coming_soon\"><span style=\"text-decoration:underline\">https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/coming_soon<\/span><\/a><\/p>"
           }
         },
         "9fe408c6-f4d4-4b42-a625-299691cb3207": {
           "type": "block",
           "settings": {
-            "h3": "We don't have a locked time, but it will be in late February!",
             "text": "<p>Exclusive Super Early Bird Deals starting at just $479. <\/p><p>The SNOW+ is listed for $519 on Indiegogo, which is 40% off the tag price of $865. <\/p><p>There’s also a TiO2-free deodorant version at $479 if you don’t have much concern with odour control. <\/p><p>The 40% Super Early Bird Perk and the $30 Off are stackable discounts. <a href=\"https:\/\/www.petsnowy.com\/products\/petsnowy-indiegogo-launch-discount-30-off\" target=\"_blank\" title=\"https:\/\/www.petsnowy.com\/products\/petsnowy-indiegogo-launch-discount-30-off\">Reserve the limited-time offer here<\/a>.<\/p>"
           }
         }
