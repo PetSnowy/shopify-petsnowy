@@ -1,6 +1,6 @@
 {{ 'q-and-a.css' | asset_url | stylesheet_tag }}
 <div class="faq_qa_mian">
-  <div class="content">
+  <div class="page-width">
     <div class="faq_qa_heading">
       {% if section.settings.h2 != blank %}
         <h2>
@@ -12,39 +12,34 @@
     <div class="faq_qna_iner">
       <div class="quetion_item">
         {% for block in section.blocks %}
-          {% if block.type == 'text' %}
-            <h2>{{ block.id }}</h2>
-          {% endif %}
-          {% if block.type == 'block' %}
-            <div class="qn_group_main">
-              <div class="ques_title">
-                {% if block.settings.h3 != blank %}
-                  <h3>{{ block.settings.h3 }}</h3>
-                  <span class="onc_arrow">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="feather feather-chevron-up"
-                    >
-                      <polyline points="18 15 12 9 6 15"></polyline>
-                    </svg>
-                  </span>
-                {% endif %}
-              </div>
-              <div class="answer_txt">
-                {% if block.settings.text %}
-                  {{ block.settings.text }}
-                {% endif %}
-              </div>
+          <div class="qn_group_main">
+            <div class="ques_title">
+              {% if block.settings.h3 != blank %}
+                <h3>{{ block.settings.h3 }}</h3>
+                <span class="onc_arrow">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-chevron-up"
+                  >
+                    <polyline points="18 15 12 9 6 15"></polyline>
+                  </svg>
+                </span>
+              {% endif %}
             </div>
-            <hr class="qna_hr">
-          {% endif %}
+            <div class="answer_txt">
+              {% if block.settings.text %}
+                {{ block.settings.text }}
+              {% endif %}
+            </div>
+          </div>
+          <hr class="qna_hr">
         {% endfor %}
       </div>
     </div>
@@ -68,23 +63,12 @@
   ],
   "blocks": [
     {
-      "type": "text",
-      "name": "h3",
-      "settings": [
-        {
-          "type": "text",
-          "id": "h3",
-          "label": "title"
-        }
-      ]
-    },
-    {
       "type": "block",
       "name": "Q&A",
       "settings": [
         {
           "type": "text",
-          "id": "h4",
+          "id": "h3",
           "label": "Question"
         },
         {
