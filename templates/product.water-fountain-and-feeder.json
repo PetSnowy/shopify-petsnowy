@@ -340,6 +340,7 @@
     },
     "6e876fd6-d72e-48c0-a290-fafe9e880d5f": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "b55000e5-f548-46a7-a88f-8ced6171e140": {
           "type": "column",
@@ -505,6 +506,7 @@
     },
     "16879203322247258f": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "042ecd86-3111-463a-a041-b74ad0850cad": {
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
