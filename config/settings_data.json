@@ -304,6 +304,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "9005256451184024879": {
+        "type": "shopify:\/\/apps\/uppromote-affiliate-referral\/blocks\/customer-referral\/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
