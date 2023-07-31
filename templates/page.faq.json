@@ -55,77 +55,11 @@
         "h2": "SNOW⁺ Self-cleaning Litter Box",
         "sub_txt": "(Indiegogo Launch)"
       }
-    },
-    "013e2524-f593-4b42-b9cb-52e3d74c93fb": {
-      "type": "Q-and-A",
-      "blocks": {
-        "d5de3880-8953-49cd-b2f0-6acf8b58a05b": {
-          "type": "block",
-          "settings": {
-            "text": "<p>A:  We don't have a locked time, but it will be in late February!<\/p>"
-          }
-        },
-        "a10bafd7-2a4e-4e38-9207-5c2dcbf9dd08": {
-          "type": "block",
-          "settings": {
-            "text": "<p>A：Please click the link below to bookmark our official pre-sale page. The official SNOW+ purchase page will be updated at the end of February!<\/p><p><a href=\"https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/coming_soon\"><span style=\"text-decoration:underline\">https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/coming_soon<\/span><\/a><\/p>"
-          }
-        },
-        "a9835543-299a-46c7-932a-31410d9bef4c": {
-          "type": "block",
-          "settings": {
-            "text": "<p>Exclusive Super Early Bird Deals starting at just $479. <\/p><p>The SNOW+ is listed for $519 on Indiegogo, which is 40% off the tag price of $865. <\/p><p>There’s also a TiO2-free deodorant version at $479 if you don’t have much concern with odour control. <\/p><p>The 40% Super Early Bird Perk and the $30 Off are stackable discounts. <a href=\"https:\/\/www.petsnowy.com\/products\/petsnowy-indiegogo-launch-discount-30-off\" target=\"_blank\" title=\"https:\/\/www.petsnowy.com\/products\/petsnowy-indiegogo-launch-discount-30-off\">Reserve the limited-time offer here<\/a>.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "d5de3880-8953-49cd-b2f0-6acf8b58a05b",
-        "a10bafd7-2a4e-4e38-9207-5c2dcbf9dd08",
-        "a9835543-299a-46c7-932a-31410d9bef4c"
-      ],
-      "settings": {
-        "h2": "SNOW⁺ Self-cleaning Litter Box",
-        "sub_txt": "(Indiegogo Launch)"
-      }
-    },
-    "83ff856a-1e01-4b2b-a6ef-7eca31e3671c": {
-      "type": "Q-and-A",
-      "blocks": {
-        "32507bcf-f642-4065-b810-f7a193ab77c7": {
-          "type": "block",
-          "settings": {
-            "text": "<p>A:  We don't have a locked time, but it will be in late February!<\/p>"
-          }
-        },
-        "4289fb0d-dd58-4a76-8228-2a5df1b7e8b8": {
-          "type": "block",
-          "settings": {
-            "text": "<p>A：Please click the link below to bookmark our official pre-sale page. The official SNOW+ purchase page will be updated at the end of February!<\/p><p><a href=\"https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/coming_soon\"><span style=\"text-decoration:underline\">https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/coming_soon<\/span><\/a><\/p>"
-          }
-        },
-        "9fe408c6-f4d4-4b42-a625-299691cb3207": {
-          "type": "block",
-          "settings": {
-            "text": "<p>Exclusive Super Early Bird Deals starting at just $479. <\/p><p>The SNOW+ is listed for $519 on Indiegogo, which is 40% off the tag price of $865. <\/p><p>There’s also a TiO2-free deodorant version at $479 if you don’t have much concern with odour control. <\/p><p>The 40% Super Early Bird Perk and the $30 Off are stackable discounts. <a href=\"https:\/\/www.petsnowy.com\/products\/petsnowy-indiegogo-launch-discount-30-off\" target=\"_blank\" title=\"https:\/\/www.petsnowy.com\/products\/petsnowy-indiegogo-launch-discount-30-off\">Reserve the limited-time offer here<\/a>.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "32507bcf-f642-4065-b810-f7a193ab77c7",
-        "4289fb0d-dd58-4a76-8228-2a5df1b7e8b8",
-        "9fe408c6-f4d4-4b42-a625-299691cb3207"
-      ],
-      "settings": {
-        "h2": "SNOW⁺ Self-cleaning Litter Box",
-        "sub_txt": "(Indiegogo Launch)"
-      }
     }
   },
   "order": [
     "main",
     "a2987480-c65a-4a67-bbfd-ec89bb7a9812",
-    "1da5a395-8b0d-4a51-b02c-9559890d9d9d",
-    "013e2524-f593-4b42-b9cb-52e3d74c93fb",
-    "83ff856a-1e01-4b2b-a6ef-7eca31e3671c"
+    "1da5a395-8b0d-4a51-b02c-9559890d9d9d"
   ]
 }
