@@ -4933,7 +4933,8 @@ a.purchase_btn_first:hover {
 }
 .rich-text__blocks {
   .affirm-as-low-as:not(:nth-last-child(2)) {
-    display: none;
+    margin-top: 5px;
+    // display: none;
   }
 }
 body.purchase_product_items.cart.adds_cart .custom_product_data,
