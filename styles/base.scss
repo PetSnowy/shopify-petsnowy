@@ -424,7 +424,7 @@ h5,
   font-size: calc(var(--font-heading-scale) * 5rem);
 }
 h1 {
-	margin: 10px 0px;
+  margin: 10px 0px;
 }
 
 @media only screen and (min-width: 750px) {
@@ -2189,7 +2189,7 @@ input[type="checkbox"] {
 .header-wrapper {
   display: block;
   position: fixed;
-	width: 100%;
+  width: 100%;
   background-color: #fff;
   z-index: 1;
 }
@@ -3001,7 +3001,7 @@ html {
   color: #fff;
 }
 .header__menu-item svg.icon.icon-caret {
-	transition: all 0.3s ease;
+  transition: all 0.3s ease;
   color: #000;
   top: calc(35% - 0rem);
   height: 0.7rem;
@@ -3331,7 +3331,7 @@ ul.footer-block__details-content li a {
   line-height: 35px;
   color: #ffffff;
   text-decoration: none;
-   margin: 0;
+  margin: 0;
 }
 .footer-block.grid__item.footer-block--menu {
   width: 15% !important;
@@ -4228,6 +4228,25 @@ span.socl_insta_icon svg {
 .purchase_data_btns {
   margin-top: 25px;
 }
+#product_price {
+  width: 140px;
+  height: 48px;
+  display: flex;
+  border: 1px solid #000;
+  color: #000;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  font-family: fantasy;
+}
+
+@media screen and (max-width: 750px) {
+  #product_price {
+    width: 38.4vw;
+    height: 14vw;
+    margin: 2.6667vw auto;
+  }
+}
 .purchase_data_btns a.button.button--primary.purchase_btn_one,
 button.product-form__submit.button.button--primary.purchase_btn_one {
   background: #9b8e84;
@@ -4918,8 +4937,10 @@ a.purchase_btn_first:hover {
 .rich-text__blocks a.purchase_btn_first:hover {
   border-color: #231f20;
 }
-.rich-text__blocks .affirm-as-low-as:not(:last-child) {
-	display: none;
+.rich-text__blocks {
+  .affirm-as-low-as:not(:nth-last-child(2)) {
+    display: none;
+  }
 }
 body.purchase_product_items.cart.adds_cart .custom_product_data,
 .non_purchase_template cart-items.page-width.is-empty,
@@ -4999,59 +5020,54 @@ body.purchase_product_items.cart .cart__footer {
   font-size: 20px !important;
 }
 .locale-selectors__container {
-    display: none !important;
+  display: none !important;
 }
-label.productlabel_info, .summary_title_align {
-    cursor: pointer;
+label.productlabel_info,
+.summary_title_align {
+  cursor: pointer;
 }
 .footer-block--newsletter.grid__item {
-    width: 35%;
-    max-width: 35%;
+  width: 35%;
+  max-width: 35%;
 }
-.product-form__buttons button.product-form__submit.button.button--full-width.button--secondary {
-    display: inline-flex;
-    padding: 10px 20px;
-    background: #231f20;
-    border-radius: 100px;
-    text-decoration: none;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #fff;
-    transition: .3s all linear;
-    margin-right: 15px;
-    border: 1px solid transparent;
+.product-form__buttons
+  button.product-form__submit.button.button--full-width.button--secondary {
+  display: inline-flex;
+  padding: 10px 20px;
+  background: #231f20;
+  border-radius: 100px;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  transition: 0.3s all linear;
+  margin-right: 15px;
+  border: 1px solid transparent;
 }
-.product-form__buttons button.product-form__submit.button.button--full-width.button--secondary:hover {
-    background: #fff;
-    border: 1px solid #231f20;
-    color: #231f20;
+.product-form__buttons
+  button.product-form__submit.button.button--full-width.button--secondary:hover {
+  background: #fff;
+  border: 1px solid #231f20;
+  color: #231f20;
 }
 .product .product__info-wrapper .product__title h1 {
   font-size: 30px;
   color: #231f20;
 }
-.product .product__info-wrapper button.shopify-payment-button__more-options.BUz42FHpSPncCPJ4Pr_f{
-    display: none;
-}
-.accordion__content.rte img {
-    border: none;
-}
-.product__accordion .accordion__content {
-    padding: 0 0rem !important;
-}
-.ctm_desktop_images{
-  display: block;
-}
-.ctm_mobile_images{
+.product
+  .product__info-wrapper
+  button.shopify-payment-button__more-options.BUz42FHpSPncCPJ4Pr_f {
   display: none;
 }
-
-
-
-
-
-
-
-
-
-
+.accordion__content.rte img {
+  border: none;
+}
+.product__accordion .accordion__content {
+  padding: 0 0rem !important;
+}
+.ctm_desktop_images {
+  display: block;
+}
+.ctm_mobile_images {
+  display: none;
+}

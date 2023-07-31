@@ -44,7 +44,9 @@
               >
                 {{ block.settings.text }}
               </div>
-
+              <span id="product_price" data-aos="fade-up" class="aos-init aos-animate" data-aos-duration="800">
+                {{- product.price | money -}}
+              </span>
               <div class="purchase_data_btns">
                 {% if product.template_suffix == 'purchase-product' %}
                   <product-form
@@ -137,7 +139,6 @@
               </div>
           {%- endcase -%}
         {%- endfor -%}
-        <span id="product_price" style="display: none">{{ product.price }}</span>
       </div>
     </div>
   </div>
