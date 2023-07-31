@@ -2,5 +2,6 @@
   "cSpell.words": [
 		"gulpfile",
 		"petsnowy"
-	]
+	],
+	"liquid.format.enable": true
 }
