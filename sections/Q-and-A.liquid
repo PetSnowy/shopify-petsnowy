@@ -12,34 +12,39 @@
     <div class="faq_qna_iner">
       <div class="quetion_item">
         {% for block in section.blocks %}
-          <div class="qn_group_main">
-            <div class="ques_title">
-              {% if block.settings.h3 != blank %}
-                <h3>{{ block.settings.h3 }}</h3>
-                <span class="onc_arrow">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-chevron-up"
-                  >
-                    <polyline points="18 15 12 9 6 15"></polyline>
-                  </svg>
-                </span>
-              {% endif %}
+          {% if block.type == 'text' %}
+            <h2>{{ block.id }}</h2>
+          {% endif %}
+          {% if block.type == 'block' %}
+            <div class="qn_group_main">
+              <div class="ques_title">
+                {% if block.settings.h3 != blank %}
+                  <h3>{{ block.settings.h3 }}</h3>
+                  <span class="onc_arrow">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-chevron-up"
+                    >
+                      <polyline points="18 15 12 9 6 15"></polyline>
+                    </svg>
+                  </span>
+                {% endif %}
+              </div>
+              <div class="answer_txt">
+                {% if block.settings.text %}
+                  {{ block.settings.text }}
+                {% endif %}
+              </div>
             </div>
-            <div class="answer_txt">
-              {% if block.settings.text %}
-                {{ block.settings.text }}
-              {% endif %}
-            </div>
-          </div>
-          <hr class="qna_hr">
+            <hr class="qna_hr">
+          {% endif %}
         {% endfor %}
       </div>
     </div>
@@ -64,7 +69,14 @@
   "blocks": [
     {
       "type": "text",
-      "name": "h3"
+      "name": "h3",
+      "settings": [
+        {
+          "type": "text",
+          "id": "h3",
+          "label": "title"
+        }
+      ]
     },
     {
       "type": "block",
