@@ -17,9 +17,6 @@
         "text": "<p>View our most frequently asked questions about the Petsnowy<\/p>"
       }
     },
-		"question":{
-			"type": "Question"
-		},
     "1da5a395-8b0d-4a51-b02c-9559890d9d9d": {
       "type": "Q-and-A",
       "blocks": {
@@ -134,7 +131,6 @@
   },
   "order": [
     "main",
-		"question",
     "a2987480-c65a-4a67-bbfd-ec89bb7a9812",
     "1da5a395-8b0d-4a51-b02c-9559890d9d9d",
     "a50fcd1c-36b7-4bcb-8795-376e5a22e3ff",
