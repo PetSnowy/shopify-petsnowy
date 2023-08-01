@@ -1,14 +1,16 @@
 @media screen and (max-width: 900px) {
 }
 @media screen and (min-width: 901px) {
-  .faq_qa_mian {
+  .faq_qa_main {
     .faq_qa_heading {
       padding: 0px;
     }
-    .content-wrapper {
+    .faq-wrapper {
       display: flex;
     }
     .page-sidebar {
+      position: sticky;
+      top: var(--main-padding-top);
       flex-shrink: 0;
       margin-right: 20px;
       width: 240px;
@@ -24,6 +26,9 @@
     }
     .faq_qna_iner {
       flex: 1;
+    }
+    .aside-item.active {
+      color: red;
     }
   }
 }

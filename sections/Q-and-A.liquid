@@ -1,5 +1,6 @@
 {{ 'q-and-a.css' | asset_url | stylesheet_tag }}
-<div class="faq_qa_mian">
+
+<div class="faq_qa_main">
   <div class="page-width">
     <div class="faq_qa_heading">
       {% if section.settings.h2 != blank %}
@@ -9,8 +10,8 @@
         </h2>
       {% endif %}
     </div>
-    <div class="page-width">
-      <aside class="aside">
+    <div class="faq-wrapper">
+      <aside class="page-sidebar">
         {% for aside in section.blocks %}
           {% if aside.type == 'title' %}
             <div class="aside-item">{{ aside.settings.h2 }}</div>
@@ -21,7 +22,7 @@
         <div class="quetion_item">
           {% for block in section.blocks %}
             {% if block.type == 'title' %}
-              <h2>{{ block.settings.h2 }}</h2>
+              <h2 class="title">{{ block.settings.h2 }}</h2>
             {% endif %}
             {% if block.type == 'block' %}
               <div class="qn_group_main">
@@ -59,7 +60,27 @@
     </div>
   </div>
 </div>
-
+<script>
+  $(function () {
+    const visibleHeight = document.documentElement.clientHeight / 2;
+    const title = document.querySelector('.faq_qna_iner').querySelectorAll('.title');
+    $('.aside-item').click(function () {
+      let index = $(this).index();
+      $('.aside-item').removeClass('active');
+      $(this).addClass('active');
+      title[index].scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+    window.addEventListener('scroll', () => {
+      const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+      for (let index = 0; index < title.length; index++) {
+        if (scrollTop > title[index].offsetTop - visibleHeight) {
+          $('.aside-item').removeClass('active');
+          $('.aside-item').eq(index).addClass('active');
+        }
+      }
+    });
+  });
+</script>
 {% schema %}
 {
   "name": "Q And A",
