@@ -4230,7 +4230,16 @@ span.socl_insta_icon svg {
 }
 #product_price {
   margin-top: 5px;
-  span:nth-child(1) span {
+  display: flex;
+  align-items: center;
+  .icon {
+    width: 129px;
+    height: 20px;
+    background: url("btn.png") no-repeat center/cover;
+    margin-right: 5px;
+    display: inline-block;
+  }
+  span:nth-child(2) span {
     text-decoration: line-through;
     margin-right: 5px;
   }
@@ -4238,6 +4247,12 @@ span.socl_insta_icon svg {
 
 @media screen and (max-width: 750px) {
   #product_price {
+    justify-content: center;
+    .icon {
+      width: 34.4vw;
+      height: 5.3333vw;
+      margin-right: 1.3333vw;
+    }
     text-align: center;
   }
 }
@@ -5065,4 +5080,10 @@ label.productlabel_info,
 }
 .ctm_mobile_images {
   display: none;
+}
+.sca_aff_customer_refer_container {
+  padding: 0px;
+  .sca_aff_customer_refer_button {
+    margin: 0px;
+  }
 }
