@@ -50,6 +50,11 @@
                     {{ block.settings.text }}
                   {% endif %}
                 </div>
+                <div class="video">
+                  {% if block.settings.video %}
+                    {{ block.settings.video }}
+                  {% endif %}
+                </div>
               </div>
               <hr class="qna_hr">
             {% endif %}
@@ -100,6 +105,11 @@
           "type": "richtext",
           "id": "text",
           "label": "Answer"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "video"
         }
       ]
     }
