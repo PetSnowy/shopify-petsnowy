@@ -35,50 +35,6 @@
         "heading": "The Home Of Stylish Cat Products"
       }
     },
-    "fb3b9da1-2961-4648-a1f1-6c99275cd302": {
-      "type": "custom-filter",
-      "blocks": {
-        "deb46eb4-6fea-49c7-a856-06f350476b27": {
-          "type": "title",
-          "settings": {
-            "title": "Trending",
-            "collection_list": "#Trending"
-          }
-        },
-        "74f594c4-d926-4622-af2d-95cd22e5dd8a": {
-          "type": "title",
-          "settings": {
-            "title": "Best Sellers",
-            "collection_list": "#BestSellers"
-          }
-        },
-        "fe24f5cc-4afe-40f1-9e14-a35d31a8a9c5": {
-          "type": "title",
-          "settings": {
-            "title": "Newest",
-            "collection_list": "#Newest"
-          }
-        }
-      },
-      "block_order": [
-        "deb46eb4-6fea-49c7-a856-06f350476b27",
-        "74f594c4-d926-4622-af2d-95cd22e5dd8a",
-        "fe24f5cc-4afe-40f1-9e14-a35d31a8a9c5"
-      ],
-      "settings": {
-        "heading": "",
-        "padding_top": 40,
-        "padding_bottom": 32
-      }
-    },
-    "5864c783-5105-467c-9380-6199b75162a8": {
-      "type": "collection-featured-product",
-      "settings": {
-        "product": "snow-self-cleaning-litter-box",
-        "padding_top": 0,
-        "padding_bottom": 40
-      }
-    },
     "5ead79d5-623a-407e-8571-61d1492bc27d": {
       "type": "shop-all-collection",
       "settings": {
@@ -115,8 +71,6 @@
     "banner",
     "product-grid",
     "4b6daf6b-8cfe-4379-ae6c-86aefe76398c",
-    "fb3b9da1-2961-4648-a1f1-6c99275cd302",
-    "5864c783-5105-467c-9380-6199b75162a8",
     "5ead79d5-623a-407e-8571-61d1492bc27d"
   ]
 }
