@@ -12,11 +12,22 @@
     </div>
     <div class="faq-wrapper">
       <aside class="page-sidebar">
-        {% for aside in section.blocks %}
-          {% if aside.type == 'title' %}
-            <div class="aside-item">{{ aside.settings.h2 }}</div>
-          {% endif %}
-        {% endfor %}
+        <div class="sidebar-wrapper">
+          {% for aside in section.blocks %}
+            {% if aside.type == 'title' %}
+              <div class="aside-item">{{ aside.settings.h2 }}</div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <div class="m-sidebar-wrapper">
+          <select>
+            {% for aside in section.blocks %}
+              {% if aside.type == 'title' %}
+                <option value="{{ aside.settings.h2 }}">{{ aside.settings.h2 }}</option>
+              {% endif %}
+            {% endfor %}
+          </select>
+        </div>
       </aside>
       <div class="faq_qna_iner">
         <div class="quetion_item">
@@ -64,20 +75,28 @@
   $(function () {
     const visibleHeight = document.documentElement.clientHeight / 2;
     const title = document.querySelector('.faq_qna_iner').querySelectorAll('.title');
+    const select = document.querySelector('select');
+
     $('.aside-item').click(function () {
       let index = $(this).index();
       $('.aside-item').removeClass('active');
       $(this).addClass('active');
       title[index].scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
-    window.addEventListener('scroll', () => {
+    const scroll = () => {
       const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
       for (let index = 0; index < title.length; index++) {
         if (scrollTop > title[index].offsetTop - visibleHeight) {
           $('.aside-item').removeClass('active');
           $('.aside-item').eq(index).addClass('active');
+          select.value = $('.aside-item').eq(index).text();
         }
       }
+    };
+    window.addEventListener('scroll', scroll);
+    $('select').change(function () {
+      let selectedIndex = $(this).prop('selectedIndex');
+      title[selectedIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
   });
 </script>
