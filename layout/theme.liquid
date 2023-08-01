@@ -281,7 +281,9 @@
     </script>
 
     {{ shop.metafields.loox.global_html_head }}
-  </head>
+  
+	{{ shop.metafields.loox["global_html_head"] }}
+</head>
 
   {% for item in cart.items %}
     {% assign product_template_cart = item.product.template_suffix %}
@@ -365,5 +367,7 @@
 
     {%- render 'ecom_footer' -%}
     {{ shop.metafields.loox.global_html_body }}
-  </body>
+  
+	{{ shop.metafields.loox["global_html_body"] }}
+</body>
 </html>
