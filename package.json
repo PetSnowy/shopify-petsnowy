@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "shopify theme serve",
     "dev": "shopify theme dev",
-		"gulp": "gulp",
+    "gulp": "gulp",
     "login": "shopify login --store=petsnowy.myshopify.com",
     "theme": "shopify theme dev --store petsnowy.myshopify.com",
     "lint": "eslint ."
@@ -25,7 +25,6 @@
     "concurrently": "^8.2.0",
     "eslint": "^8.45.0",
     "gulp": "^4.0.2",
-    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.3.0",
     "gulp-sass": "^5.1.0",
