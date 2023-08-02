@@ -24,47 +24,62 @@
         {% endfor %}
       </div>
       <div class="itg_image_textimage">
-        {% if section.settings.img != blank or section.settings.mobimg != blank%}          
-          <img class="ctm_desktop_images" src="{{ section.settings.img | img_url: 'master' }}">
-         {% if section.settings.mobimg != blank %}
-           <img class="ctm_mobile_images" src="{{ section.settings.mobimg | img_url: 'master' }}">
-        {% else %}
-           <img class="ctm_mobile_images" src="{{ section.settings.img | img_url: 'master' }}">
-           {% endif %}        
-            <div class="textimage_text">             
-              <h2 data-aos="fade-up" data-aos-duration="800">{{ section.settings.heading }}</h2>
-             <div data-aos="fade-up" data-aos-duration="800"> {{ section.settings.richtext }}</div>
-            </div>
+        {% if section.settings.img != blank or section.settings.mobimg != blank %}
+          <img
+            class="ctm_desktop_images"
+            src="{{ section.settings.img | img_url: 'master' }}"
+            alt="petsnowy"
+            loading="lazy"
+          >
+          {% if section.settings.mobimg != blank %}
+            <img
+              class="ctm_mobile_images"
+              src="{{ section.settings.mobimg | img_url: 'master' }}"
+              alt="petsnowy"
+              loading="lazy"
+            >
+          {% else %}
+            <img
+              class="ctm_mobile_images"
+              src="{{ section.settings.img | img_url: 'master' }}"
+              alt="petsnowy"
+              loading="lazy"
+            >
+          {% endif %}
+          <div class="textimage_text">
+            <h2 data-aos="fade-up" data-aos-duration="800">{{ section.settings.heading }}</h2>
+            <div data-aos="fade-up" data-aos-duration="800">{{ section.settings.richtext }}</div>
+          </div>
         {% endif %}
       </div>
     </div>
   </div>
 </div>
 {% schema %}
-  {
-    "name": "Image Text Section",
-    "settings": [
-     {
-        "type":"image_picker",
-        "id":"img",
-        "label":"Image"
-      },
-       {
-        "type":"image_picker",
-        "id":"mobimg",
-        "label":"Mobile Image"
-      },
-      {
-        "type":"text",
-        "id":"heading",
-        "label":"Heading"
-      },
-      {
-        "type":"richtext",
-        "id":"richtext",
-        "label":"Content"
-      },      
-      {
+{
+  "name": "Image Text Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobimg",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "richtext",
+      "label": "Content"
+    },
+    {
       "type": "range",
       "id": "padding_top",
       "min": 0,
@@ -84,31 +99,31 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
     }
-    ],
-"blocks":[
- {
-    "name": "Image Text Section",
-   "type":"title",
-    "settings": [
-       {
-      "type": "text",
-      "id": "title",
-      "label": "List Title"
-      },
-      {
-      "type": "richtext",
-      "id": "texts",
-      "label": "List Content"
-      }
-    ]
-  }
-],
-"presets":[
-  {
-     "name": "Image Text Section"
-  }
-]
-  }
+  ],
+  "blocks": [
+    {
+      "name": "Image Text Section",
+      "type": "title",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "List Title"
+        },
+        {
+          "type": "richtext",
+          "id": "texts",
+          "label": "List Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Text Section"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
