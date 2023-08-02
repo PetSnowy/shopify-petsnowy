@@ -4,10 +4,10 @@
   <div class="page-width">
     <div class="faq_qa_heading">
       {% if section.settings.h2 != blank %}
-        <h2>
+        <h1>
           {{ section.settings.h2 }}
           <small>{{ section.settings.sub_txt }}</small>
-        </h2>
+        </h1>
       {% endif %}
     </div>
     <div class="faq-wrapper">
@@ -32,39 +32,41 @@
       <div class="faq_qna_iner">
         <div class="quetion_item">
           {% for block in section.blocks %}
-            {% if block.type == 'title' %}
-              <h2 class="title">{{ block.settings.h2 }}</h2>
-            {% endif %}
-            {% if block.type == 'block' %}
-              <div class="qn_group_main">
-                <div class="ques_title">
-                  {% if block.settings.h3 != blank %}
-                    <h3>{{ block.settings.h3 }}</h3>
-                    <span class="onc_arrow">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-chevron-up"
-                      >
-                        <polyline points="18 15 12 9 6 15"></polyline>
-                      </svg>
-                    </span>
-                  {% endif %}
+            <div class="option">
+              {% if block.type == 'title' %}
+                <h2 class="title">{{ block.settings.h2 }}</h2>
+              {% endif %}
+              {% if block.type == 'block' %}
+                <div class="qn_group_main">
+                  <div class="ques_title">
+                    {% if block.settings.h3 != blank %}
+                      <h3>{{ block.settings.h3 }}</h3>
+                      <span class="onc_arrow">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-chevron-up"
+                        >
+                          <polyline points="18 15 12 9 6 15"></polyline>
+                        </svg>
+                      </span>
+                    {% endif %}
+                  </div>
+                  <div class="answer_txt">
+                    {% if block.settings.text %}
+                      {{ block.settings.text }}
+                    {% endif %}
+                  </div>
                 </div>
-                <div class="answer_txt">
-                  {% if block.settings.text %}
-                    {{ block.settings.text }}
-                  {% endif %}
-                </div>
-              </div>
-              <hr class="qna_hr">
-            {% endif %}
+              {% endif %}
+            </div>
+            <hr class="qna_hr">
           {% endfor %}
         </div>
       </div>
@@ -106,7 +108,7 @@
   "settings": [
     {
       "type": "text",
-      "id": "h2",
+      "id": "h1",
       "label": "Heading"
     },
     {

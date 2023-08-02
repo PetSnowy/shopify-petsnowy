@@ -1,10 +1,22 @@
 @function vw($px-vw, $base-vw: 750px) {
   @return calc(($px-vw * 100vw) / $base-vw);
 }
+.faq_qa_main {
+  h1,
+  h2,
+  h3 {
+    margin: 0px;
+    padding: 0px;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .faq_qa_main {
     padding-top: vw(20px);
+    padding-bottom: vw(40px);
+    .qna_hr {
+      margin: vw(40px) 0px;
+    }
   }
   .sidebar-wrapper {
     display: none;
@@ -15,6 +27,7 @@
     top: calc(var(--main-padding-top));
     z-index: 1;
     padding: vw(20px);
+    margin-bottom: vw(20px);
   }
   .m-sidebar-wrapper {
     select {
@@ -23,7 +36,7 @@
       text-overflow: ellipsis;
       width: 100%;
       padding: vw(20px);
-      font-size: vw(20px);
+      font-size: vw(24px);
       appearance: none;
       background-color: #f1f1f1;
       color: #000;
@@ -31,8 +44,19 @@
       border: none;
       option {
         width: 100%;
+        font-size: vw(24px);
+        color: #000;
       }
     }
+  }
+  .title {
+    font-size: vw(35px);
+  }
+  .ques_title h3 {
+    font-size: vw(30px);
+  }
+  .answer_txt {
+    font-size: vw(24px);
   }
 }
 @media screen and (min-width: 901px) {
@@ -42,21 +66,20 @@
   .faq_qa_main {
     .faq_qa_heading {
       padding: 0px;
+      margin-bottom: 20px;
+      font-size: 24px;
     }
     .faq-wrapper {
       display: flex;
-      margin-bottom: 20px;
+      margin-bottom: 65px;
     }
     .page-sidebar {
       position: sticky;
       top: calc(var(--main-padding-top) + 20px);
       flex-shrink: 0;
-      margin-right: 20px;
+      margin-right: 40px;
       width: 240px;
-      display: grid;
       height: fit-content;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      row-gap: 10px;
       div,
       p {
         margin: 0px;
@@ -65,18 +88,51 @@
     }
     .faq_qna_iner {
       flex: 1;
+      padding: 0px 40px;
+      border-left: 1px solid #e8e8e8;
+    }
+    .sidebar-wrapper {
+      display: grid;
+      height: fit-content;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      row-gap: 20px;
+    }
+    .aside-item {
+      padding: 10px;
+      border: 1px solid #e8e8e8;
+      transition: all 0.3s ease;
+      border-radius: 10px;
     }
     .aside-item.active {
-      color: rgb(161, 148, 132);
+      border-color: rgb(241, 129, 19);
+      color: rgb(241, 129, 19);
     }
     .title {
       margin: 0px;
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    .answer_txt {
+      font-size: 15px;
     }
     .ques_title {
       cursor: pointer;
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      h3 {
+        font-size: 18px;
+      }
     }
     .onc_arrow {
       transition: all 0.3s ease;
+      position: static;
+      polyline {
+        color: rgb(241, 129, 19);
+      }
+    }
+    .qna_hr {
+      margin: 25px 0px;
     }
   }
 }
