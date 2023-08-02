@@ -63,6 +63,11 @@
                       {{ block.settings.text }}
                     {% endif %}
                   </div>
+                  <div class="video">
+                    {% if block.settings.video %}
+                      {{ block.settings.video }}
+                    {% endif %}
+                  </div>
                 </div>
               {% endif %}
             </div>
@@ -142,6 +147,11 @@
           "type": "richtext",
           "id": "text",
           "label": "Answer"
+        },
+        {
+          "type": "video_url",
+          "id": "video",
+          "label": "video"
         }
       ]
     }
