@@ -39,9 +39,9 @@
 }
 
 @media screen and (min-width: 1550px) {
-.main_full_img {
+  .main_full_img {
     height: 100% !important;
-}
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -71,9 +71,9 @@
   .top_banner_text h2 {
     font-size: 40px;
   }
-.main_full_img {
-  height: 500px !important;
-}
+  .main_full_img {
+    height: 500px !important;
+  }
 }
 
 @media screen and (min-width: 990px) and (max-width: 1023px) {
@@ -114,12 +114,12 @@
   .top_banner_text h2 {
     font-size: 40px;
   }
-.menu_related_image span{
-  font-size: 16px !important;
-}
-.main_full_img {
-  height: 500px !important;
-}
+  .menu_related_image span {
+    font-size: 16px !important;
+  }
+  .main_full_img {
+    height: 500px !important;
+  }
 }
 
 @media screen and (max-width: 989px) {
@@ -275,15 +275,15 @@
     text-transform: uppercase;
     font-weight: 600;
   }
-.main_full_img {
+  .main_full_img {
     height: 100% !important;
-}
-.footer-block__details-content.rte p {
-  font-size: 14px;
-}
-h2.footer-block__heading {
- font-size: 16px;
-}
+  }
+  .footer-block__details-content.rte p {
+    font-size: 14px;
+  }
+  h2.footer-block__heading {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 989px) {
@@ -675,16 +675,16 @@ h2.footer-block__heading {
   .custom_colectn_main ul.collection-list {
     row-gap: 20px;
   }
- 
-.footer-block--newsletter.grid__item {
-  width: 100% !important;
-  max-width: 100%;
-}
-.footer-block.grid__item.footer-block--menu{
-  width: 50% !important;
-  max-width: 49% !important;
-  margin: 0;
-}  
+
+  .footer-block--newsletter.grid__item {
+    width: 100% !important;
+    max-width: 100%;
+  }
+  .footer-block.grid__item.footer-block--menu {
+    width: 50% !important;
+    max-width: 49% !important;
+    margin: 0;
+  }
   .footer .footer__column--info {
     display: block;
   }
@@ -973,25 +973,25 @@ h2.footer-block__heading {
 }
 
 @media screen and (min-width: 750px) and (max-width: 767px) {
-.banner {
-  flex-direction: column !important;
-}
-.banner.banner--desktop-transparent::before {
-  padding-bottom: inherit !important;
-}
-.banner .banner__content {
-  justify-content: center !important;
-}
-.footer ul.list.list-payment {
-  justify-content: center;
-}
-.footer .footer__copyright {
-  text-align: center;
-  margin-top: 1.5rem;
-}
-.header--middle-left {
-  grid-template-columns: 1fr 1fr 1fr;
-}
+  .banner {
+    flex-direction: column !important;
+  }
+  .banner.banner--desktop-transparent::before {
+    padding-bottom: inherit !important;
+  }
+  .banner .banner__content {
+    justify-content: center !important;
+  }
+  .footer ul.list.list-payment {
+    justify-content: center;
+  }
+  .footer .footer__copyright {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  .header--middle-left {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 750px) {
@@ -1098,9 +1098,9 @@ h2.footer-block__heading {
     margin: 0px 5px !important;
     width: 150px !important;
   }
-  .kl-private-reset-css-Xuajs1.go3176171171 p span {
-    font-size: 14px !important;
-  }
+  // .kl-private-reset-css-Xuajs1.go3176171171 p span {
+  //   font-size: 14px !important;
+  // }
   .list_data_text.hide_mobile_layouts {
     display: none;
   }
@@ -1201,32 +1201,34 @@ h2.footer-block__heading {
     font-size: 10px !important;
     margin-top: 0px !important;
   }
- .mobile_order_link a.headr_odr_now {
+  .mobile_order_link a.headr_odr_now {
     display: block;
-}
-.social_main_div {
+  }
+  .social_main_div {
     padding-top: 30px;
-}
-.footer__blocks-wrapper.grid{
-  display: flex !important; 
-}
-.itg_mobile_tio2.product slider-component.slider-mobile-gutter {
+  }
+  .footer__blocks-wrapper.grid {
+    display: flex !important;
+  }
+  .itg_mobile_tio2.product slider-component.slider-mobile-gutter {
     display: none;
-}
-.product .product__info-wrapper .product__title h1 {
+  }
+  .product .product__info-wrapper .product__title h1 {
     font-size: 24px;
-}
-.product .product__media.media.media--transparent.gradient.global-media-settings img {
-  position: absolute;
-}
-.itg_image_textimage {
+  }
+  .product
+    .product__media.media.media--transparent.gradient.global-media-settings
+    img {
+    position: absolute;
+  }
+  .itg_image_textimage {
     position: relative;
     margin: 0px 0;
-}
-.ctm_desktop_images{
-  display: none;
-}
-.ctm_mobile_images{
-  display: block;
-}
+  }
+  .ctm_desktop_images {
+    display: none;
+  }
+  .ctm_mobile_images {
+    display: block;
+  }
 }

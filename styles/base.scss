@@ -1,5 +1,5 @@
 /* Color custom properties */
-
+@import "pxToVw.scss";
 :root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
@@ -5085,5 +5085,24 @@ label.productlabel_info,
   padding: 0px;
   .sca_aff_customer_refer_button {
     margin: 0px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .needsclick {
+    [aria-label="POPUP Form"].needsclick.kl-private-reset-css-Xuajs1 {
+      transform: none !important;
+      max-height: fit-content !important;
+      width: 100% !important;
+    }
+    form {
+      width: 100% !important;
+      flex-direction: column !important;
+      & > div:nth-child(1) {
+        display: none !important;
+      }
+      & > div:nth-child(2) {
+        padding: 0px !important;
+      }
+    }
   }
 }
