@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/ddz2456820347/shopify-petsnowy#readme",
   "devDependencies": {
-    "concurrently": "^8.2.0",
     "eslint": "^8.45.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
