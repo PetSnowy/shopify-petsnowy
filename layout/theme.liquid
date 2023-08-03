@@ -51,9 +51,8 @@
     {% endif %}
 
     {% render 'meta-tags' %}
-
-    <script src="{{ 'global.js' | asset_url }}" defer></script>
     <script src="{{ 'jquery.min.js' | asset_url }}"></script>
+    <script src="{{ 'global.js' | asset_url }}" defer></script>
     <script src="{{ 'scroll_parachute.js' | asset_url }}"></script>
     <script src="{{ 'aos-animation.js' | asset_url }}"></script>
     <script src="{{ 'custom.js' | asset_url }}"></script>
@@ -281,9 +280,9 @@
     </script>
 
     {{ shop.metafields.loox.global_html_head }}
-  
-	{{ shop.metafields.loox["global_html_head"] }}
-</head>
+
+    {{ shop.metafields.loox.global_html_head }}
+  </head>
 
   {% for item in cart.items %}
     {% assign product_template_cart = item.product.template_suffix %}
@@ -367,7 +366,7 @@
 
     {%- render 'ecom_footer' -%}
     {{ shop.metafields.loox.global_html_body }}
-  
-	{{ shop.metafields.loox["global_html_body"] }}
-</body>
+
+    {{ shop.metafields.loox.global_html_body }}
+  </body>
 </html>
