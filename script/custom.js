@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 	$(".slide_arrow svg").click(function () {
-		document.querySelector('.banner__box').scrollIntoView({ behavior: "smooth", block: "center" })
+		document.querySelectorAll('.banner ')[0].scrollIntoView({ behavior: "smooth", block: "center" })
 	});
 
 	function onCloseButtonClick(event) {
