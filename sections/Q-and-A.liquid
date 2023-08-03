@@ -1,77 +1,119 @@
 {{ 'q-and-a.css' | asset_url | stylesheet_tag }}
-<div class="faq_qa_mian">
+
+<div class="faq_qa_main">
   <div class="page-width">
     <div class="faq_qa_heading">
       {% if section.settings.h2 != blank %}
-        <h2>
+        <h1>
           {{ section.settings.h2 }}
           <small>{{ section.settings.sub_txt }}</small>
-        </h2>
+        </h1>
       {% endif %}
     </div>
-    <div class="page-width">
-      <aside class="aside">
-        {% for aside in section.blocks %}
-          {% if aside.type == 'title' %}
-            <div class="aside-item">{{ aside.settings.h2 }}</div>
-          {% endif %}
-        {% endfor %}
+    <div class="faq-wrapper">
+      <aside class="page-sidebar">
+        <div class="sidebar-wrapper">
+          {% for aside in section.blocks %}
+            {% if aside.type == 'title' %}
+              <div class="aside-item">{{ aside.settings.h2 }}</div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <div class="m-sidebar-wrapper">
+          <select>
+            {% for aside in section.blocks %}
+              {% if aside.type == 'title' %}
+                <option value="{{ aside.settings.h2 }}">{{ aside.settings.h2 }}</option>
+              {% endif %}
+            {% endfor %}
+          </select>
+        </div>
       </aside>
       <div class="faq_qna_iner">
         <div class="quetion_item">
           {% for block in section.blocks %}
-            {% if block.type == 'title' %}
-              <h2>{{ block.settings.h2 }}</h2>
-            {% endif %}
-            {% if block.type == 'block' %}
-              <div class="qn_group_main">
-                <div class="ques_title">
-                  {% if block.settings.h3 != blank %}
-                    <h3>{{ block.settings.h3 }}</h3>
-                    <span class="onc_arrow">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-chevron-up"
-                      >
-                        <polyline points="18 15 12 9 6 15"></polyline>
-                      </svg>
-                    </span>
-                  {% endif %}
+            <div class="option">
+              {% if block.type == 'title' %}
+                <h2 class="title">{{ block.settings.h2 }}</h2>
+              {% endif %}
+              {% if block.type == 'block' %}
+                <div class="qn_group_main">
+                  <div class="ques_title">
+                    {% if block.settings.h3 != blank %}
+                      <h3>{{ block.settings.h3 }}</h3>
+                      <span class="onc_arrow">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-chevron-up"
+                        >
+                          <polyline points="18 15 12 9 6 15"></polyline>
+                        </svg>
+                      </span>
+                    {% endif %}
+                  </div>
+                  <div class="answer_txt">
+                    {% if block.settings.text %}
+                      {{ block.settings.text }}
+                    {% endif %}
+                  </div>
+                  <div class="video">
+                    {% if block.settings.video %}
+                      {{ block.settings.video }}
+                    {% endif %}
+                  </div>
                 </div>
-                <div class="answer_txt">
-                  {% if block.settings.text %}
-                    {{ block.settings.text }}
-                  {% endif %}
-                </div>
-                <div class="video">
-                  {% if block.settings.video %}
-                    {{ block.settings.video }}
-                  {% endif %}
-                </div>
-              </div>
-              <hr class="qna_hr">
-            {% endif %}
+              {% endif %}
+            </div>
+            <hr class="qna_hr">
           {% endfor %}
         </div>
       </div>
     </div>
   </div>
 </div>
+<script>
+  $(function () {
+    const visibleHeight = document.documentElement.clientHeight / 2;
+    const title = document.querySelector('.faq_qna_iner').querySelectorAll('.title');
+    const select = document.querySelector('select');
 
+    $('.aside-item').click(function () {
+      let index = $(this).index();
+      $('.aside-item').removeClass('active');
+      $(this).addClass('active');
+      title[index].scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+    const scroll = () => {
+      const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+      for (let index = 0; index < title.length; index++) {
+        if (scrollTop > title[index].offsetTop - visibleHeight) {
+          $('.aside-item').removeClass('active');
+          $('.aside-item').eq(index).addClass('active');
+          select.value = $('.aside-item').eq(index).text();
+        }
+      }
+    };
+    window.addEventListener('scroll', scroll);
+    $('select').change(function () {
+      let selectedIndex = $(this).prop('selectedIndex');
+      title[selectedIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  });
+</script>
 {% schema %}
 {
   "name": "Q And A",
   "settings": [
     {
       "type": "text",
-      "id": "h2",
+      "id": "h1",
       "label": "Heading"
     },
     {

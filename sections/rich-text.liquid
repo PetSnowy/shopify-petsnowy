@@ -145,7 +145,28 @@
     </div>
   </div>
 </div>
+<script>
+  const getKlaviyoOnsite = localStorage.getItem('klaviyoOnsite');
+  const url = window.location.href;
+  const pageUrl = 'snow-self-cleaning-litter-box';
+  const preferentialPrice = '100';
+  const {
+    viewedForms: {
+      modal: { disabledForms },
+    },
+  } = JSON.parse(getKlaviyoOnsite);
 
+  function disposeUrl(url) {
+    const str = url.split('/');
+    return str[str.length - 1];
+  }
+
+  const need = document.querySelector('.needsclick.kl-private-reset-css-Xuajs1');
+  debugger;
+
+  if (disabledForms.SyCsSf.successActionTypes.length && pageUrl === disposeUrl(url)) {
+  }
+</script>
 {% schema %}
 {
   "name": "t:sections.rich-text.name",
