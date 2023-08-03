@@ -717,7 +717,10 @@
 		if(scrollTop > 0)	header.style.backgroundColor = '#231f20'
 		else header.style.backgroundColor = 'transparent'
 	}
-	if(header) window.addEventListener('scroll', scroll)
+	if(header) {
+		window.addEventListener('scroll', scroll);
+		scroll();
+	}
 {% endjavascript %}
 
 <script type="application/ld+json">
