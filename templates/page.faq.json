@@ -58,7 +58,7 @@
           "type": "block",
           "settings": {
             "h3": "Q: What should I do if the weight readingson the device have significant deviations (>400 grams)?",
-            "text": "<p>A: If the weight readings on the device have significant deviations, we recommend taking the following steps:<\/p><p>1. <\/p>"
+            "text": "<p>A: If the weight readings on the device have significant deviations, we recommend taking the following steps:<\/p><p>1.  Please send us a photo of the floor where the device is<br\/>placed. This will help us confirm if the surface is level, as an uneven surface can affect the accuracy of the weight readings<\/p><p>2. Please let us know the device's PID (Product ID) and production batch information. This information allows us to identify the specific device and refer the issue to our technical team for further assistance<\/p>"
           }
         },
         "b1d415ce-06ae-4741-8a25-a0aae3663e36": {
