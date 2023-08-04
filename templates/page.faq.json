@@ -104,55 +104,87 @@
         "e34321db-0656-48cb-95c6-9a168dcaef74": {
           "type": "block",
           "settings": {
-            "h3": "SNOW⁺ Self-cleaning Litter Box ",
-            "text": "<h2>SNOW⁺ Self-cleaning Litter Box <\/h2>"
+            "h3": "Q:How does the device ensure the safety of the cat?",
+            "text": "<p>A: During development, the device was designed to stop spinning its motor whenever there is a change in weight detected. This safety feature protects the cat from potential harm.<\/p>"
           }
         },
         "509a0b85-7d46-480a-96e5-744b1cadb88e": {
           "type": "block",
           "settings": {
-            "h3": "SNOW⁺ Self-cleaning Litter Box ",
-            "text": "<h2>SNOW⁺ Self-cleaning Litter Box <\/h2>"
+            "h3": "Q: Can the device differentiate betweenwhere the cat is located (top cover, inside the globe, or poking a paw)?",
+            "text": "<p>A: No, the sensors can only detect changes in the overall weight of the device and cannot differentiate between specific locations of the cat within the litter box.<\/p>"
           }
         },
         "11d6adce-dcfa-4874-bd76-fc228d46eb4e": {
           "type": "title",
           "settings": {
-            "h2": "SNOW⁺ Self-cleaning Litter Box "
+            "h2": "Cat Detected Inside Device When None Entered"
           }
         },
         "64692633-e595-49a7-82af-59d9e6b2fed0": {
           "type": "block",
           "settings": {
-            "h3": "below to bookmark our official pre-sale page. The official SNOW+ purchase page will be updated at the end of February!",
-            "text": "<h3>below to bookmark our official pre-sale page. The official SNOW+ purchase page will be updated at the end of February!<\/h3>"
-          }
-        },
-        "3621edf5-d9d7-4ea6-a395-b45c8cc6eaca": {
-          "type": "block",
-          "settings": {
-            "h3": "below to bookmark our official pre-sale page. The official SNOW+ purchase page will be updated at the end of February!",
-            "text": "<h3>below to bookmark our official pre-sale page. The official SNOW+ purchase page will be updated at the end of February!<\/h3>"
-          }
-        },
-        "15f56dc5-9706-425e-bc9f-ed6f7ba24439": {
-          "type": "block",
-          "settings": {
-            "h3": "below to bookmark our official pre-sale page. The official SNOW+ purchase page will be updated at the end of February!",
-            "text": "<h3>below to bookmark our official pre-sale page. The official SNOW+ purchase page will be updated at the end of February!<\/h3>"
-          }
-        },
-        "4d09742a-dfe8-4c58-8bb4-8a6b3eb390fa": {
-          "type": "block",
-          "settings": {
-            "h3": "below to bookmark our official pre-sale page. The official SNOW+ purchase page will be updated at the end of February!",
-            "text": "<h3>below to bookmark our official pre-sale page. The official SNOW+ purchase page will be updated at the end of February!<\/h3>"
+            "h3": "Q: The app claims that a cat has beeninside the device for an extended period, but no cat has entered. How can I fixthis?",
+            "text": "<p>A: If the app displays a message indicating that the cat has been in the device too long, even when no cat has entered, please try the following:<\/p><p>- Reset the weight by pressing the R (reset) key.<\/p><p>- The blue-green flashing on the device indicates that you added cat litter and an object triggered the gravity sensor, making it appear as if a cat entered the device. The cloud light will show blue-green flashing as a result.<\/p>"
           }
         },
         "8e6923fa-afbf-4a31-aa1a-deec9be1ea0c": {
           "type": "title",
           "settings": {
-            "h2": "below to bookmark our official pre-sale page. The official SNOW+ purchase page will be updated at the end of February!"
+            "h2": "Addressing Concerns about False Notifications from theDevice"
+          }
+        },
+        "3621edf5-d9d7-4ea6-a395-b45c8cc6eaca": {
+          "type": "block",
+          "settings": {
+            "h3": "Q:Why am I receiving notifications when my cats are not actually using the litterbox?",
+            "text": "<p>A: The device uses weight sensors in the base to detect objects or cats near or on top of the device. However, the sensors can only detect changes in weight due to gravity and cannot<br\/>differentiate between where the cat is located (top cover, inside the globe, or poking a paw into the device). This may lead to notifications being triggered<br\/>even when the cat is not actively using the litter box.<\/p>"
+          }
+        },
+        "15f56dc5-9706-425e-bc9f-ed6f7ba24439": {
+          "type": "block",
+          "settings": {
+            "h3": "Q:How can I reduce the number of notifications I receive?",
+            "text": "<p>A: You can disable the notification option within<br\/>the app to reduce the number of notifications you receive. This will prevent<br\/>you from receiving notifications about your cat's activity in the litter box.<\/p>"
+          }
+        },
+        "d530064d-5039-410c-896c-34aa188261df": {
+          "type": "title",
+          "settings": {
+            "h2": "Inactive Inner Globe during Cleaning Mode"
+          }
+        },
+        "4d09742a-dfe8-4c58-8bb4-8a6b3eb390fa": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: The device is in cleaning mode accordingto the app, but the inner globe is not rotating. What should I do?",
+            "text": "<p>A: If the device blinks white light and is in the cleaning state, but the inner globe is not turning, please try the following: <\/p><p>- Take off the top cover and remove the ball compartment.<\/p><p>- Put the top cover back on and try cleaning again to see if the internal gears can rotate. <\/p>"
+          }
+        },
+        "e83af33f-2743-4cab-96e2-9519096486e6": {
+          "type": "title",
+          "settings": {
+            "h2": "Device Inactivity during Cleaning Mode"
+          }
+        },
+        "b13c58f4-c59c-4b87-9235-c00871574d78": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: The device is blinking green and blue,indicating it's in cleaning mode according to the app, but there is noactivity. What should I do?",
+            "text": "<p>A: If the device is blinking green and blue, indicating that it's cleaning, but no action is taking place, please try the following:<\/p><p>- Cut off the power supply to the device.<\/p><p>- Delete the device in the application (no need to uninstall the application).<\/p><p>-Reconnect the device to the power supply and wait for it to complete self-checking (indicated by a solid white light on the cloud light after 3 minutes).<\/p><p>- Re-pair the device in the application. Please send us an email to inform us of the outcome after performing these steps. If the issue persists, please take a screenshot of the Device Information page, including the Virtual ID, and send it to us for further assistance. We will investigate the device's historical<br\/>records through the background.<\/p>"
+          }
+        },
+        "23036471-817a-4710-b3de-1f696a3c8baf": {
+          "type": "title",
+          "settings": {
+            "h2": "Red Blinking Light on Device"
+          }
+        },
+        "79514281-ce69-4ebd-a9b6-84ab9868ba16": {
+          "type": "block",
+          "settings": {
+            "h3": "Q:What could be causing the red blinking light on the litterbox, despiteeverything being in place?",
+            "text": "<p>A: Regarding the red flashing light, here are some possibilities to consider:<\/p><p>1. If you purchased the DELUXE version with two adapter sockets, please ensure that you are using the correct socket for the litter box and feeder.<\/p><p>2. Kindly check if a magnet has been installed. If so, try using a magnet to touch the designated area indicated in the image provided. This will help troubleshoot any contact problem between the top cover and the base. If the cloud light<br\/>changes from a red flashing light to a white light, it indicates a problem with the contact between the top cover magnet and the base. If the cloud light<br\/>continues to flash red, it may indicate a problem with the b<\/p>"
           }
         }
       },
@@ -173,10 +205,15 @@
         "509a0b85-7d46-480a-96e5-744b1cadb88e",
         "11d6adce-dcfa-4874-bd76-fc228d46eb4e",
         "64692633-e595-49a7-82af-59d9e6b2fed0",
+        "8e6923fa-afbf-4a31-aa1a-deec9be1ea0c",
         "3621edf5-d9d7-4ea6-a395-b45c8cc6eaca",
         "15f56dc5-9706-425e-bc9f-ed6f7ba24439",
+        "d530064d-5039-410c-896c-34aa188261df",
         "4d09742a-dfe8-4c58-8bb4-8a6b3eb390fa",
-        "8e6923fa-afbf-4a31-aa1a-deec9be1ea0c"
+        "e83af33f-2743-4cab-96e2-9519096486e6",
+        "b13c58f4-c59c-4b87-9235-c00871574d78",
+        "23036471-817a-4710-b3de-1f696a3c8baf",
+        "79514281-ce69-4ebd-a9b6-84ab9868ba16"
       ],
       "settings": {
         "h1": "",
