@@ -74,25 +74,31 @@
             "text": "<p>A: Yes, here are some steps you can follow to troubleshoot the issue:<\/p><p>1. Move the device slightly: Sometimes,<br\/>poor sensor contact can cause issues. Try moving the device a little and see if it starts working properly.<\/p><p>2. Power off and restart: Turn off the device completely and then turn it back on. This can help reset any temporary glitches or errors.<\/p><p>3. Reset the device to factory settings: If the problem persists after restarting, you can try resetting the device to its factory settings. To do this, press and hold the reset button. While still<br\/>holding the reset button, unplug the power cord and then plug it back in. Finally, release the reset button. This should restore the device to its original settings<\/p>"
           }
         },
+        "2c283261-52ea-4e55-8e23-ce3a2503fc74": {
+          "type": "title",
+          "settings": {
+            "h2": "Understanding Weight Detection and Variations on theDevice"
+          }
+        },
         "3e8aaee3-ee2d-4085-9a54-c73e11fa58d6": {
           "type": "block",
           "settings": {
-            "h3": "SNOW⁺ Self-cleaning Litter Box ",
-            "text": "<h2>SNOW⁺ Self-cleaning Litter Box <\/h2>"
+            "h3": "Q: How does the device detect weight?",
+            "text": "<p>A: The device uses four weight sensors in the base to detect changes in weight. These sensors are located within four feet of the device's base and can only detect changes in weight due to gravity.<\/p>"
           }
         },
         "8f3a3504-d3d7-4f93-9864-c2be2f974f27": {
           "type": "block",
           "settings": {
-            "h3": "SNOW⁺ Self-cleaning Litter Box ",
-            "text": "<h2>SNOW⁺ Self-cleaning Litter Box <\/h2>"
+            "h3": "Q: Why do the weight readings on the devicediffer?",
+            "text": "<p>A: There are several reasons for<br\/>inconsistent weight readings on the device, including having multiple cats inside the litter box, partial weight of cats, cats in different positions inside the litter box, and variations in which part of the device is touched. These factors can lead to variations in weight readings.<\/p>"
           }
         },
         "ca39ff4c-91ed-4633-b1fe-ecdf4f900bef": {
           "type": "block",
           "settings": {
-            "h3": "SNOW⁺ Self-cleaning Litter Box ",
-            "text": "<h2>SNOW⁺ Self-cleaning Litter Box <\/h2>"
+            "h3": "Q: Can the device differentiate betweendifferent positions of the cat inside the litter box?",
+            "text": "<p>A: No, the device cannot differentiate between different positions of the cat inside the litter box. The weight sensors detect changes in the overall weight of the device, but cannot determine the specific location of the cat within the litter box.<\/p>"
           }
         },
         "e34321db-0656-48cb-95c6-9a168dcaef74": {
@@ -159,6 +165,7 @@
         "7eda0c03-21a3-4f5d-9700-8b80b7975c27",
         "b1d415ce-06ae-4741-8a25-a0aae3663e36",
         "6e8f4d3a-8046-4c63-88e4-cafbec2d4f51",
+        "2c283261-52ea-4e55-8e23-ce3a2503fc74",
         "3e8aaee3-ee2d-4085-9a54-c73e11fa58d6",
         "8f3a3504-d3d7-4f93-9864-c2be2f974f27",
         "ca39ff4c-91ed-4633-b1fe-ecdf4f900bef",
