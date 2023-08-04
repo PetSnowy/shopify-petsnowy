@@ -9,6 +9,10 @@
           <small>{{ section.settings.sub_txt }}</small>
         </h1>
       {% endif %}
+      <div class="search">
+        <input type="text">
+        <button>search</button>
+      </div>
     </div>
     <div class="faq-wrapper">
       <aside class="page-sidebar">
@@ -76,6 +80,7 @@
         </div>
       </div>
     </div>
+    <div class="search-result"></div>
   </div>
 </div>
 <script>
@@ -83,6 +88,70 @@
     const visibleHeight = document.documentElement.clientHeight / 2;
     const title = document.querySelector('.faq_qna_iner').querySelectorAll('.title');
     const select = document.querySelector('select');
+    let value = '';
+    $('.search input').on('input', function () {
+      value = $(this).val();
+    });
+
+    const descTitle = document.querySelectorAll('.ques_title');
+    const descText = document.querySelectorAll('.answer_txt');
+    const content = [];
+    for (let i = 0; i < descTitle.length; i++) {
+      content.push({ title: descTitle[i].innerText.trim(), text: descText[i].innerText.trim() });
+    }
+    let searchResult = [];
+    let timer = null;
+    $('.search button').click(function () {
+      if (timer !== null) {
+        clearTimeout(timer);
+      }
+      timer = setTimeout(() => {
+        seek();
+      }, 500);
+    });
+
+    function seek() {
+      searchResult = [];
+      let left = 0,
+        right = content.length - 1;
+      const regex = new RegExp(value, 'gi');
+      while (left < right) {
+        console.log(value);
+        if (content[left].title.match(regex)) {
+          searchResult.push(content[left]);
+        }
+        if (content[right].title.match(regex)) {
+          searchResult.push(content[right]);
+        }
+        left++;
+        right--;
+      }
+      if (left === right && content[left].title.match(regex)) {
+        searchResult.push(content[left]);
+      }
+      createElementSearchResult();
+    }
+
+    function createElementSearchResult() {
+      if (!value) {
+        $('.search-result').hide();
+        $('.faq-wrapper').show();
+        return;
+      }
+      const search_result = document.querySelector('.search-result');
+      $('.faq-wrapper').hide();
+      $('.search-result').empty();
+      for (let i = 0; i < searchResult.length; i++) {
+        const faqItem = document.createElement('div');
+        const q = document.createElement('p');
+        q.innerHTML = searchResult[i].title.replace(new RegExp(value, 'gi'), (match) => `<mark>${match}</mark>`);
+        const a = document.createElement('p');
+        a.innerHTML = searchResult[i].text;
+        faqItem.appendChild(q);
+        faqItem.appendChild(a);
+        search_result.appendChild(faqItem);
+      }
+    }
 
     $('.aside-item').click(function () {
       let index = $(this).index();
