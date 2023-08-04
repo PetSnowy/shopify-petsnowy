@@ -21,12 +21,66 @@
   .sidebar-wrapper {
     display: none;
   }
+  .faq_qa_heading {
+    margin-bottom: vw(20px);
+  }
+  .search {
+    border-radius: vw(5px);
+    display: flex;
+    align-items: center;
+    height: vw(70px);
+    column-gap: vw(10px);
+    input {
+      all: unset;
+      height: vw(70px);
+      flex: 1;
+      padding-left: vw(15px);
+      color: rgb(109, 102, 102);
+      outline: vw(2px) solid #e8e8e8;
+      transition: all 0.3s ease;
+      border-radius: vw(10px);
+      color: #000;
+      &:focus {
+        outline: rgb(241, 129, 19) solid vw(2px);
+      }
+    }
+    button {
+      all: unset;
+      width: vw(150px);
+      height: 100%;
+      flex-shrink: 0;
+      display: flex;
+      transition: all 0.3s ease;
+      align-items: center;
+      justify-content: center;
+      border: vw(2px) solid rgb(241, 129, 19);
+      background-color: rgb(241, 129, 19);
+      border-radius: vw(10px);
+      color: #fff;
+    }
+  }
+  .onc_arrow {
+    transition: all 0.3s ease;
+    polyline {
+      color: rgb(241, 129, 19);
+    }
+  }
+  .search-result {
+    p:nth-child(1) {
+      font-size: vw(35px);
+      font-weight: 500;
+      mark {
+        background-color: rgb(241, 129, 19);
+        color: #fff;
+      }
+    }
+  }
   .page-sidebar {
     background-color: #fff;
     position: sticky;
     top: calc(var(--main-padding-top));
     z-index: 1;
-    padding: vw(20px);
+    padding: vw(20px) 0px;
     margin-bottom: vw(20px);
   }
   .m-sidebar-wrapper {
@@ -60,6 +114,49 @@
   }
 }
 @media screen and (min-width: 901px) {
+  .search-result {
+    p:nth-child(1) {
+      font-size: 20px;
+      font-weight: 500;
+      mark {
+        background-color: rgb(241, 129, 19);
+        color: #fff;
+      }
+    }
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 20px 0px;
+  }
+  input {
+    width: 400px;
+    height: 35px;
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 10px;
+    color: rgb(109, 102, 102);
+    font-size: 18px;
+    border: none;
+    transition: all 0.3s ease;
+    outline: 1px solid #e8e8e8;
+    &:focus {
+      outline: rgb(241, 129, 19) solid 1px;
+    }
+  }
+  button {
+    width: 90px;
+    height: 37px;
+    background-color: rgb(241, 129, 19);
+    border: 1px solid rgb(241, 129, 19);
+    color: #fff;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #ff5900;
+    }
+  }
   .m-sidebar-wrapper {
     display: none;
   }

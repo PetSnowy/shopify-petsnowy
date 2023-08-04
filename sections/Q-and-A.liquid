@@ -141,6 +141,12 @@
       const search_result = document.querySelector('.search-result');
       $('.faq-wrapper').hide();
       $('.search-result').empty();
+      if (!searchResult.length) {
+        const q = document.createElement('p');
+        q.innerHTML = 'No search for now';
+        search_result.appendChild(q);
+        return;
+      }
       for (let i = 0; i < searchResult.length; i++) {
         const faqItem = document.createElement('div');
         const q = document.createElement('p');
