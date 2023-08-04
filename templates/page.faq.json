@@ -71,7 +71,7 @@
           "type": "block",
           "settings": {
             "h3": "Q:The device is not sensing the cat. Are there any troubleshooting steps I cantry?",
-            "text": "<p>A: Yes, here are some steps you can follow to troubleshoot the issue:<\/p>"
+            "text": "<p>A: Yes, here are some steps you can follow to troubleshoot the issue:<\/p><p>1. Move the device slightly: Sometimes,<br\/>poor sensor contact can cause issues. Try moving the device a little and see if it starts working properly.<\/p><p>2. Power off and restart: Turn off the device completely and then turn it back on. This can help reset any temporary glitches or errors.<\/p><p>3. Reset the device to factory settings: If the problem persists after restarting, you can try resetting the device to its factory settings. To do this, press and hold the reset button. While still<br\/>holding the reset button, unplug the power cord and then plug it back in. Finally, release the reset button. This should restore the device to its original settings<\/p>"
           }
         },
         "3e8aaee3-ee2d-4085-9a54-c73e11fa58d6": {
