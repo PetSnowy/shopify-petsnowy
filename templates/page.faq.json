@@ -64,14 +64,14 @@
         "b1d415ce-06ae-4741-8a25-a0aae3663e36": {
           "type": "title",
           "settings": {
-            "h2": "SNOW⁺ Self-cleaning Litter Box "
+            "h2": "Device Not Sensing the Cat"
           }
         },
         "6e8f4d3a-8046-4c63-88e4-cafbec2d4f51": {
           "type": "block",
           "settings": {
-            "h3": "SNOW⁺ Self-cleaning Litter Box ",
-            "text": "<h2>SNOW⁺ Self-cleaning Litter Box <\/h2>"
+            "h3": "Q:The device is not sensing the cat. Are there any troubleshooting steps I cantry?",
+            "text": "<p>A: Yes, here are some steps you can follow to troubleshoot the issue:<\/p>"
           }
         },
         "3e8aaee3-ee2d-4085-9a54-c73e11fa58d6": {
