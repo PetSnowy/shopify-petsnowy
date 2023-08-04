@@ -23,28 +23,42 @@
         "1cd89a85-bf41-42c1-9e8e-0a4fd08dc8ff": {
           "type": "title",
           "settings": {
-            "h2": "SNOW⁺ Self-cleaning Litter Box "
+            "h2": "Resolving Weight-related Issues and Troubleshooting Steps"
           }
         },
         "ac982418-96a8-41cf-b6dc-cb9d23128252": {
           "type": "block",
           "settings": {
-            "h3": "A:  We don't have a locked time, but it will be in late February!",
-            "text": "<p>A:  We don't have a locked time, but it will be in late February!<\/p>"
+            "h3": "Q: How can I reset or clear the weight onthe device?",
+            "text": "<p>A: To reset or clear the device's weight, press the \"R\" key on the control panel. When you have added litter to the globe and the device returns to the initial position, press the reset key on the control panel. The three key indicator lights on the control panel will flash three times to indicate a successful reset.<\/p>"
           }
         },
         "ddb1deff-0271-42d7-a435-7b4208218f69": {
           "type": "block",
           "settings": {
-            "h3": "A：Please click the link below to bookmark our official pre-sale page. The official SNOW+ purchase page will be updated at the end of February!",
-            "text": "<p>A：Please click the link below to bookmark our official pre-sale page. The official SNOW+ purchase page will be updated at the end of February!<\/p><p><a href=\"https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/coming_soon\"><span style=\"text-decoration:underline\">https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/coming_soon<\/span><\/a><\/p>"
+            "h3": "Q:What should I do if the weight deviation is significant?",
+            "text": "<p>A: If the weight deviation is significant<br\/>(greater than 400 grams), please perform the following troubleshooting steps:<\/p><p>1. Provide the device ID number.<\/p><p>2. Compare the weight reported by the device with the weight recorded in the app's<br\/>work log. If these two data points do not match, it's likely an issue with the application. Please take a screenshot of both data and email it to us.<\/p><p>3. Compare the weight reported by the device with the weight recorded in the app's work log. If these two data points match, it is likely that the device itself is detecting the weight inaccurately. Further investigation will be needed on the device side using the provided troubleshooting steps.<\/p>"
           }
         },
         "aad21124-5e82-46b3-aa3c-62d9bec35e1e": {
           "type": "block",
           "settings": {
-            "h3": "A：Please click the link below to bookmark our official pre-sale page. The official SNOW+ purchase page will be updated at the end of February!",
-            "text": "<p>Exclusive Super Early Bird Deals starting at just $479. <\/p><p>The SNOW+ is listed for $519 on Indiegogo, which is 40% off the tag price of $865. <\/p><p>There’s also a TiO2-free deodorant version at $479 if you don’t have much concern with odour control. <\/p><p>The 40% Super Early Bird Perk and the $30 Off are stackable discounts. <a href=\"https:\/\/www.petsnowy.com\/products\/petsnowy-indiegogo-launch-discount-30-off\" target=\"_blank\" title=\"https:\/\/www.petsnowy.com\/products\/petsnowy-indiegogo-launch-discount-30-off\">Reserve the limited-time offer here<\/a>.<\/p>"
+            "h3": "Q: How can I test if the pressure sensorsare functioning properly?",
+            "text": "<p>A: To test the pressure sensors, follow these instructions:<\/p><p>1.Ensure there are no foreign objects at the bottom of the cat litter box and that it is placed on a flat surface, not a carpet. No items should be placed at<br\/>the back or sides.<\/p><p>2. Check that the cat litter box indicator light is on and not flashing, indicating that it is in standby mode. The color should be white, green, or blue.<\/p><p>3. Place an unopened bag of cat litter or cat food on top of the cat litter box for at least 15 seconds. During this time, check if the app shows that the pet is in a toileting state.<\/p><p>4. After 15 seconds, remove the weight. Check if the app shows that the pet has gone to the toilet, the duration of the toilet time, and the pet's weight (xxxg).<\/p><p>5. Compare the pet's weight displayed in the app with the weight of the object placed. If they are roughly the same, it means the pressure sensor is working correctly.<\/p>"
+          }
+        },
+        "cb79252c-1df9-407b-b97c-b0a8af2fa539": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Can I adjust the cat weight on themessage panel?",
+            "text": "<p>A: Yes, you can adjust the cat weight on the message panel. Please follow the instructions provided in the message panel to make any necessary adjustments.<\/p>"
+          }
+        },
+        "7eda0c03-21a3-4f5d-9700-8b80b7975c27": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: What should I do if the weight readingson the device have significant deviations (>400 grams)?",
+            "text": "<p>A: If the weight readings on the device have significant deviations, we recommend taking the following steps:<\/p><p>1. <\/p>"
           }
         },
         "b1d415ce-06ae-4741-8a25-a0aae3663e36": {
@@ -141,6 +155,8 @@
         "ac982418-96a8-41cf-b6dc-cb9d23128252",
         "ddb1deff-0271-42d7-a435-7b4208218f69",
         "aad21124-5e82-46b3-aa3c-62d9bec35e1e",
+        "cb79252c-1df9-407b-b97c-b0a8af2fa539",
+        "7eda0c03-21a3-4f5d-9700-8b80b7975c27",
         "b1d415ce-06ae-4741-8a25-a0aae3663e36",
         "6e8f4d3a-8046-4c63-88e4-cafbec2d4f51",
         "3e8aaee3-ee2d-4085-9a54-c73e11fa58d6",
@@ -156,7 +172,7 @@
         "8e6923fa-afbf-4a31-aa1a-deec9be1ea0c"
       ],
       "settings": {
-        "h2": "SNOW⁺ Self-cleaning Litter Box",
+        "h1": "",
         "sub_txt": "(Indiegogo Launch)"
       }
     }
