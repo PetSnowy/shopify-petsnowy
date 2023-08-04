@@ -116,7 +116,6 @@
         right = content.length - 1;
       const regex = new RegExp(value, 'gi');
       while (left < right) {
-        console.log(value);
         if (content[left].title.match(regex)) {
           searchResult.push(content[left]);
         }
