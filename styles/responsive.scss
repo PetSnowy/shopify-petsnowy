@@ -1103,9 +1103,16 @@ button.needsclick.kl-teaser-SyCsSf.undefined {
   .template-search li.grid__item {
     padding-left: 10px;
   }
-  // button.needsclick.kl-teaser-SyCsSf.undefined {
-  //   width: 150px !important;
-  // }
+  button.needsclick.kl-teaser-SyCsSf.undefined {
+    left: 0px !important;
+    transform: none !important;
+    margin: 0px !important;
+    width: 100% !important;
+    & > div > button {
+      right: 5px !important;
+      top: -30px !important;
+    }
+  }
   // .kl-private-reset-css-Xuajs1.go3176171171 p span {
   //   font-size: 14px !important;
   // }
