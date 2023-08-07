@@ -186,6 +186,85 @@
             "h3": "Q:What could be causing the red blinking light on the litterbox, despiteeverything being in place?",
             "text": "<p>A: Regarding the red flashing light, here are some possibilities to consider:<\/p><p>1. If you purchased the DELUXE version with two adapter sockets, please ensure that you are using the correct socket for the litter box and feeder.<\/p><p>2. Kindly check if a magnet has been installed. If so, try using a magnet to touch the designated area indicated in the image provided. This will help troubleshoot any contact problem between the top cover and the base. If the cloud light<br\/>changes from a red flashing light to a white light, it indicates a problem with the contact between the top cover magnet and the base. If the cloud light<br\/>continues to flash red, it may indicate a problem with the b<\/p>"
           }
+        },
+        "58c2dc95-4836-4214-81a2-65abb0dae58c": {
+          "type": "title",
+          "settings": {
+            "h2": "Waste Drawer Displaced Error"
+          }
+        },
+        "2845df43-2544-4325-8e31-62797b0354a4": {
+          "type": "block",
+          "settings": {
+            "h3": "Q:Why does the app notify me that the waste drawer is installed incorrectly?",
+            "text": "<p>A: There are a few possible reasons for this notification. Here are some troubleshooting steps you can try:<\/p><p>1. Check the liner position: Ensure that the liner is placed completely flat in the globe. If the liner is not in a flat position, it may accidentally touch the sensors and trigger a false alarm. Adjust the liner to make sure it is flat and properly positioned.<\/p><p>2. Clean the sensors: The sensors that control the waste drawer may become dirty over<br\/>time, which can interfere with proper installation detection. Refer to the provided picture that shows the sensor locations. You can gently wipe the sensors to make sure they are clean and free from any debris<\/p><p>3. Replace the liner: If the issue persists, try taking out the old liner and replacing it with a new one. Some customers have resolved the problem by switching to a new liner. This can help ensure proper installation and alignment with the sensors<\/p>"
+          }
+        },
+        "ae6e6b57-c0e2-4a32-827f-6736ec3759f6": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: How can I fix the persistent error message\"Waste drawer displaced SNOW+ self-cleaning Litter Box: Examination isrequired\" after trying different methods to install the waste drawercorrectly?",
+            "text": "<p>A: If there is a suspicion that the infrared detection module is faulty or damaged, kindly send us an email with a video or picture demonstrating the issue. Should the module be confirmed as defective, we will happily replace your product free of charge.<\/p>"
+          }
+        },
+        "5221936c-00ba-46a4-b685-5c8f33c93713": {
+          "type": "title",
+          "settings": {
+            "h2": "Device Recognition of Cats Weighing Less Than 3.3 lbs"
+          }
+        },
+        "932ebcba-6364-4098-841a-89d2e560a4d5": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Why doesn't my device recognize catsthat weigh less than 1.5 kg?",
+            "text": "<p>A: The device may not be able to detect cats that are too light due to their weight. To troubleshoot this issue, please follow these steps:<\/p><p>1. Turn off the device: Switch off the device and wait for a few moments.<\/p><p>2. Device performs a self-check: Turn on the device again and allow it to perform a self-check for approximately 2 minutes.<\/p><p>3. Test the weighing sensor: After the self-check, place an object weighing more than 1.5 kg on the device. Check if the cloud-shaped indicator light on the control panel changes from white to blue-green flashing alternately. If it does, it means that the device's weighing sensor is working correctly. This suggests that the device was not<br\/>able to detect the cat due to its lightweight. <\/p><p>4. Verify app settings: If the cloud light remains white and cannot recognize the weight, please check if you have enabled the automatic cleaning function in the app on your phone. This setting ensures that the device recognizes and responds accordingly to the cat's weight.<\/p>"
+          }
+        },
+        "126adcaf-6444-41f0-a402-84e40935082c": {
+          "type": "title",
+          "settings": {
+            "h2": "Device Offline at Night and Device Not Turning On"
+          }
+        },
+        "b230061f-783b-4c2e-919c-d34ba47b17f3": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Why does the device appear offline atnight?",
+            "text": "<p>A: The device entering offline standby mode at night is normal behavior. This feature allows the device to conserve power during periods of inactivity.<\/p>"
+          }
+        },
+        "feb80ec7-a9f7-48ab-8b95-ab47a4d72bec": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: My device is not turning on. What couldbe the issue?",
+            "text": "<p>A: There are a couple of potential causes for this problem:<\/p><p>1. Ambient light setting and child lock: If you turned off the ambient light setting and then enabled the child lock function in the app, it may cause the device to appear as if it is not turning<br\/>on. To resolve this, you can restore the device to its factory settings. Press and hold the reset button, unplug the power cord, then plug it back in while still holding down the reset button. Release the reset button when the process is complete.<\/p><p>2. Power socket or adapter issue: Another possibility is a problem with the power socket or power adapter. Try plugging the device into a different socket and ensure that the power adapter is working properly. Use a power adapter with the same wattage as the original one. Even if you have already tried a different power adapter, it is essential to match<br\/>the wattage to the original adapter.<\/p>"
+          }
+        },
+        "2f98821c-372f-46a4-a773-718b930a6e88": {
+          "type": "title",
+          "settings": {
+            "h2": "Device Frequently Going Offline"
+          }
+        },
+        "a3bf180e-e538-4e2c-9c19-67841d071b7e": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: The device goes offline frequently. Howcan I troubleshoot this issue?",
+            "text": "<p>A: Here are some troubleshooting steps you can take to address the frequent offline issue:<\/p><p>1. Check network, router, and frequency band: Make sure you are using a stable network connection, a reliable router,<br\/>and an appropriate frequency band for your device. Inquire about the compatibility of your device with the router and frequency band you are using.<\/p><p>2. Evaluate distance and obstacles: Consider the distance between your router and the device. If there are multiple<br\/>walls or obstacles between them, it can weaken the signal and cause frequent disconnections. Try placing the device next to the router for a day and observe if it still disconnects after a few hours. This will help determine if the issue is related to a weak signal. <\/p><p>3. Provide device ID to technicians: Our technicians require the SNOW+ device ID to access the backend data. To locate the device ID, open the litter box device, click on the \"pen\" icon in the top right corner, and select \"DEVICE INFO.\" Kindly share this ID with our support team for further assistance.<\/p>"
+          }
+        },
+        "069c0a52-50b3-4810-886a-019855b69787": {
+          "type": "title",
+          "settings": {
+            "h2": "Disclaimer: Important Information and Limitations"
+          }
+        },
+        "df5674c3-3019-498c-9be4-f784db05e577": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Is PetSnowyresponsible for any damage or malfunction caused by incorrect use,modification, or maintenance of SNOW+?",
+            "text": "<p>A: No, PetSnowy is<br\/>not responsible for any damage or malfunction resulting from incorrect use, modification, or maintenance of SNOW+. This includes installations or repairs conducted by individuals outside of our company.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -213,7 +292,19 @@
         "e83af33f-2743-4cab-96e2-9519096486e6",
         "b13c58f4-c59c-4b87-9235-c00871574d78",
         "23036471-817a-4710-b3de-1f696a3c8baf",
-        "79514281-ce69-4ebd-a9b6-84ab9868ba16"
+        "79514281-ce69-4ebd-a9b6-84ab9868ba16",
+        "58c2dc95-4836-4214-81a2-65abb0dae58c",
+        "2845df43-2544-4325-8e31-62797b0354a4",
+        "ae6e6b57-c0e2-4a32-827f-6736ec3759f6",
+        "5221936c-00ba-46a4-b685-5c8f33c93713",
+        "932ebcba-6364-4098-841a-89d2e560a4d5",
+        "126adcaf-6444-41f0-a402-84e40935082c",
+        "b230061f-783b-4c2e-919c-d34ba47b17f3",
+        "feb80ec7-a9f7-48ab-8b95-ab47a4d72bec",
+        "2f98821c-372f-46a4-a773-718b930a6e88",
+        "a3bf180e-e538-4e2c-9c19-67841d071b7e",
+        "069c0a52-50b3-4810-886a-019855b69787",
+        "df5674c3-3019-498c-9be4-f784db05e577"
       ],
       "settings": {
         "h1": "",
