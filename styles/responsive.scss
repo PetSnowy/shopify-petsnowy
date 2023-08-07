@@ -786,7 +786,7 @@
   video.mob_video {
     display: block;
   }
-  video.mob_video.custom_videoss {
+  #MainContentIndex video.mob_video.custom_videoss {
     object-fit: cover;
     height: 100vh;
   }
@@ -1103,9 +1103,9 @@ button.needsclick.kl-teaser-SyCsSf.undefined {
   .template-search li.grid__item {
     padding-left: 10px;
   }
-  button.needsclick.kl-teaser-SyCsSf.undefined {
-    width: 150px !important;
-  }
+  // button.needsclick.kl-teaser-SyCsSf.undefined {
+  //   width: 150px !important;
+  // }
   // .kl-private-reset-css-Xuajs1.go3176171171 p span {
   //   font-size: 14px !important;
   // }

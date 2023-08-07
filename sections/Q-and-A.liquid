@@ -91,6 +91,7 @@
     let value = '';
     $('.search input').on('input', function () {
       value = $(this).val();
+      value = value.trim();
     });
 
     const descTitle = document.querySelectorAll('.ques_title');
@@ -159,11 +160,10 @@
     }
 
     $('.aside-item').click(function () {
-      let index = $(this).index();
-      $('.aside-item').removeClass('active');
-      $(this).addClass('active');
-      title[index].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      title[$(this).index()].scrollIntoView({ behavior: 'auto', block: 'center' });
     });
+    //const pageSidebar = document.querySelector('.page-sidebar');
+
     const scroll = () => {
       const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
       for (let index = 0; index < title.length; index++) {
@@ -173,7 +173,10 @@
           select.value = $('.aside-item').eq(index).text();
         }
       }
+      //  const sidebarItem = document.querySelector('.sidebar-wrapper').querySelector('.active');
+      //  if (sidebarItem) pageSidebar.scrollTop = sidebarItem.offsetTop;
     };
+
     window.addEventListener('scroll', scroll);
     $('select').change(function () {
       let selectedIndex = $(this).prop('selectedIndex');

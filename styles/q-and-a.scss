@@ -181,8 +181,14 @@
       top: calc(var(--main-padding-top) + 20px);
       flex-shrink: 0;
       margin-right: 40px;
-      width: 240px;
-      height: fit-content;
+      width: fit-content;
+      overflow-y: auto;
+      max-height: 800px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      scroll-behavior: smooth;
+
       div,
       p {
         margin: 0px;
@@ -204,6 +210,8 @@
       padding: 10px;
       border: 1px solid #e8e8e8;
       transition: all 0.3s ease;
+      box-sizing: border-box;
+      width: 240px;
       border-radius: 10px;
     }
     .aside-item.active {
