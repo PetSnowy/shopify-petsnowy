@@ -86,8 +86,8 @@
 <script>
   $(function () {
     const visibleHeight = document.documentElement.clientHeight / 2;
-    const title = document.querySelector('.faq_qna_iner').querySelectorAll('.title');
-    const select = document.querySelector('select');
+    const title = document.querySelectorAll('.title');
+    const select = document.querySelectorAll('select')[0];
     let value = '';
     $('.search input').on('input', function () {
       value = $(this).val();
@@ -159,10 +159,13 @@
       }
     }
 
-    $('.aside-item').click(function () {
-      title[$(this).index()].scrollIntoView({ behavior: 'auto', block: 'center' });
-    });
-    //const pageSidebar = document.querySelector('.page-sidebar');
+    const aside_item = document.querySelectorAll('.aside-item');
+
+    for (let i = 0; i < aside_item.length; i++) {
+      aside_item[i].addEventListener('click', function () {
+        title[i].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+    }
 
     const scroll = () => {
       const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
@@ -170,17 +173,29 @@
         if (scrollTop > title[index].offsetTop - visibleHeight) {
           $('.aside-item').removeClass('active');
           $('.aside-item').eq(index).addClass('active');
-          select.value = $('.aside-item').eq(index).text();
+          select.value = aside_item[index].innerText;
         }
       }
-      //  const sidebarItem = document.querySelector('.sidebar-wrapper').querySelector('.active');
-      //  if (sidebarItem) pageSidebar.scrollTop = sidebarItem.offsetTop;
     };
+    $('select').empty();
+
+    for (let index = 0; index < title.length; index++) {
+      const option = document.createElement('option');
+      option.innerText = title[index].innerText;
+      select.appendChild(option);
+    }
 
     window.addEventListener('scroll', scroll);
     $('select').change(function () {
       let selectedIndex = $(this).prop('selectedIndex');
       title[selectedIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+    $('.faq_qa_main').each((item, index) => {
+      console.log(item, index);
+      if (!index) {
+        $(item).find('select').hide();
+        $(item).find('.search').hide();
+      }
     });
   });
 </script>
