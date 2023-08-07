@@ -43,6 +43,9 @@
       &:focus {
         outline: rgb(241, 129, 19) solid vw(2px);
       }
+      &::placeholder {
+        color: #e8e8e8;
+      }
     }
     button {
       all: unset;
@@ -141,6 +144,9 @@
     outline: 1px solid #e8e8e8;
     &:focus {
       outline: rgb(241, 129, 19) solid 1px;
+    }
+    &::placeholder {
+      color: #e8e8e8;
     }
   }
   button {
