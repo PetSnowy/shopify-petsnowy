@@ -265,6 +265,96 @@
             "h3": "Q: Is PetSnowyresponsible for any damage or malfunction caused by incorrect use,modification, or maintenance of SNOW+?",
             "text": "<p>A: No, PetSnowy is<br\/>not responsible for any damage or malfunction resulting from incorrect use, modification, or maintenance of SNOW+. This includes installations or repairs conducted by individuals outside of our company.<\/p>"
           }
+        },
+        "70100b70-8ca3-46e8-96eb-301cf43fc99c": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: What should Ido to ensure the proper use of my SNOW+ product?",
+            "text": "<p>A: We strongly recommend following the instructions provided in the user manual and exercising<br\/>caution when handling your automatic cat litter box. It is important to adhere to the guidelines to ensure its safe and efficient operation.<\/p>"
+          }
+        },
+        "b97ae495-ccf0-44b8-950b-f7da4efe9b4a": {
+          "type": "block",
+          "settings": {
+            "h3": "Q:What should I do if I encounter any issues with my SNOW+ product or havequestion",
+            "text": "<p>A: If you experience any problems or have queries regarding your SNOW+ product, please reach out to our customer support team. They will be happy to assist you and provide the necessary guidance.<\/p>"
+          }
+        },
+        "e727b4fc-09f7-4be8-a136-9411c78851c5": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: What isexpected from customers regarding the use and maintenance of SNOW+?",
+            "text": "<p>A: Customers are expected to properly use and maintain their SNOW+ product by following the<br\/>instructions provided in the user manual. This includes seeking assistance from our customer support team when needed. By doing so, customers demonstrate their commitment to the safe and effective use of SNOW+.<\/p>"
+          }
+        },
+        "9825cd3f-9526-4053-9baf-56b952552e43": {
+          "type": "title",
+          "settings": {
+            "h2": "Ensuring a Safe Environment for Equipment Use"
+          }
+        },
+        "23de1da5-da26-4289-9204-32aac252bc6a": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Can I use SNOW+for purposes other than a cat litter box?",
+            "text": "<p>A: No, SNOW+ is intended for use solely as a cat litter box and should not be used for any other purpose.<\/p>"
+          }
+        },
+        "e5b190da-161f-4971-be01-158967d7e06d": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Where should Iplace SNOW+ for optimal performance?",
+            "text": "<p>A: It is essential to place SNOW+ on a stable, flat surface to ensure proper operation. Avoid soft, uneven, or unstable surfaces. Keep it indoors away from direct sunlight,<br\/>extreme temperatures, and damp environments. Also, leave enough space around the device for the sensor to function effectively, avoiding corners or walls.<\/p>"
+          }
+        },
+        "b058149f-061f-4cef-8ae1-ba21152b2525": {
+          "type": "block",
+          "settings": {
+            "h3": "Q:Can I force my cat to use SNOW+?",
+            "text": "<p>A: No, it is crucial to allow your cat to adapt to SNOW+ naturally. Only cats weighing 3 pounds or more can activate the automatic cleaning mode. Forcing your cat into the device can cause fear and resistance, prolonging the adaptation period.<\/p>"
+          }
+        },
+        "c43ea88d-8b40-4dde-86a1-7197647f15cf": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: What type ofcat litter should I use with SNOW+?",
+            "text": "<p>A: You should use clumping cat litter, litter beads that can be filtered through the screen, or crystal cat litter. Avoid placing any other materials in the device, as they may damage the automatic litter box or pose a risk to your cat.<\/p>"
+          }
+        },
+        "93a8948c-2742-4e50-989b-c5ef4078c117": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Are there anyprecautions for children or inexperienced adults using SNOW+?",
+            "text": "<p>A: Yes, it is essential to supervise and provide appropriate guidance to children, individuals with disabilities, or inexperienced adults when using, cleaning, or maintaining SNOW+ to ensure their safety.<\/p>"
+          }
+        },
+        "6d0c6cee-b8bc-4387-9744-b6683e2d0395": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: What should Ido before connecting the power supply to SNOW+?",
+            "text": "<p>A: Before connecting the power supply or restarting after a power failure, ensure there are no cats inside the device. Restarting with a cat inside after a power failure can cause the cat's weight to be reset to zero, potentially trapping the cat inside the chamber. It may also startle the cat and cause the top cover to shift.<\/p>"
+          }
+        },
+        "2f7c0d6a-77dc-43f8-8df0-a6281fd47144": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Can I touch orremove the top cover while the globe is rotating?",
+            "text": "<p>A: No, it is important to avoid touching or removing the top cover while the globe is rotating to prevent injury. If the cover is removed, the device will automatically stop to protect your cat. Ensure the globe is returned to its initial position before starting the device to avoid accidents.<\/p>"
+          }
+        },
+        "82052007-60a6-4b0d-925c-9a3322e9b949": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: How should Ihandle the power supply and cords of SNOW+?",
+            "text": "<p>A: Before cleaning or repairing the device, unplug the power cord for safety. Only use the provided external power supply and avoid using any other alternative. Also, prevent pets from biting the power cord to avoid potential hazards.<\/p>"
+          }
+        },
+        "12758759-8496-4210-aebc-7e9dafd55316": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Can I clean thecomponents of SNOW+ with water?",
+            "text": "<p>A: You can wash the globe, the litter cushion, the litter mat, the bonnet under running water. However, ensure they are completely dry before reassembling. Do not submerge the base in liquid as it contains electronic components that may be damaged. Avoid using abrasive cleaners, organic solvents, or corrosive substances.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -304,7 +394,20 @@
         "2f98821c-372f-46a4-a773-718b930a6e88",
         "a3bf180e-e538-4e2c-9c19-67841d071b7e",
         "069c0a52-50b3-4810-886a-019855b69787",
-        "df5674c3-3019-498c-9be4-f784db05e577"
+        "df5674c3-3019-498c-9be4-f784db05e577",
+        "70100b70-8ca3-46e8-96eb-301cf43fc99c",
+        "b97ae495-ccf0-44b8-950b-f7da4efe9b4a",
+        "e727b4fc-09f7-4be8-a136-9411c78851c5",
+        "9825cd3f-9526-4053-9baf-56b952552e43",
+        "23de1da5-da26-4289-9204-32aac252bc6a",
+        "e5b190da-161f-4971-be01-158967d7e06d",
+        "b058149f-061f-4cef-8ae1-ba21152b2525",
+        "c43ea88d-8b40-4dde-86a1-7197647f15cf",
+        "93a8948c-2742-4e50-989b-c5ef4078c117",
+        "6d0c6cee-b8bc-4387-9744-b6683e2d0395",
+        "2f7c0d6a-77dc-43f8-8df0-a6281fd47144",
+        "82052007-60a6-4b0d-925c-9a3322e9b949",
+        "12758759-8496-4210-aebc-7e9dafd55316"
       ],
       "settings": {
         "h1": "",
