@@ -35,11 +35,11 @@
       height: vw(70px);
       flex: 1;
       padding-left: vw(15px);
-      color: rgb(109, 102, 102);
       outline: vw(2px) solid #e8e8e8;
       transition: all 0.3s ease;
       border-radius: vw(10px);
       color: #000;
+      font-size: vw(40px);
       &:focus {
         outline: rgb(241, 129, 19) solid vw(2px);
       }
@@ -60,6 +60,7 @@
       background-color: rgb(241, 129, 19);
       border-radius: vw(10px);
       color: #fff;
+      font-size: vw(40px);
     }
   }
   .onc_arrow {
@@ -117,7 +118,13 @@
   }
 }
 @media screen and (min-width: 901px) {
+  .faq_qa_main .page-width {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
   .search-result {
+    flex: 1;
     p:nth-child(1) {
       font-size: 20px;
       font-weight: 500;

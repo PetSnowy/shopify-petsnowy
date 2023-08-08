@@ -90,8 +90,7 @@
     const select = document.querySelectorAll('select')[0];
     let value = '';
     $('.search input').on('input', function () {
-      value = $(this).val();
-      value = value.trim();
+      value = $(this).val().trim();
     });
 
     const descTitle = document.querySelectorAll('.ques_title');
@@ -101,15 +100,18 @@
       content.push({ title: descTitle[i].innerText.trim(), text: descText[i].innerText.trim() });
     }
     let searchResult = [];
-    let timer = null;
-    $('.search button').click(function () {
-      if (timer !== null) {
-        clearTimeout(timer);
-      }
-      timer = setTimeout(() => {
-        seek();
-      }, 500);
-    });
+
+    $('.search button').click(debounce(seek, 500));
+
+    function debounce(func, delay) {
+      let timeoutId;
+      return function () {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => {
+          func.apply(this, arguments);
+        }, delay);
+      };
+    }
 
     function seek() {
       searchResult = [];
@@ -159,12 +161,20 @@
       }
     }
 
-    const aside_item = document.querySelectorAll('.aside-item');
+    const asideItem = document.querySelectorAll('.aside-item');
 
-    for (let i = 0; i < aside_item.length; i++) {
-      aside_item[i].addEventListener('click', function () {
+    for (let i = 0; i < asideItem.length; i++) {
+      asideItem[i].addEventListener('click', function () {
         title[i].scrollIntoView({ behavior: 'smooth', block: 'center' });
       });
+    }
+    const pageSidebar = document.querySelectorAll('.page-sidebar');
+
+    function sidebarScroll() {
+      const active = document.querySelector('.active');
+      for (let i = 0; i < pageSidebar.length; i++) {
+        active && (pageSidebar[i].scrollTop = active.offsetTop);
+      }
     }
 
     const scroll = () => {
@@ -173,9 +183,10 @@
         if (scrollTop > title[index].offsetTop - visibleHeight) {
           $('.aside-item').removeClass('active');
           $('.aside-item').eq(index).addClass('active');
-          select.value = aside_item[index].innerText;
+          select.value = asideItem[index].innerText;
         }
       }
+      sidebarScroll();
     };
     $('select').empty();
 
@@ -185,14 +196,15 @@
       select.appendChild(option);
     }
 
-    window.addEventListener('scroll', scroll);
+    window.addEventListener('scroll', debounce(scroll, 100));
+
     $('select').change(function () {
       let selectedIndex = $(this).prop('selectedIndex');
       title[selectedIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
-    $('.faq_qa_main').each((item, index) => {
-      console.log(item, index);
-      if (!index) {
+
+    $('.faq_qa_main').each((index, item) => {
+      if (index) {
         $(item).find('select').hide();
         $(item).find('.search').hide();
       }
