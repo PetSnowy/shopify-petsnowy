@@ -2988,7 +2988,6 @@ html {
   line-height: 21px;
   display: flex;
   align-items: center;
-  text-align: center;
   text-transform: uppercase;
   color: #000;
   font-family: SUISSE_INT_L_MEDIUM !important;
@@ -5026,8 +5025,8 @@ body.purchase_product_items.cart .cart__footer {
 .menu_related_image span {
   position: absolute;
   top: 0;
-  padding: 30px 30px 10px;
-  font-size: 20px !important;
+  padding: 20px 20px 10px;
+  font-size: 18px !important;
 }
 .locale-selectors__container {
   display: none !important;

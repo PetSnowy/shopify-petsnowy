@@ -81,11 +81,16 @@
   }
   .page-sidebar {
     background-color: #fff;
-    position: sticky;
-    top: calc(var(--main-padding-top));
     z-index: 1;
     padding: vw(20px) 0px;
     margin-bottom: vw(20px);
+    &.fixed {
+      position: fixed;
+      top: var(--main-padding-top);
+      transform: translateX(-50%);
+      left: 50%;
+      width: max-content;
+    }
   }
   .m-sidebar-wrapper {
     select {
@@ -184,6 +189,7 @@
       margin-bottom: 65px;
     }
     .page-sidebar {
+      display: block !important;
       position: sticky;
       top: calc(var(--main-padding-top) + 20px);
       flex-shrink: 0;

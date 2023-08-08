@@ -177,6 +177,17 @@
       }
     }
 
+    function mobileSelect() {
+      const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+      const innerWidth = window.innerWidth;
+      if (innerWidth >= 901) return;
+      if (scrollTop >= pageSidebar[0].offsetTop) {
+        pageSidebar[0].classList.add('fixed');
+      } else {
+        pageSidebar[0].classList.remove('fixed');
+      }
+    }
+
     const scroll = () => {
       const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
       for (let index = 0; index < title.length; index++) {
@@ -205,7 +216,7 @@
 
     $('.faq_qa_main').each((index, item) => {
       if (index) {
-        $(item).find('select').hide();
+        $(item).find('.page-sidebar').hide();
         $(item).find('.search').hide();
       }
     });
