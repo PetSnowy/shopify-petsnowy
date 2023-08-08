@@ -17,12 +17,15 @@
     .qna_hr {
       margin: vw(40px) 0px;
     }
+    .page-width {
+      position: relative;
+    }
   }
   .sidebar-wrapper {
     display: none;
   }
   .faq_qa_heading {
-    margin-bottom: vw(20px);
+    margin-bottom: vw(140px);
   }
   .search {
     border-radius: vw(5px);
@@ -84,12 +87,14 @@
     z-index: 1;
     padding: vw(20px) 0px;
     margin-bottom: vw(20px);
+    position: absolute;
+    transform: translateX(-50%);
+    width: calc(100% - 1.5rem * 2);
+    top: vw(90px);
+    left: 50%;
     &.fixed {
       position: fixed;
       top: var(--main-padding-top);
-      transform: translateX(-50%);
-      left: 50%;
-      width: max-content;
     }
   }
   .m-sidebar-wrapper {

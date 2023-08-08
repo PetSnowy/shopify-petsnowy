@@ -19,18 +19,12 @@
         <div class="sidebar-wrapper">
           {% for aside in section.blocks %}
             {% if aside.type == 'title' %}
-              <div class="aside-item">{{ aside.settings.h2 }}</div>
+              <div class="aside-item">{{ aside.settings.h4 }}</div>
             {% endif %}
           {% endfor %}
         </div>
         <div class="m-sidebar-wrapper">
-          <select>
-            {% for aside in section.blocks %}
-              {% if aside.type == 'title' %}
-                <option value="{{ aside.settings.h2 }}">{{ aside.settings.h2 }}</option>
-              {% endif %}
-            {% endfor %}
-          </select>
+          <select></select>
         </div>
       </aside>
       <div class="faq_qna_iner">
@@ -38,7 +32,7 @@
           {% for block in section.blocks %}
             <div class="option">
               {% if block.type == 'title' %}
-                <h2 class="title">{{ block.settings.h2 }}</h2>
+                <h2 class="title">{{ block.settings.h3 }}</h2>
               {% endif %}
               {% if block.type == 'block' %}
                 <div class="qn_group_main">
@@ -169,22 +163,13 @@
       });
     }
     const pageSidebar = document.querySelectorAll('.page-sidebar');
+    const faqWrapper = document.querySelectorAll('.faq-wrapper');
+    const page = document.querySelectorAll('.faq_qa_main');
 
     function sidebarScroll() {
       const active = document.querySelector('.active');
       for (let i = 0; i < pageSidebar.length; i++) {
         active && (pageSidebar[i].scrollTop = active.offsetTop);
-      }
-    }
-
-    function mobileSelect() {
-      const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-      const innerWidth = window.innerWidth;
-      if (innerWidth >= 901) return;
-      if (scrollTop >= pageSidebar[0].offsetTop) {
-        pageSidebar[0].classList.add('fixed');
-      } else {
-        pageSidebar[0].classList.remove('fixed');
       }
     }
 
@@ -194,11 +179,12 @@
         if (scrollTop > title[index].offsetTop - visibleHeight) {
           $('.aside-item').removeClass('active');
           $('.aside-item').eq(index).addClass('active');
-          select.value = asideItem[index].innerText;
+          select.value = title[index].innerText;
         }
       }
       sidebarScroll();
     };
+
     $('select').empty();
 
     for (let index = 0; index < title.length; index++) {
@@ -208,6 +194,28 @@
     }
 
     window.addEventListener('scroll', debounce(scroll, 100));
+
+    const innerWidth = window.innerWidth;
+    let faqWrapperHeight = 0;
+
+    if (innerWidth <= 900) {
+      for (let i = 0; i < faqWrapper.length; i++) {
+        faqWrapperHeight += faqWrapper[i].offsetHeight;
+      }
+      window.addEventListener('scroll', mobileSelect);
+    }
+
+    function mobileSelect() {
+      const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+      if (scrollTop >= page[0].offsetTop + pageSidebar[0].offsetTop) {
+        pageSidebar[0].classList.add('fixed');
+      } else {
+        pageSidebar[0].classList.remove('fixed');
+      }
+      if (scrollTop >= faqWrapperHeight + page[0].offsetTop) {
+        pageSidebar[0].classList.remove('fixed');
+      }
+    }
 
     $('select').change(function () {
       let selectedIndex = $(this).prop('selectedIndex');
@@ -228,7 +236,7 @@
   "settings": [
     {
       "type": "text",
-      "id": "h1",
+      "id": "h2",
       "label": "Heading"
     },
     {
@@ -244,7 +252,7 @@
       "settings": [
         {
           "type": "text",
-          "id": "h2",
+          "id": "h3",
           "label": "Heading"
         }
       ]
@@ -255,7 +263,7 @@
       "settings": [
         {
           "type": "text",
-          "id": "h3",
+          "id": "h4",
           "label": "Question"
         },
         {
