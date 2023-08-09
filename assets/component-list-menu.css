@@ -1,1 +1,1 @@
-.list-menu--right{right:0}.list-menu--disclosure{position:absolute;min-width:100%;width:20rem;border:1px solid rgba(var(--color-foreground),.2)}.list-menu--disclosure:focus{outline:0}.list-menu--disclosure.localization-selector{max-height:18rem;overflow:auto;width:10rem;padding:.5rem}
+.list-menu--right{right:0}.list-menu--disclosure{border:1px solid rgba(var(--color-foreground),.2);min-width:100%;position:absolute;width:20rem}.list-menu--disclosure:focus{outline:0}.list-menu--disclosure.localization-selector{max-height:18rem;overflow:auto;padding:.5rem;width:10rem}

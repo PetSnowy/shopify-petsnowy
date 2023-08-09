@@ -2,6 +2,9 @@ const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const cleanCSS = require("gulp-clean-css");
 const uglify = require("gulp-uglify");
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
+const cssnano = require("cssnano");
 
 const SOURCES = {
 	scss: "styles/**/*.scss",
@@ -16,6 +19,7 @@ const compileSass = () =>
 	gulp
 		.src(SOURCES.scss)
 		.pipe(sass().on("error", sass.logError))
+		.pipe(postcss([autoprefixer(), cssnano()]))
 		.pipe(cleanCSS())
 		.pipe(gulp.dest(DESTINATIONS.assets));
 
@@ -24,11 +28,7 @@ const minifyJS = () =>
 
 const watch = () => {
 	gulp.watch(SOURCES.scripts, gulp.series(minifyJS));
-	gulp.watch(SOURCES.scss, gulp.series(compileSass))
-}
+	gulp.watch(SOURCES.scss, gulp.series(compileSass));
+};
 
-
-exports.default = gulp.series(
-	gulp.parallel(compileSass, minifyJS),
-	watch
-);
+exports.default = gulp.series(gulp.parallel(compileSass, minifyJS), watch);

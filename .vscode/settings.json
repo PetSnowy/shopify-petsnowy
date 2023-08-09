@@ -1,8 +1,10 @@
 {
   "cSpell.words": [
+		"cssnano",
 		"gulpfile",
 		"petsnowy",
-		"polyline"
+		"polyline",
+		"postcss"
 	],
 	"liquid.format.enable": true
 }
