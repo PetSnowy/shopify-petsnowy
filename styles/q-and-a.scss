@@ -195,8 +195,10 @@
   .faq_qa_main {
     .faq_qa_heading {
       padding: 0px;
-      margin-bottom: 20px;
       font-size: 24px;
+      h1 {
+        margin-bottom: 20px;
+      }
     }
     .faq-wrapper {
       display: flex;
