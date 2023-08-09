@@ -239,16 +239,61 @@
     }
     .aside-item {
       padding: 10px;
-      border: 1px solid #e8e8e8;
-      transition: all 0.3s ease;
-      box-sizing: border-box;
       width: 240px;
       border-radius: 10px;
+      transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+      -webkit-appearance: button;
+      cursor: pointer;
+      border: none;
+      position: relative;
+      z-index: 1;
+      -webkit-backface-visibility: hidden;
+      overflow: hidden;
+      transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+      background: #fff;
+      color: #000;
+      border: 1px solid #e8e8e8;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        border-radius: inherit;
+      }
+      &:hover {
+        border-color: transparent;
+        &::before {
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      &::after {
+        top: 1px;
+        left: 1px;
+        right: 1px;
+        bottom: 1px;
+        background: #fff;
+      }
+      &::before {
+        background: rgb(241, 129, 19);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translate3d(-100%, 100%, 0);
+        transition: transform 0.3s;
+        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+      }
+      &.active {
+        border-color: transparent;
+        color: rgb(241, 129, 19);
+        &::before {
+          transform: translate3d(0, 0, 0);
+        }
+      }
     }
-    .aside-item.active {
-      border-color: rgb(241, 129, 19);
-      color: rgb(241, 129, 19);
-    }
+
     .title {
       margin: 0px;
       font-size: 22px;

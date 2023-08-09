@@ -19,7 +19,16 @@ const compileSass = () =>
 	gulp
 		.src(SOURCES.scss)
 		.pipe(sass().on("error", sass.logError))
-		.pipe(postcss([autoprefixer(), cssnano()]))
+		.pipe(postcss([autoprefixer({
+			"overrideBrowserslist": [
+				"defaults",
+				"not ie < 11",
+				"last 2 versions",
+				"> 1%",
+				"iOS 7",
+				"last 3 iOS versions"
+			]
+		}), cssnano()]))
 		.pipe(cleanCSS())
 		.pipe(gulp.dest(DESTINATIONS.assets));
 
