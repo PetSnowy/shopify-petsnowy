@@ -19,6 +19,7 @@
     }
     .page-width {
       position: relative;
+      transition: all 0.3s ease;
     }
   }
   .sidebar-wrapper {
@@ -92,8 +93,9 @@
     display: none;
   }
   .m-sidebar-wrapper {
-    display: none;
+    opacity: 0;
     position: absolute;
+    transition: all 0.3s ease;
     top: 0px;
     width: 100%;
     transform: translateX(-50%);
