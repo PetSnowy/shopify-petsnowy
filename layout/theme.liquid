@@ -15,6 +15,8 @@
   class="no-js header-packed intercom-loaded banner-active scroll-down scroll-stopped"
   style="--top-banner-height:48px; --header-height:73px; --scroll-y:4202px;"
 >
+  {% capture max_age %}{{ '1 days' | seconds | append: ', private, must-revalidate' }}{% endcapture %}
+  <meta http-equiv="Cache-control" content="max-age={{ max_age }}">
   <meta name="google-site-verification" content="mtbzJrfOl9PxeseV5Y-sD1mxIrmmR4Lr_QmsC9YFPBY">
   <head>
     {% comment %}
