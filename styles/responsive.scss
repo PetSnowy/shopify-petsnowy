@@ -786,7 +786,7 @@
   video.mob_video {
     display: block;
   }
-  video.mob_video.custom_videoss {
+  #MainContentIndex video.mob_video.custom_videoss {
     object-fit: cover;
     height: 100vh;
   }
@@ -1004,6 +1004,9 @@
   }
 }
 button.needsclick.kl-teaser-SyCsSf.undefined {
+  width: fit-content !important;
+  left: 0px !important;
+  transform: none !important;
   .needsclick.go1596356512.kl-private-reset-css-Xuajs1 {
     p span {
       color: #fff !important;
@@ -1104,7 +1107,14 @@ button.needsclick.kl-teaser-SyCsSf.undefined {
     padding-left: 10px;
   }
   button.needsclick.kl-teaser-SyCsSf.undefined {
-    width: 150px !important;
+    left: 0px !important;
+    transform: none !important;
+    margin: 0px !important;
+    width: 100% !important;
+    & > div > button {
+      right: 5px !important;
+      top: -30px !important;
+    }
   }
   // .kl-private-reset-css-Xuajs1.go3176171171 p span {
   //   font-size: 14px !important;

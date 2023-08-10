@@ -1,11 +1,18 @@
 {{ 'q-and-a.css' | asset_url | stylesheet_tag }}
 
 <div class="faq_qa_main">
-  <div class="page-width">
+  <div class="page-width faq-page">
+    <div class="m-sidebar-wrapper">
+      <select></select>
+    </div>
     <div class="faq_qa_heading">
-      {% if section.settings.h2 != blank %}
+      <div class="search">
+        <input type="text" placeholder="Please enter the search">
+        <button>search</button>
+      </div>
+      {% if section.settings.h1 != blank %}
         <h1>
-          {{ section.settings.h2 }}
+          {{ section.settings.h1 }}
           <small>{{ section.settings.sub_txt }}</small>
         </h1>
       {% endif %}
@@ -18,15 +25,6 @@
               <div class="aside-item">{{ aside.settings.h2 }}</div>
             {% endif %}
           {% endfor %}
-        </div>
-        <div class="m-sidebar-wrapper">
-          <select>
-            {% for aside in section.blocks %}
-              {% if aside.type == 'title' %}
-                <option value="{{ aside.settings.h2 }}">{{ aside.settings.h2 }}</option>
-              {% endif %}
-            {% endfor %}
-          </select>
         </div>
       </aside>
       <div class="faq_qna_iner">
@@ -76,37 +74,11 @@
         </div>
       </div>
     </div>
+    <div class="search-result"></div>
   </div>
 </div>
-<script>
-  $(function () {
-    const visibleHeight = document.documentElement.clientHeight / 2;
-    const title = document.querySelector('.faq_qna_iner').querySelectorAll('.title');
-    const select = document.querySelector('select');
+<script src="{{ 'q-and-a.js' | asset_url }}"></script>
 
-    $('.aside-item').click(function () {
-      let index = $(this).index();
-      $('.aside-item').removeClass('active');
-      $(this).addClass('active');
-      title[index].scrollIntoView({ behavior: 'smooth', block: 'center' });
-    });
-    const scroll = () => {
-      const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-      for (let index = 0; index < title.length; index++) {
-        if (scrollTop > title[index].offsetTop - visibleHeight) {
-          $('.aside-item').removeClass('active');
-          $('.aside-item').eq(index).addClass('active');
-          select.value = $('.aside-item').eq(index).text();
-        }
-      }
-    };
-    window.addEventListener('scroll', scroll);
-    $('select').change(function () {
-      let selectedIndex = $(this).prop('selectedIndex');
-      title[selectedIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
-    });
-  });
-</script>
 {% schema %}
 {
   "name": "Q And A",
