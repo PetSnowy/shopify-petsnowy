@@ -56,7 +56,7 @@
               style="display:none;"
             >
               {% if main_product_detail.featured_image != blank %}
-                <img src="{{ main_product_detail.featured_image | img_url: 'master' }}">
+                <img src="{{ main_product_detail.featured_image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
               {% endif %}
             </div>
           {% endfor %}
@@ -149,7 +149,11 @@
                       for="?customcart={{ product_change.handle }}"
                     >
                       <div class="add_list_product_image">
-                        <img src="{{  product_change.featured_image | img_url: '100X100' }}">
+                        <img
+                          src="{{  product_change.featured_image | img_url: '100X100' }}"
+                          alt="petsnowy"
+                          loading="lazy"
+                        >
                       </div>
 
                       <div class="add_list_product_data">
@@ -208,7 +212,7 @@
                             <div class="changed_pro_variantlist">
                               <div class="change_variant_img">
                                 {% if changedvarimg != blank %}
-                                  <img src="{{ changedvarimg }}">
+                                  <img src="{{ changedvarimg }}" alt="petsnowy" loading="lazy">
                                 {% endif %}
                               </div>
                               <div class="change_variant_datatext">
@@ -309,7 +313,7 @@
                         >
                           <div class="itg_drop_var_align_img">
                             {% if varimg != blank %}
-                              <img src="{{ varimg }}">
+                              <img src="{{ varimg }}" alt="petsnowy" loading="lazy">
                             {% else %}
                               <p>{{ value }}</p>
                             {% endif %}
@@ -372,7 +376,11 @@
                     >
                     <label class="productlabel_info" for="{{ product_addons.title }}">
                       <div class="add_list_product_image">
-                        <img src="{{  product_addons.featured_image | img_url: '100X100' }}">
+                        <img
+                          src="{{  product_addons.featured_image | img_url: '100X100' }}"
+                          alt="petsnowy"
+                          loading="lazy"
+                        >
                       </div>
 
                       <div class="add_list_product_data">
@@ -472,7 +480,11 @@
                         >
                         <label class="productlabel_info" for="{{ product_insurance.handle }}">
                           <div class="add_list_product_image">
-                            <img src="{{  product_insurance.featured_image | img_url: '100X100' }}">
+                            <img
+                              src="{{  product_insurance.featured_image | img_url: '100X100' }}"
+                              alt="petsnowy"
+                              loading="lazy"
+                            >
                           </div>
                           <div class="add_list_product_data">
                             <div class="price_title_align">

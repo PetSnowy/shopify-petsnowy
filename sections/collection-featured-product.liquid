@@ -13,36 +13,36 @@
 {%- endstyle -%}
 
 {% if section.settings.product != blank %}
-<div class="page-width section-{{ section.id }}-padding ctm_new_product">
-  {%- assign product = section.settings.product -%}  
-<a href="{{ product.url }}">
-  <div class="itg_ctm_product">
-    <div class="itg_ctm_product_content">
-      <span data-aos="fade-up" data-aos-duration="700">New comer</span>
-      <h2 data-aos="fade-up" data-aos-duration="800">{{ product.title }}</h2>
-      <p data-aos="fade-up" data-aos-duration="800">{{ product.description }}</p>
-      <span data-aos="fade-up" data-aos-duration="800" class="itg_ctm_price">{{ product.price | money }}</span>
-    </div>
-    <div class="itg_ctm_product_img">
-       {% if product.featured_image != blank %}
-        <img src="{{ product.featured_image | img_url: 'master' }}">
-      {% endif %}   
-    </div>    
+  <div class="page-width section-{{ section.id }}-padding ctm_new_product">
+    {%- assign product = section.settings.product -%}
+    <a href="{{ product.url }}">
+      <div class="itg_ctm_product">
+        <div class="itg_ctm_product_content">
+          <span data-aos="fade-up" data-aos-duration="700">New comer</span>
+          <h2 data-aos="fade-up" data-aos-duration="800">{{ product.title }}</h2>
+          <p data-aos="fade-up" data-aos-duration="800">{{ product.description }}</p>
+          <span data-aos="fade-up" data-aos-duration="800" class="itg_ctm_price">{{ product.price | money }}</span>
+        </div>
+        <div class="itg_ctm_product_img">
+          {% if product.featured_image != blank %}
+            <img src="{{ product.featured_image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+          {% endif %}
+        </div>
+      </div>
+    </a>
   </div>
-</a>
-</div>
 {% endif %}
 
 {% schema %}
-  {
-    "name": "Collection Product",
-    "settings": [
+{
+  "name": "Collection Product",
+  "settings": [
     {
-      "type":"product",
-      "id":"product",
-      "label":"Select Product"
+      "type": "product",
+      "id": "product",
+      "label": "Select Product"
     },
-     {
+    {
       "type": "range",
       "id": "padding_top",
       "min": 0,
@@ -62,12 +62,12 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
     }
-    ],
-  "presets":[
-  {
-    "name": "Collection Product"
-  }
-]
+  ],
+  "presets": [
+    {
+      "name": "Collection Product"
+    }
+  ]
 }
 {% endschema %}
 

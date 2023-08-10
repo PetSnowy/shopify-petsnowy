@@ -13,19 +13,23 @@
 {%- endstyle -%}
 
 <div
-  class="section-{{ section.id }}-padding video_popup_main">
+  class="section-{{ section.id }}-padding video_popup_main"
+>
   <div class="page-width">
     <div class="video-section_pop">
       <div class="cs_video_big owl-carousel owl-theme">
         {% for block in section.blocks %}
           <div class="top_img item">
             <div class="top_img_div">
-            {% if block.settings.ml_img != blank %}
-              <img src="{{ block.settings.ml_img | img_url: 'master'}}">
-              <div class="img_icon_svg" data-video-url="https://www.youtube-nocookie.com/embed/{{ block.settings.video_url.id }}?autoplay=1">
-              {% render 'image-icon' %}
-              </div>
-            {% endif %}      
+              {% if block.settings.ml_img != blank %}
+                <img src="{{ block.settings.ml_img | img_url: 'master'}}" alt="petsnowy" loading="lazy">
+                <div
+                  class="img_icon_svg"
+                  data-video-url="https://www.youtube-nocookie.com/embed/{{ block.settings.video_url.id }}?autoplay=1"
+                >
+                  {% render 'image-icon' %}
+                </div>
+              {% endif %}
             </div>
             <div class="top_img_text">
               {{ block.settings.ml_text }}
@@ -33,11 +37,11 @@
           </div>
         {% endfor %}
       </div>
-       <div class="cs_video_small">
+      <div class="cs_video_small">
         {% for block in section.blocks %}
           <div class="bottom_img">
             {% if block.settings.ml_imgaa != blank %}
-              <img src="{{ block.settings.ml_imgaa | img_url: '200X'}}">             
+              <img src="{{ block.settings.ml_imgaa | img_url: '200X'}}" alt="petsnowy" loading="lazy">
             {% endif %}
           </div>
         {% endfor %}
@@ -71,32 +75,32 @@
       "default": 36
     }
   ],
-  "blocks":[
+  "blocks": [
     {
-      "type":"block",
-      "name":"Video Popup",
-      "settings":[ 
+      "type": "block",
+      "name": "Video Popup",
+      "settings": [
         {
-          "type":"image_picker",
-          "id":"ml_img",
-          "label":"Large Image"
-        },
-         {
-          "type":"richtext",
-          "id":"ml_text",
-          "label":"Content"
+          "type": "image_picker",
+          "id": "ml_img",
+          "label": "Large Image"
         },
         {
-          "type":"image_picker",
-          "id":"ml_imgaa",
-          "label":"Small Image"
-        },  
+          "type": "richtext",
+          "id": "ml_text",
+          "label": "Content"
+        },
         {
-           "type": "video_url",
-            "accept": ["vimeo", "youtube"],
-          "id":"video_url",
-          "label":"Video Url"
-        } 
+          "type": "image_picker",
+          "id": "ml_imgaa",
+          "label": "Small Image"
+        },
+        {
+          "type": "video_url",
+          "accept": ["vimeo", "youtube"],
+          "id": "video_url",
+          "label": "Video Url"
+        }
       ]
     }
   ],

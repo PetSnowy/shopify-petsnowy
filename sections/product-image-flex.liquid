@@ -1,17 +1,27 @@
-
 <div class="main-content">
   <div class="page-width ">
     <div class="image_text-main">
       <div class="image_text-main-left">
         <figure>
           <div class="video-wrapper">
-            <video muted="" loop="" playsinline="" autoplay="" decoding="async" loading="lazy" width="640" height="640" src="{{ section.settings.video_link }}" draggable="true"></video>
+            <video
+              muted=""
+              loop=""
+              playsinline=""
+              autoplay=""
+              decoding="async"
+              loading="lazy"
+              width="640"
+              height="640"
+              src="{{ section.settings.video_link }}"
+              draggable="true"
+            ></video>
           </div>
           <figcaption class="grid__text">
-              <h3>
-                  {{ section.settings.video_title1 }}
-              </h3>
-              <h4 class="hidden--to-desktop">{{ section.settings.video_subtitle1 }}</h4>
+            <h3>
+              {{ section.settings.video_title1 }}
+            </h3>
+            <h4 class="hidden--to-desktop">{{ section.settings.video_subtitle1 }}</h4>
           </figcaption>
         </figure>
       </div>
@@ -20,24 +30,44 @@
           <figure>
             <div class="video-wrapper">
               <picture>
-                <img src="{{ section.settings.img_main_desktop | img_url: 'master' }}" class="hidden--to-desktop">
-                <img src="{{ section.settings.img_main_mobile | img_url: 'master' }}" class="hidden--to-mobile">
+                <img
+                  src="{{ section.settings.img_main_desktop | img_url: 'master' }}"
+                  class="hidden--to-desktop"
+                  alt="petsnowy"
+                  loading="lazy"
+                >
+                <img
+                  src="{{ section.settings.img_main_mobile | img_url: 'master' }}"
+                  class="hidden--to-mobile"
+                  alt="petsnowy"
+                  loading="lazy"
+                >
               </picture>
             </div>
             <figcaption class="grid__text">
-                <h3>{{ section.settings.img_title }}</h3>
-                <h4 class="hidden--to-desktop">{{ section.settings.img_subtitle }}</h4>
+              <h3>{{ section.settings.img_title }}</h3>
+              <h4 class="hidden--to-desktop">{{ section.settings.img_subtitle }}</h4>
             </figcaption>
           </figure>
         </div>
         <div class="image_text-main-right-item image_text-main-right-item2">
           <figure>
             <div class="video-wrapper">
-              <video muted="" playsinline="" autoplay=""  decoding="async" loading="lazy" width="640" height="640" src="{{ section.settings.video_link2 }}" draggable="true"></video>
+              <video
+                muted=""
+                playsinline=""
+                autoplay=""
+                decoding="async"
+                loading="lazy"
+                width="640"
+                height="640"
+                src="{{ section.settings.video_link2 }}"
+                draggable="true"
+              ></video>
             </div>
             <figcaption class="grid__text">
-                <h3>{{ section.settings.video_title2 }}</h3>
-                <h4 class="hidden--to-desktop">{{ section.settings.video_subtitle2 }}</h4>
+              <h3>{{ section.settings.video_title2 }}</h3>
+              <h4 class="hidden--to-desktop">{{ section.settings.video_subtitle2 }}</h4>
             </figcaption>
           </figure>
         </div>
@@ -47,78 +77,78 @@
 </div>
 
 {% schema %}
-  {
-    "name": "product image text",
-    "settings": [
-      {
-        "type": "header",
-        "content": "video 1"
-      },
-      {
-        "type": "text",
-        "id": "video_link",
-        "label": "Video url"
-      },
-      {
-        "type": "text",
-        "id": "video_title1",
-        "label": "Video title"
-      },
-      {
-        "type": "textarea",
-        "id": "video_subtitle1",
-        "label": "Video subtitle"
-      },
-      {
-        "type": "header",
-        "content": "image"
-      },
-      {
-        "type": "image_picker",
-        "id": "img_main_desktop",
-        "label": "Image main"
-      },
-      {
-        "type": "image_picker",
-        "id": "img_main_mobile",
-        "label": "Image main"
-      },
-      {
-        "type": "text",
-        "id": "img_title",
-        "label": "Image title"
-      },
-      {
-        "type": "textarea",
-        "id": "img_subtitle",
-        "label": "Image subtitle"
-      },
-      {
-        "type": "header",
-        "content": "video 2"
-      },
-      {
-        "type": "text",
-        "id": "video_link2",
-        "label": "Video url"
-      },
-      {
-        "type": "text",
-        "id": "video_title2",
-        "label": "Video title"
-      },
-      {
-        "type": "textarea",
-        "id": "video_subtitle2",
-        "label": "Video subtitle"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Product image text"
-      }
-    ]
-  }
+{
+  "name": "product image text",
+  "settings": [
+    {
+      "type": "header",
+      "content": "video 1"
+    },
+    {
+      "type": "text",
+      "id": "video_link",
+      "label": "Video url"
+    },
+    {
+      "type": "text",
+      "id": "video_title1",
+      "label": "Video title"
+    },
+    {
+      "type": "textarea",
+      "id": "video_subtitle1",
+      "label": "Video subtitle"
+    },
+    {
+      "type": "header",
+      "content": "image"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_main_desktop",
+      "label": "Image main"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_main_mobile",
+      "label": "Image main"
+    },
+    {
+      "type": "text",
+      "id": "img_title",
+      "label": "Image title"
+    },
+    {
+      "type": "textarea",
+      "id": "img_subtitle",
+      "label": "Image subtitle"
+    },
+    {
+      "type": "header",
+      "content": "video 2"
+    },
+    {
+      "type": "text",
+      "id": "video_link2",
+      "label": "Video url"
+    },
+    {
+      "type": "text",
+      "id": "video_title2",
+      "label": "Video title"
+    },
+    {
+      "type": "textarea",
+      "id": "video_subtitle2",
+      "label": "Video subtitle"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product image text"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}

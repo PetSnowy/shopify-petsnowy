@@ -18,7 +18,7 @@
       <div class="product_colls_one gutter_div">
         <a href="{{ section.settings.url }}">
           {% if section.settings.image != blank %}
-            <img src="{{ section.settings.image | img_url: 'master' }}">
+            <img src="{{ section.settings.image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
             <div class="product_colls_text">
               <h2 data-aos="fade-up" data-aos-duration="700">{{ section.settings.title }}</h2>
               <span data-aos="fade-up" data-aos-duration="800">{{ section.settings.text }}</span>
@@ -29,7 +29,7 @@
       <div class="product_colls_two gutter_div">
         <a href="{{ section.settings.urls }}">
           {% if section.settings.images != blank %}
-            <img src="{{ section.settings.images | img_url: 'master' }}">
+            <img src="{{ section.settings.images | img_url: 'master' }}" alt="petsnowy" loading="lazy">
             <div class="product_colls_text">
               <h2 data-aos="fade-up" data-aos-duration="800">{{ section.settings.titles }}</h2>
               <span data-aos="fade-up" data-aos-duration="900">{{ section.settings.texts }}</span>
@@ -55,17 +55,17 @@
       "id": "title",
       "label": "Collection Title"
     },
-     {
+    {
       "type": "text",
       "id": "text",
       "label": "Collection Text"
     },
-     {
+    {
       "type": "url",
       "id": "url",
       "label": "Collection Link"
     },
-     {
+    {
       "type": "image_picker",
       "id": "images",
       "label": "Select Collection Image"
@@ -75,12 +75,12 @@
       "id": "titles",
       "label": "Collection Title"
     },
-     {
+    {
       "type": "text",
       "id": "texts",
       "label": "Collection Text"
     },
-     {
+    {
       "type": "url",
       "id": "urls",
       "label": "Collection Link"

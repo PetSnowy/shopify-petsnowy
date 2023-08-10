@@ -33,57 +33,65 @@
 
     <div class="purchase_data">
       {% if section.settings.image != blank %}
-        <img src="{{ section.settings.image | img_url: 'master' }}">
+        <img src="{{ section.settings.image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
       {% endif %}
       <div class="page-width">
         <div class="purchase_data_text">
           <h2 data-aos="fade-up" data-aos-duration="800">{{ section.settings.title }}</h2>
           <div data-aos="fade-up" data-aos-duration="800">{{ section.settings.text }}</div>
           <div class="purchase_data_btns">
-            {% if product.template_suffix == "purchase-product" %}
-            <product-form class="product-form" data-aos="fade-up"
-                    data-aos-duration="800">
-              {%- form 'product',
-                product,
-                id: product_form_id,
-                class: 'form',
-                novalidate: 'novalidate',
-                data-type: 'add-to-cart-form'
-              -%}
-                <input
-                  type="hidden"
-                  name="id"
-                  value="{{ product.selected_or_first_available_variant.id }}"                
-                >
-                <div class="product-form__buttons">
-                  <button
-                    onclick="myFunction()"
-                    type="submit"
-                    name="add"                    
-                    class="product-form__submit button button--primary purchase_btn_one cart_redirect_btn"
+            {% if product.template_suffix == 'purchase-product' %}
+              <product-form
+                class="product-form"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
+                {%- form 'product',
+                  product,
+                  id: product_form_id,
+                  class: 'form',
+                  novalidate: 'novalidate',
+                  data-type: 'add-to-cart-form'
+                -%}
+                  <input
+                    type="hidden"
+                    name="id"
+                    value="{{ product.selected_or_first_available_variant.id }}"
                   >
-                    <span> Order now</span>
-                    <div class="loading-overlay__spinner hidden">
-                      <svg
-                        aria-hidden="true"
-                        focusable="false"
-                        role="presentation"
-                        class="spinner"
-                        viewBox="0 0 66 66"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                      </svg>
-                    </div>
-                  </button>
-                </div>
-              {%- endform -%}
-            </product-form>
-              {% else %}
-             <a data-aos="fade-up" data-aos-duration="800" class="purchase_btn_first" href="/cart?customcart={{ product.handle }}">
-              Order now
-            </a>
-          {% endif %}
+                  <div class="product-form__buttons">
+                    <button
+                      onclick="myFunction()"
+                      type="submit"
+                      name="add"
+                      class="product-form__submit button button--primary purchase_btn_one cart_redirect_btn"
+                    >
+                      <span> Order now</span>
+                      <div class="loading-overlay__spinner hidden">
+                        <svg
+                          aria-hidden="true"
+                          focusable="false"
+                          role="presentation"
+                          class="spinner"
+                          viewBox="0 0 66 66"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                {%- endform -%}
+              </product-form>
+            {% else %}
+              <a
+                data-aos="fade-up"
+                data-aos-duration="800"
+                class="purchase_btn_first"
+                href="/cart?customcart={{ product.handle }}"
+              >
+                Order now
+              </a>
+            {% endif %}
             <a data-aos="fade-up" data-aos-duration="800" class="purchase_btn_two" href="{{ section.settings.link }}">
               {{- section.settings.btn -}}
             </a>
@@ -95,45 +103,45 @@
 </div>
 
 {% schema %}
-  {
-    "name": "Purchase Section",
-    "settings": [
-      {
-       "type":"text",
-        "id":"delivery",
-        "label":"Delivery Title"
-      },
-      {
-       "type":"text",
-        "id":"order",
-        "label":"Order Title"
-      },
-       {
-       "type":"image_picker",
-        "id":"image",
-        "label":"Image"
-      },
-       {
-       "type":"html",
-        "id":"title",
-        "label":"Title"
-      },
-      {
-       "type":"richtext",
-        "id":"text",
-        "label":"Sub Text"
-      },
-        {
-       "type":"url",
-        "id":"link",
-        "label":"Button Link"
-      },
-        {
-       "type":"text",
-        "id":"btn",
-        "label":"Button Title"
-      },
-     {
+{
+  "name": "Purchase Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "delivery",
+      "label": "Delivery Title"
+    },
+    {
+      "type": "text",
+      "id": "order",
+      "label": "Order Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "html",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Sub Text"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "btn",
+      "label": "Button Title"
+    },
+    {
       "type": "range",
       "id": "padding_top",
       "min": 0,
@@ -153,13 +161,13 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
     }
-    ],
-"presets":[
-  {
-    "name": "Purchase Section"
-  }
-]
-  }
+  ],
+  "presets": [
+    {
+      "name": "Purchase Section"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
