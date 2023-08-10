@@ -198,9 +198,9 @@
                       </li>
                     {%- endfor -%}
                     <li>
-                    <a href="javascript:void(0)" class="itg_contact_details_nav menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}">
+                    <span class="itg_contact_details_nav menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}">
                        Contact Us
-                    </a>
+                    </span>
                     </li>
                   </ul>
                 </nav>
@@ -485,9 +485,9 @@
               </li>
             {%- endfor -%}
             <li>
-              <a href="javascript:void(0)" class="itg_contact_details_nav header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}">
+              <span class="itg_contact_details_nav header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}">
                <span> Contact Us</span>
-              </a>
+              </span>
             </li>
           </ul>
         </nav>
@@ -638,11 +638,11 @@
       </details-modal>{% endcomment %} 
 
       {% if template contains 'product' %}
-           <a class="headr_odr_now" href="javascript:void(0);" data-href="/cart?customcart={{ product.handle }}">
+           <a class="headr_odr_now" href="/cart?customcart={{ product.handle }}">
              <span> {{ section.settings.order_btn }}</span> 
           </a>
        {% else %} 
-          <a class="headr_odr_now" href="javascript:void(0);" data-href="{{ section.settings.order_url }}"> 
+          <a class="headr_odr_now" href="{{ section.settings.order_url }}"> 
             <span> {{ section.settings.order_btn }}</span>   
           </a>
       {% endif %}
@@ -718,7 +718,7 @@
 		else header.style.backgroundColor = 'transparent'
 	}
 	if(header) {
-		window.addEventListener('scroll', scroll);
+		window.addEventListener('scroll', scroll, { passive: true});
 		scroll();
 	}
 {% endjavascript %}

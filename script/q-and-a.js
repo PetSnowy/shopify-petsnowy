@@ -140,7 +140,7 @@ $(function () {
 		select.appendChild(option);
 	}
 
-	window.addEventListener('scroll', debounce(scroll, 100));
+	window.addEventListener('scroll', debounce(scroll, 100), { passive: true });
 
 	let faqWrapperHeight = 0;
 
@@ -148,7 +148,7 @@ $(function () {
 		for (let i = 0; i < faqWrapper.length; i++) {
 			faqWrapperHeight += faqWrapper[i].offsetHeight;
 		}
-		window.addEventListener('scroll', mobileSelect);
+		window.addEventListener('scroll', mobileSelect, { passive: true });
 	}
 
 	function mobileSelect() {
