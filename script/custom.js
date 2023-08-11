@@ -39,7 +39,7 @@ $(document).ready(function () {
 	}
 
 	//Contact scroll js 
-	$("a.itg_contact_details_nav").click(function (e) {
+	$("span.itg_contact_details_nav").click(function (e) {
 		const target = document.body
 		var windowSize = $(window).width();
 		if (windowSize <= 990) {
