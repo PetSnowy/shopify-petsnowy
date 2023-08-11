@@ -393,8 +393,9 @@
                           </span>
                           <span class="price_with_discount">{{ final_inc | money | remove: '-' }}</span>
                         </div>
-                        {{ product_addons.metafields.custom.product_description.value }}
-
+                        <div class="add_descriptions">
+                          {{ product_addons.metafields.custom.product_description.value }}
+                        </div>
                         <div class="quantity_addons">
                           <label class="form__label" for="Quantity-{{ section.id }}">
                             {{ 'products.product.quantity.label' | t }}
