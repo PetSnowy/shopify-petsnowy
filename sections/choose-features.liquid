@@ -166,7 +166,9 @@
                             <span>{{ variantprice | money }}</span>
                           </div>
                         </div>
-                        <div class="add_descriptions">{{ product_change.description }}</div>
+                        <div class="add_descriptions">
+                          {{ product_change.metafields.custom.product_description.value }}
+                        </div>
                       </div>
 
                       <div class="check_product_addons">
@@ -391,8 +393,7 @@
                           </span>
                           <span class="price_with_discount">{{ final_inc | money | remove: '-' }}</span>
                         </div>
-
-                        {{ product_addons.description }}
+                        {{ product_addons.metafields.custom.product_description.value }}
 
                         <div class="quantity_addons">
                           <label class="form__label" for="Quantity-{{ section.id }}">
@@ -1479,6 +1480,7 @@
   }
   .add_descriptions {
     line-height: 1.5;
+    margin-top: 10px;
   }
   .summary_list_products {
     display: flex;
