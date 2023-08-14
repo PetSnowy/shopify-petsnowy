@@ -2,7 +2,6 @@
   "sections": {
     "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "b504c877-67df-4d07-b421-9fac2e31e94f": {
           "type": "text",
@@ -35,6 +34,7 @@
         "e41cef55-a297-4c09-a549-24d35be2b565",
         "2c894b36-d272-47ee-93fd-e441d2b637ea"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -110,11 +110,6 @@
             "show_dynamic_checkout": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "disabled": true,
@@ -123,6 +118,13 @@
             "icon": "leather",
             "content": "",
             "page": ""
+          }
+        },
+        "49a2e95e-27ee-47e1-93c7-4f9df692e671": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.product_description.value }}",
+            "text_style": "body"
           }
         },
         "collapsible-row-1": {
@@ -152,8 +154,8 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
         "collapsible-row-0",
+        "49a2e95e-27ee-47e1-93c7-4f9df692e671",
         "collapsible-row-1",
         "f69dbd09-d478-41ad-b7e8-9051e3ecbc16"
       ],
@@ -395,7 +397,6 @@
     },
     "815a64f2-a2d1-497f-9dac-1cabc60918d0": {
       "type": "Explore-products",
-      "disabled": true,
       "blocks": {
         "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1": {
           "type": "variant_picker",
@@ -407,6 +408,7 @@
       "block_order": [
         "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1"
       ],
+      "disabled": true,
       "settings": {
         "description": "<p>Cannot foresee Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
         "product": "petsnowy-indiegogo-launch-discount-30-off",

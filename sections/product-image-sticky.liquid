@@ -1,30 +1,35 @@
 <div>
   <picture style="display: block; width: 100%;">
-    <img src="{{ section.settings.img_main_desktop | img_url: 'master' }}" style="display: block;width: 100%;">
+    <img
+      src="{{ section.settings.img_main_desktop | img_url: 'master' }}"
+      style="display: block;width: 100%;"
+      alt="petsnowy"
+      loading="lazy"
+    >
   </picture>
 </div>
 <style>
-    #shopify-section-template--19036535554370__a4d0076a-b97c-4523-817b-fe8f44b1fdae{
+  #shopify-section-template--19036535554370__a4d0076a-b97c-4523-817b-fe8f44b1fdae {
     position: sticky;
     top: 0;
   }
 </style>
 {% schema %}
-  {
-    "name": "product image sticky",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "img_main_desktop",
-        "label": "Image main"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Product image sticky"
-      }
-    ]
-  }
+{
+  "name": "product image sticky",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "img_main_desktop",
+      "label": "Image main"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product image sticky"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}

@@ -14,94 +14,94 @@
 
 <div class="itg_custom_block">
   <div class="page-width section-{{ section.id }}-padding">
-     <div class="itg_our_image">
-        {% for block in section.blocks %}
-          <div class="itg_image_block">
-            {% if block.settings.img != blank %}
-              <img src="{{ block.settings.img | img_url: '605x600' }}">
+    <div class="itg_our_image">
+      {% for block in section.blocks %}
+        <div class="itg_image_block">
+          {% if block.settings.img != blank %}
+            <img src="{{ block.settings.img | img_url: '605x600' }}" alt="petsnowy" loading="lazy">
+          {% endif %}
+          <div class="itg_background_wrpr">
+            {% if block.settings.heading != blank %}
+              <h1>{{ block.settings.heading }}</h1>
             {% endif %}
-            <div class="itg_background_wrpr">
-              {% if block.settings.heading != blank %}
-                <h1>{{ block.settings.heading }}</h1>          
-              {% endif %}
-              {% if block.settings.content != blank %}
-                {{ block.settings.content }}          
-              {% endif %}
-            </div>
+            {% if block.settings.content != blank %}
+              {{ block.settings.content }}
+            {% endif %}
           </div>
-        {% endfor %}
-     </div>
-     {% if section.settings.btn_text != blank %}
-          <div class="itg_cstm_block_btn">
-            <a href="{{ section.settings.btn_url }}" class="button button--primary">{{ section.settings.btn_text }}</a>
-          </div>
-        {% endif %}   
+        </div>
+      {% endfor %}
+    </div>
+    {% if section.settings.btn_text != blank %}
+      <div class="itg_cstm_block_btn">
+        <a href="{{ section.settings.btn_url }}" class="button button--primary">{{ section.settings.btn_text }}</a>
+      </div>
+    {% endif %}
   </div>
 </div>
 {% schema %}
-  {
-    "name": "Custom Block Image",
-    "settings": [
+{
+  "name": "Custom Block Image",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 20
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "block-image",
+      "type": "block-image",
+      "settings": [
         {
-        "type": "range",
-        "id": "padding_top",
-        "min": 0,
-        "max": 100,
-        "step": 5,
-        "unit": "px",
-        "label": "t:sections.all.padding.padding_top",
-        "default": 20
-      },
-      {
-        "type": "range",
-        "id": "padding_bottom",
-        "min": 0,
-        "max": 100,
-        "step": 5,
-        "unit": "px",
-        "label": "t:sections.all.padding.padding_bottom",
-        "default": 20
-      },
-      {
-        "type":"text",
-        "id":"btn_text",
-        "label":"Button Text"
-      },
-      {
-        "type":"url",
-        "id":"btn_url",
-        "label":"Button Link"
-      }
-    ],
-    "blocks":[
-      {
-        "name":"block-image",
-        "type":"block-image",
-         "settings": [
-           {
-             "type":"image_picker",
-             "id":"img",
-             "label":"Select Image"
-           },
-           {
-             "type":"text",
-             "id":"heading",
-             "label":"Heading"
-           },
-           {
-             "type":"richtext",
-             "id":"content",
-             "label":"Content"
-           }
-         ]
-      }
-    ],
-    "presets":[
-      {
-        "name":"Custom Block Image"
-      }
-    ]
-  }
+          "type": "image_picker",
+          "id": "img",
+          "label": "Select Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Block Image"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}

@@ -19,18 +19,18 @@
         {{ section.settings.richtext }}
       </div>
     </div>
-      <div class="doble_textimage">
-        {% if section.settings.img != blank %}
-          <img src="{{ section.settings.img | img_url: 'master' }}">
-          <div class="doble_textdata">
-            <h2 data-aos="fade-up" data-aos-duration="800">{{ section.settings.heading }}</h2>
-           <div data-aos="fade-up" data-aos-duration="800"> {{ section.settings.text }}</div>
-          </div>
-        {% endif %}
-      </div>
+    <div class="doble_textimage">
+      {% if section.settings.img != blank %}
+        <img src="{{ section.settings.img | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+        <div class="doble_textdata">
+          <h2 data-aos="fade-up" data-aos-duration="800">{{ section.settings.heading }}</h2>
+          <div data-aos="fade-up" data-aos-duration="800">{{ section.settings.text }}</div>
+        </div>
+      {% endif %}
     </div>
   </div>
 </div>
+
 {% schema %}
 {
   "name": "Text Image",
@@ -40,22 +40,22 @@
       "id": "richtext",
       "label": "content"
     },
-     {
-        "type":"image_picker",
-        "id":"img",
-        "label":"Image"
-      },
-      {
-        "type":"text",
-        "id":"heading",
-        "label":"Heading"
-      },
-      {
-        "type":"richtext",
-        "id":"text",
-        "label":"Content"
-      },    
-     {
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Content"
+    },
+    {
       "type": "range",
       "id": "padding_top",
       "min": 0,
@@ -76,10 +76,10 @@
       "default": 20
     }
   ],
-"presets": [
-  {
-    "name": "Text Image"
-  }
+  "presets": [
+    {
+      "name": "Text Image"
+    }
   ]
 }
 {% endschema %}

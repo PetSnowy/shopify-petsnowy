@@ -14,75 +14,85 @@
 
 <div id="section-five" class="ourteam_section">
   <div class="page-width section-{{ section.id }}-padding">
-   <div class="our_team_show {% if section.settings.image_first %}change_team_grid{% endif %}">
-     <div class="our_team_first {% if section.settings.image_first %}change_team_grid{% endif %}">
-      <div class="1_img_row">
-        {% for block in section.blocks %}
-          {% if block.settings.image_block != blank %}
-            <img src="{{ block.settings.image_block | img_url: '200X200' }}">   
+    <div class="our_team_show {% if section.settings.image_first %}change_team_grid{% endif %}">
+      <div class="our_team_first {% if section.settings.image_first %}change_team_grid{% endif %}">
+        <div class="1_img_row">
+          {% for block in section.blocks %}
+            {% if block.settings.image_block != blank %}
+              <img src="{{ block.settings.image_block | img_url: '200X200' }}" alt="petsnowy" loading="lazy">
+            {%- endif -%}
+          {% endfor %}
+        </div>
+        <div class="2_img_row">
+          {% if section.settings.image_1row != blank %}
+            <img
+              class="2_img_row1"
+              src="{{ section.settings.image_1row | img_url: 'master' }}"
+              alt="petsnowy"
+              loading="lazy"
+            >
           {%- endif -%}
-        {% endfor %}
+          {% if section.settings.image_2row != blank %}
+            <img
+              class="2_img_row2"
+              src="{{ section.settings.image_2row | img_url: 'master' }}"
+              alt="petsnowy"
+              loading="lazy"
+            >
+          {%- endif -%}
+        </div>
       </div>
-      <div class="2_img_row">
-     {% if section.settings.image_1row != blank %}
-       <img class="2_img_row1" src="{{ section.settings.image_1row | img_url: 'master' }}">
-    {%- endif -%}
-    {% if section.settings.image_2row != blank %}
-      <img class="2_img_row2" src="{{ section.settings.image_2row | img_url: 'master' }}">
-    {%- endif -%}
+
+      <div class="our_team_second {% if section.settings.image_first %}change_team_grid{% endif %}">
+        <div class="text_content_div">
+          <h2>{{ section.settings.heading }}</h2>
+          {{ section.settings.richtext }}
+        </div>
+        {% if section.settings.imagerow != blank %}
+          <div class="text_image_div">
+            <img src="{{ section.settings.imagerow | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+          </div>
+        {%- endif -%}
       </div>
-     </div>
-     
-     <div class="our_team_second {% if section.settings.image_first %}change_team_grid{% endif %}">
-      <div class="text_content_div">
-        <h2>{{ section.settings.heading }}</h2>
-        {{ section.settings.richtext }}
-      </div>
-       {% if section.settings.imagerow != blank %}
-      <div class="text_image_div">
-         <img src="{{ section.settings.imagerow | img_url: 'master' }}">
-      </div>
-       {%- endif -%}
-     </div>
-   </div>
+    </div>
   </div>
 </div>
 
 {% schema %}
-  {
-    "name": "Our Team Section",
-    "settings": [
-      {
-        "type":"image_picker",
-        "id":"image_1row",
-        "label":"Second Block Image"
-      },
-      {
-        "type":"image_picker",
-        "id":"image_2row",
-        "label":"Second Block Image"
-      },
-       {
-        "type":"image_picker",
-        "id":"imagerow",
-        "label":"Text Image"
-      },
-      {
-        "type":"text",
-        "id":"heading",
-        "label":"Title"
-      },
-      {
-        "type":"richtext",
-        "id":"richtext",
-        "label":"Content"
-      },
-      {
+{
+  "name": "Our Team Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_1row",
+      "label": "Second Block Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2row",
+      "label": "Second Block Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "imagerow",
+      "label": "Text Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "richtext",
+      "label": "Content"
+    },
+    {
       "type": "checkbox",
       "id": "image_first",
-      "label":"Change Layout"
-       },
-       {
+      "label": "Change Layout"
+    },
+    {
       "type": "range",
       "id": "padding_top",
       "min": 0,
@@ -102,27 +112,27 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
     }
-    ],
-"blocks":[
-  {
-    "name": "Our Team Section",
-    "type":"image_picker",
-    "limit":3,
-    "settings": [
-      {
-        "type":"image_picker",
-        "id":"image_block",
-        "label":"First Block Image"
-      }
-    ]
-  }
-],
-"presets":[
-  {
-   "name": "Our Team Section"
-  }
-]
-  }
+  ],
+  "blocks": [
+    {
+      "name": "Our Team Section",
+      "type": "image_picker",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_block",
+          "label": "First Block Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Our Team Section"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}

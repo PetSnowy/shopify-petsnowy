@@ -23,7 +23,7 @@
       <div class="product_colls_two gutter_div">
         <a href="{{ section.settings.urls }}">
           {% if section.settings.images != blank %}
-            <img src="{{ section.settings.images | img_url: 'master' }}">
+            <img src="{{ section.settings.images | img_url: 'master' }}" alt="petsnowy" loading="lazy">
             <div class="product_colls_text">
               <h2 data-aos="fade-up" data-aos-duration="800">{{ section.settings.titles }}</h2>
               <span data-aos="fade-up" data-aos-duration="900">{{ section.settings.texts }}</span>
@@ -32,7 +32,7 @@
         </a>
         <div class="product_half_image">
           {% if section.settings.half_img != blank %}
-            <img src="{{ section.settings.half_img | img_url: 'master' }}">
+            <img src="{{ section.settings.half_img | img_url: 'master' }}" alt="petsnowy" loading="lazy">
           {% endif %}
         </div>
       </div>
@@ -40,7 +40,7 @@
       <div class="product_colls_one gutter_div">
         <a href="{{ section.settings.url }}">
           {% if section.settings.image != blank %}
-            <img src="{{ section.settings.image | img_url: 'master' }}">
+            <img src="{{ section.settings.image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
             <div class="product_colls_text">
               <h2 data-aos="fade-up" data-aos-duration="800" data-aos="fade-up" data-aos-duration="700">
                 {{ section.settings.title }}
@@ -56,7 +56,7 @@
       <div class="product_colls_one gutter_div">
         <a href="{{ section.settings.url2 }}">
           {% if section.settings.image2 != blank %}
-            <img src="{{ section.settings.image2 | img_url: 'master' }}">
+            <img src="{{ section.settings.image2 | img_url: 'master' }}" alt="petsnowy" loading="lazy">
             <div class="product_colls_text">
               <h2 data-aos="fade-up" data-aos-duration="800">{{ section.settings.title2 }}</h2>
               <span data-aos="fade-up" data-aos-duration="900">{{ section.settings.text2 }}</span>
@@ -66,10 +66,10 @@
       </div>
       <div class="product_colls_two gutter_div">
         {% if section.settings.images2 != blank %}
-          <img src="{{ section.settings.images2 | img_url: 'master' }}">
+          <img src="{{ section.settings.images2 | img_url: 'master' }}" alt="petsnowy" loading="lazy">
           <div class="product_colls_textss">
             <h2 data-aos="fade-up" data-aos-duration="800">{{ section.settings.titles2 }}</h2>
-           <div data-aos="fade-up" data-aos-duration="800"> {{ section.settings.texts2 }}</div>
+            <div data-aos="fade-up" data-aos-duration="800">{{ section.settings.texts2 }}</div>
             <div class="product_colls_btns">
               <a href="{{ section.settings.urls2 }}" data-aos="fade-up" data-aos-duration="900">
                 {{- section.settings.btns -}}
@@ -92,7 +92,7 @@
       "id": "richtext",
       "label": "Product content"
     },
-     {
+    {
       "type": "image_picker",
       "id": "images",
       "label": "Select Collection Image"
@@ -102,17 +102,17 @@
       "id": "titles",
       "label": "Collection Title"
     },
-     {
+    {
       "type": "text",
       "id": "texts",
       "label": "Collection Text"
     },
-     {
+    {
       "type": "url",
       "id": "urls",
       "label": "Collection Link"
     },
-     {
+    {
       "type": "image_picker",
       "id": "half_img",
       "label": "Select Half Image"
@@ -127,12 +127,12 @@
       "id": "title",
       "label": "Collection Title"
     },
-     {
+    {
       "type": "text",
       "id": "text",
       "label": "Collection Text"
     },
-     {
+    {
       "type": "url",
       "id": "url",
       "label": "Collection Link"
@@ -147,17 +147,17 @@
       "id": "title2",
       "label": "Bottom Collection Title"
     },
-     {
+    {
       "type": "text",
       "id": "text2",
       "label": "Bottom Collection Text"
     },
-     {
+    {
       "type": "url",
       "id": "url2",
       "label": "Bottom Collection Link"
     },
-     {
+    {
       "type": "image_picker",
       "id": "images2",
       "label": "Select Bottom Collection Image"
@@ -167,12 +167,12 @@
       "id": "titles2",
       "label": "Bottom Collection Title"
     },
-     {
+    {
       "type": "richtext",
       "id": "texts2",
       "label": "Bottom Collection Text"
     },
-     {
+    {
       "type": "url",
       "id": "urls2",
       "label": "Bottom Collection Link"

@@ -14,41 +14,41 @@
 
 <div id="section-four" class="vision_section">
   <div class="page-width section-{{ section.id }}-padding">
-    <div class="main_vision_div">     
+    <div class="main_vision_div">
       <div class="visiondata">
         {% if section.settings.title != blank -%}
           <h2>{{ section.settings.title }}</h2>
         {%- endif %}
         {% if section.settings.richtext != blank %}{{ section.settings.richtext }}{% endif %}
       </div>
-       <div class="visionimage">
+      <div class="visionimage">
         {% if section.settings.image != blank %}
-          <img src="{{ section.settings.image | img_url: 'master' }}">
+          <img src="{{ section.settings.image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
         {% endif %}
       </div>
     </div>
   </div>
 </div>
 {% schema %}
-  {
-    "name": "Vision Section",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "image",
-        "label":"Image"
-      },
-      {
-        "type": "text",
-        "id": "title",
-        "label":"Heading"
-      },
-      {
-        "type": "richtext",
-        "id": "richtext",
-        "label":"Content"
-      },       
-       {
+{
+  "name": "Vision Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "richtext",
+      "label": "Content"
+    },
+    {
       "type": "range",
       "id": "padding_top",
       "min": 0,
@@ -68,13 +68,13 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
     }
-    ],
-"presets":[
-  {
-     "name": "Vision Section"
-  }
-]
-  }
+  ],
+  "presets": [
+    {
+      "name": "Vision Section"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}

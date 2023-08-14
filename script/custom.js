@@ -39,7 +39,7 @@ $(document).ready(function () {
 	}
 
 	//Contact scroll js 
-	$("a.itg_contact_details_nav").click(function (e) {
+	$("span.itg_contact_details_nav").click(function (e) {
 		const target = document.body
 		var windowSize = $(window).width();
 		if (windowSize <= 990) {
@@ -166,8 +166,6 @@ $(document).ready(function () {
 	$(document).on("click", ".headr_odr_now", function () {
 		localStorage.removeItem("product_handle");
 		localStorage.removeItem("addons_data");
-		var thsurl = $(this).attr('data-href');
-		window.location.href = thsurl;
 	});
 
 	$(document).on("click", "button.btn_change_product", function () {

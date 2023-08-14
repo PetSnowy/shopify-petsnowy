@@ -1,41 +1,41 @@
 <div class="top_banner_section">
   {% if section.settings.img != blank %}
- <img src="{{ section.settings.img | img_url: 'master' }}">
-   <div class="page-width">
-     <div class="top_banner_text">
-       <span data-aos="fade-up" data-aos-duration="700">{{ section.settings.sub_text }}</span>
-       <h2 data-aos="fade-up" data-aos-duration="900">{{ section.settings.heading }}</h2>
-     </div>
-   </div>
+    <img src="{{ section.settings.img | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+    <div class="page-width">
+      <div class="top_banner_text">
+        <span data-aos="fade-up" data-aos-duration="700">{{ section.settings.sub_text }}</span>
+        <h2 data-aos="fade-up" data-aos-duration="900">{{ section.settings.heading }}</h2>
+      </div>
+    </div>
   {% endif %}
 </div>
 
 {% schema %}
-  {
-    "name": "Top Banner Section",
-    "settings": [
-      {
-        "type":"image_picker",
-        "id":"img",
-        "label":"Banner Image"
-      },
-      {
-        "type":"text",
-        "id":"sub_text",
-        "label":"Banner Sub Heading"
-      },
-      {
-        "type":"text",
-        "id":"heading",
-        "label":"Banner Heading"
-      }
-    ],
-"presets":[
-  {
-    "name": "Top Banner Section"
-  }
-]
-  }
+{
+  "name": "Top Banner Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Banner Image"
+    },
+    {
+      "type": "text",
+      "id": "sub_text",
+      "label": "Banner Sub Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Banner Heading"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Top Banner Section"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}

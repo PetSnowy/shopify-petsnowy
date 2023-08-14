@@ -3,12 +3,29 @@
   <div class="page-width">
     <h2 class="h3 section__intro">{{ section.settings.title }}</h2>
     <picture class="hidden--to-desktop">
-      <img src="{{ section.settings.main_img | img_url: 'master' }}" alt=""loading="lazy" class="img_parallax" style="width: 100%">
+      <img
+        src="{{ section.settings.main_img | img_url: 'master' }}"
+        alt="petsnowy"
+        loading="lazy"
+        class="img_parallax"
+        style="width: 100%"
+      >
     </picture>
     <div class="image_text-main-left hidden--to-mobile">
       <figure>
         <div class="video-wrapper">
-          <video muted="" loop="" playsinline="" autoplay="" decoding="async" loading="lazy" width="640" height="640" src="{{ section.settings.video_link_mobile }}" draggable="true"></video>
+          <video
+            muted=""
+            loop=""
+            playsinline=""
+            autoplay=""
+            decoding="async"
+            loading="lazy"
+            width="640"
+            height="640"
+            src="{{ section.settings.video_link_mobile }}"
+            draggable="true"
+          ></video>
         </div>
       </figure>
     </div>
@@ -16,21 +33,32 @@
       {{ section.settings.main_content }}
     </p>
     <p class="section__meta">
-        <span>
-            {{ section.settings.content1 }}
-        </span>
-		<span>
-			{{ section.settings.content2 }}
-		</span>
-		<span>
-			{{ section.settings.content3 }}
-		</span>
-	</p>
+      <span>
+        {{ section.settings.content1 }}
+      </span>
+      <span>
+        {{ section.settings.content2 }}
+      </span>
+      <span>
+        {{ section.settings.content3 }}
+      </span>
+    </p>
     <div class="image_text-main">
       <div class="image_text-main-left hidden--to-desktop">
         <figure>
           <div class="video-wrapper">
-            <video muted="" loop="" playsinline="" autoplay="" decoding="async" loading="lazy" width="640" height="640" src="{{ section.settings.video_link_desk }}" draggable="true"></video>
+            <video
+              muted=""
+              loop=""
+              playsinline=""
+              autoplay=""
+              decoding="async"
+              loading="lazy"
+              width="640"
+              height="640"
+              src="{{ section.settings.video_link_desk }}"
+              draggable="true"
+            ></video>
           </div>
         </figure>
       </div>
@@ -39,113 +67,121 @@
           <figure>
             <div class="video-wrapper">
               <picture>
-                <img src="{{ section.settings.img_main_desktop | img_url: 'master' }}" class="hidden--to-desktop">
-                <img src="{{ section.settings.img_main_mobile | img_url: 'master' }}" class="hidden--to-mobile">
+                <img
+                  src="{{ section.settings.img_main_desktop | img_url: 'master' }}"
+                  class="hidden--to-desktop"
+                  alt="petsnowy"
+                  loading="lazy"
+                >
+                <img
+                  src="{{ section.settings.img_main_mobile | img_url: 'master' }}"
+                  class="hidden--to-mobile"
+                  alt="petsnowy"
+                  loading="lazy"
+                >
               </picture>
             </div>
           </figure>
         </div>
         <a href="{{ section.settings.url }}" class="a_no_style" data-panel="battery-info" style="background: none">
-            <h3>{{ section.settings.url_title }}</h3>
-            <p>{{ section.settings.url_text }}</p>
-            <span class="cta">
-                Learn more
-            </span>
+          <h3>{{ section.settings.url_title }}</h3>
+          <p>{{ section.settings.url_text }}</p>
+          <span class="cta"> Learn more </span>
         </a>
       </div>
     </div>
   </div>
 </div>
 <script>
-    var image = document.getElementsByClassName('img_parallax');
-new simpleParallax(image, {
-	overflow: true
-});
+  var image = document.getElementsByClassName('img_parallax');
+  new simpleParallax(image, {
+    overflow: true,
+  });
 </script>
 {% schema %}
-  {
-    "name": "product parallax",
-    "settings": [
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Title"
-      },
-      {
-        "type": "image_picker",
-        "id": "main_img",
-        "label": "Image main"
-      },
-      {
-        "type": "header",
-        "content": "mobile video"
-      },
-      {
-        "type": "text",
-        "id": "video_link_mobile",
-        "label": "Video url"
-      },
-      {
-        "type": "textarea",
-        "id": "main_content",
-        "label": "Main content text"
-      },
-      {
-        "type": "textarea",
-        "id": "content1",
-        "label": "Content text1"
-      },
-      {
-        "type": "textarea",
-        "id": "content2",
-        "label": "Content text2"
-      },
-      {
-        "type": "textarea",
-        "id": "content3",
-        "label": "Content text3"
-      },
-      {
-        "type": "header",
-        "content": "desktop video"
-      },
-      {
-        "type": "textarea",
-        "id": "video_link_desk",
-        "label": "Video url"
-      },
-      {
-        "type": "image_picker",
-        "id": "img_main_desktop",
-        "label": "Image main"
-      },
-      {
-        "type": "image_picker",
-        "id": "img_main_mobile",
-        "label": "Image main"
-      },
-      {
-        "type": "url",
-        "id": "url",
-        "label": "Url"
-      },
-      {
-        "type": "text",
-        "id": "url_title",
-        "label": "Url title"
-      },
-      {
-        "type": "textarea",
-        "id": "url_text",
-        "label": "Url text"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Product parallax"
-      }
-    ]
-  }
+{
+  "name": "product parallax",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_img",
+      "label": "Image main"
+    },
+    {
+      "type": "header",
+      "content": "mobile video"
+    },
+    {
+      "type": "text",
+      "id": "video_link_mobile",
+      "label": "Video url"
+    },
+    {
+      "type": "textarea",
+      "id": "main_content",
+      "label": "Main content text"
+    },
+    {
+      "type": "textarea",
+      "id": "content1",
+      "label": "Content text1"
+    },
+    {
+      "type": "textarea",
+      "id": "content2",
+      "label": "Content text2"
+    },
+    {
+      "type": "textarea",
+      "id": "content3",
+      "label": "Content text3"
+    },
+    {
+      "type": "header",
+      "content": "desktop video"
+    },
+    {
+      "type": "textarea",
+      "id": "video_link_desk",
+      "label": "Video url"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_main_desktop",
+      "label": "Image main"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_main_mobile",
+      "label": "Image main"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "Url"
+    },
+    {
+      "type": "text",
+      "id": "url_title",
+      "label": "Url title"
+    },
+    {
+      "type": "textarea",
+      "id": "url_text",
+      "label": "Url text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product parallax"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}

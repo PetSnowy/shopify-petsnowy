@@ -20,66 +20,94 @@
       </div>
     </div>
     <div class="itg_image_textmain">
-      <div class="itg_image_textdata">       
-          <div class="list_data_text hide_mobile_layouts">
-            <h3 data-aos="fade-up" data-aos-duration="800">{{ section.settings.title }}</h3>
-            <div data-aos="fade-up" data-aos-duration="800">{{ section.settings.texts }}</div>
-          </div>   
-         <div class="list_data_text hide_mobile_layouts">
-            <h3 data-aos="fade-up" data-aos-duration="800">{{ section.settings.title1 }}</h3>
-            <div data-aos="fade-up" data-aos-duration="800">{{ section.settings.texts1 }}</div>
-          </div> 
-         <div class="list_data_text hide_mobile_layouts">
-            <h3 data-aos="fade-up" data-aos-duration="800">{{ section.settings.title2 }}</h3>
-            <div data-aos="fade-up" data-aos-duration="800">{{ section.settings.textss2 }}</div>
-        </div> 
+      <div class="itg_image_textdata">
+        <div class="list_data_text hide_mobile_layouts">
+          <h3 data-aos="fade-up" data-aos-duration="800">{{ section.settings.title }}</h3>
+          <div data-aos="fade-up" data-aos-duration="800">{{ section.settings.texts }}</div>
+        </div>
+        <div class="list_data_text hide_mobile_layouts">
+          <h3 data-aos="fade-up" data-aos-duration="800">{{ section.settings.title1 }}</h3>
+          <div data-aos="fade-up" data-aos-duration="800">{{ section.settings.texts1 }}</div>
+        </div>
+        <div class="list_data_text hide_mobile_layouts">
+          <h3 data-aos="fade-up" data-aos-duration="800">{{ section.settings.title2 }}</h3>
+          <div data-aos="fade-up" data-aos-duration="800">{{ section.settings.textss2 }}</div>
+        </div>
       </div>
       <div class="grid_text_main_list">
-        <div class="product_colls_two gutter_div">         
-         {% if section.settings.images2 != blank or section.settings.mobimages2 != blank %}
-            
-            <img class="ctm_desktop_images" src="{{ section.settings.images2 | img_url: 'master' }}">
-             {% if section.settings.mobimages2 != blank %}
-            <img class="ctm_mobile_images" src="{{ section.settings.mobimages2 | img_url: 'master' }}">
+        <div class="product_colls_two gutter_div">
+          {% if section.settings.images2 != blank or section.settings.mobimages2 != blank %}
+            <img
+              class="ctm_desktop_images"
+              src="{{ section.settings.images2 | img_url: 'master' }}"
+              alt="petsnowy"
+              loading="lazy"
+            >
+            {% if section.settings.mobimages2 != blank %}
+              <img
+                class="ctm_mobile_images"
+                src="{{ section.settings.mobimages2 | img_url: 'master' }}"
+                alt="petsnowy"
+                loading="lazy"
+              >
             {% else %}
-            <img class="ctm_mobile_images" src="{{ section.settings.images2 | img_url: 'master' }}">            
-            {% endif %}  
-          
+              <img
+                class="ctm_mobile_images"
+                src="{{ section.settings.images2 | img_url: 'master' }}"
+                alt="petsnowy"
+                loading="lazy"
+              >
+            {% endif %}
+
           {% else %}
-            <video class="grid_replaced_vd" width="100%"  height="100%" muted autoplay playsinline loop>
-            <source src="{{ section.settings.vdioses }}" type="video/mp4">
-            </video>                  
-          {% endif %} 
-           <div class="list_data_text show_mobile_layouts">
+            <video class="grid_replaced_vd" width="100%" height="100%" muted autoplay playsinline loop>
+              <source src="{{ section.settings.vdioses }}" type="video/mp4">
+            </video>
+          {% endif %}
+          <div class="list_data_text show_mobile_layouts">
             <h3 data-aos="fade-up" data-aos-duration="800">{{ section.settings.title }}</h3>
             <div data-aos="fade-up" data-aos-duration="800">{{ section.settings.texts }}</div>
-          </div> 
-            <div class="product_colls_textss">
-              {% if section.settings.im_age != blank or section.settings.mobim_age != blank %}
-                
-              <img class="ctm_desktop_images" src="{{ section.settings.im_age | img_url: 'master' }}">
+          </div>
+          <div class="product_colls_textss">
+            {% if section.settings.im_age != blank or section.settings.mobim_age != blank %}
+              <img
+                class="ctm_desktop_images"
+                src="{{ section.settings.im_age | img_url: 'master' }}"
+                alt="petsnowy"
+                loading="lazy"
+              >
               {% if section.settings.mobim_age != blank %}
-              <img class="ctm_mobile_images" src="{{ section.settings.mobim_age | img_url: 'master' }}">
+                <img
+                  class="ctm_mobile_images"
+                  src="{{ section.settings.mobim_age | img_url: 'master' }}"
+                  alt="petsnowy"
+                  loading="lazy"
+                >
               {% else %}
-              <img class="ctm_mobile_images" src="{{ section.settings.im_age | img_url: 'master' }}">            
-              {% endif %} 
+                <img
+                  class="ctm_mobile_images"
+                  src="{{ section.settings.im_age | img_url: 'master' }}"
+                  alt="petsnowy"
+                  loading="lazy"
+                >
+              {% endif %}
 
-              {% else %}
-                {% if section.settings.vdios != blank %}
-                <video class="grid_replaced_vd" width="100%"  height="100%" muted autoplay playsinline loop>
+            {% else %}
+              {% if section.settings.vdios != blank %}
+                <video class="grid_replaced_vd" width="100%" height="100%" muted autoplay playsinline loop>
                   <source src="{{ section.settings.vdios }}" type="video/mp4">
                 </video>
-                   {% endif %} 
-             {% endif %} 
+              {% endif %}
+            {% endif %}
             <div class="list_data_text show_mobile_layouts">
               <h3 data-aos="fade-up" data-aos-duration="800">{{ section.settings.title1 }}</h3>
               <div data-aos="fade-up" data-aos-duration="800">{{ section.settings.texts1 }}</div>
-            </div> 
-          {% if section.settings.texts2 != blank %}
-           <div data-aos="fade-up" data-aos-duration="800">{{ section.settings.texts2 }}</div>
-          {% endif %}
-            
-          {% if section.settings.titles2 != blank %}
+            </div>
+            {% if section.settings.texts2 != blank %}
+              <div data-aos="fade-up" data-aos-duration="800">{{ section.settings.texts2 }}</div>
+            {% endif %}
+
+            {% if section.settings.titles2 != blank %}
               <h2 data-aos="fade-up" data-aos-duration="800">{{ section.settings.titles2 }}</h2>
               <div data-aos="fade-up" data-aos-duration="800">{{ section.settings.textext }}</div>
               <div class="product_colls_btns">
@@ -88,75 +116,89 @@
                   {%- render 'arrow-right-icon' -%}
                 </a>
               </div>
-             {% endif %}
-            </div>
+            {% endif %}
+          </div>
         </div>
         <div class="product_colls_one gutter_div">
           <a href="{{ section.settings.url2 }}">
             {% if section.settings.image2 != blank or section.settings.mobimage2 != blank %}
-              
-            <img class="ctm_desktop_images" src="{{ section.settings.image2 | img_url: 'master' }}">
-             {% if section.settings.mobimage2 != blank %}
-            <img class="ctm_mobile_images" src="{{ section.settings.mobimage2 | img_url: 'master' }}">
-            {% else %}
-            <img class="ctm_mobile_images" src="{{ section.settings.image2 | img_url: 'master' }}">            
-            {% endif %} 
-            
+              <img
+                class="ctm_desktop_images"
+                src="{{ section.settings.image2 | img_url: 'master' }}"
+                alt="petsnowy"
+                loading="lazy"
+              >
+              {% if section.settings.mobimage2 != blank %}
+                <img
+                  class="ctm_mobile_images"
+                  src="{{ section.settings.mobimage2 | img_url: 'master' }}"
+                  alt="petsnowy"
+                  loading="lazy"
+                >
               {% else %}
-              <video class="grid_replaced_vd" width="100%"  height="100%" muted autoplay playsinline loop>
-              <source src="{{ section.settings.vdio }}" type="video/mp4">
+                <img
+                  class="ctm_mobile_images"
+                  src="{{ section.settings.image2 | img_url: 'master' }}"
+                  alt="petsnowy"
+                  loading="lazy"
+                >
+              {% endif %}
+
+            {% else %}
+              <video class="grid_replaced_vd" width="100%" height="100%" muted autoplay playsinline loop>
+                <source src="{{ section.settings.vdio }}" type="video/mp4">
               </video>
             {% endif %}
           </a>
           <div class="list_data_text show_mobile_layouts">
             <h3 data-aos="fade-up" data-aos-duration="800">{{ section.settings.title2 }}</h3>
             <div data-aos="fade-up" data-aos-duration="800">{{ section.settings.textss2 }}</div>
-          </div> 
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 {% schema %}
-  {
-    "name": "Grid Image Text Section",
-    "settings": [
-     {
+{
+  "name": "Grid Image Text Section",
+  "settings": [
+    {
       "type": "text",
       "id": "title",
       "label": "List Title"
-      },
-      {
+    },
+    {
       "type": "richtext",
       "id": "texts",
       "label": "List Content"
-      },
-     {
+    },
+    {
       "type": "text",
       "id": "title1",
       "label": "List Title Second"
-      },
-      {
+    },
+    {
       "type": "richtext",
       "id": "texts1",
       "label": "List Content Second"
-      },
-     {
+    },
+    {
       "type": "text",
       "id": "title2",
       "label": "List Title Third"
-      },
-      {
+    },
+    {
       "type": "richtext",
       "id": "textss2",
       "label": "List Content Third"
-      },
-      {
+    },
+    {
       "type": "checkbox",
       "id": "flex_data",
       "label": "change Layout Left To Right"
     },
-      {
+    {
       "type": "richtext",
       "id": "richtexxt",
       "label": "content"
@@ -166,16 +208,16 @@
       "id": "images2",
       "label": "Left First Image"
     },
-     {
+    {
       "type": "image_picker",
       "id": "mobimages2",
       "label": "Mobile Left First Image"
     },
     {
-      "type":"url",
-      "id":"vdioses",
-      "label":"Left First Video Link"
-     },  
+      "type": "url",
+      "id": "vdioses",
+      "label": "Left First Video Link"
+    },
     {
       "type": "image_picker",
       "id": "im_age",
@@ -187,11 +229,11 @@
       "label": "Mobile Left Second Imagee"
     },
     {
-      "type":"url",
-      "id":"vdios",
-      "label":"Left Second Video Link"
-     },
-     {
+      "type": "url",
+      "id": "vdios",
+      "label": "Left Second Video Link"
+    },
+    {
       "type": "richtext",
       "id": "texts2",
       "label": "Image Text"
@@ -201,12 +243,12 @@
       "id": "titles2",
       "label": "Title"
     },
-     {
+    {
       "type": "richtext",
       "id": "textext",
       "label": "Text"
     },
-     {
+    {
       "type": "url",
       "id": "urls2",
       "label": "Button Link"
@@ -225,18 +267,18 @@
       "type": "image_picker",
       "id": "mobimage2",
       "label": "Mobile Select Right Image"
-    },  
-    {
-      "type":"url",
-      "id":"vdio",
-      "label":"Right Video Link"
     },
-     {
+    {
+      "type": "url",
+      "id": "vdio",
+      "label": "Right Video Link"
+    },
+    {
       "type": "url",
       "id": "url2",
       "label": "Link"
     },
-      {
+    {
       "type": "range",
       "id": "padding_top",
       "min": 0,
@@ -256,13 +298,13 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
     }
-    ],
-"presets":[
-  {
-     "name": "Grid Image Text Section"
-  }
-]
-  }
+  ],
+  "presets": [
+    {
+      "name": "Grid Image Text Section"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
