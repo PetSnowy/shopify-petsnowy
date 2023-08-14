@@ -394,6 +394,18 @@
       }
       mainTop();
       window.addEventListener('resize', mainTop);
+
+      function handleMonitorVideo() {
+        const videoLink = document.querySelector('.video_link');
+        const screenWidth = window.innerWidth;
+        const deskVideo = videoLink?.querySelector('.desk_video');
+        const moveVideo = videoLink?.querySelector('.mob_video');
+        const moveVideoDeferSrc = moveVideo?.querySelector('source')?.getAttribute('defer-src');
+        const deskVideoDeferSrc = deskVideo?.querySelector('source')?.getAttribute('defer-src');
+        if (screenWidth >= 767 && deskVideo && moveVideo) deskVideo.src = deskVideoDeferSrc;
+        else moveVideo.src = moveVideoDeferSrc;
+      }
+      document.addEventListener('DOMContentLoaded', handleMonitorVideo);
     </script>
 
     {%- render 'ecom_footer' -%}
