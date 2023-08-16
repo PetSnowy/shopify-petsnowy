@@ -584,9 +584,13 @@
                           </div>
 
                           <div class="main_price_compare_arrange">
-                            <span class="price_without_discount"
-                              ><span>$ {{ variantprice_comapre | money_without_currency }}</span></span
-                            >
+                            {% if variantprice_comapre %}
+                              <span
+                                class="price_without_discount"
+                                ><span>$ {{ variantprice_comapre | money_without_currency }}</span></span
+                              >
+                            {% endif %}
+
                             <span class="price_with_discount">
                               <span>{{- variantprice | money -}}</span></span
                             >
@@ -753,10 +757,10 @@
           {% endif %}
 
           <ul class="addons_pagination previous_pagination_addons">
-            <li class="next prv_step_second" data-tab="prv_step_second" data-step="first_step" style="display:none;">
+            <li class="next prv_step_second" data-tab="prv_step_second" data-step="second_step" style="display:none;">
               {% render 'icon-arrow' %} Previous step
             </li>
-            <li class="next prv_step_fourth" data-tab="prv_step_fourth" data-step="second_step" style="display:none;">
+            <li class="next prv_step_fourth" data-tab="prv_step_fourth" data-step="fourth_step" style="display:none;">
               {% render 'icon-arrow' %} Previous step
             </li>
           </ul>
@@ -797,6 +801,8 @@
         error: function (error) {
           clear();
         },
+      }).then(() => {
+        $('span.final_order_loader').hide();
       });
 
       function clear() {
@@ -833,10 +839,6 @@
     $(document).on('click', '.next_four.fourth_step', function () {
       $(document).find('span.final_order_loader').show();
       $(document).find('span.final_order_texts').hide();
-
-      setTimeout(function () {
-        $('span.final_order_loader').hide();
-      }, 8000);
     });
   });
 </script>
@@ -1047,7 +1049,7 @@
     background: #fff;
     padding: 20px;
     position: relative;
-    height: 100vh;
+    height: calc(100vh - var(--main-padding-top));
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -1336,13 +1338,7 @@
     font-size: 14px;
     text-align: left;
   }
-  .summary_title_align .quantity_addons_summary {
-    width: 20%;
-  }
-  .summary_title_align span {
-    width: 20%;
-    text-align: right;
-  }
+
   .summary_title_align .quantity_addons_summary quantity-input.quantity {
     width: calc(12rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
   }
@@ -1478,6 +1474,7 @@
   }
   .second_addons_qty .summary_title_align {
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
   .add_descriptions {
     line-height: 1.5;
@@ -1501,6 +1498,7 @@
   .summary_list_products h3,
   ul.summary_productlist.second_addons h3 {
     margin: 0;
+    width: 190px;
   }
   .main_product_summary ul {
     padding: 0;
@@ -1530,9 +1528,6 @@
     font-size: 13px;
     text-decoration: line-through;
   }
-  span.price_without_discount {
-    margin-right: 5px;
-  }
   .quantity_main_product_summary input {
     display: block;
   }
@@ -1549,8 +1544,7 @@
     position: relative;
   }
   span.final_order_loader svg {
-    position: absolute;
-    left: 45%;
+    text-align: center;
     -webkit-animation: rotating 2s linear infinite;
   }
   @-webkit-keyframes rotating {
@@ -1596,8 +1590,9 @@
   .main_price_compare_arrange {
     display: flex;
     flex-wrap: wrap;
-    width: 40%;
-    justify-content: space-evenly;
+    width: 140px;
+    justify-content: space-around;
+    align-items: center;
   }
   .replace_product_main .price_title_align h3 {
     width: 190px;
@@ -1805,7 +1800,6 @@
       min-height: calc((var(--inputs-border-width) * 2) + 3.5rem);
     }
     .summary_title_align h3 {
-      width: 50%;
       font-size: 12px;
       margin: 0;
     }
@@ -1883,7 +1877,7 @@
       text-align: left;
     }
     ul.summary_productlist.second_addons li.add_list_product.second_addons_qty .summary_title_align h3 {
-      width: 100%;
+      width: 250px;
     }
     ul.summary_productlist.second_addons .second_addons_qty .summary_title_align {
       justify-content: space-between;
@@ -1962,6 +1956,14 @@
     .replace_product_main .add_descriptions h3 {
       font-size: 12px !important;
       margin-bottom: 5px;
+    }
+    #final_order {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #final_order .final_order_loader {
+      height: 24px;
     }
   }
 </style>
