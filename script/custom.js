@@ -1,5 +1,15 @@
 $(document).ready(function () {
 
+	function debounce(func, delay) {
+		let timeoutId;
+		return function () {
+			clearTimeout(timeoutId);
+			timeoutId = setTimeout(() => {
+				func.apply(this, arguments);
+			}, delay);
+		};
+	}
+
 	$(".slide_arrow svg").click(function () {
 		document.querySelectorAll('.banner')[0].scrollIntoView({ behavior: "smooth", block: "center" })
 	});
@@ -566,7 +576,7 @@ $(document).ready(function () {
 
 	$(document).on("click", "#edit_step-nav-trigger", function () {
 		var match_contain = 'first_step';
-		// $(document).find(".tab_buttons button").removeClass('active');
+
 		$(document).find("#btn_change_product").click();
 		$(".tab_buttons .tablinks").each(function () {
 			var step_content = $(this).attr('data-tab');
@@ -586,38 +596,33 @@ $(document).ready(function () {
 
 	});
 
-
+	function activeItem(thisIndex) {
+		$('.tab_buttons .tablinks').removeClass('active');
+		$('.tab_buttons .tablinks').each((index, item) => {
+			if (index <= thisIndex) $(item).addClass('active');
+		})
+	}
 
 	$(document).on("click", "ul.previous_pagination_addons li.next", function () {
 		var match_text = '';
 		var ths_text = $(this).attr('data-tab');
+
+		if (ths_text == 'prv_step_second') {
+			$(document).find("li.next").hide();
+			$(document).find("li.next_four").hide();
+			$(document).find("li.first_step").show();
+			match_text = $(document).find("li.next.prv_step_second").attr('data-step');
+		}
+
 		if (ths_text == 'prv_step_fourth') {
 			$(document).find("li.next").hide();
 			$(document).find("li.second_step").show();
 			$(document).find("li.prv_step_second").show();
 			$(document).find("li.next_four").hide();
-			var match_text = $(document).find("li.next.prv_step_fourth").attr('data-step');
+			match_text = $(document).find("li.next.prv_step_fourth").attr('data-step');
 		}
-		if (ths_text == 'prv_step_second') {
-			$(document).find("li.next").hide();
-			$(document).find("li.next_four").hide();
-			$(document).find("li.first_step").show();
-			var match_text = $(document).find("li.next.prv_step_second").attr('data-step');
-		}
-		$(".tab_button_contents .tabcontent").each(function () {
-			var step_content = $(this).attr('data-content');
-			if (step_content == match_text) {
-				$(this).show();
-			} else {
-				$(this).hide();
-			}
-		});
-		$(".tab_buttons .tablinks").each(function () {
-			var step_content = $(this).attr('data-tab');
-			if (step_content == match_text) {
-				$(this).addClass('active');
-			}
-		});
+		$(".tab_button_contents .tabcontent").hide().eq($(this).index()).show()
+		activeItem($(this).index())
 
 	});
 
@@ -660,8 +665,9 @@ $(document).ready(function () {
 	$(document).on("click", ".tab_buttons .tablinks", function () {
 
 		var this_step = $(this).attr('data-tab');
+		const thisIndex = $(this).index();
+		activeItem(thisIndex)
 
-		$(this).addClass('active');
 		$(".tab_button_contents .tabcontent").each(function () {
 			var step_content = $(this).attr('data-content');
 			if (step_content == this_step) {
@@ -681,7 +687,6 @@ $(document).ready(function () {
 
 
 		if (this_step != 'first_step') {
-
 			if (this_step == 'fourth_step') {
 				$(document).find("li.prv_step_fourth").show();
 			} else {
@@ -795,10 +800,7 @@ $(document).ready(function () {
 		});
 	});
 
-
-	//Custom_addToCart
-	$(document).on("click", "ul.addons_pagination li#final_order", function () {
-
+	function addToCart() {
 		localStorage.removeItem("product_handle");
 		localStorage.removeItem("addons_data");
 		var urlParams = new URLSearchParams(window.location.search);
@@ -824,12 +826,7 @@ $(document).ready(function () {
 			available_ids.push(toPushItem);
 		});
 
-
-		//alert(available_ids.length);
-		console.log(available_ids);
-
 		if (available_ids.length == 0) {
-
 			var dataarr = {
 				"id": main_cart_product,
 				"quantity": mina_qty,
@@ -843,13 +840,10 @@ $(document).ready(function () {
 					window.location.href = '/checkout';
 				}
 			});
-
 		} else {
-
 			for (var i = 0; i < available_ids.length; i++) {
 				(function (i) {
 					setTimeout(function () {
-
 						var formContents = available_ids[i].split('-');
 						var params = {
 							type: 'POST',
@@ -882,11 +876,10 @@ $(document).ready(function () {
 					}, 1000 * i);
 				}(i));
 			}
-
 		}
-
-	});
-
+	}
+	//Custom_addToCart
+	$(document).on("click", "ul.addons_pagination li#final_order", debounce(addToCart, 1000))
 });
 
 

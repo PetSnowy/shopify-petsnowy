@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "shopify theme serve",
-    "dev": "shopify theme dev",
+    "dev": "shopify theme dev --host localhost --live-reload full-page",
     "gulp": "gulp",
     "login": "shopify login --store=petsnowy.myshopify.com",
     "theme": "shopify theme dev --store petsnowy.myshopify.com",
@@ -21,7 +21,7 @@
     "url": "https://github.com/ddz2456820347/shopify-petsnowy/issues"
   },
   "homepage": "https://github.com/ddz2456820347/shopify-petsnowy#readme",
-	"devDependencies": {
+  "devDependencies": {
     "autoprefixer": "^10.4.14",
     "cssnano": "^6.0.1",
     "eslint": "^8.45.0",

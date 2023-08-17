@@ -1,0 +1,50 @@
+@import "pxToVw.scss";
+
+%main-style {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #e8ebed;
+  stroke: #89949b;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.me404 {
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  [class*="st"] {
+    @extend %main-style;
+  }
+  .st0 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #e8ebed;
+  }
+  .st2 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #dbdfe1;
+  }
+  path {
+    &::after,
+    &::before {
+      stroke: #89949b;
+    }
+  }
+  #tetris_stroke,
+  [id*="number"] {
+    fill: #e8ebed;
+  }
+}
+@media screen and (max-width: 900px) {
+  .me404 {
+    height: auto;
+    width: 100%;
+  }
+  .title {
+    font-size: vw(40px);
+  }
+}

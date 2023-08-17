@@ -55,7 +55,6 @@
     {% render 'meta-tags' %}
     <script src="{{ 'jquery.min.js' | asset_url }}"></script>
     <script src="{{ 'global.js' | asset_url }}" defer></script>
-    <script src="{{ 'scroll_parachute.js' | asset_url }}"></script>
     <script src="{{ 'aos-animation.js' | asset_url }}"></script>
     <script src="{{ 'custom.js' | asset_url }}"></script>
     <script src=" {{'owl.carousel.min.js' | asset_url }}"></script>
@@ -402,10 +401,22 @@
         const moveVideo = videoLink?.querySelector('.mob_video');
         const moveVideoDeferSrc = moveVideo?.querySelector('source')?.getAttribute('defer-src');
         const deskVideoDeferSrc = deskVideo?.querySelector('source')?.getAttribute('defer-src');
-        if (screenWidth >= 767 && deskVideo && moveVideo) deskVideo.src = deskVideoDeferSrc;
-        else moveVideo.src = moveVideoDeferSrc;
+        if (!(deskVideo && moveVideo && moveVideoDeferSrc && deskVideoDeferSrc)) {
+          return;
+        }
+        if (screenWidth >= 767) {
+          deskVideo.src = deskVideoDeferSrc;
+        } else {
+          moveVideo.src = moveVideoDeferSrc;
+        }
       }
       document.addEventListener('DOMContentLoaded', handleMonitorVideo);
+
+      window.onload = () => {
+        const footerHeight = document.querySelector('footer').offsetHeight;
+        const screenHeight = window.innerHeight;
+        $('main').css('min-height', `${screenHeight - footerHeight}px`);
+      };
     </script>
 
     {%- render 'ecom_footer' -%}
