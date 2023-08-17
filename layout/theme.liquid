@@ -412,6 +412,12 @@
         }
       }
       document.addEventListener('DOMContentLoaded', handleMonitorVideo);
+
+      window.onload = () => {
+        const footerHeight = document.querySelector('footer').offsetHeight;
+        const screenHeight = window.innerHeight;
+        $('main').css('min-height', `${screenHeight - footerHeight}px`);
+      };
     </script>
 
     {%- render 'ecom_footer' -%}
