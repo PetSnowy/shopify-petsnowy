@@ -1386,6 +1386,12 @@
     border-radius: 50px;
     grid-gap: 5px;
   }
+  ul.addons_pagination li.next svg {
+    transition: all 0.3s ease;
+  }
+  ul.addons_pagination li.next:hover svg {
+    transform: translate(5px);
+  }
   ul.addons_pagination li.next_four {
     display: inline-block;
     justify-content: center;
@@ -1536,6 +1542,9 @@
   }
   ul.addons_pagination.previous_pagination_addons li svg {
     transform: rotate(180deg);
+  }
+  ul.addons_pagination.previous_pagination_addons li:hover svg {
+    transform: rotate(180deg) translateX(5px);
   }
   span.final_order_loader {
     display: none;
@@ -1816,7 +1825,6 @@
     ul.summary_productlist.second_addons .second_addons_qty .summary_title_align span {
       text-align: right;
     }
-		ul.summary_productlist.second_addons .summary_title_align h3,
     .main_product_summary .price_title_align h3 {
       width: 50%;
       font-size: 12px;

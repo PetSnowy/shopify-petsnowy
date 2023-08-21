@@ -2205,6 +2205,9 @@ input[type="checkbox"] {
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
 }
+sticky-header.Index {
+  border: none;
+}
 
 @media screen and (min-width: 990px) {
   .header--top-left,
@@ -5105,6 +5108,32 @@ label.productlabel_info,
       & > div:nth-child(2) {
         padding: 0px !important;
       }
+    }
+  }
+}
+$item: 5;
+@media screen and (min-width: 901px) {
+  #HeaderMenu-MenuList-1 {
+    overflow: hidden;
+    li {
+      opacity: 0;
+    }
+  }
+  nav.header__inline-menu #Details-HeaderMenu-1[open] #HeaderMenu-MenuList-1 {
+    @for $i from 1 through $item {
+      li:nth-child(#{$i}) {
+        animation: unfold 0.4s ease-in-out #{$i * 0.05}s forwards;
+      }
+    }
+  }
+  @keyframes unfold {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }
