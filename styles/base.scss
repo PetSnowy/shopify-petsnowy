@@ -2541,8 +2541,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 }
 
 details[open] > .header__submenu {
-  animation: animateMenuOpen var(--duration-default) ease;
-  animation-fill-mode: forwards;
+  animation: animateMenuOpen var(--duration-default) ease forwards;
   z-index: 1;
 }
 
