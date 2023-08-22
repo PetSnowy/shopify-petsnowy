@@ -414,12 +414,11 @@
           moveVideo.src = moveVideoDeferSrc;
         }
       }
-      document.addEventListener('load', handleMonitorVideo,{ passive: true });
-
       window.onload = () => {
         const footerHeight = document.querySelector('footer').offsetHeight;
         const screenHeight = window.innerHeight;
         $('main').css('min-height', `${screenHeight - footerHeight}px`);
+        handleMonitorVideo();
       };
     </script>
 
