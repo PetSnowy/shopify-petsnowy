@@ -2277,11 +2277,6 @@ sticky-header.Index {
   color: rgba(var(--color-foreground), 0.75);
 }
 
-.header__heading-logo {
-  height: auto;
-  width: 100%;
-}
-
 @media screen and (max-width: 989px) {
   .header__heading,
   .header__heading-link {
@@ -5108,6 +5103,10 @@ label.productlabel_info,
         padding: 0px !important;
       }
     }
+  }
+  .header__heading-logo {
+    width: vw(400px);
+    height: vw(70px);
   }
 }
 $item: 5;
