@@ -56,7 +56,8 @@ $(document).ready(function () {
 			onCloseButtonClick(e)
 			target.classList.remove('overflow-hidden-tablet')
 		}
-		document.querySelector('.footer__blocks-wrapper').scrollIntoView({ behavior: "smooth", block: "end" })
+		// document.querySelector('.footer__blocks-wrapper').scrollIntoView({ behavior: "smooth", block: "end" })
+		window.location.assign('/pages/contact')
 	});
 
 
