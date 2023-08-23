@@ -880,7 +880,7 @@ $(document).ready(function () {
 		}
 	}
 	//Custom_addToCart
-	$(document).on("click", "ul.addons_pagination li#final_order", debounce(addToCart, 1000))
+	// $(document).on("click", "ul.addons_pagination li#final_order", debounce(addToCart, 1000))
 });
 
 
