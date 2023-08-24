@@ -414,339 +414,339 @@
         "sub_txt": ""
       }
     },
-    "d3417dcc-4273-4f4f-99e1-69fcfdaf27b7": {
+    "d00b9c9c-c8c3-4ba5-9551-72ac250bf1cd": {
       "type": "Q-and-A",
       "blocks": {
-        "fbac89fa-8000-4a4b-87e9-0ec1db7a9ca1": {
+        "fc0dd051-0298-4a0a-8604-9dde3d960311": {
           "type": "title",
           "settings": {
             "h2": "Resolving Weight-related Issues and Troubleshooting Steps"
           }
         },
-        "6b4de8e0-4795-4938-9af0-a03df30824eb": {
+        "ca33edf0-9f0f-4344-bdd8-c0831e840619": {
           "type": "block",
           "settings": {
             "h3": "Q: How can I reset or clear the weight onthe device?",
             "text": "<p>A: To reset or clear the device's weight, press the \"R\" key on the control panel. When you have added litter to the globe and the device returns to the initial position, press the reset key on the control panel. The three key indicator lights on the control panel will flash three times to indicate a successful reset.<\/p>"
           }
         },
-        "2891e5e3-e0b3-4c5a-8344-5ead373214ca": {
+        "a2d1dd24-3815-4d81-8882-34e2dc7e5b34": {
           "type": "block",
           "settings": {
             "h3": "Q:What should I do if the weight deviation is significant?",
             "text": "<p>A: If the weight deviation is significant<br\/>(greater than 400 grams), please perform the following troubleshooting steps:<\/p><p>1. Provide the device ID number.<\/p><p>2. Compare the weight reported by the device with the weight recorded in the app's<br\/>work log. If these two data points do not match, it's likely an issue with the application. Please take a screenshot of both data and email it to us.<\/p><p>3. Compare the weight reported by the device with the weight recorded in the app's work log. If these two data points match, it is likely that the device itself is detecting the weight inaccurately. Further investigation will be needed on the device side using the provided troubleshooting steps.<\/p>"
           }
         },
-        "347baaa1-ec52-4b60-b4c9-47f640f50f6f": {
+        "13b18005-3aac-43f3-9535-2be6bbd230fb": {
           "type": "block",
           "settings": {
             "h3": "Q: How can I test if the pressure sensorsare functioning properly?",
             "text": "<p>A: To test the pressure sensors, follow these instructions:<\/p><p>1.Ensure there are no foreign objects at the bottom of the cat litter box and that it is placed on a flat surface, not a carpet. No items should be placed at<br\/>the back or sides.<\/p><p>2. Check that the cat litter box indicator light is on and not flashing, indicating that it is in standby mode. The color should be white, green, or blue.<\/p><p>3. Place an unopened bag of cat litter or cat food on top of the cat litter box for at least 15 seconds. During this time, check if the app shows that the pet is in a toileting state.<\/p><p>4. After 15 seconds, remove the weight. Check if the app shows that the pet has gone to the toilet, the duration of the toilet time, and the pet's weight (xxxg).<\/p><p>5. Compare the pet's weight displayed in the app with the weight of the object placed. If they are roughly the same, it means the pressure sensor is working correctly.<\/p>"
           }
         },
-        "54e3faab-3478-445f-b7f5-ba1850505197": {
+        "06d48576-91d7-4b42-a276-cf4c290b2a76": {
           "type": "block",
           "settings": {
             "h3": "Q: Can I adjust the cat weight on themessage panel?",
             "text": "<p>A: Yes, you can adjust the cat weight on the message panel. Please follow the instructions provided in the message panel to make any necessary adjustments.<\/p>"
           }
         },
-        "e9c14ea5-1494-48b3-bf9d-1807da1916f1": {
+        "573aae1b-0f88-47d8-9739-ac2d18a2c562": {
           "type": "block",
           "settings": {
             "h3": "Q: What should I do if the weight readingson the device have significant deviations (>400 grams)?",
             "text": "<p>A: If the weight readings on the device have significant deviations, we recommend taking the following steps:<\/p><p>1.  Please send us a photo of the floor where the device is<br\/>placed. This will help us confirm if the surface is level, as an uneven surface can affect the accuracy of the weight readings<\/p><p>2. Please let us know the device's PID (Product ID) and production batch information. This information allows us to identify the specific device and refer the issue to our technical team for further assistance<\/p>"
           }
         },
-        "68ffc2ff-5f43-4259-8e92-b10f3ac06225": {
+        "a656afca-2799-428b-96e8-ded3f9dc0f26": {
           "type": "title",
           "settings": {
             "h2": "Device Not Sensing the Cat"
           }
         },
-        "769eae55-6d45-46c2-b5a6-f05c77e652d8": {
+        "f9cdc908-16a4-43ae-b613-153f1ad225e0": {
           "type": "block",
           "settings": {
             "h3": "Q:The device is not sensing the cat. Are there any troubleshooting steps I cantry?",
             "text": "<p>A: Yes, here are some steps you can follow to troubleshoot the issue:<\/p><p>1. Move the device slightly: Sometimes,<br\/>poor sensor contact can cause issues. Try moving the device a little and see if it starts working properly.<\/p><p>2. Power off and restart: Turn off the device completely and then turn it back on. This can help reset any temporary glitches or errors.<\/p><p>3. Reset the device to factory settings: If the problem persists after restarting, you can try resetting the device to its factory settings. To do this, press and hold the reset button. While still<br\/>holding the reset button, unplug the power cord and then plug it back in. Finally, release the reset button. This should restore the device to its original settings<\/p>"
           }
         },
-        "ad047007-c19a-443b-a0cb-0e8fd95e4031": {
+        "540c3b68-55cf-4f93-96bd-5592013d906e": {
           "type": "title",
           "settings": {
             "h2": "Understanding Weight Detection and Variations on theDevice"
           }
         },
-        "c0f55f06-9150-43d7-a692-d7381f33dbcb": {
+        "7ec20ba3-d423-43b3-9b4f-8610e4e7e136": {
           "type": "block",
           "settings": {
             "h3": "Q: How does the device detect weight?",
             "text": "<p>A: The device uses four weight sensors in the base to detect changes in weight. These sensors are located within four feet of the device's base and can only detect changes in weight due to gravity.<\/p>"
           }
         },
-        "a8209bca-83e1-4a83-b49f-79d1f8dd5a31": {
+        "24fdb026-53a7-4eb6-912b-1690b492ca90": {
           "type": "block",
           "settings": {
             "h3": "Q: Why do the weight readings on the devicediffer?",
             "text": "<p>A: There are several reasons for<br\/>inconsistent weight readings on the device, including having multiple cats inside the litter box, partial weight of cats, cats in different positions inside the litter box, and variations in which part of the device is touched. These factors can lead to variations in weight readings.<\/p>"
           }
         },
-        "f95aaafc-5d11-4117-8200-115da82cb9a2": {
+        "4b700c9c-1d7b-47f3-bfe5-930c02baf71d": {
           "type": "block",
           "settings": {
             "h3": "Q: Can the device differentiate betweendifferent positions of the cat inside the litter box?",
             "text": "<p>A: No, the device cannot differentiate between different positions of the cat inside the litter box. The weight sensors detect changes in the overall weight of the device, but cannot determine the specific location of the cat within the litter box.<\/p>"
           }
         },
-        "c7bf1021-1f4a-4ad7-af2a-389c4ceddd23": {
+        "9c4f2c3e-95ad-4902-a90a-3df10f12f6e3": {
           "type": "block",
           "settings": {
             "h3": "Q:How does the device ensure the safety of the cat?",
             "text": "<p>A: During development, the device was designed to stop spinning its motor whenever there is a change in weight detected. This safety feature protects the cat from potential harm.<\/p>"
           }
         },
-        "7643e747-dc61-44df-91b4-a5957c2d582c": {
+        "b41fab32-c82b-4bab-bb1b-8d1df46f7109": {
           "type": "block",
           "settings": {
             "h3": "Q: Can the device differentiate betweenwhere the cat is located (top cover, inside the globe, or poking a paw)?",
             "text": "<p>A: No, the sensors can only detect changes in the overall weight of the device and cannot differentiate between specific locations of the cat within the litter box.<\/p>"
           }
         },
-        "3f052a6e-06c9-48f0-8273-ce4d1985f2fa": {
+        "046cd936-e4f9-4ecf-9bac-dd3c625d5730": {
           "type": "title",
           "settings": {
             "h2": "Cat Detected Inside Device When None Entered"
           }
         },
-        "2f6362b0-c2f5-4aa7-93f8-bcdf9f4a963e": {
+        "5bef6b69-8145-4b1d-9afa-e5ec5e45e42e": {
           "type": "block",
           "settings": {
             "h3": "Q: The app claims that a cat has beeninside the device for an extended period, but no cat has entered. How can I fixthis?",
             "text": "<p>A: If the app displays a message indicating that the cat has been in the device too long, even when no cat has entered, please try the following:<\/p><p>- Reset the weight by pressing the R (reset) key.<\/p><p>- The blue-green flashing on the device indicates that you added cat litter and an object triggered the gravity sensor, making it appear as if a cat entered the device. The cloud light will show blue-green flashing as a result.<\/p>"
           }
         },
-        "1ce526e8-cbf3-4b19-845b-a4955a68e5a5": {
+        "fa455698-7959-429a-b1d7-62e6f2aef960": {
           "type": "title",
           "settings": {
             "h2": "Addressing Concerns about False Notifications from theDevice"
           }
         },
-        "0725cdd0-1e5e-404c-8d62-960d2b4a6029": {
+        "983313d2-7df4-4d18-b5aa-1e5b16ef4816": {
           "type": "block",
           "settings": {
             "h3": "Q:Why am I receiving notifications when my cats are not actually using the litterbox?",
             "text": "<p>A: The device uses weight sensors in the base to detect objects or cats near or on top of the device. However, the sensors can only detect changes in weight due to gravity and cannot<br\/>differentiate between where the cat is located (top cover, inside the globe, or poking a paw into the device). This may lead to notifications being triggered<br\/>even when the cat is not actively using the litter box.<\/p>"
           }
         },
-        "19bc8258-d19a-4528-9506-95db903da05c": {
+        "439543d4-aa07-46fd-b427-96ef22de8453": {
           "type": "block",
           "settings": {
             "h3": "Q:How can I reduce the number of notifications I receive?",
             "text": "<p>A: You can disable the notification option within<br\/>the app to reduce the number of notifications you receive. This will prevent<br\/>you from receiving notifications about your cat's activity in the litter box.<\/p>"
           }
         },
-        "18f0d3ae-dd59-4f90-a3d7-a37efce39dc3": {
+        "e7c69737-e78b-47bf-8d15-3a315cf4eb87": {
           "type": "title",
           "settings": {
             "h2": "Inactive Inner Globe during Cleaning Mode"
           }
         },
-        "319b432b-6962-48a1-ac19-95f68ee84df9": {
+        "ae1a6c9b-7993-4923-a7f6-a54629cdca39": {
           "type": "block",
           "settings": {
             "h3": "Q: The device is in cleaning mode accordingto the app, but the inner globe is not rotating. What should I do?",
             "text": "<p>A: If the device blinks white light and is in the cleaning state, but the inner globe is not turning, please try the following: <\/p><p>- Take off the top cover and remove the ball compartment.<\/p><p>- Put the top cover back on and try cleaning again to see if the internal gears can rotate. <\/p>"
           }
         },
-        "193e0707-4935-4ed3-a1dd-c5e1656b073d": {
+        "e65365cd-61e4-49a7-bd69-c61b267a6251": {
           "type": "title",
           "settings": {
             "h2": "Device Inactivity during Cleaning Mode"
           }
         },
-        "25d83773-9bf7-4981-90b6-70959f9ed712": {
+        "5742b94d-e0de-4907-aa49-b59b0cf1ea68": {
           "type": "block",
           "settings": {
             "h3": "Q: The device is blinking green and blue,indicating it's in cleaning mode according to the app, but there is noactivity. What should I do?",
             "text": "<p>A: If the device is blinking green and blue, indicating that it's cleaning, but no action is taking place, please try the following:<\/p><p>- Cut off the power supply to the device.<\/p><p>- Delete the device in the application (no need to uninstall the application).<\/p><p>-Reconnect the device to the power supply and wait for it to complete self-checking (indicated by a solid white light on the cloud light after 3 minutes).<\/p><p>- Re-pair the device in the application. Please send us an email to inform us of the outcome after performing these steps. If the issue persists, please take a screenshot of the Device Information page, including the Virtual ID, and send it to us for further assistance. We will investigate the device's historical<br\/>records through the background.<\/p>"
           }
         },
-        "8e889ab1-a5ae-452f-8c7c-0052ae3e3752": {
+        "dd61421d-f25e-4cb1-8b9d-c1add5ae7998": {
           "type": "title",
           "settings": {
             "h2": "Red Blinking Light on Device"
           }
         },
-        "1a98df0a-514d-4c58-86bd-95af15a953b1": {
+        "0f202509-2400-436d-9050-6f1d203bd76b": {
           "type": "block",
           "settings": {
             "h3": "Q:What could be causing the red blinking light on the litterbox, despiteeverything being in place?",
             "text": "<p>A: Regarding the red flashing light, here are some possibilities to consider:<\/p><p>1. If you purchased the DELUXE version with two adapter sockets, please ensure that you are using the correct socket for the litter box and feeder.<\/p><p>2. Kindly check if a magnet has been installed. If so, try using a magnet to touch the designated area indicated in the image provided. This will help troubleshoot any contact problem between the top cover and the base. If the cloud light<br\/>changes from a red flashing light to a white light, it indicates a problem with the contact between the top cover magnet and the base. If the cloud light<br\/>continues to flash red, it may indicate a problem with the b<\/p>"
           }
         },
-        "25b0bc12-8594-436b-a348-9224d99c63b9": {
+        "4b166ac7-9aa5-4066-8120-b04b30b4c891": {
           "type": "title",
           "settings": {
             "h2": "Waste Drawer Displaced Error"
           }
         },
-        "fecdce9e-acc0-4106-8ea8-330d0f362c6f": {
+        "7491a231-e8ce-469f-a17d-6c72946eebc0": {
           "type": "block",
           "settings": {
             "h3": "Q:Why does the app notify me that the waste drawer is installed incorrectly?",
             "text": "<p>A: There are a few possible reasons for this notification. Here are some troubleshooting steps you can try:<\/p><p>1. Check the liner position: Ensure that the liner is placed completely flat in the globe. If the liner is not in a flat position, it may accidentally touch the sensors and trigger a false alarm. Adjust the liner to make sure it is flat and properly positioned.<\/p><p>2. Clean the sensors: The sensors that control the waste drawer may become dirty over<br\/>time, which can interfere with proper installation detection. Refer to the provided picture that shows the sensor locations. You can gently wipe the sensors to make sure they are clean and free from any debris<\/p><p>3. Replace the liner: If the issue persists, try taking out the old liner and replacing it with a new one. Some customers have resolved the problem by switching to a new liner. This can help ensure proper installation and alignment with the sensors<\/p>"
           }
         },
-        "2aba52ae-ffe4-4851-93e3-df58b8691cb3": {
+        "fa82cdde-b08c-480e-934d-95e88d8a0d58": {
           "type": "block",
           "settings": {
             "h3": "Q: How can I fix the persistent error message\"Waste drawer displaced SNOW+ self-cleaning Litter Box: Examination isrequired\" after trying different methods to install the waste drawercorrectly?",
             "text": "<p>A: If there is a suspicion that the infrared detection module is faulty or damaged, kindly send us an email with a video or picture demonstrating the issue. Should the module be confirmed as defective, we will happily replace your product free of charge.<\/p>"
           }
         },
-        "2c4615bd-78b5-4557-9c55-ca9b45d9a045": {
+        "e3f1776d-d4ed-4f5d-be86-a52b5364baeb": {
           "type": "title",
           "settings": {
             "h2": "Device Recognition of Cats Weighing Less Than 3.3 lbs"
           }
         },
-        "3d0132c7-9f6a-4450-8750-e72f9f4b2fb2": {
+        "84a0be80-3684-4841-aa80-b8d4f90c3bd0": {
           "type": "block",
           "settings": {
             "h3": "Q: Why doesn't my device recognize catsthat weigh less than 1.5 kg?",
             "text": "<p>A: The device may not be able to detect cats that are too light due to their weight. To troubleshoot this issue, please follow these steps:<\/p><p>1. Turn off the device: Switch off the device and wait for a few moments.<\/p><p>2. Device performs a self-check: Turn on the device again and allow it to perform a self-check for approximately 2 minutes.<\/p><p>3. Test the weighing sensor: After the self-check, place an object weighing more than 1.5 kg on the device. Check if the cloud-shaped indicator light on the control panel changes from white to blue-green flashing alternately. If it does, it means that the device's weighing sensor is working correctly. This suggests that the device was not<br\/>able to detect the cat due to its lightweight. <\/p><p>4. Verify app settings: If the cloud light remains white and cannot recognize the weight, please check if you have enabled the automatic cleaning function in the app on your phone. This setting ensures that the device recognizes and responds accordingly to the cat's weight.<\/p>"
           }
         },
-        "143c0c51-1a6f-44e8-b4c6-88d1d34ab691": {
+        "e245f0e5-0b67-40a7-8058-331e3e1cbd5f": {
           "type": "title",
           "settings": {
             "h2": "Device Offline at Night and Device Not Turning On"
           }
         },
-        "07f20ec7-a8d4-48c9-a657-f44f29618574": {
+        "9442c6d5-2ec1-420e-95d4-5db3cc809df9": {
           "type": "block",
           "settings": {
             "h3": "Q: Why does the device appear offline atnight?",
             "text": "<p>A: The device entering offline standby mode at night is normal behavior. This feature allows the device to conserve power during periods of inactivity.<\/p>"
           }
         },
-        "9cec1807-97b5-42bb-bffa-cf6d1ed983bd": {
+        "03f5abec-1d64-481e-816c-017487882696": {
           "type": "block",
           "settings": {
             "h3": "Q: My device is not turning on. What couldbe the issue?",
             "text": "<p>A: There are a couple of potential causes for this problem:<\/p><p>1. Ambient light setting and child lock: If you turned off the ambient light setting and then enabled the child lock function in the app, it may cause the device to appear as if it is not turning<br\/>on. To resolve this, you can restore the device to its factory settings. Press and hold the reset button, unplug the power cord, then plug it back in while still holding down the reset button. Release the reset button when the process is complete.<\/p><p>2. Power socket or adapter issue: Another possibility is a problem with the power socket or power adapter. Try plugging the device into a different socket and ensure that the power adapter is working properly. Use a power adapter with the same wattage as the original one. Even if you have already tried a different power adapter, it is essential to match<br\/>the wattage to the original adapter.<\/p>"
           }
         },
-        "17a6cec4-9e56-4e98-a3c8-cadafdb4e34c": {
+        "3b569e0e-1b3b-4ac0-900b-506e949176ce": {
           "type": "title",
           "settings": {
             "h2": "Device Frequently Going Offline"
           }
         },
-        "b6b4dd32-820a-4eb7-a589-47a7f31b5757": {
+        "c0747ada-7c2c-4caa-9730-a7c97f1a533d": {
           "type": "block",
           "settings": {
             "h3": "Q: The device goes offline frequently. Howcan I troubleshoot this issue?",
             "text": "<p>A: Here are some troubleshooting steps you can take to address the frequent offline issue:<\/p><p>1. Check network, router, and frequency band: Make sure you are using a stable network connection, a reliable router,<br\/>and an appropriate frequency band for your device. Inquire about the compatibility of your device with the router and frequency band you are using.<\/p><p>2. Evaluate distance and obstacles: Consider the distance between your router and the device. If there are multiple<br\/>walls or obstacles between them, it can weaken the signal and cause frequent disconnections. Try placing the device next to the router for a day and observe if it still disconnects after a few hours. This will help determine if the issue is related to a weak signal. <\/p><p>3. Provide device ID to technicians: Our technicians require the SNOW+ device ID to access the backend data. To locate the device ID, open the litter box device, click on the \"pen\" icon in the top right corner, and select \"DEVICE INFO.\" Kindly share this ID with our support team for further assistance.<\/p>"
           }
         },
-        "a7ca4e2a-ad80-4474-acde-64629e230f99": {
+        "3f5b0950-39aa-4298-b67e-ee8c056e6e46": {
           "type": "title",
           "settings": {
             "h2": "Disclaimer: Important Information and Limitations"
           }
         },
-        "793934df-051e-47e3-a17c-413b4ad4a15d": {
+        "089008ec-e7a7-4c30-ac9d-5592e401d233": {
           "type": "block",
           "settings": {
             "h3": "Q: Is PetSnowyresponsible for any damage or malfunction caused by incorrect use,modification, or maintenance of SNOW+?",
             "text": "<p>A: No, PetSnowy is<br\/>not responsible for any damage or malfunction resulting from incorrect use, modification, or maintenance of SNOW+. This includes installations or repairs conducted by individuals outside of our company.<\/p>"
           }
         },
-        "32927c6f-4da3-4a93-961b-b4c5dd47d09f": {
+        "4b2ef0f5-6d7e-433f-9500-5b5495abd35b": {
           "type": "block",
           "settings": {
             "h3": "Q: What should Ido to ensure the proper use of my SNOW+ product?",
             "text": "<p>A: We strongly recommend following the instructions provided in the user manual and exercising<br\/>caution when handling your automatic cat litter box. It is important to adhere to the guidelines to ensure its safe and efficient operation.<\/p>"
           }
         },
-        "6dcd1e8c-fc47-4c46-bdd5-198ef0721d9c": {
+        "cdc9a230-1dd7-428b-ac4c-106eb21819af": {
           "type": "block",
           "settings": {
             "h3": "Q:What should I do if I encounter any issues with my SNOW+ product or havequestion",
             "text": "<p>A: If you experience any problems or have queries regarding your SNOW+ product, please reach out to our customer support team. They will be happy to assist you and provide the necessary guidance.<\/p>"
           }
         },
-        "da3f7e00-9958-4ab2-9739-c1102341519f": {
+        "a47fdbba-1083-4604-981e-c60aa164446c": {
           "type": "block",
           "settings": {
             "h3": "Q: What isexpected from customers regarding the use and maintenance of SNOW+?",
             "text": "<p>A: Customers are expected to properly use and maintain their SNOW+ product by following the<br\/>instructions provided in the user manual. This includes seeking assistance from our customer support team when needed. By doing so, customers demonstrate their commitment to the safe and effective use of SNOW+.<\/p>"
           }
         },
-        "38413ab4-1d6c-410b-b515-13c46b1dfdbb": {
+        "e62c671e-7824-48db-9ae1-428db032c985": {
           "type": "title",
           "settings": {
             "h2": "Ensuring a Safe Environment for Equipment Use"
           }
         },
-        "9882863c-1db7-4347-9a4b-1d49a2309ae1": {
+        "80c7b3a1-47d8-4028-9301-81245fb87598": {
           "type": "block",
           "settings": {
             "h3": "Q: Can I use SNOW+for purposes other than a cat litter box?",
             "text": "<p>A: No, SNOW+ is intended for use solely as a cat litter box and should not be used for any other purpose.<\/p>"
           }
         },
-        "810ebdac-9223-4592-a8e7-759a29ffbef6": {
+        "4821d9ab-6f8e-4773-9f14-09432299184b": {
           "type": "block",
           "settings": {
             "h3": "Q: Where should Iplace SNOW+ for optimal performance?",
             "text": "<p>A: It is essential to place SNOW+ on a stable, flat surface to ensure proper operation. Avoid soft, uneven, or unstable surfaces. Keep it indoors away from direct sunlight,<br\/>extreme temperatures, and damp environments. Also, leave enough space around the device for the sensor to function effectively, avoiding corners or walls.<\/p>"
           }
         },
-        "7af94f1d-c50f-40e2-9c99-e7a5fc59a153": {
+        "6e599b41-9946-4737-961c-685cf8c1d7ba": {
           "type": "block",
           "settings": {
             "h3": "Q:Can I force my cat to use SNOW+?",
             "text": "<p>A: No, it is crucial to allow your cat to adapt to SNOW+ naturally. Only cats weighing 3 pounds or more can activate the automatic cleaning mode. Forcing your cat into the device can cause fear and resistance, prolonging the adaptation period.<\/p>"
           }
         },
-        "10661415-71e6-4c23-aead-a8c948eb89e8": {
+        "db23b1ca-c65c-47dc-a150-532701c46b49": {
           "type": "block",
           "settings": {
             "h3": "Q: What type ofcat litter should I use with SNOW+?",
             "text": "<p>A: You should use clumping cat litter, litter beads that can be filtered through the screen, or crystal cat litter. Avoid placing any other materials in the device, as they may damage the automatic litter box or pose a risk to your cat.<\/p>"
           }
         },
-        "ed882c45-c120-4114-aad8-128431fbbfa2": {
+        "3bc506a5-02b0-4bcc-affe-c8205b21a60c": {
           "type": "block",
           "settings": {
             "h3": "Q: Are there anyprecautions for children or inexperienced adults using SNOW+?",
             "text": "<p>A: Yes, it is essential to supervise and provide appropriate guidance to children, individuals with disabilities, or inexperienced adults when using, cleaning, or maintaining SNOW+ to ensure their safety.<\/p>"
           }
         },
-        "83bf2092-6d8b-4d7d-b084-97509ab6a130": {
+        "275284d1-c9af-4d0b-a3a4-8a91fb2f1443": {
           "type": "block",
           "settings": {
             "h3": "Q: What should Ido before connecting the power supply to SNOW+?",
             "text": "<p>A: Before connecting the power supply or restarting after a power failure, ensure there are no cats inside the device. Restarting with a cat inside after a power failure can cause the cat's weight to be reset to zero, potentially trapping the cat inside the chamber. It may also startle the cat and cause the top cover to shift.<\/p>"
           }
         },
-        "1cd20e25-6b76-4281-bf0b-9356632e8d35": {
+        "dd0492fa-558e-42cf-8da0-47d4d367f71c": {
           "type": "block",
           "settings": {
             "h3": "Q: Can I touch orremove the top cover while the globe is rotating?",
             "text": "<p>A: No, it is important to avoid touching or removing the top cover while the globe is rotating to prevent injury. If the cover is removed, the device will automatically stop to protect your cat. Ensure the globe is returned to its initial position before starting the device to avoid accidents.<\/p>"
           }
         },
-        "1b5468a7-ea7f-4136-a1f9-dadb81545e34": {
+        "0d4bf62e-81ef-4d5c-a8e1-84c526dcd300": {
           "type": "block",
           "settings": {
             "h3": "Q: How should Ihandle the power supply and cords of SNOW+?",
             "text": "<p>A: Before cleaning or repairing the device, unplug the power cord for safety. Only use the provided external power supply and avoid using any other alternative. Also, prevent pets from biting the power cord to avoid potential hazards.<\/p>"
           }
         },
-        "a69f3123-d971-4774-88db-b930942986d1": {
+        "3741bf06-c8fc-4c05-ae2e-afe90818b8f8": {
           "type": "block",
           "settings": {
             "h3": "Q: Can I clean thecomponents of SNOW+ with water?",
@@ -755,56 +755,453 @@
         }
       },
       "block_order": [
-        "fbac89fa-8000-4a4b-87e9-0ec1db7a9ca1",
-        "6b4de8e0-4795-4938-9af0-a03df30824eb",
-        "2891e5e3-e0b3-4c5a-8344-5ead373214ca",
-        "347baaa1-ec52-4b60-b4c9-47f640f50f6f",
-        "54e3faab-3478-445f-b7f5-ba1850505197",
-        "e9c14ea5-1494-48b3-bf9d-1807da1916f1",
-        "68ffc2ff-5f43-4259-8e92-b10f3ac06225",
-        "769eae55-6d45-46c2-b5a6-f05c77e652d8",
-        "ad047007-c19a-443b-a0cb-0e8fd95e4031",
-        "c0f55f06-9150-43d7-a692-d7381f33dbcb",
-        "a8209bca-83e1-4a83-b49f-79d1f8dd5a31",
-        "f95aaafc-5d11-4117-8200-115da82cb9a2",
-        "c7bf1021-1f4a-4ad7-af2a-389c4ceddd23",
-        "7643e747-dc61-44df-91b4-a5957c2d582c",
-        "3f052a6e-06c9-48f0-8273-ce4d1985f2fa",
-        "2f6362b0-c2f5-4aa7-93f8-bcdf9f4a963e",
-        "1ce526e8-cbf3-4b19-845b-a4955a68e5a5",
-        "0725cdd0-1e5e-404c-8d62-960d2b4a6029",
-        "19bc8258-d19a-4528-9506-95db903da05c",
-        "18f0d3ae-dd59-4f90-a3d7-a37efce39dc3",
-        "319b432b-6962-48a1-ac19-95f68ee84df9",
-        "193e0707-4935-4ed3-a1dd-c5e1656b073d",
-        "25d83773-9bf7-4981-90b6-70959f9ed712",
-        "8e889ab1-a5ae-452f-8c7c-0052ae3e3752",
-        "1a98df0a-514d-4c58-86bd-95af15a953b1",
-        "25b0bc12-8594-436b-a348-9224d99c63b9",
-        "fecdce9e-acc0-4106-8ea8-330d0f362c6f",
-        "2aba52ae-ffe4-4851-93e3-df58b8691cb3",
-        "2c4615bd-78b5-4557-9c55-ca9b45d9a045",
-        "3d0132c7-9f6a-4450-8750-e72f9f4b2fb2",
-        "143c0c51-1a6f-44e8-b4c6-88d1d34ab691",
-        "07f20ec7-a8d4-48c9-a657-f44f29618574",
-        "9cec1807-97b5-42bb-bffa-cf6d1ed983bd",
-        "17a6cec4-9e56-4e98-a3c8-cadafdb4e34c",
-        "b6b4dd32-820a-4eb7-a589-47a7f31b5757",
-        "a7ca4e2a-ad80-4474-acde-64629e230f99",
-        "793934df-051e-47e3-a17c-413b4ad4a15d",
-        "32927c6f-4da3-4a93-961b-b4c5dd47d09f",
-        "6dcd1e8c-fc47-4c46-bdd5-198ef0721d9c",
-        "da3f7e00-9958-4ab2-9739-c1102341519f",
-        "38413ab4-1d6c-410b-b515-13c46b1dfdbb",
-        "9882863c-1db7-4347-9a4b-1d49a2309ae1",
-        "810ebdac-9223-4592-a8e7-759a29ffbef6",
-        "7af94f1d-c50f-40e2-9c99-e7a5fc59a153",
-        "10661415-71e6-4c23-aead-a8c948eb89e8",
-        "ed882c45-c120-4114-aad8-128431fbbfa2",
-        "83bf2092-6d8b-4d7d-b084-97509ab6a130",
-        "1cd20e25-6b76-4281-bf0b-9356632e8d35",
-        "1b5468a7-ea7f-4136-a1f9-dadb81545e34",
-        "a69f3123-d971-4774-88db-b930942986d1"
+        "fc0dd051-0298-4a0a-8604-9dde3d960311",
+        "ca33edf0-9f0f-4344-bdd8-c0831e840619",
+        "a2d1dd24-3815-4d81-8882-34e2dc7e5b34",
+        "13b18005-3aac-43f3-9535-2be6bbd230fb",
+        "06d48576-91d7-4b42-a276-cf4c290b2a76",
+        "573aae1b-0f88-47d8-9739-ac2d18a2c562",
+        "a656afca-2799-428b-96e8-ded3f9dc0f26",
+        "f9cdc908-16a4-43ae-b613-153f1ad225e0",
+        "540c3b68-55cf-4f93-96bd-5592013d906e",
+        "7ec20ba3-d423-43b3-9b4f-8610e4e7e136",
+        "24fdb026-53a7-4eb6-912b-1690b492ca90",
+        "4b700c9c-1d7b-47f3-bfe5-930c02baf71d",
+        "9c4f2c3e-95ad-4902-a90a-3df10f12f6e3",
+        "b41fab32-c82b-4bab-bb1b-8d1df46f7109",
+        "046cd936-e4f9-4ecf-9bac-dd3c625d5730",
+        "5bef6b69-8145-4b1d-9afa-e5ec5e45e42e",
+        "fa455698-7959-429a-b1d7-62e6f2aef960",
+        "983313d2-7df4-4d18-b5aa-1e5b16ef4816",
+        "439543d4-aa07-46fd-b427-96ef22de8453",
+        "e7c69737-e78b-47bf-8d15-3a315cf4eb87",
+        "ae1a6c9b-7993-4923-a7f6-a54629cdca39",
+        "e65365cd-61e4-49a7-bd69-c61b267a6251",
+        "5742b94d-e0de-4907-aa49-b59b0cf1ea68",
+        "dd61421d-f25e-4cb1-8b9d-c1add5ae7998",
+        "0f202509-2400-436d-9050-6f1d203bd76b",
+        "4b166ac7-9aa5-4066-8120-b04b30b4c891",
+        "7491a231-e8ce-469f-a17d-6c72946eebc0",
+        "fa82cdde-b08c-480e-934d-95e88d8a0d58",
+        "e3f1776d-d4ed-4f5d-be86-a52b5364baeb",
+        "84a0be80-3684-4841-aa80-b8d4f90c3bd0",
+        "e245f0e5-0b67-40a7-8058-331e3e1cbd5f",
+        "9442c6d5-2ec1-420e-95d4-5db3cc809df9",
+        "03f5abec-1d64-481e-816c-017487882696",
+        "3b569e0e-1b3b-4ac0-900b-506e949176ce",
+        "c0747ada-7c2c-4caa-9730-a7c97f1a533d",
+        "3f5b0950-39aa-4298-b67e-ee8c056e6e46",
+        "089008ec-e7a7-4c30-ac9d-5592e401d233",
+        "4b2ef0f5-6d7e-433f-9500-5b5495abd35b",
+        "cdc9a230-1dd7-428b-ac4c-106eb21819af",
+        "a47fdbba-1083-4604-981e-c60aa164446c",
+        "e62c671e-7824-48db-9ae1-428db032c985",
+        "80c7b3a1-47d8-4028-9301-81245fb87598",
+        "4821d9ab-6f8e-4773-9f14-09432299184b",
+        "6e599b41-9946-4737-961c-685cf8c1d7ba",
+        "db23b1ca-c65c-47dc-a150-532701c46b49",
+        "3bc506a5-02b0-4bcc-affe-c8205b21a60c",
+        "275284d1-c9af-4d0b-a3a4-8a91fb2f1443",
+        "dd0492fa-558e-42cf-8da0-47d4d367f71c",
+        "0d4bf62e-81ef-4d5c-a8e1-84c526dcd300",
+        "3741bf06-c8fc-4c05-ae2e-afe90818b8f8"
+      ],
+      "settings": {
+        "h1": "Self Cleaning Litter Box",
+        "sub_txt": ""
+      }
+    },
+    "1df691dc-2b87-455f-ab6e-9defe58db07a": {
+      "type": "Q-and-A",
+      "blocks": {
+        "6bd72199-5263-4097-a0da-586dd5c5dc62": {
+          "type": "title",
+          "settings": {
+            "h2": "Resolving Weight-related Issues and Troubleshooting Steps"
+          }
+        },
+        "33a2076d-4d83-45f0-bdf8-7f98a7df7d43": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: How can I reset or clear the weight onthe device?",
+            "text": "<p>A: To reset or clear the device's weight, press the \"R\" key on the control panel. When you have added litter to the globe and the device returns to the initial position, press the reset key on the control panel. The three key indicator lights on the control panel will flash three times to indicate a successful reset.<\/p>"
+          }
+        },
+        "983a0cd0-8899-430a-a072-823b2e623dda": {
+          "type": "block",
+          "settings": {
+            "h3": "Q:What should I do if the weight deviation is significant?",
+            "text": "<p>A: If the weight deviation is significant<br\/>(greater than 400 grams), please perform the following troubleshooting steps:<\/p><p>1. Provide the device ID number.<\/p><p>2. Compare the weight reported by the device with the weight recorded in the app's<br\/>work log. If these two data points do not match, it's likely an issue with the application. Please take a screenshot of both data and email it to us.<\/p><p>3. Compare the weight reported by the device with the weight recorded in the app's work log. If these two data points match, it is likely that the device itself is detecting the weight inaccurately. Further investigation will be needed on the device side using the provided troubleshooting steps.<\/p>"
+          }
+        },
+        "398f5e0a-c6aa-445c-a3f6-a22523ff0890": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: How can I test if the pressure sensorsare functioning properly?",
+            "text": "<p>A: To test the pressure sensors, follow these instructions:<\/p><p>1.Ensure there are no foreign objects at the bottom of the cat litter box and that it is placed on a flat surface, not a carpet. No items should be placed at<br\/>the back or sides.<\/p><p>2. Check that the cat litter box indicator light is on and not flashing, indicating that it is in standby mode. The color should be white, green, or blue.<\/p><p>3. Place an unopened bag of cat litter or cat food on top of the cat litter box for at least 15 seconds. During this time, check if the app shows that the pet is in a toileting state.<\/p><p>4. After 15 seconds, remove the weight. Check if the app shows that the pet has gone to the toilet, the duration of the toilet time, and the pet's weight (xxxg).<\/p><p>5. Compare the pet's weight displayed in the app with the weight of the object placed. If they are roughly the same, it means the pressure sensor is working correctly.<\/p>"
+          }
+        },
+        "c0abd4aa-1e94-4f7d-8c2c-b7ac12a77b74": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Can I adjust the cat weight on themessage panel?",
+            "text": "<p>A: Yes, you can adjust the cat weight on the message panel. Please follow the instructions provided in the message panel to make any necessary adjustments.<\/p>"
+          }
+        },
+        "4a80fbf6-364d-4163-9dbb-88a85dfa5c8d": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: What should I do if the weight readingson the device have significant deviations (>400 grams)?",
+            "text": "<p>A: If the weight readings on the device have significant deviations, we recommend taking the following steps:<\/p><p>1.  Please send us a photo of the floor where the device is<br\/>placed. This will help us confirm if the surface is level, as an uneven surface can affect the accuracy of the weight readings<\/p><p>2. Please let us know the device's PID (Product ID) and production batch information. This information allows us to identify the specific device and refer the issue to our technical team for further assistance<\/p>"
+          }
+        },
+        "9c03253a-994f-44e4-8dc5-438b3dba22b5": {
+          "type": "title",
+          "settings": {
+            "h2": "Device Not Sensing the Cat"
+          }
+        },
+        "d10242fb-5c44-4012-865c-d62a1e8cb2d5": {
+          "type": "block",
+          "settings": {
+            "h3": "Q:The device is not sensing the cat. Are there any troubleshooting steps I cantry?",
+            "text": "<p>A: Yes, here are some steps you can follow to troubleshoot the issue:<\/p><p>1. Move the device slightly: Sometimes,<br\/>poor sensor contact can cause issues. Try moving the device a little and see if it starts working properly.<\/p><p>2. Power off and restart: Turn off the device completely and then turn it back on. This can help reset any temporary glitches or errors.<\/p><p>3. Reset the device to factory settings: If the problem persists after restarting, you can try resetting the device to its factory settings. To do this, press and hold the reset button. While still<br\/>holding the reset button, unplug the power cord and then plug it back in. Finally, release the reset button. This should restore the device to its original settings<\/p>"
+          }
+        },
+        "f41610fd-43a0-4f88-866b-ca73692bb960": {
+          "type": "title",
+          "settings": {
+            "h2": "Understanding Weight Detection and Variations on theDevice"
+          }
+        },
+        "41a9f97d-4d52-4b89-b123-3e4ebe5cecae": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: How does the device detect weight?",
+            "text": "<p>A: The device uses four weight sensors in the base to detect changes in weight. These sensors are located within four feet of the device's base and can only detect changes in weight due to gravity.<\/p>"
+          }
+        },
+        "4cefff62-0a68-4176-a249-3c6239c0f89c": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Why do the weight readings on the devicediffer?",
+            "text": "<p>A: There are several reasons for<br\/>inconsistent weight readings on the device, including having multiple cats inside the litter box, partial weight of cats, cats in different positions inside the litter box, and variations in which part of the device is touched. These factors can lead to variations in weight readings.<\/p>"
+          }
+        },
+        "a8b82df5-671e-4bd3-9ab3-197c41c480e5": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Can the device differentiate betweendifferent positions of the cat inside the litter box?",
+            "text": "<p>A: No, the device cannot differentiate between different positions of the cat inside the litter box. The weight sensors detect changes in the overall weight of the device, but cannot determine the specific location of the cat within the litter box.<\/p>"
+          }
+        },
+        "954719a1-4d4a-4752-8690-ceb002a9fc8d": {
+          "type": "block",
+          "settings": {
+            "h3": "Q:How does the device ensure the safety of the cat?",
+            "text": "<p>A: During development, the device was designed to stop spinning its motor whenever there is a change in weight detected. This safety feature protects the cat from potential harm.<\/p>"
+          }
+        },
+        "956940a8-e52b-4ed6-9421-7f9a4967fb61": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Can the device differentiate betweenwhere the cat is located (top cover, inside the globe, or poking a paw)?",
+            "text": "<p>A: No, the sensors can only detect changes in the overall weight of the device and cannot differentiate between specific locations of the cat within the litter box.<\/p>"
+          }
+        },
+        "a8443265-6f6b-4ec0-9f0e-a2cdd37702f2": {
+          "type": "title",
+          "settings": {
+            "h2": "Cat Detected Inside Device When None Entered"
+          }
+        },
+        "fd33719b-1bcb-4dae-b1f7-1717c7ba2b42": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: The app claims that a cat has beeninside the device for an extended period, but no cat has entered. How can I fixthis?",
+            "text": "<p>A: If the app displays a message indicating that the cat has been in the device too long, even when no cat has entered, please try the following:<\/p><p>- Reset the weight by pressing the R (reset) key.<\/p><p>- The blue-green flashing on the device indicates that you added cat litter and an object triggered the gravity sensor, making it appear as if a cat entered the device. The cloud light will show blue-green flashing as a result.<\/p>"
+          }
+        },
+        "ea2cbab6-13c9-45c9-9eb6-3a6f1a66e800": {
+          "type": "title",
+          "settings": {
+            "h2": "Addressing Concerns about False Notifications from theDevice"
+          }
+        },
+        "f4a28067-753f-4c4f-95c9-0712cc8d86c4": {
+          "type": "block",
+          "settings": {
+            "h3": "Q:Why am I receiving notifications when my cats are not actually using the litterbox?",
+            "text": "<p>A: The device uses weight sensors in the base to detect objects or cats near or on top of the device. However, the sensors can only detect changes in weight due to gravity and cannot<br\/>differentiate between where the cat is located (top cover, inside the globe, or poking a paw into the device). This may lead to notifications being triggered<br\/>even when the cat is not actively using the litter box.<\/p>"
+          }
+        },
+        "a42106d1-b690-4040-b824-01bd360052e9": {
+          "type": "block",
+          "settings": {
+            "h3": "Q:How can I reduce the number of notifications I receive?",
+            "text": "<p>A: You can disable the notification option within<br\/>the app to reduce the number of notifications you receive. This will prevent<br\/>you from receiving notifications about your cat's activity in the litter box.<\/p>"
+          }
+        },
+        "4edfb7b0-c9c2-4891-8227-12f0bdee0a62": {
+          "type": "title",
+          "settings": {
+            "h2": "Inactive Inner Globe during Cleaning Mode"
+          }
+        },
+        "0015f039-9568-457f-b330-8bca18e7abd8": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: The device is in cleaning mode accordingto the app, but the inner globe is not rotating. What should I do?",
+            "text": "<p>A: If the device blinks white light and is in the cleaning state, but the inner globe is not turning, please try the following: <\/p><p>- Take off the top cover and remove the ball compartment.<\/p><p>- Put the top cover back on and try cleaning again to see if the internal gears can rotate. <\/p>"
+          }
+        },
+        "8df18115-53a7-4b29-80a3-b07aa8e69fd5": {
+          "type": "title",
+          "settings": {
+            "h2": "Device Inactivity during Cleaning Mode"
+          }
+        },
+        "6c9b8749-d7d8-4390-96cd-1f741becdcd4": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: The device is blinking green and blue,indicating it's in cleaning mode according to the app, but there is noactivity. What should I do?",
+            "text": "<p>A: If the device is blinking green and blue, indicating that it's cleaning, but no action is taking place, please try the following:<\/p><p>- Cut off the power supply to the device.<\/p><p>- Delete the device in the application (no need to uninstall the application).<\/p><p>-Reconnect the device to the power supply and wait for it to complete self-checking (indicated by a solid white light on the cloud light after 3 minutes).<\/p><p>- Re-pair the device in the application. Please send us an email to inform us of the outcome after performing these steps. If the issue persists, please take a screenshot of the Device Information page, including the Virtual ID, and send it to us for further assistance. We will investigate the device's historical<br\/>records through the background.<\/p>"
+          }
+        },
+        "49957c08-8568-46bc-80b4-548d13666592": {
+          "type": "title",
+          "settings": {
+            "h2": "Red Blinking Light on Device"
+          }
+        },
+        "214fd54d-7ba0-4663-83e8-11885b1476fd": {
+          "type": "block",
+          "settings": {
+            "h3": "Q:What could be causing the red blinking light on the litterbox, despiteeverything being in place?",
+            "text": "<p>A: Regarding the red flashing light, here are some possibilities to consider:<\/p><p>1. If you purchased the DELUXE version with two adapter sockets, please ensure that you are using the correct socket for the litter box and feeder.<\/p><p>2. Kindly check if a magnet has been installed. If so, try using a magnet to touch the designated area indicated in the image provided. This will help troubleshoot any contact problem between the top cover and the base. If the cloud light<br\/>changes from a red flashing light to a white light, it indicates a problem with the contact between the top cover magnet and the base. If the cloud light<br\/>continues to flash red, it may indicate a problem with the b<\/p>"
+          }
+        },
+        "3e894a89-59f3-494e-9164-3b4c6be3822c": {
+          "type": "title",
+          "settings": {
+            "h2": "Waste Drawer Displaced Error"
+          }
+        },
+        "7d4e585a-07a4-4643-b74b-6bd63417d691": {
+          "type": "block",
+          "settings": {
+            "h3": "Q:Why does the app notify me that the waste drawer is installed incorrectly?",
+            "text": "<p>A: There are a few possible reasons for this notification. Here are some troubleshooting steps you can try:<\/p><p>1. Check the liner position: Ensure that the liner is placed completely flat in the globe. If the liner is not in a flat position, it may accidentally touch the sensors and trigger a false alarm. Adjust the liner to make sure it is flat and properly positioned.<\/p><p>2. Clean the sensors: The sensors that control the waste drawer may become dirty over<br\/>time, which can interfere with proper installation detection. Refer to the provided picture that shows the sensor locations. You can gently wipe the sensors to make sure they are clean and free from any debris<\/p><p>3. Replace the liner: If the issue persists, try taking out the old liner and replacing it with a new one. Some customers have resolved the problem by switching to a new liner. This can help ensure proper installation and alignment with the sensors<\/p>"
+          }
+        },
+        "1fca65fa-df4d-46fd-96fb-5f5f798ea65e": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: How can I fix the persistent error message\"Waste drawer displaced SNOW+ self-cleaning Litter Box: Examination isrequired\" after trying different methods to install the waste drawercorrectly?",
+            "text": "<p>A: If there is a suspicion that the infrared detection module is faulty or damaged, kindly send us an email with a video or picture demonstrating the issue. Should the module be confirmed as defective, we will happily replace your product free of charge.<\/p>"
+          }
+        },
+        "bd8742b1-26aa-4e70-9ca8-a20e4fd29fbe": {
+          "type": "title",
+          "settings": {
+            "h2": "Device Recognition of Cats Weighing Less Than 3.3 lbs"
+          }
+        },
+        "4df6e1ff-a37c-4799-a48f-9a05b4b6c2cb": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Why doesn't my device recognize catsthat weigh less than 1.5 kg?",
+            "text": "<p>A: The device may not be able to detect cats that are too light due to their weight. To troubleshoot this issue, please follow these steps:<\/p><p>1. Turn off the device: Switch off the device and wait for a few moments.<\/p><p>2. Device performs a self-check: Turn on the device again and allow it to perform a self-check for approximately 2 minutes.<\/p><p>3. Test the weighing sensor: After the self-check, place an object weighing more than 1.5 kg on the device. Check if the cloud-shaped indicator light on the control panel changes from white to blue-green flashing alternately. If it does, it means that the device's weighing sensor is working correctly. This suggests that the device was not<br\/>able to detect the cat due to its lightweight. <\/p><p>4. Verify app settings: If the cloud light remains white and cannot recognize the weight, please check if you have enabled the automatic cleaning function in the app on your phone. This setting ensures that the device recognizes and responds accordingly to the cat's weight.<\/p>"
+          }
+        },
+        "894dc3d3-76d0-4af7-8b78-752ab455b562": {
+          "type": "title",
+          "settings": {
+            "h2": "Device Offline at Night and Device Not Turning On"
+          }
+        },
+        "790b4076-affc-4e88-9ca6-fe65329831d6": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Why does the device appear offline atnight?",
+            "text": "<p>A: The device entering offline standby mode at night is normal behavior. This feature allows the device to conserve power during periods of inactivity.<\/p>"
+          }
+        },
+        "f5c67dc4-9a7f-446a-a447-84009a2d92c0": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: My device is not turning on. What couldbe the issue?",
+            "text": "<p>A: There are a couple of potential causes for this problem:<\/p><p>1. Ambient light setting and child lock: If you turned off the ambient light setting and then enabled the child lock function in the app, it may cause the device to appear as if it is not turning<br\/>on. To resolve this, you can restore the device to its factory settings. Press and hold the reset button, unplug the power cord, then plug it back in while still holding down the reset button. Release the reset button when the process is complete.<\/p><p>2. Power socket or adapter issue: Another possibility is a problem with the power socket or power adapter. Try plugging the device into a different socket and ensure that the power adapter is working properly. Use a power adapter with the same wattage as the original one. Even if you have already tried a different power adapter, it is essential to match<br\/>the wattage to the original adapter.<\/p>"
+          }
+        },
+        "7a196b2c-c2bc-4257-8b4f-9fda0bc3080e": {
+          "type": "title",
+          "settings": {
+            "h2": "Device Frequently Going Offline"
+          }
+        },
+        "33bfda09-1dc2-447b-a1e0-ac657c8a6076": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: The device goes offline frequently. Howcan I troubleshoot this issue?",
+            "text": "<p>A: Here are some troubleshooting steps you can take to address the frequent offline issue:<\/p><p>1. Check network, router, and frequency band: Make sure you are using a stable network connection, a reliable router,<br\/>and an appropriate frequency band for your device. Inquire about the compatibility of your device with the router and frequency band you are using.<\/p><p>2. Evaluate distance and obstacles: Consider the distance between your router and the device. If there are multiple<br\/>walls or obstacles between them, it can weaken the signal and cause frequent disconnections. Try placing the device next to the router for a day and observe if it still disconnects after a few hours. This will help determine if the issue is related to a weak signal. <\/p><p>3. Provide device ID to technicians: Our technicians require the SNOW+ device ID to access the backend data. To locate the device ID, open the litter box device, click on the \"pen\" icon in the top right corner, and select \"DEVICE INFO.\" Kindly share this ID with our support team for further assistance.<\/p>"
+          }
+        },
+        "605d369d-b7a4-467b-8b3c-b7145a3cc2c7": {
+          "type": "title",
+          "settings": {
+            "h2": "Disclaimer: Important Information and Limitations"
+          }
+        },
+        "c47ff885-d9c6-4439-b758-6f6206277d4b": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Is PetSnowyresponsible for any damage or malfunction caused by incorrect use,modification, or maintenance of SNOW+?",
+            "text": "<p>A: No, PetSnowy is<br\/>not responsible for any damage or malfunction resulting from incorrect use, modification, or maintenance of SNOW+. This includes installations or repairs conducted by individuals outside of our company.<\/p>"
+          }
+        },
+        "11e2c237-ed39-4333-aadd-688d376211ac": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: What should Ido to ensure the proper use of my SNOW+ product?",
+            "text": "<p>A: We strongly recommend following the instructions provided in the user manual and exercising<br\/>caution when handling your automatic cat litter box. It is important to adhere to the guidelines to ensure its safe and efficient operation.<\/p>"
+          }
+        },
+        "9647e525-7d86-4b5e-9f2f-d433aebccba4": {
+          "type": "block",
+          "settings": {
+            "h3": "Q:What should I do if I encounter any issues with my SNOW+ product or havequestion",
+            "text": "<p>A: If you experience any problems or have queries regarding your SNOW+ product, please reach out to our customer support team. They will be happy to assist you and provide the necessary guidance.<\/p>"
+          }
+        },
+        "ed684592-c939-46cf-9ccb-c2422e0bc7f8": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: What isexpected from customers regarding the use and maintenance of SNOW+?",
+            "text": "<p>A: Customers are expected to properly use and maintain their SNOW+ product by following the<br\/>instructions provided in the user manual. This includes seeking assistance from our customer support team when needed. By doing so, customers demonstrate their commitment to the safe and effective use of SNOW+.<\/p>"
+          }
+        },
+        "b01672a5-6d5a-48d9-8987-200bf13c0749": {
+          "type": "title",
+          "settings": {
+            "h2": "Ensuring a Safe Environment for Equipment Use"
+          }
+        },
+        "40c42193-bf93-48ad-80b4-21511811b0d5": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Can I use SNOW+for purposes other than a cat litter box?",
+            "text": "<p>A: No, SNOW+ is intended for use solely as a cat litter box and should not be used for any other purpose.<\/p>"
+          }
+        },
+        "29cf5fee-529d-4dff-94b3-979ed2686bc5": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Where should Iplace SNOW+ for optimal performance?",
+            "text": "<p>A: It is essential to place SNOW+ on a stable, flat surface to ensure proper operation. Avoid soft, uneven, or unstable surfaces. Keep it indoors away from direct sunlight,<br\/>extreme temperatures, and damp environments. Also, leave enough space around the device for the sensor to function effectively, avoiding corners or walls.<\/p>"
+          }
+        },
+        "01ead5e4-8e2a-42bb-a8f4-1741a1866f91": {
+          "type": "block",
+          "settings": {
+            "h3": "Q:Can I force my cat to use SNOW+?",
+            "text": "<p>A: No, it is crucial to allow your cat to adapt to SNOW+ naturally. Only cats weighing 3 pounds or more can activate the automatic cleaning mode. Forcing your cat into the device can cause fear and resistance, prolonging the adaptation period.<\/p>"
+          }
+        },
+        "16439c25-b9ea-434f-89f7-804a8d12a29b": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: What type ofcat litter should I use with SNOW+?",
+            "text": "<p>A: You should use clumping cat litter, litter beads that can be filtered through the screen, or crystal cat litter. Avoid placing any other materials in the device, as they may damage the automatic litter box or pose a risk to your cat.<\/p>"
+          }
+        },
+        "2b34e5d2-07da-4c15-83d9-29a4461ec4a4": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Are there anyprecautions for children or inexperienced adults using SNOW+?",
+            "text": "<p>A: Yes, it is essential to supervise and provide appropriate guidance to children, individuals with disabilities, or inexperienced adults when using, cleaning, or maintaining SNOW+ to ensure their safety.<\/p>"
+          }
+        },
+        "af6b0868-8056-4424-bb65-81b8bd735d03": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: What should Ido before connecting the power supply to SNOW+?",
+            "text": "<p>A: Before connecting the power supply or restarting after a power failure, ensure there are no cats inside the device. Restarting with a cat inside after a power failure can cause the cat's weight to be reset to zero, potentially trapping the cat inside the chamber. It may also startle the cat and cause the top cover to shift.<\/p>"
+          }
+        },
+        "1753f782-15e9-40e0-bd52-828c7c9a98c2": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Can I touch orremove the top cover while the globe is rotating?",
+            "text": "<p>A: No, it is important to avoid touching or removing the top cover while the globe is rotating to prevent injury. If the cover is removed, the device will automatically stop to protect your cat. Ensure the globe is returned to its initial position before starting the device to avoid accidents.<\/p>"
+          }
+        },
+        "520c0688-be4c-42f5-a05d-87fb2d2e6e2e": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: How should Ihandle the power supply and cords of SNOW+?",
+            "text": "<p>A: Before cleaning or repairing the device, unplug the power cord for safety. Only use the provided external power supply and avoid using any other alternative. Also, prevent pets from biting the power cord to avoid potential hazards.<\/p>"
+          }
+        },
+        "fb5bca24-3e89-4c72-a2b0-584b1d0d925d": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Can I clean thecomponents of SNOW+ with water?",
+            "text": "<p>A: You can wash the globe, the litter cushion, the litter mat, the bonnet under running water. However, ensure they are completely dry before reassembling. Do not submerge the base in liquid as it contains electronic components that may be damaged. Avoid using abrasive cleaners, organic solvents, or corrosive substances.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "6bd72199-5263-4097-a0da-586dd5c5dc62",
+        "33a2076d-4d83-45f0-bdf8-7f98a7df7d43",
+        "983a0cd0-8899-430a-a072-823b2e623dda",
+        "398f5e0a-c6aa-445c-a3f6-a22523ff0890",
+        "c0abd4aa-1e94-4f7d-8c2c-b7ac12a77b74",
+        "4a80fbf6-364d-4163-9dbb-88a85dfa5c8d",
+        "9c03253a-994f-44e4-8dc5-438b3dba22b5",
+        "d10242fb-5c44-4012-865c-d62a1e8cb2d5",
+        "f41610fd-43a0-4f88-866b-ca73692bb960",
+        "41a9f97d-4d52-4b89-b123-3e4ebe5cecae",
+        "4cefff62-0a68-4176-a249-3c6239c0f89c",
+        "a8b82df5-671e-4bd3-9ab3-197c41c480e5",
+        "954719a1-4d4a-4752-8690-ceb002a9fc8d",
+        "956940a8-e52b-4ed6-9421-7f9a4967fb61",
+        "a8443265-6f6b-4ec0-9f0e-a2cdd37702f2",
+        "fd33719b-1bcb-4dae-b1f7-1717c7ba2b42",
+        "ea2cbab6-13c9-45c9-9eb6-3a6f1a66e800",
+        "f4a28067-753f-4c4f-95c9-0712cc8d86c4",
+        "a42106d1-b690-4040-b824-01bd360052e9",
+        "4edfb7b0-c9c2-4891-8227-12f0bdee0a62",
+        "0015f039-9568-457f-b330-8bca18e7abd8",
+        "8df18115-53a7-4b29-80a3-b07aa8e69fd5",
+        "6c9b8749-d7d8-4390-96cd-1f741becdcd4",
+        "49957c08-8568-46bc-80b4-548d13666592",
+        "214fd54d-7ba0-4663-83e8-11885b1476fd",
+        "3e894a89-59f3-494e-9164-3b4c6be3822c",
+        "7d4e585a-07a4-4643-b74b-6bd63417d691",
+        "1fca65fa-df4d-46fd-96fb-5f5f798ea65e",
+        "bd8742b1-26aa-4e70-9ca8-a20e4fd29fbe",
+        "4df6e1ff-a37c-4799-a48f-9a05b4b6c2cb",
+        "894dc3d3-76d0-4af7-8b78-752ab455b562",
+        "790b4076-affc-4e88-9ca6-fe65329831d6",
+        "f5c67dc4-9a7f-446a-a447-84009a2d92c0",
+        "7a196b2c-c2bc-4257-8b4f-9fda0bc3080e",
+        "33bfda09-1dc2-447b-a1e0-ac657c8a6076",
+        "605d369d-b7a4-467b-8b3c-b7145a3cc2c7",
+        "c47ff885-d9c6-4439-b758-6f6206277d4b",
+        "11e2c237-ed39-4333-aadd-688d376211ac",
+        "9647e525-7d86-4b5e-9f2f-d433aebccba4",
+        "ed684592-c939-46cf-9ccb-c2422e0bc7f8",
+        "b01672a5-6d5a-48d9-8987-200bf13c0749",
+        "40c42193-bf93-48ad-80b4-21511811b0d5",
+        "29cf5fee-529d-4dff-94b3-979ed2686bc5",
+        "01ead5e4-8e2a-42bb-a8f4-1741a1866f91",
+        "16439c25-b9ea-434f-89f7-804a8d12a29b",
+        "2b34e5d2-07da-4c15-83d9-29a4461ec4a4",
+        "af6b0868-8056-4424-bb65-81b8bd735d03",
+        "1753f782-15e9-40e0-bd52-828c7c9a98c2",
+        "520c0688-be4c-42f5-a05d-87fb2d2e6e2e",
+        "fb5bca24-3e89-4c72-a2b0-584b1d0d925d"
       ],
       "settings": {
         "h1": "Self Cleaning Litter Box",
@@ -816,6 +1213,7 @@
     "main",
     "a2987480-c65a-4a67-bbfd-ec89bb7a9812",
     "1da5a395-8b0d-4a51-b02c-9559890d9d9d",
-    "d3417dcc-4273-4f4f-99e1-69fcfdaf27b7"
+    "d00b9c9c-c8c3-4ba5-9551-72ac250bf1cd",
+    "1df691dc-2b87-455f-ab6e-9defe58db07a"
   ]
 }
