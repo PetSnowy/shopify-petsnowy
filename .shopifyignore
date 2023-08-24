@@ -10,4 +10,5 @@ script/
 gulpfile.js
 .vscode/
 postcss.config.js
+.theme-check.yml
 README

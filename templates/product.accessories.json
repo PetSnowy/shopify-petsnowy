@@ -204,34 +204,6 @@
     "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1": {
       "type": "grid-image-text",
       "disabled": true,
-      "blocks": {
-        "7c0bb4db-e440-4ea3-8b1a-28b02b441b39": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "texts": "<p>That they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>"
-          }
-        },
-        "b6497014-5543-4444-844f-992c9cc54916": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "texts": "<p>Ghat they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>"
-          }
-        },
-        "322b0d90-d6f2-4079-9476-df806e1e7273": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "texts": "<p>Qhat they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "7c0bb4db-e440-4ea3-8b1a-28b02b441b39",
-        "b6497014-5543-4444-844f-992c9cc54916",
-        "322b0d90-d6f2-4079-9476-df806e1e7273"
-      ],
       "settings": {
         "flex_data": true,
         "richtexxt": "<p>Linded by desire, that they cannot foresee Demoralized by the charms of pleasure of the moment, so  the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",

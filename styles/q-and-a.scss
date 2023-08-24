@@ -252,6 +252,7 @@
       color: #000;
       border: 1px solid #e8e8e8;
       transition: all 0.3s ease;
+      user-select: none;
       &::before,
       &::after {
         content: "";

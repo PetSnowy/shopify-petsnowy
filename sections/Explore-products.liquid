@@ -205,7 +205,7 @@
 
                             <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                               {% comment %} {{ value }} {% endcomment %}
-                              <img src="{{ variants_images | img_url: '70X70' }}">
+                              <img src="{{ variants_images | img_url: '70X70' }}" loading="lazy">
                             </label>
                           {%- endfor -%}
                         </fieldset>

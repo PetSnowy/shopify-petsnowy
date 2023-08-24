@@ -1326,7 +1326,8 @@ button.shopify-payment-button__button--unbranded {
   left: var(--buttons-border-width);
   z-index: 1;
   border-radius: var(--buttons-radius);
-  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+  box-shadow:
+    0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
       rgba(var(--color-button-text), var(--border-opacity)),
     0 0 0 var(--buttons-border-width)
       rgba(var(--color-button), var(--alpha-button-background));
@@ -1593,7 +1594,8 @@ details[open] > .share-button__fallback {
 .share-button__fallback .field__input:-webkit-autofill {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: 0.1rem;
-  box-shadow: 0 0 0 0.1rem rgb(var(--color-background)),
+  box-shadow:
+    0 0 0 0.1rem rgb(var(--color-background)),
     0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
 }
 
@@ -1764,7 +1766,8 @@ details[open] > .share-button__fallback {
   margin-bottom: 0;
   pointer-events: none;
   position: absolute;
-  transition: top var(--duration-short) ease,
+  transition:
+    top var(--duration-short) ease,
     font-size var(--duration-short) ease;
   color: rgba(var(--color-foreground), 0.75);
   letter-spacing: 0.1rem;
@@ -2510,7 +2513,9 @@ details[open] .modal-overlay::after {
   position: absolute;
   opacity: 1;
   transform: scale(1);
-  transition: transform 150ms ease, opacity 150ms ease;
+  transition:
+    transform 150ms ease,
+    opacity 150ms ease;
 }
 
 details:not([open]) > .header__icon--menu .icon-close,
@@ -2606,7 +2611,8 @@ details[open] > .header__menu-item .icon-caret {
 }
 
 .header__submenu {
-  transition: opacity var(--duration-default) ease,
+  transition:
+    opacity var(--duration-default) ease,
     transform var(--duration-default) ease;
 }
 
@@ -3425,7 +3431,8 @@ ul.footer__list-social li a.link.list-social__link {
 svg.arrow_down {
   transition-delay: 0.3s;
   transform: none;
-  transition: opacity 0.65s cubic-bezier(0.28, 0.44, 0.49, 1),
+  transition:
+    opacity 0.65s cubic-bezier(0.28, 0.44, 0.49, 1),
     transform 0.65s cubic-bezier(0.42, 0, 0.002, 1);
   transform: rotate(90deg) translate(0);
   animation: bounce 1.2s infinite ease-in-out;
@@ -5104,10 +5111,6 @@ label.productlabel_info,
       }
     }
   }
-  .header__heading-logo {
-    width: vw(400px);
-    height: vw(70px);
-  }
 }
 $item: 5;
 @media screen and (min-width: 901px) {
@@ -5133,5 +5136,10 @@ $item: 5;
       opacity: 1;
       transform: translateY(0);
     }
+  }
+  main .desk_video.custom_videoss {
+    width: 100%;
+    height: calc(100% - var(--main-padding-top));
+    object-fit: cover;
   }
 }
