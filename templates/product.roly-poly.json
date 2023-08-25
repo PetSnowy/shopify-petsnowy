@@ -404,16 +404,50 @@
         "show_text_below": true
       }
     },
-    "b6e45bc2-2133-4106-a9db-61ab406abfe6": {
-      "type": "Product-video",
-      "disabled": true,
+    "04b360d8-d146-45a8-a347-043992834d03": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Charge & Play in a Snap!",
+            "heading_size": "h1"
+          }
+        },
+        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With our Type-C Charging and One-Touch Activation, bonding with your furry friends has never been easier or more delightful!<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-heading-1",
+        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-text-1",
+        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-button-1"
+      ],
       "settings": {
-        "vdio_img": "shopify:\/\/shop_images\/video.png",
-        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/86480277b00d435bbbba6e62c6b5f781.mp4",
-        "heading": "Your Video Text Here",
-        "text": "Your Video Text Here",
-        "padding_top": 20,
-        "padding_bottom": 40
+        "image": "shopify:\/\/shop_images\/interactive_cat_toy_dd01c325-a9b2-467b-b9ac-6373bc2cedd8.jpg",
+        "image_mob": "shopify:\/\/shop_images\/interactive_cat_toy_22de7075-bf1c-4c87-888c-56bdfd43f170.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "chek_wth": false,
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "main": {
@@ -819,52 +853,6 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "04b360d8-d146-45a8-a347-043992834d03": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Charge & Play in a Snap!",
-            "heading_size": "h1"
-          }
-        },
-        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>With our Type-C Charging and One-Touch Activation, bonding with your furry friends has never been easier or more delightful!<\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-heading-1",
-        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-text-1",
-        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-button-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/interactive_cat_toy_dd01c325-a9b2-467b-b9ac-6373bc2cedd8.jpg",
-        "image_mob": "shopify:\/\/shop_images\/interactive_cat_toy_22de7075-bf1c-4c87-888c-56bdfd43f170.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "chek_wth": false,
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -877,7 +865,7 @@
     "8e620d02-c614-4dad-8253-0fe07f42a3ef",
     "6eb9d775-77d4-40be-937a-ab2748a2cf87",
     "fba5d096-d072-4f5d-8268-2861ab6a48ec",
-    "b6e45bc2-2133-4106-a9db-61ab406abfe6",
+    "04b360d8-d146-45a8-a347-043992834d03",
     "main",
     "815a64f2-a2d1-497f-9dac-1cabc60918d0",
     "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8",
@@ -890,7 +878,6 @@
     "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1",
     "a21a1560-db1e-403e-921c-96a00ef641a2",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
-    "product-recommendations",
-    "04b360d8-d146-45a8-a347-043992834d03"
+    "product-recommendations"
   ]
 }
