@@ -75,36 +75,6 @@
         "padding_bottom": 36
       }
     },
-    "68f12b2d-ae5b-4f5c-9b5b-de48e21c71da": {
-      "type": "custom-image-text",
-      "blocks": {
-        "71add81f-a92d-41ab-91ef-654f0b62175c": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Your feline friends are born hunters. They need regular exercise to keep their energetic spirits thriving. As a devoted pet parent, you deserve peace of mind, knowing that your beloved cat is thriving and content, even when time is limited. That's why we created PetSnowy automatic cat toys, offering a delightful solution to keep your cat engaged and entertained without ever leaving your couch.<\/p><p><strong>Random Rotation Feature:<\/strong> Mimic the movements of prey and trigger hunting instincts<\/p><p><strong>Healthy Playtime: <\/strong>15-Minute Auto Shutdown<\/p><p><strong>Safe Entertainment: <\/strong>ABS Material & Natural Feathers<\/p><p><strong>Peaceful Playtime: <\/strong>Ultra-Quiet Motor<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "71add81f-a92d-41ab-91ef-654f0b62175c"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/petsnowy_cat_toy_a7d0732f-8292-4b55-8e5f-c93738deedba.jpg",
-        "image_mob": "shopify:\/\/shop_images\/interactive_cat_toy_75985c75-c067-4672-9107-8537a18175a3.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "chek_wth": false,
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "791f1fc8-f2ee-402a-919b-0cbf3a977591": {
       "type": "image-banner",
       "blocks": {
@@ -143,8 +113,8 @@
         "aa65b87b-3f38-4af9-bf7f-7fbdc2c5e868"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/automatic_cat_toy_fa8e365e-5ba4-458b-a56b-2d6f64583dd1.jpg",
-        "image_mbl": "shopify:\/\/shop_images\/cattoys_33f557c1-e5b4-4d8a-bdaf-276c3816d50d.jpg",
+        "image": "shopify:\/\/shop_images\/petsnowy_cat_toy_a7d0732f-8292-4b55-8e5f-c93738deedba.jpg",
+        "image_mbl": "shopify:\/\/shop_images\/interactivecattoy_452a603e-ae9f-480a-b7e1-911f405ad678.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": true,
@@ -155,6 +125,23 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "86f268b1-4ea4-46d2-8097-7d8c56290906": {
+      "type": "text",
+      "blocks": {
+        "a91d875c-089c-48ba-bcd1-1bb87bd7ce18": {
+          "type": "block",
+          "settings": {
+            "text": "Your feline friends are born hunters. They need regular exercise to keep their energetic spirits thriving. As a devoted pet parent, you deserve peace of mind, knowing that your beloved cat is thriving and content, even when time is limited. That's why we created PetSnowy automatic cat toys, offering a delightful solution to keep your cat engaged and entertained without ever leaving your couch.Random Rotation Feature: Mimic the movements of prey and trigger hunting instinctsHealthy Playtime: 15-Minute Auto ShutdownSafe Entertainment: ABS Material & Natural FeathersPeaceful Playtime: Ultra-Quiet Motor"
+          }
+        }
+      },
+      "block_order": [
+        "a91d875c-089c-48ba-bcd1-1bb87bd7ce18"
+      ],
+      "settings": {
+        "title": ""
       }
     },
     "c18c2ce5-43e9-4215-9b4d-44b3c5e0a512": {
@@ -830,8 +817,8 @@
   "order": [
     "24aa800b-1cc6-4355-bb54-110ba4e11787",
     "39b41601-378d-4764-a697-4f87cef70a35",
-    "68f12b2d-ae5b-4f5c-9b5b-de48e21c71da",
     "791f1fc8-f2ee-402a-919b-0cbf3a977591",
+    "86f268b1-4ea4-46d2-8097-7d8c56290906",
     "c18c2ce5-43e9-4215-9b4d-44b3c5e0a512",
     "6bbb9f5f-efc8-428f-9807-f54235735aad",
     "8e620d02-c614-4dad-8253-0fe07f42a3ef",
