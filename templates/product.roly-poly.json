@@ -184,12 +184,40 @@
         "a91d875c-089c-48ba-bcd1-1bb87bd7ce18": {
           "type": "block",
           "settings": {
-            "text": "Your feline friends are born hunters. They need regular exercise to keep their energetic spirits thriving. As a devoted pet parent, you deserve peace of mind, knowing that your beloved cat is thriving and content, even when time is limited. That's why we created PetSnowy automatic cat toys, offering a delightful solution to keep your cat engaged and entertained without ever leaving your couch.Random Rotation Feature: Mimic the movements of prey and trigger hunting instinctsHealthy Playtime: 15-Minute Auto ShutdownSafe Entertainment: ABS Material & Natural FeathersPeaceful Playtime: Ultra-Quiet Motor"
+            "text": "Your feline friends are born hunters. They need regular exercise to keep their energetic spirits thriving. As a devoted pet parent, you deserve peace of mind, knowing that your beloved cat is thriving and content, even when time is limited. That's why we created PetSnowy automatic cat toys, offering a delightful solution to keep your cat engaged and entertained without ever leaving your couch."
+          }
+        },
+        "03778c80-9c93-4a6a-9aa9-486a72fcfb8c": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Random Rotation Feature:<\/b> Mimic the movements of prey and trigger hunting instincts"
+          }
+        },
+        "e332baf4-fb16-48a3-9dc6-fd5f531be84b": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Healthy Playtime:<\/b>15-Minute Auto Shutdown"
+          }
+        },
+        "4590cdd4-be04-4cbd-a2ae-0b52d2265bb3": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Safe Entertainment: <\/b>ABS Material & Natural Feathers"
+          }
+        },
+        "bd952546-c4f2-493b-9ffb-e890b4feb932": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Peaceful Playtime:<\/b> Ultra-Quiet Motor"
           }
         }
       },
       "block_order": [
-        "a91d875c-089c-48ba-bcd1-1bb87bd7ce18"
+        "a91d875c-089c-48ba-bcd1-1bb87bd7ce18",
+        "03778c80-9c93-4a6a-9aa9-486a72fcfb8c",
+        "e332baf4-fb16-48a3-9dc6-fd5f531be84b",
+        "4590cdd4-be04-4cbd-a2ae-0b52d2265bb3",
+        "bd952546-c4f2-493b-9ffb-e890b4feb932"
       ],
       "settings": {
         "title": ""
