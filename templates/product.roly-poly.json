@@ -826,14 +826,14 @@
         "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Charge & Play in a Snap!",
             "heading_size": "h1"
           }
         },
         "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>With our Type-C Charging and One-Touch Activation, bonding with your furry friends has never been easier or more delightful!<\/p>",
             "text_style": "body"
           }
         },
