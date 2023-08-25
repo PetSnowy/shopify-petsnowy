@@ -1,51 +1,40 @@
-
-.contact .form__message {
-  align-items: flex-start;
-}
-
-.contact .icon-success {
-  margin-top: 0.2rem;
-}
-
-.contact .field {
-  margin-bottom: 1.5rem;
-}
-
-@media screen and (min-width: 750px) {
-  .contact .field {
-    margin-bottom: 2rem;
+@import "pxToVw.scss";
+.contact-us {
+  display: flex;
+  .title {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
   }
-}
-
-.contact__button {
-  margin-top: 3rem;
-  text-align: center;
-}
-.contact__button button.button {
-    display: inline-flex;
-    background: #231f20;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    transition: .3s all linear;
-    border: 1px solid transparent;
-}
-.contact__button button.button:hover {
-    background: #fff;
-    border: 1px solid #231f20;
-    color: #231f20;
-}
-
-@media screen and (min-width: 750px) {
-  .contact__button {
-    margin-top: 4rem;
+  .contact-form {
+    flex: 1;
   }
-}
-
-@media screen and (min-width: 750px) {
-  .contact__fields {
+  form {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2rem;
+    row-gap: 10px;
+    textarea {
+      resize: vertical;
+    }
+  }
+
+  .contact__button {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 901px) {
+  .contact-us {
+    .contact__fields {
+      display: grid;
+      column-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .contact-us {
+    .contact__fields {
+      display: grid;
+      row-gap: vw(20px);
+    }
   }
 }
