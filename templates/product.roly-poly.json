@@ -127,6 +127,58 @@
         "show_text_below": true
       }
     },
+    "6f887e38-8539-4eb2-a2f7-a77aa8af4c79": {
+      "type": "image-banner",
+      "blocks": {
+        "f8a4996d-b1ea-41a2-8615-e77a69fbbec5": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "7709bcd6-bad6-44b8-a97c-5b6f43764e8a": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "5593f882-eb69-48de-8b31-2c802c57aed5": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "f8a4996d-b1ea-41a2-8615-e77a69fbbec5",
+        "7709bcd6-bad6-44b8-a97c-5b6f43764e8a",
+        "5593f882-eb69-48de-8b31-2c802c57aed5"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/petsnowy_cat_toy_a7d0732f-8292-4b55-8e5f-c93738deedba.jpg",
+        "image_mbl": "shopify:\/\/shop_images\/interactivecattoy_452a603e-ae9f-480a-b7e1-911f405ad678.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "86f268b1-4ea4-46d2-8097-7d8c56290906": {
       "type": "text",
       "blocks": {
@@ -818,6 +870,7 @@
     "24aa800b-1cc6-4355-bb54-110ba4e11787",
     "39b41601-378d-4764-a697-4f87cef70a35",
     "791f1fc8-f2ee-402a-919b-0cbf3a977591",
+    "6f887e38-8539-4eb2-a2f7-a77aa8af4c79",
     "86f268b1-4ea4-46d2-8097-7d8c56290906",
     "c18c2ce5-43e9-4215-9b4d-44b3c5e0a512",
     "6bbb9f5f-efc8-428f-9807-f54235735aad",
