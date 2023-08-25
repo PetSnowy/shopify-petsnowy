@@ -1,5 +1,70 @@
 {
   "sections": {
+    "39b41601-378d-4764-a697-4f87cef70a35": {
+      "type": "featured-product",
+      "blocks": {
+        "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-share-1": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-text-1",
+        "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-title-1",
+        "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-price-1",
+        "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-variant_picker-1",
+        "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-quantity_selector-1",
+        "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-buy_buttons-1",
+        "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-share-1"
+      ],
+      "settings": {
+        "product": "",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_position": "left",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "24aa800b-1cc6-4355-bb54-110ba4e11787": {
       "type": "image-banner",
       "settings": {
@@ -25,19 +90,10 @@
           "settings": {
             "text": "<p>SNOW<sup>+<\/sup> Automatic Pet Feeder  \n<br>Order now, and save <b>15%<\/b>  <\/p>\n<p><small><small>*Only one discount can be applied per purchase.<\/small><\/small><\/p>"
           }
-        },
-        "e41cef55-a297-4c09-a549-24d35be2b565": {
-          "type": "caption",
-          "settings": {
-            "caption": "Launch Discount. Limited Time Offer!",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
         }
       },
       "block_order": [
-        "b504c877-67df-4d07-b421-9fac2e31e94f",
-        "e41cef55-a297-4c09-a549-24d35be2b565"
+        "b504c877-67df-4d07-b421-9fac2e31e94f"
       ],
       "settings": {
         "desktop_content_position": "left",
@@ -54,22 +110,22 @@
         "9d1b52ba-657b-424d-a6c2-057a19a15eed": {
           "type": "title",
           "settings": {
-            "title": "Your Text Here",
-            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
+            "title": "Charge & Play in a Snap!",
+            "texts": "<p>With our Type-C Charging and One-Touch Activation, bonding with your furry friends has never been easier or more delightful!<\/p>"
           }
         },
         "9ecc1e22-b451-440f-a65c-c2d0f68d6df7": {
           "type": "title",
           "settings": {
-            "title": "Your Text Here",
-            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
+            "title": "Let their inner hunter shine.",
+            "texts": "<p>Random Rotation feature will provide your furry friends with the excitement and stimulation they crave.<\/p>"
           }
         },
         "64e8ed2c-3e0c-47e8-856a-4a4355769102": {
           "type": "title",
           "settings": {
-            "title": "Your Text Here",
-            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
+            "title": "Safety is our top priority.",
+            "texts": "<p>Made from durable ABS Safe Material and natural feathers, our interactive cat toys ensure a safe and engaging entertainment experience.<\/p>"
           }
         }
       },
@@ -297,7 +353,6 @@
     },
     "fba5d096-d072-4f5d-8268-2861ab6a48ec": {
       "type": "image-banner",
-      "disabled": true,
       "blocks": {
         "c7af4ac5-2c02-4e60-b21e-dc0a076cbe7f": {
           "type": "heading",
@@ -333,6 +388,7 @@
         "46f10221-7176-41ea-9c59-c7837a74cea1",
         "f68115e5-d531-4668-8c6b-562b81a828c2"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/cat_toys_049396c5-2d64-4595-a1cf-faee322d7638.jpg",
         "image_mbl": "shopify:\/\/shop_images\/interactive_cat_toy_84281429-0e13-4da0-ba92-733063a2355c.jpg",
@@ -362,7 +418,6 @@
     },
     "main": {
       "type": "main-product",
-      "disabled": true,
       "blocks": {
         "vendor": {
           "type": "text",
@@ -465,6 +520,7 @@
         "collapsible-row-3",
         "share"
       ],
+      "disabled": true,
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
@@ -479,7 +535,6 @@
     },
     "815a64f2-a2d1-497f-9dac-1cabc60918d0": {
       "type": "Explore-products",
-      "disabled": true,
       "blocks": {
         "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1": {
           "type": "variant_picker",
@@ -491,6 +546,7 @@
       "block_order": [
         "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1"
       ],
+      "disabled": true,
       "settings": {
         "description": "<p>Cannot foresee Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
         "product": "petsnowy-indiegogo-launch-discount-30-off",
@@ -581,7 +637,6 @@
     },
     "a01e7f6a-6040-4334-97af-966598236644": {
       "type": "extra-text-blocks",
-      "disabled": true,
       "blocks": {
         "03d34236-6eee-4408-bf76-43f3607fd691": {
           "type": "title",
@@ -610,21 +665,10 @@
         "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74",
         "c59af14b-539c-4fa1-a0de-8fd8435255cf"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 20,
         "padding_bottom": 40
-      }
-    },
-    "c79d2326-cdd9-44c2-bea3-56cd03cff554": {
-      "type": "compare-section",
-      "disabled": true,
-      "settings": {
-        "main_title": "Compare",
-        "collection": "smart-pet-products",
-        "products_to_show": 3,
-        "columns_desktop": 3,
-        "padding_top": 60,
-        "padding_bottom": 60
       }
     },
     "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a": {
@@ -642,18 +686,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "72f18a09-0599-4e59-b823-b5624eee93bb": {
-      "type": "image-text-block",
-      "disabled": true,
-      "settings": {
-        "img": "shopify:\/\/shop_images\/petsnowy_cat_toy.jpg",
-        "mobimg": "shopify:\/\/shop_images\/interactive_cat_toy_50e0382d-84ac-4261-9f8d-b42a873ef475.jpg",
-        "heading": "",
-        "richtext": "",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "a7d781da-2db9-4e93-a537-ae36cc05295f": {
@@ -696,18 +728,6 @@
         "padding_bottom": 0
       }
     },
-    "80a73eed-43fd-41e8-a736-f4afed787edd": {
-      "type": "image-text-block",
-      "disabled": true,
-      "settings": {
-        "img": "shopify:\/\/shop_images\/interactive_cat_toys.jpg",
-        "mobimg": "shopify:\/\/shop_images\/cat_toys_a1e4e4ae-f33e-48b4-a9e9-6054fd732bea.jpg",
-        "heading": "",
-        "richtext": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "a21a1560-db1e-403e-921c-96a00ef641a2": {
       "type": "collapsible-content",
       "blocks": {
@@ -719,43 +739,10 @@
             "row_content": "",
             "page": "cat-toy-specification"
           }
-        },
-        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-1": {
-          "type": "collapsible_row",
-          "disabled": true,
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-2": {
-          "type": "collapsible_row",
-          "disabled": true,
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-3": {
-          "type": "collapsible_row",
-          "disabled": true,
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
         }
       },
       "block_order": [
-        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-0",
-        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-1",
-        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-2",
-        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-3"
+        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-0"
       ],
       "settings": {
         "caption": "Product Details",
@@ -832,9 +819,56 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "04b360d8-d146-45a8-a347-043992834d03": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-heading-1",
+        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-text-1",
+        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/interactive_cat_toy_dd01c325-a9b2-467b-b9ac-6373bc2cedd8.jpg",
+        "image_mob": "shopify:\/\/shop_images\/interactive_cat_toy_22de7075-bf1c-4c87-888c-56bdfd43f170.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "chek_wth": false,
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
+    "39b41601-378d-4764-a697-4f87cef70a35",
     "24aa800b-1cc6-4355-bb54-110ba4e11787",
     "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
     "30307903-7dfd-43fd-a94b-e8afddaa806b",
@@ -851,14 +885,12 @@
     "f594996b-4dbf-425f-9059-9821e6ea4e6b",
     "7956ec82-bee1-4347-a954-e5194f282217",
     "a01e7f6a-6040-4334-97af-966598236644",
-    "c79d2326-cdd9-44c2-bea3-56cd03cff554",
     "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a",
-    "72f18a09-0599-4e59-b823-b5624eee93bb",
     "a7d781da-2db9-4e93-a537-ae36cc05295f",
     "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1",
-    "80a73eed-43fd-41e8-a736-f4afed787edd",
     "a21a1560-db1e-403e-921c-96a00ef641a2",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
-    "product-recommendations"
+    "product-recommendations",
+    "04b360d8-d146-45a8-a347-043992834d03"
   ]
 }
