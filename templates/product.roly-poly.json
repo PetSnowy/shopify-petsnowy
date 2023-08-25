@@ -315,6 +315,54 @@
         "show_text_below": true
       }
     },
+    "e8b01c70-ef62-496d-a645-ad65e3430e3a": {
+      "type": "text",
+      "blocks": {
+        "cd8f115d-f74a-46f9-8e6d-f3d699a4d6fb": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Peaceful & Undisturbed<\/b>"
+          }
+        },
+        "6dec3fe1-2c7d-448c-8727-c44ccea9873c": {
+          "type": "block",
+          "settings": {
+            "text": "Playtime!Boasting a whisper-quiet motor, our cat toys create a harmonious environment where your feline friend can happily engage in play. Without worrying about any jarring noises, you and your beloved friend can enjoy uninterrupted moments of bliss and contentment."
+          }
+        },
+        "30c75eaa-8a92-4b26-b54b-dbc655530609": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "text": "Healthy Playtime:15-Minute Auto Shutdown"
+          }
+        },
+        "f7573043-2d1e-4803-acc6-6eaee4b26101": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "text": "Safe Entertainment: ABS Material & Natural Feathers"
+          }
+        },
+        "f9055db0-d519-4717-9bea-269235ca9653": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "text": "Peaceful Playtime: Ultra-Quiet Motor"
+          }
+        }
+      },
+      "block_order": [
+        "cd8f115d-f74a-46f9-8e6d-f3d699a4d6fb",
+        "6dec3fe1-2c7d-448c-8727-c44ccea9873c",
+        "30c75eaa-8a92-4b26-b54b-dbc655530609",
+        "f7573043-2d1e-4803-acc6-6eaee4b26101",
+        "f9055db0-d519-4717-9bea-269235ca9653"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
     "6bbb9f5f-efc8-428f-9807-f54235735aad": {
       "type": "image-banner",
       "blocks": {
@@ -715,6 +763,7 @@
     "86f268b1-4ea4-46d2-8097-7d8c56290906",
     "c18c2ce5-43e9-4215-9b4d-44b3c5e0a512",
     "6eb9d775-77d4-40be-937a-ab2748a2cf87",
+    "e8b01c70-ef62-496d-a645-ad65e3430e3a",
     "6bbb9f5f-efc8-428f-9807-f54235735aad",
     "fba5d096-d072-4f5d-8268-2861ab6a48ec",
     "815a64f2-a2d1-497f-9dac-1cabc60918d0",
