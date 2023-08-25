@@ -862,6 +862,79 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "c18c2ce5-43e9-4215-9b4d-44b3c5e0a512": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/interactive_cat_toy_dd01c325-a9b2-467b-b9ac-6373bc2cedd8.jpg",
+            "title": "Charge & Play in a Snap!",
+            "text": "<p>With our Type-C Charging and One-Touch Activation, bonding with your furry friends has never been easier or more delightful!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beb8bd3e-4a80-4ea3-ab07-55c84a02ccb3.__CR14_0_577_577_PT0_SX300_V1.jpg",
+            "title": "Let their inner hunter shine.",
+            "text": "<p>Random Rotation feature will provide your furry friends with the excitement and stimulation they crave.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/interactive_cat_toys_for_indoor_cats_fa7f67bf-2c72-4687-83fe-7512dbcde57a.jpg",
+            "title": "Safety is our top priority.",
+            "text": "<p>Made from durable ABS Safe Material and natural feathers, our interactive cat toys ensure a safe and engaging entertainment experience.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-1",
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-2",
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "68f12b2d-ae5b-4f5c-9b5b-de48e21c71da": {
+      "type": "custom-image-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/automatic_cat_toy_8edcb098-899c-4c20-b735-42ce9c6f6580.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "chek_wth": false,
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -887,6 +960,8 @@
     "a21a1560-db1e-403e-921c-96a00ef641a2",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
     "product-recommendations",
-    "16363f6d-8a47-4ad4-b9a7-6c65fcb8782f"
+    "16363f6d-8a47-4ad4-b9a7-6c65fcb8782f",
+    "c18c2ce5-43e9-4215-9b4d-44b3c5e0a512",
+    "68f12b2d-ae5b-4f5c-9b5b-de48e21c71da"
   ]
 }
