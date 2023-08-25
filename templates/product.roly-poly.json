@@ -54,12 +54,6 @@
           "settings": {
             "show_dynamic_checkout": true
           }
-        },
-        "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-share-1": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
@@ -68,8 +62,7 @@
         "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-price-1",
         "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-variant_picker-1",
         "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-quantity_selector-1",
-        "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-buy_buttons-1",
-        "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-share-1"
+        "template--20025902432578__39b41601-378d-4764-a697-4f87cef70a35-buy_buttons-1"
       ],
       "settings": {
         "product": "",
@@ -78,6 +71,36 @@
         "media_position": "left",
         "hide_variants": false,
         "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "68f12b2d-ae5b-4f5c-9b5b-de48e21c71da": {
+      "type": "custom-image-text",
+      "blocks": {
+        "71add81f-a92d-41ab-91ef-654f0b62175c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Your feline friends are born hunters. They need regular exercise to keep their energetic spirits thriving. As a devoted pet parent, you deserve peace of mind, knowing that your beloved cat is thriving and content, even when time is limited. That's why we created PetSnowy automatic cat toys, offering a delightful solution to keep your cat engaged and entertained without ever leaving your couch.<\/p><p><strong>Random Rotation Feature:<\/strong> Mimic the movements of prey and trigger hunting instincts<\/p><p><strong>Healthy Playtime: <\/strong>15-Minute Auto Shutdown<\/p><p><strong>Safe Entertainment: <\/strong>ABS Material & Natural Feathers<\/p><p><strong>Peaceful Playtime: <\/strong>Ultra-Quiet Motor<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "71add81f-a92d-41ab-91ef-654f0b62175c"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/petsnowy_cat_toy_a7d0732f-8292-4b55-8e5f-c93738deedba.jpg",
+        "image_mob": "shopify:\/\/shop_images\/interactive_cat_toy_75985c75-c067-4672-9107-8537a18175a3.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "chek_wth": false,
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -120,8 +143,8 @@
         "aa65b87b-3f38-4af9-bf7f-7fbdc2c5e868"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/petsnowy_cat_toy_ba27dcc3-e038-4fba-95df-1dcc75c14504.jpg",
-        "image_mbl": "shopify:\/\/shop_images\/interactive_cat_toy_75985c75-c067-4672-9107-8537a18175a3.jpg",
+        "image": "shopify:\/\/shop_images\/automatic_cat_toy_fa8e365e-5ba4-458b-a56b-2d6f64583dd1.jpg",
+        "image_mbl": "shopify:\/\/shop_images\/cattoys_33f557c1-e5b4-4d8a-bdaf-276c3816d50d.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": true,
@@ -134,43 +157,60 @@
         "show_text_below": true
       }
     },
-    "30307903-7dfd-43fd-a94b-e8afddaa806b": {
-      "type": "image-text-block",
+    "c18c2ce5-43e9-4215-9b4d-44b3c5e0a512": {
+      "type": "multicolumn",
       "blocks": {
-        "9d1b52ba-657b-424d-a6c2-057a19a15eed": {
-          "type": "title",
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-1": {
+          "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/interactive_cat_toy_dd01c325-a9b2-467b-b9ac-6373bc2cedd8.jpg",
             "title": "Charge & Play in a Snap!",
-            "texts": "<p>With our Type-C Charging and One-Touch Activation, bonding with your furry friends has never been easier or more delightful!<\/p>"
+            "text": "<p>With our Type-C Charging and One-Touch Activation, bonding with your furry friends has never been easier or more delightful!<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "9ecc1e22-b451-440f-a65c-c2d0f68d6df7": {
-          "type": "title",
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-2": {
+          "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/beb8bd3e-4a80-4ea3-ab07-55c84a02ccb3.__CR14_0_577_577_PT0_SX300_V1.jpg",
             "title": "Let their inner hunter shine.",
-            "texts": "<p>Random Rotation feature will provide your furry friends with the excitement and stimulation they crave.<\/p>"
+            "text": "<p>Random Rotation feature will provide your furry friends with the excitement and stimulation they crave.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "64e8ed2c-3e0c-47e8-856a-4a4355769102": {
-          "type": "title",
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-3": {
+          "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/interactive_cat_toys_for_indoor_cats_fa7f67bf-2c72-4687-83fe-7512dbcde57a.jpg",
             "title": "Safety is our top priority.",
-            "texts": "<p>Made from durable ABS Safe Material and natural feathers, our interactive cat toys ensure a safe and engaging entertainment experience.<\/p>"
+            "text": "<p>Made from durable ABS Safe Material and natural feathers, our interactive cat toys ensure a safe and engaging entertainment experience.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "9d1b52ba-657b-424d-a6c2-057a19a15eed",
-        "9ecc1e22-b451-440f-a65c-c2d0f68d6df7",
-        "64e8ed2c-3e0c-47e8-856a-4a4355769102"
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-1",
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-2",
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-3"
       ],
       "settings": {
-        "img": "shopify:\/\/shop_images\/petsnowy_cat_toy_ba27dcc3-e038-4fba-95df-1dcc75c14504.jpg",
-        "mobimg": "shopify:\/\/shop_images\/interactive_cat_toy_75985c75-c067-4672-9107-8537a18175a3.jpg",
-        "heading": "",
-        "richtext": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "6bbb9f5f-efc8-428f-9807-f54235735aad": {
@@ -380,54 +420,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "04b360d8-d146-45a8-a347-043992834d03": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Your feline friends are born hunters. They need regular exercise to keep their energetic spirits thriving. As a devoted pet parent, you deserve peace of mind, knowing that your beloved cat is thriving and content, even when time is limited. That's why we created PetSnowy automatic cat toys, offering a delightful solution to keep your cat engaged and entertained without ever leaving your couch.",
-            "heading_size": "h1"
-          }
-        },
-        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Random Rotation Feature:<\/strong> Mimic the movements of prey and trigger hunting instincts<\/p><p><strong>Healthy Playtime: <\/strong>15-Minute Auto Shutdown<\/p><p><strong>Safe Entertainment: <\/strong>ABS Material & Natural Feathers<\/p><p><strong>Peaceful Playtime: <\/strong>Ultra-Quiet Motor<\/p>",
-            "text_style": "body"
-          }
-        },
-        "768ec14c-0903-4f35-a0b3-a6ea9c58350f": {
-          "type": "caption",
-          "disabled": true,
-          "settings": {
-            "caption": "Add a tagline",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-heading-1",
-        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-text-1",
-        "768ec14c-0903-4f35-a0b3-a6ea9c58350f"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/petsnowy_cat_toy_ba27dcc3-e038-4fba-95df-1dcc75c14504.jpg",
-        "image_mob": "shopify:\/\/shop_images\/interactivecattoy_452a603e-ae9f-480a-b7e1-911f405ad678.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "chek_wth": false,
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "main": {
@@ -808,7 +800,7 @@
         "2cad361c-19e5-4f4b-a613-ac6890e2dafe"
       ],
       "settings": {
-        "heading": "Demoralized by the charms of pleasure of the moment,",
+        "heading": "",
         "insta_txt": "Follow us on Instagram",
         "app_url": "http:\/\/instagram.com\/petsnowy_official",
         "img": "shopify:\/\/shop_images\/10062103_10_2_e9884dde-77ed-4967-ab03-4a0dfc4db4b8.jpg",
@@ -833,120 +825,18 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "16363f6d-8a47-4ad4-b9a7-6c65fcb8782f": {
-      "type": "rich-text",
-      "blocks": {
-        "template--20025902432578__16363f6d-8a47-4ad4-b9a7-6c65fcb8782f-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "Your feline friends are born hunters. They need regular exercise to keep their energetic spirits thriving. As a devoted pet parent, you deserve peace of mind, knowing that your beloved cat is thriving and content, even when time is limited. That's why we created PetSnowy automatic cat toys, offering a delightful solution to keep your cat engaged and entertained without ever leaving your couch."
-          }
-        },
-        "970e477a-7457-4e95-a016-164cfa32e08f": {
-          "type": "text",
-          "settings": {
-            "text": "Random Rotation Feature: Mimic the movements of prey and trigger hunting instincts\n\nHealthy Playtime: 15-Minute Auto Shutdown\n\nSafe Entertainment: ABS Material &amp; Natural Feathers\n\nPeaceful Playtime: Ultra-Quiet Motor"
-          }
-        }
-      },
-      "block_order": [
-        "template--20025902432578__16363f6d-8a47-4ad4-b9a7-6c65fcb8782f-text-1",
-        "970e477a-7457-4e95-a016-164cfa32e08f"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "c18c2ce5-43e9-4215-9b4d-44b3c5e0a512": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/interactive_cat_toy_dd01c325-a9b2-467b-b9ac-6373bc2cedd8.jpg",
-            "title": "Charge & Play in a Snap!",
-            "text": "<p>With our Type-C Charging and One-Touch Activation, bonding with your furry friends has never been easier or more delightful!<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/beb8bd3e-4a80-4ea3-ab07-55c84a02ccb3.__CR14_0_577_577_PT0_SX300_V1.jpg",
-            "title": "Let their inner hunter shine.",
-            "text": "<p>Random Rotation feature will provide your furry friends with the excitement and stimulation they crave.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/interactive_cat_toys_for_indoor_cats_fa7f67bf-2c72-4687-83fe-7512dbcde57a.jpg",
-            "title": "Safety is our top priority.",
-            "text": "<p>Made from durable ABS Safe Material and natural feathers, our interactive cat toys ensure a safe and engaging entertainment experience.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-1",
-        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-2",
-        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "68f12b2d-ae5b-4f5c-9b5b-de48e21c71da": {
-      "type": "custom-image-text",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/automatic_cat_toy_8edcb098-899c-4c20-b735-42ce9c6f6580.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "chek_wth": false,
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "24aa800b-1cc6-4355-bb54-110ba4e11787",
     "39b41601-378d-4764-a697-4f87cef70a35",
+    "68f12b2d-ae5b-4f5c-9b5b-de48e21c71da",
     "791f1fc8-f2ee-402a-919b-0cbf3a977591",
-    "30307903-7dfd-43fd-a94b-e8afddaa806b",
+    "c18c2ce5-43e9-4215-9b4d-44b3c5e0a512",
     "6bbb9f5f-efc8-428f-9807-f54235735aad",
     "8e620d02-c614-4dad-8253-0fe07f42a3ef",
     "6eb9d775-77d4-40be-937a-ab2748a2cf87",
     "fba5d096-d072-4f5d-8268-2861ab6a48ec",
-    "04b360d8-d146-45a8-a347-043992834d03",
     "main",
     "815a64f2-a2d1-497f-9dac-1cabc60918d0",
     "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8",
@@ -959,9 +849,6 @@
     "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1",
     "a21a1560-db1e-403e-921c-96a00ef641a2",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
-    "product-recommendations",
-    "16363f6d-8a47-4ad4-b9a7-6c65fcb8782f",
-    "c18c2ce5-43e9-4215-9b4d-44b3c5e0a512",
-    "68f12b2d-ae5b-4f5c-9b5b-de48e21c71da"
+    "product-recommendations"
   ]
 }
