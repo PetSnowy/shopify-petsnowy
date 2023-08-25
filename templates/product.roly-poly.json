@@ -94,51 +94,13 @@
           "settings": {
           }
         },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
         "collapsible-row-1": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
             "content": "",
             "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "disabled": true,
-          "settings": {
-            "share_label": "Share"
           }
         }
       },
@@ -150,11 +112,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "share"
+        "collapsible-row-1"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -293,110 +251,6 @@
         "padding_bottom": 36
       }
     },
-    "6bbb9f5f-efc8-428f-9807-f54235735aad": {
-      "type": "image-banner",
-      "blocks": {
-        "0b63cf3d-54e5-4f39-a228-0afd4bbf4283": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "03af7df8-808f-4399-b676-f5f08db57180": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "ab506b5c-59bd-4be4-a587-03dbd901293b": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "0b63cf3d-54e5-4f39-a228-0afd4bbf4283",
-        "03af7df8-808f-4399-b676-f5f08db57180",
-        "ab506b5c-59bd-4be4-a587-03dbd901293b"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/automatic_cat_toy_0166f611-8401-427a-a774-793f90019ef1.jpg",
-        "image_mbl": "shopify:\/\/shop_images\/automatic_cat_toy_9f9d254c-30b2-458d-80cd-54694ce204b6.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": true,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "8e620d02-c614-4dad-8253-0fe07f42a3ef": {
-      "type": "image-banner",
-      "blocks": {
-        "1f36805f-15ae-4829-8926-2b58ed7e3a25": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "a7821772-6aca-4a46-9665-dcbb0f86018b": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "91032940-4de3-41dd-9258-01a44c4c964b": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "1f36805f-15ae-4829-8926-2b58ed7e3a25",
-        "a7821772-6aca-4a46-9665-dcbb0f86018b",
-        "91032940-4de3-41dd-9258-01a44c4c964b"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/cat_toys_049396c5-2d64-4595-a1cf-faee322d7638.jpg",
-        "image_mbl": "shopify:\/\/shop_images\/cat_toys_a1e4e4ae-f33e-48b4-a9e9-6054fd732bea.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": true,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "6eb9d775-77d4-40be-937a-ab2748a2cf87": {
       "type": "image-banner",
       "blocks": {
@@ -436,6 +290,58 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/interactive_cat_toys_4895e26f-e318-42a9-8c8c-306f97a37a26.jpg",
+        "image_mbl": "shopify:\/\/shop_images\/automaticcattoy.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "6bbb9f5f-efc8-428f-9807-f54235735aad": {
+      "type": "image-banner",
+      "blocks": {
+        "0b63cf3d-54e5-4f39-a228-0afd4bbf4283": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "03af7df8-808f-4399-b676-f5f08db57180": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "ab506b5c-59bd-4be4-a587-03dbd901293b": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "0b63cf3d-54e5-4f39-a228-0afd4bbf4283",
+        "03af7df8-808f-4399-b676-f5f08db57180",
+        "ab506b5c-59bd-4be4-a587-03dbd901293b"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cat_toys_049396c5-2d64-4595-a1cf-faee322d7638.jpg",
         "image_mbl": "shopify:\/\/shop_images\/petsnowy_cat_toys_1633b393-14ef-49af-92e6-141105d04bb1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
@@ -714,14 +620,14 @@
         "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-0"
       ],
       "settings": {
-        "caption": "Product Details",
+        "caption": "",
         "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
         "color_scheme": "background-1",
         "container_color_scheme": "background-2",
-        "open_first_collapsible_row": false,
+        "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
@@ -796,9 +702,8 @@
     "6f887e38-8539-4eb2-a2f7-a77aa8af4c79",
     "86f268b1-4ea4-46d2-8097-7d8c56290906",
     "c18c2ce5-43e9-4215-9b4d-44b3c5e0a512",
-    "6bbb9f5f-efc8-428f-9807-f54235735aad",
-    "8e620d02-c614-4dad-8253-0fe07f42a3ef",
     "6eb9d775-77d4-40be-937a-ab2748a2cf87",
+    "6bbb9f5f-efc8-428f-9807-f54235735aad",
     "fba5d096-d072-4f5d-8268-2861ab6a48ec",
     "815a64f2-a2d1-497f-9dac-1cabc60918d0",
     "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8",
