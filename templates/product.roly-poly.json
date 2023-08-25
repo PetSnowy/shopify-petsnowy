@@ -420,19 +420,11 @@
             "text": "<p>With our Type-C Charging and One-Touch Activation, bonding with your furry friends has never been easier or more delightful!<\/p>",
             "text_style": "body"
           }
-        },
-        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
         }
       },
       "block_order": [
         "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-heading-1",
-        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-text-1",
-        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-button-1"
+        "template--20025902432578__04b360d8-d146-45a8-a347-043992834d03-text-1"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/interactive_cat_toy_dd01c325-a9b2-467b-b9ac-6373bc2cedd8.jpg",
