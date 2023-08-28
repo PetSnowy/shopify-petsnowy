@@ -28,10 +28,6 @@
 			background-color: rgb(160, 147, 131);
 			opacity: 1;
 			transition: all 0.3s ease;
-
-			&:hover {
-				opacity: 0.8;
-			}
 		}
 
 
@@ -94,6 +90,10 @@
 		a {
 			border-radius: 10px;
 			padding: 8px;
+
+			&:hover {
+				opacity: 0.8;
+			}
 		}
 
 		.title {
