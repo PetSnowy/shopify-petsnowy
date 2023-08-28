@@ -697,7 +697,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Specification",
-            "icon": "box",
+            "icon": "none",
             "row_content": "",
             "page": "dimension"
           }
