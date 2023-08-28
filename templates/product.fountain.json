@@ -426,30 +426,6 @@
         "title": "Long-lasting & Continuous Hydration"
       }
     },
-    "4e1a7ea3-1deb-4828-8422-5b84ac8efed1": {
-      "type": "image-text-block",
-      "blocks": {
-        "b18da27e-5901-4199-bf09-76add9a69e5c": {
-          "type": "title",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "texts": ""
-          }
-        }
-      },
-      "block_order": [
-        "b18da27e-5901-4199-bf09-76add9a69e5c"
-      ],
-      "settings": {
-        "img": "shopify:\/\/shop_images\/water_fountain_for_cats.jpg",
-        "mobimg": "shopify:\/\/shop_images\/cat_water_dispenser_4d640e72-4c83-461b-a3b1-a3f62009dc75.png",
-        "heading": "",
-        "richtext": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "3a2ece32-4149-4f21-a57c-a9aad69b1b5c": {
       "type": "image-text-block",
       "blocks": {
@@ -468,6 +444,30 @@
       "settings": {
         "img": "shopify:\/\/shop_images\/dog_water_fountain.png",
         "mobimg": "shopify:\/\/shop_images\/1200-1600_1.jpg",
+        "heading": "",
+        "richtext": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "4e1a7ea3-1deb-4828-8422-5b84ac8efed1": {
+      "type": "image-text-block",
+      "blocks": {
+        "b18da27e-5901-4199-bf09-76add9a69e5c": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "texts": ""
+          }
+        }
+      },
+      "block_order": [
+        "b18da27e-5901-4199-bf09-76add9a69e5c"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/water_fountain_for_cats.jpg",
+        "mobimg": "shopify:\/\/shop_images\/cat_water_dispenser_4d640e72-4c83-461b-a3b1-a3f62009dc75.png",
         "heading": "",
         "richtext": "",
         "padding_top": 0,
@@ -696,8 +696,8 @@
     "9ebcbf44-6bc3-4356-a04f-63dbfca91b59",
     "159dfafd-7d99-4872-b6e0-61b238b8999a",
     "6044ed43-0580-47c7-a1a1-7ebfc77dd192",
-    "4e1a7ea3-1deb-4828-8422-5b84ac8efed1",
     "3a2ece32-4149-4f21-a57c-a9aad69b1b5c",
+    "4e1a7ea3-1deb-4828-8422-5b84ac8efed1",
     "fca19c8b-9871-44a6-af83-d6b5cfae63cc",
     "32c40a0e-6088-42f9-919a-c917445732d8",
     "8e104c0e-1cc6-4d18-8f96-60fa59160afc",
