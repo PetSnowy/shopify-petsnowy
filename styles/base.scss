@@ -5518,6 +5518,20 @@ label.productlabel_info,
 		.color-background-1.gradient .collapsible-content__wrapper {
 			padding: 0px;
 		}
+
+		.accordion {
+			margin-top: 0px;
+		}
+	}
+
+	#shopify-section-template--20331252121922__a21a1560-db1e-403e-921c-96a00ef641a2 {
+		.color-background-1.gradient .collapsible-content__wrapper {
+			padding: 0px;
+		}
+
+		.accordion {
+			margin-top: vw(20px);
+		}
 	}
 }
 
@@ -5561,5 +5575,20 @@ $item: 5;
 		.color-background-1.gradient .collapsible-content__wrapper {
 			padding: 0px;
 		}
+
+		.accordion {
+			margin-top: 0px;
+		}
 	}
+
+	#shopify-section-template--20331252121922__a21a1560-db1e-403e-921c-96a00ef641a2 {
+		.color-background-1.gradient .collapsible-content__wrapper {
+			padding: 0px;
+		}
+
+		.accordion {
+			margin: 10px 0px;
+		}
+	}
+
 }
