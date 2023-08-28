@@ -32,10 +32,11 @@
   const map = new Map([
     ['en', { title: 'PetSnowy', subText: 'full version download' }],
     ['zh', { title: '糯雪宠物', subText: '官方版 下载' }],
-    ['zh-hk', { title: '糯雪寵物', subText: '官方版 下載' }],
-    ['zh-tw', { title: '糯雪寵物', subText: '官方版 下載' }],
+    ['zh-HK', { title: '糯雪寵物', subText: '官方版 下載' }],
+    ['zh-TW', { title: '糯雪寵物', subText: '官方版 下載' }],
     ['ja', { title: 'ワックス状の雪のペット', subText: '正式版 ダウンロード' }],
   ]);
+  console.log(browserLanguage);
 
   if (map.has(browserLanguage)) {
     document.querySelector('.title').innerText = map.get(browserLanguage).title;

@@ -5592,3 +5592,22 @@ $item: 5;
 	}
 
 }
+
+.Download {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.download {
+
+	footer,
+	header,
+	.mobile_order_link {
+		display: none !important;
+	}
+
+	#dynamic-react-root+div {
+		display: none;
+	}
+}
