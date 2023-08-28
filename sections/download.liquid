@@ -3,17 +3,25 @@
 <div class="download page-width">
   <div class="text-wrapper">
     <div class="logo">
-      <img src="{{ section.settings.logo-img }}" alt="petsnowy-download">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0683/5293/4210/files/Logo512_2cdacae7-4bf4-4822-aafb-3d05479dd6c3.png?v=1693217894"
+        alt="petsnowy-download"
+        loading="lazy"
+      >
     </div>
     <p class="title">{{ section.settings.text }}</p>
     <p class="sub_title">{{ section.settings.sub_txt }}</p>
     <div class="btn-wrapper">
       <a class="ios" href="https://apps.apple.com/cn/app/%E7%B3%AF%E9%9B%AA%E5%AE%A0%E7%89%A9/id6443769648">
-        <img src="{{ section.settings.ios-img }}" alt="ios" loading="lazy">
+        <img src="https://cdn.shopify.com/s/files/1/0683/5293/4210/files/ios.png?v=1693218655" alt="ios" loading="lazy">
         <span>iOS</span>
       </a>
       <a class="android" href="https://play.google.com/store/apps/details?id=com.petsnowy">
-        <img src="{{ section.settings.android-img }}" alt="Android" loading="lazy">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0683/5293/4210/files/Android.png?v=1693218635"
+          alt="Android"
+          loading="lazy"
+        >
         <span>Android</span>
       </a>
     </div>
@@ -28,6 +36,7 @@
     ['zh-tw', { title: '糯雪寵物', subText: '官方版 下載' }],
     ['ja', { title: 'ワックス状の雪のペット', subText: '正式版 ダウンロード' }],
   ]);
+
   if (map.has(browserLanguage)) {
     document.querySelector('.title').innerText = map.get(browserLanguage).title;
     document.querySelector('.sub_title').innerText = map.get(browserLanguage).subText;
@@ -50,21 +59,6 @@
       "type": "text",
       "id": "sub_txt",
       "label": "sub_text"
-    },
-    {
-      "type": "image_picker",
-      "id": "logo-img",
-      "label": "logo-img"
-    },
-    {
-      "tyep": "image_picker",
-      "id": "ios-img",
-      "label": "ios-img"
-    },
-    {
-      "tyep": "image_picker",
-      "id": "android-img",
-      "label": "android-img"
     }
   ],
   "presets": [
