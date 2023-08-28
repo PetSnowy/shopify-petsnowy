@@ -102,6 +102,37 @@
         "padding_bottom": 36
       }
     },
+    "a21a1560-db1e-403e-921c-96a00ef641a2": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Specification",
+            "icon": "none",
+            "row_content": "",
+            "page": "cat-toy-specification"
+          }
+        }
+      },
+      "block_order": [
+        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-0"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "791f1fc8-f2ee-402a-919b-0cbf3a977591": {
       "type": "image-banner",
       "blocks": {
@@ -707,37 +738,6 @@
         "padding_bottom": 0
       }
     },
-    "a21a1560-db1e-403e-921c-96a00ef641a2": {
-      "type": "collapsible-content",
-      "blocks": {
-        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-0": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Specification",
-            "icon": "none",
-            "row_content": "",
-            "page": "cat-toy-specification"
-          }
-        }
-      },
-      "block_order": [
-        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-0"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "background-1",
-        "container_color_scheme": "background-2",
-        "open_first_collapsible_row": true,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd": {
       "type": "social-image-text",
       "blocks": {
@@ -803,6 +803,7 @@
   "order": [
     "main",
     "1c3069a6-7e70-4ded-b084-6cba9e5ae822",
+    "a21a1560-db1e-403e-921c-96a00ef641a2",
     "791f1fc8-f2ee-402a-919b-0cbf3a977591",
     "6f887e38-8539-4eb2-a2f7-a77aa8af4c79",
     "86f268b1-4ea4-46d2-8097-7d8c56290906",
@@ -820,7 +821,6 @@
     "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a",
     "a7d781da-2db9-4e93-a537-ae36cc05295f",
     "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1",
-    "a21a1560-db1e-403e-921c-96a00ef641a2",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
     "product-recommendations"
   ]
