@@ -1,22 +1,5 @@
 {
   "sections": {
-    "24aa800b-1cc6-4355-bb54-110ba4e11787": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/10071137_13_1_d9e5b129-6383-4cd8-86e1-4b9fce1ed588.png",
-        "image_mbl": "shopify:\/\/shop_images\/10071137_13_1.png",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8": {
       "type": "rich-text",
       "blocks": {
@@ -30,6 +13,7 @@
       "block_order": [
         "b504c877-67df-4d07-b421-9fac2e31e94f"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -144,7 +128,6 @@
         "collapsible-row-3",
         "share"
       ],
-      "disabled": true,
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
@@ -327,6 +310,57 @@
         "padding_bottom": 60
       }
     },
+    "70b0216c-3ad4-4b2a-916c-d7cf2044becc": {
+      "type": "image-banner",
+      "blocks": {
+        "template--20025903448386__70b0216c-3ad4-4b2a-916c-d7cf2044becc-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--20025903448386__70b0216c-3ad4-4b2a-916c-d7cf2044becc-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--20025903448386__70b0216c-3ad4-4b2a-916c-d7cf2044becc-buttons-1": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--20025903448386__70b0216c-3ad4-4b2a-916c-d7cf2044becc-heading-1",
+        "template--20025903448386__70b0216c-3ad4-4b2a-916c-d7cf2044becc-text-1",
+        "template--20025903448386__70b0216c-3ad4-4b2a-916c-d7cf2044becc-buttons-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cat_water_fountain.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "9ebcbf44-6bc3-4356-a04f-63dbfca91b59": {
       "type": "image-text-block",
       "blocks": {
@@ -368,31 +402,7 @@
       ],
       "settings": {
         "img": "shopify:\/\/shop_images\/pet_water_fountain.jpg",
-        "mobimg": "shopify:\/\/shop_images\/pet_fountain.png",
-        "heading": "",
-        "richtext": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "4e1a7ea3-1deb-4828-8422-5b84ac8efed1": {
-      "type": "image-text-block",
-      "blocks": {
-        "b18da27e-5901-4199-bf09-76add9a69e5c": {
-          "type": "title",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "texts": ""
-          }
-        }
-      },
-      "block_order": [
-        "b18da27e-5901-4199-bf09-76add9a69e5c"
-      ],
-      "settings": {
-        "img": "shopify:\/\/shop_images\/water_fountain_for_cats.jpg",
-        "mobimg": "shopify:\/\/shop_images\/pet_water_fountain_0b5b29bb-8d9b-4696-8542-badfa45089c8.png",
+        "mobimg": "shopify:\/\/shop_images\/cat_water_fountain_8efaa3ec-494a-4043-a2f2-c31810e596ea.png",
         "heading": "",
         "richtext": "",
         "padding_top": 0,
@@ -416,6 +426,30 @@
         "title": "Long-lasting & Continuous Hydration"
       }
     },
+    "4e1a7ea3-1deb-4828-8422-5b84ac8efed1": {
+      "type": "image-text-block",
+      "blocks": {
+        "b18da27e-5901-4199-bf09-76add9a69e5c": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "texts": ""
+          }
+        }
+      },
+      "block_order": [
+        "b18da27e-5901-4199-bf09-76add9a69e5c"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/water_fountain_for_cats.jpg",
+        "mobimg": "shopify:\/\/shop_images\/cat_water_dispenser_4d640e72-4c83-461b-a3b1-a3f62009dc75.png",
+        "heading": "",
+        "richtext": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "3a2ece32-4149-4f21-a57c-a9aad69b1b5c": {
       "type": "image-text-block",
       "blocks": {
@@ -433,7 +467,7 @@
       ],
       "settings": {
         "img": "shopify:\/\/shop_images\/dog_water_fountain.png",
-        "mobimg": "shopify:\/\/shop_images\/cat_water_dispenser.png",
+        "mobimg": "shopify:\/\/shop_images\/1200-1600_1.jpg",
         "heading": "",
         "richtext": "",
         "padding_top": 0,
@@ -568,6 +602,24 @@
         "padding_bottom": 36
       }
     },
+    "24aa800b-1cc6-4355-bb54-110ba4e11787": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/10071137_13_1_d9e5b129-6383-4cd8-86e1-4b9fce1ed588.png",
+        "image_mbl": "shopify:\/\/shop_images\/10071137_13_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd": {
       "type": "social-image-text",
       "blocks": {
@@ -631,7 +683,6 @@
     }
   },
   "order": [
-    "24aa800b-1cc6-4355-bb54-110ba4e11787",
     "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
     "main",
     "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b",
@@ -641,15 +692,17 @@
     "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1",
     "a01e7f6a-6040-4334-97af-966598236644",
     "c79d2326-cdd9-44c2-bea3-56cd03cff554",
+    "70b0216c-3ad4-4b2a-916c-d7cf2044becc",
     "9ebcbf44-6bc3-4356-a04f-63dbfca91b59",
     "159dfafd-7d99-4872-b6e0-61b238b8999a",
-    "4e1a7ea3-1deb-4828-8422-5b84ac8efed1",
     "6044ed43-0580-47c7-a1a1-7ebfc77dd192",
+    "4e1a7ea3-1deb-4828-8422-5b84ac8efed1",
     "3a2ece32-4149-4f21-a57c-a9aad69b1b5c",
     "fca19c8b-9871-44a6-af83-d6b5cfae63cc",
     "32c40a0e-6088-42f9-919a-c917445732d8",
     "8e104c0e-1cc6-4d18-8f96-60fa59160afc",
     "d2b3bceb-28f8-409f-ac63-f76725ba9041",
+    "24aa800b-1cc6-4355-bb54-110ba4e11787",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
     "product-recommendations"
   ]
