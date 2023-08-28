@@ -1,0 +1,31 @@
+<div class="download">
+  <div class="text-wrapper">
+    <p class="title">{{ section.settings.text }}</p>
+    <p class="sub_title">{{ section.settings.sub_txt }}</p>
+  </div>
+  <div class="btn">{{ section.settings.btn }}</div>
+</div>
+<script></script>
+
+{% schema %}
+{
+  "name": "download",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "title"
+    },
+    {
+      "type": "text",
+      "id": "sub_txt",
+      "label": "sub_text"
+    }
+		{
+			"type": "text",
+      "id": "btn",
+      "label": "btn_text"
+		}
+  ]
+}
+{% endschema %}
