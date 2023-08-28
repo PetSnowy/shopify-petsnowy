@@ -39,34 +39,6 @@
         "padding_bottom": 40
       }
     },
-    "635deaad-6797-4ca6-9a10-c443617e9573": {
-      "type": "product-collection-list",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Bg_Image.png",
-        "title": "Your Collection Text Here",
-        "text": "Your Text Here",
-        "url": "",
-        "images": "shopify:\/\/shop_images\/Bg_Image_1.png",
-        "titles": "Your Collection Text Here",
-        "texts": "Your Text Here",
-        "urls": "",
-        "padding_top": 40,
-        "padding_bottom": 12
-      }
-    },
-    "b6e45bc2-2133-4106-a9db-61ab406abfe6": {
-      "type": "Product-video",
-      "disabled": true,
-      "settings": {
-        "vdio_img": "shopify:\/\/shop_images\/video.png",
-        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/86480277b00d435bbbba6e62c6b5f781.mp4",
-        "heading": "Your Video Text Here",
-        "text": "Your Video Text Here",
-        "padding_top": 20,
-        "padding_bottom": 40
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -183,52 +155,6 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
-      }
-    },
-    "815a64f2-a2d1-497f-9dac-1cabc60918d0": {
-      "type": "Explore-products",
-      "blocks": {
-        "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        }
-      },
-      "block_order": [
-        "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "description": "<p>Cannot foresee Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
-        "product": "petsnowy-indiegogo-launch-discount-30-off",
-        "padding_top": 0,
-        "padding_bottom": 80
-      }
-    },
-    "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8": {
-      "type": "product-grid-collection",
-      "disabled": true,
-      "settings": {
-        "richtext": "",
-        "images": "shopify:\/\/shop_images\/2-ZERO-OROR_04.gif",
-        "titles": "Your Collection Text Here",
-        "texts": "Your Text Here",
-        "urls": "",
-        "half_img": "shopify:\/\/shop_images\/11_5d9b5548-f0cc-4f26-bc86-b0468a725a83.jpg",
-        "image": "shopify:\/\/shop_images\/3_20b9b2cb-b93c-488c-9d7c-341b75f7f603.jpg",
-        "title": "The Ultimate Solution for Odor-Free Living",
-        "text": "Your Text Here",
-        "url": "",
-        "title2": "",
-        "text2": "",
-        "url2": "",
-        "titles2": "",
-        "texts2": "",
-        "urls2": "",
-        "btns": "",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b": {
@@ -449,23 +375,6 @@
         "padding_bottom": 0
       }
     },
-    "6044ed43-0580-47c7-a1a1-7ebfc77dd192": {
-      "type": "text",
-      "blocks": {
-        "db185a54-d8bc-419c-b14b-6704aa258645": {
-          "type": "block",
-          "settings": {
-            "text": "The SNOW+ Cat Water Fountain is built to provide reliable and long-lasting performance. Our fountain has been rigorously tested and can operate continuously for an impressive duration of up to 900 days without interruption. This ensures that your feline friend will always have access to fresh and flowing water, promoting their hydration and overall well-being."
-          }
-        }
-      },
-      "block_order": [
-        "db185a54-d8bc-419c-b14b-6704aa258645"
-      ],
-      "settings": {
-        "title": "Long-lasting & Continuous Hydration"
-      }
-    },
     "4e1a7ea3-1deb-4828-8422-5b84ac8efed1": {
       "type": "image-text-block",
       "blocks": {
@@ -490,6 +399,23 @@
         "padding_bottom": 0
       }
     },
+    "6044ed43-0580-47c7-a1a1-7ebfc77dd192": {
+      "type": "text",
+      "blocks": {
+        "db185a54-d8bc-419c-b14b-6704aa258645": {
+          "type": "block",
+          "settings": {
+            "text": "The SNOW+ Cat Water Fountain is built to provide reliable and long-lasting performance. Our fountain has been rigorously tested and can operate continuously for an impressive duration of up to 900 days without interruption. This ensures that your feline friend will always have access to fresh and flowing water, promoting their hydration and overall well-being."
+          }
+        }
+      },
+      "block_order": [
+        "db185a54-d8bc-419c-b14b-6704aa258645"
+      ],
+      "settings": {
+        "title": "Long-lasting & Continuous Hydration"
+      }
+    },
     "3a2ece32-4149-4f21-a57c-a9aad69b1b5c": {
       "type": "image-text-block",
       "blocks": {
@@ -512,6 +438,79 @@
         "richtext": "",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "fca19c8b-9871-44a6-af83-d6b5cfae63cc": {
+      "type": "text",
+      "blocks": {
+        "41e22c40-162b-4b76-ba9b-f379bf1ea028": {
+          "type": "block",
+          "settings": {
+            "text": "Make sure to give the SNOW+ Cat Water Fountain's filter a proper soak before use! The filter needs to be soaked at least twice for 5 minutes each time. One little pack of filter can keep your pet's healthy hydration for a whole month. You'll also get a reminder from the PetSnowy App when it's time to give the filter a swap."
+          }
+        }
+      },
+      "block_order": [
+        "41e22c40-162b-4b76-ba9b-f379bf1ea028"
+      ],
+      "settings": {
+        "title": "Changing Filter Monthly for Healthier Hydration"
+      }
+    },
+    "32c40a0e-6088-42f9-919a-c917445732d8": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--20025903448386__32c40a0e-6088-42f9-919a-c917445732d8-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/petsnowy.png",
+            "title": "Anti-Bite Cable",
+            "text": "<p>With its anti-bite cable, the water fountain is designed to withstand your pet's chewing tendencies and ensure the cable remains intact.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20025903448386__32c40a0e-6088-42f9-919a-c917445732d8-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pet_fountain_78391d2c-848f-4e77-8b4e-ad8540231cef.png",
+            "title": "Minimum Water Line",
+            "text": "<p>An in-app notification will be sent when the water line reaches its minimum level, allowing you to promptly refill the pet water fountain for your furry companion.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20025903448386__32c40a0e-6088-42f9-919a-c917445732d8-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cat_water_dispenser_c7f59232-af5a-4d0c-b4c8-fb2e90b75b70.png",
+            "title": "Slip-proof Base",
+            "text": "<p>SNOW+ cat water fountain includes a slip-proof base, ensuring stability and preventing accidental tipping.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20025903448386__32c40a0e-6088-42f9-919a-c917445732d8-column-1",
+        "template--20025903448386__32c40a0e-6088-42f9-919a-c917445732d8-column-2",
+        "template--20025903448386__32c40a0e-6088-42f9-919a-c917445732d8-column-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "8e104c0e-1cc6-4d18-8f96-60fa59160afc": {
@@ -549,53 +548,20 @@
             "row_content": "",
             "page": "water-fountain-specification"
           }
-        },
-        "template--19468281643330__d2b3bceb-28f8-409f-ac63-f76725ba9041-1688704221a0f360d2-1": {
-          "type": "collapsible_row",
-          "disabled": true,
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "template--19468281643330__d2b3bceb-28f8-409f-ac63-f76725ba9041-1688704221a0f360d2-2": {
-          "type": "collapsible_row",
-          "disabled": true,
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "template--19468281643330__d2b3bceb-28f8-409f-ac63-f76725ba9041-1688704221a0f360d2-3": {
-          "type": "collapsible_row",
-          "disabled": true,
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
         }
       },
       "block_order": [
-        "template--19468281643330__d2b3bceb-28f8-409f-ac63-f76725ba9041-1688704221a0f360d2-0",
-        "template--19468281643330__d2b3bceb-28f8-409f-ac63-f76725ba9041-1688704221a0f360d2-1",
-        "template--19468281643330__d2b3bceb-28f8-409f-ac63-f76725ba9041-1688704221a0f360d2-2",
-        "template--19468281643330__d2b3bceb-28f8-409f-ac63-f76725ba9041-1688704221a0f360d2-3"
+        "template--19468281643330__d2b3bceb-28f8-409f-ac63-f76725ba9041-1688704221a0f360d2-0"
       ],
       "settings": {
-        "caption": "Product Details",
+        "caption": "",
         "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
         "color_scheme": "background-1",
         "container_color_scheme": "background-2",
-        "open_first_collapsible_row": false,
+        "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
@@ -662,33 +628,12 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "f56ee8f4-6de2-441e-a809-bc3feb710c4c": {
-      "type": "text",
-      "blocks": {
-        "be80b885-9bf3-43f5-925d-ec187de4dcf8": {
-          "type": "block",
-          "settings": {
-            "text": "Make sure to give the SNOW+ Cat Water Fountain's filter a proper soak before use! The filter needs to be soaked at least twice for 5 minutes each time. One little pack of filter can keep your pet's healthy hydration for a whole month. You'll also get a reminder from the PetSnowy App when it's time to give the filter a swap."
-          }
-        }
-      },
-      "block_order": [
-        "be80b885-9bf3-43f5-925d-ec187de4dcf8"
-      ],
-      "settings": {
-        "title": "Changing Filter Monthly for Healthier Hydration"
-      }
     }
   },
   "order": [
     "24aa800b-1cc6-4355-bb54-110ba4e11787",
     "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
-    "635deaad-6797-4ca6-9a10-c443617e9573",
-    "b6e45bc2-2133-4106-a9db-61ab406abfe6",
     "main",
-    "815a64f2-a2d1-497f-9dac-1cabc60918d0",
-    "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8",
     "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b",
     "f594996b-4dbf-425f-9059-9821e6ea4e6b",
     "30307903-7dfd-43fd-a94b-e8afddaa806b",
@@ -698,13 +643,14 @@
     "c79d2326-cdd9-44c2-bea3-56cd03cff554",
     "9ebcbf44-6bc3-4356-a04f-63dbfca91b59",
     "159dfafd-7d99-4872-b6e0-61b238b8999a",
-    "6044ed43-0580-47c7-a1a1-7ebfc77dd192",
     "4e1a7ea3-1deb-4828-8422-5b84ac8efed1",
+    "6044ed43-0580-47c7-a1a1-7ebfc77dd192",
     "3a2ece32-4149-4f21-a57c-a9aad69b1b5c",
+    "fca19c8b-9871-44a6-af83-d6b5cfae63cc",
+    "32c40a0e-6088-42f9-919a-c917445732d8",
     "8e104c0e-1cc6-4d18-8f96-60fa59160afc",
     "d2b3bceb-28f8-409f-ac63-f76725ba9041",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
-    "product-recommendations",
-    "f56ee8f4-6de2-441e-a809-bc3feb710c4c"
+    "product-recommendations"
   ]
 }
