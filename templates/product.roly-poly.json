@@ -760,6 +760,17 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "20ecbc56-4b6b-47c1-9c7b-3a838972fa45": {
+      "type": "Product-video",
+      "settings": {
+        "vdio_img": "shopify:\/\/shop_images\/cat_toy.jpg",
+        "vdio": "https:\/\/youtube.com\/shorts\/QatXR53jC6I",
+        "heading": "PetSnowy Roly-poly Cat Toy Video",
+        "text": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -783,6 +794,7 @@
     "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1",
     "a21a1560-db1e-403e-921c-96a00ef641a2",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
-    "product-recommendations"
+    "product-recommendations",
+    "20ecbc56-4b6b-47c1-9c7b-3a838972fa45"
   ]
 }
