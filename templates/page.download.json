@@ -7,9 +7,18 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "81a3d404-9a9c-4064-b802-f8e3c66d0cfa": {
+      "type": "download",
+      "settings": {
+        "text": "糯雪宠物",
+        "sub_txt": "正式版",
+        "btn": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "81a3d404-9a9c-4064-b802-f8e3c66d0cfa"
   ]
 }
