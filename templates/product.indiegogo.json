@@ -729,14 +729,14 @@
         "template--19468281676098__909b5ce5-d2e3-4008-a0a9-f437c0b89bb4-1688697103844d3bed-3"
       ],
       "settings": {
-        "caption": "Product Details",
+        "caption": "",
         "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
         "color_scheme": "background-1",
         "container_color_scheme": "background-2",
-        "open_first_collapsible_row": false,
+        "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
