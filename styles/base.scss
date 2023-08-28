@@ -5513,6 +5513,12 @@ label.productlabel_info,
 			}
 		}
 	}
+
+	#shopify-section-template--20331252121922__1c3069a6-7e70-4ded-b084-6cba9e5ae822 {
+		.color-background-1.gradient .collapsible-content__wrapper {
+			padding: 0px;
+		}
+	}
 }
 
 $item: 5;
@@ -5551,4 +5557,9 @@ $item: 5;
 	//   height: calc(100% - var(--main-padding-top));
 	//   object-fit: cover;
 	// }
+	#shopify-section-template--20331252121922__1c3069a6-7e70-4ded-b084-6cba9e5ae822 {
+		.color-background-1.gradient .collapsible-content__wrapper {
+			padding: 0px;
+		}
+	}
 }
