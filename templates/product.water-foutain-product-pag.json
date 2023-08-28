@@ -1,0 +1,656 @@
+{
+  "sections": {
+    "24aa800b-1cc6-4355-bb54-110ba4e11787": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/10071137_13_1_d9e5b129-6383-4cd8-86e1-4b9fce1ed588.png",
+        "image_mbl": "shopify:\/\/shop_images\/10071137_13_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8": {
+      "type": "rich-text",
+      "blocks": {
+        "b504c877-67df-4d07-b421-9fac2e31e94f": {
+          "type": "text",
+          "settings": {
+            "text": "<h1><span>SNOW+ Pet Water Fountain<\/span><\/h1><span>Order now, and save 15%<\/span><br><span>*Only one discount can be applied per purchase.<\/span>"
+          }
+        }
+      },
+      "block_order": [
+        "b504c877-67df-4d07-b421-9fac2e31e94f"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 40
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "truck",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Dimensions",
+            "icon": "ruler",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "heart",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "share"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "gallery_layout": "stacked",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b": {
+      "type": "product-grid-image",
+      "disabled": true,
+      "settings": {
+        "flex_data": false,
+        "heading": "Your Text Here",
+        "richtext": "<p>Ban not foresee of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
+        "link": "",
+        "btn_title": "",
+        "img_pet": "shopify:\/\/shop_images\/Bg_Image_7.png",
+        "title2": "",
+        "text2": "",
+        "url2": "",
+        "titles2": "Your Text Here",
+        "texts2": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the.<\/p>",
+        "urls2": "",
+        "btns": "Explore accessories",
+        "padding_top": 50,
+        "padding_bottom": 0
+      }
+    },
+    "f594996b-4dbf-425f-9059-9821e6ea4e6b": {
+      "type": "Information-video",
+      "disabled": true,
+      "settings": {
+        "richtext": "<p>pleasure of the moment, cannot foresee so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
+        "vdio_img": "shopify:\/\/shop_images\/Rectangle_14_1.png",
+        "vdio": "",
+        "heading": "The power you need",
+        "text": "Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.",
+        "padding_top": 20,
+        "padding_bottom": 60
+      }
+    },
+    "30307903-7dfd-43fd-a94b-e8afddaa806b": {
+      "type": "image-text-block",
+      "blocks": {
+        "9d1b52ba-657b-424d-a6c2-057a19a15eed": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
+          }
+        },
+        "9ecc1e22-b451-440f-a65c-c2d0f68d6df7": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
+          }
+        },
+        "64e8ed2c-3e0c-47e8-856a-4a4355769102": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "9d1b52ba-657b-424d-a6c2-057a19a15eed",
+        "9ecc1e22-b451-440f-a65c-c2d0f68d6df7",
+        "64e8ed2c-3e0c-47e8-856a-4a4355769102"
+      ],
+      "disabled": true,
+      "settings": {
+        "img": "shopify:\/\/shop_images\/Bg_Image_10.png",
+        "heading": "Your Text Here",
+        "richtext": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "7956ec82-bee1-4347-a954-e5194f282217": {
+      "type": "product-grid-image",
+      "disabled": true,
+      "settings": {
+        "flex_data": false,
+        "heading": "The Ultimate Solution for Odor-Free Living",
+        "richtext": "<p>Cutting-Edge Triple Deodorization System with TiO2<\/p>",
+        "link": "#",
+        "btn_title": "",
+        "image2": "shopify:\/\/shop_images\/3_20b9b2cb-b93c-488c-9d7c-341b75f7f603.jpg",
+        "title2": "",
+        "text2": "",
+        "url2": "",
+        "images2": "shopify:\/\/shop_images\/2-ZERO-OROR_04.gif",
+        "titles2": "Your Text Here",
+        "texts2": "<p>Demoralized by the charms of pleasure of the moment by desire, that they cannot foresee the pain and trouble.<\/p>",
+        "urls2": "#",
+        "btns": "Explore accessories",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1": {
+      "type": "grid-image-text",
+      "disabled": true,
+      "settings": {
+        "title": "Your Text Here",
+        "texts": "<p>That they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
+        "title1": "Your Text Here",
+        "texts1": "<p>Ghat they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
+        "title2": "Your Text Here",
+        "textss2": "<p>Qhat they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
+        "flex_data": true,
+        "richtexxt": "<p>Linded by desire, that they cannot foresee Demoralized by the charms of pleasure of the moment, so  the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
+        "images2": "shopify:\/\/shop_images\/2-ZERO-OROR_04.gif",
+        "vdioses": "",
+        "vdios": "",
+        "texts2": "<p>Your Text Here 2<\/p>",
+        "titles2": "Your Text Here",
+        "textext": "<p>That they cannot foresee the pain and trouble that are bound to ensue and  That they cannot foresee the pain.<\/p>",
+        "urls2": "#",
+        "btns": "Explore accessories",
+        "image2": "shopify:\/\/shop_images\/3_20b9b2cb-b93c-488c-9d7c-341b75f7f603.jpg",
+        "vdio": "",
+        "url2": "",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "a01e7f6a-6040-4334-97af-966598236644": {
+      "type": "extra-text-blocks",
+      "blocks": {
+        "03d34236-6eee-4408-bf76-43f3607fd691": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+          }
+        },
+        "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+          }
+        },
+        "c59af14b-539c-4fa1-a0de-8fd8435255cf": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "03d34236-6eee-4408-bf76-43f3607fd691",
+        "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74",
+        "c59af14b-539c-4fa1-a0de-8fd8435255cf"
+      ],
+      "disabled": true,
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "c79d2326-cdd9-44c2-bea3-56cd03cff554": {
+      "type": "compare-section",
+      "disabled": true,
+      "settings": {
+        "main_title": "Compare",
+        "collection": "smart-pet-products",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "9ebcbf44-6bc3-4356-a04f-63dbfca91b59": {
+      "type": "image-text-block",
+      "blocks": {
+        "156fc469-c971-47d5-8ea0-ec3670c7f418": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "texts": ""
+          }
+        }
+      },
+      "block_order": [
+        "156fc469-c971-47d5-8ea0-ec3670c7f418"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/cat_water_fountain.jpg",
+        "mobimg": "shopify:\/\/shop_images\/water_fountain_for_cats_60c3cdb1-80a0-4159-bdc0-91fcc5bb24fe.jpg",
+        "heading": "",
+        "richtext": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "159dfafd-7d99-4872-b6e0-61b238b8999a": {
+      "type": "image-text-block",
+      "blocks": {
+        "bdcac435-23f5-4084-b9e5-434c3977b66e": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "texts": ""
+          }
+        }
+      },
+      "block_order": [
+        "bdcac435-23f5-4084-b9e5-434c3977b66e"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/pet_water_fountain.jpg",
+        "mobimg": "shopify:\/\/shop_images\/pet_fountain.png",
+        "heading": "",
+        "richtext": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "4e1a7ea3-1deb-4828-8422-5b84ac8efed1": {
+      "type": "image-text-block",
+      "blocks": {
+        "b18da27e-5901-4199-bf09-76add9a69e5c": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "texts": ""
+          }
+        }
+      },
+      "block_order": [
+        "b18da27e-5901-4199-bf09-76add9a69e5c"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/water_fountain_for_cats.jpg",
+        "mobimg": "shopify:\/\/shop_images\/pet_water_fountain_0b5b29bb-8d9b-4696-8542-badfa45089c8.png",
+        "heading": "",
+        "richtext": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "6044ed43-0580-47c7-a1a1-7ebfc77dd192": {
+      "type": "text",
+      "blocks": {
+        "db185a54-d8bc-419c-b14b-6704aa258645": {
+          "type": "block",
+          "settings": {
+            "text": "The SNOW+ Cat Water Fountain is built to provide reliable and long-lasting performance. Our fountain has been rigorously tested and can operate continuously for an impressive duration of up to 900 days without interruption. This ensures that your feline friend will always have access to fresh and flowing water, promoting their hydration and overall well-being."
+          }
+        }
+      },
+      "block_order": [
+        "db185a54-d8bc-419c-b14b-6704aa258645"
+      ],
+      "settings": {
+        "title": "Long-lasting & Continuous Hydration"
+      }
+    },
+    "3a2ece32-4149-4f21-a57c-a9aad69b1b5c": {
+      "type": "image-text-block",
+      "blocks": {
+        "1bf14780-ca73-419f-b93f-82fea0af7d62": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "texts": ""
+          }
+        }
+      },
+      "block_order": [
+        "1bf14780-ca73-419f-b93f-82fea0af7d62"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/dog_water_fountain.png",
+        "mobimg": "shopify:\/\/shop_images\/cat_water_dispenser.png",
+        "heading": "",
+        "richtext": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "fca19c8b-9871-44a6-af83-d6b5cfae63cc": {
+      "type": "text",
+      "blocks": {
+        "41e22c40-162b-4b76-ba9b-f379bf1ea028": {
+          "type": "block",
+          "settings": {
+            "text": "Make sure to give the SNOW+ Cat Water Fountain's filter a proper soak before use! The filter needs to be soaked at least twice for 5 minutes each time. One little pack of filter can keep your pet's healthy hydration for a whole month. You'll also get a reminder from the PetSnowy App when it's time to give the filter a swap."
+          }
+        }
+      },
+      "block_order": [
+        "41e22c40-162b-4b76-ba9b-f379bf1ea028"
+      ],
+      "settings": {
+        "title": "Changing Filter Monthly for Healthier Hydration"
+      }
+    },
+    "32c40a0e-6088-42f9-919a-c917445732d8": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--20025903448386__32c40a0e-6088-42f9-919a-c917445732d8-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6.jpg",
+            "title": "Anti-Bite Cable",
+            "text": "<p>With its anti-bite cable, the water fountain is designed to withstand your pet's chewing tendencies and ensure the cable remains intact.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20025903448386__32c40a0e-6088-42f9-919a-c917445732d8-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_3_09b7976a-881d-42ae-9f1d-4c0aeac7e9fd.jpg",
+            "title": "Minimum Water Line",
+            "text": "<p>An in-app notification will be sent when the water line reaches its minimum level, allowing you to promptly refill the pet water fountain for your furry companion.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20025903448386__32c40a0e-6088-42f9-919a-c917445732d8-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5_3_6cb7e67b-452a-484f-a978-04d2dbbd8609.jpg",
+            "title": "Slip-proof Base",
+            "text": "<p>SNOW+ cat water fountain includes a slip-proof base, ensuring stability and preventing accidental tipping.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20025903448386__32c40a0e-6088-42f9-919a-c917445732d8-column-1",
+        "template--20025903448386__32c40a0e-6088-42f9-919a-c917445732d8-column-2",
+        "template--20025903448386__32c40a0e-6088-42f9-919a-c917445732d8-column-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "8e104c0e-1cc6-4d18-8f96-60fa59160afc": {
+      "type": "image-text-block",
+      "blocks": {
+        "d0bda6f4-fed6-4757-96ab-61c91fcc801c": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "texts": ""
+          }
+        }
+      },
+      "block_order": [
+        "d0bda6f4-fed6-4757-96ab-61c91fcc801c"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/petsnowy_cat_water_fountain.jpg",
+        "mobimg": "shopify:\/\/shop_images\/cat_fountain.png",
+        "heading": "",
+        "richtext": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "d2b3bceb-28f8-409f-ac63-f76725ba9041": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--19468281643330__d2b3bceb-28f8-409f-ac63-f76725ba9041-1688704221a0f360d2-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Specification",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": "water-fountain-specification"
+          }
+        }
+      },
+      "block_order": [
+        "template--19468281643330__d2b3bceb-28f8-409f-ac63-f76725ba9041-1688704221a0f360d2-0"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "d14f1052-f0b1-4254-8d9a-a84aeb986bdd": {
+      "type": "social-image-text",
+      "blocks": {
+        "12ee67c8-1af4-46ca-9aa7-64db4191e694": {
+          "type": "image",
+          "settings": {
+            "blk_img": "shopify:\/\/shop_images\/bf9062f8-2d73-4fa1-968e-5b2b5c129374_2080aa67-f5d8-49d2-a6e1-a1ef4903cedc.jpg"
+          }
+        },
+        "ef490cd3-7a6b-4bf9-9fd9-5ecef72a2214": {
+          "type": "image",
+          "settings": {
+            "blk_img": "shopify:\/\/shop_images\/download_d2572d92-4413-4d2a-8347-3219d2b6d698.jpg"
+          }
+        },
+        "25153b1b-e008-4818-bb39-f716431c24e4": {
+          "type": "image",
+          "settings": {
+            "blk_img": "shopify:\/\/shop_images\/20230313195840.png"
+          }
+        },
+        "2cad361c-19e5-4f4b-a613-ac6890e2dafe": {
+          "type": "image",
+          "settings": {
+            "blk_img": "shopify:\/\/shop_images\/4185.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "12ee67c8-1af4-46ca-9aa7-64db4191e694",
+        "ef490cd3-7a6b-4bf9-9fd9-5ecef72a2214",
+        "25153b1b-e008-4818-bb39-f716431c24e4",
+        "2cad361c-19e5-4f4b-a613-ac6890e2dafe"
+      ],
+      "settings": {
+        "heading": "Comfort · Future",
+        "insta_txt": "Follow us on Instagram",
+        "app_url": "http:\/\/instagram.com\/petsnowy_official",
+        "img": "shopify:\/\/shop_images\/10062103_10_2_e9884dde-77ed-4967-ab03-4a0dfc4db4b8.jpg",
+        "space_top": 60,
+        "space_bottom": 40
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "24aa800b-1cc6-4355-bb54-110ba4e11787",
+    "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
+    "main",
+    "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b",
+    "f594996b-4dbf-425f-9059-9821e6ea4e6b",
+    "30307903-7dfd-43fd-a94b-e8afddaa806b",
+    "7956ec82-bee1-4347-a954-e5194f282217",
+    "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1",
+    "a01e7f6a-6040-4334-97af-966598236644",
+    "c79d2326-cdd9-44c2-bea3-56cd03cff554",
+    "9ebcbf44-6bc3-4356-a04f-63dbfca91b59",
+    "159dfafd-7d99-4872-b6e0-61b238b8999a",
+    "4e1a7ea3-1deb-4828-8422-5b84ac8efed1",
+    "6044ed43-0580-47c7-a1a1-7ebfc77dd192",
+    "3a2ece32-4149-4f21-a57c-a9aad69b1b5c",
+    "fca19c8b-9871-44a6-af83-d6b5cfae63cc",
+    "32c40a0e-6088-42f9-919a-c917445732d8",
+    "8e104c0e-1cc6-4d18-8f96-60fa59160afc",
+    "d2b3bceb-28f8-409f-ac63-f76725ba9041",
+    "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
+    "product-recommendations"
+  ]
+}
