@@ -39,6 +39,7 @@
         },
         "6c2e8ba8-c850-4a83-bd2f-91386850f34c": {
           "type": "description",
+          "disabled": true,
           "settings": {
           }
         },
@@ -68,6 +69,37 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "1c3069a6-7e70-4ded-b084-6cba9e5ae822": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--20025902432578__1c3069a6-7e70-4ded-b084-6cba9e5ae822-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "row_content": "<ul><li>【Smooth and Silent Playtime】PetSnowy automatic cat toy features an ultra-quiet motor that can ensure your kitty friend's playtime without any buzzing noise. Keep your kitty friend accompanied and your work uninterrupted, even on busy days.<\/li><li>【Convenient One-button Switch】No need to fiddle with complicated controls. With just one button, you can turn the cat toys on and off easily. Plus, Type-C charging port provides a convenient and efficient way to charge.<\/li><li>【Stylish Roly-poly!】This isn't just any cat toys - it's also cat furniture! Playful yet fashionable, this interactive cat toy has a unique shape of roly-poly, which makes sure that it won't topple over during the kitty's playtime. With our sleek, modern design, this is also a perfect addition to any home decor.<\/li><li>【15-Minute Auto Shutdown】Overplaying may damage kitty's heart. Our interactive cat toys has a 15-minute auto shutdown trait to promote cat wellness. Moderate playing keeps your kitty pal from overworking and provides you peace of mind.<\/li><li>【Step Up the Fun】Perfect for active cats. This automatic cat toy rotates its feather quickly for 360° randomized play, and the feathers atop the wand are easily replaceable for long-lasting use. With our innovative and interactive cat toys for indoor cats, your fur baby will never have a dull moment.<\/li><\/ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20025902432578__1c3069a6-7e70-4ded-b084-6cba9e5ae822-collapsible_row-2"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "791f1fc8-f2ee-402a-919b-0cbf3a977591": {
@@ -770,6 +802,7 @@
   },
   "order": [
     "main",
+    "1c3069a6-7e70-4ded-b084-6cba9e5ae822",
     "791f1fc8-f2ee-402a-919b-0cbf3a977591",
     "6f887e38-8539-4eb2-a2f7-a77aa8af4c79",
     "86f268b1-4ea4-46d2-8097-7d8c56290906",
