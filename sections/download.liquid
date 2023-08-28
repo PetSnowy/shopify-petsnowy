@@ -1,11 +1,42 @@
-<div class="download">
+{{ 'download.css' | asset_url | stylesheet_tag }}
+
+<div class="download page-width">
   <div class="text-wrapper">
+    <div class="logo">
+      <img src="../assets/Logo512.png" alt="petsnowy-download">
+    </div>
     <p class="title">{{ section.settings.text }}</p>
     <p class="sub_title">{{ section.settings.sub_txt }}</p>
+    <div class="btn-wrapper">
+      <a class="ios" href="https://apps.apple.com/cn/app/%E7%B3%AF%E9%9B%AA%E5%AE%A0%E7%89%A9/id6443769648">
+        <img src="../assets/ios.png" alt="ios" loading="lazy">
+        <span>iOS</span>
+      </a>
+      <a class="android" href="https://play.google.com/store/apps/details?id=com.petsnowy">
+        <img src="../assets/Android.png" alt="Android" loading="lazy">
+        <span>Android</span>
+      </a>
+    </div>
   </div>
-  <div class="btn">{{ section.settings.btn }}</div>
 </div>
-<script></script>
+<script>
+  const browserLanguage = navigator.language;
+  const map = new Map([
+    ['en', { title: 'petsnowy', subText: 'official version download' }],
+    ['zh', { title: '糯雪宠物', subText: '官方版 下载' }],
+    ['zh-hk', { title: '糯雪寵物', subText: '官方版 下載' }],
+    ['zh-tw', { title: '糯雪寵物', subText: '官方版 下載' }],
+    ['ja', { title: 'ワックス状の雪のペット', subText: '正式版 ダウンロード' }],
+  ]);
+  console.log(map);
+  if (map.has(browserLanguage)) {
+    document.querySelector('.title').innerText = map.get(browserLanguage).title;
+    document.querySelector('.sub_title').innerText = map.get(browserLanguage).subText;
+  } else {
+    document.querySelector('.title').innerText = map.get('en').title;
+    document.querySelector('.sub_title').innerText = map.get('en').subText;
+  }
+</script>
 
 {% schema %}
 {
@@ -20,11 +51,6 @@
       "type": "text",
       "id": "sub_txt",
       "label": "sub_text"
-    },
-    {
-      "type": "text",
-      "id": "btn",
-      "label": "btn_text"
     }
   ],
   "presets": [
