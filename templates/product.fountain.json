@@ -69,7 +69,6 @@
     },
     "main": {
       "type": "main-product",
-      "disabled": true,
       "blocks": {
         "vendor": {
           "type": "text",
@@ -173,6 +172,7 @@
         "collapsible-row-3",
         "share"
       ],
+      "disabled": true,
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
@@ -187,7 +187,6 @@
     },
     "815a64f2-a2d1-497f-9dac-1cabc60918d0": {
       "type": "Explore-products",
-      "disabled": true,
       "blocks": {
         "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1": {
           "type": "variant_picker",
@@ -199,6 +198,7 @@
       "block_order": [
         "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1"
       ],
+      "disabled": true,
       "settings": {
         "description": "<p>Cannot foresee Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
         "product": "petsnowy-indiegogo-launch-discount-30-off",
@@ -267,7 +267,6 @@
     },
     "30307903-7dfd-43fd-a94b-e8afddaa806b": {
       "type": "image-text-block",
-      "disabled": true,
       "blocks": {
         "9d1b52ba-657b-424d-a6c2-057a19a15eed": {
           "type": "title",
@@ -296,6 +295,7 @@
         "9ecc1e22-b451-440f-a65c-c2d0f68d6df7",
         "64e8ed2c-3e0c-47e8-856a-4a4355769102"
       ],
+      "disabled": true,
       "settings": {
         "img": "shopify:\/\/shop_images\/Bg_Image_10.png",
         "heading": "Your Text Here",
@@ -355,7 +355,6 @@
     },
     "a01e7f6a-6040-4334-97af-966598236644": {
       "type": "extra-text-blocks",
-      "disabled": true,
       "blocks": {
         "03d34236-6eee-4408-bf76-43f3607fd691": {
           "type": "title",
@@ -384,6 +383,7 @@
         "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74",
         "c59af14b-539c-4fa1-a0de-8fd8435255cf"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 20,
         "padding_bottom": 40
@@ -447,6 +447,23 @@
         "richtext": "",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "6044ed43-0580-47c7-a1a1-7ebfc77dd192": {
+      "type": "text",
+      "blocks": {
+        "db185a54-d8bc-419c-b14b-6704aa258645": {
+          "type": "block",
+          "settings": {
+            "text": "The SNOW+ Cat Water Fountain is built to provide reliable and long-lasting performance. Our fountain has been rigorously tested and can operate continuously for an impressive duration of up to 900 days without interruption. This ensures that your feline friend will always have access to fresh and flowing water, promoting their hydration and overall well-being."
+          }
+        }
+      },
+      "block_order": [
+        "db185a54-d8bc-419c-b14b-6704aa258645"
+      ],
+      "settings": {
+        "title": "Long-lasting & Continuous Hydration"
       }
     },
     "4e1a7ea3-1deb-4828-8422-5b84ac8efed1": {
@@ -645,6 +662,23 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "f56ee8f4-6de2-441e-a809-bc3feb710c4c": {
+      "type": "text",
+      "blocks": {
+        "be80b885-9bf3-43f5-925d-ec187de4dcf8": {
+          "type": "block",
+          "settings": {
+            "text": "Make sure to give the SNOW+ Cat Water Fountain's filter a proper soak before use! The filter needs to be soaked at least twice for 5 minutes each time. One little pack of filter can keep your pet's healthy hydration for a whole month. You'll also get a reminder from the PetSnowy App when it's time to give the filter a swap."
+          }
+        }
+      },
+      "block_order": [
+        "be80b885-9bf3-43f5-925d-ec187de4dcf8"
+      ],
+      "settings": {
+        "title": "Changing Filter Monthly for Healthier Hydration"
+      }
     }
   },
   "order": [
@@ -664,11 +698,13 @@
     "c79d2326-cdd9-44c2-bea3-56cd03cff554",
     "9ebcbf44-6bc3-4356-a04f-63dbfca91b59",
     "159dfafd-7d99-4872-b6e0-61b238b8999a",
+    "6044ed43-0580-47c7-a1a1-7ebfc77dd192",
     "4e1a7ea3-1deb-4828-8422-5b84ac8efed1",
     "3a2ece32-4149-4f21-a57c-a9aad69b1b5c",
     "8e104c0e-1cc6-4d18-8f96-60fa59160afc",
     "d2b3bceb-28f8-409f-ac63-f76725ba9041",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
-    "product-recommendations"
+    "product-recommendations",
+    "f56ee8f4-6de2-441e-a809-bc3feb710c4c"
   ]
 }

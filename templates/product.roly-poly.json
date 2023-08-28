@@ -769,7 +769,6 @@
     },
     "20ecbc56-4b6b-47c1-9c7b-3a838972fa45": {
       "type": "Product-video",
-      "disabled": true,
       "settings": {
         "vdio_img": "shopify:\/\/shop_images\/cat_toy.jpg",
         "vdio": "https:\/\/youtube.com\/shorts\/QatXR53jC6I",
