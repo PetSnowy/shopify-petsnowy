@@ -714,7 +714,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Specification",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "",
             "page": "cat-toy-specification"
           }
