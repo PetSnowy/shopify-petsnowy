@@ -3,17 +3,17 @@
 <div class="download page-width">
   <div class="text-wrapper">
     <div class="logo">
-      <img src="../assets/Logo512.png" alt="petsnowy-download">
+      <img src="{{ section.settings.logo-img }}" alt="petsnowy-download">
     </div>
     <p class="title">{{ section.settings.text }}</p>
     <p class="sub_title">{{ section.settings.sub_txt }}</p>
     <div class="btn-wrapper">
       <a class="ios" href="https://apps.apple.com/cn/app/%E7%B3%AF%E9%9B%AA%E5%AE%A0%E7%89%A9/id6443769648">
-        <img src="../assets/ios.png" alt="ios" loading="lazy">
+        <img src="{{ section.settings.ios-img }}" alt="ios" loading="lazy">
         <span>iOS</span>
       </a>
       <a class="android" href="https://play.google.com/store/apps/details?id=com.petsnowy">
-        <img src="../assets/Android.png" alt="Android" loading="lazy">
+        <img src="{{ section.settings.android-img }}" alt="Android" loading="lazy">
         <span>Android</span>
       </a>
     </div>
@@ -28,7 +28,6 @@
     ['zh-tw', { title: '糯雪寵物', subText: '官方版 下載' }],
     ['ja', { title: 'ワックス状の雪のペット', subText: '正式版 ダウンロード' }],
   ]);
-  console.log(map);
   if (map.has(browserLanguage)) {
     document.querySelector('.title').innerText = map.get(browserLanguage).title;
     document.querySelector('.sub_title').innerText = map.get(browserLanguage).subText;
@@ -51,6 +50,21 @@
       "type": "text",
       "id": "sub_txt",
       "label": "sub_text"
+    },
+    {
+      "tyep": "img",
+      "id": "logo-img",
+      "label": "logo-img"
+    },
+    {
+      "tyep": "img",
+      "id": "ios-img",
+      "label": "ios-img"
+    },
+    {
+      "tyep": "img",
+      "id": "android-img",
+      "label": "android-img"
     }
   ],
   "presets": [
