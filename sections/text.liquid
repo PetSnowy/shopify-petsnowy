@@ -1,0 +1,41 @@
+<div class="text-container page-width">
+  {% if section.settings.title %}
+    <h2 class="title">{{ section.settings.title }}</h2>
+  {% endif %}
+  <div class="text-block">
+    {% for block in section.blocks %}
+      <p class="text rte">{{ block.settings.text }}</p>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text"
+    }
+  ]
+}
+{% endschema %}

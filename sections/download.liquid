@@ -1,0 +1,81 @@
+{{ 'download.css' | asset_url | stylesheet_tag }}
+
+<div class="download page-width">
+  <div class="text-wrapper">
+    <div class="logo">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0683/5293/4210/files/Logo512_2cdacae7-4bf4-4822-aafb-3d05479dd6c3.png?v=1693217894"
+        alt="petsnowy-download"
+        loading="lazy"
+      >
+    </div>
+    <p class="title">{{ section.settings.text }}</p>
+    <p class="sub_title">{{ section.settings.sub_txt }}</p>
+    <div class="btn-wrapper">
+      <a class="ios" href="https://apps.apple.com/cn/app/%E7%B3%AF%E9%9B%AA%E5%AE%A0%E7%89%A9/id6443769648">
+        <img src="https://cdn.shopify.com/s/files/1/0683/5293/4210/files/ios.png?v=1693218655" alt="ios" loading="lazy">
+        <span>iOS</span>
+      </a>
+      <a class="android" href="https://play.google.com/store/apps/details?id=com.petsnowy">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0683/5293/4210/files/Android.png?v=1693218635"
+          alt="Android"
+          loading="lazy"
+        >
+        <span>Android</span>
+      </a>
+    </div>
+  </div>
+</div>
+<script>
+  const browserLanguage =
+    navigator.language || navigator.userLanguage || (navigator.languages && navigator.languages[0]);
+
+  const languageMap = new Map([
+    ['en', { title: 'PetSnowy', subText: 'full version download' }],
+    ['en-US', { title: 'PetSnowy', subText: 'full version download' }],
+    ['zh', { title: '糯雪宠物', subText: '官方版 下载' }],
+    ['zh-CN', { title: '糯雪宠物', subText: '官方版 下载' }],
+    ['zh-HK', { title: '糯雪寵物', subText: '官方版 下載' }],
+    ['zh-TW', { title: '糯雪寵物', subText: '官方版 下載' }],
+    ['ja', { title: 'ワックス状の雪のペット', subText: '正式版 ダウンロード' }],
+  ]);
+
+  const getLanguageText = (languageCode, defaultText = { title: 'PetSnowy', subText: 'full version download' }) =>
+    languageMap.get(languageCode) || defaultText;
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const titleElement = document.querySelector('.title');
+    const subTextElement = document.querySelector('.sub_title');
+    const { title, subText } = getLanguageText(browserLanguage);
+
+    const setTextContent = (element, content) =>
+      'innerText' in element ? (element.innerText = content) : (element.textContent = content);
+
+    setTextContent(titleElement, title);
+    setTextContent(subTextElement, subText);
+  });
+</script>
+
+{% schema %}
+{
+  "name": "download",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "title"
+    },
+    {
+      "type": "text",
+      "id": "sub_txt",
+      "label": "sub_text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Download"
+    }
+  ]
+}
+{% endschema %}

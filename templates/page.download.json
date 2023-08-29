@@ -1,0 +1,23 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "81a3d404-9a9c-4064-b802-f8e3c66d0cfa": {
+      "type": "download",
+      "settings": {
+        "text": "PetSnowy",
+        "sub_txt": "full version download"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "81a3d404-9a9c-4064-b802-f8e3c66d0cfa"
+  ]
+}

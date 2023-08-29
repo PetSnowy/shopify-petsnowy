@@ -342,7 +342,7 @@
 
     <main
       id="MainContent{% if template == 'index' %}Index{% endif %}"
-      class="content-for-layout focus-none"
+      class="content-for-layout focus-none template-{{ template.name }} {{ product.title | replace: ' ', '-'  }} {{ page.title | replace: ' ', '-'  }}"
       role="main"
       tabindex="-1"
     >

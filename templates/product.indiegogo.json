@@ -68,7 +68,6 @@
       "blocks": {
         "vendor": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
@@ -76,45 +75,38 @@
         },
         "title": {
           "type": "title",
-          "disabled": true,
           "settings": {
           }
         },
         "price": {
           "type": "price",
-          "disabled": true,
           "settings": {
           }
         },
         "variant_picker": {
           "type": "variant_picker",
-          "disabled": true,
           "settings": {
             "picker_type": "button"
           }
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "disabled": true,
           "settings": {
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
-          "disabled": true,
           "settings": {
             "show_dynamic_checkout": true
           }
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {
           }
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "Materials",
             "icon": "leather",
@@ -124,7 +116,6 @@
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
@@ -134,7 +125,6 @@
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "Dimensions",
             "icon": "ruler",
@@ -144,7 +134,6 @@
         },
         "collapsible-row-3": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
@@ -154,7 +143,6 @@
         },
         "share": {
           "type": "share",
-          "disabled": true,
           "settings": {
             "share_label": "Share"
           }
@@ -709,7 +697,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Specification",
-            "icon": "box",
+            "icon": "none",
             "row_content": "",
             "page": "dimension"
           }
@@ -741,14 +729,14 @@
         "template--19468281676098__909b5ce5-d2e3-4008-a0a9-f437c0b89bb4-1688697103844d3bed-3"
       ],
       "settings": {
-        "caption": "Product Details",
+        "caption": "",
         "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
         "color_scheme": "background-1",
         "container_color_scheme": "background-2",
-        "open_first_collapsible_row": false,
+        "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,

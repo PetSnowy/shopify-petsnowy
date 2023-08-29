@@ -1,90 +1,136 @@
 {
   "sections": {
-    "24aa800b-1cc6-4355-bb54-110ba4e11787": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/10071137_17_1.png",
-        "image_mbl": "shopify:\/\/shop_images\/10071137_17_1_deb60984-7ec2-4302-9139-b46d371a08b6.png",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8": {
-      "type": "rich-text",
+    "main": {
+      "type": "main-product",
       "blocks": {
-        "b504c877-67df-4d07-b421-9fac2e31e94f": {
+        "vendor": {
           "type": "text",
           "settings": {
-            "text": "<p>SNOW<sup>+<\/sup> Automatic Pet Feeder  \n<br>Order now, and save <b>15%<\/b>  <\/p>\n<p><small><small>*Only one discount can be applied per purchase.<\/small><\/small><\/p>"
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
           }
         },
-        "e41cef55-a297-4c09-a549-24d35be2b565": {
-          "type": "caption",
+        "title": {
+          "type": "title",
           "settings": {
-            "caption": "Launch Discount. Limited Time Offer!",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "6c2e8ba8-c850-4a83-bd2f-91386850f34c": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "e952d036-a232-4469-a670-156e3bcff37a": {
+          "type": "rating",
+          "settings": {
           }
         }
       },
       "block_order": [
-        "b504c877-67df-4d07-b421-9fac2e31e94f",
-        "e41cef55-a297-4c09-a549-24d35be2b565"
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "6c2e8ba8-c850-4a83-bd2f-91386850f34c",
+        "e952d036-a232-4469-a670-156e3bcff37a"
       ],
       "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 56,
-        "padding_bottom": 40
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "gallery_layout": "stacked",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
       }
     },
-    "30307903-7dfd-43fd-a94b-e8afddaa806b": {
-      "type": "image-text-block",
+    "1c3069a6-7e70-4ded-b084-6cba9e5ae822": {
+      "type": "collapsible-content",
       "blocks": {
-        "9d1b52ba-657b-424d-a6c2-057a19a15eed": {
-          "type": "title",
+        "template--20025902432578__1c3069a6-7e70-4ded-b084-6cba9e5ae822-collapsible_row-2": {
+          "type": "collapsible_row",
           "settings": {
-            "title": "Your Text Here",
-            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
-          }
-        },
-        "9ecc1e22-b451-440f-a65c-c2d0f68d6df7": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
-          }
-        },
-        "64e8ed2c-3e0c-47e8-856a-4a4355769102": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
+            "heading": "Description",
+            "icon": "none",
+            "row_content": "<ul><li>【Smooth and Silent Playtime】PetSnowy automatic cat toy features an ultra-quiet motor that can ensure your kitty friend's playtime without any buzzing noise. Keep your kitty friend accompanied and your work uninterrupted, even on busy days.<\/li><li>【Convenient One-button Switch】No need to fiddle with complicated controls. With just one button, you can turn the cat toys on and off easily. Plus, Type-C charging port provides a convenient and efficient way to charge.<\/li><li>【Stylish Roly-poly!】This isn't just any cat toys - it's also cat furniture! Playful yet fashionable, this interactive cat toy has a unique shape of roly-poly, which makes sure that it won't topple over during the kitty's playtime. With our sleek, modern design, this is also a perfect addition to any home decor.<\/li><li>【15-Minute Auto Shutdown】Overplaying may damage kitty's heart. Our interactive cat toys has a 15-minute auto shutdown trait to promote cat wellness. Moderate playing keeps your kitty pal from overworking and provides you peace of mind.<\/li><li>【Step Up the Fun】Perfect for active cats. This automatic cat toy rotates its feather quickly for 360° randomized play, and the feathers atop the wand are easily replaceable for long-lasting use. With our innovative and interactive cat toys for indoor cats, your fur baby will never have a dull moment.<\/li><\/ul>",
+            "page": ""
           }
         }
       },
       "block_order": [
-        "9d1b52ba-657b-424d-a6c2-057a19a15eed",
-        "9ecc1e22-b451-440f-a65c-c2d0f68d6df7",
-        "64e8ed2c-3e0c-47e8-856a-4a4355769102"
+        "template--20025902432578__1c3069a6-7e70-4ded-b084-6cba9e5ae822-collapsible_row-2"
       ],
       "settings": {
-        "img": "shopify:\/\/shop_images\/petsnowy_cat_toy_ba27dcc3-e038-4fba-95df-1dcc75c14504.jpg",
-        "mobimg": "shopify:\/\/shop_images\/interactive_cat_toy_75985c75-c067-4672-9107-8537a18175a3.jpg",
+        "caption": "",
         "heading": "",
-        "richtext": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "a21a1560-db1e-403e-921c-96a00ef641a2": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Specification",
+            "icon": "none",
+            "row_content": "",
+            "page": "cat-toy-specification"
+          }
+        }
+      },
+      "block_order": [
+        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-0"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "791f1fc8-f2ee-402a-919b-0cbf3a977591": {
@@ -125,8 +171,8 @@
         "aa65b87b-3f38-4af9-bf7f-7fbdc2c5e868"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/petsnowy_cat_toy_ba27dcc3-e038-4fba-95df-1dcc75c14504.jpg",
-        "image_mbl": "shopify:\/\/shop_images\/interactive_cat_toy_75985c75-c067-4672-9107-8537a18175a3.jpg",
+        "image": "shopify:\/\/shop_images\/petsnowy_cat_toy_a7d0732f-8292-4b55-8e5f-c93738deedba.jpg",
+        "image_mbl": "shopify:\/\/shop_images\/interactivecattoy_452a603e-ae9f-480a-b7e1-911f405ad678.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": true,
@@ -139,10 +185,10 @@
         "show_text_below": true
       }
     },
-    "6bbb9f5f-efc8-428f-9807-f54235735aad": {
+    "6f887e38-8539-4eb2-a2f7-a77aa8af4c79": {
       "type": "image-banner",
       "blocks": {
-        "0b63cf3d-54e5-4f39-a228-0afd4bbf4283": {
+        "f8a4996d-b1ea-41a2-8615-e77a69fbbec5": {
           "type": "heading",
           "disabled": true,
           "settings": {
@@ -150,7 +196,7 @@
             "heading_size": "h1"
           }
         },
-        "03af7df8-808f-4399-b676-f5f08db57180": {
+        "7709bcd6-bad6-44b8-a97c-5b6f43764e8a": {
           "type": "text",
           "disabled": true,
           "settings": {
@@ -158,7 +204,7 @@
             "text_style": "body"
           }
         },
-        "ab506b5c-59bd-4be4-a587-03dbd901293b": {
+        "5593f882-eb69-48de-8b31-2c802c57aed5": {
           "type": "buttons",
           "disabled": true,
           "settings": {
@@ -172,13 +218,13 @@
         }
       },
       "block_order": [
-        "0b63cf3d-54e5-4f39-a228-0afd4bbf4283",
-        "03af7df8-808f-4399-b676-f5f08db57180",
-        "ab506b5c-59bd-4be4-a587-03dbd901293b"
+        "f8a4996d-b1ea-41a2-8615-e77a69fbbec5",
+        "7709bcd6-bad6-44b8-a97c-5b6f43764e8a",
+        "5593f882-eb69-48de-8b31-2c802c57aed5"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/automatic_cat_toy_0166f611-8401-427a-a774-793f90019ef1.jpg",
-        "image_mbl": "shopify:\/\/shop_images\/automatic_cat_toy_9f9d254c-30b2-458d-80cd-54694ce204b6.jpg",
+        "image": "shopify:\/\/shop_images\/automatic_cat_toy_fa8e365e-5ba4-458b-a56b-2d6f64583dd1.jpg",
+        "image_mbl": "shopify:\/\/shop_images\/cattoys_33f557c1-e5b4-4d8a-bdaf-276c3816d50d.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": true,
@@ -191,56 +237,105 @@
         "show_text_below": true
       }
     },
-    "8e620d02-c614-4dad-8253-0fe07f42a3ef": {
-      "type": "image-banner",
+    "86f268b1-4ea4-46d2-8097-7d8c56290906": {
+      "type": "text",
       "blocks": {
-        "1f36805f-15ae-4829-8926-2b58ed7e3a25": {
-          "type": "heading",
-          "disabled": true,
+        "a91d875c-089c-48ba-bcd1-1bb87bd7ce18": {
+          "type": "block",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
+            "text": "Your feline friends are born hunters. They need regular exercise to keep their energetic spirits thriving. As a devoted pet parent, you deserve peace of mind, knowing that your beloved cat is thriving and content, even when time is limited. That's why we created PetSnowy automatic cat toys, offering a delightful solution to keep your cat engaged and entertained without ever leaving your couch."
           }
         },
-        "a7821772-6aca-4a46-9665-dcbb0f86018b": {
-          "type": "text",
-          "disabled": true,
+        "03778c80-9c93-4a6a-9aa9-486a72fcfb8c": {
+          "type": "block",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "text": "<b>Random Rotation Feature:<\/b> Mimic the movements of prey and trigger hunting instincts"
           }
         },
-        "91032940-4de3-41dd-9258-01a44c4c964b": {
-          "type": "buttons",
-          "disabled": true,
+        "e332baf4-fb16-48a3-9dc6-fd5f531be84b": {
+          "type": "block",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "<b>Healthy Playtime:<\/b>15-Minute Auto Shutdown"
+          }
+        },
+        "4590cdd4-be04-4cbd-a2ae-0b52d2265bb3": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Safe Entertainment: <\/b>ABS Material & Natural Feathers"
+          }
+        },
+        "bd952546-c4f2-493b-9ffb-e890b4feb932": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Peaceful Playtime:<\/b> Ultra-Quiet Motor"
           }
         }
       },
       "block_order": [
-        "1f36805f-15ae-4829-8926-2b58ed7e3a25",
-        "a7821772-6aca-4a46-9665-dcbb0f86018b",
-        "91032940-4de3-41dd-9258-01a44c4c964b"
+        "a91d875c-089c-48ba-bcd1-1bb87bd7ce18",
+        "03778c80-9c93-4a6a-9aa9-486a72fcfb8c",
+        "e332baf4-fb16-48a3-9dc6-fd5f531be84b",
+        "4590cdd4-be04-4cbd-a2ae-0b52d2265bb3",
+        "bd952546-c4f2-493b-9ffb-e890b4feb932"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/cat_toys_049396c5-2d64-4595-a1cf-faee322d7638.jpg",
-        "image_mbl": "shopify:\/\/shop_images\/cat_toys_a1e4e4ae-f33e-48b4-a9e9-6054fd732bea.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": true,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
+        "title": ""
+      }
+    },
+    "c18c2ce5-43e9-4215-9b4d-44b3c5e0a512": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_2.jpg",
+            "title": "Charge & Play in a Snap!",
+            "text": "<p>With our Type-C Charging and One-Touch Activation, bonding with your furry friends has never been easier or more delightful!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_3_81be9e96-6364-4ef6-8667-68405c4bfc92.jpg",
+            "title": "Let their inner hunter shine.",
+            "text": "<p>Random Rotation feature will provide your furry friends with the excitement and stimulation they crave.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_3_1eae9e6a-6d08-4479-89c2-4af0a2127504.jpg",
+            "title": "Safety is our top priority.",
+            "text": "<p>Made from durable ABS Safe Material and natural feathers, our interactive cat toys ensure a safe and engaging entertainment experience.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-1",
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-2",
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
         "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "6eb9d775-77d4-40be-937a-ab2748a2cf87": {
@@ -282,6 +377,106 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/interactive_cat_toys_4895e26f-e318-42a9-8c8c-306f97a37a26.jpg",
+        "image_mbl": "shopify:\/\/shop_images\/automaticcattoy.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "e8b01c70-ef62-496d-a645-ad65e3430e3a": {
+      "type": "text",
+      "blocks": {
+        "cd8f115d-f74a-46f9-8e6d-f3d699a4d6fb": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Peaceful & Undisturbed<\/b>"
+          }
+        },
+        "6dec3fe1-2c7d-448c-8727-c44ccea9873c": {
+          "type": "block",
+          "settings": {
+            "text": "Playtime!Boasting a whisper-quiet motor, our cat toys create a harmonious environment where your feline friend can happily engage in play. Without worrying about any jarring noises, you and your beloved friend can enjoy uninterrupted moments of bliss and contentment."
+          }
+        },
+        "30c75eaa-8a92-4b26-b54b-dbc655530609": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "text": "Healthy Playtime:15-Minute Auto Shutdown"
+          }
+        },
+        "f7573043-2d1e-4803-acc6-6eaee4b26101": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "text": "Safe Entertainment: ABS Material & Natural Feathers"
+          }
+        },
+        "f9055db0-d519-4717-9bea-269235ca9653": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "text": "Peaceful Playtime: Ultra-Quiet Motor"
+          }
+        }
+      },
+      "block_order": [
+        "cd8f115d-f74a-46f9-8e6d-f3d699a4d6fb",
+        "6dec3fe1-2c7d-448c-8727-c44ccea9873c",
+        "30c75eaa-8a92-4b26-b54b-dbc655530609",
+        "f7573043-2d1e-4803-acc6-6eaee4b26101",
+        "f9055db0-d519-4717-9bea-269235ca9653"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "6bbb9f5f-efc8-428f-9807-f54235735aad": {
+      "type": "image-banner",
+      "blocks": {
+        "0b63cf3d-54e5-4f39-a228-0afd4bbf4283": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "03af7df8-808f-4399-b676-f5f08db57180": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "ab506b5c-59bd-4be4-a587-03dbd901293b": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "0b63cf3d-54e5-4f39-a228-0afd4bbf4283",
+        "03af7df8-808f-4399-b676-f5f08db57180",
+        "ab506b5c-59bd-4be4-a587-03dbd901293b"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cat_toys_049396c5-2d64-4595-a1cf-faee322d7638.jpg",
         "image_mbl": "shopify:\/\/shop_images\/petsnowy_cat_toys_1633b393-14ef-49af-92e6-141105d04bb1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
@@ -297,7 +492,6 @@
     },
     "fba5d096-d072-4f5d-8268-2861ab6a48ec": {
       "type": "image-banner",
-      "disabled": true,
       "blocks": {
         "c7af4ac5-2c02-4e60-b21e-dc0a076cbe7f": {
           "type": "heading",
@@ -333,6 +527,7 @@
         "46f10221-7176-41ea-9c59-c7837a74cea1",
         "f68115e5-d531-4668-8c6b-562b81a828c2"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/cat_toys_049396c5-2d64-4595-a1cf-faee322d7638.jpg",
         "image_mbl": "shopify:\/\/shop_images\/interactive_cat_toy_84281429-0e13-4da0-ba92-733063a2355c.jpg",
@@ -348,138 +543,8 @@
         "show_text_below": true
       }
     },
-    "b6e45bc2-2133-4106-a9db-61ab406abfe6": {
-      "type": "Product-video",
-      "disabled": true,
-      "settings": {
-        "vdio_img": "shopify:\/\/shop_images\/video.png",
-        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/86480277b00d435bbbba6e62c6b5f781.mp4",
-        "heading": "Your Video Text Here",
-        "text": "Your Video Text Here",
-        "padding_top": 20,
-        "padding_bottom": 40
-      }
-    },
-    "main": {
-      "type": "main-product",
-      "disabled": true,
-      "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "disabled": true,
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "vendor",
-        "title",
-        "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "share"
-      ],
-      "settings": {
-        "enable_sticky_info": true,
-        "media_position": "left",
-        "gallery_layout": "stacked",
-        "media_size": "small",
-        "mobile_thumbnails": "hide",
-        "hide_variants": true,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
-      }
-    },
     "815a64f2-a2d1-497f-9dac-1cabc60918d0": {
       "type": "Explore-products",
-      "disabled": true,
       "blocks": {
         "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1": {
           "type": "variant_picker",
@@ -491,6 +556,7 @@
       "block_order": [
         "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1"
       ],
+      "disabled": true,
       "settings": {
         "description": "<p>Cannot foresee Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
         "product": "petsnowy-indiegogo-launch-discount-30-off",
@@ -581,7 +647,6 @@
     },
     "a01e7f6a-6040-4334-97af-966598236644": {
       "type": "extra-text-blocks",
-      "disabled": true,
       "blocks": {
         "03d34236-6eee-4408-bf76-43f3607fd691": {
           "type": "title",
@@ -610,21 +675,10 @@
         "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74",
         "c59af14b-539c-4fa1-a0de-8fd8435255cf"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 20,
         "padding_bottom": 40
-      }
-    },
-    "c79d2326-cdd9-44c2-bea3-56cd03cff554": {
-      "type": "compare-section",
-      "disabled": true,
-      "settings": {
-        "main_title": "Compare",
-        "collection": "smart-pet-products",
-        "products_to_show": 3,
-        "columns_desktop": 3,
-        "padding_top": 60,
-        "padding_bottom": 60
       }
     },
     "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a": {
@@ -642,18 +696,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "72f18a09-0599-4e59-b823-b5624eee93bb": {
-      "type": "image-text-block",
-      "disabled": true,
-      "settings": {
-        "img": "shopify:\/\/shop_images\/petsnowy_cat_toy.jpg",
-        "mobimg": "shopify:\/\/shop_images\/interactive_cat_toy_50e0382d-84ac-4261-9f8d-b42a873ef475.jpg",
-        "heading": "",
-        "richtext": "",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "a7d781da-2db9-4e93-a537-ae36cc05295f": {
@@ -696,82 +738,6 @@
         "padding_bottom": 0
       }
     },
-    "80a73eed-43fd-41e8-a736-f4afed787edd": {
-      "type": "image-text-block",
-      "disabled": true,
-      "settings": {
-        "img": "shopify:\/\/shop_images\/interactive_cat_toys.jpg",
-        "mobimg": "shopify:\/\/shop_images\/cat_toys_a1e4e4ae-f33e-48b4-a9e9-6054fd732bea.jpg",
-        "heading": "",
-        "richtext": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "a21a1560-db1e-403e-921c-96a00ef641a2": {
-      "type": "collapsible-content",
-      "blocks": {
-        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-0": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Specification",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": "cat-toy-specification"
-          }
-        },
-        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-1": {
-          "type": "collapsible_row",
-          "disabled": true,
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-2": {
-          "type": "collapsible_row",
-          "disabled": true,
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-3": {
-          "type": "collapsible_row",
-          "disabled": true,
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-0",
-        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-1",
-        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-2",
-        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-3"
-      ],
-      "settings": {
-        "caption": "Product Details",
-        "heading": "",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "background-1",
-        "container_color_scheme": "background-2",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd": {
       "type": "social-image-text",
       "blocks": {
@@ -807,7 +773,7 @@
         "2cad361c-19e5-4f4b-a613-ac6890e2dafe"
       ],
       "settings": {
-        "heading": "Demoralized by the charms of pleasure of the moment,",
+        "heading": "",
         "insta_txt": "Follow us on Instagram",
         "app_url": "http:\/\/instagram.com\/petsnowy_official",
         "img": "shopify:\/\/shop_images\/10062103_10_2_e9884dde-77ed-4967-ab03-4a0dfc4db4b8.jpg",
@@ -835,29 +801,26 @@
     }
   },
   "order": [
-    "24aa800b-1cc6-4355-bb54-110ba4e11787",
-    "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
-    "30307903-7dfd-43fd-a94b-e8afddaa806b",
-    "791f1fc8-f2ee-402a-919b-0cbf3a977591",
-    "6bbb9f5f-efc8-428f-9807-f54235735aad",
-    "8e620d02-c614-4dad-8253-0fe07f42a3ef",
-    "6eb9d775-77d4-40be-937a-ab2748a2cf87",
-    "fba5d096-d072-4f5d-8268-2861ab6a48ec",
-    "b6e45bc2-2133-4106-a9db-61ab406abfe6",
     "main",
+    "1c3069a6-7e70-4ded-b084-6cba9e5ae822",
+    "a21a1560-db1e-403e-921c-96a00ef641a2",
+    "791f1fc8-f2ee-402a-919b-0cbf3a977591",
+    "6f887e38-8539-4eb2-a2f7-a77aa8af4c79",
+    "86f268b1-4ea4-46d2-8097-7d8c56290906",
+    "c18c2ce5-43e9-4215-9b4d-44b3c5e0a512",
+    "6eb9d775-77d4-40be-937a-ab2748a2cf87",
+    "e8b01c70-ef62-496d-a645-ad65e3430e3a",
+    "6bbb9f5f-efc8-428f-9807-f54235735aad",
+    "fba5d096-d072-4f5d-8268-2861ab6a48ec",
     "815a64f2-a2d1-497f-9dac-1cabc60918d0",
     "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8",
     "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b",
     "f594996b-4dbf-425f-9059-9821e6ea4e6b",
     "7956ec82-bee1-4347-a954-e5194f282217",
     "a01e7f6a-6040-4334-97af-966598236644",
-    "c79d2326-cdd9-44c2-bea3-56cd03cff554",
     "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a",
-    "72f18a09-0599-4e59-b823-b5624eee93bb",
     "a7d781da-2db9-4e93-a537-ae36cc05295f",
     "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1",
-    "80a73eed-43fd-41e8-a736-f4afed787edd",
-    "a21a1560-db1e-403e-921c-96a00ef641a2",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
     "product-recommendations"
   ]
