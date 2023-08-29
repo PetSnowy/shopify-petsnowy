@@ -28,23 +28,30 @@
   </div>
 </div>
 <script>
-  const browserLanguage = navigator.language;
-  const map = new Map([
+  const browserLanguage =
+    navigator.language || navigator.userLanguage || (navigator.languages && navigator.languages[0]);
+
+  const languageMap = new Map([
     ['en', { title: 'PetSnowy', subText: 'full version download' }],
+    ['en-US', { title: 'PetSnowy', subText: 'full version download' }],
     ['zh', { title: '糯雪宠物', subText: '官方版 下载' }],
+    ['zh-CN', { title: '糯雪宠物', subText: '官方版 下载' }],
     ['zh-HK', { title: '糯雪寵物', subText: '官方版 下載' }],
     ['zh-TW', { title: '糯雪寵物', subText: '官方版 下載' }],
     ['ja', { title: 'ワックス状の雪のペット', subText: '正式版 ダウンロード' }],
   ]);
-  console.log(browserLanguage);
 
-  if (map.has(browserLanguage)) {
-    document.querySelector('.title').innerText = map.get(browserLanguage).title;
-    document.querySelector('.sub_title').innerText = map.get(browserLanguage).subText;
-  } else {
-    document.querySelector('.title').innerText = map.get('en').title;
-    document.querySelector('.sub_title').innerText = map.get('en').subText;
-  }
+  const getLanguageText = (languageCode, defaultText = { title: 'PetSnowy', subText: 'full version download' }) =>
+    languageMap.get(languageCode) || defaultText;
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const titleElement = document.querySelector('.title');
+    const subTextElement = document.querySelector('.sub_title');
+    const { title, subText } = getLanguageText(browserLanguage);
+
+    titleElement.innerText = title;
+    subTextElement.innerText = subText;
+  });
 </script>
 
 {% schema %}
