@@ -23,18 +23,35 @@
 }
 @media screen and (min-width: 901px) {
   .contact-us {
+    padding-top: 60px;
     .contact__fields {
       display: grid;
-      column-gap: 20px;
+      column-gap: 15px;
       grid-template-columns: repeat(2, 1fr);
+    }
+    .title {
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+    form {
+      row-gap: 10px;
     }
   }
 }
 @media screen and (max-width: 900px) {
   .contact-us {
+    padding-top: vw(120px);
+    padding-bottom: vw(120px);
     .contact__fields {
       display: grid;
       row-gap: vw(20px);
+    }
+    form {
+      row-gap: vw(20px);
+    }
+    .title {
+      margin-bottom: vw(20px);
+      font-size: vw(50px);
     }
   }
 }
