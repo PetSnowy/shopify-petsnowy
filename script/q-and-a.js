@@ -54,16 +54,16 @@ $(function () {
 			right = content.length - 1;
 		const regex = new RegExp(value, 'gi');
 		while (left < right) {
-			if (content[left].title.match(regex)) {
+			if (content[left].title.match(regex) || content[left].text.match(regex)) {
 				searchResult.push(content[left]);
 			}
-			if (content[right].title.match(regex)) {
+			if (content[right].title.match(regex) || content[right].text.match(regex)) {
 				searchResult.push(content[right]);
 			}
 			left++;
 			right--;
 		}
-		if (left === right && content[left].title.match(regex)) {
+		if (left === right && (content[left].title.match(regex) || content[left].text.match(regex))) {
 			searchResult.push(content[left]);
 		}
 		createElementSearchResult();
@@ -90,12 +90,13 @@ $(function () {
 			search_result.appendChild(q);
 			return;
 		}
+
 		for (let i = 0; i < searchResult.length; i++) {
 			const faqItem = document.createElement('div');
 			const q = document.createElement('p');
 			q.innerHTML = searchResult[i].title.replace(new RegExp(value, 'gi'), (match) => `<mark>${match}</mark>`);
 			const a = document.createElement('p');
-			a.innerHTML = searchResult[i].text;
+			a.innerHTML = searchResult[i].text.replace(new RegExp(value, 'gi'), (match) => `<mark>${match}</mark>`);
 			faqItem.appendChild(q);
 			faqItem.appendChild(a);
 			search_result.appendChild(faqItem);
