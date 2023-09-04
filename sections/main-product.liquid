@@ -703,6 +703,10 @@
               </div>
 
               <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
+            {% when 'checkout' %}
+              <div class="checkout-button">
+								checkout-button
+							</div>
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
@@ -1381,10 +1385,10 @@
       "settings": [
         {
           "type": "checkbox",
-          "id": "show_dynamic_checkout",
+          "id": "show_checkout",
           "default": true,
-          "label": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.label",
-          "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
+          "label": "t:sections.main-product.blocks.checkout.settings.show_checkout.label",
+          "info": "t:sections.main-product.blocks.checkout.settings.show_checkout.info"
         }
       ]
     },
