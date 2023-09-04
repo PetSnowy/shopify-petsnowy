@@ -62,7 +62,6 @@
         },
         "4b2f74a7-66cb-41c8-a559-de8983fc05dd": {
           "type": "checkout",
-          "disabled": true,
           "settings": {
             "checkout-text": "checkout"
           }
