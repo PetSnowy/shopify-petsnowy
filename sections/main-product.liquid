@@ -707,7 +707,7 @@
               <button
                 type="submit"
                 name="checkout"
-                class="checkout-button"
+                class="checkout-button {% if cart.item_count == 0 %}disable{% endif %}"
                 form="CartDrawer-Form"
               >
                 {{ block.settings['checkout-text'] }}

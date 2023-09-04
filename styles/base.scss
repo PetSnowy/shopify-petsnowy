@@ -5555,6 +5555,12 @@ label.productlabel_info,
 		font-size: vw(40px);
 		font-family: 'FS_JOEY-REGULAR';
 		margin: 0 0 vw(20px) 0 !important;
+
+		&.disable {
+			pointer-events: none;
+			opacity: 0.5;
+			cursor: no-drop;
+		}
 	}
 }
 
@@ -5630,6 +5636,11 @@ $item: 5;
 		font-family: 'FS_JOEY-REGULAR';
 		margin: 0 !important;
 
+		&.disable {
+			pointer-events: none;
+			opacity: 0.5;
+			cursor: not-allowed;
+		}
 
 		&:hover {
 			color: #fff;
