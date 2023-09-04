@@ -112,6 +112,11 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "4b2f74a7-66cb-41c8-a559-de8983fc05dd": {
+          "type": "checkout",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -126,7 +131,8 @@
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
-        "share"
+        "share",
+        "4b2f74a7-66cb-41c8-a559-de8983fc05dd"
       ],
       "settings": {
         "enable_sticky_info": true,
