@@ -13,7 +13,6 @@
     },
     "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "b504c877-67df-4d07-b421-9fac2e31e94f": {
           "type": "text",
@@ -46,6 +45,7 @@
         "e41cef55-a297-4c09-a549-24d35be2b565",
         "2c894b36-d272-47ee-93fd-e441d2b637ea"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -123,6 +123,12 @@
             "show_dynamic_checkout": true
           }
         },
+        "e19cae87-b2d0-46f5-9b8e-4c71ee5f88d2": {
+          "type": "checkout",
+          "settings": {
+            "checkout-text": "BUY NOW"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -164,6 +170,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "e19cae87-b2d0-46f5-9b8e-4c71ee5f88d2",
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
@@ -183,7 +190,6 @@
     },
     "815a64f2-a2d1-497f-9dac-1cabc60918d0": {
       "type": "Explore-products",
-      "disabled": true,
       "blocks": {
         "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1": {
           "type": "variant_picker",
@@ -195,6 +201,7 @@
       "block_order": [
         "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1"
       ],
+      "disabled": true,
       "settings": {
         "description": "<p>Cannot foresee Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
         "product": "petsnowy-indiegogo-launch-discount-30-off",
@@ -263,7 +270,6 @@
     },
     "30307903-7dfd-43fd-a94b-e8afddaa806b": {
       "type": "image-text-block",
-      "disabled": true,
       "blocks": {
         "9d1b52ba-657b-424d-a6c2-057a19a15eed": {
           "type": "title",
@@ -292,6 +298,7 @@
         "9ecc1e22-b451-440f-a65c-c2d0f68d6df7",
         "64e8ed2c-3e0c-47e8-856a-4a4355769102"
       ],
+      "disabled": true,
       "settings": {
         "img": "shopify:\/\/shop_images\/Bg_Image_10.png",
         "heading": "Your Text Here",
@@ -351,7 +358,6 @@
     },
     "a01e7f6a-6040-4334-97af-966598236644": {
       "type": "extra-text-blocks",
-      "disabled": true,
       "blocks": {
         "03d34236-6eee-4408-bf76-43f3607fd691": {
           "type": "title",
@@ -380,6 +386,7 @@
         "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74",
         "c59af14b-539c-4fa1-a0de-8fd8435255cf"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 20,
         "padding_bottom": 40
