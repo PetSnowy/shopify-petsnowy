@@ -5539,6 +5539,22 @@ label.productlabel_info,
 			text-align: center;
 		}
 	}
+
+
+	.checkout-button {
+		width: 100%;
+		height: vw(92px);
+		box-sizing: border-box;
+		padding: vw(20px) vw(40px);
+		text-align: center;
+		color: #231f20;
+		background-color: #fff;
+		border: vw(2px) solid #231f20;
+		transition: all 0.3s ease;
+		border-radius: vw(80px);
+		font-size: vw(32px);
+		margin: 0 0 vw(20px) 0 !important;
+	}
 }
 
 $item: 5;
@@ -5610,7 +5626,8 @@ $item: 5;
 		border-radius: 40px;
 		font-size: 16px;
 		cursor: pointer;
-		margin: 0;
+		margin: 0 !important;
+
 
 		&:hover {
 			color: #fff;
