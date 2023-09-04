@@ -64,6 +64,7 @@
           "type": "checkout",
           "disabled": true,
           "settings": {
+            "checkout-text": "checkout"
           }
         },
         "description": {
