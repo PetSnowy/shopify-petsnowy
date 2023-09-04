@@ -708,9 +708,9 @@
                 type="submit"
                 name="checkout"
                 class="checkout-button"
-								form="CartDrawer-Form"
+                form="CartDrawer-Form"
               >
-               {{ section.settings.checkout   }}
+                {{ section.settings.checkout.settings['checkout-text'] }}
               </button>
 
             {%- when 'rating' -%}
@@ -1388,13 +1388,13 @@
       "type": "checkout",
       "name": "checkout",
       "limit": 1,
-			"settings": [
-				{
-					"type": "text",
-					"id": "checkout-text",
-					"label": "checkout-text"
-				}
-			]
+      "settings": [
+        {
+          "type": "text",
+          "id": "checkout-text",
+          "label": "checkout-text"
+        }
+      ]
     },
     {
       "type": "description",
