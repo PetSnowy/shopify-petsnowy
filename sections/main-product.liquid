@@ -507,12 +507,12 @@
                   >
                     {%- for option in product.options_with_values -%}
                       <fieldset class="js product-form__input">
-                        <legend class="form__label">option</legend>
+                        <legend class="form__label">Option</legend>
                         {%- for value in option.values -%}
                           <input
                             type="radio"
                             id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                            name="option"
+                            name="Option"
                             value="{{ value | escape }}"
                             form="{{ product_form_id }}"
                             {% if option.selected_value == value %}
