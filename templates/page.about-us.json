@@ -23,7 +23,6 @@
     },
     "20497a50-8c5b-41ed-adb8-014df5de3b60": {
       "type": "custom-filter",
-      "disabled": true,
       "blocks": {
         "66f12e0d-e1d7-4603-a580-c5ee0e78d3ce": {
           "type": "title",
@@ -68,6 +67,7 @@
         "b6a2feef-029d-48ef-a7eb-2e742d57b87d",
         "b2e71320-7cf0-4f55-96d9-f56f1962a831"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Quick links:",
         "padding_top": 36,
@@ -83,7 +83,7 @@
             "image_first": true,
             "title": "Our Story",
             "subtitle": "",
-            "richtext": "<p>PetSnowy was founded in Irvine, CA in 2020. <\/p><p>PetSnowy creates convenient, time-saving products so that families can maximize their time with their furry friends. <\/p>",
+            "richtext": "<p>PetSnowy was founded in Irvine, CA in 2020. (64 Crater, Irvine, CA 92618)<\/p><p>PetSnowy creates convenient, time-saving products so that families can maximize their time with their furry friends. <\/p>",
             "image": "shopify:\/\/shop_images\/1_aa3ee8f4-bcde-47c7-8b3b-16078c956f14.jpg"
           }
         },
@@ -133,7 +133,6 @@
     },
     "c8fb7d06-d377-4782-8725-bd6ca7647d39": {
       "type": "custom-image-text",
-      "disabled": true,
       "blocks": {
         "514d1000-0049-4b35-b3a3-25af462dcb37": {
           "type": "heading",
@@ -154,6 +153,7 @@
         "514d1000-0049-4b35-b3a3-25af462dcb37",
         "19ea9ec2-494c-4aa9-b7d3-a05b33b08df9"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/2_3_d6d3015b-46b7-4d0e-8d41-53838683a50e.jpg",
         "image_mob": "shopify:\/\/shop_images\/2_3_d6d3015b-46b7-4d0e-8d41-53838683a50e.jpg",
@@ -172,7 +172,6 @@
     },
     "cd75265b-0ac6-4468-8271-842f3235bf12": {
       "type": "multicolumn",
-      "disabled": true,
       "blocks": {
         "template--17907350995266__cd75265b-0ac6-4468-8271-842f3235bf12-16759515009648eee5-0": {
           "type": "column",
@@ -210,6 +209,7 @@
         "template--17907350995266__cd75265b-0ac6-4468-8271-842f3235bf12-16759515009648eee5-1",
         "template--17907350995266__cd75265b-0ac6-4468-8271-842f3235bf12-16759515009648eee5-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -255,7 +255,6 @@
     },
     "d0328917-dcb8-4491-8ad4-3d4e4d30f859": {
       "type": "our-team",
-      "disabled": true,
       "blocks": {
         "ebf21c67-78f6-43f2-a0ee-97b03dd70f92": {
           "type": "image_picker",
@@ -281,6 +280,7 @@
         "952c904a-2200-43f2-aaaa-06f321c98e29",
         "78bc6dd3-f36f-4823-aea8-e9d96ee1ba9e"
       ],
+      "disabled": true,
       "settings": {
         "image_1row": "shopify:\/\/shop_images\/5_17_5b1f9aec-966f-4c8a-bc06-4cf8a0872bdc.jpg",
         "image_2row": "shopify:\/\/shop_images\/6_1_dc205fa0-eba3-4afe-9077-7d7161831b77.jpg",
@@ -294,7 +294,6 @@
     },
     "bcd3cda5-ccaf-48e4-9b36-9c03bef8caeb": {
       "type": "our-team",
-      "disabled": true,
       "blocks": {
         "ca8ca410-b9d4-4fcf-9637-1e6ab2a25fea": {
           "type": "image_picker",
@@ -320,6 +319,7 @@
         "9de0de3b-3625-4df7-b40c-c70b0ba2c104",
         "d71b85d0-7ef2-4d03-aa39-fd4f87227782"
       ],
+      "disabled": true,
       "settings": {
         "image_1row": "shopify:\/\/shop_images\/5_17.jpg",
         "image_2row": "shopify:\/\/shop_images\/LUANCHING-SOON_3.jpg",
