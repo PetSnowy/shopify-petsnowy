@@ -704,7 +704,15 @@
 
               <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
             {% when 'checkout' %}
-              <div class="checkout-button">checkout</div>
+              <button
+                type="submit"
+                name="checkout"
+                class="checkout-button"
+								form="CartDrawer-Form"
+              >
+               {{ section.settings.checkout   }}
+              </button>
+
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
@@ -1379,7 +1387,14 @@
     {
       "type": "checkout",
       "name": "checkout",
-      "limit": 1
+      "limit": 1,
+			"settings": [
+				{
+					"type": "text",
+					"id": "checkout-text",
+					"label": "checkout-text"
+				}
+			]
     },
     {
       "type": "description",
