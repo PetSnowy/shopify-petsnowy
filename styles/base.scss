@@ -5597,6 +5597,24 @@ $item: 5;
 		}
 	}
 
+	.checkout-button {
+		width: 438px;
+		height: 46px;
+		box-sizing: border-box;
+		padding: 10px 20px;
+		text-align: center;
+		line-height: 46px;
+		color: #231f20;
+		background-color: #fff;
+		border: 1px solid #231f20;
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: #fff;
+			background-color: #231f20;
+		}
+	}
+
 }
 
 .Download {

@@ -704,7 +704,7 @@
 
               <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
             {% when 'checkout' %}
-              <div class="checkout-button"></div>
+              <div class="checkout-button">checkout</div>
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
