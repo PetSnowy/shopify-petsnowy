@@ -66,7 +66,6 @@
     },
     "d05e0b82-3677-41be-9f66-40dca2478239": {
       "type": "video-popup",
-      "disabled": true,
       "blocks": {
         "99d55031-dcbd-47d0-ac77-8a5dd9b81150": {
           "type": "block",
@@ -121,6 +120,7 @@
         "4b57d163-5ac2-47b6-865e-d335b0930fdb",
         "7334a7df-caa1-4961-bea6-c522dd3783a4"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 40,
         "padding_bottom": 40
@@ -340,6 +340,7 @@
         "template--17916531966274__b81623df-86d7-4d19-a330-71309d3f13df-16760152590f1d463c-1",
         "defe1b0c-4d4d-4e5b-b087-9b2dff38f9bd"
       ],
+      "disabled": true,
       "settings": {
         "layout": "grid",
         "slide_height": "medium",
@@ -352,7 +353,6 @@
     },
     "eb650d4e-e0bd-42ae-a4cf-e860d80c128a": {
       "type": "custom-multicolumn",
-      "disabled": true,
       "blocks": {
         "template--17916531966274__eb650d4e-e0bd-42ae-a4cf-e860d80c128a-1676023699386d440f-0": {
           "type": "column",
@@ -401,6 +401,7 @@
         "template--17916531966274__eb650d4e-e0bd-42ae-a4cf-e860d80c128a-1676023699386d440f-2",
         "7ba23c75-dcc4-4652-a99e-ea40855024de"
       ],
+      "disabled": true,
       "settings": {
         "title": "Making the switch has never been easier.",
         "heading_size": "h1",
@@ -417,6 +418,43 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "25332470-1120-4e11-a35c-4deee632604e": {
+      "type": "swiper",
+      "blocks": {
+        "9a6ff64a-f44d-4e17-b6e4-227d32fb906f": {
+          "type": "video",
+          "settings": {
+            "video": "https:\/\/www.youtube.com\/watch?v=tuB0k6AoDnk"
+          }
+        },
+        "78917c25-4774-46ec-9f59-c45e323706e0": {
+          "type": "video",
+          "settings": {
+            "video": "https:\/\/www.youtube.com\/watch?embeds_referring_euri=https%3A%2F%2Fwww.indiegogo.com%2F&source_ve_path=Mjg2NjQsMTY0NTAz&feature=emb_share&v=RrH-nvHbjJg"
+          }
+        },
+        "0a45a1fa-9274-4663-9607-96f034089a67": {
+          "type": "video",
+          "settings": {
+            "video": "https:\/\/www.youtube.com\/watch?v=tltQPi7408E"
+          }
+        },
+        "6ca7c0e1-a3a2-4974-a274-f7a5ca064526": {
+          "type": "video",
+          "settings": {
+            "video": "https:\/\/www.youtube.com\/watch?v=xir9KyKkmNo"
+          }
+        }
+      },
+      "block_order": [
+        "9a6ff64a-f44d-4e17-b6e4-227d32fb906f",
+        "78917c25-4774-46ec-9f59-c45e323706e0",
+        "0a45a1fa-9274-4663-9607-96f034089a67",
+        "6ca7c0e1-a3a2-4974-a274-f7a5ca064526"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -428,6 +466,7 @@
     "21942a58-7c5e-4932-81e6-e6fdedaa43b2",
     "b79a1b90-73b1-4a47-ae19-5c94a2e40c21",
     "b81623df-86d7-4d19-a330-71309d3f13df",
-    "eb650d4e-e0bd-42ae-a4cf-e860d80c128a"
+    "eb650d4e-e0bd-42ae-a4cf-e860d80c128a",
+    "25332470-1120-4e11-a35c-4deee632604e"
   ]
 }
