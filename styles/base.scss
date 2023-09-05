@@ -5557,9 +5557,9 @@ label.productlabel_info,
 		margin: 0 0 vw(20px) 0 !important;
 
 		&.disable {
-			pointer-events: none;
-			opacity: 0.5;
-			cursor: no-drop;
+			// pointer-events: none;
+			// opacity: 0.5;
+			// cursor: no-drop;
 		}
 	}
 }
