@@ -322,6 +322,34 @@
     },
     "870baee5-e86d-409f-81ce-384a50510ec1": {
       "type": "swiper-image-text",
+      "blocks": {
+        "9b2d819e-e854-4d30-9021-b379974cab07": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
+        "95391700-fb2f-4ff9-9fd9-2ab3cbb07af6": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
+        "a84097b3-1a8f-4870-a757-765a6d5b1e72": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "9b2d819e-e854-4d30-9021-b379974cab07",
+        "95391700-fb2f-4ff9-9fd9-2ab3cbb07af6",
+        "a84097b3-1a8f-4870-a757-765a6d5b1e72"
+      ],
       "settings": {
       }
     }
