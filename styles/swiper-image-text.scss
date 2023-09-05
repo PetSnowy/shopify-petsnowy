@@ -1,0 +1,28 @@
+.swiper-image-text {
+	.swiper-slide {
+		display: flex;
+		width: 300px;
+		flex-wrap: wrap;
+
+		.image {
+			width: 300px;
+			height: 200px;
+			margin-bottom: 10px;
+			background-color: aqua;
+		}
+
+		.content-wrapper {
+			padding: 10px;
+			background-color: red;
+		}
+
+		h2 {
+			font-size: 28px;
+			margin-bottom: 5px;
+		}
+
+		p {
+			font-size: 16px;
+		}
+	}
+}

@@ -1,22 +1,34 @@
-<div class="swiper page-width">
+<link rel="stylesheet" href="{{ 'swiper-image-text.css' | asset_url }}">
+
+<div class="swiper page-width swiper-image-text">
   <div class="swiper-wrapper">
-    {% for block in section.blocks %}
-      <div class="swiper-slide">
-        {% if block.type == 'image' %}
-          <div class="image">
-            <img src="{{ block.settings.imagerow | img_url: 'master' }}" alt="petsnowy" loading="lazy">
-          </div>
-        {% endif %}
-        <div class="content-wrapper">
-          {% if block.type == 'title' %}
-            <h2>{{ section.settings.title }}</h2>
-          {% endif %}
-          {% if block.type == 'text' %}
-            <p>{{ section.settings.text }}</p>
-          {% endif %}
-        </div>
+    <div class="swiper-slide">
+      <div class="image"></div>
+      <div class="content-wrapper">
+        <h2>text text</h2>
+        <p>
+          PetSnowy has a self-owned production supply chain with over 34 years of experience. We own 6 production bases
+          worldwide, which encompass an impressive 180,000 square kilometers.
+        </p>
       </div>
-    {% endfor %}
+    </div>
+    {% comment %}
+      {% for block in section.blocks %}
+          {% if block.type == 'image' %}
+            <div class="image">
+              <img src="{{ block.settings.imagerow | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+            </div>
+          {% endif %}
+          <div class="content-wrapper">
+            {% if block.type == 'title' %}
+              <h2>{{ section.settings.title }}</h2>
+            {% endif %}
+            {% if block.type == 'text' %}
+              <p>{{ section.settings.text }}</p>
+            {% endif %}
+          </div>
+      {% endfor %}
+    {% endcomment %}
   </div>
   <div class="swiper-pagination"></div>
 
@@ -48,31 +60,19 @@
   "name": "swiper-image-text",
   "blocks": [
     {
-      "type": "image",
-      "name": "image",
+      "type": "column",
+      "name": "column",
       "settings": [
         {
           "type": "image_picker",
           "id": "imagerow",
           "label": "Image"
-        }
-      ]
-    },
-    {
-      "type": "title",
-      "name": "title",
-      "settings": [
+        },
         {
           "type": "text",
           "id": "title",
           "label": "title"
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "name": "text",
-      "settings": [
+        },
         {
           "type": "text",
           "id": "text",
@@ -83,7 +83,18 @@
   ],
   "presets": [
     {
-      "name": "swiper-image-text"
+      "name": "swiper-image-text",
+      "blocks": [
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        }
+      ]
     }
   ]
 }
