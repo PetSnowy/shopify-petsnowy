@@ -1,0 +1,90 @@
+<div class="swiper page-width">
+  <div class="swiper-wrapper">
+    {% for block in section.blocks %}
+      <div class="swiper-slide">
+        {% if block.type == 'image' %}
+          <div class="image">
+            <img src="{{ block.settings.imagerow | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+          </div>
+        {% endif %}
+        <div class="content-wrapper">
+          {% if block.type == 'title' %}
+            <h2>{{ section.settings.title }}</h2>
+          {% endif %}
+          {% if block.type == 'text' %}
+            <p>{{ section.settings.text }}</p>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="swiper-pagination"></div>
+
+  <div class="swiper-button">
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+<script>
+  const mySwiper = new Swiper('.swiper', {
+    loop: true,
+    preventDefault: false,
+    slidesPerView: 'auto',
+    freeModeMomentumBounce: false,
+    pagination: {
+      el: '.swiper-pagination',
+      dynamicBullets: true,
+      dynamicMainBullets: 2,
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+{% schema %}
+{
+  "name": "swiper-image-text",
+  "blocks": [
+    {
+      "type": "image",
+      "name": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "imagerow",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "swiper-image-text"
+    }
+  ]
+}
+{% endschema %}
