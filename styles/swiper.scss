@@ -1,5 +1,5 @@
 .swiper {
-	&>div {
+	div:empty {
 		display: block;
 	}
 }

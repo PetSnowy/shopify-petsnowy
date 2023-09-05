@@ -1,1 +1,1 @@
-.swiper>div{display:block}
+.swiper div:empty{display:block}
