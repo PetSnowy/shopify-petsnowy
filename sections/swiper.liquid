@@ -4,7 +4,7 @@
       <div class="swiper-slide">
         {% if block.type == 'video' %}
           <iframe
-            src="https://www.youtube.com/embed/{{ section.settings.videourl }}"
+            src="https://www.youtube.com/embed/{{ block.settings.text }}"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -56,7 +56,7 @@
       "settings": [
         {
           "type": "text",
-          "id": "videourl",
+          "id": "text",
           "label": "video embed id"
         }
       ]
