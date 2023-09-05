@@ -455,25 +455,6 @@
       ],
       "settings": {
       }
-    },
-    "e51fbaea-5f2a-4f6c-a4f6-f476a1f44143": {
-      "type": "video-popup",
-      "blocks": {
-        "1005aa39-2cfa-4700-8ddc-3837964e6528": {
-          "type": "block",
-          "settings": {
-            "ml_text": "",
-            "video_url": "https:\/\/www.youtube.com\/watch?embeds_referring_euri=https%3A%2F%2Fwww.indiegogo.com%2F&source_ve_path=Mjg2NjQsMTY0NTAz&feature=emb_share&v=RrH-nvHbjJg"
-          }
-        }
-      },
-      "block_order": [
-        "1005aa39-2cfa-4700-8ddc-3837964e6528"
-      ],
-      "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -486,7 +467,6 @@
     "b79a1b90-73b1-4a47-ae19-5c94a2e40c21",
     "b81623df-86d7-4d19-a330-71309d3f13df",
     "eb650d4e-e0bd-42ae-a4cf-e860d80c128a",
-    "25332470-1120-4e11-a35c-4deee632604e",
-    "e51fbaea-5f2a-4f6c-a4f6-f476a1f44143"
+    "25332470-1120-4e11-a35c-4deee632604e"
   ]
 }
