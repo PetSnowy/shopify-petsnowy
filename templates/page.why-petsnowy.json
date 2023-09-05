@@ -326,8 +326,9 @@
         "9b2d819e-e854-4d30-9021-b379974cab07": {
           "type": "column",
           "settings": {
-            "title": "",
-            "text": ""
+            "imagerow": "shopify:\/\/shop_images\/petsnowy_park.jpg",
+            "title": "text",
+            "text": "text"
           }
         },
         "95391700-fb2f-4ff9-9fd9-2ab3cbb07af6": {
