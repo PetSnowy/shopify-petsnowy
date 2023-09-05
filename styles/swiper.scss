@@ -1,5 +1,23 @@
+@import 'pxToVw.scss';
+
 .swiper {
+	overflow: hidden;
+
 	div:empty {
 		display: block;
+	}
+}
+
+@media screen and (min-width: 901px) {}
+
+@media screen and (max-width: 900px) {
+	.swiper {
+		padding: 0px;
+		width: 100%;
+
+		iframe {
+			width: 100%;
+			height: vw(500px);
+		}
 	}
 }

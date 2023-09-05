@@ -1,1 +1,1 @@
-.swiper div:empty{display:block}
+.swiper{overflow:hidden}.swiper div:empty{display:block}@media screen and (max-width:900px){.swiper{padding:0;width:100%}.swiper iframe{height:66.6666666667vw;width:100%}}
