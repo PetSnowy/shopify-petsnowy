@@ -120,40 +120,40 @@
           "type": "title",
           "settings": {
             "image_first": false,
-            "title": "A Zero-Smell Experience",
+            "title": "The World's Most Trusted Smart Pet Care Innovator",
             "subtitle": "",
-            "richtext": "<p>SNOW⁺ leverages powerful triple-odor elimination technology by decompressing organic compounds, bacteria and viruses. Our litter box removes over 90% of ammonia for a smell-safe experience that is also both eco-friendly and safe for cats. <\/p>",
-            "image": "shopify:\/\/shop_images\/dddf30b63129c5cbee1ff18fd45efca2.gif"
+            "richtext": "<p>PetSnowy has a self-owned production supply chain with over 34 years of experience. We own 6 production bases worldwide, which encompass an impressive 180,000 square kilometers. <\/p>",
+            "image": "shopify:\/\/shop_images\/1-Trust-Banner_01_02_1.jpg"
           }
         },
         "5a1afa64-8876-471f-8b9e-9bc7e5a32b51": {
           "type": "title",
           "settings": {
             "image_first": true,
-            "title": "Ultra-Convenient Patented Auto-Sealing Design",
+            "title": "The Most Popular Pet Project on IndieGoGo",
             "subtitle": "",
-            "richtext": "<p>Keep messes contained with our self-sealing bag with a patented design built for durability. Simply pull the tray out to seal, and push in to open and begin trapping waste. <\/p>",
-            "image": "shopify:\/\/shop_images\/11.gif"
+            "richtext": "<p>In February 2023, we took IndieGoGo by storm, fully funding our project in just one hour.<\/p>",
+            "image": "shopify:\/\/shop_images\/brand_story.jpg"
           }
         },
         "c4a0f52e-f30d-4b43-9eec-bfab368754b4": {
           "type": "title",
           "settings": {
             "image_first": false,
-            "title": "Anti-Tracking Curved Walkway",
+            "title": "Media Coverage",
             "subtitle": "",
-            "richtext": "<p>Trap litter at its source with the included walkway mat that's gentle on your cat's feet. Enjoy easy cleanup and cat comfort with a mat that is soft, breathable, detachable, and water washable.<\/p>",
-            "image": "shopify:\/\/shop_images\/22_548ba024-ced8-40e3-9621-a3dc1456f4de.gif"
+            "richtext": "<p>Founded by cat parents with decades of pet industry expertise, PetSnowy is already a favorite among thousands of cat lovers.<\/p>",
+            "image": "shopify:\/\/shop_images\/WXWorkCapture_16938954304427.png"
           }
         },
         "e032604b-5801-424f-85e3-05c7570b40ed": {
           "type": "title",
           "settings": {
             "image_first": true,
-            "title": "24\/7 Smart Control with the PetSnowy app",
+            "title": "Employee Message",
             "subtitle": "",
-            "richtext": "<p>Monitor your cat's health with auto weight and toilet time tracking. All health data is delivered to the app, helping you better care for your cat. <\/p>",
-            "image": "shopify:\/\/shop_images\/APP.gif"
+            "richtext": "<p>Meow! It's us, Sam and Gian! We're thrilled you dropped by our lovely abode. We're pawsitively grateful for your presence. We understand you're curious about us, so don't hesitate to get in touch with our purrfect customer support team. They're simply paw-some and always ready to lend a helping paw! Meow!<\/p>",
+            "image": "shopify:\/\/shop_images\/petsnowy_staff_5474e7b8-3737-4fe4-bc39-1ec5b38427fe.png"
           }
         }
       },
@@ -208,6 +208,7 @@
         "template--17916531966274__21942a58-7c5e-4932-81e6-e6fdedaa43b2-16759385727913f415-1",
         "template--17916531966274__21942a58-7c5e-4932-81e6-e6fdedaa43b2-16759385727913f415-2"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/5_17_5b1f9aec-966f-4c8a-bc06-4cf8a0872bdc.jpg",
         "image_mob": "shopify:\/\/shop_images\/5_17_5b1f9aec-966f-4c8a-bc06-4cf8a0872bdc.jpg",
@@ -257,6 +258,7 @@
         "b872d7f7-c7c2-42f1-9fd1-94d627ded7c9",
         "db0f34bd-e30e-40dd-8a9a-509cc67734e1"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 35,
         "padding_bottom": 15,
