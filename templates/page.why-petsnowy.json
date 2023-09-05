@@ -8,19 +8,6 @@
         "padding_bottom": 60
       }
     },
-    "882c5266-da3d-4165-a2ae-a204f50ce5a2": {
-      "type": "banner-video",
-      "settings": {
-        "vdio_img": "shopify:\/\/shop_images\/1_0-00-00-00_1_c158623a-2830-4b76-8e07-248eb9543789.jpg",
-        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/bb6823e982ac492288c85480b4e0fd02.mp4https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a7d85f11905a44d0afce5e94a942172f.mp4",
-        "mobvdio_img": "shopify:\/\/shop_images\/1_0-00-00-00_1_c158623a-2830-4b76-8e07-248eb9543789.jpg",
-        "mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a7d85f11905a44d0afce5e94a942172f.mp4eos\/c\/o\/v\/bb6823e982ac492288c85480b4e0fd02.mp4",
-        "heading": "",
-        "sub_heading": "",
-        "btn_text": "",
-        "btn_url": "#"
-      }
-    },
     "ef2afe4c-0503-4fd6-91ae-619090d82430": {
       "type": "custom-rich-text",
       "blocks": {
@@ -459,7 +446,6 @@
   },
   "order": [
     "main",
-    "882c5266-da3d-4165-a2ae-a204f50ce5a2",
     "ef2afe4c-0503-4fd6-91ae-619090d82430",
     "d05e0b82-3677-41be-9f66-40dca2478239",
     "1e11a977-09db-4065-96db-d161fc29a8a8",
