@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="{{ 'swiper.css' | asset_url }}">
 <div class="swiper">
   <div class="swiper-wrapper">
     {% for block in section.blocks %}
@@ -31,7 +32,6 @@
 </div>
 <script>
   const mySwiper = new Swiper('.swiper', {
-    direction: 'vertical',
     loop: true,
     pagination: {
       el: '.swiper-pagination',
