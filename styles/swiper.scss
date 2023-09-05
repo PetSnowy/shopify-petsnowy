@@ -1,7 +1,6 @@
 @import 'pxToVw.scss';
 
 .swiper {
-	overflow: hidden;
 	--swiper-theme-color: rgba(241, 129, 19);
 
 	div:empty {
@@ -19,6 +18,8 @@
 	.swiper {
 		padding: 0px;
 		width: 100%;
+		overflow: hidden;
+		margin-bottom: vw(120px);
 
 		iframe {
 			width: 100%;

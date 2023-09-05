@@ -1,1 +1,1 @@
-.swiper{--swiper-theme-color:#f18113;overflow:hidden}.swiper div:empty{display:block}@media screen and (min-width:901px){.swiper{margin-bottom:60px}}@media screen and (max-width:900px){.swiper{padding:0;width:100%}.swiper iframe{height:66.6666666667vw;width:100%}}
+.swiper{--swiper-theme-color:#f18113}.swiper div:empty{display:block}@media screen and (min-width:901px){.swiper{margin-bottom:60px}}@media screen and (max-width:900px){.swiper{margin-bottom:16vw;overflow:hidden;padding:0;width:100%}.swiper iframe{height:66.6666666667vw;width:100%}}
