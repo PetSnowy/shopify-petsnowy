@@ -5085,15 +5085,21 @@ h3.itg_subheading_richtext {
 }
 
 .itg_background_wrpr {
-	padding: 30px;
 	background: #ebe1d9;
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
+	height: 200px;
+	width: 100%;
+	display: flex;
+	box-sizing: border-box;
+	padding: 30px;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 .itg_background_wrpr h1 {
-	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 20px;
+	margin-top: 0px;
 	text-transform: capitalize;
 }
 
