@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="{{ 'swiper-image-text.css' | asset_url }}">
 
-<div class="swiper page-width swiper-image-text pc" id="swiper-image-text">
+<div class="swiper page-width swiper-image-text pc" id="swiper-image-text{{ section.id }}">
   <div class="swiper-wrapper">
     {% for block in section.blocks %}
       <div class="swiper-slide">
@@ -29,12 +29,16 @@
   {% endfor %}
 </div>
 <script>
-  const swiperImageText = new Swiper('#swiper-image-text', {
-    preventDefault: false,
-    grabCursor: true,
-    slidesPerView: 'auto',
-    spaceBetween: 20,
-  });
+  const swiperImageTextEl = document.querySelectorAll('.swiper-image-text');
+  for (let i = 0; i < swiperImageTextEl.length; i++) {
+    const swiperImageTextElId = swiperImageTextEl.id;
+    const swiperImageText = new Swiper(`${swiperImageTextElId}`, {
+      preventDefault: false,
+      grabCursor: true,
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+    });
+  }
 </script>
 {% schema %}
 {
