@@ -16,40 +16,10 @@
         "hedaing": "FAQ",
         "text": "<p>View our most frequently asked questions about the Petsnowy<\/p>"
       }
-    },
-    "8c6a3f50-eead-4047-9ed8-83cd74ac26ec": {
-      "type": "Q-and-A",
-      "blocks": {
-        "708e032f-0aad-4b16-a91d-77fff66b8577": {
-          "type": "block",
-          "settings": {
-            "h3": "Q: How can I reset or clear the weight onthe device?",
-            "text": "<p>A: To reset or clear the device's weight,<br\/>press the \"R\" key on the control panel. When you have added litter to<br\/>the globe and the device returns to the initial position, press the reset key<br\/>on the control panel. The three key indicator lights on the control panel will<br\/>flash three times to indicate a successful reset.<\/p>"
-          }
-        },
-        "346d6b3f-6370-47d9-8487-034a4e39e137": {
-          "type": "block",
-          "settings": {
-            "h3": "Q: What should I do if the weight deviationis significant?",
-            "text": "<p>A: If the weight deviation is significant<br\/>(greater than 400 grams), please perform the following troubleshooting steps:<\/p><p>   1.<br\/>Provide the device ID number.<\/p><p>   2.<br\/>Compare the weight reported by the device with the weight recorded in the app's<br\/>work log. If these two data points do not match, it's likely an issue with the<br\/>application. Please take a screenshot of both data and email it to us.<\/p><p>   3.<br\/>Compare the weight reported by the device with the weight recorded in the app's<br\/>work log. If these two data points match, it is likely that the device itself<br\/>is detecting the weight inaccurately. Further investigation will be needed on<br\/>the device side using the provided troubleshooting steps.<\/p><p> <\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "708e032f-0aad-4b16-a91d-77fff66b8577",
-        "346d6b3f-6370-47d9-8487-034a4e39e137"
-      ],
-      "settings": {
-        "h2": "Weight-Related Issues",
-        "sub_txt": "Resolving Weight-related Issues and Troubleshooting Steps",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "main",
-    "a2987480-c65a-4a67-bbfd-ec89bb7a9812",
-    "8c6a3f50-eead-4047-9ed8-83cd74ac26ec"
+    "a2987480-c65a-4a67-bbfd-ec89bb7a9812"
   ]
 }
