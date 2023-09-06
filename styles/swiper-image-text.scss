@@ -1,5 +1,9 @@
 @import "pxToVw.scss";
 
+.swiper-image-text-title {
+	text-align: center;
+}
+
 @media screen and (max-width: 900px) {
 	.swiper-image-text.pc {
 		display: none;
