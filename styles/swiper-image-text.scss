@@ -42,17 +42,21 @@
 
 			.image {
 				width: $width;
-				margin-bottom: 10px;
+				height: 320px;
+				margin-bottom: 15px;
 
 				img {
 					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
 					border-radius: 8px;
 				}
 			}
 
 			.content-wrapper {
-				padding: 10px;
 				width: 100%;
+				box-sizing: border-box;
 			}
 
 			h2 {
