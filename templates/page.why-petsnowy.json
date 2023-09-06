@@ -51,68 +51,6 @@
         "padding_bottom": 40
       }
     },
-    "d05e0b82-3677-41be-9f66-40dca2478239": {
-      "type": "video-popup",
-      "blocks": {
-        "99d55031-dcbd-47d0-ac77-8a5dd9b81150": {
-          "type": "block",
-          "settings": {
-            "ml_img": "shopify:\/\/shop_images\/Products_Images.png",
-            "ml_text": "<p>Meet The Snow<\/p>",
-            "ml_imgaa": "shopify:\/\/shop_images\/Products_Images.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=4Jm_4agXFLc"
-          }
-        },
-        "72bc68ae-a3f5-4512-9b55-56b705c3eb10": {
-          "type": "block",
-          "settings": {
-            "ml_img": "shopify:\/\/shop_images\/Products_Images.png",
-            "ml_text": "<p>Meet The Snow<\/p>",
-            "ml_imgaa": "shopify:\/\/shop_images\/Products_Images.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
-          }
-        },
-        "5843cca9-ecb3-45d7-8651-8b953989719b": {
-          "type": "block",
-          "settings": {
-            "ml_img": "shopify:\/\/shop_images\/Products_Images.png",
-            "ml_text": "<p>Meet The Snow<\/p>",
-            "ml_imgaa": "shopify:\/\/shop_images\/Products_Images.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=4Jm_4agXFLc"
-          }
-        },
-        "4b57d163-5ac2-47b6-865e-d335b0930fdb": {
-          "type": "block",
-          "settings": {
-            "ml_img": "shopify:\/\/shop_images\/Products_Images.png",
-            "ml_text": "<p>Meet The Snow<\/p>",
-            "ml_imgaa": "shopify:\/\/shop_images\/Products_Images.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
-          }
-        },
-        "7334a7df-caa1-4961-bea6-c522dd3783a4": {
-          "type": "block",
-          "settings": {
-            "ml_img": "shopify:\/\/shop_images\/Products_Images.png",
-            "ml_text": "<p>Meet The Snow<\/p>",
-            "ml_imgaa": "shopify:\/\/shop_images\/Products_Images.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
-          }
-        }
-      },
-      "block_order": [
-        "99d55031-dcbd-47d0-ac77-8a5dd9b81150",
-        "72bc68ae-a3f5-4512-9b55-56b705c3eb10",
-        "5843cca9-ecb3-45d7-8651-8b953989719b",
-        "4b57d163-5ac2-47b6-865e-d335b0930fdb",
-        "7334a7df-caa1-4961-bea6-c522dd3783a4"
-      ],
-      "disabled": true,
-      "settings": {
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
     "1e11a977-09db-4065-96db-d161fc29a8a8": {
       "type": "our-story",
       "blocks": {
@@ -358,7 +296,6 @@
   "order": [
     "main",
     "ef2afe4c-0503-4fd6-91ae-619090d82430",
-    "d05e0b82-3677-41be-9f66-40dca2478239",
     "1e11a977-09db-4065-96db-d161fc29a8a8",
     "b79a1b90-73b1-4a47-ae19-5c94a2e40c21",
     "b81623df-86d7-4d19-a330-71309d3f13df",
