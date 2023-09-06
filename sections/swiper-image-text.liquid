@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="{{ 'swiper-image-text.css' | asset_url }}">
-
+<h2 class="swiper-image-text-title">{{ section.settings['swiper-image-text-title'] }}</h2>
 <div class="swiper page-width swiper-image-text pc" id="swiper-image-text{{ section.id }}">
   <div class="swiper-wrapper">
     {% for block in section.blocks %}
@@ -29,20 +29,29 @@
   {% endfor %}
 </div>
 <script>
-  const swiperImageTextEl = document.querySelectorAll('.swiper-image-text');
-  for (let i = 0; i < swiperImageTextEl.length; i++) {
-    const swiperImageTextElId = swiperImageTextEl.id;
-    const swiperImageText = new Swiper(`${swiperImageTextElId}`, {
-      preventDefault: false,
-      grabCursor: true,
-      slidesPerView: 'auto',
-      spaceBetween: 20,
-    });
-  }
+  $(function () {
+    const swiperImageTextEl = document.querySelectorAll('.swiper-image-text.pc');
+    for (let i = 0; i < swiperImageTextEl.length; i++) {
+      const swiperImageTextElId = swiperImageTextEl[i].id;
+      const swiperImageText = new Swiper(`#${swiperImageTextElId}`, {
+        preventDefault: false,
+        grabCursor: true,
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+      });
+    }
+  });
 </script>
 {% schema %}
 {
   "name": "swiper-image-text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "swiper-image-text-title",
+      "label": "swiper-image-text-title"
+    }
+  ],
   "blocks": [
     {
       "type": "column",

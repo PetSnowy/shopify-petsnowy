@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="{{ 'swiper.css' | asset_url }}">
-<div class="swiper page-width" id="swiper">
+<div class="swiper-video page-width" id="swiper">
   <div class="swiper-wrapper">
     {% for block in section.blocks %}
       <div class="swiper-slide">
@@ -32,22 +32,28 @@
   {% comment %} <div class="swiper-scrollbar"></div> {% endcomment %}
 </div>
 <script>
-  const mySwiper = new Swiper('#swiper', {
-    loop: true,
-    effect: 'cube',
-    preventDefault: false,
-    slidesPerView: 'auto',
-    freeModeMomentumBounce: false,
-    pagination: {
-      el: '.swiper-pagination',
-      dynamicBullets: true,
-      dynamicMainBullets: 2,
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  $(function () {
+    const swiperVideoEl = document.querySelectorAll('.swiper-video');
+    for (let i = 0; i < swiperVideoEl.length; i++) {
+      const swiperVideoElId = swiperVideoEl[i].id;
+      const mySwiper = new Swiper(`#${swiperVideoElId}`, {
+        loop: true,
+        effect: 'cube',
+        preventDefault: false,
+        slidesPerView: 'auto',
+        freeModeMomentumBounce: false,
+        pagination: {
+          el: '.swiper-pagination',
+          dynamicBullets: true,
+          dynamicMainBullets: 2,
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    }
   });
 </script>
 

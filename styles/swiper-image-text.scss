@@ -1,9 +1,6 @@
 @import "pxToVw.scss";
 
 @media screen and (max-width: 900px) {
-	.title{
-		
-	}
 	.swiper-image-text.pc {
 		display: none;
 	}
@@ -32,6 +29,13 @@
 
 	.swiper-image-text.m-swiper {
 		display: none;
+	}
+
+	.swiper-image-text-title {
+		font-size: 24px;
+		margin: 0px;
+		margin-bottom: 20px;
+		height: 62px;
 	}
 
 	.swiper-image-text.pc {
