@@ -90,7 +90,7 @@
             "image_first": true,
             "title": "Employee Message",
             "subtitle": "",
-            "richtext": "<p>Meow! It's us, Sam and Gian! We're thrilled you dropped by our lovely abode. We're pawsitively grateful for your presence. We understand you're curious about us, so don't hesitate to get in touch with our purrfect customer support team. They're simply paw-some and always ready to lend a helping paw! Meow!<\/p>",
+            "richtext": "",
             "image": "shopify:\/\/shop_images\/petsnowy_staff_5474e7b8-3737-4fe4-bc39-1ec5b38427fe.png"
           }
         }
@@ -264,7 +264,7 @@
         "9b2d819e-e854-4d30-9021-b379974cab07": {
           "type": "column",
           "settings": {
-            "imagerow": "shopify:\/\/shop_images\/petsnowy_park.jpg",
+            "imagerow": "shopify:\/\/shop_images\/petsnowy_6.jpg",
             "title": "The World's Most Trusted Smart Pet Care Innovator",
             "text": "PetSnowy has a self-owned production supply chain with over 34 years of experience. We own 6 production bases worldwide, which encompass an impressive 180,000 square kilometers"
           }
@@ -272,14 +272,16 @@
         "95391700-fb2f-4ff9-9fd9-2ab3cbb07af6": {
           "type": "column",
           "settings": {
-            "title": "",
-            "text": ""
+            "imagerow": "shopify:\/\/shop_images\/7_1.jpg",
+            "title": "The Most Popular Pet Project on IndieGoGo",
+            "text": "In February 2023, we took IndieGoGo by storm, fully funding our project in just one hour."
           }
         },
         "a84097b3-1a8f-4870-a757-765a6d5b1e72": {
           "type": "column",
           "settings": {
-            "title": "",
+            "imagerow": "shopify:\/\/shop_images\/6_1_fa055609-dc79-4dde-8edd-517b27f5bf27.jpg",
+            "title": "Employee Message",
             "text": ""
           }
         }
@@ -289,7 +291,6 @@
         "95391700-fb2f-4ff9-9fd9-2ab3cbb07af6",
         "a84097b3-1a8f-4870-a757-765a6d5b1e72"
       ],
-      "disabled": true,
       "settings": {
       }
     }
