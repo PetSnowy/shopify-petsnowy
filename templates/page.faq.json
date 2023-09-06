@@ -16,10 +16,38 @@
         "hedaing": "FAQ",
         "text": "<p>View our most frequently asked questions about the Petsnowy<\/p>"
       }
+    },
+    "e7ff4464-ea33-4ac1-945f-bb976b98ec75": {
+      "type": "Q-and-A",
+      "blocks": {
+        "c46d6b4b-96ce-41b1-b920-154615552184": {
+          "type": "title",
+          "settings": {
+            "h2": "Resolving Weight-related Issues and Troubleshooting Steps"
+          }
+        },
+        "1ef7c224-21af-4840-9b32-99ad4a684736": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: How can I reset or clear the weight onthe device?",
+            "text": "",
+            "video": "shopify:\/\/files\/videos\/cat toy1 (2).mp4"
+          }
+        }
+      },
+      "block_order": [
+        "c46d6b4b-96ce-41b1-b920-154615552184",
+        "1ef7c224-21af-4840-9b32-99ad4a684736"
+      ],
+      "settings": {
+        "h1": "",
+        "sub_txt": ""
+      }
     }
   },
   "order": [
     "main",
-    "a2987480-c65a-4a67-bbfd-ec89bb7a9812"
+    "a2987480-c65a-4a67-bbfd-ec89bb7a9812",
+    "e7ff4464-ea33-4ac1-945f-bb976b98ec75"
   ]
 }
