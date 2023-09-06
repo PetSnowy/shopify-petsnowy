@@ -25,6 +25,8 @@
 }
 
 @media screen and (min-width: 901px) {
+	$width: 400px;
+
 	.swiper-image-text.m-swiper {
 		display: none;
 	}
@@ -36,9 +38,10 @@
 			width: fit-content;
 			flex-wrap: wrap;
 			flex-direction: column;
+			width: $width;
 
 			.image {
-				width: 400px;
+				width: $width;
 				margin-bottom: 10px;
 
 				img {
