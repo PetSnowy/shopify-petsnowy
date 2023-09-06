@@ -51,61 +51,6 @@
         "padding_bottom": 40
       }
     },
-    "1e11a977-09db-4065-96db-d161fc29a8a8": {
-      "type": "our-story",
-      "blocks": {
-        "2f9df16b-1348-45a7-98a9-4078ff9800c2": {
-          "type": "title",
-          "settings": {
-            "image_first": false,
-            "title": "The World's Most Trusted Smart Pet Care Innovator",
-            "subtitle": "",
-            "richtext": "<p>PetSnowy has a self-owned production supply chain with over 34 years of experience. We own 6 production bases worldwide, which encompass an impressive 180,000 square kilometers. <\/p>",
-            "image": "shopify:\/\/shop_images\/petsnowy_park.jpg"
-          }
-        },
-        "5a1afa64-8876-471f-8b9e-9bc7e5a32b51": {
-          "type": "title",
-          "settings": {
-            "image_first": true,
-            "title": "The Most Popular Pet Project on IndieGoGo",
-            "subtitle": "",
-            "richtext": "<p>In February 2023, we took IndieGoGo by storm, fully funding our project in just one hour.<\/p>",
-            "image": "shopify:\/\/shop_images\/brand_story.jpg"
-          }
-        },
-        "c4a0f52e-f30d-4b43-9eec-bfab368754b4": {
-          "type": "title",
-          "settings": {
-            "image_first": false,
-            "title": "Media Coverage",
-            "subtitle": "",
-            "richtext": "<p>Founded by cat parents with decades of pet industry expertise, PetSnowy is already a favorite among thousands of cat lovers.<\/p>",
-            "image": "shopify:\/\/shop_images\/WXWorkCapture_16938954304427.png"
-          }
-        },
-        "e032604b-5801-424f-85e3-05c7570b40ed": {
-          "type": "title",
-          "settings": {
-            "image_first": true,
-            "title": "Employee Message",
-            "subtitle": "",
-            "richtext": "",
-            "image": "shopify:\/\/shop_images\/petsnowy_staff_5474e7b8-3737-4fe4-bc39-1ec5b38427fe.png"
-          }
-        }
-      },
-      "block_order": [
-        "2f9df16b-1348-45a7-98a9-4078ff9800c2",
-        "5a1afa64-8876-471f-8b9e-9bc7e5a32b51",
-        "c4a0f52e-f30d-4b43-9eec-bfab368754b4",
-        "e032604b-5801-424f-85e3-05c7570b40ed"
-      ],
-      "settings": {
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
-    },
     "b79a1b90-73b1-4a47-ae19-5c94a2e40c21": {
       "type": "custom-block-image",
       "blocks": {
@@ -343,7 +288,6 @@
   "order": [
     "main",
     "ef2afe4c-0503-4fd6-91ae-619090d82430",
-    "1e11a977-09db-4065-96db-d161fc29a8a8",
     "b79a1b90-73b1-4a47-ae19-5c94a2e40c21",
     "870baee5-e86d-409f-81ce-384a50510ec1",
     "63eae311-5053-4dbe-97c6-669fc0bf6fc2",
