@@ -51,61 +51,6 @@
         "padding_bottom": 40
       }
     },
-    "1e11a977-09db-4065-96db-d161fc29a8a8": {
-      "type": "our-story",
-      "blocks": {
-        "2f9df16b-1348-45a7-98a9-4078ff9800c2": {
-          "type": "title",
-          "settings": {
-            "image_first": false,
-            "title": "The World's Most Trusted Smart Pet Care Innovator",
-            "subtitle": "",
-            "richtext": "<p>PetSnowy has a self-owned production supply chain with over 34 years of experience. We own 6 production bases worldwide, which encompass an impressive 180,000 square kilometers. <\/p>",
-            "image": "shopify:\/\/shop_images\/petsnowy_park.jpg"
-          }
-        },
-        "5a1afa64-8876-471f-8b9e-9bc7e5a32b51": {
-          "type": "title",
-          "settings": {
-            "image_first": true,
-            "title": "The Most Popular Pet Project on IndieGoGo",
-            "subtitle": "",
-            "richtext": "<p>In February 2023, we took IndieGoGo by storm, fully funding our project in just one hour.<\/p>",
-            "image": "shopify:\/\/shop_images\/brand_story.jpg"
-          }
-        },
-        "c4a0f52e-f30d-4b43-9eec-bfab368754b4": {
-          "type": "title",
-          "settings": {
-            "image_first": false,
-            "title": "Media Coverage",
-            "subtitle": "",
-            "richtext": "<p>Founded by cat parents with decades of pet industry expertise, PetSnowy is already a favorite among thousands of cat lovers.<\/p>",
-            "image": "shopify:\/\/shop_images\/WXWorkCapture_16938954304427.png"
-          }
-        },
-        "e032604b-5801-424f-85e3-05c7570b40ed": {
-          "type": "title",
-          "settings": {
-            "image_first": true,
-            "title": "Employee Message",
-            "subtitle": "",
-            "richtext": "",
-            "image": "shopify:\/\/shop_images\/petsnowy_staff_5474e7b8-3737-4fe4-bc39-1ec5b38427fe.png"
-          }
-        }
-      },
-      "block_order": [
-        "2f9df16b-1348-45a7-98a9-4078ff9800c2",
-        "5a1afa64-8876-471f-8b9e-9bc7e5a32b51",
-        "c4a0f52e-f30d-4b43-9eec-bfab368754b4",
-        "e032604b-5801-424f-85e3-05c7570b40ed"
-      ],
-      "settings": {
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
-    },
     "b79a1b90-73b1-4a47-ae19-5c94a2e40c21": {
       "type": "custom-block-image",
       "blocks": {
@@ -145,6 +90,87 @@
         "padding_bottom": 15,
         "btn_text": "Shop Now",
         "btn_url": "shopify:\/\/products\/snow-self-cleaning-litter-box"
+      }
+    },
+    "870baee5-e86d-409f-81ce-384a50510ec1": {
+      "type": "swiper-image-text",
+      "blocks": {
+        "9b2d819e-e854-4d30-9021-b379974cab07": {
+          "type": "column",
+          "settings": {
+            "imagerow": "shopify:\/\/shop_images\/petsnowy_6.jpg",
+            "title": "The World's Most Trusted Smart Pet Care Innovator",
+            "text": "PetSnowy has a self-owned production supply chain with over 34 years of experience. We own 6 production bases worldwide, which encompass an impressive 180,000 square kilometers."
+          }
+        },
+        "95391700-fb2f-4ff9-9fd9-2ab3cbb07af6": {
+          "type": "column",
+          "settings": {
+            "imagerow": "shopify:\/\/shop_images\/7_1.jpg",
+            "title": "The Most Popular Pet Project on IndieGoGo",
+            "text": "In February 2023, we took IndieGoGo by storm, fully funding our project in just one hour."
+          }
+        },
+        "a84097b3-1a8f-4870-a757-765a6d5b1e72": {
+          "type": "column",
+          "settings": {
+            "imagerow": "shopify:\/\/shop_images\/6_1_fa055609-dc79-4dde-8edd-517b27f5bf27.jpg",
+            "title": "Employee Message",
+            "text": "Meow! It's Gian! I'm so happy you're here! I know you must be curious about us. Please don't hesitate to reach out to our customer support; they're super nice and helpful!"
+          }
+        }
+      },
+      "block_order": [
+        "9b2d819e-e854-4d30-9021-b379974cab07",
+        "95391700-fb2f-4ff9-9fd9-2ab3cbb07af6",
+        "a84097b3-1a8f-4870-a757-765a6d5b1e72"
+      ],
+      "settings": {
+      }
+    },
+    "63eae311-5053-4dbe-97c6-669fc0bf6fc2": {
+      "type": "swiper-image-text",
+      "blocks": {
+        "cf232949-bc12-46b3-ba6b-ecb4b9cfbad1": {
+          "type": "column",
+          "settings": {
+            "imagerow": "shopify:\/\/shop_images\/1_5_4f32cead-b4d5-472f-989e-e33d0d9ec275.jpg",
+            "title": "",
+            "text": ""
+          }
+        },
+        "c31f31a9-6c72-422e-b5b4-0462a6aececd": {
+          "type": "column",
+          "settings": {
+            "imagerow": "shopify:\/\/shop_images\/3_1_122d1ac4-4e66-4536-8f4b-364c22eb619c.jpg",
+            "title": "",
+            "text": ""
+          }
+        },
+        "92712228-36f1-4c66-848e-7d6bd5cd2004": {
+          "type": "column",
+          "settings": {
+            "imagerow": "shopify:\/\/shop_images\/4_1.jpg",
+            "title": "",
+            "text": ""
+          }
+        },
+        "d15d456c-7d8a-4941-a4b0-6c1192440280": {
+          "type": "column",
+          "settings": {
+            "imagerow": "shopify:\/\/shop_images\/2_1_7cdbba53-b17d-4d4b-9a2c-f62e3c4dcf89.jpg",
+            "title": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "cf232949-bc12-46b3-ba6b-ecb4b9cfbad1",
+        "c31f31a9-6c72-422e-b5b4-0462a6aececd",
+        "92712228-36f1-4c66-848e-7d6bd5cd2004",
+        "d15d456c-7d8a-4941-a4b0-6c1192440280"
+      ],
+      "settings": {
       }
     },
     "b81623df-86d7-4d19-a330-71309d3f13df": {
@@ -257,51 +283,15 @@
       ],
       "settings": {
       }
-    },
-    "870baee5-e86d-409f-81ce-384a50510ec1": {
-      "type": "swiper-image-text",
-      "blocks": {
-        "9b2d819e-e854-4d30-9021-b379974cab07": {
-          "type": "column",
-          "settings": {
-            "imagerow": "shopify:\/\/shop_images\/petsnowy_6.jpg",
-            "title": "The World's Most Trusted Smart Pet Care Innovator",
-            "text": "PetSnowy has a self-owned production supply chain with over 34 years of experience. We own 6 production bases worldwide, which encompass an impressive 180,000 square kilometers"
-          }
-        },
-        "95391700-fb2f-4ff9-9fd9-2ab3cbb07af6": {
-          "type": "column",
-          "settings": {
-            "imagerow": "shopify:\/\/shop_images\/7_1.jpg",
-            "title": "The Most Popular Pet Project on IndieGoGo",
-            "text": "In February 2023, we took IndieGoGo by storm, fully funding our project in just one hour."
-          }
-        },
-        "a84097b3-1a8f-4870-a757-765a6d5b1e72": {
-          "type": "column",
-          "settings": {
-            "imagerow": "shopify:\/\/shop_images\/6_1_fa055609-dc79-4dde-8edd-517b27f5bf27.jpg",
-            "title": "Employee Message",
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "9b2d819e-e854-4d30-9021-b379974cab07",
-        "95391700-fb2f-4ff9-9fd9-2ab3cbb07af6",
-        "a84097b3-1a8f-4870-a757-765a6d5b1e72"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
     "main",
     "ef2afe4c-0503-4fd6-91ae-619090d82430",
-    "1e11a977-09db-4065-96db-d161fc29a8a8",
     "b79a1b90-73b1-4a47-ae19-5c94a2e40c21",
+    "870baee5-e86d-409f-81ce-384a50510ec1",
+    "63eae311-5053-4dbe-97c6-669fc0bf6fc2",
     "b81623df-86d7-4d19-a330-71309d3f13df",
-    "25332470-1120-4e11-a35c-4deee632604e",
-    "870baee5-e86d-409f-81ce-384a50510ec1"
+    "25332470-1120-4e11-a35c-4deee632604e"
   ]
 }
