@@ -1,58 +1,48 @@
 <link rel="stylesheet" href="{{ 'swiper-image-text.css' | asset_url }}">
 
-<div class="swiper page-width swiper-image-text">
+<div class="swiper page-width swiper-image-text pc" id="swiper-image-text">
   <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <div class="image"></div>
-      <div class="content-wrapper">
-        <h2>text text</h2>
-        <p>
-          PetSnowy has a self-owned production supply chain with over 34 years of experience. We own 6 production bases
-          worldwide, which encompass an impressive 180,000 square kilometers.
-        </p>
+    {% for block in section.blocks %}
+      <div class="swiper-slide">
+        <div class="image">
+          <img src="{{ block.settings.imagerow | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+        </div>
+        <div class="content-wrapper">
+          <h2>{{ block.settings.title }}</h2>
+          <p>{{ block.settings.text }}</p>
+        </div>
       </div>
-    </div>
-    {% comment %}
-      {% for block in section.blocks %}
-          {% if block.type == 'image' %}
-            <div class="image">
-              <img src="{{ block.settings.imagerow | img_url: 'master' }}" alt="petsnowy" loading="lazy">
-            </div>
-          {% endif %}
-          <div class="content-wrapper">
-            {% if block.type == 'title' %}
-              <h2>{{ section.settings.title }}</h2>
-            {% endif %}
-            {% if block.type == 'text' %}
-              <p>{{ section.settings.text }}</p>
-            {% endif %}
-          </div>
-      {% endfor %}
-    {% endcomment %}
-  </div>
-  <div class="swiper-pagination"></div>
-
-  <div class="swiper-button">
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+      <div class="swiper-slide">
+        <div class="image">
+          <img src="{{ block.settings.imagerow | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+        </div>
+        <div class="content-wrapper">
+          <h2>{{ block.settings.title }}</h2>
+          <p>{{ block.settings.text }}</p>
+        </div>
+      </div>
+    {% endfor %}
   </div>
 </div>
+<div class="m-swiper page-width swiper-image-text">
+  {% for block in section.blocks %}
+    <div class="swiper-slide">
+      <div class="image">
+        <img src="{{ block.settings.imagerow | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+      </div>
+      <div class="content-wrapper">
+        <h2>{{ block.settings.title }}</h2>
+        <p>{{ block.settings.text }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
 <script>
-  const mySwiper = new Swiper('.swiper', {
-    loop: true,
+  const swiperImageText = new Swiper('#swiper-image-text', {
     preventDefault: false,
+    grabCursor: true,
     slidesPerView: 'auto',
-    freeModeMomentumBounce: false,
-    pagination: {
-      el: '.swiper-pagination',
-      dynamicBullets: true,
-      dynamicMainBullets: 2,
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+    spaceBetween: 20,
   });
 </script>
 {% schema %}
