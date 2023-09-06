@@ -1,0 +1,73 @@
+@import "pxToVw.scss";
+
+@media screen and (max-width: 900px) {
+	.swiper-image-text.pc {
+		display: none;
+	}
+
+	.swiper-image-text.m-swiper {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		row-gap: vw(20px);
+		margin-bottom: vw(40px);
+
+		.image img {
+			width: 100%;
+			border-radius: vw(20px);
+		}
+
+		.swiper-slide {
+			overflow: hidden;
+			border-radius: vw(20px);
+		}
+	}
+}
+
+@media screen and (min-width: 901px) {
+	$width: 400px;
+
+	.swiper-image-text.m-swiper {
+		display: none;
+	}
+
+	.swiper-image-text.pc {
+		.swiper-slide {
+			overflow: hidden;
+			display: flex;
+			width: fit-content;
+			flex-wrap: wrap;
+			flex-direction: column;
+			width: $width;
+
+			.image {
+				width: $width;
+				height: 320px;
+				margin-bottom: 15px;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+					border-radius: 8px;
+				}
+			}
+
+			.content-wrapper {
+				width: 100%;
+				box-sizing: border-box;
+			}
+
+			h2 {
+				font-size: 28px;
+				margin: 0px;
+				margin-bottom: 5px;
+			}
+
+			p {
+				font-size: 16px;
+			}
+		}
+	}
+}

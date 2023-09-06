@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="{{ 'swiper.css' | asset_url }}">
+<div class="swiper page-width" id="swiper">
+  <div class="swiper-wrapper">
+    {% for block in section.blocks %}
+      <div class="swiper-slide">
+        {% if block.type == 'video' %}
+          <iframe
+            src="https://www.youtube.com/embed/{{ block.settings.text }}"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            width="100%"
+            height="800px"
+          ></iframe>
+        {% endif %}
+        {% if block.type == 'Img' %}
+          <div class="inno_img">
+            <img src="{{ block.settings.imagerow | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+  <div class="swiper-pagination"></div>
+
+  <div class="swiper-button">
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  {% comment %} <div class="swiper-scrollbar"></div> {% endcomment %}
+</div>
+<script>
+  const mySwiper = new Swiper('#swiper', {
+    loop: true,
+    effect: 'cube',
+    preventDefault: false,
+    slidesPerView: 'auto',
+    freeModeMomentumBounce: false,
+    pagination: {
+      el: '.swiper-pagination',
+      dynamicBullets: true,
+      dynamicMainBullets: 2,
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+{% schema %}
+{
+  "name": "swiper video",
+  "blocks": [
+    {
+      "type": "video",
+      "name": "video",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "video embed id"
+        }
+      ]
+    },
+    {
+      "type": "Img",
+      "name": "Img",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "imagerow",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "swiper video"
+    }
+  ]
+}
+{% endschema %}

@@ -5084,15 +5084,21 @@ h3.itg_subheading_richtext {
 }
 
 .itg_background_wrpr {
-	padding: 30px;
 	background: #ebe1d9;
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
+	height: 200px;
+	width: 100%;
+	display: flex;
+	box-sizing: border-box;
+	padding: 30px;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 .itg_background_wrpr h1 {
-	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 20px;
+	margin-top: 0px;
 	text-transform: capitalize;
 }
 
@@ -5532,6 +5538,35 @@ label.productlabel_info,
 			margin-top: vw(20px);
 		}
 	}
+
+	main.About-PetSnowy {
+		.video_link .baner_contain .cstm_banner_title span {
+			text-align: center;
+		}
+	}
+
+
+	.checkout-button {
+		width: 100%;
+		height: vw(92px);
+		box-sizing: border-box;
+		padding: vw(20px) vw(40px);
+		text-align: center;
+		color: #231f20;
+		background-color: #fff;
+		border: vw(2px) solid #231f20;
+		transition: all 0.3s ease;
+		border-radius: vw(80px);
+		font-size: vw(40px);
+		font-family: 'FS_JOEY-REGULAR';
+		margin: 0 0 vw(20px) 0 !important;
+
+		&.disable {
+			// pointer-events: none;
+			// opacity: 0.5;
+			// cursor: no-drop;
+		}
+	}
 }
 
 $item: 5;
@@ -5587,6 +5622,34 @@ $item: 5;
 
 		.accordion {
 			margin: 10px 0px;
+		}
+	}
+
+	.checkout-button {
+		width: 438px;
+		height: 46px;
+		box-sizing: border-box;
+		padding: 10px 20px;
+		text-align: center;
+		color: #231f20;
+		background-color: #fff;
+		border: 1px solid #231f20;
+		transition: all 0.3s ease;
+		border-radius: 40px;
+		font-size: 20px;
+		cursor: pointer;
+		font-family: 'FS_JOEY-REGULAR';
+		margin: 0 !important;
+
+		&.disable {
+			pointer-events: none;
+			opacity: 0.5;
+			cursor: not-allowed;
+		}
+
+		&:hover {
+			color: #fff;
+			background-color: #231f20;
 		}
 	}
 

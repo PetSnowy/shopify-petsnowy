@@ -1,0 +1,29 @@
+@import 'pxToVw.scss';
+
+.swiper {
+	--swiper-theme-color: rgba(241, 129, 19);
+
+	div:empty {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 901px) {
+	.swiper {
+		margin-bottom: 60px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.swiper {
+		padding: 0px;
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: vw(120px);
+
+		iframe {
+			width: 100%;
+			height: vw(500px);
+		}
+	}
+}

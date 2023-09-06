@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="{{ 'swiper-image-text.css' | asset_url }}">
+
+<div class="swiper page-width swiper-image-text pc" id="swiper-image-text">
+  <div class="swiper-wrapper">
+    {% for block in section.blocks %}
+      <div class="swiper-slide">
+        <div class="image">
+          <img src="{{ block.settings.imagerow | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+        </div>
+        <div class="content-wrapper">
+          <h2>{{ block.settings.title }}</h2>
+          <p>{{ block.settings.text }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="m-swiper page-width swiper-image-text">
+  {% for block in section.blocks %}
+    <div class="swiper-slide">
+      <div class="image">
+        <img src="{{ block.settings.imagerow | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+      </div>
+      <div class="content-wrapper">
+        <h2>{{ block.settings.title }}</h2>
+        <p>{{ block.settings.text }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+<script>
+  const swiperImageText = new Swiper('#swiper-image-text', {
+    preventDefault: false,
+    grabCursor: true,
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+  });
+</script>
+{% schema %}
+{
+  "name": "swiper-image-text",
+  "blocks": [
+    {
+      "type": "column",
+      "name": "column",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "imagerow",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "swiper-image-text",
+      "blocks": [
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

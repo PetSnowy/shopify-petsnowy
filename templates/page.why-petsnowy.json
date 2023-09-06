@@ -8,19 +8,6 @@
         "padding_bottom": 60
       }
     },
-    "882c5266-da3d-4165-a2ae-a204f50ce5a2": {
-      "type": "banner-video",
-      "settings": {
-        "vdio_img": "shopify:\/\/shop_images\/1_0-00-00-00_1_c158623a-2830-4b76-8e07-248eb9543789.jpg",
-        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/bb6823e982ac492288c85480b4e0fd02.mp4https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a7d85f11905a44d0afce5e94a942172f.mp4",
-        "mobvdio_img": "shopify:\/\/shop_images\/1_0-00-00-00_1_c158623a-2830-4b76-8e07-248eb9543789.jpg",
-        "mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a7d85f11905a44d0afce5e94a942172f.mp4eos\/c\/o\/v\/bb6823e982ac492288c85480b4e0fd02.mp4",
-        "heading": "",
-        "sub_heading": "",
-        "btn_text": "",
-        "btn_url": "#"
-      }
-    },
     "ef2afe4c-0503-4fd6-91ae-619090d82430": {
       "type": "custom-rich-text",
       "blocks": {
@@ -64,68 +51,6 @@
         "padding_bottom": 40
       }
     },
-    "d05e0b82-3677-41be-9f66-40dca2478239": {
-      "type": "video-popup",
-      "disabled": true,
-      "blocks": {
-        "99d55031-dcbd-47d0-ac77-8a5dd9b81150": {
-          "type": "block",
-          "settings": {
-            "ml_img": "shopify:\/\/shop_images\/Products_Images.png",
-            "ml_text": "<p>Meet The Snow<\/p>",
-            "ml_imgaa": "shopify:\/\/shop_images\/Products_Images.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=4Jm_4agXFLc"
-          }
-        },
-        "72bc68ae-a3f5-4512-9b55-56b705c3eb10": {
-          "type": "block",
-          "settings": {
-            "ml_img": "shopify:\/\/shop_images\/Products_Images.png",
-            "ml_text": "<p>Meet The Snow<\/p>",
-            "ml_imgaa": "shopify:\/\/shop_images\/Products_Images.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
-          }
-        },
-        "5843cca9-ecb3-45d7-8651-8b953989719b": {
-          "type": "block",
-          "settings": {
-            "ml_img": "shopify:\/\/shop_images\/Products_Images.png",
-            "ml_text": "<p>Meet The Snow<\/p>",
-            "ml_imgaa": "shopify:\/\/shop_images\/Products_Images.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=4Jm_4agXFLc"
-          }
-        },
-        "4b57d163-5ac2-47b6-865e-d335b0930fdb": {
-          "type": "block",
-          "settings": {
-            "ml_img": "shopify:\/\/shop_images\/Products_Images.png",
-            "ml_text": "<p>Meet The Snow<\/p>",
-            "ml_imgaa": "shopify:\/\/shop_images\/Products_Images.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
-          }
-        },
-        "7334a7df-caa1-4961-bea6-c522dd3783a4": {
-          "type": "block",
-          "settings": {
-            "ml_img": "shopify:\/\/shop_images\/Products_Images.png",
-            "ml_text": "<p>Meet The Snow<\/p>",
-            "ml_imgaa": "shopify:\/\/shop_images\/Products_Images.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
-          }
-        }
-      },
-      "block_order": [
-        "99d55031-dcbd-47d0-ac77-8a5dd9b81150",
-        "72bc68ae-a3f5-4512-9b55-56b705c3eb10",
-        "5843cca9-ecb3-45d7-8651-8b953989719b",
-        "4b57d163-5ac2-47b6-865e-d335b0930fdb",
-        "7334a7df-caa1-4961-bea6-c522dd3783a4"
-      ],
-      "settings": {
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
     "1e11a977-09db-4065-96db-d161fc29a8a8": {
       "type": "our-story",
       "blocks": {
@@ -133,40 +58,40 @@
           "type": "title",
           "settings": {
             "image_first": false,
-            "title": "A Zero-Smell Experience",
+            "title": "The World's Most Trusted Smart Pet Care Innovator",
             "subtitle": "",
-            "richtext": "<p>SNOW⁺ leverages powerful triple-odor elimination technology by decompressing organic compounds, bacteria and viruses. Our litter box removes over 90% of ammonia for a smell-safe experience that is also both eco-friendly and safe for cats. <\/p>",
-            "image": "shopify:\/\/shop_images\/dddf30b63129c5cbee1ff18fd45efca2.gif"
+            "richtext": "<p>PetSnowy has a self-owned production supply chain with over 34 years of experience. We own 6 production bases worldwide, which encompass an impressive 180,000 square kilometers. <\/p>",
+            "image": "shopify:\/\/shop_images\/petsnowy_park.jpg"
           }
         },
         "5a1afa64-8876-471f-8b9e-9bc7e5a32b51": {
           "type": "title",
           "settings": {
             "image_first": true,
-            "title": "Ultra-Convenient Patented Auto-Sealing Design",
+            "title": "The Most Popular Pet Project on IndieGoGo",
             "subtitle": "",
-            "richtext": "<p>Keep messes contained with our self-sealing bag with a patented design built for durability. Simply pull the tray out to seal, and push in to open and begin trapping waste. <\/p>",
-            "image": "shopify:\/\/shop_images\/11.gif"
+            "richtext": "<p>In February 2023, we took IndieGoGo by storm, fully funding our project in just one hour.<\/p>",
+            "image": "shopify:\/\/shop_images\/brand_story.jpg"
           }
         },
         "c4a0f52e-f30d-4b43-9eec-bfab368754b4": {
           "type": "title",
           "settings": {
             "image_first": false,
-            "title": "Anti-Tracking Curved Walkway",
+            "title": "Media Coverage",
             "subtitle": "",
-            "richtext": "<p>Trap litter at its source with the included walkway mat that's gentle on your cat's feet. Enjoy easy cleanup and cat comfort with a mat that is soft, breathable, detachable, and water washable.<\/p>",
-            "image": "shopify:\/\/shop_images\/22_548ba024-ced8-40e3-9621-a3dc1456f4de.gif"
+            "richtext": "<p>Founded by cat parents with decades of pet industry expertise, PetSnowy is already a favorite among thousands of cat lovers.<\/p>",
+            "image": "shopify:\/\/shop_images\/WXWorkCapture_16938954304427.png"
           }
         },
         "e032604b-5801-424f-85e3-05c7570b40ed": {
           "type": "title",
           "settings": {
             "image_first": true,
-            "title": "24\/7 Smart Control with the PetSnowy app",
+            "title": "Employee Message",
             "subtitle": "",
-            "richtext": "<p>Monitor your cat's health with auto weight and toilet time tracking. All health data is delivered to the app, helping you better care for your cat. <\/p>",
-            "image": "shopify:\/\/shop_images\/APP.gif"
+            "richtext": "<p>Meow! It's us, Sam and Gian! We're thrilled you dropped by our lovely abode. We're pawsitively grateful for your presence. We understand you're curious about us, so don't hesitate to get in touch with our purrfect customer support team. They're simply paw-some and always ready to lend a helping paw! Meow!<\/p>",
+            "image": "shopify:\/\/shop_images\/petsnowy_staff_5474e7b8-3737-4fe4-bc39-1ec5b38427fe.png"
           }
         }
       },
@@ -179,62 +104,6 @@
       "settings": {
         "padding_top": 20,
         "padding_bottom": 20
-      }
-    },
-    "21942a58-7c5e-4932-81e6-e6fdedaa43b2": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--17916531966274__21942a58-7c5e-4932-81e6-e6fdedaa43b2-16759385727913f415-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Safety First. Safety Always.",
-            "heading_size": "h1"
-          }
-        },
-        "f3d893c2-baae-401f-a87a-bfc37ea6c157": {
-          "type": "caption",
-          "settings": {
-            "caption": "SnowSafe⁺ uses a 6-stage approach to protect your cat.",
-            "text_style": "subtitle",
-            "text_size": "medium"
-          }
-        },
-        "template--17916531966274__21942a58-7c5e-4932-81e6-e6fdedaa43b2-16759385727913f415-1": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_style": "subtitle"
-          }
-        },
-        "template--17916531966274__21942a58-7c5e-4932-81e6-e6fdedaa43b2-16759385727913f415-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--17916531966274__21942a58-7c5e-4932-81e6-e6fdedaa43b2-16759385727913f415-0",
-        "f3d893c2-baae-401f-a87a-bfc37ea6c157",
-        "template--17916531966274__21942a58-7c5e-4932-81e6-e6fdedaa43b2-16759385727913f415-1",
-        "template--17916531966274__21942a58-7c5e-4932-81e6-e6fdedaa43b2-16759385727913f415-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/5_17_5b1f9aec-966f-4c8a-bc06-4cf8a0872bdc.jpg",
-        "image_mob": "shopify:\/\/shop_images\/5_17_5b1f9aec-966f-4c8a-bc06-4cf8a0872bdc.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "chek_wth": false,
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "b79a1b90-73b1-4a47-ae19-5c94a2e40c21": {
@@ -270,6 +139,7 @@
         "b872d7f7-c7c2-42f1-9fd1-94d627ded7c9",
         "db0f34bd-e30e-40dd-8a9a-509cc67734e1"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 35,
         "padding_bottom": 15,
@@ -340,6 +210,7 @@
         "template--17916531966274__b81623df-86d7-4d19-a330-71309d3f13df-16760152590f1d463c-1",
         "defe1b0c-4d4d-4e5b-b087-9b2dff38f9bd"
       ],
+      "disabled": true,
       "settings": {
         "layout": "grid",
         "slide_height": "medium",
@@ -350,84 +221,86 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "eb650d4e-e0bd-42ae-a4cf-e860d80c128a": {
-      "type": "custom-multicolumn",
-      "disabled": true,
+    "25332470-1120-4e11-a35c-4deee632604e": {
+      "type": "swiper",
       "blocks": {
-        "template--17916531966274__eb650d4e-e0bd-42ae-a4cf-e860d80c128a-1676023699386d440f-0": {
-          "type": "column",
+        "9a6ff64a-f44d-4e17-b6e4-227d32fb906f": {
+          "type": "video",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled-2.png",
-            "title": "Heading",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "text": "tuB0k6AoDnk"
           }
         },
-        "template--17916531966274__eb650d4e-e0bd-42ae-a4cf-e860d80c128a-1676023699386d440f-1": {
-          "type": "column",
+        "78917c25-4774-46ec-9f59-c45e323706e0": {
+          "type": "video",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3.png",
-            "title": "Heading",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "text": "RrH-nvHbjJg"
           }
         },
-        "template--17916531966274__eb650d4e-e0bd-42ae-a4cf-e860d80c128a-1676023699386d440f-2": {
-          "type": "column",
+        "0a45a1fa-9274-4663-9607-96f034089a67": {
+          "type": "video",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame.png",
-            "title": "Heading",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "text": "tltQPi7408E"
           }
         },
-        "7ba23c75-dcc4-4652-a99e-ea40855024de": {
-          "type": "column",
+        "6ca7c0e1-a3a2-4974-a274-f7a5ca064526": {
+          "type": "video",
           "settings": {
-            "image": "shopify:\/\/shop_images\/free-shipping-icon.png",
-            "title": "Heading",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "text": "xir9KyKkmNo"
           }
         }
       },
       "block_order": [
-        "template--17916531966274__eb650d4e-e0bd-42ae-a4cf-e860d80c128a-1676023699386d440f-0",
-        "template--17916531966274__eb650d4e-e0bd-42ae-a4cf-e860d80c128a-1676023699386d440f-1",
-        "template--17916531966274__eb650d4e-e0bd-42ae-a4cf-e860d80c128a-1676023699386d440f-2",
-        "7ba23c75-dcc4-4652-a99e-ea40855024de"
+        "9a6ff64a-f44d-4e17-b6e4-227d32fb906f",
+        "78917c25-4774-46ec-9f59-c45e323706e0",
+        "0a45a1fa-9274-4663-9607-96f034089a67",
+        "6ca7c0e1-a3a2-4974-a274-f7a5ca064526"
       ],
       "settings": {
-        "title": "Making the switch has never been easier.",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+      }
+    },
+    "870baee5-e86d-409f-81ce-384a50510ec1": {
+      "type": "swiper-image-text",
+      "blocks": {
+        "9b2d819e-e854-4d30-9021-b379974cab07": {
+          "type": "column",
+          "settings": {
+            "imagerow": "shopify:\/\/shop_images\/petsnowy_park.jpg",
+            "title": "The World's Most Trusted Smart Pet Care Innovator",
+            "text": "PetSnowy has a self-owned production supply chain with over 34 years of experience. We own 6 production bases worldwide, which encompass an impressive 180,000 square kilometers"
+          }
+        },
+        "95391700-fb2f-4ff9-9fd9-2ab3cbb07af6": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
+        "a84097b3-1a8f-4870-a757-765a6d5b1e72": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "9b2d819e-e854-4d30-9021-b379974cab07",
+        "95391700-fb2f-4ff9-9fd9-2ab3cbb07af6",
+        "a84097b3-1a8f-4870-a757-765a6d5b1e72"
+      ],
+      "disabled": true,
+      "settings": {
       }
     }
   },
   "order": [
     "main",
-    "882c5266-da3d-4165-a2ae-a204f50ce5a2",
     "ef2afe4c-0503-4fd6-91ae-619090d82430",
-    "d05e0b82-3677-41be-9f66-40dca2478239",
     "1e11a977-09db-4065-96db-d161fc29a8a8",
-    "21942a58-7c5e-4932-81e6-e6fdedaa43b2",
     "b79a1b90-73b1-4a47-ae19-5c94a2e40c21",
     "b81623df-86d7-4d19-a330-71309d3f13df",
-    "eb650d4e-e0bd-42ae-a4cf-e860d80c128a"
+    "25332470-1120-4e11-a35c-4deee632604e",
+    "870baee5-e86d-409f-81ce-384a50510ec1"
   ]
 }
