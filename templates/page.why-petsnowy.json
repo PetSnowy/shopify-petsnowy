@@ -294,6 +294,43 @@
       ],
       "settings": {
       }
+    },
+    "b63ff7ca-aea4-48d5-9f8a-d3af1d89fbb2": {
+      "type": "swiper",
+      "blocks": {
+        "b19e7acf-af80-4147-9d1e-ebe2c95431c4": {
+          "type": "video",
+          "settings": {
+            "text": "tuB0k6AoDnk"
+          }
+        },
+        "ff3d243b-a0d0-4a86-ace9-4a00a271fe3b": {
+          "type": "video",
+          "settings": {
+            "text": "RrH-nvHbjJg"
+          }
+        },
+        "8c6ccfb9-2396-471a-9c36-9a0ee2ffa98b": {
+          "type": "video",
+          "settings": {
+            "text": "tltQPi7408E"
+          }
+        },
+        "b3d9057c-0bd0-4eee-8b24-9a3aba0087c1": {
+          "type": "video",
+          "settings": {
+            "text": "xir9KyKkmNo"
+          }
+        }
+      },
+      "block_order": [
+        "b19e7acf-af80-4147-9d1e-ebe2c95431c4",
+        "ff3d243b-a0d0-4a86-ace9-4a00a271fe3b",
+        "8c6ccfb9-2396-471a-9c36-9a0ee2ffa98b",
+        "b3d9057c-0bd0-4eee-8b24-9a3aba0087c1"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -303,6 +340,7 @@
     "870baee5-e86d-409f-81ce-384a50510ec1",
     "63eae311-5053-4dbe-97c6-669fc0bf6fc2",
     "b81623df-86d7-4d19-a330-71309d3f13df",
-    "25332470-1120-4e11-a35c-4deee632604e"
+    "25332470-1120-4e11-a35c-4deee632604e",
+    "b63ff7ca-aea4-48d5-9f8a-d3af1d89fbb2"
   ]
 }
