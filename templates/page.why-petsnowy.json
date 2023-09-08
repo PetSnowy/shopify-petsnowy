@@ -294,75 +294,6 @@
       ],
       "settings": {
       }
-    },
-    "b791faa8-d323-45cc-b2db-3dd761b00e52": {
-      "type": "swiper-background-img-text",
-      "blocks": {
-        "be407b5d-721b-48c5-b35a-5ff82ef67ea6": {
-          "type": "copywriting-img",
-          "settings": {
-            "imagerow": "shopify:\/\/shop_images\/6_1_fa055609-dc79-4dde-8edd-517b27f5bf27.jpg",
-            "title": "Employee Message",
-            "desc": "Employee MessageEmployee MessageEmployee MessageEmployee MessageEmployee MessageEmployee Message",
-            "sub_title": "Employee MessageEmployee MessageEmployee MessageEmployee MessageEmployee Message"
-          }
-        },
-        "25a50744-4b38-4bb0-b34f-ab5dd997f024": {
-          "type": "copywriting-img",
-          "settings": {
-            "imagerow": "shopify:\/\/shop_images\/litterbox8.29.jpg",
-            "title": "Employee MessageEmployee MessageEmployee Message",
-            "desc": "Employee MessageEmployee MessageEmployee MessageEmployee Message",
-            "sub_title": "Employee MessageEmployee MessageEmployee MessageEmployee MessageEmployee Message"
-          }
-        },
-        "dae8b5ca-e98c-4ebf-b43c-51b50936d46a": {
-          "type": "copywriting-img",
-          "settings": {
-            "imagerow": "shopify:\/\/shop_images\/IMG_202309068388_399x320_586c32e8-79ef-4cd1-a765-85e21b811074.jpg",
-            "title": "Employee MessageEmployee MessageEmployee Message",
-            "desc": "Employee MessageEmployee MessageEmployee Message",
-            "sub_title": "Employee MessageEmployee MessageEmployee MessageEmployee Message"
-          }
-        },
-        "24af092a-e2df-41a4-a029-7ef866db87f0": {
-          "type": "copywriting-img",
-          "settings": {
-            "imagerow": "shopify:\/\/shop_images\/petsnowy_staff_5474e7b8-3737-4fe4-bc39-1ec5b38427fe.png",
-            "title": "Employee MessageEmployee MessageEmployee MessageEmployee Message",
-            "desc": "Employee MessageEmployee MessageEmployee Message",
-            "sub_title": "Employee MessageEmployee MessageEmployee Message"
-          }
-        },
-        "71716012-70c7-46e1-b976-dbe4459da277": {
-          "type": "copywriting-img",
-          "settings": {
-            "imagerow": "shopify:\/\/shop_images\/1200-1600_1.jpg",
-            "title": "Employee MessageEmployee MessageEmployee Message",
-            "desc": "Employee MessageEmployee MessageEmployee Message",
-            "sub_title": "Employee MessageEmployee MessageEmployee MessageEmployee Message"
-          }
-        },
-        "eade14da-4291-4568-bf56-4239378eb8de": {
-          "type": "copywriting-img",
-          "settings": {
-            "imagerow": "shopify:\/\/shop_images\/1_2.jpg",
-            "title": "Employee MessageEmployee MessageEmployee Message",
-            "desc": "Employee MessageEmployee MessageEmployee Message",
-            "sub_title": "Employee MessageEmployee MessageEmployee Message"
-          }
-        }
-      },
-      "block_order": [
-        "be407b5d-721b-48c5-b35a-5ff82ef67ea6",
-        "25a50744-4b38-4bb0-b34f-ab5dd997f024",
-        "dae8b5ca-e98c-4ebf-b43c-51b50936d46a",
-        "24af092a-e2df-41a4-a029-7ef866db87f0",
-        "71716012-70c7-46e1-b976-dbe4459da277",
-        "eade14da-4291-4568-bf56-4239378eb8de"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
@@ -372,7 +303,6 @@
     "870baee5-e86d-409f-81ce-384a50510ec1",
     "63eae311-5053-4dbe-97c6-669fc0bf6fc2",
     "b81623df-86d7-4d19-a330-71309d3f13df",
-    "25332470-1120-4e11-a35c-4deee632604e",
-    "b791faa8-d323-45cc-b2db-3dd761b00e52"
+    "25332470-1120-4e11-a35c-4deee632604e"
   ]
 }
