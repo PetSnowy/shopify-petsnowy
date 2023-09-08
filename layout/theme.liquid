@@ -319,7 +319,9 @@
         }
       })();
     </script>
-  </head>
+  
+	{{ shop.metafields.loox["global_html_head"] }}
+</head>
 
   {% for item in cart.items %}
     {% assign product_template_cart = item.product.template_suffix %}
@@ -428,5 +430,7 @@
     {{ shop.metafields.loox.global_html_body }}
 
     {{ shop.metafields.loox.global_html_body }}
-  </body>
+  
+	{{ shop.metafields.loox["global_html_body"] }}
+</body>
 </html>
