@@ -21,41 +21,43 @@
 </div>
 
 <script>
-  const swiperBackgroundImgText = document.querySelectorAll('.swiper-background-img-text');
-  for (let i = 0; i < swiperBackgroundImgText.length; i++) {
-    const swiperBackgroundImgTextEl = swiperBackgroundImgText[i].id;
-    const mySwiper = new Swiper(`#${swiperBackgroundImgTextEl}`, {
-      loop: true, // 循环模式选项
-      slidesPerView: 'auto',
-      slideToClickedSlide: true,
-      speed: 800,
-      clickable: true,
-      allowTouchMove: false,
-      // slidesPerGroup: 3,
-      // slidesPerGroupAuto: true,
-      spaceBetween: 10,
-      slidesOffsetBefore: 50,
+  $(function () {
+    const swiperBackgroundImgText = document.querySelectorAll('.swiper-background-img-text');
+    for (let i = 0; i < swiperBackgroundImgText.length; i++) {
+      const swiperBackgroundImgTextEl = swiperBackgroundImgText[i].id;
+      const mySwiper = new Swiper(`#${swiperBackgroundImgTextEl}`, {
+        loop: true, // 循环模式选项
+        slidesPerView: 'auto',
+        slideToClickedSlide: true,
+        speed: 800,
+        clickable: true,
+        allowTouchMove: false,
+        // slidesPerGroup: 3,
+        // slidesPerGroupAuto: true,
+        spaceBetween: 10,
+        slidesOffsetBefore: 50,
 
-      // 如果需要分页器
-      pagination: {
-        el: '.swiper-pagination',
-      },
+        // 如果需要分页器
+        pagination: {
+          el: '.swiper-pagination',
+        },
 
-      // autoplay: true,//等同于以下设置
-      autoplay: {
-        delay: 3000,
-        stopOnLastSlide: false,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-      },
+        // autoplay: true,//等同于以下设置
+        autoplay: {
+          delay: 3000,
+          stopOnLastSlide: false,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
 
-      // 如果需要前进后退按钮
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  }
+        // 如果需要前进后退按钮
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    }
+  });
 </script>
 
 {% schema %}
