@@ -304,19 +304,20 @@
             "imagerow": "shopify:\/\/shop_images\/6_1_fa055609-dc79-4dde-8edd-517b27f5bf27.jpg"
           }
         },
-        "5e933a24-a534-41d0-8545-2d1d3dcab00a": {
+        "3956aa45-3a6d-4a70-9649-bb5b2f89b25e": {
           "type": "copywriting",
           "settings": {
-            "title": "1",
-            "desc": "111",
-            "sub_title": "3423432432"
+            "title": "432423",
+            "desc": "32423423",
+            "sub_title": "4324234234"
           }
         }
       },
       "block_order": [
         "4b0be004-4741-4798-a11e-6949b8fc207b",
-        "5e933a24-a534-41d0-8545-2d1d3dcab00a"
+        "3956aa45-3a6d-4a70-9649-bb5b2f89b25e"
       ],
+      "disabled": true,
       "settings": {
       }
     }
