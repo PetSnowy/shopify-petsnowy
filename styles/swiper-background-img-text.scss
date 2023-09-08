@@ -13,6 +13,7 @@
 			object-position: right center;
 			width: 400px;
 			height: 600px;
+			transition: all 0.8s ease;
 		}
 
 		.content {
@@ -33,6 +34,7 @@
 
 		img {
 			object-position: left center;
+			width: 800px;
 		}
 	}
 }
