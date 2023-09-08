@@ -298,37 +298,70 @@
     "b791faa8-d323-45cc-b2db-3dd761b00e52": {
       "type": "swiper-background-img-text",
       "blocks": {
-        "4b0be004-4741-4798-a11e-6949b8fc207b": {
-          "type": "Img",
+        "be407b5d-721b-48c5-b35a-5ff82ef67ea6": {
+          "type": "copywriting-img",
           "settings": {
-            "imagerow": "shopify:\/\/shop_images\/6_1_fa055609-dc79-4dde-8edd-517b27f5bf27.jpg"
+            "imagerow": "shopify:\/\/shop_images\/6_1_fa055609-dc79-4dde-8edd-517b27f5bf27.jpg",
+            "title": "Employee Message",
+            "desc": "Employee MessageEmployee MessageEmployee MessageEmployee MessageEmployee MessageEmployee Message",
+            "sub_title": "Employee MessageEmployee MessageEmployee MessageEmployee MessageEmployee Message"
           }
         },
-				"4b0be004-4741-4798-a11e-6949b8fc207a": {
-          "type": "Img",
+        "25a50744-4b38-4bb0-b34f-ab5dd997f024": {
+          "type": "copywriting-img",
           "settings": {
-            "imagerow": "shopify:\/\/shop_images\/6_1_fa055609-dc79-4dde-8edd-517b27f5bf27.jpg"
+            "imagerow": "shopify:\/\/shop_images\/muse.jpg",
+            "title": "Employee MessageEmployee MessageEmployee Message",
+            "desc": "Employee MessageEmployee MessageEmployee MessageEmployee Message",
+            "sub_title": "Employee MessageEmployee MessageEmployee MessageEmployee MessageEmployee Message"
           }
         },
-				"4b0be004-4741-4798-a11e-6949b8fc2071": {
-          "type": "Img",
+        "dae8b5ca-e98c-4ebf-b43c-51b50936d46a": {
+          "type": "copywriting-img",
           "settings": {
-            "imagerow": "shopify:\/\/shop_images\/6_1_fa055609-dc79-4dde-8edd-517b27f5bf27.jpg"
+            "imagerow": "shopify:\/\/shop_images\/IMG_202309068388_399x320_586c32e8-79ef-4cd1-a765-85e21b811074.jpg",
+            "title": "Employee MessageEmployee MessageEmployee Message",
+            "desc": "Employee MessageEmployee MessageEmployee Message",
+            "sub_title": "Employee MessageEmployee MessageEmployee MessageEmployee Message"
           }
         },
-        "3956aa45-3a6d-4a70-9649-bb5b2f89b25e": {
-          "type": "copywriting",
+        "24af092a-e2df-41a4-a029-7ef866db87f0": {
+          "type": "copywriting-img",
           "settings": {
-            "title": "432423",
-            "desc": "32423423",
-            "sub_title": "4324234234"
+            "imagerow": "shopify:\/\/shop_images\/petsnowy_staff_5474e7b8-3737-4fe4-bc39-1ec5b38427fe.png",
+            "title": "Employee MessageEmployee MessageEmployee MessageEmployee Message",
+            "desc": "Employee MessageEmployee MessageEmployee Message",
+            "sub_title": "Employee MessageEmployee MessageEmployee Message"
+          }
+        },
+        "71716012-70c7-46e1-b976-dbe4459da277": {
+          "type": "copywriting-img",
+          "settings": {
+            "imagerow": "shopify:\/\/shop_images\/1200-1600_1.jpg",
+            "title": "Employee MessageEmployee MessageEmployee Message",
+            "desc": "Employee MessageEmployee MessageEmployee Message",
+            "sub_title": "Employee MessageEmployee MessageEmployee MessageEmployee Message"
+          }
+        },
+        "eade14da-4291-4568-bf56-4239378eb8de": {
+          "type": "copywriting-img",
+          "settings": {
+            "imagerow": "shopify:\/\/shop_images\/1_2.jpg",
+            "title": "Employee MessageEmployee MessageEmployee Message",
+            "desc": "Employee MessageEmployee MessageEmployee Message",
+            "sub_title": "Employee MessageEmployee MessageEmployee Message"
           }
         }
       },
       "block_order": [
-        "4b0be004-4741-4798-a11e-6949b8fc207b",
-        "3956aa45-3a6d-4a70-9649-bb5b2f89b25e"
+        "be407b5d-721b-48c5-b35a-5ff82ef67ea6",
+        "25a50744-4b38-4bb0-b34f-ab5dd997f024",
+        "dae8b5ca-e98c-4ebf-b43c-51b50936d46a",
+        "24af092a-e2df-41a4-a029-7ef866db87f0",
+        "71716012-70c7-46e1-b976-dbe4459da277",
+        "eade14da-4291-4568-bf56-4239378eb8de"
       ],
+      "disabled": true,
       "settings": {
       }
     }
