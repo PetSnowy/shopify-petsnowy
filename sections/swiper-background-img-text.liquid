@@ -2,13 +2,13 @@
 
 <div class="swiper swiper-background-img-text page-width" id="swiper{{ section.id }}">
   <div class="swiper-wrapper">
-    {% for item in section.blocks %}
+    {% for block in section.blocks %}
       <div class="content-wrapper swiper-slide">
-        <img src="{{ item.settings.imagerow | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+        <img src="{{ block.settings.imagerow | img_url: 'master' }}" alt="petsnowy" loading="lazy">
         <div class="content">
-          <p class="sub-title">{{ item.settings.sub_title }}</p>
-          <p class="title">{{ item.setting.title }}</p>
-          <p class="desc">{{ item.setting.desc }}</p>
+          <p class="sub-title">{{ block.settings.sub_title }}</p>
+          <p class="title">{{ block.setting.title }}</p>
+          <p class="desc">{{ block.setting.desc }}</p>
         </div>
       </div>
     {% endfor %}
