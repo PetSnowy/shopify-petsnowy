@@ -156,6 +156,11 @@
 
 		.answer_txt {
 			font-size: vw(24px);
+
+			p {
+				word-wrap: break-word;
+
+			}
 		}
 	}
 }
@@ -269,6 +274,7 @@
 			flex: 1;
 			padding: 0px 40px;
 			border-left: 1px solid #e8e8e8;
+			max-width: calc(var(--page-width) - 360px);
 		}
 
 		.sidebar-wrapper {
@@ -345,6 +351,10 @@
 
 		.answer_txt {
 			font-size: 15px;
+
+			p {
+				word-wrap: break-word;
+			}
 		}
 
 		.ques_title {
@@ -370,5 +380,6 @@
 		.qna_hr {
 			margin: 25px 0px;
 		}
+
 	}
 }
