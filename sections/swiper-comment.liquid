@@ -1,0 +1,90 @@
+{{ 'swiper-comment' | asset_url | stylesheet_tag }}
+
+<div class="swiper swiper-comment page-width" id="swiper{{ section.id }}">
+  <div class="swiper-wrapper">
+    {% for block in section.blocks %}
+      <div class="content-wrapper swiper-slide">
+        <img src="{{ block.settings.avatar | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+        <div class="star-wrapper" data-star="{{ block.settings.satisfaction_level }}"></div>
+        <ul>
+          {% for item in 5 %}
+            <li><i></i></li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<script>
+  $(function () {
+    const swiperBackgroundImgText = document.querySelectorAll('.swiper-comment');
+    for (let subscript = 0; subscript < swiperBackgroundImgText.length; subscript++) {
+      const swiperBackgroundImgTextEl = swiperBackgroundImgText[subscript].id;
+      const mySwiper = new Swiper(`#${swiperBackgroundImgTextEl}`, {
+        loop: true, // 循环模式选项
+        // autoplay: true,//等同于以下设置
+        autoplay: {
+          delay: 3000,
+          stopOnLastSlide: false,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+        // 如果需要前进后退按钮
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      const swiperSlide = swiperBackgroundImgText[subscript].querySelectorAll('.swiper-slide');
+      for (let index = 0; index < swiperSlide.length; index++) {
+        const starWrapper = swiperSlide[index].querySelector('.star-wrapper');
+        const liList = starWrapper.querySelectorAll('li');
+        const star = parseFloat(starWrapper.dataset.star);
+        const fullStars = Math.floor(star);
+        const partialStar = star - fullStars;
+        const setStarWidth = (index, width) => {
+          const starElement = liList[index].querySelector('i');
+          starElement.style.width = `${width}%`;
+        };
+        for (let i = 0; i < fullStars; i++) {
+          setStarWidth(i, 100);
+        }
+        if (partialStar > 0) {
+          setStarWidth(fullStars, partialStar * 100);
+        }
+      }
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "swiper-comment",
+  "blocks": [
+    {
+      "type": "copywriting-img",
+      "name": "copywriting-img",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "avatar",
+          "label": "avatar"
+        },
+        {
+          "type": "number",
+          "id": "satisfaction_level",
+          "label": "satisfaction level(The highest rating is 5)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "swiper-comment"
+    }
+  ]
+}
+{% endschema %}
