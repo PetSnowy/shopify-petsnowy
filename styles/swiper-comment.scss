@@ -1,22 +1,35 @@
 .swiper-comment {
+
 	p {
 		margin: 0px;
 	}
 
-	.star-wrapper {
-		width: fit-content;
-		height: 20px;
+	.comment-info {
+		display: flex;
+
+		.star-wrapper {
+			width: fit-content;
+			margin-left: 20px;
+		}
+
+		img {
+			width: 74px;
+			height: 74px;
+			border-radius: 50%;
+		}
 
 		ul {
 			display: flex;
 			column-gap: 5px;
+			padding: 0px;
+			margin: 0px;
 		}
 
 		li {
 			list-style: none;
 			width: 20px;
 			height: 20px;
-			background: url('../assets/star_none.png') no-repeat center/cover;
+			background: url('./star_none.png') no-repeat center/cover;
 		}
 
 		li i {
@@ -24,8 +37,7 @@
 			height: 20px;
 			display: block;
 			content: "";
-			background: url('../assets/star.png') no-repeat left/cover;
+			background: url('./star.png') no-repeat left/cover;
 		}
 	}
-
 }

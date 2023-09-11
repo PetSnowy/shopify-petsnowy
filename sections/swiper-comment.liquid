@@ -1,16 +1,21 @@
-{{ 'swiper-comment' | asset_url | stylesheet_tag }}
+{{ 'swiper-comment.css' | asset_url | stylesheet_tag }}
 
 <div class="swiper swiper-comment page-width" id="swiper{{ section.id }}">
   <div class="swiper-wrapper">
     {% for block in section.blocks %}
-      <div class="content-wrapper swiper-slide">
-        <img src="{{ block.settings.avatar | img_url: 'master' }}" alt="petsnowy" loading="lazy">
-        <div class="star-wrapper" data-star="{{ block.settings.satisfaction_level }}"></div>
-        <ul>
-          {% for item in 5 %}
-            <li><i></i></li>
-          {% endfor %}
-        </ul>
+      <div class="star-wrapper swiper-slide">
+        <div class="comment-info">
+          <img src="{{ block.settings.avatar | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+          <div class="star-wrapper" data-star="{{ block.settings.satisfaction_level }}">
+            <ul>
+              <li><i></i></li>
+              <li><i></i></li>
+              <li><i></i></li>
+              <li><i></i></li>
+              <li><i></i></li>
+            </ul>
+          </div>
+        </div>
       </div>
     {% endfor %}
   </div>
@@ -23,14 +28,16 @@
     for (let subscript = 0; subscript < swiperBackgroundImgText.length; subscript++) {
       const swiperBackgroundImgTextEl = swiperBackgroundImgText[subscript].id;
       const mySwiper = new Swiper(`#${swiperBackgroundImgTextEl}`, {
-        loop: true, // 循环模式选项
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 20,
         // autoplay: true,//等同于以下设置
-        autoplay: {
-          delay: 3000,
-          stopOnLastSlide: false,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        },
+        // autoplay: {
+        //   delay: 3000,
+        //   stopOnLastSlide: false,
+        //   disableOnInteraction: false,
+        //   pauseOnMouseEnter: true,
+        // },
         // 如果需要前进后退按钮
         navigation: {
           nextEl: '.swiper-button-next',
