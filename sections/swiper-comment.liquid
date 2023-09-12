@@ -62,6 +62,12 @@
     if (screenWidth <= 900) slidesPerView = 1;
     else slidesPerView = 2;
     const swiperBackgroundImgText = document.querySelectorAll('.swiper-comment');
+
+    const setStarWidth = (index, width) => {
+      const starElement = liList[index].querySelector('i');
+      starElement.style.width = `${width}%`;
+    };
+
     for (let subscript = 0; subscript < swiperBackgroundImgText.length; subscript++) {
       const swiperBackgroundImgTextEl = swiperBackgroundImgText[subscript].id;
       const mySwiper = new Swiper(`#${swiperBackgroundImgTextEl}`, {
@@ -88,10 +94,6 @@
         const star = parseFloat(starWrapper.dataset.star);
         const fullStars = Math.floor(star);
         const partialStar = star - fullStars;
-        const setStarWidth = (index, width) => {
-          const starElement = liList[index].querySelector('i');
-          starElement.style.width = `${width}%`;
-        };
         for (let i = 0; i < fullStars; i++) {
           setStarWidth(i, 100);
         }
