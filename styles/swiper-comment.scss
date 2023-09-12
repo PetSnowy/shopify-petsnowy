@@ -12,6 +12,18 @@
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
+
+		&::after,
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			background: url('./double_quotes.png') no-repeat center/cover;
+		}
+
+		&::after {
+			transform: rotate(180deg);
+		}
 	}
 
 	p {
@@ -56,6 +68,8 @@
 
 @media screen and (min-width: 901px) {
 	.swiper-comment {
+
+
 		width: calc(100% - 10rem);
 		overflow: hidden;
 		padding: 0px;
@@ -64,6 +78,23 @@
 		.star {
 			padding: 55px 40px 35px;
 			border-radius: 10px;
+			position: relative;
+
+			&::after,
+			&::before {
+				width: 33px;
+				height: 25px;
+			}
+
+			&::before {
+				top: 20px;
+				left: 20px;
+			}
+
+			&::after {
+				bottom: 20px;
+				right: 20px;
+			}
 		}
 
 		.comment-info {
@@ -157,8 +188,25 @@
 		}
 
 		.star {
-			padding: vw(50px);
+			padding: vw(60px) vw(50px);
 			border-radius: vw(20px);
+			position: relative;
+
+			&::after,
+			&::before {
+				width: vw(66px);
+				height: vw(50px);
+			}
+
+			&::before {
+				top: vw(20px);
+				left: vw(20px);
+			}
+
+			&::after {
+				bottom: vw(20px);
+				right: vw(20px);
+			}
 		}
 
 		.comment-info {
