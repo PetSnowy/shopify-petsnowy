@@ -26,26 +26,55 @@
       </div>
     {% endfor %}
   </div>
-  <div class="swiper-pagination"></div>
+
+  <div class="swiper-button">
+    <div class="swiper-button-prev">
+      <svg
+        t="1694487105786"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="9183"
+      >
+        <path d="M400.556838 248.193709l-73.857125 73.28305L518.758937 511.985674 326.700737 702.501752l73.857125 73.30454 265.957281-263.820618L400.556838 248.193709 400.556838 248.193709zM400.556838 248.193709" fill="#cdcdcd" p-id="9184"></path>
+      </svg>
+    </div>
+    <div class="swiper-button-next">
+      <svg
+        t="1694487105786"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="9183"
+      >
+        <path d="M400.556838 248.193709l-73.857125 73.28305L518.758937 511.985674 326.700737 702.501752l73.857125 73.30454 265.957281-263.820618L400.556838 248.193709 400.556838 248.193709zM400.556838 248.193709" fill="#cdcdcd" p-id="9184"></path>
+      </svg>
+    </div>
+  </div>
 </div>
 
 <script>
   $(function () {
+    let slidesPerView = 0;
+    const screenWidth = document.body.clientWidth;
+    if (screenWidth <= 900) slidesPerView = 1;
+    else slidesPerView = 2;
     const swiperBackgroundImgText = document.querySelectorAll('.swiper-comment');
     for (let subscript = 0; subscript < swiperBackgroundImgText.length; subscript++) {
       const swiperBackgroundImgTextEl = swiperBackgroundImgText[subscript].id;
       const mySwiper = new Swiper(`#${swiperBackgroundImgTextEl}`, {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
+        slidesPerView,
         spaceBetween: 20,
-        // autoplay: true,//等同于以下设置
-        // autoplay: {
-        //   delay: 3000,
-        //   stopOnLastSlide: false,
-        //   disableOnInteraction: false,
-        //   pauseOnMouseEnter: true,
-        // },
-        // 如果需要前进后退按钮
+        speed: 600,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          stopOnLastSlide: false,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',

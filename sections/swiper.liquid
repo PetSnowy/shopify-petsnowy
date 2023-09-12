@@ -25,11 +25,35 @@
   <div class="swiper-pagination"></div>
 
   <div class="swiper-button">
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev">
+      <svg
+        t="1694491681080"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="1452"
+        width="200"
+        height="200"
+      >
+        <path d="M512 1024c281.6 0 512-230.4 512-512s-230.4-512-512-512-512 230.4-512 512 230.4 512 512 512z m-187.733333-546.133333l256-256c8.533333-8.533333 17.066667-8.533333 34.133333-8.533334 8.533333 0 25.6 0 34.133333 8.533334 17.066667 17.066667 17.066667 42.666667 0 59.733333l-230.4 230.4 230.4 230.4c17.066667 17.066667 17.066667 42.666667 0 59.733333-17.066667 17.066667-42.666667 17.066667-59.733333 0l-256-264.533333c-25.6-17.066667-25.6-42.666667-8.533333-59.733333z" p-id="1453" fill="#707070"></path>
+      </svg>
+    </div>
+    <div class="swiper-button-next">
+      <svg
+        t="1694491681080"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="1452"
+        width="200"
+        height="200"
+      >
+        <path d="M512 1024c281.6 0 512-230.4 512-512s-230.4-512-512-512-512 230.4-512 512 230.4 512 512 512z m-187.733333-546.133333l256-256c8.533333-8.533333 17.066667-8.533333 34.133333-8.533334 8.533333 0 25.6 0 34.133333 8.533334 17.066667 17.066667 17.066667 42.666667 0 59.733333l-230.4 230.4 230.4 230.4c17.066667 17.066667 17.066667 42.666667 0 59.733333-17.066667 17.066667-42.666667 17.066667-59.733333 0l-256-264.533333c-25.6-17.066667-25.6-42.666667-8.533333-59.733333z" p-id="1453" fill="#707070"></path>
+      </svg>
+    </div>
   </div>
-
-  {% comment %} <div class="swiper-scrollbar"></div> {% endcomment %}
 </div>
 <script>
   $(function () {
@@ -39,6 +63,7 @@
       const mySwiper = new Swiper(`#${swiperVideoElId}`, {
         loop: true,
         effect: 'cube',
+        speed: 600,
         preventDefault: false,
         slidesPerView: 'auto',
         freeModeMomentumBounce: false,

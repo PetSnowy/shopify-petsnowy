@@ -43,6 +43,11 @@
 	}
 
 	.swiper-image-text.pc {
+		width: calc(100% - 10rem);
+		overflow: hidden;
+		padding: 0px;
+		margin-bottom: 60px;
+
 		.swiper-slide {
 			overflow: hidden;
 			display: flex;
@@ -61,7 +66,7 @@
 					height: 100%;
 					object-fit: cover;
 					object-position: center;
-					border-radius: 8px;
+					border-radius: 10px;
 				}
 			}
 

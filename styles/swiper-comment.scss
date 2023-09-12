@@ -1,12 +1,11 @@
-.swiper-comment {
+@import 'pxToVw.scss';
 
-	p {
-		margin: 0px;
+.swiper-comment {
+	.comment-wrapper {
+		flex: 1;
 	}
 
 	.star {
-		padding: 55px 40px 35px;
-		border-radius: 10px;
 		background: #d9d9d9;
 		box-sizing: border-box;
 		position: relative;
@@ -15,66 +14,196 @@
 		flex-direction: column;
 	}
 
-	.comment-wrapper {
-		flex: 1;
+	p {
+		margin: 0px;
 	}
 
 	.comment-info {
 		display: flex;
+		align-items: center;
 
 		.star-wrapper {
 			width: fit-content;
 		}
 
 		img {
-			width: 74px;
-			height: 74px;
 			border-radius: 50%;
 		}
 
 		ul {
 			display: flex;
-			column-gap: 5px;
 			padding: 0px;
 			margin: 0px;
 		}
 
 		li {
 			list-style: none;
-			width: 20px;
-			height: 20px;
 			background: url('./star_none.png') no-repeat center/cover;
 		}
 
 		li i {
-			width: 0px;
-			height: 20px;
 			display: block;
 			background: url('./star.png') no-repeat left/cover;
 		}
 	}
 
-	.info-wrapper {
-		padding-left: 20px;
+	.info-wrapper p,
+	.comment-title,
+	.comment {
+		font-family: SUISSE_INT_L_MEDIUM;
+	}
+}
 
-		p {
-			font-size: 16px;
-			margin-bottom: 10px;
-			font-family: SUISSE_INT_L_MEDIUM;
+@media screen and (min-width: 901px) {
+	.swiper-comment {
+		width: calc(100% - 10rem);
+		overflow: hidden;
+		padding: 0px;
+		margin-bottom: 60px;
+
+		.star {
+			padding: 55px 40px 35px;
+			border-radius: 10px;
+		}
+
+		.comment-info {
+			margin-bottom: 20px;
+
+			img {
+				width: 74px;
+				height: 74px;
+			}
+
+			ul {
+				column-gap: 5px;
+			}
+
+			li {
+				width: 20px;
+				height: 20px;
+			}
+
+			li i {
+				width: 0px;
+				height: 20px;
+			}
+		}
+
+		.info-wrapper {
+			padding-left: 20px;
+
+			p {
+				font-size: 24px;
+				margin-bottom: 10px;
+			}
+		}
+
+		.comment-wrapper {
+			.comment-title {
+				font-size: 24px;
+				margin-bottom: 10px;
+				font-weight: 500;
+			}
+
+			.comment {
+				font-size: 18px;
+				color: #1c2541;
+			}
+
+		}
+
+		.swiper-button {
+			&>div {
+				width: 50px;
+				height: 50px;
+
+				svg {
+					width: 50px;
+					height: 50px;
+
+					path {
+						transition: all 0.3s ease;
+					}
+				}
+
+				&::after,
+				&::before {
+					display: none;
+				}
+
+				&:hover svg path {
+					fill: #ffffff;
+				}
+			}
+
+			.swiper-button-prev {
+				transform: rotate(180deg);
+				left: -10px;
+			}
+
+			.swiper-button-next {
+				right: -10px;
+			}
 		}
 	}
+}
 
-	.comment-wrapper {
-		.comment-title {
-			font-size: 16px;
-			margin-bottom: 10px;
-			font-family: SUISSE_INT_L_MEDIUM;
+@media screen and (max-width: 900px) {
+	.swiper-comment {
+		margin-bottom: vw(120px);
+
+		.swiper-button {
+			display: none;
 		}
 
-		.comment {
-			font-size: 12px;
-			font-family: SUISSE_INT_L_MEDIUM;
+		.star {
+			padding: vw(50px);
+			border-radius: vw(20px);
 		}
 
+		.comment-info {
+			margin-bottom: vw(40px);
+
+			img {
+				width: vw(150px);
+				height: vw(150px);
+			}
+
+			ul {
+				column-gap: vw(10px);
+			}
+
+			li {
+				width: vw(40px);
+				height: vw(40px);
+			}
+
+			li i {
+				width: 0px;
+				height: vw(40px);
+			}
+		}
+
+		.info-wrapper {
+			padding-left: vw(40px);
+
+			p {
+				font-size: vw(40px);
+				margin-bottom: vw(20px);
+			}
+		}
+
+		.comment-wrapper {
+			.comment-title {
+				font-size: vw(40px);
+				margin-bottom: vw(20px);
+				font-weight: 500;
+			}
+
+			.comment {
+				font-size: vw(30px);
+				color: #1c2541;
+			}
+		}
 	}
 }

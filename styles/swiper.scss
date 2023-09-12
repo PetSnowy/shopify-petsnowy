@@ -1,29 +1,75 @@
 @import 'pxToVw.scss';
 
-.swiper {
+.swiper-video {
 	--swiper-theme-color: rgba(241, 129, 19);
 
 	div:empty {
 		display: block;
 	}
+
+	.swiper-button {
+		&>div {
+
+			&::before,
+			&::after {
+				display: none;
+			}
+
+			svg path {
+				transition: all 0.3s ease;
+			}
+		}
+
+		.swiper-button-next {
+			transform: rotate(180deg);
+		}
+	}
 }
 
 @media screen and (min-width: 901px) {
-	.swiper {
+	.swiper-video {
 		margin-bottom: 60px;
+		padding: 0px;
+		width: 100%;
+
+		iframe {
+			border-radius: 10px;
+		}
+
+		.swiper-button>div {
+			width: 50px;
+			height: 50px;
+
+			svg path {
+				&:hover {
+					fill: rgba(241, 129, 19)
+				}
+			}
+		}
 	}
 }
 
 @media screen and (max-width: 900px) {
-	.swiper {
+	.swiper-video {
+		margin-bottom: vw(120px);
+		overflow: hidden;
 		padding: 0px;
 		width: 100%;
-		overflow: hidden;
-		margin-bottom: vw(120px);
 
 		iframe {
 			width: 100%;
 			height: vw(500px);
+			border-radius: vw(20px);
+		}
+
+
+		.swiper-button>div {
+			width: vw(50px);
+			height: vw(50px);
+
+			svg path {
+				fill: rgba(241, 129, 19)
+			}
 		}
 	}
 }
