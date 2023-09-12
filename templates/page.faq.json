@@ -23,21 +23,152 @@
         "c46d6b4b-96ce-41b1-b920-154615552184": {
           "type": "title",
           "settings": {
-            "h2": "Resolving Weight-related Issues and Troubleshooting Steps"
+            "h2": "Cleaning Instructions"
           }
         },
         "1ef7c224-21af-4840-9b32-99ad4a684736": {
           "type": "block",
           "settings": {
-            "h3": "Q: How can I reset or clear the weight onthe device?",
-            "text": "<p>A: To reset or clear the device's weight, press the \"R\" key on the control panel. When you have added litter to the globe and the device returns to the initial position, press the reset key on the control panel. The three key indicator lights on the control panel will flash three times to indicate a successful reset.<\/p>",
+            "h3": "Q: How do I clean the globe of the litter box?",
+            "text": "<p>A: Follow these steps to clean the globe:<br\/>   1. Press the \"clear\" button to rotate the globe and remove any remaining cat litter.<br\/>   2. Press the \"reset\" button to return the globe to its original position.<br\/>   3. Unplug the power plug.<br\/>   4. Lift the top cover off by holding it on either side of the top handle.<br\/>   5. Lift the globe off the base.<br\/>   6. Clean the globe with mild soap and water. You can rinse or soak the globe directly in water.<br\/>   7. Allow the globe to dry completely before reassembling it onto the base and replacing the top cover.<\/p>",
+            "video": ""
+          }
+        },
+        "bdf9d913-abf9-477e-b811-f4d661697cef": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: How do I clean the waste drawer of the litter box?",
+            "text": "<p>A: To clean the waste drawer, follow these steps:<br\/>   1. Pull out the waste drawer from the base.<br\/>   2. Clean the waste drawer bottom part with mild soap and water. <br\/>   3. Allow the drawer to dry completely.<br\/>   4. Replace the waste drawer with a new cat litter bag and reassemble it onto the base.<\/p>",
+            "video": ""
+          }
+        },
+        "eb88209d-c046-4ae1-bbcc-6079530ae063": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Can water come into contact with the metal parts of the waste drawer?",
+            "text": "<p>A: It is recommended to minimize water contact with the metal parts of the device. Only clean the device when necessary to reduce the frequency of cleaning.<\/p>",
+            "video": ""
+          }
+        },
+        "d3341a7a-fe79-4871-8a42-690f2b74441e": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: How should I clean the base of the litter box?",
+            "text": "<p>A: When cleaning the base, follow these guidelines:<br\/>   1. Do not immerse, spray, or soak the base or control panel. They contain sensors and electronic equipment.<br\/>   2. Wipe the surface of the base with a damp cloth.<br\/>   3. Avoid using bleach to clean the base.<\/p>",
+            "video": ""
+          }
+        },
+        "af7ef521-3c4b-48c3-8963-8e3c01399919": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: How often should I clean the litter box?",
+            "text": "<p>A: The frequency of cleaning depends on the usage and the number of cats using the litter box. It is generally recommended to clean the litter box at least once a week to maintain cleanliness and hygiene.<\/p>",
+            "video": ""
+          }
+        },
+        "84b98475-5ee8-45c2-a9d4-906322e9a626": {
+          "type": "title",
+          "settings": {
+            "h2": "Resetting Weight"
+          }
+        },
+        "104fbcbe-1555-4f86-894a-46e0ed5f42c0": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: What is the purpose of weight reset in the PetSnowy smart litter box?",
+            "text": "<p>A: Weight reset refers to resetting the weight reading of the litter box. It is a critical operation that ensures accurate detection of the weight of the cat entering the device.<\/p>",
+            "video": ""
+          }
+        },
+        "ebdaef2e-f535-407a-81e3-d1f95ee03c3f": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: How does the gravity sensor work in the device?",
+            "text": "<p>A: The gravity sensor detects changes in gravity when an object, such as a cat, enters the device. It immediately stops the \"cleaning\" and \"deodorizing\" functions to ensure the safety of the cat. The device enters a temporary sleep mode and alerts the user about the object's presence.<\/p>",
+            "video": ""
+          }
+        },
+        "a0b1163f-52a8-45a0-a60c-700278241177": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: How can the weight be reset in the device?",
+            "text": "<p>A: The weight can be reset automatically by the device or manually by the user. Here are the methods:<br\/>   1. The device will automatically restart and zero the weight when it is powered on.<br\/>   2. Continuous removal and reinstallation of the top cover for 3 seconds will automatically zero the weight.<br\/>   3. Removing and reinstalling the litter box will automatically zero the weight.<br\/>   4. When the ball returns to its initial position, the weight will automatically be zeroed.<br\/>   5. Pressing the \"R\" key once will zero the weight.<br\/>   6. Restoring the device to factory settings will also reset the weight.<\/p>",
+            "video": ""
+          }
+        },
+        "421ee906-2710-4718-a796-7f9e2806d23c": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: How can I know if the weight has been successfully zeroed?",
+            "text": "<p>A: When the weight is successfully zeroed, the device will indicate this through its lighting. The cleaning indicator light, emptying indicator light, and reset indicator light will flash alternately three times. This indicates that the weight has been reset and the device is ready for operation.<\/p>",
+            "video": ""
+          }
+        },
+        "585e2422-5d06-4502-af96-e842db0a1849": {
+          "type": "title",
+          "settings": {
+            "h2": "Reset\/Networking ButtonFAQ:"
+          }
+        },
+        "fcb2ce87-4e3c-456d-8b54-ee2c77e58679": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: What is the purpose of the \"R\" key on the PetSnowy smart litter box?",
+            "text": "<p>A: The \"R\" key serves multiple functions, including device networking, weight reset, program reset, and factory reset.<\/p>",
+            "video": ""
+          }
+        },
+        "3f8d1feb-7c1c-4aba-986c-5530cf6d19c9": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: How can I perform a weight reset using the \"R\" key?",
+            "text": "<p>A: To perform a weight reset:<br\/>   - Ensure that the device is in the initial position.<br\/>   - Press the reset key on the control panel.<br\/>   - The three key indicator lights will flash three times to indicate a successful weight reset.<\/p>",
+            "video": ""
+          }
+        },
+        "4ac11c4d-4404-4e4f-bbd4-646a4b511793": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: How can I enter networking mode using the \"R\" key?",
+            "text": "<p>A: To enter networking mode using the \"R\" key:<br\/>   - On the control panel, press and hold the reset key for more than 3 seconds.<br\/>   - The networking indicator light will flash rapidly, indicating that it has entered the Bluetooth networking mode.<br\/>   - If you continue to press the reset key for more than 6 seconds, the indicator light will flash slowly, indicating that it has entered the AP networking mode.<br\/>   - For more detailed networking instructions, please refer to the installation instructions of the application.<\/p>",
+            "video": ""
+          }
+        },
+        "c44b97ad-038c-46ec-957f-2839d4009ba5": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: What does the networking indicator light indicate during networking mode?",
+            "text": "<p>A: During networking mode:<br\/>   - Rapid flashing of the networking indicator light indicates that the device has entered Bluetooth networking mode.<br\/>   - Slow flashing of the networking indicator light indicates that the device has entered AP networking mode.<\/p>",
+            "video": ""
+          }
+        },
+        "38e3150e-5f35-4b53-a078-5028e40730cb": {
+          "type": "block",
+          "settings": {
+            "h3": "Q: Where can I find the networking instructions for the PetSnowy smart litter box?",
+            "text": "<p>A: You can find detailed networking instructions in the installation instructions of the PetSnowy application. Please refer to the instructions specific to your device for accurate setup and networking guidance.<\/p>",
             "video": ""
           }
         }
       },
       "block_order": [
         "c46d6b4b-96ce-41b1-b920-154615552184",
-        "1ef7c224-21af-4840-9b32-99ad4a684736"
+        "1ef7c224-21af-4840-9b32-99ad4a684736",
+        "bdf9d913-abf9-477e-b811-f4d661697cef",
+        "eb88209d-c046-4ae1-bbcc-6079530ae063",
+        "d3341a7a-fe79-4871-8a42-690f2b74441e",
+        "af7ef521-3c4b-48c3-8963-8e3c01399919",
+        "84b98475-5ee8-45c2-a9d4-906322e9a626",
+        "104fbcbe-1555-4f86-894a-46e0ed5f42c0",
+        "ebdaef2e-f535-407a-81e3-d1f95ee03c3f",
+        "a0b1163f-52a8-45a0-a60c-700278241177",
+        "421ee906-2710-4718-a796-7f9e2806d23c",
+        "585e2422-5d06-4502-af96-e842db0a1849",
+        "fcb2ce87-4e3c-456d-8b54-ee2c77e58679",
+        "3f8d1feb-7c1c-4aba-986c-5530cf6d19c9",
+        "4ac11c4d-4404-4e4f-bbd4-646a4b511793",
+        "c44b97ad-038c-46ec-957f-2839d4009ba5",
+        "38e3150e-5f35-4b53-a078-5028e40730cb"
       ],
       "settings": {
         "h1": "",

@@ -1,0 +1,148 @@
+{{ 'swiper-comment.css' | asset_url | stylesheet_tag }}
+
+<div class="swiper swiper-comment page-width" id="swiper{{ section.id }}">
+  <div class="swiper-wrapper">
+    {% for block in section.blocks %}
+      <div class="star swiper-slide">
+        <div class="comment-info">
+          <img src="{{ block.settings.avatar | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+          <div class="info-wrapper">
+            <p class="name">{{ block.settings.name }}</p>
+            <div class="star-wrapper" data-star="{{ block.settings.satisfaction_level }}">
+              <ul>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="comment-wrapper">
+          <p class="comment-title">{{ block.settings['comment-title'] }}</p>
+          <p class="comment">{{ block.settings.comment }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="swiper-button">
+    <div class="swiper-button-prev">
+      <svg
+        t="1694487105786"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="9183"
+      >
+        <path d="M400.556838 248.193709l-73.857125 73.28305L518.758937 511.985674 326.700737 702.501752l73.857125 73.30454 265.957281-263.820618L400.556838 248.193709 400.556838 248.193709zM400.556838 248.193709" fill="#cdcdcd" p-id="9184"></path>
+      </svg>
+    </div>
+    <div class="swiper-button-next">
+      <svg
+        t="1694487105786"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="9183"
+      >
+        <path d="M400.556838 248.193709l-73.857125 73.28305L518.758937 511.985674 326.700737 702.501752l73.857125 73.30454 265.957281-263.820618L400.556838 248.193709 400.556838 248.193709zM400.556838 248.193709" fill="#cdcdcd" p-id="9184"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function () {
+    let slidesPerView = 0;
+    const screenWidth = document.body.clientWidth;
+    if (screenWidth <= 900) slidesPerView = 1;
+    else slidesPerView = 2;
+    const swiperBackgroundImgText = document.querySelectorAll('.swiper-comment');
+    for (let subscript = 0; subscript < swiperBackgroundImgText.length; subscript++) {
+      const swiperBackgroundImgTextEl = swiperBackgroundImgText[subscript].id;
+      const mySwiper = new Swiper(`#${swiperBackgroundImgTextEl}`, {
+        slidesPerView,
+        spaceBetween: 20,
+        speed: 600,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          stopOnLastSlide: false,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      const swiperSlide = swiperBackgroundImgText[subscript].querySelectorAll('.swiper-slide');
+      for (let index = 0; index < swiperSlide.length; index++) {
+        const starWrapper = swiperSlide[index].querySelector('.star-wrapper');
+        const liList = starWrapper.querySelectorAll('li');
+        const star = parseFloat(starWrapper.dataset.star);
+        const fullStars = Math.floor(star);
+        const partialStar = star - fullStars;
+        const setStarWidth = (index, width) => {
+          const starElement = liList[index].querySelector('i');
+          starElement.style.width = `${width}%`;
+        };
+        for (let i = 0; i < fullStars; i++) {
+          setStarWidth(i, 100);
+        }
+        if (partialStar > 0) {
+          setStarWidth(fullStars, partialStar * 100);
+        }
+      }
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "swiper-comment",
+  "blocks": [
+    {
+      "type": "comment",
+      "name": "comment",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "avatar",
+          "label": "avatar"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "name"
+        },
+        {
+          "type": "number",
+          "id": "satisfaction_level",
+          "label": "satisfaction level(The highest rating is 5)"
+        },
+        {
+          "type": "text",
+          "id": "comment",
+          "label": "comment"
+        },
+        {
+          "type": "text",
+          "id": "comment-title",
+          "label": "comment title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "swiper-comment"
+    }
+  ]
+}
+{% endschema %}
