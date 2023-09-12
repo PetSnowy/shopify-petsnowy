@@ -302,20 +302,48 @@
           "type": "comment",
           "settings": {
             "avatar": "shopify:\/\/shop_images\/6_1_fa055609-dc79-4dde-8edd-517b27f5bf27.jpg",
-            "satisfaction_level": 3.4
+            "name": "Carrie T.",
+            "satisfaction_level": 3.4,
+            "comment": "Leo's Loo was an investment that I would make over and over. With two kitties we were going through kitty litter more than we should have been. So many PROS to having the Leo's Loo Too. Saving money on kitty litter, less dust, less mess, no stinky lingering scent masked by kitty litter.  Most of all, my two male cats are so much happier!!",
+            "comment-title": "My cats love it!"
           }
         },
-        "4346d905-dbe6-456e-b14c-0ac48aece346": {
+        "01d8284e-8742-43c6-bbaf-d902e0ecdf4a": {
           "type": "comment",
           "settings": {
-            "avatar": "shopify:\/\/shop_images\/Logo512_2cdacae7-4bf4-4822-aafb-3d05479dd6c3.png",
-            "satisfaction_level": 3.5
+            "avatar": "shopify:\/\/shop_images\/6_1_fa055609-dc79-4dde-8edd-517b27f5bf27.jpg",
+            "name": "Carrie T.",
+            "satisfaction_level": 3.4,
+            "comment": "Leo's Loo was an investment that I would make over and over. With two kitties we were going through kitty litter more than we should have been. So many PROS to having the Leo's Loo Too. Saving money on kitty litter, less dust, less mess, no stinky lingering scent masked by kitty litter.  Most of all, my two male cats are so much happier!!",
+            "comment-title": "My cats love it!"
+          }
+        },
+        "0c3f01af-16a7-4cfa-a19a-e51530a75f15": {
+          "type": "comment",
+          "settings": {
+            "avatar": "shopify:\/\/shop_images\/6_1_fa055609-dc79-4dde-8edd-517b27f5bf27.jpg",
+            "name": "Carrie T.",
+            "satisfaction_level": 3.4,
+            "comment": "Leo's Loo was an investment that I would make over and over. With two kitties we were going through kitty litter more than we should have been. So many PROS to having the Leo's Loo Too. Saving money on kitty litter, less dust, less mess, no stinky lingering scent masked by kitty litter.  Most of all, my two male cats are so much happier!!",
+            "comment-title": "My cats love it!"
+          }
+        },
+        "925a71d1-5f0f-44b6-9c5c-5575491e5153": {
+          "type": "comment",
+          "settings": {
+            "avatar": "shopify:\/\/shop_images\/6_1_fa055609-dc79-4dde-8edd-517b27f5bf27.jpg",
+            "name": "Carrie T.",
+            "satisfaction_level": 3.4,
+            "comment": "Leo's Loo was an investment that I would make over and over. With two kitties we were going through kitty litter more than we should have been. So many PROS to having the Leo's Loo Too. Saving money on kitty litter, less dust, less mess, no stinky lingering scent masked by kitty litter.  Most of all, my two male cats are so much happier!!",
+            "comment-title": "My cats love it!"
           }
         }
       },
       "block_order": [
         "c5797ea1-ce9b-4071-ace3-01b00826139d",
-        "4346d905-dbe6-456e-b14c-0ac48aece346"
+        "01d8284e-8742-43c6-bbaf-d902e0ecdf4a",
+        "0c3f01af-16a7-4cfa-a19a-e51530a75f15",
+        "925a71d1-5f0f-44b6-9c5c-5575491e5153"
       ],
       "settings": {
       }
