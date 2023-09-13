@@ -28,57 +28,53 @@
         </div>
       </aside>
       <div class="faq_qna_iner">
-        <div class="quetion_item">
-          {% for block in section.blocks %}
-            <div class="option">
-              {% if block.type == 'title' %}
-                <h2 class="title">{{ block.settings.h2 }}</h2>
-              {% endif %}
-              {% if block.type == 'block' %}
-                <div class="qn_group_main">
-                  <div class="ques_title">
-                    {% if block.settings.h3 != blank %}
-                      <h3>{{ block.settings.h3 }}</h3>
-                      <span class="onc_arrow">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="feather feather-chevron-up"
-                        >
-                          <polyline points="18 15 12 9 6 15"></polyline>
-                        </svg>
-                      </span>
-                    {% endif %}
-                  </div>
-                  <div class="answer_txt">
-                    {% if block.settings.text %}
-                      {{ block.settings.text }}
-                    {% endif %}
-                    {% if block.settings.video %}
-                      <video
-                        class="desk_video custom_videoss"
-                        width="100%"
-                        height="100%"
-                        muted
-                        autoplay
-                        playsinline
+        <h2 class="title">{{ block.settings.question_section_title }}</h2>
+        {% for block in section.blocks %}
+          <div class="option">
+            {% if block.type == 'block' %}
+              <div class="qn_group_main">
+                <div class="ques_title">
+                  {% if block.settings.h3 != blank %}
+                    <h3>{{ block.settings.h3 }}</h3>
+                    <span class="onc_arrow">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-chevron-up"
                       >
-                        <source src="{{ block.settings.video }}" type="video/mp4">
-                      </video>
-                    {% endif %}
-                  </div>
-                  <hr class="qna_hr">
+                        <polyline points="18 15 12 9 6 15"></polyline>
+                      </svg>
+                    </span>
+                  {% endif %}
                 </div>
-              {% endif %}
-            </div>
-          {% endfor %}
-        </div>
+                <div class="answer_txt">
+                  {% if block.settings.text %}
+                    {{ block.settings.text }}
+                  {% endif %}
+                  {% if block.settings.video %}
+                    <video
+                      class="desk_video custom_videoss"
+                      width="100%"
+                      height="100%"
+                      muted
+                      autoplay
+                      playsinline
+                    >
+                      <source src="{{ block.settings.video }}" type="video/mp4">
+                    </video>
+                  {% endif %}
+                </div>
+                <hr class="qna_hr">
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
       </div>
     </div>
     <div class="search-result"></div>
@@ -99,6 +95,11 @@
       "type": "text",
       "id": "sub_txt",
       "label": "Sub Heading"
+    },
+    {
+      "type": "text",
+      "id": "question_section_title",
+      "label": "question section title"
     }
   ],
   "blocks": [
