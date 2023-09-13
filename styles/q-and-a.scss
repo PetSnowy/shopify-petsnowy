@@ -33,7 +33,7 @@
 		.faq_qa_heading {
 			display: grid;
 			row-gap: vw(40px);
-			margin: vw(40px) 0px;
+			margin: vw(30px) 0px;
 
 			h1 {
 				font-size: vw(40px);
@@ -59,7 +59,7 @@
 				font-size: vw(35px);
 
 				&:focus {
-					outline: rgb(241, 129, 19) solid vw(2px);
+					outline: rgb(194, 153, 124) solid vw(2px);
 				}
 
 				&::placeholder {
@@ -76,8 +76,8 @@
 				transition: all 0.3s ease;
 				align-items: center;
 				justify-content: center;
-				border: vw(2px) solid rgb(241, 129, 19);
-				background-color: rgb(241, 129, 19);
+				border: vw(2px) solid rgb(194, 153, 124);
+				background-color: rgb(194, 153, 124);
 				border-radius: vw(10px);
 				color: #fff;
 				font-size: vw(35px);
@@ -88,7 +88,7 @@
 			transition: all 0.3s ease;
 
 			polyline {
-				color: rgb(241, 129, 19);
+				color: rgb(194, 153, 124);
 			}
 		}
 
@@ -99,7 +99,7 @@
 			}
 
 			mark {
-				background-color: rgb(241, 129, 19);
+				background-color: rgb(194, 153, 124);
 				color: #fff;
 			}
 		}
@@ -109,30 +109,23 @@
 		}
 
 		.m-sidebar-wrapper {
-			opacity: 0;
-			position: absolute;
+			padding: vw(20px) 0px;
 			transition: all 0.3s ease;
 			top: 0px;
-			width: 100%;
-			transform: translateX(-50%);
-			left: 50%;
+			width: vw(690px);
 			background-color: #fff;
 			z-index: 1;
-
-			&.fixed {
-				position: fixed;
-				top: var(--main-padding-top);
-			}
+			position: sticky;
+			margin: 0px auto;
 
 			select {
-				width: calc(100% - 3rem);
+				width: vw(690px);
 				white-space: nowrap;
 				overflow: hidden;
 				text-overflow: ellipsis;
 				margin: 0px auto;
 				padding: vw(20px);
 				font-size: vw(24px);
-				appearance: none;
 				background-color: #f1f1f1;
 				color: #000;
 				border-radius: vw(10px);
@@ -146,20 +139,32 @@
 			}
 		}
 
-		.title {
-			font-size: vw(35px);
+		.qn_group_main {
+			margin: vw(50px) 0px;
 		}
 
-		.ques_title h3 {
+		.title {
+			font-size: vw(48px);
+			margin: vw(60px) 0px;
+		}
+
+		.search-result div:not(:last-child) {
+			margin-bottom: vw(40px);
+		}
+
+		.ques_title h3,
+		.search-result div:first-child {
 			font-size: vw(30px);
+			font-weight: 600;
+			font-family: SUISSE_INT_L_MEDIUM;
 		}
 
 		.answer_txt {
-			font-size: vw(24px);
+			margin-top: vw(64px);
 
 			p {
 				word-wrap: break-word;
-
+				font-size: vw(26px);
 			}
 		}
 	}
@@ -182,7 +187,7 @@
 			}
 
 			mark {
-				background-color: rgb(241, 129, 19);
+				background-color: rgb(194, 153, 124);
 				color: #fff;
 			}
 		}
@@ -205,7 +210,7 @@
 			outline: 1px solid #e8e8e8;
 
 			&:focus {
-				outline: rgb(241, 129, 19) solid 1px;
+				outline: rgb(194, 153, 124) solid 1px;
 			}
 
 			&::placeholder {
@@ -216,16 +221,16 @@
 		button {
 			width: 90px;
 			height: 37px;
-			background-color: rgb(241, 129, 19);
-			border: 1px solid rgb(241, 129, 19);
 			color: #fff;
 			border-radius: 0px 10px 10px 0px;
 			font-size: 16px;
 			cursor: pointer;
 			transition: all 0.3s ease;
+			background: rgba(194, 153, 124);
+			border: none;
 
 			&:hover {
-				background-color: #ff5900;
+				background-color: rgb(194, 153, 124);
 			}
 		}
 
@@ -292,55 +297,20 @@
 			box-sizing: border-box;
 			cursor: pointer;
 			position: relative;
-			z-index: 1;
-			backface-visibility: hidden;
 			overflow: hidden;
-			transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 			background: #fff;
 			color: #000;
 			border: 1px solid #e8e8e8;
 			transition: all 0.3s ease;
 			user-select: none;
 
-			&::before,
-			&::after {
-				content: "";
-				position: absolute;
-				z-index: -1;
-				border-radius: inherit;
-			}
-
 			&:hover {
-				border-color: transparent;
-
-				&::before {
-					transform: translate3d(0, 0, 0);
-				}
-			}
-
-			&::after {
-				inset: 1px;
-				background: #fff;
-			}
-
-			&::before {
-				background: rgb(241, 129, 19);
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				transform: translate3d(-100%, 100%, 0);
-				transition: transform 0.3s;
-				transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+				border-color: rgb(194, 153, 124);
 			}
 
 			&.active {
-				&:hover::before {
-					transform: translate3d(-100%, 100%, 0);
-				}
-
-				border-color: rgb(241, 129, 19);
-				color: rgb(241, 129, 19);
+				border-color: rgb(194, 153, 124);
+				color: rgb(194, 153, 124);
 			}
 		}
 
@@ -354,16 +324,17 @@
 
 		.title {
 			margin: 0px;
-			font-size: 40px;
+			font-size: 38px;
 			margin-bottom: 60px;
 			margin-top: 70px;
 		}
 
 		.answer_txt {
-			font-size: 15px;
+			margin-top: 32px;
 
 			p {
-				word-wrap: break-word;
+				font-size: 18px;
+				font-weight: 400;
 			}
 		}
 
@@ -379,12 +350,22 @@
 			}
 		}
 
+		.search-result div:first-child {
+			font-size: 24px;
+			font-weight: 700;
+			font-family: SUISSE_INT_L_MEDIUM;
+		}
+
+		.search-result div:not(:last-child) {
+			margin-bottom: 20px;
+		}
+
 		.onc_arrow {
 			transition: all 0.3s ease;
 			position: static;
 
 			polyline {
-				color: rgb(241, 129, 19);
+				color: rgb(194, 153, 124);
 			}
 		}
 

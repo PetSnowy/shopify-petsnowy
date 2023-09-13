@@ -2,7 +2,6 @@ $(function () {
 	const visibleHeight = document.documentElement.clientHeight / 2;
 	const title = document.querySelectorAll('.title');
 	const select = document.querySelectorAll('select')[0];
-	const innerWidth = window.innerWidth;
 
 	let value = '';
 	$('.search input').on('input', function () {
@@ -41,14 +40,6 @@ $(function () {
 		if (value === lastUserSearch) return
 		lastUserSearch = value
 
-		const display = $('.faq-wrapper').css('display');
-		if (display === 'none' && innerWidth <= 900) {
-			$('.faq-page').eq(0).css('padding-top', '0px');
-		} else {
-			$('.faq-page')
-				.eq(0)
-				.css({ 'padding-top': `${select.offsetHeight}px` });
-		}
 		searchResult = [];
 		let left = 0,
 			right = content.length - 1;
@@ -141,24 +132,25 @@ $(function () {
 		select.appendChild(option);
 	}
 
-	window.addEventListener('scroll', debounce(scroll, 100), { passive: true });
-
-	let faqWrapperHeight = 0;
-
-	if (innerWidth <= 900) {
-		for (let i = 0; i < faqWrapper.length; i++) {
-			faqWrapperHeight += faqWrapper[i].offsetHeight;
+	function resize() {
+		const innerWidth = window.innerWidth;
+		if (innerWidth <= 900) {
+			window.addEventListener('scroll', mobileSelect, { passive: true });
+			removeEventListener('scroll', debounce(scroll, 100), { passive: true });
+		} else {
+			window.addEventListener('scroll', debounce(scroll, 100), { passive: true });
+			removeEventListener('scroll', mobileSelect, { passive: true });
 		}
-		window.addEventListener('scroll', mobileSelect, { passive: true });
 	}
+	resize()
+	window.addEventListener('resize', resize, { passive: true });
 
+
+	const mSidebarWrapper = document.querySelector('.m-sidebar-wrapper')
 	function mobileSelect() {
 		const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-		const el = $('.m-sidebar-wrapper').eq(0);
-		el.removeClass('fixed');
-		if (scrollTop >= el.offset().top && scrollTop <= faqWrapperHeight) {
-			el.addClass('fixed');
-		}
+		const headerTop = document.querySelector('header').offsetHeight;
+		mSidebarWrapper.style.top = `${headerTop}px`
 	}
 
 	$('select').change(function () {
@@ -174,8 +166,4 @@ $(function () {
 		}
 	});
 
-	$('.faq-page')
-		.eq(0)
-		.css({ 'padding-top': `${select.offsetHeight}px` });
-	$('.m-sidebar-wrapper').eq(0).css({ opacity: '1', display: 'flex' });
 });
