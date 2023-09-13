@@ -28,9 +28,11 @@
         </div>
       </aside>
       <div class="faq_qna_iner">
-        <h2 class="title">{{ block.settings.question_section_title }}</h2>
         {% for block in section.blocks %}
           <div class="option">
+            {% if block.type == 'title' %}
+              <h2 class="title">{{ block.settings.h2 }}</h2>
+            {% endif %}
             {% if block.type == 'block' %}
               <div class="qn_group_main">
                 <div class="ques_title">
@@ -95,11 +97,6 @@
       "type": "text",
       "id": "sub_txt",
       "label": "Sub Heading"
-    },
-    {
-      "type": "text",
-      "id": "question_section_title",
-      "label": "question section title"
     }
   ],
   "blocks": [
