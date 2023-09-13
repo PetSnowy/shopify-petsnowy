@@ -32,13 +32,50 @@
           {% for block in section.blocks %}
             <div class="option">
               {% if block.type == 'title' %}
-                <h2 class="title">{{ block.settings.question_section_title }}</h2>
+                <h2 class="title">{{ block.settings.h2 }}</h2>
               {% endif %}
               {% if block.type == 'block' %}
-                {% render 'question-section' %}
-                <hr class="qna_hr">
+                <div class="qn_group_main">
+                  <div class="ques_title">
+                    {% if block.settings.h3 != blank %}
+                      <h3>{{ block.settings.h3 }}</h3>
+                      <span class="onc_arrow">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-chevron-up"
+                        >
+                          <polyline points="18 15 12 9 6 15"></polyline>
+                        </svg>
+                      </span>
+                    {% endif %}
+                  </div>
+                  <div class="answer_txt">
+                    {% if block.settings.text %}
+                      {{ block.settings.text }}
+                    {% endif %}
+                    {% if block.settings.video %}
+                      <video
+                        class="desk_video custom_videoss"
+                        width="100%"
+                        height="100%"
+                        muted
+                        autoplay
+                        playsinline
+                      >
+                        <source src="{{ block.settings.video }}" type="video/mp4">
+                      </video>
+                    {% endif %}
+                  </div>
+                  <hr class="qna_hr">
+                </div>
               {% endif %}
-              <div class="liquid">{{ block.settings.question_section_faq }}</div>
             </div>
           {% endfor %}
         </div>
@@ -66,18 +103,13 @@
   ],
   "blocks": [
     {
-      "type": "faq-item",
+      "type": "title",
       "name": "title",
       "settings": [
         {
           "type": "text",
-          "id": "question_section_title",
-          "label": "Question Section Title"
-        },
-        {
-          "type": "liquid",
-          "id": "question_section_faq",
-          "label": "Question Section FAQ"
+          "id": "h2",
+          "label": "title"
         }
       ]
     },
