@@ -105,13 +105,18 @@ $(function () {
 	const faqWrapper = document.querySelectorAll('.faq-wrapper');
 	const page = document.querySelectorAll('.faq_qa_main');
 
+	function mobileSelect() {
+		const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+		const headerTop = document.querySelector('header').offsetHeight;
+		mSidebarWrapper.style.top = `${headerTop}px`
+	}
+
 	function sidebarScroll() {
 		const active = document.querySelector('.active');
 		for (let i = 0; i < pageSidebar.length; i++) {
 			active && (pageSidebar[i].scrollTop = active.offsetTop);
 		}
 	}
-
 	const scroll = () => {
 		const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
 		for (let index = 0; index < title.length; index++) {
@@ -122,7 +127,11 @@ $(function () {
 			}
 		}
 		sidebarScroll();
+		mobileSelect();
 	};
+
+	window.addEventListener('scroll', debounce(scroll, 100), { passive: true });
+
 
 	$('select').empty();
 
@@ -132,26 +141,9 @@ $(function () {
 		select.appendChild(option);
 	}
 
-	function resize() {
-		const innerWidth = window.innerWidth;
-		if (innerWidth <= 900) {
-			window.addEventListener('scroll', mobileSelect, { passive: true });
-			removeEventListener('scroll', debounce(scroll, 100), { passive: true });
-		} else {
-			window.addEventListener('scroll', debounce(scroll, 100), { passive: true });
-			removeEventListener('scroll', mobileSelect, { passive: true });
-		}
-	}
-	resize()
-	window.addEventListener('resize', resize, { passive: true });
-
 
 	const mSidebarWrapper = document.querySelector('.m-sidebar-wrapper')
-	function mobileSelect() {
-		const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-		const headerTop = document.querySelector('header').offsetHeight;
-		mSidebarWrapper.style.top = `${headerTop}px`
-	}
+
 
 	$('select').change(function () {
 		let selectedIndex = $(this).prop('selectedIndex');
