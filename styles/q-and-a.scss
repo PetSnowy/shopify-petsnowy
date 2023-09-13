@@ -352,10 +352,14 @@
 			}
 		}
 
-		.search-result div:first-child {
+		.search-result div p:first-child {
 			font-size: 24px;
-			font-weight: 700;
+			font-weight: 400;
 			font-family: SUISSE_INT_L_MEDIUM;
+		}
+
+		.search-result div p:last-child {
+			font-size: 18px;
 		}
 
 		.search-result div:not(:last-child) {

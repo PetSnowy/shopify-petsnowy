@@ -1,14 +1,10 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 <div class="contact-us page-width page-width--narrow">
-  <div class="contact-left"></div>
+  <div class="contact-left">
+    <p class="left-title">Contact Us</p>
+    <p class="left-sub-title">Do you have any question?</p>
+  </div>
   <div class="contact-form">
-    {%- if section.settings.heading != blank -%}
-      <h2 class="title title-wrapper--no-top-margin">
-        {{ section.settings.heading | escape }}
-      </h2>
-    {%- else -%}
-      <h2 class="title">{{ 'templates.contact.form.title' | t }}</h2>
-    {%- endif -%}
     {%- form 'contact', id: 'ContactForm demo-form', class: 'isolate', action: '/contact' -%}
       {%- if form.posted_successfully? -%}
         <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
