@@ -244,6 +244,7 @@
 
 		.faq-wrapper {
 			display: flex;
+			margin-top: 20px;
 			margin-bottom: 65px;
 		}
 
@@ -343,10 +344,19 @@
 			}
 		}
 
+		.qn_group_main {
+			margin: 32px 0px;
+		}
+
+		.option:nth-child(1) .title {
+			margin-top: 0px;
+		}
+
 		.title {
 			margin: 0px;
-			font-size: 22px;
-			margin-bottom: 30px;
+			font-size: 40px;
+			margin-bottom: 60px;
+			margin-top: 70px;
 		}
 
 		.answer_txt {
@@ -364,7 +374,8 @@
 			justify-content: space-between;
 
 			h3 {
-				font-size: 18px;
+				font-size: 22px;
+				font-weight: 700;
 			}
 		}
 
