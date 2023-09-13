@@ -259,7 +259,7 @@
       }
     },
     "25332470-1120-4e11-a35c-4deee632604e": {
-      "type": "swiper",
+      "type": "swiper-video",
       "blocks": {
         "9a6ff64a-f44d-4e17-b6e4-227d32fb906f": {
           "type": "video",
@@ -345,7 +345,6 @@
         "0c3f01af-16a7-4cfa-a19a-e51530a75f15",
         "925a71d1-5f0f-44b6-9c5c-5575491e5153"
       ],
-      "disabled": true,
       "settings": {
       }
     }
