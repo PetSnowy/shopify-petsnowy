@@ -20,6 +20,12 @@
     "e7ff4464-ea33-4ac1-945f-bb976b98ec75": {
       "type": "Q-and-A",
       "blocks": {
+        "9066bad3-74a4-44f8-8ca9-cd3864c180e0": {
+          "type": "title",
+          "settings": {
+            "h2": "Resolving Weight-related Issues and Troubleshooting Steps"
+          }
+        },
         "1ef7c224-21af-4840-9b32-99ad4a684736": {
           "type": "block",
           "settings": {
@@ -60,6 +66,12 @@
             "video": ""
           }
         },
+        "be0d10c2-0f34-45b5-b4a4-df5086a2ca1f": {
+          "type": "title",
+          "settings": {
+            "h2": "Device Not Sensing the Cat"
+          }
+        },
         "104fbcbe-1555-4f86-894a-46e0ed5f42c0": {
           "type": "block",
           "settings": {
@@ -82,6 +94,12 @@
             "h3": "Q: How can the weight be reset in the device?",
             "text": "<p>A: The weight can be reset automatically by the device or manually by the user. Here are the methods:<br\/>   1. The device will automatically restart and zero the weight when it is powered on.<br\/>   2. Continuous removal and reinstallation of the top cover for 3 seconds will automatically zero the weight.<br\/>   3. Removing and reinstalling the litter box will automatically zero the weight.<br\/>   4. When the ball returns to its initial position, the weight will automatically be zeroed.<br\/>   5. Pressing the \"R\" key once will zero the weight.<br\/>   6. Restoring the device to factory settings will also reset the weight.<\/p>",
             "video": ""
+          }
+        },
+        "db7c8836-ec18-44b0-bad1-1fb6bde9e4bf": {
+          "type": "title",
+          "settings": {
+            "h2": "Device Inactivity During Cleaning Mode"
           }
         },
         "421ee906-2710-4718-a796-7f9e2806d23c": {
@@ -131,40 +149,26 @@
             "text": "<p>A: You can find detailed networking instructions in the installation instructions of the PetSnowy application. Please refer to the instructions specific to your device for accurate setup and networking guidance.<\/p>",
             "video": ""
           }
-        },
-        "5f5fd93f-14a9-4b81-b129-f093a4b49c75": {
-          "type": "block",
-          "settings": {
-            "h3": "",
-            "text": "",
-            "video": ""
-          }
-        },
-        "459335aa-05f2-47e0-8368-34894395ab64": {
-          "type": "faq-item",
-          "settings": {
-            "question_section_title": "",
-            "question_section_faq": "3432423423"
-          }
         }
       },
       "block_order": [
+        "9066bad3-74a4-44f8-8ca9-cd3864c180e0",
         "1ef7c224-21af-4840-9b32-99ad4a684736",
         "bdf9d913-abf9-477e-b811-f4d661697cef",
         "eb88209d-c046-4ae1-bbcc-6079530ae063",
         "d3341a7a-fe79-4871-8a42-690f2b74441e",
         "af7ef521-3c4b-48c3-8963-8e3c01399919",
+        "be0d10c2-0f34-45b5-b4a4-df5086a2ca1f",
         "104fbcbe-1555-4f86-894a-46e0ed5f42c0",
         "ebdaef2e-f535-407a-81e3-d1f95ee03c3f",
         "a0b1163f-52a8-45a0-a60c-700278241177",
+        "db7c8836-ec18-44b0-bad1-1fb6bde9e4bf",
         "421ee906-2710-4718-a796-7f9e2806d23c",
         "fcb2ce87-4e3c-456d-8b54-ee2c77e58679",
         "3f8d1feb-7c1c-4aba-986c-5530cf6d19c9",
         "4ac11c4d-4404-4e4f-bbd4-646a4b511793",
         "c44b97ad-038c-46ec-957f-2839d4009ba5",
-        "38e3150e-5f35-4b53-a078-5028e40730cb",
-        "5f5fd93f-14a9-4b81-b129-f093a4b49c75",
-        "459335aa-05f2-47e0-8368-34894395ab64"
+        "38e3150e-5f35-4b53-a078-5028e40730cb"
       ],
       "settings": {
         "h1": "",
