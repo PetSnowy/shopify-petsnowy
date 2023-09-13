@@ -118,7 +118,8 @@ $(function () {
 			if (scrollTop > title[index].offsetTop - visibleHeight) {
 				$('.aside-item').removeClass('active');
 				$('.aside-item').eq(index).addClass('active');
-				select.value = title[index].innerText;
+				title[index].innerText && select.value = title[index].innerText;
+				title[index].textContent && select.value = title[index].textContent;
 			}
 		}
 		sidebarScroll();
