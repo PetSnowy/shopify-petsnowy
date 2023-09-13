@@ -112,11 +112,12 @@
 			padding: vw(20px) 0px;
 			transition: all 0.3s ease;
 			top: 0px;
-			width: vw(690px);
+			display: flex;
 			background-color: #fff;
+			width: 100%;
 			z-index: 1;
+			height: vw(72px);
 			position: sticky;
-			margin: 0px auto;
 
 			select {
 				width: vw(690px);
@@ -126,10 +127,12 @@
 				margin: 0px auto;
 				padding: vw(20px);
 				font-size: vw(24px);
+				height: vw(72px);
 				background-color: #f1f1f1;
 				color: #000;
 				border-radius: vw(10px);
 				border: none;
+				margin: auto;
 
 				option {
 					width: 100%;
