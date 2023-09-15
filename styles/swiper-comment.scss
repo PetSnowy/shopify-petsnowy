@@ -1,6 +1,12 @@
 @import 'pxToVw.scss';
 
 .swiper-comment {
+	.swiper-comment-title {
+		text-align: center;
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+
 	.comment-wrapper {
 		flex: 1;
 	}
@@ -68,7 +74,11 @@
 
 @media screen and (min-width: 901px) {
 	.swiper-comment {
-
+		.swiper-comment-title {
+			text-align: center;
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
 
 		width: calc(100% - 10rem);
 		overflow: hidden;
@@ -79,6 +89,7 @@
 			padding: 55px 40px 35px;
 			border-radius: 10px;
 			position: relative;
+			height: auto;
 
 			&::after,
 			&::before {
@@ -183,6 +194,11 @@
 	.swiper-comment {
 		margin-bottom: vw(120px);
 
+		.swiper-comment-title {
+			font-size: 20px;
+			margin-bottom: vw(40px);
+		}
+
 		.swiper-button {
 			display: none;
 		}
@@ -191,6 +207,7 @@
 			padding: vw(60px) vw(50px);
 			border-radius: vw(20px);
 			position: relative;
+			height: auto;
 
 			&::after,
 			&::before {
