@@ -3369,6 +3369,7 @@ h2.banner__heading span {
 /* Footer Css Start */
 footer.gradient {
 	background: #231f20;
+	overflow: hidden;
 }
 
 ul.footer__list-social {
@@ -5550,7 +5551,8 @@ label.productlabel_info,
 
 	.checkout-button {
 		width: 100%;
-		height: vw(92px);
+		max-width: 395px;
+		height: 46px;
 		box-sizing: border-box;
 		padding: vw(20px) vw(40px);
 		text-align: center;
@@ -5633,7 +5635,7 @@ $item: 5;
 	}
 
 	.checkout-button {
-		width: 438px;
+		max-width: 438px;
 		height: 46px;
 		box-sizing: border-box;
 		padding: 10px 20px;
