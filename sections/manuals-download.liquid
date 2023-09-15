@@ -1,21 +1,17 @@
 {{ 'manuals.css' | asset_url | stylesheet_tag }}
 
-<div class="manuals page-width">
-  {% for block in section.blocks %}
-    <div class="product-manuals">
-      <div class="image">
-        <img src="{{ block.settings.image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+<div class="product-manuals page-width">
+  <div class="manuals-wrapper">
+    {% for block in section.blocks %}
+      <div class="product-manuals">
+        <div class="image">
+          <img src="{{ block.settings.image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+        </div>
+        <p class="text">{{ block.settings.title }}</p>
+        <a href="{{ block.settings.url }}" target="_blank" class="button">Download PDF</a>
       </div>
-      <p class="text">{{ block.settings.title }}</p>
-      <iframe
-        src="{{ block.settings.url }}"
-        width="100%"
-        height="100%"
-      >
-        <a href="{{ block.settings.url }}">Download PDF</a></iframe
-      >
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>
 
 {% schema %}

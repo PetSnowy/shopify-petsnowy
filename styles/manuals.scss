@@ -1,28 +1,55 @@
 @import "pxToVw.scss";
 
-.manuals {
+.manuals-wrapper {
 	.product-manuals {}
 }
 
 @media screen and (min-width: 901px) {
-	.manuals {
+	.manuals-wrapper {
+		padding: 60px 0px;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		column-gap: 10px;
+
+		.product-manuals {
+
+			img {
+				width: 100%;
+				height: 200px;
+			}
+
+			.text {
+				font-size: 24px;
+				font-weight: 600;
+				margin: 10px 0px;
+			}
+
+			.button {
+				width: 180px;
+				height: 20px;
+				background: #f18113;
+				border-radius: 20px;
+				text-decoration: none;
+				color: #ffffff;
+				margin: 0px auto;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 900px) {
+	.manuals-wrapper {
+		display: flex;
+		column-gap: vw(20px);
 
 		.product-manuals {
 			img {
 				width: 100%;
 			}
 		}
-	}
-}
-
-@media screen and (max-width: 900px) {
-	.manuals {
-		display: flex;
-		column-gap: vw(20px);
-
-		.product-manuals {}
 	}
 }
