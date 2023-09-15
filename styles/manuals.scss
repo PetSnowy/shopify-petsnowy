@@ -15,13 +15,16 @@
 
 			img {
 				width: 100%;
-				height: 200px;
+				height: 450px;
+				object-fit: cover;
 			}
 
 			.text {
 				font-size: 24px;
 				font-weight: 600;
-				margin: 10px 0px;
+				margin: 0px;
+				margin-bottom: 30px;
+				text-align: center;
 			}
 
 			.button {
@@ -45,11 +48,35 @@
 	.manuals-wrapper {
 		display: flex;
 		column-gap: vw(20px);
+		flex-wrap: wrap;
+		margin-bottom: vw(60px);
 
 		.product-manuals {
 			img {
 				width: 100%;
+				object-fit: cover;
 			}
+		}
+
+		.text {
+			font-size: vw(40px);
+			font-weight: 600;
+			margin: 0px;
+			margin-bottom: vw(60px);
+			text-align: center;
+		}
+
+		.button {
+			width: vw(380px);
+			height: vw(40px);
+			background: #f18113;
+			border-radius: vw(40px);
+			text-decoration: none;
+			color: #ffffff;
+			margin: 0px auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 	}
 }
