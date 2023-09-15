@@ -2,13 +2,50 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "022407a0-f1ff-4382-ab72-5cb6421c2518": {
+      "type": "manuals-download",
+      "blocks": {
+        "5273f70e-b411-4ba1-9491-944cb75ca84e": {
+          "type": "product",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/litterbox8.29.jpg",
+            "title": "litter box",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0683\/5293\/4210\/files\/NEW_MANUAL_2.pdf?v=1694768755"
+          }
+        },
+        "eef378e6-adbe-4319-b18e-fa992423a079": {
+          "type": "product",
+          "settings": {
+            "title": "",
+            "url": ""
+          }
+        },
+        "fa727dbd-d702-4d5a-8a10-811755ad2472": {
+          "type": "product",
+          "settings": {
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "5273f70e-b411-4ba1-9491-944cb75ca84e",
+        "eef378e6-adbe-4319-b18e-fa992423a079",
+        "fa727dbd-d702-4d5a-8a10-811755ad2472"
+      ],
+      "settings": {
+        "h1": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "022407a0-f1ff-4382-ab72-5cb6421c2518"
   ]
 }
