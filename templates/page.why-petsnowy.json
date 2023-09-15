@@ -184,43 +184,6 @@
         "swiper-image-text-title": "Media Coverage"
       }
     },
-    "25332470-1120-4e11-a35c-4deee632604e": {
-      "type": "swiper-video",
-      "blocks": {
-        "6ca7c0e1-a3a2-4974-a274-f7a5ca064526": {
-          "type": "video",
-          "settings": {
-            "text": "xir9KyKkmNo"
-          }
-        },
-        "9a6ff64a-f44d-4e17-b6e4-227d32fb906f": {
-          "type": "video",
-          "settings": {
-            "text": "tuB0k6AoDnk"
-          }
-        },
-        "0a45a1fa-9274-4663-9607-96f034089a67": {
-          "type": "video",
-          "settings": {
-            "text": "tltQPi7408E"
-          }
-        },
-        "78917c25-4774-46ec-9f59-c45e323706e0": {
-          "type": "video",
-          "settings": {
-            "text": "RrH-nvHbjJg"
-          }
-        }
-      },
-      "block_order": [
-        "6ca7c0e1-a3a2-4974-a274-f7a5ca064526",
-        "9a6ff64a-f44d-4e17-b6e4-227d32fb906f",
-        "0a45a1fa-9274-4663-9607-96f034089a67",
-        "78917c25-4774-46ec-9f59-c45e323706e0"
-      ],
-      "settings": {
-      }
-    },
     "a9a37b37-572f-4543-ab8c-d7f9c321f57a": {
       "type": "swiper-comment",
       "blocks": {
@@ -274,6 +237,43 @@
       "settings": {
         "swiper-comment-title": "They Love the SNOW+!"
       }
+    },
+    "25332470-1120-4e11-a35c-4deee632604e": {
+      "type": "swiper-video",
+      "blocks": {
+        "6ca7c0e1-a3a2-4974-a274-f7a5ca064526": {
+          "type": "video",
+          "settings": {
+            "text": "xir9KyKkmNo"
+          }
+        },
+        "9a6ff64a-f44d-4e17-b6e4-227d32fb906f": {
+          "type": "video",
+          "settings": {
+            "text": "tuB0k6AoDnk"
+          }
+        },
+        "0a45a1fa-9274-4663-9607-96f034089a67": {
+          "type": "video",
+          "settings": {
+            "text": "tltQPi7408E"
+          }
+        },
+        "78917c25-4774-46ec-9f59-c45e323706e0": {
+          "type": "video",
+          "settings": {
+            "text": "RrH-nvHbjJg"
+          }
+        }
+      },
+      "block_order": [
+        "6ca7c0e1-a3a2-4974-a274-f7a5ca064526",
+        "9a6ff64a-f44d-4e17-b6e4-227d32fb906f",
+        "0a45a1fa-9274-4663-9607-96f034089a67",
+        "78917c25-4774-46ec-9f59-c45e323706e0"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -282,7 +282,7 @@
     "b79a1b90-73b1-4a47-ae19-5c94a2e40c21",
     "870baee5-e86d-409f-81ce-384a50510ec1",
     "63eae311-5053-4dbe-97c6-669fc0bf6fc2",
-    "25332470-1120-4e11-a35c-4deee632604e",
-    "a9a37b37-572f-4543-ab8c-d7f9c321f57a"
+    "a9a37b37-572f-4543-ab8c-d7f9c321f57a",
+    "25332470-1120-4e11-a35c-4deee632604e"
   ]
 }
