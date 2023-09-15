@@ -11,24 +11,26 @@
     "022407a0-f1ff-4382-ab72-5cb6421c2518": {
       "type": "manuals-download",
       "blocks": {
-        "5273f70e-b411-4ba1-9491-944cb75ca84e": {
-          "type": "product",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/3_3_65dfc946-6ef8-428e-beaf-b3679aed7eb1.jpg",
-            "title": "SNOW⁺ Pet Water Fountain",
-            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0683\/5293\/4210\/files\/SNOW_Pet_Water_Fountain.pdf?v=1694772778"
-          }
-        },
         "eef378e6-adbe-4319-b18e-fa992423a079": {
           "type": "product",
           "settings": {
+            "image": "shopify:\/\/shop_images\/snow_plus_self_cleaning_cat_litter_box.jpg",
             "title": "SNOW⁺ Self Cleaning Litter Box",
             "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0683\/5293\/4210\/files\/SNOW_Automatic_Cat_Litter_Box_-_User_Manual.pdf?v=1694772778"
+          }
+        },
+        "5273f70e-b411-4ba1-9491-944cb75ca84e": {
+          "type": "product",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/interactive_cat_toys_for_indoor_cats_a0cb637f-5939-44b4-939f-f03e36cde7a7.jpg",
+            "title": "SNOW⁺ Pet Water Fountain",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0683\/5293\/4210\/files\/SNOW_Pet_Water_Fountain.pdf?v=1694772778"
           }
         },
         "fa727dbd-d702-4d5a-8a10-811755ad2472": {
           "type": "product",
           "settings": {
+            "image": "shopify:\/\/shop_images\/automatic_cat_feeders_2b86eac3-995e-4eac-9886-232510013789.jpg",
             "title": "SNOW⁺ Automatic Pet Feeder",
             "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0683\/5293\/4210\/files\/SNOW_Automatic_Pet_Feeder_-_User_Manual.pdf?v=1694772778"
           }
@@ -36,14 +38,15 @@
         "a5cde261-9a8e-444d-a883-bf21997eac98": {
           "type": "product",
           "settings": {
+            "image": "shopify:\/\/shop_images\/interactive_cat_toys_for_indoor_cats_a0cb637f-5939-44b4-939f-f03e36cde7a7.jpg",
             "title": "SNOW⁺ Cat Toy",
             "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0683\/5293\/4210\/files\/SNOW_Roly-Poly_Cat_Toy_-_User_Manual.pdf?v=1694772777"
           }
         }
       },
       "block_order": [
-        "5273f70e-b411-4ba1-9491-944cb75ca84e",
         "eef378e6-adbe-4319-b18e-fa992423a079",
+        "5273f70e-b411-4ba1-9491-944cb75ca84e",
         "fa727dbd-d702-4d5a-8a10-811755ad2472",
         "a5cde261-9a8e-444d-a883-bf21997eac98"
       ],
