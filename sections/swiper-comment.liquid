@@ -1,6 +1,9 @@
 {{ 'swiper-comment.css' | asset_url | stylesheet_tag }}
 
 <div class="swiper swiper-comment page-width" id="swiper{{ section.id }}">
+  <h3 class="swiper-comment-title">
+    {{ section.settings[swiper-comment-title] }}
+  </h3>
   <div class="swiper-wrapper">
     {% for block in section.blocks %}
       <div class="star swiper-slide">
@@ -90,6 +93,13 @@
 {% schema %}
 {
   "name": "swiper-comment",
+  "settings": [
+    {
+      "type": "text",
+      "id": "swiper-comment-title",
+      "label": "swiper comment title"
+    }
+  ],
   "blocks": [
     {
       "type": "comment",
