@@ -1,4 +1,6 @@
-<div class="manuals">
+{{ 'manuals.css' | asset_url | stylesheet_tag }}
+
+<div class="manuals page-width">
   {% for block in section.blocks %}
     <div class="product-manuals">
       <div class="image">

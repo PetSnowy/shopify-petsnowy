@@ -1,0 +1,28 @@
+@import "pxToVw.scss";
+
+.manuals {
+	.product-manuals {}
+}
+
+@media screen and (min-width: 901px) {
+	.manuals {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 10px;
+
+		.product-manuals {
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.manuals {
+		display: flex;
+		column-gap: vw(20px);
+
+		.product-manuals {}
+	}
+}
