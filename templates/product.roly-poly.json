@@ -53,6 +53,11 @@
           "type": "rating",
           "settings": {
           }
+        },
+        "1b46c2d8-f4f6-4f57-96eb-2fe2476e80aa": {
+          "type": "product_acessories",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -64,7 +69,8 @@
         "buy_buttons",
         "463df5a4-44f8-46b9-bcd4-988f445263e5",
         "6c2e8ba8-c850-4a83-bd2f-91386850f34c",
-        "e952d036-a232-4469-a670-156e3bcff37a"
+        "e952d036-a232-4469-a670-156e3bcff37a",
+        "1b46c2d8-f4f6-4f57-96eb-2fe2476e80aa"
       ],
       "settings": {
         "enable_sticky_info": true,
