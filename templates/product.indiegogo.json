@@ -94,6 +94,11 @@
           "settings": {
           }
         },
+        "0d30c098-08a5-4f81-b4d9-68932b875783": {
+          "type": "product_acessories",
+          "settings": {
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -154,6 +159,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "0d30c098-08a5-4f81-b4d9-68932b875783",
         "buy_buttons",
         "description",
         "collapsible-row-0",
