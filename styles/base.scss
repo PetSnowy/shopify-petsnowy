@@ -5561,7 +5561,7 @@ label.productlabel_info,
 		border: vw(2px) solid #231f20;
 		transition: all 0.3s ease;
 		border-radius: vw(80px);
-		font-size: vw(40px);
+		font-size: 18px;
 		font-family: 'FS_JOEY-REGULAR';
 		margin: 0 0 vw(20px) 0 !important;
 
@@ -5635,7 +5635,7 @@ $item: 5;
 	}
 
 	.checkout-button {
-		max-width: 438px;
+		width: 438px;
 		height: 46px;
 		box-sizing: border-box;
 		padding: 10px 20px;
