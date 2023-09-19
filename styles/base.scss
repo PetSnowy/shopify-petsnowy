@@ -5636,7 +5636,8 @@ $item: 5;
 	}
 
 	.checkout-button {
-		width: 438px;
+		width: 100%;
+		max-width: 438px;
 		height: 46px;
 		box-sizing: border-box;
 		padding: 10px 20px;
