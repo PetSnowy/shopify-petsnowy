@@ -5552,7 +5552,7 @@ label.productlabel_info,
 
 	.checkout-button {
 		width: 100%;
-		max-width: 395px;
+		max-width: 438px;
 		height: 46px;
 		box-sizing: border-box;
 		padding: vw(20px) vw(40px);
@@ -5565,6 +5565,9 @@ label.productlabel_info,
 		font-size: 18px;
 		font-family: 'FS_JOEY-REGULAR';
 		margin: 0 0 vw(20px) 0 !important;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
 		&.disable {
 			// pointer-events: none;
