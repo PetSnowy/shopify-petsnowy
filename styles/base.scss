@@ -5651,6 +5651,9 @@ $item: 5;
 		cursor: pointer;
 		font-family: 'FS_JOEY-REGULAR';
 		margin: 0 !important;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
 		&.disable {
 			pointer-events: none;
