@@ -1,60 +1,5 @@
 {
   "sections": {
-    "745f9add-9c6c-4c7d-ad8f-5f9c838a1ac4": {
-      "type": "banner-video",
-      "settings": {
-        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a7d85f11905a44d0afce5e94a942172f.mp4",
-        "mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a7d85f11905a44d0afce5e94a942172f.mp4",
-        "heading": "",
-        "sub_heading": "",
-        "btn_text": "",
-        "btn_url": ""
-      }
-    },
-    "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8": {
-      "type": "rich-text",
-      "blocks": {
-        "b504c877-67df-4d07-b421-9fac2e31e94f": {
-          "type": "text",
-          "settings": {
-            "text": "<p>SNOW<sup>+<\/sup> Self-cleaning Litter Box is officially launching in May.  \n<br>Pre-order now, and save <b>$170<\/b>  <\/p>\n<p><small><small>*Only one discount can be applied per purchase.<\/small><\/small><\/p>"
-          }
-        },
-        "template--17467598012738__5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8-1673937908ad3a5f78-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Book a Free test",
-            "button_link": "#",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        },
-        "dd2bc88a-e91d-418c-b855-746a835bd3c5": {
-          "type": "caption",
-          "settings": {
-            "caption": "Launch Discount. Limited Time Offer!",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "b504c877-67df-4d07-b421-9fac2e31e94f",
-        "template--17467598012738__5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8-1673937908ad3a5f78-2",
-        "dd2bc88a-e91d-418c-b855-746a835bd3c5"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 56,
-        "padding_bottom": 40
-      }
-    },
     "635deaad-6797-4ca6-9a10-c443617e9573": {
       "type": "product-collection-list",
       "disabled": true,
@@ -85,7 +30,6 @@
     },
     "815a64f2-a2d1-497f-9dac-1cabc60918d0": {
       "type": "Explore-products",
-      "disabled": true,
       "blocks": {
         "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1": {
           "type": "variant_picker",
@@ -97,6 +41,7 @@
       "block_order": [
         "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1"
       ],
+      "disabled": true,
       "settings": {
         "description": "<p>Cannot foresee Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
         "product": "petsnowy-indiegogo-launch-discount-30-off",
@@ -169,7 +114,6 @@
     },
     "30307903-7dfd-43fd-a94b-e8afddaa806b": {
       "type": "image-text-block",
-      "disabled": true,
       "blocks": {
         "9d1b52ba-657b-424d-a6c2-057a19a15eed": {
           "type": "title",
@@ -198,6 +142,7 @@
         "9ecc1e22-b451-440f-a65c-c2d0f68d6df7",
         "64e8ed2c-3e0c-47e8-856a-4a4355769102"
       ],
+      "disabled": true,
       "settings": {
         "img": "shopify:\/\/shop_images\/Bg_Image_10.png",
         "heading": "Your Text Here",
@@ -269,7 +214,6 @@
     },
     "a01e7f6a-6040-4334-97af-966598236644": {
       "type": "extra-text-blocks",
-      "disabled": true,
       "blocks": {
         "03d34236-6eee-4408-bf76-43f3607fd691": {
           "type": "title",
@@ -298,6 +242,7 @@
         "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74",
         "c59af14b-539c-4fa1-a0de-8fd8435255cf"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 20,
         "padding_bottom": 40
@@ -334,7 +279,6 @@
     },
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd": {
       "type": "social-image-text",
-      "disabled": true,
       "blocks": {
         "12ee67c8-1af4-46ca-9aa7-64db4191e694": {
           "type": "image",
@@ -367,6 +311,7 @@
         "25153b1b-e008-4818-bb39-f716431c24e4",
         "2cad361c-19e5-4f4b-a613-ac6890e2dafe"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Demoralized by the charms of pleasure of the moment,",
         "insta_txt": "Follow us on Instagram",
@@ -393,15 +338,7 @@
     },
     "main": {
       "type": "main-product",
-      "disabled": true,
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -410,12 +347,6 @@
         "price": {
           "type": "price",
           "settings": {
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
           }
         },
         "quantity_selector": {
@@ -433,69 +364,14 @@
           "type": "description",
           "settings": {
           }
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
-        "loox-rating": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "settings": {
-          }
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "price",
-        "loox-rating",
-        "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "share"
+        "description"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -527,12 +403,6 @@
         "padding_bottom": 28
       }
     },
-    "a4d0076a-b97c-4523-817b-fe8f44b1fdae": {
-      "type": "product-image-sticky",
-      "settings": {
-        "img_main_desktop": "shopify:\/\/shop_images\/10000_fb799e03-3787-4c4e-9355-a8f582edaaa9.jpg"
-      }
-    },
     "10451abc-0e26-45f9-aa30-d4e09e6862b9": {
       "type": "product-parallax",
       "disabled": true,
@@ -551,73 +421,9 @@
         "url_title": "Predictive Alerts",
         "url_text": "The app uses predictive technology to calculate your autonomy based on your riding behavior. We'll notify you when it's about time to recharge or switch to power saving as you ride."
       }
-    },
-    "e58ef0d1-f1f5-4599-850f-a52e50953528": {
-      "type": "product-parallax",
-      "settings": {
-        "title": "Sealed itself",
-        "main_img": "shopify:\/\/shop_images\/2.jpg",
-        "video_link_mobile": "\/\/cdn.shopify.com\/s\/files\/1\/0577\/4222\/9674\/t\/10\/assets\/cowboy-4--removable-battery.h264.mp4?v=113001576765059261401678338185",
-        "main_content": "A design standout is the removable battery that sits in the frame, so it's the only thing to carry inside for a charge. When you're ready to ride again, snap it into place and you're off.",
-        "content1": "25 - 50 miles depending on riding conditions",
-        "content2": "3.5 hours charging time",
-        "content3": "Lightweight",
-        "video_link_desk": "\/\/cdn.shopify.com\/s\/files\/1\/0577\/4222\/9674\/t\/10\/assets\/cowboy-4--removable-battery.h264.mp4?v=113001576765059261401678338185",
-        "img_main_desktop": "shopify:\/\/shop_images\/0000_9d38a466-8a62-45dc-ac21-f402a91e49d6.jpg",
-        "img_main_mobile": "shopify:\/\/shop_images\/0000_9d38a466-8a62-45dc-ac21-f402a91e49d6.jpg",
-        "url": "",
-        "url_title": "Predictive Alerts",
-        "url_text": "The app uses predictive technology to calculate your autonomy based on your riding behavior. We'll notify you when it's about time to recharge or switch to power saving as you ride."
-      }
-    },
-    "3ae4d6b8-1af9-4197-8f1f-556f0d2a2f7d": {
-      "type": "product-image-flex",
-      "settings": {
-        "video_link": "\/\/cdn.shopify.com\/s\/files\/1\/0577\/4222\/9674\/t\/11\/assets\/cowboy-4--assistance.h264.mp4?v=9154547369474219661678339512",
-        "video_title1": "Cowboy AdaptivePower ™",
-        "video_subtitle1": "Gain extra power as the bike adapts instantly to the road to keep you riding smooth",
-        "img_main_desktop": "shopify:\/\/shop_images\/cowboy-4--app-3-us_320x_348ec0f4-955c-47d3-8e3c-a88841cb2568.png",
-        "img_main_mobile": "shopify:\/\/shop_images\/cowboy-4--app-card-battery-us_320x_0c367e7c-c113-4e62-ad2b-d9262cbeb6e3.png",
-        "img_title": "Integrated cockpit",
-        "img_subtitle": "See the route in front of you",
-        "video_link2": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/213d8de3e51f4bae89d3c4bdf2adc117.mp4",
-        "video_title2": "Removable battery",
-        "video_subtitle2": "Take it with you for a charge"
-      }
-    },
-    "f4ce3e07-3dd8-4933-9781-d63d26050dca": {
-      "type": "product-order-now",
-      "custom_css": [
-        "@media screen and (min-width: 1025px) {.product-form__submit {background: unset; border: none; color: #000; }}",
-        "@media screen and (max-width: 1024px) {.product-form__submit {background: #2c2c2c; }}"
-      ],
-      "settings": {
-      }
-    },
-    "loox-product-reviews-app-section": {
-      "type": "apps",
-      "blocks": {
-        "loox-product-reviews": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "settings": {
-            "only_photos": false,
-            "aggregated": false,
-            "hide_thumbnails": false,
-            "maxwidth": 1080
-          }
-        }
-      },
-      "block_order": [
-        "loox-product-reviews"
-      ],
-      "settings": {
-        "include_margins": false
-      }
     }
   },
   "order": [
-    "745f9add-9c6c-4c7d-ad8f-5f9c838a1ac4",
-    "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
     "635deaad-6797-4ca6-9a10-c443617e9573",
     "b6e45bc2-2133-4106-a9db-61ab406abfe6",
     "815a64f2-a2d1-497f-9dac-1cabc60918d0",
@@ -635,11 +441,6 @@
     "d7565464-81fc-450b-a3fd-48c8fbee74e0",
     "main",
     "product-recommendations",
-    "a4d0076a-b97c-4523-817b-fe8f44b1fdae",
-    "10451abc-0e26-45f9-aa30-d4e09e6862b9",
-    "e58ef0d1-f1f5-4599-850f-a52e50953528",
-    "3ae4d6b8-1af9-4197-8f1f-556f0d2a2f7d",
-    "f4ce3e07-3dd8-4933-9781-d63d26050dca",
-    "loox-product-reviews-app-section"
+    "10451abc-0e26-45f9-aa30-d4e09e6862b9"
   ]
 }
