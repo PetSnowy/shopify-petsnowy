@@ -1,0 +1,65 @@
+<div class="video-scroll-wrapper">
+  <div class="video-img-wrapper">
+    {% for block in section.blocks %}
+      <div class="video-img">
+        <picture>
+          <source media="(min-width: 901px)" srcset="{{ block.settings.image_picker | img_url: 'master' }}">
+          <source media="(max-width: 900px)" srcset="{{ block.settings.mb_image_picker | img_url: 'master' }}">
+          <img src="{{ block.settings.image_picker | img_url: 'master' }}" alt="{{ block.settings.text }}">
+        </picture>
+        <div class="video-play"></div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "video-scroll",
+  "settings": [
+    {
+      "type": "text",
+      "id": "h1",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "sub_txt",
+      "label": "Sub Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video_url",
+      "name": "video_url",
+      "settings": [
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "label": "video url"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_picker",
+          "label": "image picker"
+        },
+        {
+          "type": "image_picker",
+          "id": "mb_image_picker",
+          "label": "mb image picker"
+        },
+        {
+          "type": "text",
+          "id": "image_alt",
+          "label": "image alt"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "video-scroll"
+    }
+  ]
+}
+{% endschema %}
