@@ -5499,6 +5499,7 @@ label.productlabel_info,
 	.page-width {
 		width: 100%;
 		padding: vw(0px) vw(40px);
+		box-sizing: border-box;
 	}
 
 	.needsclick {
@@ -5578,7 +5579,7 @@ $item: 5;
 @media screen and (min-width: 901px) {
 	.page-width {
 		box-sizing: border-box;
-		padding: 0px;
+		padding: 0px 20px;
 	}
 
 	#HeaderMenu-MenuList-1 {
