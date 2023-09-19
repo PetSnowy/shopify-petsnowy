@@ -11,7 +11,7 @@ if (!customElements.get('product-form')) {
 			if (document.querySelector('cart-drawer')) this.submitButton.setAttribute('aria-haspopup', 'dialog');
 		}
 
-		onSubmitHandler(evt) {
+		async onSubmitHandler(evt) {
 			evt.preventDefault();
 			if (this.submitButton.getAttribute('aria-disabled') === 'true') return;
 
@@ -32,8 +32,8 @@ if (!customElements.get('product-form')) {
 				this.cart.setActiveElement(document.activeElement);
 			}
 			config.body = formData;
-
-			fetch(`${routes.cart_add_url}`, config)
+			await this.getAttachmentList()
+			await fetch(`${routes.cart_add_url}`, config)
 				.then((response) => response.json())
 				.then((response) => {
 					if (response.status) {
@@ -82,6 +82,28 @@ if (!customElements.get('product-form')) {
 
 			if (errorMessage) {
 				this.errorMessage.textContent = errorMessage;
+			}
+		}
+
+		async getAttachmentList() {
+			const productAttachment = Array.from(document
+				.querySelector('.product_acessories-wrapper')
+				.querySelectorAll('.add_list_product'));
+			const config = fetchConfig('javascript');
+			config.headers['X-Requested-With'] = 'XMLHttpRequest';
+			delete config.headers['Content-Type'];
+
+			for (const attachment of productAttachment) {
+				if (attachment.querySelector('.addons_input').checked) {
+					const formData = new FormData();
+					formData.append('id', attachment.querySelector('.addons_input').value);
+					formData.append('quantity', attachment.querySelector('.quantity__input').value);
+					formData.append('form_type', 'product');
+					await fetch(`${routes.cart_add_url}`, {
+						...config,
+						body: formData,
+					});
+				}
 			}
 		}
 	});

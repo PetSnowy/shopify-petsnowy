@@ -47,8 +47,13 @@
     >
   {%- endif -%}
 
-  <div class="itg_mobile_{{ template.suffix }} product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-    <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
+  <div
+    class="itg_mobile_{{ template.suffix }} product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}"
+    id="new-product"
+  >
+    <div
+      class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}"
+    >
       <media-gallery
         id="MediaGallery-{{ section.id }}"
         role="region"
@@ -403,6 +408,85 @@
                   </div>
                 </details>
               </div>
+            {% when 'product_acessories' %}
+              <div class="product_acessories-wrapper product-form__input product-form__quantity">
+                <div class="add_product_list">
+                  {% for product_addons in product.metafields.custom.addons_product.value %}
+                    {% assign inc_value = product_addons.first_available_variant.price | times: 20 | divided_by: 100 %}
+                    {% assign product_price = product_addons.first_available_variant.price %}
+                    {% assign final_inc = inc_value | minus: product_price %}
+
+                    <div class="add_list_product">
+                      <input
+                        class="addons_input"
+                        type="checkbox"
+                        id="{{ product_addons.title }}"
+                        value="{{ product_addons.first_available_variant.id }}"
+                        data-addonprice="{{ final_inc | money_without_currency | remove: '-' }}"
+                      >
+                      <label class="productlabel_info" for="{{ product_addons.title }}">
+                        <div class="add_list_product_image">
+                          <img
+                            src="{{  product_addons.featured_image | img_url: '100X100' }}"
+                            alt="petsnowy"
+                            loading="lazy"
+                          >
+                        </div>
+
+                        <div class="add_list_product_data">
+                          <div class="price_title_align">
+                            <h3>{{ product_addons.title }}</h3>
+                            <span class="price_without_discount">
+                              {{- product_addons.first_available_variant.price | money -}}
+                            </span>
+                            <span class="price_with_discount">{{ final_inc | money | remove: '-' }}</span>
+                          </div>
+                          <div class="add_descriptions">
+                            {{ product_addons.metafields.custom.product_description.value }}
+                          </div>
+                          <div class="quantity_addons">
+                            <quantity-input class="quantity">
+                              <button class="quantity__button qty_itg no-js-hidden" name="minus" type="button">
+                                {% render 'icon-minus' %}
+                              </button>
+                              <input
+                                class="quantity__input"
+                                type="number"
+                                name="quantity"
+                                id="Quantity-{{ section.id }}"
+                                min="1"
+                                value="1"
+                                qty-price="{{ final_inc | money_without_currency | remove: '-'  }}"
+                                readonly
+                              >
+                              <button class="quantity__button qty_itg no-js-hidden" name="plus" type="button">
+                                {% render 'icon-plus' %}
+                              </button>
+                            </quantity-input>
+                          </div>
+                        </div>
+
+                        <div class="check_product_addons">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#231f20"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-check"
+                          >
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                          </svg>
+                        </div>
+                      </label>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
             {%- when 'quantity_selector' -%}
               <div
                 class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
@@ -606,7 +690,7 @@
             {%- when 'buy_buttons' -%}
               <div {{ block.shopify_attributes }}>
                 <product-form class="product-form">
-                  <div class="product-form__error-message-wrapper" role="alert" hidden>
+                  <div class="product-buttons product-form__error-message-wrapper" role="alert" hidden>
                     <svg
                       aria-hidden="true"
                       focusable="false"
@@ -664,11 +748,6 @@
                           </svg>
                         </div>
                       </button>
-                      {% comment %}
-                        {%- if block.settings.show_dynamic_checkout -%}
-                          {{ form | payment_button }}
-                        {%- endif -%}
-                      {% endcomment %}
                     </div>
                   {%- endform -%}
                 </product-form>
@@ -701,8 +780,6 @@
                   </template>
                 </pickup-availability>
               </div>
-
-              <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
             {% when 'checkout' %}
               <button
                 class="checkout-button {% if cart.item_count == 0 %}disable{% endif %}"
@@ -1396,6 +1473,11 @@
     {
       "type": "description",
       "name": "t:sections.main-product.blocks.description.name",
+      "limit": 1
+    },
+    {
+      "type": "product_acessories",
+      "name": "product acessories",
       "limit": 1
     },
     {

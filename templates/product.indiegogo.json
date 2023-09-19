@@ -94,6 +94,11 @@
           "settings": {
           }
         },
+        "0d30c098-08a5-4f81-b4d9-68932b875783": {
+          "type": "product_acessories",
+          "settings": {
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -154,6 +159,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "0d30c098-08a5-4f81-b4d9-68932b875783",
         "buy_buttons",
         "description",
         "collapsible-row-0",
@@ -162,7 +168,6 @@
         "collapsible-row-3",
         "share"
       ],
-      "disabled": true,
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
@@ -173,239 +178,6 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
-      }
-    },
-    "815a64f2-a2d1-497f-9dac-1cabc60918d0": {
-      "type": "Explore-products",
-      "blocks": {
-        "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        }
-      },
-      "block_order": [
-        "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "description": "<p>Cannot foresee Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
-        "product": "petsnowy-indiegogo-launch-discount-30-off",
-        "padding_top": 0,
-        "padding_bottom": 80
-      }
-    },
-    "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8": {
-      "type": "product-grid-collection",
-      "disabled": true,
-      "settings": {
-        "richtext": "",
-        "images": "shopify:\/\/shop_images\/2-ZERO-OROR_04.gif",
-        "titles": "Your Collection Text Here",
-        "texts": "Your Text Here",
-        "urls": "",
-        "half_img": "shopify:\/\/shop_images\/11_5d9b5548-f0cc-4f26-bc86-b0468a725a83.jpg",
-        "image": "shopify:\/\/shop_images\/3_20b9b2cb-b93c-488c-9d7c-341b75f7f603.jpg",
-        "title": "The Ultimate Solution for Odor-Free Living",
-        "text": "Your Text Here",
-        "url": "",
-        "title2": "",
-        "text2": "",
-        "url2": "",
-        "titles2": "",
-        "texts2": "",
-        "urls2": "",
-        "btns": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b": {
-      "type": "product-grid-image",
-      "disabled": true,
-      "settings": {
-        "flex_data": false,
-        "heading": "Your Text Here",
-        "richtext": "<p>Ban not foresee of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
-        "link": "",
-        "btn_title": "",
-        "img_pet": "shopify:\/\/shop_images\/Bg_Image_7.png",
-        "title2": "",
-        "text2": "",
-        "url2": "",
-        "titles2": "Your Text Here",
-        "texts2": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the.<\/p>",
-        "urls2": "",
-        "btns": "Explore accessories",
-        "padding_top": 50,
-        "padding_bottom": 0
-      }
-    },
-    "f594996b-4dbf-425f-9059-9821e6ea4e6b": {
-      "type": "Information-video",
-      "disabled": true,
-      "settings": {
-        "richtext": "<p>pleasure of the moment, cannot foresee so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
-        "vdio_img": "shopify:\/\/shop_images\/Rectangle_14_1.png",
-        "vdio": "",
-        "heading": "The power you need",
-        "text": "Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.",
-        "padding_top": 20,
-        "padding_bottom": 60
-      }
-    },
-    "30307903-7dfd-43fd-a94b-e8afddaa806b": {
-      "type": "image-text-block",
-      "blocks": {
-        "9d1b52ba-657b-424d-a6c2-057a19a15eed": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
-          }
-        },
-        "9ecc1e22-b451-440f-a65c-c2d0f68d6df7": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
-          }
-        },
-        "64e8ed2c-3e0c-47e8-856a-4a4355769102": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "texts": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire,<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "9d1b52ba-657b-424d-a6c2-057a19a15eed",
-        "9ecc1e22-b451-440f-a65c-c2d0f68d6df7",
-        "64e8ed2c-3e0c-47e8-856a-4a4355769102"
-      ],
-      "disabled": true,
-      "settings": {
-        "img": "shopify:\/\/shop_images\/Bg_Image_10.png",
-        "heading": "Your Text Here",
-        "richtext": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
-        "padding_top": 20,
-        "padding_bottom": 40
-      }
-    },
-    "7956ec82-bee1-4347-a954-e5194f282217": {
-      "type": "product-grid-image",
-      "disabled": true,
-      "settings": {
-        "flex_data": false,
-        "heading": "The Ultimate Solution for Odor-Free Living",
-        "richtext": "<p>Cutting-Edge Triple Deodorization System with TiO2<\/p>",
-        "link": "#",
-        "btn_title": "",
-        "image2": "shopify:\/\/shop_images\/3_20b9b2cb-b93c-488c-9d7c-341b75f7f603.jpg",
-        "title2": "",
-        "text2": "",
-        "url2": "",
-        "images2": "shopify:\/\/shop_images\/2-ZERO-OROR_04.gif",
-        "titles2": "Your Text Here",
-        "texts2": "<p>Demoralized by the charms of pleasure of the moment by desire, that they cannot foresee the pain and trouble.<\/p>",
-        "urls2": "#",
-        "btns": "Explore accessories",
-        "padding_top": 20,
-        "padding_bottom": 40
-      }
-    },
-    "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1": {
-      "type": "grid-image-text",
-      "disabled": true,
-      "settings": {
-        "title": "Your Text Here",
-        "texts": "<p>That they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
-        "title1": "Your Text Here",
-        "texts1": "<p>Ghat they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
-        "title2": "Your Text Here",
-        "textss2": "<p>Qhat they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
-        "flex_data": true,
-        "richtexxt": "<p>Linded by desire, that they cannot foresee Demoralized by the charms of pleasure of the moment, so  the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
-        "images2": "shopify:\/\/shop_images\/2-ZERO-OROR_04.gif",
-        "vdioses": "",
-        "vdios": "",
-        "texts2": "<p>Your Text Here 2<\/p>",
-        "titles2": "Your Text Here",
-        "textext": "<p>That they cannot foresee the pain and trouble that are bound to ensue and  That they cannot foresee the pain.<\/p>",
-        "urls2": "#",
-        "btns": "Explore accessories",
-        "image2": "shopify:\/\/shop_images\/3_20b9b2cb-b93c-488c-9d7c-341b75f7f603.jpg",
-        "vdio": "",
-        "url2": "",
-        "padding_top": 20,
-        "padding_bottom": 40
-      }
-    },
-    "a01e7f6a-6040-4334-97af-966598236644": {
-      "type": "extra-text-blocks",
-      "blocks": {
-        "03d34236-6eee-4408-bf76-43f3607fd691": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
-          }
-        },
-        "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
-          }
-        },
-        "c59af14b-539c-4fa1-a0de-8fd8435255cf": {
-          "type": "title",
-          "settings": {
-            "title": "Your Text Here",
-            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "03d34236-6eee-4408-bf76-43f3607fd691",
-        "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74",
-        "c59af14b-539c-4fa1-a0de-8fd8435255cf"
-      ],
-      "disabled": true,
-      "settings": {
-        "padding_top": 20,
-        "padding_bottom": 40
-      }
-    },
-    "c79d2326-cdd9-44c2-bea3-56cd03cff554": {
-      "type": "compare-section",
-      "disabled": true,
-      "settings": {
-        "main_title": "Compare",
-        "collection": "smart-pet-products",
-        "products_to_show": 3,
-        "columns_desktop": 3,
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a": {
-      "type": "image-banner",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Rectangle_17.png",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     },
     "8182050c-943a-4a32-ab7c-994213dca849": {
@@ -832,16 +604,6 @@
     "635deaad-6797-4ca6-9a10-c443617e9573",
     "b6e45bc2-2133-4106-a9db-61ab406abfe6",
     "main",
-    "815a64f2-a2d1-497f-9dac-1cabc60918d0",
-    "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8",
-    "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b",
-    "f594996b-4dbf-425f-9059-9821e6ea4e6b",
-    "30307903-7dfd-43fd-a94b-e8afddaa806b",
-    "7956ec82-bee1-4347-a954-e5194f282217",
-    "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1",
-    "a01e7f6a-6040-4334-97af-966598236644",
-    "c79d2326-cdd9-44c2-bea3-56cd03cff554",
-    "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a",
     "8182050c-943a-4a32-ab7c-994213dca849",
     "6c8b3f43-2aa2-4945-be93-92dc90208d43",
     "58321a20-dbda-462b-98d1-9ac45de56483",

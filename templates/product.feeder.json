@@ -90,7 +90,6 @@
     },
     "main": {
       "type": "main-product",
-      "disabled": true,
       "blocks": {
         "vendor": {
           "type": "text",
@@ -128,28 +127,7 @@
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {
-          }
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
           }
         },
         "collapsible-row-2": {
@@ -178,6 +156,11 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "f46c54ac-3185-42af-b38b-ae88d2dc378d": {
+          "type": "product_acessories",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -188,12 +171,12 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
-        "share"
+        "share",
+        "f46c54ac-3185-42af-b38b-ae88d2dc378d"
       ],
+      "disabled": true,
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
@@ -208,7 +191,6 @@
     },
     "815a64f2-a2d1-497f-9dac-1cabc60918d0": {
       "type": "Explore-products",
-      "disabled": true,
       "blocks": {
         "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1": {
           "type": "variant_picker",
@@ -220,6 +202,7 @@
       "block_order": [
         "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1"
       ],
+      "disabled": true,
       "settings": {
         "description": "<p>Cannot foresee Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
         "product": "petsnowy-indiegogo-launch-discount-30-off",
@@ -288,7 +271,6 @@
     },
     "30307903-7dfd-43fd-a94b-e8afddaa806b": {
       "type": "image-text-block",
-      "disabled": true,
       "blocks": {
         "9d1b52ba-657b-424d-a6c2-057a19a15eed": {
           "type": "title",
@@ -317,6 +299,7 @@
         "9ecc1e22-b451-440f-a65c-c2d0f68d6df7",
         "64e8ed2c-3e0c-47e8-856a-4a4355769102"
       ],
+      "disabled": true,
       "settings": {
         "img": "shopify:\/\/shop_images\/Bg_Image_10.png",
         "heading": "Your Text Here",
@@ -376,7 +359,6 @@
     },
     "a01e7f6a-6040-4334-97af-966598236644": {
       "type": "extra-text-blocks",
-      "disabled": true,
       "blocks": {
         "03d34236-6eee-4408-bf76-43f3607fd691": {
           "type": "title",
@@ -405,6 +387,7 @@
         "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74",
         "c59af14b-539c-4fa1-a0de-8fd8435255cf"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 20,
         "padding_bottom": 40
@@ -485,7 +468,6 @@
     },
     "58d276f3-46b1-43b3-88fd-33aecbac841a": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "f2d3099e-7f82-4dfa-adf8-fc126b1de423": {
           "type": "heading",
@@ -515,6 +497,7 @@
         "ae54ae90-8a4a-4842-8254-a8757a667737",
         "e40294b3-aa83-405e-b467-cab4eb3f4c07"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/cat_food_dispenser_petsnowy.jpg",
         "image_mob": "shopify:\/\/shop_images\/cat_food_dispenser_petsnowy_e735e72d-80d4-49e4-9217-ea08968b5af2.jpg",
