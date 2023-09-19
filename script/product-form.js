@@ -107,4 +107,25 @@ if (!customElements.get('product-form')) {
 			}
 		}
 	});
+
+	const checkout = document.querySelector('.checkout-button')
+	checkout.addEventListener('click', () => {
+		const disabled = checkout.classList.contains('disable')
+		if (disabled) {
+			const formData = new FormData();
+			const config = fetchConfig('javascript');
+			config.headers['X-Requested-With'] = 'XMLHttpRequest';
+			delete config.headers['Content-Type'];
+			formData.append('id', document.querySelector('product-form').querySelector('input[name="id"]').value);
+			formData.append('quantity', 1);
+			fetch(`${routes.cart_add_url}`, {
+				...config,
+				body: formData,
+			}).then(() => {
+				window.location.href = '/checkout';
+			})
+		} else {
+			window.location.href = '/checkout';
+		}
+	})
 }
