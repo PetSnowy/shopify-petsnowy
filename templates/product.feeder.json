@@ -176,6 +176,7 @@
         "share",
         "f46c54ac-3185-42af-b38b-ae88d2dc378d"
       ],
+      "disabled": true,
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
