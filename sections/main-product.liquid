@@ -705,10 +705,7 @@
               <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
             {% when 'checkout' %}
               <button
-                type="submit"
-                name="checkout"
                 class="checkout-button {% if cart.item_count == 0 %}disable{% endif %}"
-                form="CartDrawer-Form"
               >
                 {{ block.settings['checkout-text'] }}
               </button>
