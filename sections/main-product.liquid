@@ -409,7 +409,7 @@
                 </details>
               </div>
             {% when 'product_acessories' %}
-              <div class="product_acessories-wrapper product-form__input product-form__quantity">
+              <div class="product_acessories-wrapper">
                 <div class="add_product_list">
                   {% for product_addons in product.metafields.custom.addons_product.value %}
                     {% assign inc_value = product_addons.first_available_variant.price | times: 20 | divided_by: 100 %}

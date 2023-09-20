@@ -114,8 +114,10 @@ if (!customElements.get('product-form')) {
 		const config = fetchConfig('javascript');
 		config.headers['X-Requested-With'] = 'XMLHttpRequest';
 		delete config.headers['Content-Type'];
-		formData.append('id', document.querySelector('product-form').querySelector('input[name="id"]').value);
-		formData.append('quantity', 1);
+		const id = document.querySelector('product-form').querySelector('input[name="id"]').value
+		const quantity = document.querySelector('.product-form__input.product-form__quantity').querySelector('.quantity').input.value
+		formData.append('id', id);
+		formData.append('quantity', parseInt(quantity));
 		fetch(`${routes.cart_add_url}`, {
 			...config,
 			body: formData,
