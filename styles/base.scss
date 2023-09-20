@@ -4482,9 +4482,13 @@ span.socl_insta_icon svg {
 		display: inline-block;
 	}
 
-	span:nth-child(2) span {
+	span:nth-child(2) {
 		text-decoration: line-through;
 		margin-right: 5px;
+
+		span {
+			text-decoration: line-through;
+		}
 	}
 }
 
