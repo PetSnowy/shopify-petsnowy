@@ -77,30 +77,62 @@
         "be0d10c2-0f34-45b5-b4a4-df5086a2ca1f": {
           "type": "title",
           "settings": {
-            "h2": "Device Not Sensing the Cat"
+            "h2": "Introducing Your Cat to the Litter Box"
           }
         },
         "104fbcbe-1555-4f86-894a-46e0ed5f42c0": {
           "type": "block",
           "settings": {
-            "h3": "Q: What is the purpose of weight reset in the PetSnowy smart litter box?",
-            "text": "<p>A: Weight reset refers to resetting the weight reading of the litter box. It is a critical operation that ensures accurate detection of the weight of the cat entering the device.<\/p>",
+            "h3": "ShouldI leave the top open or remove the bonnet when introducing my cat to SNOW+?",
+            "text": "<p> Yes, it is recommended to leave the top open or remove the bonnet for a while to allow your cats to feel at ease and become familiar with the new litter box.<\/p>",
             "video": ""
           }
         },
         "ebdaef2e-f535-407a-81e3-d1f95ee03c3f": {
           "type": "block",
           "settings": {
-            "h3": "Q: How does the gravity sensor work in the device?",
-            "text": "<p>A: The gravity sensor detects changes in gravity when an object, such as a cat, enters the device. It immediately stops the \"cleaning\" and \"deodorizing\" functions to ensure the safety of the cat. The device enters a temporary sleep mode and alerts the user about the object's presence.<\/p>",
+            "h3": "Howshould I initially use SNOW+ during the transition period?",
+            "text": "<p>During the first week, use SNOW+ as a regular open litter box without activating the cleaning cycle. Keep it in the same location as the previous litter box and maintain the surrounding items unchanged.<\/p>",
             "video": ""
           }
         },
         "a0b1163f-52a8-45a0-a60c-700278241177": {
           "type": "block",
           "settings": {
-            "h3": "Q: How can the weight be reset in the device?",
-            "text": "<p>A: The weight can be reset automatically by the device or manually by the user. Here are the methods:<br\/>   1. The device will automatically restart and zero the weight when it is powered on.<br\/>   2. Continuous removal and reinstallation of the top cover for 3 seconds will automatically zero the weight.<br\/>   3. Removing and reinstalling the litter box will automatically zero the weight.<br\/>   4. When the ball returns to its initial position, the weight will automatically be zeroed.<br\/>   5. Pressing the \"R\" key once will zero the weight.<br\/>   6. Restoring the device to factory settings will also reset the weight.<\/p>",
+            "h3": "How canI help my cat become familiar with the new litter box scent?",
+            "text": "<p>To help your cat become familiar with the scent of the new litter box, add all used cat litter from the previous litter box into SNOW+. This will assist in creating a familiar scent association.<\/p>",
+            "video": ""
+          }
+        },
+        "3489426d-9cf4-45e2-8e2e-028b2e072305": {
+          "type": "block",
+          "settings": {
+            "h3": "Can I reduce the frequency of cleaning the oldlitter box during the transition period?",
+            "text": "<p>Yes, reducing the frequency of cleaning the old litter box can make it less attractive to your cat and encourage them to start using SNOW+<\/p>",
+            "video": ""
+          }
+        },
+        "d4e3a7e9-8fce-4833-a4d2-b5fbb28b7a77": {
+          "type": "block",
+          "settings": {
+            "h3": "When should I install back the bonnet on SNOW+?",
+            "text": "<p>Once your cat starts using SNOW+ for the first time after a week, you can install back the bonnet. After two more days, begin the cleaning cycle and allow your cat to become accustomed to the sound. Power off the device again. Once it is frequently used, power it on again, switch to automatic cleaning mode, and remove the old litter box.<\/p>",
+            "video": ""
+          }
+        },
+        "36d1d08b-b9de-4ef9-8c7d-c3ddfeba2aff": {
+          "type": "block",
+          "settings": {
+            "h3": "Whatshould I do if my cat does not like the fan noise or scent after deodorization?",
+            "text": "<p> If your cat does not like the fan noise, you can remove it for a few weeks. If they do not like the scent after deodorization, remove the fragrance box for a few weeks before trying again.<\/p>",
+            "video": ""
+          }
+        },
+        "f89a2163-fce1-42b2-9568-75547f3569ad": {
+          "type": "block",
+          "settings": {
+            "h3": "Whatcan I do if my cat is reluctant to use SNOW+ without the top cover?",
+            "text": "<p>If your cat is reluctant to use SNOW+ without the top cover, it may be due to their fear of the darkness inside. To address this, you can place the uncovered box in an area with more natural light to illuminate the interior. Another solution is to install small battery-powered LED lights inside the box, which has worked for some customers.<\/p>",
             "video": ""
           }
         },
@@ -171,6 +203,10 @@
         "104fbcbe-1555-4f86-894a-46e0ed5f42c0",
         "ebdaef2e-f535-407a-81e3-d1f95ee03c3f",
         "a0b1163f-52a8-45a0-a60c-700278241177",
+        "3489426d-9cf4-45e2-8e2e-028b2e072305",
+        "d4e3a7e9-8fce-4833-a4d2-b5fbb28b7a77",
+        "36d1d08b-b9de-4ef9-8c7d-c3ddfeba2aff",
+        "f89a2163-fce1-42b2-9568-75547f3569ad",
         "db7c8836-ec18-44b0-bad1-1fb6bde9e4bf",
         "421ee906-2710-4718-a796-7f9e2806d23c",
         "fcb2ce87-4e3c-456d-8b54-ee2c77e58679",
