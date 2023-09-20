@@ -109,7 +109,7 @@ if (!customElements.get('product-form')) {
 	});
 
 	const checkout = document.querySelector('.checkout-button')
-	checkout.addEventListener('click', () => {
+	checkout && checkout.addEventListener('click', () => {
 		const formData = new FormData();
 		const config = fetchConfig('javascript');
 		config.headers['X-Requested-With'] = 'XMLHttpRequest';

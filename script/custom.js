@@ -10,6 +10,11 @@ $(document).ready(function () {
 		};
 	}
 
+	//获取价格单位
+
+	const currency = $('.price_without_discount').text() || $('.price_without_discount .money').text()
+	const monetaryUnit = currency.split("")[0]
+
 	$(".slide_arrow svg").click(function () {
 		document.querySelectorAll('.banner')[0].scrollIntoView({ behavior: "smooth", block: "center" })
 	});
@@ -255,7 +260,7 @@ $(document).ready(function () {
 		var price_option = parseFloat(localStorage.getItem("variant_main_price"));
 		var comapre_price_option = parseFloat(localStorage.getItem("variant_main_compareprice"));
 
-		$('.main_prodcut_contain.active .total_price_add').text('$' + price_option);
+		$('.main_prodcut_contain.active .total_price_add').text(monetaryUnit + price_option);
 		$('.main_prodcut_contain.active .total_price_add').attr('data_price', price_option);
 		$('.main_prodcut_contain.active .total_price_add').attr('data-addon', price_option);
 
@@ -269,8 +274,8 @@ $(document).ready(function () {
 				var checkhandle = $(this).attr('replace_data');
 				if (checkhandle == carthandle) {
 					$(this).attr('value', price_varaintid);
-					$(this).find('span.money').text('$' + price_option);
-					$(this).find('.price_without_discount span').text('$' + comapre_price_option);
+					$(this).find('span.money').text(monetaryUnit + price_option);
+					$(this).find('.price_without_discount span').text(monetaryUnit + comapre_price_option);
 					$(this).find('.quantity__input').addClass('finalproduct_qty');
 				}
 			});
@@ -296,7 +301,7 @@ $(document).ready(function () {
 		var price_option = price_option * mina_qty;
 		var final_price = price_option + sum_data;
 		var final_price = final_price.toFixed(2);
-		$(document).find(".main_prodcut_contain.active .total_price_add").text('$' + final_price);
+		$(document).find(".main_prodcut_contain.active .total_price_add").text(monetaryUnit + final_price);
 		$(document).find(".main_prodcut_contain.active .total_price_add").attr('data-addon', final_price);
 	}
 
@@ -332,7 +337,7 @@ $(document).ready(function () {
 		var price_option = parseFloat($(this).attr('data_var_price'));
 		var comapre_price_option = parseFloat($(this).attr('main-compare'));
 
-		$('.main_prodcut_contain.active .total_price_add').text('$' + price_option);
+		$('.main_prodcut_contain.active .total_price_add').text(monetaryUnit + price_option);
 		$('.main_prodcut_contain.active .total_price_add').attr('data_price', price_option);
 		$('.main_prodcut_contain.active .total_price_add').attr('data-addon', price_option);
 
@@ -345,8 +350,8 @@ $(document).ready(function () {
 				var checkhandle = $(this).attr('replace_data');
 				if (checkhandle == carthandle) {
 					$(this).attr('value', price_varaintid);
-					$(this).find('span.money').text('$' + price_option);
-					$(this).find('.price_without_discount span').text('$' + comapre_price_option);
+					$(this).find('span.money').text(monetaryUnit + price_option);
+					$(this).find('.price_without_discount span').text(monetaryUnit + comapre_price_option);
 					$(this).find('.quantity__input').addClass('finalproduct_qty');
 				}
 			});
@@ -373,7 +378,7 @@ $(document).ready(function () {
 
 		var final_price = price_option + sum_data;
 		var final_price = final_price.toFixed(2);
-		$(document).find(".main_prodcut_contain.active .total_price_add").text('$' + final_price);
+		$(document).find(".main_prodcut_contain.active .total_price_add").text(monetaryUnit + final_price);
 		$(document).find(".main_prodcut_contain.active .total_price_add").attr('data-addon', final_price);
 
 	});
@@ -403,7 +408,7 @@ $(document).ready(function () {
 
 		var final_price = main_product + sum_data;
 		var final_price = final_price.toFixed(2);
-		$(document).find(".main_prodcut_contain.active .total_price_add").text('$' + final_price);
+		$(document).find(".main_prodcut_contain.active .total_price_add").text(monetaryUnit + final_price);
 		$(document).find(".main_prodcut_contain.active .total_price_add").attr('data-addon', final_price);
 
 		var GetId = $(this).attr("value");
@@ -443,7 +448,7 @@ $(document).ready(function () {
 		var final_price = main_product + sum_data;
 		var final_price = final_price.toFixed(2);
 
-		$(document).find(".main_prodcut_contain.active .total_price_add").text('$' + final_price);
+		$(document).find(".main_prodcut_contain.active .total_price_add").text(monetaryUnit + final_price);
 		$(document).find(".main_prodcut_contain.active .total_price_add").attr('data-addon', final_price);
 
 		var first_addons_id = $(this).closest('.first_addons_qty').find('.addons_input').attr('value');
@@ -457,7 +462,7 @@ $(document).ready(function () {
 			var matchId = $(this).attr("data-finlid");
 			if (matchId == first_addons_id) {
 				$(this).find('.quantity__input').val(qty);
-				$(this).find('.price_with_discount span').text('$' + same_row_price);
+				$(this).find('.price_with_discount span').text(monetaryUnit + same_row_price);
 			}
 		});
 
@@ -490,7 +495,7 @@ $(document).ready(function () {
 			var main_product = main_product * mina_qty;
 			var final_price = main_product + sum_data;
 			var final_price = final_price.toFixed(2);
-			$(document).find(".total_price_add").text('$' + final_price);
+			$(document).find(".total_price_add").text(monetaryUnit + final_price);
 			$(document).find(".total_price_add").attr('data-addon', final_price);
 
 		}, 1000);
@@ -522,7 +527,7 @@ $(document).ready(function () {
 			});
 			var final_price = main_product + sum_data;
 			var final_price = final_price.toFixed(2);
-			$(document).find(".main_prodcut_contain.active .total_price_add").text('$' + final_price);
+			$(document).find(".main_prodcut_contain.active .total_price_add").text(monetaryUnit + final_price);
 			$(document).find(".main_prodcut_contain.active .total_price_add").attr('data-addon', final_price);
 
 		}, 1000);
@@ -535,7 +540,7 @@ $(document).ready(function () {
 		var qty = $(this).closest('.second_addons_qty').find('.quantity__input').val();
 		var same_row_price = price * qty;
 		var same_row_price = same_row_price.toFixed(2);
-		$(this).closest('.second_addons_qty').find('.price_with_discount span').text('$' + same_row_price);
+		$(this).closest('.second_addons_qty').find('.price_with_discount span').text(monetaryUnit + same_row_price);
 
 		setTimeout(function () {
 			var main_product = parseFloat($(document).find(".main_prodcut_contain.active .total_price_add").attr('data_price'));
@@ -559,7 +564,7 @@ $(document).ready(function () {
 			var main_product = main_product * mina_qty;
 			var final_price = main_product + sum_data;
 			var final_price = final_price.toFixed(2);
-			$(document).find(".main_prodcut_contain.active .total_price_add").text('$' + final_price);
+			$(document).find(".main_prodcut_contain.active .total_price_add").text(monetaryUnit + final_price);
 			$(document).find(".main_prodcut_contain.active .total_price_add").attr('data-addon', final_price);
 
 		}, 1000);
@@ -759,7 +764,7 @@ $(document).ready(function () {
 				});
 				var final_price = main_product + sum_data;
 				var final_price = final_price.toFixed(2);
-				$(document).find(".main_prodcut_contain.active .total_price_add").text('$' + final_price);
+				$(document).find(".main_prodcut_contain.active .total_price_add").text(monetaryUnit + final_price);
 				$(document).find(".main_prodcut_contain.active .total_price_add").attr('data-addon', final_price);
 
 			}
@@ -795,7 +800,7 @@ $(document).ready(function () {
 				});
 				var final_price = main_product + sum_data;
 				var final_price = final_price.toFixed(2);
-				$(document).find(".total_price_add").text('$' + final_price);
+				$(document).find(".total_price_add").text(monetaryUnit + final_price);
 				$(document).find(".total_price_add").attr('data-addon', final_price);
 			}
 		});
