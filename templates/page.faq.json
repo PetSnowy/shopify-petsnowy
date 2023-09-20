@@ -23,46 +23,54 @@
         "9066bad3-74a4-44f8-8ca9-cd3864c180e0": {
           "type": "title",
           "settings": {
-            "h2": "Resolving Weight-related Issues and Troubleshooting Steps"
+            "h2": "Setting Up Your Equipment Correctly"
           }
         },
         "1ef7c224-21af-4840-9b32-99ad4a684736": {
           "type": "block",
           "settings": {
-            "h3": "Q: How do I clean the globe of the litter box?",
-            "text": "<p>A: Follow these steps to clean the globe:<br\/>   1. Press the \"clear\" button to rotate the globe and remove any remaining cat litter.<br\/>   2. Press the \"reset\" button to return the globe to its original position.<br\/>   3. Unplug the power plug.<br\/>   4. Lift the top cover off by holding it on either side of the top handle.<br\/>   5. Lift the globe off the base.<br\/>   6. Clean the globe with mild soap and water. You can rinse or soak the globe directly in water.<br\/>   7. Allow the globe to dry completely before reassembling it onto the base and replacing the top cover.<\/p>",
+            "h3": "Where should I place SNOW+ during installation?",
+            "text": "<p> It is recommended to place SNOW+ near the cat's original litter box to aid in the cat's adaptation. Ensure it is placed on a flat, stable surface near a power outlet, avoiding soft or uneven surfaces. Leave at least 2 inches of space around the device for the safety sensor and avoid placing it against a wall. Do not place the device outdoors or in high heat or humid areas.<\/p>",
             "video": ""
           }
         },
         "bdf9d913-abf9-477e-b811-f4d661697cef": {
           "type": "block",
           "settings": {
-            "h3": "Q: How do I clean the waste drawer of the litter box?",
-            "text": "<p>A: To clean the waste drawer, follow these steps:<br\/>   1. Pull out the waste drawer from the base.<br\/>   2. Clean the waste drawer bottom part with mild soap and water. <br\/>   3. Allow the drawer to dry completely.<br\/>   4. Replace the waste drawer with a new cat litter bag and reassemble it onto the base.<\/p>",
+            "h3": "What type of litter should I use with SNOW+?",
+            "text": "<p>It is recommended to use high-quality clay clumping litter. Avoid using highly absorbent, non-clumping, loosely clumping, or pellet-based litters made of newspaper or wood. If using small beads or crystals, ensure they can pass through the filter and consider mixing them with clay litter in a 7\/3 ratio. When initially introducing SNOW+ to your cat, it is best to use the same brand or type of litter they were previously using.<\/p>",
             "video": ""
           }
         },
         "eb88209d-c046-4ae1-bbcc-6079530ae063": {
           "type": "block",
           "settings": {
-            "h3": "Q: Can water come into contact with the metal parts of the waste drawer?",
-            "text": "<p>A: It is recommended to minimize water contact with the metal parts of the device. Only clean the device when necessary to reduce the frequency of cleaning.<\/p>",
+            "h3": "How should I add litter to SNOW+?",
+            "text": "<p>Lift the cover and pour clumping litter into the litter bed from the<br\/>opening. Be cautious not to exceed the \"maximum fill line\" indicated on the device. The litter bed can hold a maximum of 5.7 pounds (2.6 kg) of litter. If using mineral sand, it can hold a maximum of 5 kg. Spread the litter evenly once it is inside the litter bed. If you accidentally add too much litter, remove the excess to prevent it from falling into the drawer during cleaning.<\/p>",
             "video": ""
           }
         },
         "d3341a7a-fe79-4871-8a42-690f2b74441e": {
           "type": "block",
           "settings": {
-            "h3": "Q: How should I clean the base of the litter box?",
-            "text": "<p>A: When cleaning the base, follow these guidelines:<br\/>   1. Do not immerse, spray, or soak the base or control panel. They contain sensors and electronic equipment.<br\/>   2. Wipe the surface of the base with a damp cloth.<br\/>   3. Avoid using bleach to clean the base.<\/p>",
+            "h3": "Can I use a litter mat or carpet with SNOW+?",
+            "text": "<p>Yes, you can use a litter mat or carpet with SNOW+. Ensure that it covers the entire bottom of the device and keeps all four legs stable to maintain stability and prevent slipping.<\/p>",
             "video": ""
           }
         },
         "af7ef521-3c4b-48c3-8963-8e3c01399919": {
           "type": "block",
           "settings": {
-            "h3": "Q: How often should I clean the litter box?",
-            "text": "<p>A: The frequency of cleaning depends on the usage and the number of cats using the litter box. It is generally recommended to clean the litter box at least once a week to maintain cleanliness and hygiene.<\/p>",
+            "h3": "Can I place SNOW+ against a wall?",
+            "text": "<p>No, it is recommended to avoid placing SNOW+ against a wall. Leave at least 2 inches of space around the device to ensure the proper functioning of the safety sensor.<\/p>",
+            "video": ""
+          }
+        },
+        "9547f1d8-66b4-4796-a603-66326ecfee1c": {
+          "type": "block",
+          "settings": {
+            "h3": "Can I place SNOW+ outdoors or in high heat or humid areas?",
+            "text": "<p>No, SNOW+ should not be placed outdoors or in high heat or humid areas. It is designed for indoor use only.<\/p>",
             "video": ""
           }
         },
@@ -158,6 +166,7 @@
         "eb88209d-c046-4ae1-bbcc-6079530ae063",
         "d3341a7a-fe79-4871-8a42-690f2b74441e",
         "af7ef521-3c4b-48c3-8963-8e3c01399919",
+        "9547f1d8-66b4-4796-a603-66326ecfee1c",
         "be0d10c2-0f34-45b5-b4a4-df5086a2ca1f",
         "104fbcbe-1555-4f86-894a-46e0ed5f42c0",
         "ebdaef2e-f535-407a-81e3-d1f95ee03c3f",
