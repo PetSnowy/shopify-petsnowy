@@ -139,46 +139,46 @@
         "db7c8836-ec18-44b0-bad1-1fb6bde9e4bf": {
           "type": "title",
           "settings": {
-            "h2": "Device Inactivity During Cleaning Mode"
+            "h2": "POST: Diagnosing Hardware Issues duringStartup"
           }
         },
         "421ee906-2710-4718-a796-7f9e2806d23c": {
           "type": "block",
           "settings": {
-            "h3": "Q: How can I know if the weight has been successfully zeroed?",
-            "text": "<p>A: When the weight is successfully zeroed, the device will indicate this through its lighting. The cleaning indicator light, emptying indicator light, and reset indicator light will flash alternately three times. This indicates that the weight has been reset and the device is ready for operation.<\/p>",
+            "h3": "How do I properly poweron the device?",
+            "text": "<p>To power on the device, first, plug the small plug into the power input port on the base, then plug the AC\/DC adapter into a nearby power outlet.<\/p>",
             "video": ""
           }
         },
         "fcb2ce87-4e3c-456d-8b54-ee2c77e58679": {
           "type": "block",
           "settings": {
-            "h3": "Q: What is the purpose of the \"R\" key on the PetSnowy smart litter box?",
-            "text": "<p>A: The \"R\" key serves multiple functions, including device networking, weight reset, program reset, and factory reset.<\/p>",
+            "h3": "What is the self-test process during startup?",
+            "text": "<p>During startup, the device will perform a self-test process to check the installation of each component. It will complete the self-check within three minutes. It is important not to touch the litter box during the self-check process to avoid interrupting the program.<\/p>",
             "video": ""
           }
         },
         "3f8d1feb-7c1c-4aba-986c-5530cf6d19c9": {
           "type": "block",
           "settings": {
-            "h3": "Q: How can I perform a weight reset using the \"R\" key?",
-            "text": "<p>A: To perform a weight reset:<br\/>   - Ensure that the device is in the initial position.<br\/>   - Press the reset key on the control panel.<br\/>   - The three key indicator lights will flash three times to indicate a successful weight reset.<\/p>",
+            "h3": " What does the self-check processinvolve for each part?",
+            "text": "<p> Here are the self-check processes for each part:<\/p><p>1. Litter Box and Top Cover: The device detects the installation of the litter box and top cover. If there are any installation errors, it will report them in the SNOW+ APP and prompt you to check and install them correctly.<\/p><p>2. Globe: The motor operates to execute the globe self-check, testing the rotation and the ability to return to the initial position. The device will indicate the cleaning process in the app, and if the self-check is successful, it will report \"Cleaning program normal.\"<\/p><p>3. Garbage Bag: The infrared sensor detects if the garbage bag is full and placed correctly. If conditions are normal, the device enters the ready state.<\/p><p>4. Cloud Indicator Light\/Button Light: The cloud indicator light reflects the automatic cleaning<br\/>waiting time set by the user, while the button lights indicate the cleaning, emptying, and reset functions.<\/p><p>5. Bluetooth Network Indicator Light: The Bluetooth indicator light indicates the device's networking mode, such as being connected to the network or searching for a network.<\/p>",
             "video": ""
           }
         },
         "4ac11c4d-4404-4e4f-bbd4-646a4b511793": {
           "type": "block",
           "settings": {
-            "h3": "Q: How can I enter networking mode using the \"R\" key?",
-            "text": "<p>A: To enter networking mode using the \"R\" key:<br\/>   - On the control panel, press and hold the reset key for more than 3 seconds.<br\/>   - The networking indicator light will flash rapidly, indicating that it has entered the Bluetooth networking mode.<br\/>   - If you continue to press the reset key for more than 6 seconds, the indicator light will flash slowly, indicating that it has entered the AP networking mode.<br\/>   - For more detailed networking instructions, please refer to the installation instructions of the application.<\/p>",
+            "h3": " What happens if there is an issueduring the self-check process?",
+            "text": "<p>If any issues occur during the self-check process, such as installation<br\/>errors, interruptions, or abnormal self-check results, the device will report them in the SNOW+ APP and indicate the problem through the indicator lights.<\/p>",
             "video": ""
           }
         },
         "c44b97ad-038c-46ec-957f-2839d4009ba5": {
           "type": "block",
           "settings": {
-            "h3": "Q: What does the networking indicator light indicate during networking mode?",
-            "text": "<p>A: During networking mode:<br\/>   - Rapid flashing of the networking indicator light indicates that the device has entered Bluetooth networking mode.<br\/>   - Slow flashing of the networking indicator light indicates that the device has entered AP networking mode.<\/p>",
+            "h3": " What mode does the device enter after theself-check is complete?",
+            "text": "<p>After the self-check is complete, the device enters standby mode, ready for normal operation.<\/p>",
             "video": ""
           }
         },
