@@ -169,7 +169,7 @@
         "4ac11c4d-4404-4e4f-bbd4-646a4b511793": {
           "type": "block",
           "settings": {
-            "h3": " What happens if there is an issueduring the self-check process?",
+            "h3": " What happens if there is an issue during the self-check process?",
             "text": "<p>If any issues occur during the self-check process, such as installation<br\/>errors, interruptions, or abnormal self-check results, the device will report them in the SNOW+ APP and indicate the problem through the indicator lights.<\/p>",
             "video": ""
           }
