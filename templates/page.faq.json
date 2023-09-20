@@ -161,7 +161,7 @@
         "3f8d1feb-7c1c-4aba-986c-5530cf6d19c9": {
           "type": "block",
           "settings": {
-            "h3": " What does the self-check processinvolve for each part?",
+            "h3": " What does the self-check process involve for each part?",
             "text": "<p> Here are the self-check processes for each part:<\/p><p>1. Litter Box and Top Cover: The device detects the installation of the litter box and top cover. If there are any installation errors, it will report them in the SNOW+ APP and prompt you to check and install them correctly.<\/p><p>2. Globe: The motor operates to execute the globe self-check, testing the rotation and the ability to return to the initial position. The device will indicate the cleaning process in the app, and if the self-check is successful, it will report \"Cleaning program normal.\"<\/p><p>3. Garbage Bag: The infrared sensor detects if the garbage bag is full and placed correctly. If conditions are normal, the device enters the ready state.<\/p><p>4. Cloud Indicator Light\/Button Light: The cloud indicator light reflects the automatic cleaning<br\/>waiting time set by the user, while the button lights indicate the cleaning, emptying, and reset functions.<\/p><p>5. Bluetooth Network Indicator Light: The Bluetooth indicator light indicates the device's networking mode, such as being connected to the network or searching for a network.<\/p>",
             "video": ""
           }
@@ -177,7 +177,7 @@
         "c44b97ad-038c-46ec-957f-2839d4009ba5": {
           "type": "block",
           "settings": {
-            "h3": " What mode does the device enter after theself-check is complete?",
+            "h3": " What mode does the device enter after the self-check is complete?",
             "text": "<p>After the self-check is complete, the device enters standby mode, ready for normal operation.<\/p>",
             "video": ""
           }
