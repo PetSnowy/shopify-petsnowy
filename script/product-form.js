@@ -4,13 +4,15 @@ if (!customElements.get('product-form')) {
 			super();
 			this.submitButton = this.querySelector('.product-form__submit');
 
-			this.productId = this.querySelector('.productId').value
-			this.quantity = document.querySelector('.product-form__input.product-form__quantity').querySelector('input').value
+			this.productId = document.querySelector('product-form').querySelector('input[name="id"]').value
 
 			this.querySelector('[name=id]').disabled = false;
 			this.submitButton.addEventListener('click', this.onSubmitHandler.bind(this), { passive: false });
 
 			this.cart = document.querySelector('cart-notification') || document.querySelector('cart-drawer');
+
+			this.checkoutButton = document.querySelector('.checkout-button');
+			this.checkoutButton && this.checkoutButton.addEventListener('click', this.onCheckoutHandler.bind(this), { passive: false });
 
 			if (document.querySelector('cart-drawer')) this.submitButton.setAttribute('aria-haspopup', 'dialog');
 		}
@@ -29,16 +31,17 @@ if (!customElements.get('product-form')) {
 			config.headers['X-Requested-With'] = 'XMLHttpRequest';
 			delete config.headers['Content-Type'];
 
+			const quantity = document.querySelector('.product-form__input.product-form__quantity').querySelector('input').value
+
 			const formData = new FormData();
 			if (this.cart) {
 				formData.append('sections', this.cart.getSectionsToRender().map((section) => section.id));
 				formData.append('sections_url', window.location.pathname);
 				formData.append('id', this.productId);
-				formData.append('quantity', parseInt(this.quantity));
+				formData.append('quantity', parseInt(quantity));
 				formData.append('form_type', 'product');
 				this.cart.setActiveElement(document.activeElement);
 			}
-			config.body = formData;
 
 			try {
 				await this.getAttachmentList()
@@ -46,7 +49,7 @@ if (!customElements.get('product-form')) {
 				console.log(error);
 			}
 
-			await fetch(`${routes.cart_add_url}`, config)
+			await fetch(`${routes.cart_add_url}`, { ...config, body: formData })
 				.then((response) => response.json())
 				.then((response) => {
 					if (response.status) {
@@ -120,23 +123,21 @@ if (!customElements.get('product-form')) {
 				}
 			}
 		}
-	});
 
-	const checkout = document.querySelector('.checkout-button')
-	checkout && checkout.addEventListener('click', () => {
-		const formData = new FormData();
-		const config = fetchConfig('javascript');
-		config.headers['X-Requested-With'] = 'XMLHttpRequest';
-		delete config.headers['Content-Type'];
-		const id = document.querySelector('product-form').querySelector('input[name="id"]').value
-		const quantity = document.querySelector('.product-form__input.product-form__quantity').querySelector('.quantity').input.value
-		formData.append('id', id);
-		formData.append('quantity', parseInt(quantity));
-		fetch(`${routes.cart_add_url}`, {
-			...config,
-			body: formData,
-		}).then(() => {
-			window.location.href = '/checkout';
-		})
-	})
+		async onCheckoutHandler() {
+			const quantity = document.querySelector('.product-form__input.product-form__quantity').querySelector('input').value
+			const formData = new FormData();
+			const config = fetchConfig('javascript');
+			config.headers['X-Requested-With'] = 'XMLHttpRequest';
+			delete config.headers['Content-Type'];
+			formData.append('id', this.productId);
+			formData.append('quantity', parseInt(quantity));
+			await fetch(`${routes.cart_add_url}`, {
+				...config,
+				body: formData,
+			}).then(() => {
+				window.location.href = '/checkout';
+			})
+		}
+	});
 }
