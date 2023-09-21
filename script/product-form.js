@@ -32,7 +32,13 @@ if (!customElements.get('product-form')) {
 				this.cart.setActiveElement(document.activeElement);
 			}
 			config.body = formData;
-			await this.getAttachmentList()
+
+			try {
+				await this.getAttachmentList()
+			} catch (error) {
+				console.log(error);
+			}
+
 			await fetch(`${routes.cart_add_url}`, config)
 				.then((response) => response.json())
 				.then((response) => {
@@ -86,9 +92,10 @@ if (!customElements.get('product-form')) {
 		}
 
 		async getAttachmentList() {
-			const productAttachment = Array.from(document
-				.querySelector('.product_acessories-wrapper')
-				.querySelectorAll('.add_list_product'));
+			const productAttachmentWrapper = document.querySelector('.product_acessories-wrapper')
+
+			if (!productAttachmentWrapper) return
+			const productAttachment = Array.from(productAttachmentWrapper.querySelectorAll('.add_list_product'));
 			const config = fetchConfig('javascript');
 			config.headers['X-Requested-With'] = 'XMLHttpRequest';
 			delete config.headers['Content-Type'];
