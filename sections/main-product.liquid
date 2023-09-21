@@ -706,13 +706,7 @@
                     <span class="product-form__error-message"></span>
                   </div>
 
-                  {%- form 'product',
-                    product,
-                    id: product_form_id,
-                    class: 'form',
-                    novalidate: 'novalidate',
-                    data-type: 'add-to-cart-form'
-                  -%}
+                  <form>
                     <input
                       type="hidden"
                       name="id"
@@ -748,7 +742,7 @@
                         </div>
                       </button>
                     </div>
-                  {%- endform -%}
+                  </form>
                 </product-form>
 
                 {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
