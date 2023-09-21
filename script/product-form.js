@@ -2,11 +2,12 @@ if (!customElements.get('product-form')) {
 	customElements.define('product-form', class ProductForm extends HTMLElement {
 		constructor() {
 			super();
-
-			this.form = this.querySelector('form');
 			this.submitButton = this.querySelector('.product-form__submit');
 
-			this.form.querySelector('[name=id]').disabled = false;
+			this.productId = this.querySelector('.productId').value
+			this.quantity = document.querySelector('.product-form__input.product-form__quantity').querySelector('input').value
+
+			this.querySelector('[name=id]').disabled = false;
 			this.submitButton.addEventListener('click', this.onSubmitHandler.bind(this), { passive: false });
 
 			this.cart = document.querySelector('cart-notification') || document.querySelector('cart-drawer');
@@ -28,10 +29,13 @@ if (!customElements.get('product-form')) {
 			config.headers['X-Requested-With'] = 'XMLHttpRequest';
 			delete config.headers['Content-Type'];
 
-			const formData = new FormData(this.form);
+			const formData = new FormData();
 			if (this.cart) {
 				formData.append('sections', this.cart.getSectionsToRender().map((section) => section.id));
 				formData.append('sections_url', window.location.pathname);
+				formData.append('id', this.productId);
+				formData.append('quantity', parseInt(this.quantity));
+				formData.append('form_type', 'product');
 				this.cart.setActiveElement(document.activeElement);
 			}
 			config.body = formData;
