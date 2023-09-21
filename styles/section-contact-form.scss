@@ -29,8 +29,8 @@
 
 @media screen and (min-width: 901px) {
 	.contact-us {
-		padding: 60px 5rem;
 		max-width: var(--page-width);
+		padding: 60px 0px;
 
 		.contact__fields {
 			display: grid;
@@ -39,7 +39,7 @@
 		}
 
 		.contact-left {
-			width: 515px;
+			width: 400px;
 
 			.left-title {
 				font-size: 16px;
