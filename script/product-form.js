@@ -42,28 +42,31 @@ if (!customElements.get('product-form')) {
 			await fetch(`${routes.cart_add_url}`, config)
 				.then((response) => response.json())
 				.then((response) => {
-					if (response.status) {
-						this.handleErrorMessage(response.description);
+					// if (response.status) {
+					// 	this.handleErrorMessage(response.description);
 
-						const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
-						if (!soldOutMessage) return;
-						this.submitButton.setAttribute('aria-disabled', true);
-						this.submitButton.querySelector('span').classList.add('hidden');
-						soldOutMessage.classList.remove('hidden');
-						this.error = true;
-						return;
-					}
+					// 	const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
+					// 	if (!soldOutMessage) return;
+					// 	this.submitButton.setAttribute('aria-disabled', true);
+					// 	this.submitButton.querySelector('span').classList.add('hidden');
+					// 	soldOutMessage.classList.remove('hidden');
+					// 	this.error = true;
+					// 	return;
+					// } else if (!this.cart) {
+					// 	window.location = window.routes.cart_url;
+					// 	return;
+					// }
 
-					this.error = false;
-					const quickAddModal = this.closest('quick-add-modal');
-					if (quickAddModal) {
-						document.body.addEventListener('modalClosed', () => {
-							setTimeout(() => { this.cart.renderContents(response) });
-						}, { once: true });
-						quickAddModal.hide(true);
-					} else {
-						this.cart.renderContents(response);
-					}
+					// this.error = false;
+					// const quickAddModal = this.closest('quick-add-modal');
+					// if (quickAddModal) {
+					// 	document.body.addEventListener('modalClosed', () => {
+					// 		setTimeout(() => { this.cart.renderContents(response) });
+					// 	}, { once: true });
+					// 	quickAddModal.hide(true);
+					// } else {
+					// 	this.cart.renderContents(response);
+					// }
 				})
 				.catch((e) => {
 					console.error(e);
