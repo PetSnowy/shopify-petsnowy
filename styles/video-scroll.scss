@@ -1,0 +1,11 @@
+@import "pxToVw.scss";
+
+.video-scroll-wrapper {}
+
+@media screen and (min-width: 901px) {
+	.video-scroll-wrapper {}
+}
+
+@media screen and (max-width: 900px) {
+	.video-scroll-wrapper {}
+}
