@@ -195,8 +195,8 @@
           "type": "block",
           "settings": {
             "h3": " What mode does the device enter after the self-check is complete?",
-            "text": "<p>After the self-check is complete, the device enters standby mode, ready for normal <span class=\"video\">operation.<\/span><\/p>",
-            "youtube_video": "xir9KyKkmNo",
+            "text": "<p>After the self-check is complete, the device enters standby mode, ready for normal operation.<\/p>",
+            "youtube_video": "",
             "video": ""
           }
         },
@@ -204,8 +204,8 @@
           "type": "block",
           "settings": {
             "h3": "Where can I find the networking instructions for the PetSnowy smart litter box?",
-            "text": "<p>You can find detailed networking instructions in the installation instructions of the PetSnowy application. Please refer to the instructions specific to your device for accurate setup and networking <span class='video'> guidance <\/span><\/p>",
-            "youtube_video": "xir9KyKkmNo",
+            "text": "<p>You can find detailed networking instructions in the installation instructions of the PetSnowy application. Please refer to the instructions specific to your device for accurate setup and networking guidance <\/p>",
+            "youtube_video": "",
             "video": ""
           }
         }
