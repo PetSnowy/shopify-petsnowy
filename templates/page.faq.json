@@ -185,8 +185,8 @@
         "38e3150e-5f35-4b53-a078-5028e40730cb": {
           "type": "block",
           "settings": {
-            "h3": "Q: Where can I find the networking instructions for the PetSnowy smart litter box?",
-            "text": "<p>A: You can find detailed networking instructions in the installation instructions of the PetSnowy application. Please refer to the instructions specific to your device for accurate setup and networking guidance.<\/p>",
+            "h3": "Where can I find the networking instructions for the PetSnowy smart litter box?",
+            "text": "<p>You can find detailed networking instructions in the installation instructions of the PetSnowy application. Please refer to the instructions specific to your device for accurate setup and networking guidance.<\/p>",
             "video": ""
           }
         }
