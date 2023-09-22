@@ -8,6 +8,10 @@
 		height: 100vh;
 		background: rgba($color: #000000, $alpha: 0.8);
 		display: none;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: 10000;
 
 		.iframe {
 			position: absolute;
@@ -31,9 +35,28 @@
 		padding-bottom: vw(40px);
 
 		.video-popup {
-			iframe {
+			.iframe {
 				width: vw(680px);
-				height: auto;
+				height: vw(400px);
+				border-radius: vw(20px);
+			}
+
+			iframe {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				border-radius: vw(20px);
+			}
+
+			.close {
+				width: vw(40px);
+				height: vw(40px);
+				position: absolute;
+				background: url('./close.png') no-repeat center/cover;
+				display: block !important;
+				cursor: pointer;
+				right: 0px;
+				top: vw(-70px);
 			}
 		}
 
@@ -184,6 +207,10 @@
 		.answer_txt {
 			margin-top: vw(64px);
 
+			.video {
+				cursor: pointer;
+			}
+
 			p {
 				word-wrap: break-word;
 				font-size: vw(26px);
@@ -198,6 +225,26 @@
 			display: flex;
 			flex-direction: column;
 			flex-wrap: wrap;
+		}
+
+		.video-popup {
+			iframe {
+				border-radius: 10px;
+				overflow: hidden;
+			}
+
+			.close {
+				width: 40px;
+				height: 40px;
+				background: url('./close.png') no-repeat center/cover;
+				position: absolute;
+				display: block !important;
+				cursor: pointer;
+				top: -48px;
+				right: 0px;
+				transform: rotate(360deg);
+				transition: all 0.3s ease;
+			}
 		}
 
 		.search-result {
@@ -353,6 +400,10 @@
 
 		.answer_txt {
 			margin-top: 32px;
+
+			.video {
+				cursor: pointer;
+			}
 
 			p {
 				font-size: 18px;

@@ -158,4 +158,29 @@ $(function () {
 		}
 	});
 
+	// video 视频弹出窗口
+
+	const answer = document.querySelectorAll('.answer_txt')
+
+	for (let index = 0; index < answer.length; index++) {
+		const item = answer[index];
+		const video = item.querySelector('.video')
+		if (!video) continue
+		const videoPopup = item.querySelector('.video-popup')
+		const close = item.querySelector('.close')
+
+		video.addEventListener('click', () => {
+			videoPopup.style.display = 'block'
+		})
+		close.addEventListener('click', () => {
+			videoPopup.style.display = 'none'
+		})
+
+		videoPopup.addEventListener('click', function (event) {
+			if (event.target !== videoPopup) {
+				return;
+			}
+			this.style.display = 'none'
+		});
+	}
 });

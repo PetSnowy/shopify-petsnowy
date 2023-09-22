@@ -73,16 +73,18 @@
                   {% endif %}
                   {% if block.settings.youtube_video %}
                     <div class="video-popup">
-                      <div class="close"></div>
-                      <iframe
-                        src="https://www.youtube.com/embed/{{ block.settings.youtube_video }}"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen
-                        width="1200px"
-                        height="800px"
-                      ></iframe>
+                      <div class="iframe">
+                        <div class="close"></div>
+                        <iframe
+                          src="https://www.youtube.com/embed/{{ block.settings.youtube_video }}"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen
+                          width="1200px"
+                          height="800px"
+                        ></iframe>
+                      </div>
                     </div>
                   {% endif %}
                 </div>
