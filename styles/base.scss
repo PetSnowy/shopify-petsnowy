@@ -5573,6 +5573,15 @@ label.productlabel_info,
 		align-items: center;
 		justify-content: center;
 	}
+
+	.header__heading-link {
+		img {
+			width: vw(400px);
+			object-fit: contain;
+			max-width: 180px;
+			object-position: center;
+		}
+	}
 }
 
 $item: 5;
