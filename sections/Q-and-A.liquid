@@ -81,6 +81,18 @@
     </div>
     <div class="search-result"></div>
   </div>
+  <div class="video-popup">
+    <div class="close"></div>
+    <iframe
+      src="https://www.youtube.com/embed/{{ block.settings.text }}"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      width="1200px"
+      height="800px"
+    ></iframe>
+  </div>
 </div>
 <script src="{{ 'q-and-a.js' | asset_url }}"></script>
 
@@ -121,7 +133,7 @@
           "label": "Question"
         },
         {
-          "type": "richtext",
+          "type": "liquid",
           "id": "text",
           "label": "Answer"
         },

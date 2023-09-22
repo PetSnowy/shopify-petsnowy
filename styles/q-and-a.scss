@@ -3,6 +3,19 @@
 }
 
 .faq_qa_main {
+	.video-popup {
+		width: 100vw;
+		height: 100vh;
+		background: rgba($color: #000000, $alpha: 0.8);
+		display: none;
+
+		.iframe {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
 
 	h1,
 	h2,
@@ -16,6 +29,13 @@
 	.faq_qa_main {
 		padding-top: vw(20px);
 		padding-bottom: vw(40px);
+
+		.video-popup {
+			iframe {
+				width: vw(680px);
+				height: auto;
+			}
+		}
 
 		.qna_hr {
 			margin: vw(40px) 0px;
