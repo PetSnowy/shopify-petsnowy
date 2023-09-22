@@ -242,8 +242,11 @@
 				cursor: pointer;
 				top: -48px;
 				right: 0px;
-				transform: rotate(360deg);
 				transition: all 0.3s ease;
+
+				&:hover {
+					transform: rotate(180deg);
+				}
 			}
 		}
 

@@ -177,7 +177,7 @@ $(function () {
 		})
 
 		videoPopup.addEventListener('click', function (event) {
-			if (event.target !== videoPopup) {
+			if (event.target !== this) {
 				return;
 			}
 			this.style.display = 'none'
