@@ -22,6 +22,16 @@ class CartDrawer extends HTMLElement {
 			}
 		});
 	}
+	//update cart data
+	connectedCallback() {
+		jQuery.getJSON('/cart.js', function ({ items }) {
+			document.dispatchEvent(new CustomEvent('cart:build', { bubbles: true }));
+			document.dispatchEvent(new CustomEvent('cart:refresh', {
+				bubbles: true,
+				detail: items
+			}));
+		});
+	}
 
 	open(triggeredBy) {
 		if (triggeredBy) this.setActiveElement(triggeredBy);
