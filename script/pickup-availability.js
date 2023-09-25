@@ -7,6 +7,7 @@ if (!customElements.get('pickup-availability')) {
 
       this.errorHtml = this.querySelector('template').content.firstElementChild.cloneNode(true);
       this.onClickRefreshList = this.onClickRefreshList.bind(this);
+			this.fetchAvailability = this.fetchAvailability.bind(this)
       this.fetchAvailability(this.dataset.variantId);
     }
 
@@ -33,6 +34,7 @@ if (!customElements.get('pickup-availability')) {
     }
 
     onClickRefreshList(evt) {
+			console.log(this.fetchAvailability);
       this.fetchAvailability(this.dataset.variantId);
     }
 

@@ -825,7 +825,10 @@ class VariantSelects extends HTMLElement {
 		const pickUpAvailability = document.querySelector('pickup-availability');
 		if (!pickUpAvailability) return;
 
-		if (this.currentVariant && this.currentVariant.available) {
+		const product = document.querySelector('product-form');
+		product && product.updateOption()
+
+		if (this.currentVariant && this.currentVariant.available && pickUpAvailability.fetchAvailability) {
 			pickUpAvailability.fetchAvailability(this.currentVariant.id);
 		} else {
 			pickUpAvailability.removeAttribute('available');

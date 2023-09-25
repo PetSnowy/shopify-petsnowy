@@ -590,7 +590,7 @@
                     {{ block.shopify_attributes }}
                   >
                     {%- for option in product.options_with_values -%}
-                      <fieldset class="js product-form__input">
+                      <fieldset class="js product-form__input product-form-option">
                         <legend class="form__label">Option</legend>
                         {%- for value in option.values -%}
                           <input
@@ -599,6 +599,8 @@
                             name="Option"
                             value="{{ value | escape }}"
                             form="{{ product_form_id }}"
+                            option_id="{{ product.selected_or_first_available_variant.id }}"
+
                             {% if option.selected_value == value %}
                               checked
                             {% endif %}
