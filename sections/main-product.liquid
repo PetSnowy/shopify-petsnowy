@@ -690,13 +690,15 @@
                 </div>
               </noscript>
             {% when 'product-recommendation' %}
+              <script src="{{ 'product-recommendation.js' | asset_url }}" defer="defer"></script>
               <product-recommendation
                 class="product-recommendation"
-                product-id="{{ product.selected_or_first_available_variant.id }}"
+                product-id="{{ product.id }}"
               >
-                <div class="product-item"></div>
+                <div class="product-item">ProductRecommendation</div>
               </product-recommendation>
             {%- when 'buy_buttons' -%}
+              <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
               <div {{ block.shopify_attributes }}>
                 <product-form class="product-form">
                   <div class="product-buttons product-form__error-message-wrapper" role="alert" hidden>
