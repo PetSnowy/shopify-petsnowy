@@ -1,30 +1,41 @@
 {{ 'product-inventory.css' | asset_url | stylesheet_tag }}
 
 <div class="product-inventory-wrapper">
-  <product-inventory class="product-inventory">
+  <product-inventory
+    class="product-inventory"
+    data-inventory-total="{{ section.settings.total_inventory }}"
+    data-activity-quota="{{ section.settings.activity_quota }}"
+  >
     {% for variant in product.variants %}
-      <span class="quantity" data-quantity="{{ variant.inventory_quantity }}"></span>
+      <span class="inventory-quantity" data-quantity="{{ variant.inventory_quantity }}"></span>
     {% endfor %}
+    <span class="inventory"></span>
   </product-inventory>
 </div>
 <script>
   class ProductInventory extends HTMLElement {
     constructor() {
       super();
-      this.allInventory = 200;
-      console.log(this.getCurrentInventory());
+      this.totalInventory = parseInt(this.dataset['inventory-total']);
+      this.activityQuota = parseInt(this.dataset['activity-quota']);
+      console.log(this.totalInventory, this.activityQuota);
     }
     connectedCallback() {
-      this.inventory = setInterval(() => {}, 5000);
+      const inventory = this.querySelector('.inventory');
+      this.inventory = setInterval(() => {
+        const count = this.activityQuota - (this.totalInventory - this.getCurrentInventory());
+        if (count) clearInterval(this.inventory);
+        inventory.innerText = `${count}`;
+      }, 5000);
     }
     disconnectedCallback() {
       clearInterval(this.inventory);
     }
     getCurrentInventory() {
-      const quantity = Array.from(this.querySelectorAll('.quantity'));
+      const quantityElements = Array.from(this.querySelectorAll('.inventory-quantity'));
       return (
-        quantity &&
-        quantity.reduce((a, b) => parseInt(a.getAttribute('data-quantity')) + parseInt(b.getAttribute('data-quantity')))
+        quantityElements &&
+        quantityElements.reduce((totalQuantity, element) => totalQuantity + parseInt(element.dataset.quantity), 0)
       );
     }
   }
@@ -36,13 +47,13 @@
   "settings": [
     {
       "type": "text",
-      "id": "h1",
-      "label": "Heading"
+      "id": "total_inventory",
+      "label": "total inventory"
     },
     {
       "type": "text",
-      "id": "sub_txt",
-      "label": "Sub Heading"
+      "id": "activity_quota",
+      "label": "activity quota"
     }
   ],
   "presets": [
