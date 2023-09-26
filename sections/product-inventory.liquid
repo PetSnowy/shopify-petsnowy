@@ -1,13 +1,35 @@
 {{ 'product-inventory.css' | asset_url | stylesheet_tag }}
 
 <div class="product-inventory-wrapper">
-  <div class="product-inventory">
+  <product-inventory class="product-inventory">
     {% for variant in product.variants %}
-      <p>Variant: {{ variant.title }}</p>
-      <p>Inventory Quantity: {{ variant.inventory_quantity }}</p>
+      <span class="quantity" data-quantity="{{ variant.inventory_quantity }}"></span>
     {% endfor %}
-  </div>
+  </product-inventory>
 </div>
+<script>
+  class ProductInventory extends HTMLElement {
+    constructor() {
+      super();
+      this.allInventory = 200;
+      console.log(this.getCurrentInventory());
+    }
+    connectedCallback() {
+      this.inventory = setInterval(() => {}, 5000);
+    }
+    disconnectedCallback() {
+      clearInterval(this.inventory);
+    }
+    getCurrentInventory() {
+      const quantity = Array.from(this.querySelectorAll('.quantity'));
+      return (
+        quantity &&
+        quantity.reduce((a, b) => parseInt(a.getAttribute('data-quantity')) + parseInt(b.getAttribute('data-quantity')))
+      );
+    }
+  }
+  customElements.define('product-inventory', ProductInventory);
+</script>
 {% schema %}
 {
   "name": "product inventory",
