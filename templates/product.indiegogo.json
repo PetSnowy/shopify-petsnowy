@@ -603,6 +603,13 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "ac291641-af53-4136-b5d2-637a40b1fc89": {
+      "type": "product-inventory",
+      "settings": {
+        "total_inventory": "200",
+        "activity_quota": "50"
+      }
     }
   },
   "order": [
@@ -620,6 +627,7 @@
     "909b5ce5-d2e3-4008-a0a9-f437c0b89bb4",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
-    "product-recommendations"
+    "product-recommendations",
+    "ac291641-af53-4136-b5d2-637a40b1fc89"
   ]
 }
