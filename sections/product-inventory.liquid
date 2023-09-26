@@ -1,0 +1,32 @@
+{{ 'product-inventory.css' | asset_url | stylesheet_tag }}
+
+<div class="product-inventory-wrapper">
+  <div class="product-inventory">
+    {% for variant in product.variants %}
+      <p>Variant: {{ variant.title }}</p>
+      <p>Inventory Quantity: {{ variant.inventory_quantity }}</p>
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "product inventory",
+  "settings": [
+    {
+      "type": "text",
+      "id": "h1",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "sub_txt",
+      "label": "Sub Heading"
+    }
+  ],
+  "presets": [
+    {
+      "name": "product inventory"
+    }
+  ]
+}
+{% endschema %}
