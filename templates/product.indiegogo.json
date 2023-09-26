@@ -99,6 +99,11 @@
           "settings": {
           }
         },
+        "9282e18d-720c-4943-a475-ee6a154261c7": {
+          "type": "product-recommendation",
+          "settings": {
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -160,6 +165,7 @@
         "variant_picker",
         "quantity_selector",
         "0d30c098-08a5-4f81-b4d9-68932b875783",
+        "9282e18d-720c-4943-a475-ee6a154261c7",
         "buy_buttons",
         "description",
         "collapsible-row-0",
