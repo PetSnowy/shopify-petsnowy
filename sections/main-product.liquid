@@ -689,6 +689,13 @@
                   </div>
                 </div>
               </noscript>
+            {% when 'product-recommendation' %}
+              <product-recommendation
+                class="product-recommendation"
+                product-id="{{ product.selected_or_first_available_variant.id }}"
+              >
+                <div class="product-item"></div>
+              </product-recommendation>
             {%- when 'buy_buttons' -%}
               <div {{ block.shopify_attributes }}>
                 <product-form class="product-form">
@@ -1451,6 +1458,11 @@
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
         }
       ]
+    },
+    {
+      "type": "product-recommendation",
+      "name": "product recommendation",
+      "limit": 1
     },
     {
       "type": "checkout",
