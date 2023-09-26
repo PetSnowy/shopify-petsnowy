@@ -25,9 +25,6 @@
       if (!count) return;
       inventory.innerText = `${count}`;
     }
-    disconnectedCallback() {
-      clearInterval(this.setInterval);
-    }
     getCurrentInventory() {
       const quantityElements = Array.from(this.querySelectorAll('.inventory-quantity'));
       return (
