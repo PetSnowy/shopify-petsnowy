@@ -16,20 +16,17 @@
   class ProductInventory extends HTMLElement {
     constructor() {
       super();
-      this.totalInventory = parseInt(this.dataset['inventory-total']);
-      this.activityQuota = parseInt(this.dataset['activity-quota']);
-      console.log(this.totalInventory, this.activityQuota);
+      this.totalInventory = parseInt(this.dataset.inventoryTotal);
+      this.activityQuota = parseInt(this.dataset.activityQuota);
     }
     connectedCallback() {
       const inventory = this.querySelector('.inventory');
-      this.inventory = setInterval(() => {
-        const count = this.activityQuota - (this.totalInventory - this.getCurrentInventory());
-        if (count) clearInterval(this.inventory);
-        inventory.innerText = `${count}`;
-      }, 5000);
+      const count = this.activityQuota - (this.totalInventory - this.getCurrentInventory());
+      if (!count) return;
+      inventory.innerText = `${count}`;
     }
     disconnectedCallback() {
-      clearInterval(this.inventory);
+      clearInterval(this.setInterval);
     }
     getCurrentInventory() {
       const quantityElements = Array.from(this.querySelectorAll('.inventory-quantity'));
@@ -45,6 +42,11 @@
 {
   "name": "product inventory",
   "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "title"
+    },
     {
       "type": "text",
       "id": "total_inventory",
