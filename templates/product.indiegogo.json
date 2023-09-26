@@ -606,6 +606,7 @@
     },
     "ac291641-af53-4136-b5d2-637a40b1fc89": {
       "type": "product-inventory",
+      "disabled": true,
       "settings": {
         "total_inventory": "200",
         "activity_quota": "50"
