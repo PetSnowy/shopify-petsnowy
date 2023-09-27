@@ -469,6 +469,15 @@
         "padding_bottom": 0
       }
     },
+    "67351f1a-11a8-4ea8-b339-d27d634a1cce": {
+      "type": "product-inventory",
+      "settings": {
+        "title": "title",
+        "text": "texttexttexttexttexttexttexttexttexttexttexttexttexttexttext",
+        "total_inventory": "200",
+        "activity_quota": "50"
+      }
+    },
     "909b5ce5-d2e3-4008-a0a9-f437c0b89bb4": {
       "type": "collapsible-content",
       "blocks": {
@@ -603,15 +612,6 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "67351f1a-11a8-4ea8-b339-d27d634a1cce": {
-      "type": "product-inventory",
-      "settings": {
-        "title": "",
-        "text": "",
-        "total_inventory": "",
-        "activity_quota": ""
-      }
     }
   },
   "order": [
@@ -626,10 +626,10 @@
     "19e9f25b-39eb-48f1-8c86-9308c2fe2f3d",
     "58d276f3-46b1-43b3-88fd-33aecbac841a",
     "03727ca6-4d51-464a-9105-edc5bf54883b",
+    "67351f1a-11a8-4ea8-b339-d27d634a1cce",
     "909b5ce5-d2e3-4008-a0a9-f437c0b89bb4",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
-    "product-recommendations",
-    "67351f1a-11a8-4ea8-b339-d27d634a1cce"
+    "product-recommendations"
   ]
 }
