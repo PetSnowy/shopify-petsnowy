@@ -6,10 +6,13 @@
     data-inventory-total="{{ section.settings.total_inventory }}"
     data-activity-quota="{{ section.settings.activity_quota }}"
   >
+    <p class="title">{{ section.settings.title }}</p>
+    <p class="text">{{ section.settings.total_inventory }}</p>
+    <span class="inventory"></span>
+
     {% for variant in product.variants %}
       <span class="inventory-quantity" data-quantity="{{ variant.inventory_quantity }}"></span>
     {% endfor %}
-    <span class="inventory"></span>
   </product-inventory>
 </div>
 <script>
