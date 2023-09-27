@@ -1143,6 +1143,11 @@ label.hide_change_mainproduct {
 
 		quantity-input.quantity {
 			width: vw(240px);
+
+			button {
+				width: vw(70px);
+				height: vw(70px);
+			}
 		}
 
 	}
