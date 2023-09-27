@@ -174,7 +174,6 @@
         "collapsible-row-3",
         "share"
       ],
-      "disabled": true,
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
@@ -608,6 +607,7 @@
       "type": "product-inventory",
       "disabled": true,
       "settings": {
+        "title": "",
         "total_inventory": "200",
         "activity_quota": "50"
       }
