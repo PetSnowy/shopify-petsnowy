@@ -1,1 +1,35 @@
-.product-inventory-wrapper .product-inventory {}
+@media screen and (max-width: 901px) {
+	.product-inventory-wrapper .product-inventory {
+		.title {
+			font-size: 30px;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+
+		.text {
+			text-align: center;
+			margin-bottom: 10px;
+			font-size: 20px;
+		}
+
+		.inventory {
+			font-size: 30px;
+			background: rgb(248, 99, 45);
+			color: #ffffff;
+			display: block;
+			padding: 5px;
+			margin: 0px auto;
+		}
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.product-inventory-wrapper .product-inventory {
+		padding: vw(40px) 0px;
+
+		.title {
+			font-size: vw(40px);
+			margin-bottom: vw(20px);
+		}
+	}
+}
