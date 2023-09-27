@@ -1,13 +1,13 @@
 {{ 'product-inventory.css' | asset_url | stylesheet_tag }}
 
-<div class="product-inventory-wrapper">
+<div class="product-inventory-wrapper page-width">
   <product-inventory
     class="product-inventory"
     data-inventory-total="{{ section.settings.total_inventory }}"
     data-activity-quota="{{ section.settings.activity_quota }}"
   >
     <p class="title">{{ section.settings.title }}</p>
-    <p class="text">{{ section.settings.total_inventory }}</p>
+    <p class="text">{{ section.settings.text }}</p>
     <span class="inventory"></span>
 
     {% for variant in product.variants %}
@@ -21,6 +21,10 @@
       super();
       this.totalInventory = parseInt(this.dataset.inventoryTotal);
       this.activityQuota = parseInt(this.dataset.activityQuota);
+      this.yRange = [-1, 1];
+      this.xRange = [-1, 1];
+      this.addEventListener('mousemove', (e) => this.onmousemove(e));
+      this.addEventListener('mouseout', this.handleMouseout);
     }
     connectedCallback() {
       const inventory = this.querySelector('.inventory');
@@ -34,6 +38,26 @@
         quantityElements &&
         quantityElements.reduce((totalQuantity, element) => totalQuantity + parseInt(element.dataset.quantity), 0)
       );
+    }
+    getRotate = (range, value, max) => (value / max) * (range[1] - range[0]) + range[0];
+
+    onmousemove(e) {
+      const { offsetX, offsetY } = e;
+      const { offsetWidth, offsetHeight } = this;
+      const ry = -this.getRotate(this.yRange, offsetX, offsetWidth);
+      const rx = this.getRotate(this.xRange, offsetY, offsetHeight);
+      this.style.transform = `perspective(700px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+      this.style.transition = 'none';
+    }
+
+    handleMouseout() {
+      this.style.transition = 'transform 0.3s ease';
+      this.style.transform = 'rotateX(0deg) rotateY(0deg)';
+    }
+
+    disconnectedCallback() {
+      this.removeEventListener('mousemove', this.onmousemove);
+      this.removeEventListener('mouseout', this.handleMouseout);
     }
   }
   customElements.define('product-inventory', ProductInventory);
