@@ -7,7 +7,18 @@
     data-activity-quota="{{ section.settings.activity_quota }}"
   >
     <p class="title">{{ section.settings.title }}</p>
-    <p class="text">{{ section.settings.total_inventory }}</p>
+    <p class="text">{{ section.settings.text }}</p>
+
+    <picture>
+      <source media="(min-width: 901px)" srcset="{{ section.settings.pc_image | img_url: 'master' }}">
+      <source media="(max-width: 900px)" srcset="{{ section.settings.mb_image | img_url: 'master' }}">
+      <img
+        src="{{ section.settings.image_picker | img_url: 'master' }}"
+        alt="{{ section.settings.text }}"
+        loading="lazy"
+      >
+    </picture>
+
     <span class="inventory"></span>
 
     {% for variant in product.variants %}
@@ -49,8 +60,23 @@
     },
     {
       "type": "text",
-      "id": "total_inventory",
-      "label": "total inventory"
+      "id": "title",
+      "label": "title"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "text"
+    },
+    {
+      "type": "image_picker",
+      "id": "pc_image",
+      "label": "pc image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mb_image",
+      "label": "mb image"
     },
     {
       "type": "text",
