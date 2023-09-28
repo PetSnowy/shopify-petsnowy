@@ -1,107 +1,172 @@
 @import "pxToVw.scss";
 
-.product-inventory-wrapper .product-inventory {
-	box-sizing: border-box;
-	background: #ffffff;
-	display: flex;
+.product-inventory-wrapper {
 
-	.title {
-		font-weight: 700;
-		text-align: center;
-	}
+	.product-inventory {
+		box-sizing: border-box;
+		background: #ffffff;
+		display: flex;
 
-	.text {
-		text-align: center;
-	}
-
-	.inventory {
-		color: rgb(192, 144, 103);
-		width: fit-content;
-		font-weight: 700;
-	}
-
-	picture {
-		display: block;
-		overflow: hidden;
-
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-	}
-}
-
-@media screen and (min-width: 901px) {
-	.product-inventory-wrapper .product-inventory {
-		margin-top: 0px;
-		margin-bottom: 60px;
-		width: fit-content;
-		align-items: center;
-		border-radius: 10px;
-		box-shadow: 2px 4px 12px rgba(0, 0, 0, .08);
-		overflow: hidden;
-		padding: 15px;
 
 		.title {
-			font-size: 16px;
-			margin-bottom: 10px;
-			margin: 0;
+			font-weight: 700;
+			text-align: center;
 		}
 
 		.text {
-			margin-bottom: 10px;
-			font-size: 12px;
+			text-align: center;
 		}
 
 		.inventory {
-			font-size: 12px;
-			padding: 5px;
-			margin: 0px auto;
+			color: rgb(192, 144, 103);
+			width: fit-content;
+			font-weight: 700;
 		}
 
 		picture {
-			border-radius: 10px;
-			height: 80px;
-			margin-right: 10px;
-			width: 107px;
+			display: block;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
 		}
+	}
+
+}
+
+@media screen and (min-width: 901px) {
+	.product-inventory-wrapper {
+		.right-img {
+			display: none;
+		}
+
+		.inventory-left,
+		.inventory-right {
+			flex: 1;
+		}
+
+		.inventory-left {
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.inventory-right {
+			padding: 20px;
+
+			.inventory-title {
+				font-size: 30px;
+				font-weight: 700;
+				margin-bottom: 20px;
+			}
+
+			.inventory-desc {
+				font-size: 20px;
+				margin-bottom: 20px;
+			}
+		}
+
+		.product-inventory {
+			margin-top: 0px;
+			margin-bottom: 60px;
+			width: fit-content;
+			align-items: center;
+			border-radius: 10px;
+			box-shadow: 2px 4px 12px rgba(0, 0, 0, .08);
+			overflow: hidden;
+			padding: 15px;
+
+			.title {
+				font-size: 16px;
+				margin-bottom: 10px;
+				margin: 0;
+			}
+
+			.text {
+				margin-bottom: 10px;
+				font-size: 12px;
+			}
+
+			.inventory {
+				font-size: 12px;
+				padding: 5px;
+				margin: 0px auto;
+			}
+
+			picture {
+				border-radius: 10px;
+				height: 80px;
+				margin-right: 10px;
+				width: 107px;
+			}
+		}
+
 	}
 }
 
 @media screen and (max-width: 900px) {
-	.product-inventory-wrapper .product-inventory {
-		margin: 0px auto;
-		margin-bottom: vw(120px);
-		width: fit-content;
-		align-items: center;
-		border-radius: vw(20px);
-		box-shadow: vw(4px) vw(8px) vw(24px) rgba(0, 0, 0, .08);
-		overflow: hidden;
-		padding: vw(30px);
+	.product-inventory-wrapper {
 
-		.title {
-			font-size: vw(28px);
-			margin-bottom: vw(20px);
-			margin: 0;
+		.inventory-left {
+			display: none;
 		}
 
-		.text {
-			margin-bottom: vw(20px);
-			font-size: 12px;
+		.right-img {
+			width: 100%;
+			height: auto;
 		}
 
-		.inventory {
-			font-size: vw(24px);
-			padding: vw(10px);
+		.inventory-title {
+			font-size: vcw(60px);
+			font-weight: 700;
+			margin-bottom: vw(40px);
+			text-align: center;
+		}
+
+		.inventory-desc {
+			font-size: vw(40px);
+			margin-bottom: vw(40px);
+			text-align: center;
+		}
+
+
+		.product-inventory {
 			margin: 0px auto;
-		}
-
-		picture {
+			margin-bottom: vw(120px);
+			width: fit-content;
+			align-items: center;
 			border-radius: vw(20px);
-			height: vw(160px);
-			margin-right: vw(20px);
-			width: vw(220px);
+			box-shadow: vw(4px) vw(8px) vw(24px) rgba(0, 0, 0, .08);
+			overflow: hidden;
+			padding: vw(30px);
+
+			.title {
+				font-size: vw(28px);
+				margin-bottom: vw(20px);
+				margin: 0;
+			}
+
+			.text {
+				margin-bottom: vw(20px);
+				font-size: 12px;
+			}
+
+			.inventory {
+				font-size: vw(24px);
+				padding: vw(10px);
+				margin: 0px auto;
+			}
+
+			picture {
+				border-radius: vw(20px);
+				height: vw(160px);
+				margin-right: vw(20px);
+				width: vw(220px);
+			}
 		}
 	}
 }

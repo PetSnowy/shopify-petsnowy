@@ -1,30 +1,54 @@
 {{ 'product-inventory.css' | asset_url | stylesheet_tag }}
 
-<div class="product-inventory-wrapper page-width">
-  <product-inventory
-    class="product-inventory"
-  >
-    <picture>
-      <source media="(min-width: 901px)" srcset="{{ section.settings.pc_image | img_url: 'master' }}">
-      <source media="(max-width: 900px)" srcset="{{ section.settings.mb_image | img_url: 'master' }}">
-      <img src="{{ section.settings.pc_image | img_url: 'master' }}" alt="{{ section.settings.text }}">
-    </picture>
-    <div class="inventory-right">
-      <p class="title">{{ section.settings.title }}</p>
-      <p class="text">
-        {{- section.settings.text -}}
-        <span class="inventory"></span>
-      </p>
+<div class="product-inventory-wrapper">
+  <div class="inventory-left">
+    <div class="inventory-image">
+      <img
+        src="{{ section.settings.pc_inventory_image | img_url: 'master' }}"
+        alt="{{ section.settings.text }}"
+        loading="lazy"
+      >
     </div>
+  </div>
+  <div class="inventory-right">
+    <p class="inventory-title">
+      {{ section.settings.title }}
+    </p>
+    <p class="inventory-desc">
+      {{ section.settings.desc }}
+    </p>
+    <div class="right-img">
+      <img
+        src="{{ section.settings.mb_inventory_image | img_url: 'master' }}"
+        alt="{{ section.settings.text }}"
+        loading="lazy"
+      >
+    </div>
+    <product-inventory
+      class="product-inventory"
+    >
+      <picture>
+        <source media="(min-width: 901px)" srcset="{{ section.settings.pc_image | img_url: 'master' }}">
+        <source media="(max-width: 900px)" srcset="{{ section.settings.mb_image | img_url: 'master' }}">
+        <img src="{{ section.settings.pc_image | img_url: 'master' }}" alt="{{ section.settings.text }}" loading="lazy">
+      </picture>
+      <div class="inventory-right">
+        <p class="title">{{ section.settings.card_title }}</p>
+        <p class="text">
+          {{- section.settings.card_text -}}
+          <span class="inventory"></span>
+        </p>
+      </div>
 
-    {% for variant in product.variants %}
-      <span
-        class="inventory-quantity"
-        data-quantity="{{ variant.inventory_quantity }}"
-        data-id="{{ variant.id }}"
-      ></span>
-    {% endfor %}
-  </product-inventory>
+      {% for variant in product.variants %}
+        <span
+          class="inventory-quantity"
+          data-quantity="{{ variant.inventory_quantity }}"
+          data-id="{{ variant.id }}"
+        ></span>
+      {% endfor %}
+    </product-inventory>
+  </div>
 </div>
 <script>
   class ProductInventory extends HTMLElement {
@@ -74,23 +98,43 @@
   "settings": [
     {
       "type": "text",
+      "id": "card_title",
+      "label": "card title"
+    },
+    {
+      "type": "text",
       "id": "title",
       "label": "title"
     },
     {
+      "type": "image_picker",
+      "id": "pc_inventory_image",
+      "label": "pc inventory image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mb_inventory_image",
+      "label": "mb inventory image"
+    },
+    {
       "type": "text",
-      "id": "text",
-      "label": "text"
+      "id": "desc",
+      "label": "desc"
+    },
+    {
+      "type": "text",
+      "id": "card_text",
+      "label": "card text"
     },
     {
       "type": "image_picker",
       "id": "pc_image",
-      "label": "pc image"
+      "label": "pc card image"
     },
     {
       "type": "image_picker",
       "id": "mb_image",
-      "label": "mb image"
+      "label": "mb card image"
     }
   ],
   "presets": [
