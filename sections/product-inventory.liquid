@@ -17,13 +17,6 @@
     <p class="inventory-desc">
       {{ section.settings.desc }}
     </p>
-    <div class="right-img">
-      <img
-        src="{{ section.settings.mb_inventory_image | img_url: 'master' }}"
-        alt="{{ section.settings.text }}"
-        loading="lazy"
-      >
-    </div>
     <product-inventory
       class="product-inventory"
     >
@@ -48,6 +41,13 @@
         ></span>
       {% endfor %}
     </product-inventory>
+    <div class="right-img">
+      <img
+        src="{{ section.settings.mb_inventory_image | img_url: 'master' }}"
+        alt="{{ section.settings.text }}"
+        loading="lazy"
+      >
+    </div>
   </div>
 </div>
 <script>

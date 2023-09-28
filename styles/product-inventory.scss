@@ -72,12 +72,14 @@
 				font-size: 30px;
 				font-weight: 700;
 				margin-bottom: 20px;
+				font-family: "SUISSE_INT_L_MEDIUM";
 			}
 
 			.inventory-desc {
 				font-size: 20px;
 				margin-bottom: 20px;
 				text-align: center;
+				font-family: "FS_JOEY-REGULAR";
 			}
 		}
 
@@ -126,7 +128,7 @@
 			display: none;
 		}
 
-		.right-img {
+		.right-img img {
 			width: vw(750px);
 			height: auto;
 		}
@@ -136,12 +138,14 @@
 			font-weight: 700;
 			margin-bottom: vw(40px);
 			text-align: center;
+			font-family: "SUISSE_INT_L_MEDIUM";
 		}
 
 		.inventory-desc {
 			font-size: vw(40px);
 			margin-bottom: vw(40px);
 			text-align: center;
+			font-family: "FS_JOEY-REGULAR";
 		}
 
 
