@@ -3,7 +3,8 @@
     "fdefc13b-56a9-4658-a44b-cc2a6de2daa9": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/HL_product.png",
+        "image": "shopify:\/\/shop_images\/video-banner-litter-box.jpg",
+        "image_mbl": "shopify:\/\/shop_images\/video-banner-litter-box.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
