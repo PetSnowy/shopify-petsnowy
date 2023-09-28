@@ -110,6 +110,19 @@
     "5adf9f25-788e-4bc2-9df4-6dd4b70dcd25": {
       "type": "image-banner",
       "blocks": {
+        "2850c635-ed2d-4214-9ecf-0ba4e13c4b44": {
+          "type": "heading",
+          "settings": {
+            "heading": "Halloween Special",
+            "heading_size": "h1"
+          }
+        },
+        "90c5c671-6144-4072-a4c9-1fd6ee5bc419": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>First 50 Customers Get Extra Free Cat Carrier<\/p>"
+          }
+        },
         "3b71a9cc-803e-4d82-b739-2b417950f202": {
           "type": "buttons",
           "settings": {
@@ -120,18 +133,12 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
-        },
-        "2850c635-ed2d-4214-9ecf-0ba4e13c4b44": {
-          "type": "heading",
-          "settings": {
-            "heading": "First 50 Customers Get Extra Free Cat Carrier",
-            "heading_size": "h1"
-          }
         }
       },
       "block_order": [
-        "3b71a9cc-803e-4d82-b739-2b417950f202",
-        "2850c635-ed2d-4214-9ecf-0ba4e13c4b44"
+        "2850c635-ed2d-4214-9ecf-0ba4e13c4b44",
+        "90c5c671-6144-4072-a4c9-1fd6ee5bc419",
+        "3b71a9cc-803e-4d82-b739-2b417950f202"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/halloween_pc_3done_a.png",
