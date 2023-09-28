@@ -110,13 +110,6 @@
     "5adf9f25-788e-4bc2-9df4-6dd4b70dcd25": {
       "type": "image-banner",
       "blocks": {
-        "2850c635-ed2d-4214-9ecf-0ba4e13c4b44": {
-          "type": "heading",
-          "settings": {
-            "heading": "Halloween Special",
-            "heading_size": "h1"
-          }
-        },
         "90c5c671-6144-4072-a4c9-1fd6ee5bc419": {
           "type": "richtext",
           "settings": {
@@ -136,7 +129,6 @@
         }
       },
       "block_order": [
-        "2850c635-ed2d-4214-9ecf-0ba4e13c4b44",
         "90c5c671-6144-4072-a4c9-1fd6ee5bc419",
         "3b71a9cc-803e-4d82-b739-2b417950f202"
       ],
