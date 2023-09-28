@@ -309,7 +309,7 @@ $(document).ready(function () {
 		var option_value = $(this).val();
 		$(this).closest('.variant_data_loop.active').find('.variant-label__value').text(option_value);
 	});
-	const shoppingUrl = new Map([[0, "HalloweenSpecial"][1, 'odorFree'], [2, 'scoopFree'], [3, 'smartPetCare']])
+	const shoppingUrl = new Map([[0, "HalloweenSpecial"], [1, 'odorFree'], [2, 'scoopFree'], [3, 'smartPetCare']])
 
 	function updateQueryStringParameter(uri, key, value) {
 		if (!value) { return uri }
