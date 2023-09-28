@@ -63,6 +63,17 @@
         "padding_bottom": 40
       }
     },
+    "67351f1a-11a8-4ea8-b339-d27d634a1cce": {
+      "type": "product-inventory",
+      "settings": {
+        "title": "First 50 Customers Only",
+        "text": "Cat Carrier",
+        "total_inventory": "200",
+        "pc_image": "shopify:\/\/shop_images\/cat_carrier.jpg",
+        "mb_image": "shopify:\/\/shop_images\/cat_carrier_mb.jpg",
+        "activity_quota": "50"
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -479,17 +490,6 @@
         "padding_bottom": 0
       }
     },
-    "67351f1a-11a8-4ea8-b339-d27d634a1cce": {
-      "type": "product-inventory",
-      "settings": {
-        "title": "First 50 Customers Only",
-        "text": "Cat Carrier",
-        "total_inventory": "200",
-        "pc_image": "shopify:\/\/shop_images\/cat_carrier.jpg",
-        "mb_image": "shopify:\/\/shop_images\/cat_carrier_mb.jpg",
-        "activity_quota": "50"
-      }
-    },
     "909b5ce5-d2e3-4008-a0a9-f437c0b89bb4": {
       "type": "collapsible-content",
       "blocks": {
@@ -631,6 +631,7 @@
     "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
     "635deaad-6797-4ca6-9a10-c443617e9573",
     "b6e45bc2-2133-4106-a9db-61ab406abfe6",
+    "67351f1a-11a8-4ea8-b339-d27d634a1cce",
     "main",
     "599cc0d0-32c9-41d6-a9cc-be074b50f9cd",
     "8182050c-943a-4a32-ab7c-994213dca849",
@@ -639,7 +640,6 @@
     "19e9f25b-39eb-48f1-8c86-9308c2fe2f3d",
     "58d276f3-46b1-43b3-88fd-33aecbac841a",
     "03727ca6-4d51-464a-9105-edc5bf54883b",
-    "67351f1a-11a8-4ea8-b339-d27d634a1cce",
     "909b5ce5-d2e3-4008-a0a9-f437c0b89bb4",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
