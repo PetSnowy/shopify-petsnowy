@@ -137,25 +137,25 @@
 		}
 
 		.inventory-title {
-			font-size: 30px;
+			font-size: 20px;
 			font-weight: 700;
-			margin-bottom: vw(20px);
+			margin-bottom: vw(15px);
 			text-align: center;
 			font-family: "SUISSE_INT_L_MEDIUM";
 		}
 
 		.inventory-desc {
 			font-size: 15px;
-			margin-bottom: vw(40px);
+			margin-bottom: vw(20px);
 			text-align: center;
 			font-family: "FS_JOEY-REGULAR";
-			padding: vw(20px);
+			padding: 0px vw(20px);
 		}
 
 
 		.product-inventory {
 			margin: 0px auto;
-			margin-bottom: vw(120px);
+			margin-bottom: vw(60px);
 			width: fit-content;
 			align-items: center;
 			border-radius: vw(20px);
