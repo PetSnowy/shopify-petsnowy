@@ -5502,14 +5502,6 @@ label.productlabel_info,
 
 @media screen and (max-width: 900px) {
 
-	#Banner-template--20965259084098__5adf9f25-788e-4bc2-9df4-6dd4b70dcd25 {
-
-		.banner__richtext,
-		h2 {
-			display: none;
-		}
-	}
-
 	.page-width {
 		width: 100%;
 		padding: vw(0px) vw(40px);
@@ -5597,6 +5589,14 @@ label.productlabel_info,
 $item: 5;
 
 @media screen and (min-width: 901px) {
+	#Banner-template--20965259084098__5adf9f25-788e-4bc2-9df4-6dd4b70dcd25 {
+
+		.banner__richtext,
+		h2 {
+			display: none;
+		}
+	}
+
 	.page-width {
 		box-sizing: border-box;
 		padding: 0px;
