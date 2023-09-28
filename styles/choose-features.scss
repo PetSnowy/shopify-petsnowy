@@ -1,5 +1,10 @@
 @import "pxToVw.scss";
 
+.remaining {
+	color: #d66022;
+	font-weight: 500;
+}
+
 .itg_drop_var::-webkit-scrollbar,
 .tab_button_contents::-webkit-scrollbar {
 	width: 4px;
