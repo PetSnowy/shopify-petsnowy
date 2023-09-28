@@ -7,6 +7,13 @@
     data-activity-quota="{{ section.settings.activity_quota }}"
   >
     <p class="title">{{ section.settings.title }}</p>
+
+    <picture>
+      <source media="(min-width: 901px)" srcset="{{ section.settings.pc_image | img_url: 'master' }}">
+      <source media="(max-width: 900px)" srcset="{{ section.settings.mb_image | img_url: 'master' }}">
+      <img src="{{ section.settings.pc_image | img_url: 'master' }}" alt="{{ section.settings.text }}">
+    </picture>
+
     <p class="text">{{ section.settings.text }}</p>
     <span class="inventory"></span>
 
@@ -23,8 +30,10 @@
       this.activityQuota = parseInt(this.dataset.activityQuota);
       this.yRange = [-1, 1];
       this.xRange = [-1, 1];
-      this.addEventListener('mousemove', (e) => this.onmousemove(e));
-      this.addEventListener('mouseout', this.handleMouseout);
+      if (window.innerWidth > 901) {
+        this.addEventListener('mousemove', (e) => this.onmousemove(e));
+        this.addEventListener('mouseout', this.handleMouseout);
+      }
     }
     connectedCallback() {
       const inventory = this.querySelector('.inventory');

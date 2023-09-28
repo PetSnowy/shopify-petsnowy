@@ -1,47 +1,104 @@
 @import "pxToVw.scss";
 
+.product-inventory-wrapper .product-inventory {
+	box-sizing: border-box;
+	background: #ffffff;
+	display: block;
+
+	.title {
+		font-weight: 700;
+		text-align: center;
+	}
+
+	.text {
+		text-align: center;
+	}
+
+	.inventory {
+		background: rgb(248, 99, 45);
+		color: #ffffff;
+		display: block;
+		width: fit-content;
+	}
+
+	picture {
+		display: block;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
 @media screen and (min-width: 901px) {
 	.product-inventory-wrapper .product-inventory {
+		margin: 60px 0px;
 		width: 100%;
-		height: 500px;
-		display: block;
-		background: #ffffff;
 		border-radius: 20px;
 		box-shadow: 2px 4px 12px rgba(0, 0, 0, .08);
 		overflow: hidden;
+		padding: 20px;
 
 		.title {
-			font-size: 30px;
+			font-size: 35px;
 			margin-bottom: 10px;
-			text-align: center;
 			margin: 0;
-			width: fit-content;
 		}
 
 		.text {
-			text-align: center;
 			margin-bottom: 10px;
 			font-size: 20px;
 		}
 
 		.inventory {
 			font-size: 30px;
-			background: rgb(248, 99, 45);
 			color: #ffffff;
-			display: block;
 			padding: 5px;
 			margin: 0px auto;
+		}
+
+		picture {
+			width: 400px;
+			height: 300px;
+			margin: 10px auto;
 		}
 	}
 }
 
 @media screen and (max-width: 900px) {
 	.product-inventory-wrapper .product-inventory {
+		margin: vw(120px) 0px;
 		padding: vw(40px) 0px;
+		width: 100%;
+		padding: vw(20px);
+		box-shadow: vw(4px) vw(8px) vw(24px) rgba(0, 0, 0, .08);
+		border-radius: vw(40px);
 
 		.title {
-			font-size: vw(40px);
+			font-size: vw(60px);
+			margin-bottom: vw(30px);
+			margin-bottom: 20px;
+		}
+
+		.text {
 			margin-bottom: vw(20px);
+			font-size: vw(40px);
+			word-break: break-word;
+		}
+
+		.inventory {
+			font-size: vw(60px);
+			background: rgb(248, 99, 45);
+			padding: vw(10px);
+			margin: 0px auto;
+		}
+
+		picture {
+			width: 100%;
+			height: vw(600px);
+			margin: vw(20px) auto;
 		}
 	}
 }
