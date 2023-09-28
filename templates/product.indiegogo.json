@@ -65,9 +65,13 @@
     },
     "67351f1a-11a8-4ea8-b339-d27d634a1cce": {
       "type": "product-inventory",
+      "disabled": true,
       "settings": {
-        "title": "First 50 Customers Only",
-        "text": "Reminding Cat Carrier:",
+        "card_title": "First 50 Customers Only",
+        "title": "USA Perk",
+        "pc_inventory_image": "shopify:\/\/shop_images\/halloween_mobile_aa.png",
+        "desc": "sd d d d sdd",
+        "card_text": "Remaining Cat Carrier:",
         "pc_image": "shopify:\/\/shop_images\/cat_carrier.jpg",
         "mb_image": "shopify:\/\/shop_images\/cat_carrier_mb.jpg"
       }
@@ -200,8 +204,10 @@
       "type": "product-inventory",
       "disabled": true,
       "settings": {
+        "card_title": "",
         "title": "",
-        "text": ""
+        "desc": "",
+        "card_text": ""
       }
     },
     "8182050c-943a-4a32-ab7c-994213dca849": {
