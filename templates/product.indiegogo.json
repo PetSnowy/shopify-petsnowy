@@ -65,12 +65,11 @@
     },
     "67351f1a-11a8-4ea8-b339-d27d634a1cce": {
       "type": "product-inventory",
-      "disabled": true,
       "settings": {
         "card_title": "First 50 Customers Only",
-        "title": "USA Perk",
+        "title": "Halloween USA Perk",
         "pc_inventory_image": "shopify:\/\/shop_images\/halloween_mobile_aa.png",
-        "desc": "sd d d d sdd",
+        "desc": "Halloween special is now available, but only in the USA. We apologize for any inconvenience.",
         "card_text": "Remaining Cat Carrier:",
         "pc_image": "shopify:\/\/shop_images\/cat_carrier.jpg",
         "mb_image": "shopify:\/\/shop_images\/cat_carrier_mb.jpg"
