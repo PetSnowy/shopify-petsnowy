@@ -81,14 +81,11 @@
     },
     "67351f1a-11a8-4ea8-b339-d27d634a1cce": {
       "type": "product-inventory",
-      "disabled": true,
       "settings": {
         "title": "First 50 Customers Only",
         "text": "Reminding Cat Carrier:",
-        "total_inventory": "200",
         "pc_image": "shopify:\/\/shop_images\/cat_carrier.jpg",
-        "mb_image": "shopify:\/\/shop_images\/cat_carrier_mb.jpg",
-        "activity_quota": "50"
+        "mb_image": "shopify:\/\/shop_images\/cat_carrier_mb.jpg"
       }
     },
     "main": {
@@ -220,9 +217,7 @@
       "disabled": true,
       "settings": {
         "title": "",
-        "text": "",
-        "total_inventory": "",
-        "activity_quota": ""
+        "text": ""
       }
     },
     "8182050c-943a-4a32-ab7c-994213dca849": {
