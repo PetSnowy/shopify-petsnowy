@@ -67,6 +67,7 @@
 			box-sizing: border-box;
 			flex-wrap: wrap;
 			align-content: center;
+			background-color: #ebe1d9;
 
 			.inventory-title {
 				font-size: 30px;
@@ -80,6 +81,7 @@
 				margin-bottom: 20px;
 				text-align: center;
 				font-family: "FS_JOEY-REGULAR";
+				padding: 20px;
 			}
 		}
 
@@ -131,6 +133,7 @@
 		.right-img img {
 			width: vw(750px);
 			height: auto;
+			display: block;
 		}
 
 		.inventory-title {
@@ -146,6 +149,7 @@
 			margin-bottom: vw(40px);
 			text-align: center;
 			font-family: "FS_JOEY-REGULAR";
+			padding: vw(20px);
 		}
 
 
