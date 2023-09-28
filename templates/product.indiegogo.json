@@ -4,6 +4,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/HL_product.png",
+        "image_mbl": "shopify:\/\/shop_images\/hl_product_mb.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": false,
