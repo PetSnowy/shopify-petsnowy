@@ -65,6 +65,7 @@
     },
     "67351f1a-11a8-4ea8-b339-d27d634a1cce": {
       "type": "product-inventory",
+      "disabled": true,
       "settings": {
         "card_title": "First 50 Customers Only",
         "title": "Halloween USA Perk",
