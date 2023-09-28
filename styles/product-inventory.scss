@@ -1,6 +1,7 @@
 @import "pxToVw.scss";
 
 .product-inventory-wrapper {
+	display: flex;
 
 	.product-inventory {
 		box-sizing: border-box;
@@ -39,6 +40,9 @@
 
 @media screen and (min-width: 901px) {
 	.product-inventory-wrapper {
+		flex-wrap: wrap;
+		flex-direction: row-reverse;
+
 		.right-img {
 			display: none;
 		}
