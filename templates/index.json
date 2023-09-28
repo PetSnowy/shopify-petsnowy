@@ -113,8 +113,8 @@
         "3b71a9cc-803e-4d82-b739-2b417950f202": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
+            "button_label_1": "Shop Now",
+            "button_link_1": "shopify:\/\/products\/snow-self-cleaning-litter-box",
             "button_style_secondary_1": false,
             "button_label_2": "Button label",
             "button_link_2": "",
@@ -125,7 +125,6 @@
       "block_order": [
         "3b71a9cc-803e-4d82-b739-2b417950f202"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/halloween_pc_note.jpg",
         "image_mbl": "shopify:\/\/shop_images\/halloween_mobile_note.jpg",
