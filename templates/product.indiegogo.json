@@ -4,9 +4,9 @@
       "type": "banner-video",
       "settings": {
         "vdio_img": "shopify:\/\/shop_images\/halloween_pc_3done.jpg",
-        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e62ade0547cf430bbd64ff3316993dae.mp4",
+        "vdio": "",
         "mobvdio_img": "shopify:\/\/shop_images\/halloween_mobile_3done.jpg",
-        "mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e62ade0547cf430bbd64ff3316993dae.mp4",
+        "mobvdio": "",
         "heading": "",
         "sub_heading": "",
         "btn_text": "",
