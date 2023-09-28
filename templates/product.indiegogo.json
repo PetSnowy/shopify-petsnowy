@@ -2,7 +2,6 @@
   "sections": {
     "fdefc13b-56a9-4658-a44b-cc2a6de2daa9": {
       "type": "image-banner",
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/HL_product.png",
         "image_overlay_opacity": 0,
