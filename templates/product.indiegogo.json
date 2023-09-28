@@ -3,9 +3,9 @@
     "4d44ea99-36fa-4b09-b6c5-b92fc20bca96": {
       "type": "banner-video",
       "settings": {
-        "vdio_img": "shopify:\/\/shop_images\/video-banner-litter-box.jpg",
+        "vdio_img": "shopify:\/\/shop_images\/halloween_pc_3done.jpg",
         "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e62ade0547cf430bbd64ff3316993dae.mp4",
-        "mobvdio_img": "shopify:\/\/shop_images\/video-banner-litter-box.jpg",
+        "mobvdio_img": "shopify:\/\/shop_images\/halloween_mobile_3done.jpg",
         "mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e62ade0547cf430bbd64ff3316993dae.mp4",
         "heading": "",
         "sub_heading": "",
@@ -185,6 +185,16 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "599cc0d0-32c9-41d6-a9cc-be074b50f9cd": {
+      "type": "product-inventory",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "text": "",
+        "total_inventory": "",
+        "activity_quota": ""
       }
     },
     "8182050c-943a-4a32-ab7c-994213dca849": {
@@ -622,6 +632,7 @@
     "635deaad-6797-4ca6-9a10-c443617e9573",
     "b6e45bc2-2133-4106-a9db-61ab406abfe6",
     "main",
+    "599cc0d0-32c9-41d6-a9cc-be074b50f9cd",
     "8182050c-943a-4a32-ab7c-994213dca849",
     "6c8b3f43-2aa2-4945-be93-92dc90208d43",
     "58321a20-dbda-462b-98d1-9ac45de56483",
