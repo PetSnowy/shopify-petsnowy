@@ -3,7 +3,7 @@
 .product-inventory-wrapper .product-inventory {
 	box-sizing: border-box;
 	background: #ffffff;
-	display: block;
+	display: flex;
 
 	.title {
 		font-weight: 700;
@@ -15,14 +15,14 @@
 	}
 
 	.inventory {
-		background: rgb(248, 99, 45);
-		color: #ffffff;
-		display: block;
+		color: rgb(192, 144, 103);
 		width: fit-content;
+		font-weight: 700;
 	}
 
 	picture {
 		display: block;
+		overflow: hidden;
 
 		img {
 			width: 100%;
@@ -34,71 +34,73 @@
 
 @media screen and (min-width: 901px) {
 	.product-inventory-wrapper .product-inventory {
-		margin: 60px 0px;
-		width: 100%;
-		border-radius: 20px;
+		margin-top: 0px;
+		margin-bottom: 60px;
+		width: fit-content;
+		align-items: center;
+		border-radius: 10px;
 		box-shadow: 2px 4px 12px rgba(0, 0, 0, .08);
 		overflow: hidden;
-		padding: 20px;
+		padding: 15px;
 
 		.title {
-			font-size: 35px;
+			font-size: 16px;
 			margin-bottom: 10px;
 			margin: 0;
 		}
 
 		.text {
 			margin-bottom: 10px;
-			font-size: 20px;
+			font-size: 12px;
 		}
 
 		.inventory {
-			font-size: 30px;
-			color: #ffffff;
+			font-size: 12px;
 			padding: 5px;
 			margin: 0px auto;
 		}
 
 		picture {
-			width: 400px;
-			height: 300px;
-			margin: 10px auto;
+			border-radius: 10px;
+			height: 80px;
+			margin-right: 10px;
+			width: 107px;
 		}
 	}
 }
 
 @media screen and (max-width: 900px) {
 	.product-inventory-wrapper .product-inventory {
-		margin: vw(120px) 0px;
-		padding: vw(40px) 0px;
-		width: 100%;
-		padding: vw(20px);
+		margin-bottom: vw(120px);
+		width: fit-content;
+		align-items: center;
+		border-radius: vw(20px);
 		box-shadow: vw(4px) vw(8px) vw(24px) rgba(0, 0, 0, .08);
-		border-radius: vw(40px);
+		overflow: hidden;
+		padding: vw(30px);
 
 		.title {
-			font-size: vw(60px);
-			margin-bottom: vw(30px);
-			margin-bottom: 20px;
+			font-size: vw(28px);
+			margin-bottom: vw(20px);
+			margin: 0;
 		}
 
 		.text {
 			margin-bottom: vw(20px);
-			font-size: vw(40px);
-			word-break: break-word;
+			font-size: 12px;
 		}
 
 		.inventory {
-			font-size: vw(60px);
-			background: rgb(248, 99, 45);
+			font-size: vw(24px);
 			padding: vw(10px);
 			margin: 0px auto;
 		}
 
 		picture {
-			width: 100%;
-			height: vw(600px);
-			margin: vw(20px) auto;
+			border-radius: vw(20px);
+			height: vw(160px);
+			margin-right: vw(20px);
+			width: vw(220px);
 		}
 	}
 }

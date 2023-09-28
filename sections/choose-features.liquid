@@ -295,6 +295,7 @@
                         {% assign varprice = '' %}
                         {% assign compareprice = '' %}
                         {% assign variantdescription = '' %}
+                        {% assign inventory_quantity = '' %}
                         {% for variant in main_product_detail.variants %}
                           {% if variant.title contains value %}
                             {% assign varimg = variant.image | img_url: 'master' %}
@@ -304,9 +305,9 @@
                             {% if variant.compare_at_price > variant.price %}
                               {% assign compareprice = variant.compare_at_price | money_without_currency %}
                             {% endif %}
+                            {% assign inventory_quantity = variant.inventory_quantity %}
                           {% endif %}
                         {% endfor %}
-
                         <label
                           for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
                           data_var_price="{{ varprice }}"
@@ -321,7 +322,13 @@
                             {% endif %}
                           </div>
                           <div class="itg_drop_var_align_content">
-                            <p>{{ variantdescription }}</p>
+                            <p>
+                              {{ variantdescription }}
+                              {% if varid == 46976335249730 %}
+                                <br>
+                                Gift stock remaining: {{ inventory_quantity }}
+                              {%- endif %}
+                            </p>
                           </div>
 
                           <div class="check_product_variant">

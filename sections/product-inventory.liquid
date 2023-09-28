@@ -3,22 +3,26 @@
 <div class="product-inventory-wrapper page-width">
   <product-inventory
     class="product-inventory"
-    data-inventory-total="{{ section.settings.total_inventory }}"
-    data-activity-quota="{{ section.settings.activity_quota }}"
   >
-    <p class="title">{{ section.settings.title }}</p>
-
     <picture>
       <source media="(min-width: 901px)" srcset="{{ section.settings.pc_image | img_url: 'master' }}">
       <source media="(max-width: 900px)" srcset="{{ section.settings.mb_image | img_url: 'master' }}">
       <img src="{{ section.settings.pc_image | img_url: 'master' }}" alt="{{ section.settings.text }}">
     </picture>
-
-    <p class="text">{{ section.settings.text }}</p>
-    <span class="inventory"></span>
+    <div class="inventory-right">
+      <p class="title">{{ section.settings.title }}</p>
+      <p class="text">
+        {{- section.settings.text -}}
+        <span class="inventory"></span>
+      </p>
+    </div>
 
     {% for variant in product.variants %}
-      <span class="inventory-quantity" data-quantity="{{ variant.inventory_quantity }}"></span>
+      <span
+        class="inventory-quantity"
+        data-quantity="{{ variant.inventory_quantity }}"
+        data-id="{{ variant.id }}"
+      ></span>
     {% endfor %}
   </product-inventory>
 </div>
@@ -26,10 +30,8 @@
   class ProductInventory extends HTMLElement {
     constructor() {
       super();
-      this.totalInventory = parseInt(this.dataset.inventoryTotal);
-      this.activityQuota = parseInt(this.dataset.activityQuota);
-      this.yRange = [-1, 1];
-      this.xRange = [-1, 1];
+      this.yRange = [-5, 5];
+      this.xRange = [-5, 5];
       if (window.innerWidth > 901) {
         this.addEventListener('mousemove', (e) => this.onmousemove(e));
         this.addEventListener('mouseout', this.handleMouseout);
@@ -37,16 +39,11 @@
     }
     connectedCallback() {
       const inventory = this.querySelector('.inventory');
-      const count = this.activityQuota - (this.totalInventory - this.getCurrentInventory());
-      if (!count) return;
-      inventory.innerText = `${count}`;
+      inventory.innerText = `${this.getCurrentInventory()[0].dataset.quantity}`;
     }
     getCurrentInventory() {
       const quantityElements = Array.from(this.querySelectorAll('.inventory-quantity'));
-      return (
-        quantityElements &&
-        quantityElements.reduce((totalQuantity, element) => totalQuantity + parseInt(element.dataset.quantity), 0)
-      );
+      return quantityElements && quantityElements.filter((item) => item.dataset.id === '46976335249730');
     }
     getRotate = (range, value, max) => (value / max) * (range[1] - range[0]) + range[0];
 
@@ -86,11 +83,6 @@
       "label": "text"
     },
     {
-      "type": "text",
-      "id": "total_inventory",
-      "label": "total inventory"
-    },
-    {
       "type": "image_picker",
       "id": "pc_image",
       "label": "pc image"
@@ -99,11 +91,6 @@
       "type": "image_picker",
       "id": "mb_image",
       "label": "mb image"
-    },
-    {
-      "type": "text",
-      "id": "activity_quota",
-      "label": "activity quota"
     }
   ],
   "presets": [
