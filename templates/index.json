@@ -110,39 +110,25 @@
     "5adf9f25-788e-4bc2-9df4-6dd4b70dcd25": {
       "type": "image-banner",
       "blocks": {
-        "template--17349241372994__5adf9f25-788e-4bc2-9df4-6dd4b70dcd25-1672387544f71f1a07-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "The Most Funded Pet Project on Indiegogo",
-            "heading_size": "h1"
-          }
-        },
-        "567a91de-8df6-4099-9025-5d5a681414ad": {
-          "type": "richtext",
-          "settings": {
-            "richtext": "<p>Introducing SNOW⁺: The Self Cleaning and Packing Litter Box with Over 3000 Backers!<\/p>"
-          }
-        },
-        "427a5215-65a7-4d20-bf2b-8b4f3b35febd": {
+        "3b71a9cc-803e-4d82-b739-2b417950f202": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Order Now",
-            "button_link_1": "shopify:\/\/products\/snow-self-cleaning-litter-box",
+            "button_label_1": "Button label",
+            "button_link_1": "",
             "button_style_secondary_1": false,
-            "button_label_2": "PetSnowy on Indiegogo",
-            "button_link_2": "https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/reft\/5\/official",
+            "button_label_2": "Button label",
+            "button_link_2": "",
             "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "template--17349241372994__5adf9f25-788e-4bc2-9df4-6dd4b70dcd25-1672387544f71f1a07-0",
-        "567a91de-8df6-4099-9025-5d5a681414ad",
-        "427a5215-65a7-4d20-bf2b-8b4f3b35febd"
+        "3b71a9cc-803e-4d82-b739-2b417950f202"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/halloween_pc_note.jpg",
-        "image_mbl": "shopify:\/\/shop_images\/10071137_02_1.png",
+        "image_mbl": "shopify:\/\/shop_images\/halloween_mobile_note.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": true,
