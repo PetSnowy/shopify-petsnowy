@@ -1,29 +1,12 @@
 {
   "sections": {
-    "fdefc13b-56a9-4658-a44b-cc2a6de2daa9": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/video-banner-litter-box.jpg",
-        "image_mbl": "shopify:\/\/shop_images\/video-banner-litter-box.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "4d44ea99-36fa-4b09-b6c5-b92fc20bca96": {
       "type": "banner-video",
       "settings": {
-        "vdio_img": "shopify:\/\/shop_images\/halloween_pc_3done.jpg",
-        "vdio": "",
-        "mobvdio_img": "shopify:\/\/shop_images\/halloween_mobile_3done.jpg",
-        "mobvdio": "",
+        "vdio_img": "shopify:\/\/shop_images\/video-banner-litter-box.jpg",
+        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e62ade0547cf430bbd64ff3316993dae.mp4",
+        "mobvdio_img": "shopify:\/\/shop_images\/video-banner-litter-box.jpg",
+        "mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e62ade0547cf430bbd64ff3316993dae.mp4",
         "heading": "",
         "sub_heading": "",
         "btn_text": "",
@@ -640,7 +623,6 @@
     }
   },
   "order": [
-    "fdefc13b-56a9-4658-a44b-cc2a6de2daa9",
     "4d44ea99-36fa-4b09-b6c5-b92fc20bca96",
     "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
     "635deaad-6797-4ca6-9a10-c443617e9573",
