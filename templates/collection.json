@@ -1,5 +1,13 @@
 {
   "sections": {
+    "4b6daf6b-8cfe-4379-ae6c-86aefe76398c": {
+      "type": "top-banner",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/accessories-HL.png",
+        "sub_text": "",
+        "heading": ""
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -26,20 +34,11 @@
         "padding_bottom": 36
       }
     },
-    "4b6daf6b-8cfe-4379-ae6c-86aefe76398c": {
-      "type": "top-banner",
-      "disabled": true,
-      "settings": {
-        "img": "shopify:\/\/shop_images\/Slider.jpg",
-        "sub_text": "PetSnowy",
-        "heading": "The Home Of Stylish Cat Products"
-      }
-    },
     "5ead79d5-623a-407e-8571-61d1492bc27d": {
       "type": "shop-all-collection",
       "settings": {
         "collection_id": "Trending",
-        "collection": "smart-pet-products",
+        "collection": "accessories",
         "collection_idtwo": "BestSellers",
         "collection_two": "smart-pet-products-1",
         "collection_idthree": "Newest",
@@ -68,9 +67,9 @@
     }
   },
   "order": [
+    "4b6daf6b-8cfe-4379-ae6c-86aefe76398c",
     "banner",
     "product-grid",
-    "4b6daf6b-8cfe-4379-ae6c-86aefe76398c",
     "5ead79d5-623a-407e-8571-61d1492bc27d"
   ]
 }
