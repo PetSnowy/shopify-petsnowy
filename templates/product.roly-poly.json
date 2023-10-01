@@ -3,13 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -53,15 +46,9 @@
           "type": "rating",
           "settings": {
           }
-        },
-        "1b46c2d8-f4f6-4f57-96eb-2fe2476e80aa": {
-          "type": "product_acessories",
-          "settings": {
-          }
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "price",
         "variant_picker",
@@ -69,8 +56,7 @@
         "buy_buttons",
         "463df5a4-44f8-46b9-bcd4-988f445263e5",
         "6c2e8ba8-c850-4a83-bd2f-91386850f34c",
-        "e952d036-a232-4469-a670-156e3bcff37a",
-        "1b46c2d8-f4f6-4f57-96eb-2fe2476e80aa"
+        "e952d036-a232-4469-a670-156e3bcff37a"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -751,6 +737,27 @@
         "padding_bottom": 0
       }
     },
+    "1696142533e9c758f5": {
+      "type": "apps",
+      "blocks": {
+        "aa9ecbe0-978e-4dbb-9b74-0b9a431ff89e": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "aa9ecbe0-978e-4dbb-9b74-0b9a431ff89e"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd": {
       "type": "social-image-text",
       "blocks": {
@@ -834,6 +841,7 @@
     "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a",
     "a7d781da-2db9-4e93-a537-ae36cc05295f",
     "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1",
+    "1696142533e9c758f5",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
     "product-recommendations"
   ]
