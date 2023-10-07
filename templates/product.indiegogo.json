@@ -63,19 +63,6 @@
         "padding_bottom": 40
       }
     },
-    "67351f1a-11a8-4ea8-b339-d27d634a1cce": {
-      "type": "product-inventory",
-      "settings": {
-        "card_title": "First 50 Customers Only",
-        "title": "Halloween USA Perk",
-        "pc_inventory_image": "shopify:\/\/shop_images\/1090.png",
-        "mb_inventory_image": "shopify:\/\/shop_images\/20002000.jpg",
-        "desc": "This offer is currently available to customers in the US only. We apologize for any inconvenience.",
-        "card_text": "Remaining Cat Carrier:",
-        "pc_image": "shopify:\/\/shop_images\/cat_carrier.jpg",
-        "mb_image": "shopify:\/\/shop_images\/cat_carrier_mb.jpg"
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -190,23 +177,13 @@
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail_slider",
         "media_size": "small",
-        "mobile_thumbnails": "hide",
+        "mobile_thumbnails": "show",
         "hide_variants": true,
-        "enable_video_looping": false,
+        "enable_video_looping": true,
         "padding_top": 36,
         "padding_bottom": 12
-      }
-    },
-    "599cc0d0-32c9-41d6-a9cc-be074b50f9cd": {
-      "type": "product-inventory",
-      "disabled": true,
-      "settings": {
-        "card_title": "",
-        "title": "",
-        "desc": "",
-        "card_text": ""
       }
     },
     "8182050c-943a-4a32-ab7c-994213dca849": {
@@ -625,18 +602,16 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-<<<<<<< HEAD
-=======
     },
     "ac291641-af53-4136-b5d2-637a40b1fc89": {
       "type": "product-inventory",
       "disabled": true,
       "settings": {
+        "card_title": "",
         "title": "",
-        "total_inventory": "200",
-        "activity_quota": "50"
+        "desc": "",
+        "card_text": ""
       }
->>>>>>> e07050236b97f0639a285588047c5c2286e14aa5
     }
   },
   "order": [
@@ -644,9 +619,7 @@
     "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
     "635deaad-6797-4ca6-9a10-c443617e9573",
     "b6e45bc2-2133-4106-a9db-61ab406abfe6",
-    "67351f1a-11a8-4ea8-b339-d27d634a1cce",
     "main",
-    "599cc0d0-32c9-41d6-a9cc-be074b50f9cd",
     "8182050c-943a-4a32-ab7c-994213dca849",
     "6c8b3f43-2aa2-4945-be93-92dc90208d43",
     "58321a20-dbda-462b-98d1-9ac45de56483",
@@ -656,6 +629,7 @@
     "909b5ce5-d2e3-4008-a0a9-f437c0b89bb4",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
-    "product-recommendations"
+    "product-recommendations",
+    "ac291641-af53-4136-b5d2-637a40b1fc89"
   ]
 }
