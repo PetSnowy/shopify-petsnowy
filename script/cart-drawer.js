@@ -24,13 +24,7 @@ class CartDrawer extends HTMLElement {
 	}
 
 	connectedCallback() {
-		try {
-			this.getCartProduct().then((result) => this.productsRecommended(result)).then((map) => {
-				console.log(map);
-			})
-		} catch (error) {
-			console.log(error);
-		}
+		this.getProductsRecommended()
 	}
 
 	//获取当前购物车的全部产品
@@ -41,12 +35,12 @@ class CartDrawer extends HTMLElement {
 	}
 	// 产品推荐
 	async productsRecommended(cartProductList) {
-		console.log('cartProductList', cartProductList);
-		const temp = await Promise.all(cartProductList.map((product) => this.fetchProductRecommendation(product.product_id, 3, 'related')));
-		const target = [cartProductList, ...temp].flat(1)
-		target.forEach(item => console.log('product_id', item.product_id, item.id))
-		const result = target.filter((item, index) => target.findIndex(obj => obj.product_id === item.product_id) === index);
-		return result
+		const result = await Promise.all(cartProductList.map((product) => this.fetchProductRecommendation(product.product_id, 2, 'related')));
+		const map = new Map()
+		for (const item of result.flat(Infinity)) {
+			map.set(item.id, item)
+		}
+		return [...map.values()]
 	}
 
 	//获取当前产品的推荐产品
@@ -54,6 +48,16 @@ class CartDrawer extends HTMLElement {
 		const response = await fetch(`${window.Shopify.routes.root}recommendations/products.json?product_id=${productId}&limit=${limit}&intent=${intent}`);
 		const { products } = await response.json();
 		return products.length && products;
+	}
+
+	getProductsRecommended() {
+		try {
+			this.getCartProduct().then((result) => this.productsRecommended(result)).then((map) => {
+				console.log(map);
+			})
+		} catch (error) {
+			console.log(error);
+		}
 	}
 
 	open(triggeredBy) {
@@ -72,6 +76,7 @@ class CartDrawer extends HTMLElement {
 		document.documentElement.classList.add('overflow-hidden');
 		document.body.style.overflowY = 'scroll';
 		document.querySelector('sticky-header').style.overflowY = 'scroll';
+		this.getProductsRecommended()
 	}
 
 	close() {
