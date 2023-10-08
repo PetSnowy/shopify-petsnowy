@@ -22,25 +22,39 @@ class CartDrawer extends HTMLElement {
 			}
 		});
 	}
-	//update cart data
-	// connectedCallback() {
-	// 	jQuery.getJSON('/cart.js', function ({ items }) {
-	// 		console.log(items);
-	// 		document.dispatchEvent(new CustomEvent('cart:build', { bubbles: true }));
-	// 		document.dispatchEvent(new CustomEvent('cart:refresh', {
-	// 			bubbles: true,
-	// 			detail: items
-	// 		}));
-	// 	});
 
-	// 	document.addEventListener('cart:refresh', event => {
-	// 		const that = this
-	// 		const cartData = event.detail;
-	// 		cartData.forEach(element => {
-	// 			that.renderContents(element)
-	// 		});
-	// 	});
-	// }
+	connectedCallback() {
+		try {
+			this.getCartProduct().then((result) => this.productsRecommended(result)).then((map) => {
+				console.log(map);
+			})
+		} catch (error) {
+			console.log(error);
+		}
+	}
+
+	//获取当前购物车的全部产品
+	async getCartProduct() {
+		const response = await fetch('/cart.js');
+		const { items } = await response.json();
+		return items
+	}
+	// 产品推荐
+	async productsRecommended(cartProductList) {
+		console.log('cartProductList', cartProductList);
+		const temp = await Promise.all(cartProductList.map((product) => this.fetchProductRecommendation(product.product_id, 3, 'related')));
+		const target = [cartProductList, ...temp].flat(1)
+		target.forEach(item => console.log('product_id', item.product_id, item.id))
+		const result = target.filter((item, index) => target.findIndex(obj => obj.product_id === item.product_id) === index);
+		return result
+	}
+
+	//获取当前产品的推荐产品
+	async fetchProductRecommendation(productId, limit, intent) {
+		const response = await fetch(`${window.Shopify.routes.root}recommendations/products.json?product_id=${productId}&limit=${limit}&intent=${intent}`);
+		const { products } = await response.json();
+		return products.length && products;
+	}
 
 	open(triggeredBy) {
 		if (triggeredBy) this.setActiveElement(triggeredBy);
