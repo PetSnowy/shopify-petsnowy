@@ -334,8 +334,8 @@ $(document).ready(function () {
 		var option_image = $(this).find('img').attr('src');
 		$(this).closest('.product_details_show').find(".prod_cus_images img").attr('src', option_image);
 
-		var price_option = parseFloat($(this).attr('data_var_price'));
-		var comapre_price_option = parseFloat($(this).attr('main-compare'));
+		var price_option = parseFloat($(this).attr('data_var_price').replace(/,/g, ''));
+		var comapre_price_option = parseFloat($(this).attr('main-compare').replace(/,/g, ''));
 
 		$('.main_prodcut_contain.active .total_price_add').text(monetaryUnit + price_option);
 		$('.main_prodcut_contain.active .total_price_add').attr('data_price', price_option);
