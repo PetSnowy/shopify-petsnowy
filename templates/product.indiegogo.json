@@ -2,6 +2,7 @@
   "sections": {
     "4d44ea99-36fa-4b09-b6c5-b92fc20bca96": {
       "type": "banner-video",
+      "disabled": true,
       "settings": {
         "vdio_img": "shopify:\/\/shop_images\/video-banner-litter-box.jpg",
         "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e62ade0547cf430bbd64ff3316993dae.mp4",
@@ -26,6 +27,7 @@
       "block_order": [
         "b504c877-67df-4d07-b421-9fac2e31e94f"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -109,53 +111,6 @@
           "settings": {
             "show_dynamic_checkout": true
           }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
@@ -166,13 +121,7 @@
         "quantity_selector",
         "0d30c098-08a5-4f81-b4d9-68932b875783",
         "9282e18d-720c-4943-a475-ee6a154261c7",
-        "buy_buttons",
-        "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "share"
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -217,6 +166,7 @@
         "8849905a-14b4-4979-ab7a-5456bfd3ce9f",
         "template--18597232574786__8182050c-943a-4a32-ab7c-994213dca849-16837919518e59bda4-1"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/1_3_b3611787-0b37-4063-973e-d27ad48f3266.jpg",
         "image_mob": "shopify:\/\/shop_images\/1_3_b3611787-0b37-4063-973e-d27ad48f3266.jpg",
@@ -264,6 +214,7 @@
         "29429228-f2c2-4b01-a351-de3c245dc20f",
         "10ae94d6-61db-4fa7-9351-767ff351dc71"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/2_3_d6d3015b-46b7-4d0e-8d41-53838683a50e.jpg",
         "image_mob": "shopify:\/\/shop_images\/2_3_d6d3015b-46b7-4d0e-8d41-53838683a50e.jpg",
@@ -311,6 +262,7 @@
         "7573ac64-8c42-4866-b56e-e0d394976a62",
         "9563dc4c-c660-45f8-a17a-a336b29a4f40"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/3_5_8ca7eb0b-8ad1-4a55-9920-4eab9a45b9fb.jpg",
         "image_mob": "shopify:\/\/shop_images\/3_5_8ca7eb0b-8ad1-4a55-9920-4eab9a45b9fb.jpg",
@@ -358,6 +310,7 @@
         "d22d9df0-d285-4c75-9c31-e1599789dc61",
         "3ccf5e97-2e62-45c4-816e-faeaab032cec"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/5_17_5b1f9aec-966f-4c8a-bc06-4cf8a0872bdc.jpg",
         "image_mob": "shopify:\/\/shop_images\/5_17_5b1f9aec-966f-4c8a-bc06-4cf8a0872bdc.jpg",
@@ -405,6 +358,7 @@
         "ae54ae90-8a4a-4842-8254-a8757a667737",
         "e40294b3-aa83-405e-b467-cab4eb3f4c07"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/6_1_92c42148-4bb9-404a-9f75-814e30ec2682.jpg",
         "image_mob": "shopify:\/\/shop_images\/6_1_92c42148-4bb9-404a-9f75-814e30ec2682.jpg",
@@ -452,6 +406,7 @@
         "e93e8df0-984c-4842-a211-a828b0b61908",
         "78461c76-059e-4db0-b880-28dd051ceb54"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/4_11_a945091b-6b52-4ad6-ae88-c8a518eed752.jpg",
         "image_mob": "shopify:\/\/shop_images\/4_11_a945091b-6b52-4ad6-ae88-c8a518eed752.jpg",
@@ -506,6 +461,7 @@
         "template--19468281676098__909b5ce5-d2e3-4008-a0a9-f437c0b89bb4-1688697103844d3bed-2",
         "template--19468281676098__909b5ce5-d2e3-4008-a0a9-f437c0b89bb4-1688697103844d3bed-3"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "",
