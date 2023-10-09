@@ -1,0 +1,65 @@
+<section class="product-details">
+  <div class="container" id="{{ section.settings.flag }}">
+    <picture>
+      <source media="(min-width: 901px)" srcset="{{ section.settings.pc_image | img_url: 'master' }}">
+      <source media="(max-width: 900px)" srcset="{{ section.settings.mb_image | img_url: 'master' }}">
+      <img src="{{ section.settings.pc_image | img_url: 'master' }}" alt="{{ section.settings.text }}" loading="lazy">
+    </picture>
+    {% comment %}
+      <div class="details-content">
+        <h2 class="content-title"></h2>
+        <p class="content-desc"></p>
+      </div>
+    {% endcomment %}
+  </div>
+</section>
+<style>
+  .product-details .container {
+    background-color: blue;
+    padding: 20px 0px;
+    height: 300px;
+  }
+</style>
+{% schema %}
+{
+  "name": "product details",
+  "settings": [
+    {
+      "type": "image_picker",
+      "label": "pc image",
+      "id": "pc_image"
+    },
+    {
+      "type": "image_picker",
+      "label": "mb image",
+      "id": "mb_image"
+    },
+    {
+      "type": "text",
+      "label": "text",
+      "id": "text"
+    },
+    {
+      "type": "text",
+      "label": "title",
+      "id": "title"
+    },
+    {
+      "type": "text",
+      "label": "desc",
+      "id": "desc"
+    },
+    {
+      "type": "text",
+      "label": "flag (This option is used to locate Not fill)",
+      "id": "flag"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "product details"
+    }
+  ]
+}
+{% endschema %}
