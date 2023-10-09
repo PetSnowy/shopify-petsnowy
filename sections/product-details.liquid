@@ -1,5 +1,5 @@
 {{ 'product-details.css' | asset_url | stylesheet_tag }}
-<section class="product-details page-width" id="{{ section.settings.flag }}">
+<section class="product-details page-width">
   <div class="container">
     <picture>
       <source media="(min-width: 901px)" srcset="{{ section.settings.pc_image | img_url: 'master' }}">
@@ -43,11 +43,6 @@
       "type": "text",
       "label": "desc",
       "id": "desc"
-    },
-    {
-      "type": "text",
-      "label": "flag (This option is used to locate Not fill)",
-      "id": "flag"
     }
   ],
   "blocks": [],
