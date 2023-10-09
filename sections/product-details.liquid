@@ -1,5 +1,6 @@
-<section class="product-details page-width">
-  <div class="container" id="{{ section.settings.flag }}">
+{{ 'product-details.css' | asset_url | stylesheet_tag }}
+<section class="product-details page-width" id="{{ section.settings.flag }}">
+  <div class="container">
     <picture>
       <source media="(min-width: 901px)" srcset="{{ section.settings.pc_image | img_url: 'master' }}">
       <source media="(max-width: 900px)" srcset="{{ section.settings.mb_image | img_url: 'master' }}">
@@ -13,13 +14,7 @@
     {% endcomment %}
   </div>
 </section>
-<style>
-  .product-details .container {
-    background-color: blue;
-    padding: 20px 0px;
-    height: 300px;
-  }
-</style>
+
 {% schema %}
 {
   "name": "product details",
