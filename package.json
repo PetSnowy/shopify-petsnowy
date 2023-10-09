@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "shopify theme serve",
-    "dev": "shopify theme dev --host localhost --live-reload full-page",
+    "dev": "shopify theme dev --host localhost --live-reload hot-reload --poll",
     "gulp": "gulp",
     "login": "shopify login --store=petsnowy.myshopify.com",
     "theme": "shopify theme dev --store petsnowy.myshopify.com",

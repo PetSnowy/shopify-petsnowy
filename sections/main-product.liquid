@@ -11,6 +11,7 @@
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+  {{ 'newest-main-product.css' | asset_url | stylesheet_tag }}
 
   {%- style -%}
     .section-{{ section.id }}-padding {
@@ -605,8 +606,17 @@
                               checked
                             {% endif %}
                           >
-                          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                            {{ value }}
+                          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" title="{{ value }}">
+                            {% for variant in product.variants %}
+                              {% if variant.title == value %}
+                                {% assign img_src = variant.featured_image.src %}
+                                {% assign img_alt = variant.title %}
+                                <img
+                                  src="{{ img_src | img_url: 'master' }}"
+                                  alt="{{ img_alt }}"
+                                >
+                              {% endif %}
+                            {% endfor %}
                           </label>
                         {%- endfor -%}
                       </fieldset>
