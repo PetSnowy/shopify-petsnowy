@@ -111,6 +111,25 @@
     },
     "14dad76e-4e1a-456f-bcf0-cdeafe2ea7f6": {
       "type": "video-scroll",
+      "blocks": {
+        "045d8d03-96ae-4423-9b0c-a0455d211ce0": {
+          "type": "video_img",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "1d090cf7-d620-4291-a7f8-4c7c3560c890": {
+          "type": "video_url",
+          "settings": {
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "045d8d03-96ae-4423-9b0c-a0455d211ce0",
+        "1d090cf7-d620-4291-a7f8-4c7c3560c890"
+      ],
       "settings": {
         "h1": "",
         "sub_txt": ""
