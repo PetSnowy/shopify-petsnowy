@@ -195,6 +195,11 @@
         "flag": ""
       }
     },
+    "b8760078-806e-424a-96a1-65c4252708b4": {
+      "type": "product-three",
+      "settings": {
+      }
+    },
     "16879203322247258f": {
       "type": "apps",
       "blocks": {
@@ -286,6 +291,7 @@
     "f4a5abe4-f159-4b1c-8fa6-2219dcb550b4",
     "f5b2d258-b499-4683-b984-13725ced9ac7",
     "6cc2e596-a5f2-4662-9ca2-f05f1957cfbf",
+    "b8760078-806e-424a-96a1-65c4252708b4",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
     "product-recommendations"
