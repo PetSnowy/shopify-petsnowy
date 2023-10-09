@@ -182,17 +182,17 @@
         "desc": ""
       }
     },
-    "81086820-fa02-40bd-afc9-97d991823309": {
-      "type": "product-three",
-      "settings": {
-      }
-    },
     "6cc2e596-a5f2-4662-9ca2-f05f1957cfbf": {
       "type": "product-details",
       "settings": {
         "text": "",
         "title": "",
         "desc": ""
+      }
+    },
+    "81086820-fa02-40bd-afc9-97d991823309": {
+      "type": "product-three",
+      "settings": {
       }
     },
     "16879203322247258f": {
@@ -285,8 +285,8 @@
     "ed98f5be-aeb3-48a4-8e02-9e8d4c4c5416",
     "f4a5abe4-f159-4b1c-8fa6-2219dcb550b4",
     "f5b2d258-b499-4683-b984-13725ced9ac7",
-    "81086820-fa02-40bd-afc9-97d991823309",
     "6cc2e596-a5f2-4662-9ca2-f05f1957cfbf",
+    "81086820-fa02-40bd-afc9-97d991823309",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
     "product-recommendations"
