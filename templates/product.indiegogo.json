@@ -124,11 +124,71 @@
           "settings": {
             "video_url": ""
           }
+        },
+        "263ff643-4da7-4f81-9641-28ca7223e5e0": {
+          "type": "video_img",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "04556df9-cb55-41b3-9206-92980b1ae002": {
+          "type": "video_url",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "950a6c30-990a-42ed-bb17-b2b3806f9fde": {
+          "type": "video_img",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "24de3ff8-6cb7-4bbe-ba8d-7496ca429e0d": {
+          "type": "video_url",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "3ee98a9e-173b-40da-ae6f-8cf5b863041e": {
+          "type": "video_img",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "4873d597-f616-4ef7-8e28-f5ae1da2667a": {
+          "type": "video_url",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "dd8586e1-016c-48d8-9a75-0a2fa51730cb": {
+          "type": "video_img",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "3514627c-8913-4205-ba24-ddc2f49b54f1": {
+          "type": "video_url",
+          "settings": {
+            "video_url": ""
+          }
         }
       },
       "block_order": [
         "045d8d03-96ae-4423-9b0c-a0455d211ce0",
-        "1d090cf7-d620-4291-a7f8-4c7c3560c890"
+        "1d090cf7-d620-4291-a7f8-4c7c3560c890",
+        "263ff643-4da7-4f81-9641-28ca7223e5e0",
+        "04556df9-cb55-41b3-9206-92980b1ae002",
+        "950a6c30-990a-42ed-bb17-b2b3806f9fde",
+        "24de3ff8-6cb7-4bbe-ba8d-7496ca429e0d",
+        "3ee98a9e-173b-40da-ae6f-8cf5b863041e",
+        "4873d597-f616-4ef7-8e28-f5ae1da2667a",
+        "dd8586e1-016c-48d8-9a75-0a2fa51730cb",
+        "3514627c-8913-4205-ba24-ddc2f49b54f1"
       ],
       "settings": {
         "h1": "",
