@@ -3,14 +3,16 @@
 <div class="video-scroll-wrapper swiper page-width">
   <div class="video-img-wrapper swiper-wrapper">
     {% for block in section.blocks %}
-      <div class="video-img swiper-slide">
-        <picture>
-          <source media="(min-width: 901px)" srcset="{{ block.settings.image_picker | img_url: 'master' }}">
-          <source media="(max-width: 900px)" srcset="{{ block.settings.mb_image_picker | img_url: 'master' }}">
-          <img src="{{ block.settings.image_picker | img_url: 'master' }}" alt="{{ block.settings.text }}">
-        </picture>
-        <div class="video-play"></div>
-      </div>
+      {% if block.type == 'video_img' %}
+        <div class="video-img swiper-slide">
+          <picture>
+            <source media="(min-width: 901px)" srcset="{{ block.settings.image_picker | img_url: 'master' }}">
+            <source media="(max-width: 900px)" srcset="{{ block.settings.mb_image_picker | img_url: 'master' }}">
+            <img src="{{ block.settings.image_picker | img_url: 'master' }}" alt="{{ block.settings.text }}">
+          </picture>
+          <div class="video-play"></div>
+        </div>
+      {% endif %}
     {% endfor %}
   </div>
   <div class="swiper-button">
@@ -20,6 +22,17 @@
     <div class="swiper-button-next">
       {% render 'icon-arrow-comment' %}
     </div>
+  </div>
+</div>
+<div class="video-srcoll">
+  <div>
+    {% for block in section.blocks %}
+      {% if block.type == 'video_url' %}
+        <div class="video-url-wrapper">
+          <video src="{{ block.settings.video_url }}"></video>
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
 </div>
 <script>
@@ -53,14 +66,13 @@
   ],
   "blocks": [
     {
-      "type": "video_url",
-      "name": "video_url",
+      "type": "video_img",
+      "name": "video_img",
       "settings": [
         {
-          "type": "video_url",
+          "type": "url",
           "id": "video_url",
-          "label": "video url",
-          "accept": ["youtube", "vimeo"]
+          "label": "video url"
         },
         {
           "type": "image_picker",
@@ -76,6 +88,17 @@
           "type": "text",
           "id": "image_alt",
           "label": "image alt"
+        }
+      ]
+    },
+    {
+      "type": "video_url",
+      "name": "video_url",
+      "settings": [
+        {
+          "type": "url",
+          "id": "video_url",
+          "label": "video url"
         }
       ]
     }
