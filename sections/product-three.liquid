@@ -1,6 +1,13 @@
 <section class="product-three page-width">
   <div id="container"></div>
 </section>
+<style>
+  .product-three #container {
+    height: 300px;
+    width: 100%;
+    background-color: chocolate;
+  }
+</style>
 <script type="importmap">
   {
     "imports": {
@@ -10,6 +17,7 @@
   }
 </script>
 <script type="module">
+  debugger;
   import * as THREE from 'three';
   import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
   import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
