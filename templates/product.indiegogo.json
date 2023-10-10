@@ -64,90 +64,9 @@
         "padding_bottom": 12
       }
     },
-    "14dad76e-4e1a-456f-bcf0-cdeafe2ea7f6": {
-      "type": "video-scroll",
-      "blocks": {
-        "045d8d03-96ae-4423-9b0c-a0455d211ce0": {
-          "type": "video_img",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
-        "1d090cf7-d620-4291-a7f8-4c7c3560c890": {
-          "type": "video_url",
-          "settings": {
-            "video_url": ""
-          }
-        },
-        "263ff643-4da7-4f81-9641-28ca7223e5e0": {
-          "type": "video_img",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
-        "04556df9-cb55-41b3-9206-92980b1ae002": {
-          "type": "video_url",
-          "settings": {
-            "video_url": ""
-          }
-        },
-        "950a6c30-990a-42ed-bb17-b2b3806f9fde": {
-          "type": "video_img",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
-        "24de3ff8-6cb7-4bbe-ba8d-7496ca429e0d": {
-          "type": "video_url",
-          "settings": {
-            "video_url": ""
-          }
-        },
-        "3ee98a9e-173b-40da-ae6f-8cf5b863041e": {
-          "type": "video_img",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
-        "4873d597-f616-4ef7-8e28-f5ae1da2667a": {
-          "type": "video_url",
-          "settings": {
-            "video_url": ""
-          }
-        },
-        "dd8586e1-016c-48d8-9a75-0a2fa51730cb": {
-          "type": "video_img",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
-        "3514627c-8913-4205-ba24-ddc2f49b54f1": {
-          "type": "video_url",
-          "settings": {
-            "video_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "045d8d03-96ae-4423-9b0c-a0455d211ce0",
-        "1d090cf7-d620-4291-a7f8-4c7c3560c890",
-        "263ff643-4da7-4f81-9641-28ca7223e5e0",
-        "04556df9-cb55-41b3-9206-92980b1ae002",
-        "950a6c30-990a-42ed-bb17-b2b3806f9fde",
-        "24de3ff8-6cb7-4bbe-ba8d-7496ca429e0d",
-        "3ee98a9e-173b-40da-ae6f-8cf5b863041e",
-        "4873d597-f616-4ef7-8e28-f5ae1da2667a",
-        "dd8586e1-016c-48d8-9a75-0a2fa51730cb",
-        "3514627c-8913-4205-ba24-ddc2f49b54f1"
-      ],
+    "12a77462-3e98-474a-abc4-10be330a3dc3": {
+      "type": "product-navbar",
       "settings": {
-        "h1": "",
-        "sub_txt": ""
       }
     },
     "17b0b475-d06c-44c3-869e-6a83dc37ee02": {
@@ -259,6 +178,92 @@
         "space_bottom": 40
       }
     },
+    "14dad76e-4e1a-456f-bcf0-cdeafe2ea7f6": {
+      "type": "video-scroll",
+      "blocks": {
+        "045d8d03-96ae-4423-9b0c-a0455d211ce0": {
+          "type": "video_img",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "1d090cf7-d620-4291-a7f8-4c7c3560c890": {
+          "type": "video_url",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "263ff643-4da7-4f81-9641-28ca7223e5e0": {
+          "type": "video_img",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "04556df9-cb55-41b3-9206-92980b1ae002": {
+          "type": "video_url",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "950a6c30-990a-42ed-bb17-b2b3806f9fde": {
+          "type": "video_img",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "24de3ff8-6cb7-4bbe-ba8d-7496ca429e0d": {
+          "type": "video_url",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "3ee98a9e-173b-40da-ae6f-8cf5b863041e": {
+          "type": "video_img",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "4873d597-f616-4ef7-8e28-f5ae1da2667a": {
+          "type": "video_url",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "dd8586e1-016c-48d8-9a75-0a2fa51730cb": {
+          "type": "video_img",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "3514627c-8913-4205-ba24-ddc2f49b54f1": {
+          "type": "video_url",
+          "settings": {
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "045d8d03-96ae-4423-9b0c-a0455d211ce0",
+        "1d090cf7-d620-4291-a7f8-4c7c3560c890",
+        "263ff643-4da7-4f81-9641-28ca7223e5e0",
+        "04556df9-cb55-41b3-9206-92980b1ae002",
+        "950a6c30-990a-42ed-bb17-b2b3806f9fde",
+        "24de3ff8-6cb7-4bbe-ba8d-7496ca429e0d",
+        "3ee98a9e-173b-40da-ae6f-8cf5b863041e",
+        "4873d597-f616-4ef7-8e28-f5ae1da2667a",
+        "dd8586e1-016c-48d8-9a75-0a2fa51730cb",
+        "3514627c-8913-4205-ba24-ddc2f49b54f1"
+      ],
+      "settings": {
+        "h1": "",
+        "sub_txt": ""
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "disabled": true,
@@ -280,7 +285,7 @@
   },
   "order": [
     "main",
-    "14dad76e-4e1a-456f-bcf0-cdeafe2ea7f6",
+    "12a77462-3e98-474a-abc4-10be330a3dc3",
     "17b0b475-d06c-44c3-869e-6a83dc37ee02",
     "ed98f5be-aeb3-48a4-8e02-9e8d4c4c5416",
     "f4a5abe4-f159-4b1c-8fa6-2219dcb550b4",
@@ -289,6 +294,7 @@
     "81086820-fa02-40bd-afc9-97d991823309",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
+    "14dad76e-4e1a-456f-bcf0-cdeafe2ea7f6",
     "product-recommendations"
   ]
 }
