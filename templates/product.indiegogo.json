@@ -1,129 +1,5 @@
 {
   "sections": {
-    "4d44ea99-36fa-4b09-b6c5-b92fc20bca96": {
-      "type": "banner-video",
-      "settings": {
-        "vdio_img": "shopify:\/\/shop_images\/video-banner-litter-box.jpg",
-        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e62ade0547cf430bbd64ff3316993dae.mp4",
-        "mobvdio_img": "shopify:\/\/shop_images\/video-banner-litter-box.jpg",
-        "mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e62ade0547cf430bbd64ff3316993dae.mp4",
-        "heading": "",
-        "sub_heading": "",
-        "btn_text": "",
-        "btn_url": ""
-      }
-    },
-    "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8": {
-      "type": "rich-text",
-      "blocks": {
-        "b504c877-67df-4d07-b421-9fac2e31e94f": {
-          "type": "text",
-          "settings": {
-            "text": "<h1>SNOW<sup>+<\/sup> Self-cleaning Litter Box<\/h1><span><span> This offer cannot be combined with any other discount code.<\/span><\/span>"
-          }
-        }
-      },
-      "block_order": [
-        "b504c877-67df-4d07-b421-9fac2e31e94f"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 56,
-        "padding_bottom": 40
-      }
-    },
-    "635deaad-6797-4ca6-9a10-c443617e9573": {
-      "type": "product-collection-list",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Bg_Image.png",
-        "title": "Your Collection Text Here",
-        "text": "Your Text Here",
-        "url": "",
-        "images": "shopify:\/\/shop_images\/Bg_Image_1.png",
-        "titles": "Your Collection Text Here",
-        "texts": "Your Text Here",
-        "urls": "",
-        "padding_top": 40,
-        "padding_bottom": 12
-      }
-    },
-    "bfc32d8d-f32f-433d-b324-db861a14296b": {
-      "type": "image-with-text",
-      "blocks": {
-        "abc2bcd5-6191-4bf7-81c0-7bb701779bf7": {
-          "type": "heading",
-          "settings": {
-            "heading": "Save Big on Everything During Prime Day",
-            "heading_size": "h1"
-          }
-        },
-        "3a6e402d-49f0-4ec4-af1c-f09ab7565126": {
-          "type": "text",
-          "settings": {
-            "text": "<p>This offer cannot be combined with any other discount code.<\/p>",
-            "text_style": "subtitle"
-          }
-        },
-        "4e98a2c8-6125-4157-aac1-0789bcaf11bc": {
-          "type": "caption",
-          "settings": {
-            "caption": "",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "abc2bcd5-6191-4bf7-81c0-7bb701779bf7",
-        "3a6e402d-49f0-4ec4-af1c-f09ab7565126",
-        "4e98a2c8-6125-4157-aac1-0789bcaf11bc"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/banner-mb2.jpg",
-        "image_mob": "shopify:\/\/shop_images\/banner-mb2.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "chek_wth": true,
-        "mobile_content_alignment": "center",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "b6e45bc2-2133-4106-a9db-61ab406abfe6": {
-      "type": "Product-video",
-      "disabled": true,
-      "settings": {
-        "vdio_img": "shopify:\/\/shop_images\/video.png",
-        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/86480277b00d435bbbba6e62c6b5f781.mp4",
-        "heading": "Your Video Text Here",
-        "text": "Your Video Text Here",
-        "padding_top": 20,
-        "padding_bottom": 40
-      }
-    },
-    "67351f1a-11a8-4ea8-b339-d27d634a1cce": {
-      "type": "product-inventory",
-      "disabled": true,
-      "settings": {
-        "card_title": "First 50 Customers Only",
-        "title": "Halloween USA Perk",
-        "pc_inventory_image": "shopify:\/\/shop_images\/1090.png",
-        "mb_inventory_image": "shopify:\/\/shop_images\/20002000.jpg",
-        "desc": "This offer is currently available to customers in the US only. We apologize for any inconvenience.",
-        "card_text": "Remaining Cat Carrier:",
-        "pc_image": "shopify:\/\/shop_images\/cat_carrier.jpg",
-        "mb_image": "shopify:\/\/shop_images\/cat_carrier_mb.jpg"
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -186,6 +62,92 @@
         "enable_video_looping": true,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "14dad76e-4e1a-456f-bcf0-cdeafe2ea7f6": {
+      "type": "video-scroll",
+      "blocks": {
+        "045d8d03-96ae-4423-9b0c-a0455d211ce0": {
+          "type": "video_img",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "1d090cf7-d620-4291-a7f8-4c7c3560c890": {
+          "type": "video_url",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "263ff643-4da7-4f81-9641-28ca7223e5e0": {
+          "type": "video_img",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "04556df9-cb55-41b3-9206-92980b1ae002": {
+          "type": "video_url",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "950a6c30-990a-42ed-bb17-b2b3806f9fde": {
+          "type": "video_img",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "24de3ff8-6cb7-4bbe-ba8d-7496ca429e0d": {
+          "type": "video_url",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "3ee98a9e-173b-40da-ae6f-8cf5b863041e": {
+          "type": "video_img",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "4873d597-f616-4ef7-8e28-f5ae1da2667a": {
+          "type": "video_url",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "dd8586e1-016c-48d8-9a75-0a2fa51730cb": {
+          "type": "video_img",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "3514627c-8913-4205-ba24-ddc2f49b54f1": {
+          "type": "video_url",
+          "settings": {
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "045d8d03-96ae-4423-9b0c-a0455d211ce0",
+        "1d090cf7-d620-4291-a7f8-4c7c3560c890",
+        "263ff643-4da7-4f81-9641-28ca7223e5e0",
+        "04556df9-cb55-41b3-9206-92980b1ae002",
+        "950a6c30-990a-42ed-bb17-b2b3806f9fde",
+        "24de3ff8-6cb7-4bbe-ba8d-7496ca429e0d",
+        "3ee98a9e-173b-40da-ae6f-8cf5b863041e",
+        "4873d597-f616-4ef7-8e28-f5ae1da2667a",
+        "dd8586e1-016c-48d8-9a75-0a2fa51730cb",
+        "3514627c-8913-4205-ba24-ddc2f49b54f1"
+      ],
+      "settings": {
+        "h1": "",
+        "sub_txt": ""
       }
     },
     "12a77462-3e98-474a-abc4-10be330a3dc3": {
@@ -302,92 +264,6 @@
         "space_bottom": 40
       }
     },
-    "14dad76e-4e1a-456f-bcf0-cdeafe2ea7f6": {
-      "type": "video-scroll",
-      "blocks": {
-        "045d8d03-96ae-4423-9b0c-a0455d211ce0": {
-          "type": "video_img",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
-        "1d090cf7-d620-4291-a7f8-4c7c3560c890": {
-          "type": "video_url",
-          "settings": {
-            "video_url": ""
-          }
-        },
-        "263ff643-4da7-4f81-9641-28ca7223e5e0": {
-          "type": "video_img",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
-        "04556df9-cb55-41b3-9206-92980b1ae002": {
-          "type": "video_url",
-          "settings": {
-            "video_url": ""
-          }
-        },
-        "950a6c30-990a-42ed-bb17-b2b3806f9fde": {
-          "type": "video_img",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
-        "24de3ff8-6cb7-4bbe-ba8d-7496ca429e0d": {
-          "type": "video_url",
-          "settings": {
-            "video_url": ""
-          }
-        },
-        "3ee98a9e-173b-40da-ae6f-8cf5b863041e": {
-          "type": "video_img",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
-        "4873d597-f616-4ef7-8e28-f5ae1da2667a": {
-          "type": "video_url",
-          "settings": {
-            "video_url": ""
-          }
-        },
-        "dd8586e1-016c-48d8-9a75-0a2fa51730cb": {
-          "type": "video_img",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
-        "3514627c-8913-4205-ba24-ddc2f49b54f1": {
-          "type": "video_url",
-          "settings": {
-            "video_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "045d8d03-96ae-4423-9b0c-a0455d211ce0",
-        "1d090cf7-d620-4291-a7f8-4c7c3560c890",
-        "263ff643-4da7-4f81-9641-28ca7223e5e0",
-        "04556df9-cb55-41b3-9206-92980b1ae002",
-        "950a6c30-990a-42ed-bb17-b2b3806f9fde",
-        "24de3ff8-6cb7-4bbe-ba8d-7496ca429e0d",
-        "3ee98a9e-173b-40da-ae6f-8cf5b863041e",
-        "4873d597-f616-4ef7-8e28-f5ae1da2667a",
-        "dd8586e1-016c-48d8-9a75-0a2fa51730cb",
-        "3514627c-8913-4205-ba24-ddc2f49b54f1"
-      ],
-      "settings": {
-        "h1": "",
-        "sub_txt": ""
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
       "disabled": true,
@@ -408,12 +284,8 @@
     }
   },
   "order": [
-    "4d44ea99-36fa-4b09-b6c5-b92fc20bca96",
-    "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
-    "635deaad-6797-4ca6-9a10-c443617e9573",
-    "b6e45bc2-2133-4106-a9db-61ab406abfe6",
-    "67351f1a-11a8-4ea8-b339-d27d634a1cce",
     "main",
+    "14dad76e-4e1a-456f-bcf0-cdeafe2ea7f6",
     "12a77462-3e98-474a-abc4-10be330a3dc3",
     "17b0b475-d06c-44c3-869e-6a83dc37ee02",
     "ed98f5be-aeb3-48a4-8e02-9e8d4c4c5416",
@@ -423,7 +295,6 @@
     "81086820-fa02-40bd-afc9-97d991823309",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
-    "14dad76e-4e1a-456f-bcf0-cdeafe2ea7f6",
     "product-recommendations"
   ]
 }
