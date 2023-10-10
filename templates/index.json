@@ -175,7 +175,7 @@
         "b63b44fd-1392-4f1d-bb42-78d716d0d2a7": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Prime Day",
+            "button_label_1": "Shop Now and Save",
             "button_link_1": "shopify:\/\/products\/snow-self-cleaning-litter-box",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -223,7 +223,7 @@
         "b6179f64-2747-4913-8df8-06b31cf23939": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Prime Day",
+            "button_label_1": "Shop and Save",
             "button_link_1": "shopify:\/\/products\/snow-roly-poly-cat-toy",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -546,7 +546,7 @@
         "bdb97ceb-daab-4df5-adcb-e065f97587a4": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Prime Day",
+            "button_label": "Shop Now and Save",
             "button_link": "shopify:\/\/products\/snow-water-fountain"
           }
         }
@@ -602,7 +602,7 @@
         "c89c77a0-e141-48f4-ad24-9fdc00a779f8": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Prime Day",
+            "button_label": "Shop Now and Save",
             "button_link": "shopify:\/\/products\/snow-pet-feeder"
           }
         }
@@ -658,7 +658,7 @@
         "template--17467597848898__2156df71-f54e-4c02-9cf2-21ca2e6640b3-1674893959ac81b555-2": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Prime Day",
+            "button_label": "Shop Now and Save",
             "button_link": "shopify:\/\/collections\/accessories"
           }
         }
