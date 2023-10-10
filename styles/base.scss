@@ -1,5 +1,5 @@
 /* Color custom properties */
-@import "pxToVw.scss", "reset.scss";
+@import "pxToVw.scss", "reset.scss", "font.scss";
 
 :root,
 .color-background-1 {
@@ -2892,17 +2892,7 @@ html {
 	padding-bottom: 0 !important;
 }
 
-@font-face {
-	font-family: "SUISSE_INT_L_MEDIUM";
-	src: url("https://cdn.shopify.com/s/files/1/0683/5293/4210/files/SUISSE_INT_L_MEDIUM.TTF?v=1672313068") format("truetype");
-	font-display: optional;
-}
 
-@font-face {
-	font-family: "FS_JOEY-REGULAR";
-	src: url("https://cdn.shopify.com/s/files/1/0683/5293/4210/files/FS_JOEY-REGULAR.ttf?v=1672313182") format("truetype");
-	font-display: optional;
-}
 
 h1,
 h2,
@@ -4475,9 +4465,11 @@ span.socl_insta_icon svg {
 	align-items: center;
 
 	.icon {
-		width: 129px;
-		height: 20px;
-		background: url("update-btn.png") no-repeat center/cover;
+		width: fit-content;
+		padding: 2px 5px;
+		color: #ffffff;
+		font-family: 'HelveticaBold';
+		background-color: #f18113;
 		margin-right: 5px;
 		display: inline-block;
 	}
