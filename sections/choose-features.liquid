@@ -313,9 +313,7 @@
                             {% assign inventory_quantity = variant.inventory_quantity %}
                           {% endif %}
                         {% endfor %}
-                        {% if varid == 46976335249730 %}
-                          {% continue %}
-                        {% endif %}
+                      
                         <label
                           for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
                           data_var_price="{{ varprice }}"
