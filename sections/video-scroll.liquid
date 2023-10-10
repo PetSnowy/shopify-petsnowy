@@ -7,7 +7,11 @@
         <picture>
           <source media="(min-width: 901px)" srcset="{{ block.settings.image_picker | img_url: 'master' }}">
           <source media="(max-width: 900px)" srcset="{{ block.settings.mb_image_picker | img_url: 'master' }}">
-          <img src="{{ block.settings.image_picker | img_url: 'master' }}" alt="{{ block.settings.text }}">
+          <img
+            decoding="async"
+            src="{{ block.settings.image_picker | img_url: 'master' }}"
+            alt="{{ block.settings.text }}"
+          >
         </picture>
         <div class="video-play"></div>
       </div>

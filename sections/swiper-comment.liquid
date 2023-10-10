@@ -8,7 +8,7 @@
     {% for block in section.blocks %}
       <div class="star swiper-slide">
         <div class="comment-info">
-          <img src="{{ block.settings.avatar | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+          <img decoding="async" src="{{ block.settings.avatar | img_url: 'master' }}" alt="petsnowy" loading="lazy">
           <div class="info-wrapper">
             <p class="name">{{ block.settings.name }}</p>
             <div class="star-wrapper" data-star="{{ block.settings.satisfaction_level }}">

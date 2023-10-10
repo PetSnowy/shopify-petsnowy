@@ -25,7 +25,7 @@
         </div>
         <div class="itg_ctm_product_img">
           {% if product.featured_image != blank %}
-            <img src="{{ product.featured_image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+            <img decoding="async" src="{{ product.featured_image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
           {% endif %}
         </div>
       </div>

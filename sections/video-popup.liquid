@@ -22,7 +22,12 @@
           <div class="top_img item">
             <div class="top_img_div">
               {% if block.settings.ml_img != blank %}
-                <img src="{{ block.settings.ml_img | img_url: 'master'}}" alt="petsnowy" loading="lazy">
+                <img
+                  decoding="async"
+                  src="{{ block.settings.ml_img | img_url: 'master'}}"
+                  alt="petsnowy"
+                  loading="lazy"
+                >
                 <div
                   class="img_icon_svg"
                   data-video-url="https://www.youtube-nocookie.com/embed/{{ block.settings.video_url.id }}?autoplay=1"
@@ -41,7 +46,7 @@
         {% for block in section.blocks %}
           <div class="bottom_img">
             {% if block.settings.ml_imgaa != blank %}
-              <img src="{{ block.settings.ml_imgaa | img_url: '200X'}}" alt="petsnowy" loading="lazy">
+              <img decoding="async" src="{{ block.settings.ml_imgaa | img_url: '200X'}}" alt="petsnowy" loading="lazy">
             {% endif %}
           </div>
         {% endfor %}

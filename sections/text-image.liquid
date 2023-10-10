@@ -21,7 +21,7 @@
     </div>
     <div class="doble_textimage">
       {% if section.settings.img != blank %}
-        <img src="{{ section.settings.img | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+        <img decoding="async" src="{{ section.settings.img | img_url: 'master' }}" alt="petsnowy" loading="lazy">
         <div class="doble_textdata">
           <h2 data-aos="fade-up" data-aos-duration="800">{{ section.settings.heading }}</h2>
           <div data-aos="fade-up" data-aos-duration="800">{{ section.settings.text }}</div>

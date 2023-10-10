@@ -18,7 +18,7 @@
       <div class="product_colls_one gutter_div">
         <a href="{{ section.settings.url }}">
           {% if section.settings.image != blank %}
-            <img src="{{ section.settings.image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+            <img decoding="async" src="{{ section.settings.image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
             <div class="product_colls_text">
               <h2 data-aos="fade-up" data-aos-duration="700">{{ section.settings.title }}</h2>
               <span data-aos="fade-up" data-aos-duration="800">{{ section.settings.text }}</span>
@@ -29,7 +29,7 @@
       <div class="product_colls_two gutter_div">
         <a href="{{ section.settings.urls }}">
           {% if section.settings.images != blank %}
-            <img src="{{ section.settings.images | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+            <img decoding="async" src="{{ section.settings.images | img_url: 'master' }}" alt="petsnowy" loading="lazy">
             <div class="product_colls_text">
               <h2 data-aos="fade-up" data-aos-duration="800">{{ section.settings.titles }}</h2>
               <span data-aos="fade-up" data-aos-duration="900">{{ section.settings.texts }}</span>

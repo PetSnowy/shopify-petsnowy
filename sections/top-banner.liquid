@@ -1,6 +1,6 @@
 <div class="top_banner_section">
   {% if section.settings.img != blank %}
-    <img src="{{ section.settings.img | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+    <img decoding="async" src="{{ section.settings.img | img_url: 'master' }}" alt="petsnowy" loading="lazy">
     <div class="page-width">
       <div class="top_banner_text">
         <span data-aos="fade-up" data-aos-duration="700">{{ section.settings.sub_text }}</span>

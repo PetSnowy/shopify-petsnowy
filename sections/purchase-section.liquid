@@ -33,7 +33,7 @@
 
     <div class="purchase_data">
       {% if section.settings.image != blank %}
-        <img src="{{ section.settings.image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+        <img decoding="async" src="{{ section.settings.image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
       {% endif %}
       <div class="page-width">
         <div class="purchase_data_text">

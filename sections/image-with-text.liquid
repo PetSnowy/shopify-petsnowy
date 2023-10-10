@@ -37,7 +37,12 @@
 
       <div class="mobile_images image-with-text__media image-with-text__media--{{ section.settings.height }} gradient color-{{ section.settings.color_scheme }} global-media-settings {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}">
         {% if section.settings.image_mob != blank %}
-          <img src="{{ section.settings.image_mob | img_url: 'master' }}" loading="lazy" alt="petsnowy">
+          <img
+            decoding="async"
+            src="{{ section.settings.image_mob | img_url: 'master' }}"
+            loading="lazy"
+            alt="petsnowy"
+          >
         {%- endif -%}
       </div>
     </div>

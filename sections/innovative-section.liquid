@@ -17,7 +17,7 @@
     <div class="innovative_texts">
       {% if section.settings.imagerow != blank %}
         <div class="inno_img">
-          <img src="{{ section.settings.imagerow | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+          <img decoding="async" src="{{ section.settings.imagerow | img_url: 'master' }}" alt="petsnowy" loading="lazy">
         </div>
       {% else %}
         <div class="inno_img">

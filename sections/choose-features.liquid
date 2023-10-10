@@ -56,7 +56,12 @@
               style="display:none;"
             >
               {% if main_product_detail.featured_image != blank %}
-                <img src="{{ main_product_detail.featured_image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+                <img
+                  decoding="async"
+                  src="{{ main_product_detail.featured_image | img_url: 'master' }}"
+                  alt="petsnowy"
+                  loading="lazy"
+                >
               {% endif %}
             </div>
           {% endfor %}
@@ -214,7 +219,7 @@
                             <div class="changed_pro_variantlist">
                               <div class="change_variant_img">
                                 {% if changedvarimg != blank %}
-                                  <img src="{{ changedvarimg }}" alt="petsnowy" loading="lazy">
+                                  <img decoding="async" src="{{ changedvarimg }}" alt="petsnowy" loading="lazy">
                                 {% endif %}
                               </div>
                               <div class="change_variant_datatext">
@@ -316,7 +321,7 @@
                         >
                           <div class="itg_drop_var_align_img">
                             {% if varimg != blank %}
-                              <img src="{{ varimg }}" alt="petsnowy" loading="lazy">
+                              <img decoding="async" src="{{ varimg }}" alt="petsnowy" loading="lazy">
                             {% else %}
                               <p>{{ value }}</p>
                             {% endif %}
