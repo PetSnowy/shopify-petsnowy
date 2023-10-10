@@ -175,7 +175,7 @@
         "b63b44fd-1392-4f1d-bb42-78d716d0d2a7": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Now And Save",
+            "button_label_1": "Shop Now",
             "button_link_1": "shopify:\/\/products\/snow-self-cleaning-litter-box",
             "button_style_secondary_1": false,
             "button_label_2": "",
