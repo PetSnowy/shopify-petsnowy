@@ -4466,12 +4466,14 @@ span.socl_insta_icon svg {
 
 	.icon {
 		width: fit-content;
-		padding: 2px 5px;
+		padding: 0px 5px;
 		color: #ffffff;
 		font-family: 'HelveticaBold';
+		border-radius: 5px;
 		background-color: #f18113;
 		margin-right: 5px;
 		display: inline-block;
+		font-size: 13px;
 	}
 
 	span:nth-child(2) {
