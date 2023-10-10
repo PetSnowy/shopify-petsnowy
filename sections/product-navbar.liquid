@@ -1,0 +1,50 @@
+<nav class="product-navbar">
+  <ul class="list page-width">
+    <li>Details</li>
+    <li>Specs</li>
+    <li>Review</li>
+    <li>FAQ</li>
+  </ul>
+</nav>
+<style>
+  .product-navbar .list {
+    display: flex;
+    column-gap: 20px;
+  }
+  .product-navbar .list li {
+    padding: 10px 20px;
+    background: red;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .product-navbar .list li.active {
+    background-color: chocolate;
+  }
+</style>
+<script>
+  const details = document.querySelector('.product-details');
+  const faq = document.querySelector('#video-scoll');
+  const specs = document.querySelector('.product-three');
+  const review = document.querySelector('#looxReviews');
+  const productEl = [details, specs, review, faq];
+  const list = Array.from(document.querySelectorAll('.product-navbar .list li'));
+  list.forEach((item, index) => {
+    item.addEventListener('click', function () {
+      this.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      this.classList.add('active');
+    });
+  });
+</script>
+{% schema %}
+{
+  "name": "product navbar",
+  "settings": [],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "product navbar"
+    }
+  ]
+}
+{% endschema %}

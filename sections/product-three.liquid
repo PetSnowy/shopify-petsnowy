@@ -3,13 +3,96 @@
 </section>
 <style>
   .product-three #container {
-    height: 300px;
-    width: 300px;
+    height: 600px;
+    width: 100%;
     display: block;
     background-color: chocolate;
   }
 </style>
 
+<script type="module" defer>
+  import * as THREE from 'three';
+
+  // import Stats from 'three/addons/libs/stats.module.js';
+
+  import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+  // import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+  import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+  // 引入DRACOLoader 对glb文件进行解码
+  import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
+
+  // import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
+
+  const container = document.querySelector('.product-three #container');
+  const scene = new THREE.Scene();
+
+  async function init() {
+    // 设置光源
+    const point = new THREE.PointLight(0xffffff);
+    point.position.set(0, 0, 0); //点光源位置
+    scene.add(point); //点光源添加到场景中
+
+    //环境光
+    const light = new THREE.AmbientLight(0xffffff);
+    scene.add(light);
+
+    const directionalLight = new THREE.DirectionalLight(0xffffff);
+    directionalLight.position.set(0, 1, 1);
+    scene.add(directionalLight);
+
+    //相机设置
+    const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000); //透视摄像机
+    camera.position.set(2, 0, 0); //设置相机位置
+    camera.lookAt(scene.position); //设置相机方向(指向的场景对象)
+
+    // 加载模型
+    const loader = await new GLTFLoader();
+
+    //对模型文件glb进行解码操作 某些glb文件不需要
+
+    const dracoLoader = await new DRACOLoader();
+    dracoLoader.setDecoderPath('../assets/');
+    loader.setDRACOLoader(dracoLoader);
+
+    //加载模型文件
+
+    loader.load(
+      '../assets/litter.glb',
+      function (glb) {
+        console.log(glb.scene);
+        glb.scene.position.set(-50, 0, 0);
+        scene.add(glb.scene);
+      },
+      undefined,
+      function (error) {
+        console.error(error);
+      }
+    );
+
+    // 创建渲染对象
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(container.offsetWidth, container.offsetHeight); //设置渲染区域尺寸
+    renderer.setClearColor(0xffffff, 1); //设置背景颜色
+    container.appendChild(renderer.domElement);
+    // 执行渲染操作
+    function animate() {
+      requestAnimationFrame(animate);
+      renderer.render(scene, camera); //执行渲染操作
+    }
+    //创建控件对象1
+    const controls = new OrbitControls(camera, renderer.domElement);
+
+    animate();
+    // setInterval("animate()",2000);
+  }
+
+  try {
+    init();
+  } catch (error) {
+    console.log(error);
+  }
+</script>
 {% schema %}
 {
   "name": "product three",
