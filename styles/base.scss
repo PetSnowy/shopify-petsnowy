@@ -3157,8 +3157,9 @@ h2.banner__heading span {
 	font-size: 14px;
 	line-height: 18px;
 	color: #231f20;
-	width: 180px;
+	width: fit-content;
 	padding: 0 30px;
+	white-space: nowrap;
 }
 
 .banner__box {
@@ -4491,7 +4492,6 @@ span.socl_insta_icon svg {
 		justify-content: center;
 
 		.icon {
-			width: 34.4vw;
 			height: 5.3333vw;
 			margin-right: 1.3333vw;
 		}
