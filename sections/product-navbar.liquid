@@ -1,12 +1,19 @@
-<nav class="product-navbar">
-  <ul class="list page-width">
-    <li>Details</li>
-    <li>Specs</li>
-    <li>Review</li>
-    <li>FAQ</li>
-  </ul>
-</nav>
+<div class="product-main">
+  <nav class="product-navbar">
+    <ul class="list page-width">
+      <li>Details</li>
+      <li>Specs</li>
+      <li>Review</li>
+      <li>FAQ</li>
+    </ul>
+  </nav>
+</div>
+
 <style>
+  .product-navbar {
+    position: sticky;
+    top: var(--main-padding-top);
+  }
   .product-navbar .list {
     display: flex;
     column-gap: 20px;
