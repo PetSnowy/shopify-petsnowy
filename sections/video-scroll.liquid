@@ -1,45 +1,31 @@
 {{ 'video-scroll.css' | asset_url | stylesheet_tag }}
 
-<section id="video-srcoll">
-  <div class="video-scroll-wrapper swiper page-width">
-    <div class="video-img-wrapper swiper-wrapper">
-      {% for block in section.blocks %}
-        {% if block.type == 'video_img' %}
-          <div class="video-img swiper-slide">
-            <picture>
-              <source media="(min-width: 901px)" srcset="{{ block.settings.image_picker | img_url: 'master' }}">
-              <source media="(max-width: 900px)" srcset="{{ block.settings.mb_image_picker | img_url: 'master' }}">
-              <img src="{{ block.settings.image_picker | img_url: 'master' }}" alt="{{ block.settings.text }}">
-            </picture>
-            <div class="video-play"></div>
-          </div>
-        {% endif %}
-      {% endfor %}
+<div class="video-scroll-wrapper swiper page-width">
+  <div class="video-img-wrapper swiper-wrapper">
+    {% for block in section.blocks %}
+      <div class="video-img swiper-slide">
+        <picture>
+          <source media="(min-width: 901px)" srcset="{{ block.settings.image_picker | img_url: 'master' }}">
+          <source media="(max-width: 900px)" srcset="{{ block.settings.mb_image_picker | img_url: 'master' }}">
+          <img
+            decoding="async"
+            src="{{ block.settings.image_picker | img_url: 'master' }}"
+            alt="{{ block.settings.text }}"
+          >
+        </picture>
+        <div class="video-play"></div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="swiper-button">
+    <div class="swiper-button-prev">
+      {% render 'icon-arrow-comment' %}
     </div>
-    <div class="swiper-button">
-      <div class="swiper-button-prev">
-        {% render 'icon-arrow-comment' %}
-      </div>
-      <div class="swiper-button-next">
-        {% render 'icon-arrow-comment' %}
-      </div>
+    <div class="swiper-button-next">
+      {% render 'icon-arrow-comment' %}
     </div>
   </div>
-  <div class="portrait-screen swiper">
-    <div class="swiper-wrapper">
-      {% for block in section.blocks %}
-        {% if block.type == 'video_url' %}
-          <div class="video-url-wrapper swiper-slide">
-            <video src="{{ block.settings.video_url }}"></video>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="close"></div>
-  </div>
-</section>
-
+</div>
 <script>
   $(function () {
     const abscissaSwiper = new Swiper('.video-scroll-wrapper', {

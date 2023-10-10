@@ -63,11 +63,11 @@
           | escape
         }}
       {% endcomment %}
-      <img src="{{ section.settings.image | img_url: 'master' }}" loading="lazy" alt="petsnowy">
+      <img decoding="async" src="{{ section.settings.image | img_url: 'master' }}" loading="lazy" alt="petsnowy">
     </div>
     {% if section.settings.image_mbl != blank %}
       <div class="banner_mobile banner__media media">
-        <img src="{{ section.settings.image_mbl | img_url: 'master' }}" loading="lazy" alt="petsnowy">
+        <img decoding="async" src="{{ section.settings.image_mbl | img_url: 'master' }}" loading="lazy" alt="petsnowy">
       </div>
     {% endif %}
   {%- elsif section.settings.image_2 == blank -%}
@@ -106,7 +106,12 @@
     </div>
     {% if section.settings.image_mbl_2 != blank %}
       <div class="banner_mobile banner__media media">
-        <img src="{{ section.settings.image_mbl_2 | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+        <img
+          decoding="async"
+          src="{{ section.settings.image_mbl_2 | img_url: 'master' }}"
+          alt="petsnowy"
+          loading="lazy"
+        >
       </div>
     {% endif %}
   {%- endif -%}

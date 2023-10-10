@@ -19,7 +19,12 @@
         <div class="1_img_row">
           {% for block in section.blocks %}
             {% if block.settings.image_block != blank %}
-              <img src="{{ block.settings.image_block | img_url: '200X200' }}" alt="petsnowy" loading="lazy">
+              <img
+                decoding="async"
+                src="{{ block.settings.image_block | img_url: '200X200' }}"
+                alt="petsnowy"
+                loading="lazy"
+              >
             {%- endif -%}
           {% endfor %}
         </div>
@@ -50,7 +55,12 @@
         </div>
         {% if section.settings.imagerow != blank %}
           <div class="text_image_div">
-            <img src="{{ section.settings.imagerow | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+            <img
+              decoding="async"
+              src="{{ section.settings.imagerow | img_url: 'master' }}"
+              alt="petsnowy"
+              loading="lazy"
+            >
           </div>
         {%- endif -%}
       </div>

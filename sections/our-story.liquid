@@ -28,7 +28,7 @@
           </div>
           <div class="ourstoryimage">
             {% if block.settings.image != blank %}
-              <img src="{{ block.settings.image | img_url: '500X500' }}" alt="petsnowy" loading="lazy">
+              <img decoding="async" src="{{ block.settings.image | img_url: '500X500' }}" alt="petsnowy" loading="lazy">
             {% endif %}
           </div>
         </div>

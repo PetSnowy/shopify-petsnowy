@@ -1,6 +1,6 @@
 <div class="page_baner_main">
   <div class="page_bnr_banner">
-    {% comment %}<img src="{{ section.settings.image | img_url: 'master' }}">{% endcomment %}
+    {% comment %}<img decoding="async" src="{{ section.settings.image | img_url: 'master' }}">{% endcomment %}
     {%- if section.settings.image != blank -%}
       <div class="banner__media {% if section.settings.image_mbl != blank %}banner_desktop{% endif %}">
         {%- liquid
@@ -31,7 +31,12 @@
       </div>
       {% if section.settings.image_mbl != blank %}
         <div class="banner_mobile banner__media media">
-          <img src="{{ section.settings.image_mbl | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+          <img
+            decoding="async"
+            src="{{ section.settings.image_mbl | img_url: 'master' }}"
+            alt="petsnowy"
+            loading="lazy"
+          >
         </div>
       {% endif %}
     {%- endif -%}

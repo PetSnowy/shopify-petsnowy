@@ -249,7 +249,7 @@
 
   <div class="footer_logo page-width">
     {%- if section.settings.logo_image != blank -%}
-      <img src="{{ section.settings.logo_image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+      <img decoding="async" src="{{ section.settings.logo_image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
     {%- endif -%}
   </div>
 

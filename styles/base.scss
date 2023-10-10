@@ -1,5 +1,5 @@
 /* Color custom properties */
-@import "pxToVw.scss", "reset.scss";
+@import "pxToVw.scss", "reset.scss", "font.scss";
 
 :root,
 .color-background-1 {
@@ -2892,17 +2892,7 @@ html {
 	padding-bottom: 0 !important;
 }
 
-@font-face {
-	font-family: "SUISSE_INT_L_MEDIUM";
-	src: url("https://cdn.shopify.com/s/files/1/0683/5293/4210/files/SUISSE_INT_L_MEDIUM.TTF?v=1672313068") format("truetype");
-	font-display: optional;
-}
 
-@font-face {
-	font-family: "FS_JOEY-REGULAR";
-	src: url("https://cdn.shopify.com/s/files/1/0683/5293/4210/files/FS_JOEY-REGULAR.ttf?v=1672313182") format("truetype");
-	font-display: optional;
-}
 
 h1,
 h2,
@@ -3167,8 +3157,9 @@ h2.banner__heading span {
 	font-size: 14px;
 	line-height: 18px;
 	color: #231f20;
-	width: 180px;
+	width: fit-content;
 	padding: 0 30px;
+	white-space: nowrap;
 }
 
 .banner__box {
@@ -4475,11 +4466,15 @@ span.socl_insta_icon svg {
 	align-items: center;
 
 	.icon {
-		width: 129px;
-		height: 20px;
-		background: url("btn.png") no-repeat center/cover;
+		width: fit-content;
+		padding: 0px 5px;
+		color: #ffffff;
+		font-family: 'HelveticaBold';
+		border-radius: 5px;
+		background-color: #f18113;
 		margin-right: 5px;
 		display: inline-block;
+		font-size: 13px;
 	}
 
 	span:nth-child(2) {
@@ -4497,7 +4492,6 @@ span.socl_insta_icon svg {
 		justify-content: center;
 
 		.icon {
-			width: 34.4vw;
 			height: 5.3333vw;
 			margin-right: 1.3333vw;
 		}
@@ -5579,6 +5573,10 @@ label.productlabel_info,
 		justify-content: center;
 	}
 
+	.mobile_order_link {
+		display: none !important;
+	}
+
 	.header__heading-link {
 		img {
 			width: vw(400px);
@@ -5592,7 +5590,7 @@ label.productlabel_info,
 $item: 5;
 
 @media screen and (min-width: 901px) {
-	#Banner-template--20965259084098__5adf9f25-788e-4bc2-9df4-6dd4b70dcd25 {
+	#Banner-template--20965259084098__d1fccfe1-1016-4d4b-a541-f0f99d64cc37 {
 
 		.banner__richtext,
 		h2 {

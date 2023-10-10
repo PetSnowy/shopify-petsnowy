@@ -1,5 +1,129 @@
 {
   "sections": {
+    "4d44ea99-36fa-4b09-b6c5-b92fc20bca96": {
+      "type": "banner-video",
+      "settings": {
+        "vdio_img": "shopify:\/\/shop_images\/video-banner-litter-box.jpg",
+        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e62ade0547cf430bbd64ff3316993dae.mp4",
+        "mobvdio_img": "shopify:\/\/shop_images\/video-banner-litter-box.jpg",
+        "mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e62ade0547cf430bbd64ff3316993dae.mp4",
+        "heading": "",
+        "sub_heading": "",
+        "btn_text": "",
+        "btn_url": ""
+      }
+    },
+    "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8": {
+      "type": "rich-text",
+      "blocks": {
+        "b504c877-67df-4d07-b421-9fac2e31e94f": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>SNOW<sup>+<\/sup> Self-cleaning Litter Box<\/h1><span><span> This offer cannot be combined with any other discount code.<\/span><\/span>"
+          }
+        }
+      },
+      "block_order": [
+        "b504c877-67df-4d07-b421-9fac2e31e94f"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 40
+      }
+    },
+    "635deaad-6797-4ca6-9a10-c443617e9573": {
+      "type": "product-collection-list",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Bg_Image.png",
+        "title": "Your Collection Text Here",
+        "text": "Your Text Here",
+        "url": "",
+        "images": "shopify:\/\/shop_images\/Bg_Image_1.png",
+        "titles": "Your Collection Text Here",
+        "texts": "Your Text Here",
+        "urls": "",
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "bfc32d8d-f32f-433d-b324-db861a14296b": {
+      "type": "image-with-text",
+      "blocks": {
+        "abc2bcd5-6191-4bf7-81c0-7bb701779bf7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Save Big on Everything During Prime Day",
+            "heading_size": "h1"
+          }
+        },
+        "3a6e402d-49f0-4ec4-af1c-f09ab7565126": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This offer cannot be combined with any other discount code.<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "4e98a2c8-6125-4157-aac1-0789bcaf11bc": {
+          "type": "caption",
+          "settings": {
+            "caption": "",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "abc2bcd5-6191-4bf7-81c0-7bb701779bf7",
+        "3a6e402d-49f0-4ec4-af1c-f09ab7565126",
+        "4e98a2c8-6125-4157-aac1-0789bcaf11bc"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner-mb2.jpg",
+        "image_mob": "shopify:\/\/shop_images\/banner-mb2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "chek_wth": true,
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "b6e45bc2-2133-4106-a9db-61ab406abfe6": {
+      "type": "Product-video",
+      "disabled": true,
+      "settings": {
+        "vdio_img": "shopify:\/\/shop_images\/video.png",
+        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/86480277b00d435bbbba6e62c6b5f781.mp4",
+        "heading": "Your Video Text Here",
+        "text": "Your Video Text Here",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "67351f1a-11a8-4ea8-b339-d27d634a1cce": {
+      "type": "product-inventory",
+      "disabled": true,
+      "settings": {
+        "card_title": "First 50 Customers Only",
+        "title": "Halloween USA Perk",
+        "pc_inventory_image": "shopify:\/\/shop_images\/1090.png",
+        "mb_inventory_image": "shopify:\/\/shop_images\/20002000.jpg",
+        "desc": "This offer is currently available to customers in the US only. We apologize for any inconvenience.",
+        "card_text": "Remaining Cat Carrier:",
+        "pc_image": "shopify:\/\/shop_images\/cat_carrier.jpg",
+        "mb_image": "shopify:\/\/shop_images\/cat_carrier_mb.jpg"
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -284,6 +408,11 @@
     }
   },
   "order": [
+    "4d44ea99-36fa-4b09-b6c5-b92fc20bca96",
+    "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
+    "635deaad-6797-4ca6-9a10-c443617e9573",
+    "b6e45bc2-2133-4106-a9db-61ab406abfe6",
+    "67351f1a-11a8-4ea8-b339-d27d634a1cce",
     "main",
     "12a77462-3e98-474a-abc4-10be330a3dc3",
     "17b0b475-d06c-44c3-869e-6a83dc37ee02",

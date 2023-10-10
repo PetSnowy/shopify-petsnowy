@@ -23,7 +23,7 @@
       </div>
       <div class="visionimage">
         {% if section.settings.image != blank %}
-          <img src="{{ section.settings.image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+          <img decoding="async" src="{{ section.settings.image | img_url: 'master' }}" alt="petsnowy" loading="lazy">
         {% endif %}
       </div>
     </div>

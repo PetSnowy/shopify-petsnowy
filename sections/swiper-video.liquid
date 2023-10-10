@@ -16,7 +16,7 @@
         {% endif %}
         {% if block.type == 'Img' %}
           <div class="inno_img">
-            <img src="{{ block.settings.imagerow | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+            <img decoding="async" src="{{ block.settings.imagerow | img_url: 'master' }}" alt="petsnowy" loading="lazy">
           </div>
         {% endif %}
       </div>

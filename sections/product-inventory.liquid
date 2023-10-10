@@ -23,7 +23,12 @@
       <picture>
         <source media="(min-width: 901px)" srcset="{{ section.settings.pc_image | img_url: 'master' }}">
         <source media="(max-width: 900px)" srcset="{{ section.settings.mb_image | img_url: 'master' }}">
-        <img src="{{ section.settings.pc_image | img_url: 'master' }}" alt="{{ section.settings.text }}" loading="lazy">
+        <img
+          decoding="async"
+          src="{{ section.settings.pc_image | img_url: 'master' }}"
+          alt="{{ section.settings.text }}"
+          loading="lazy"
+        >
       </picture>
       <div class="inventory-card-right">
         <p class="title">{{ section.settings.card_title }}</p>

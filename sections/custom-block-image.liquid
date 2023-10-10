@@ -18,7 +18,7 @@
       {% for block in section.blocks %}
         <div class="itg_image_block">
           {% if block.settings.img != blank %}
-            <img src="{{ block.settings.img | img_url: '605x600' }}" alt="petsnowy" loading="lazy">
+            <img decoding="async" src="{{ block.settings.img | img_url: '605x600' }}" alt="petsnowy" loading="lazy">
           {% endif %}
           <div class="itg_background_wrpr">
             {% if block.settings.heading != blank %}
