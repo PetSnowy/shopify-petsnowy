@@ -711,63 +711,6 @@
         "padding_bottom": 12
       }
     },
-    "795de943-6d66-469a-a56d-fcb3eae9b719": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--17467597848898__795de943-6d66-469a-a56d-fcb3eae9b719-1674893959ac81b555-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "The Cleanest Litter Box Yet",
-            "heading_size": "h1"
-          }
-        },
-        "437d7119-9ff3-434f-aeda-0fe4194f036a": {
-          "type": "caption",
-          "settings": {
-            "caption": "curved walkway • SNOW⁺ litter mat • side entrance",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "template--17467597848898__795de943-6d66-469a-a56d-fcb3eae9b719-1674893959ac81b555-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Designed with intention, the curved walkway with mat was crafted to both leave the litter in and the doorway clean. <\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--17467597848898__795de943-6d66-469a-a56d-fcb3eae9b719-1674893959ac81b555-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--17467597848898__795de943-6d66-469a-a56d-fcb3eae9b719-1674893959ac81b555-0",
-        "437d7119-9ff3-434f-aeda-0fe4194f036a",
-        "template--17467597848898__795de943-6d66-469a-a56d-fcb3eae9b719-1674893959ac81b555-1",
-        "template--17467597848898__795de943-6d66-469a-a56d-fcb3eae9b719-1674893959ac81b555-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/3_5.jpg",
-        "image_mob": "shopify:\/\/shop_images\/3_5_8ca7eb0b-8ad1-4a55-9920-4eab9a45b9fb.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "chek_wth": true,
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "de4fda5f-1bfb-4e31-bc30-d09f6003b3b0": {
       "type": "image-with-text",
       "blocks": {
@@ -825,138 +768,6 @@
         "padding_bottom": 0
       }
     },
-    "1a68b06c-9a8f-424a-828f-27b2a7caa93f": {
-      "type": "order-banner",
-      "disabled": true,
-      "settings": {
-        "bg_color": "#9b8e84",
-        "heading": "WE'VE LAUNCHED ON INDIEGOGO",
-        "color_1": "#ffffff",
-        "text": "<p>Pre-order & save 40% today.<\/p>",
-        "color_2": "#231f20",
-        "btn": "GET 40% OFF",
-        "url": "https:\/\/www.indiegogo.com\/projects\/petsnowy-the-innovative-self-cleaning-litter-box\/reft\/31445254\/official",
-        "checked": false,
-        "color_3": "#ffffff",
-        "bg_color_1": "",
-        "padding_top": 12,
-        "padding_bottom": 12
-      }
-    },
-    "6f24ef9b-1b0a-4c9f-a933-f24eb5a7519c": {
-      "type": "image-with-text",
-      "blocks": {
-        "f5b1ced4-5365-40f5-85fd-b2d70aea8deb": {
-          "type": "heading",
-          "settings": {
-            "heading": "Mobile Control",
-            "heading_size": "h1"
-          }
-        },
-        "60746cde-f2f7-413b-96fd-a992ea4457b5": {
-          "type": "caption",
-          "settings": {
-            "caption": "Real-Time Tracking • Cat Recognition • Health Insights • Multi-cat friendly",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "cdb84009-4dfc-49a0-9bc4-5fd5c2e0539d": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Check kitty’s usage, waste drawer fullness, and more with just a tap in the PetSnowy app.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "fe40bb62-f0d0-4f41-b1bd-7adad09eac21": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "f5b1ced4-5365-40f5-85fd-b2d70aea8deb",
-        "60746cde-f2f7-413b-96fd-a992ea4457b5",
-        "cdb84009-4dfc-49a0-9bc4-5fd5c2e0539d",
-        "fe40bb62-f0d0-4f41-b1bd-7adad09eac21"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/6_1_dc205fa0-eba3-4afe-9077-7d7161831b77.jpg",
-        "image_mob": "shopify:\/\/shop_images\/6_1_92c42148-4bb9-404a-9f75-814e30ec2682.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "chek_wth": true,
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "c6039a2c-5205-40be-b384-dc3d8dad5ae5": {
-      "type": "image-with-text",
-      "blocks": {
-        "504657c9-7966-4843-a9bc-86153279d9de": {
-          "type": "heading",
-          "settings": {
-            "heading": "Super Easy to Assemble, Extremely Easy to Clean",
-            "heading_size": "h1"
-          }
-        },
-        "aa05ac42-462a-4dc5-8480-506de60a8b88": {
-          "type": "caption",
-          "settings": {
-            "caption": "Everything Magnetic • high-grade materials • fine craftsmanship",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "3db08574-e82e-4cd4-91eb-7dd2dfea17cf": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Each part seamlessly attaches to and detaches from the next one. Effortlessly assemble and disassemble to clean when necessary.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "e68b81ed-f1de-4544-a3dd-442076c7a18c": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "504657c9-7966-4843-a9bc-86153279d9de",
-        "aa05ac42-462a-4dc5-8480-506de60a8b88",
-        "3db08574-e82e-4cd4-91eb-7dd2dfea17cf",
-        "e68b81ed-f1de-4544-a3dd-442076c7a18c"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/4_11.jpg",
-        "image_mob": "shopify:\/\/shop_images\/4_11_a945091b-6b52-4ad6-ae88-c8a518eed752.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "chek_wth": true,
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "3444a146-c629-42e2-9633-14507157400c": {
       "type": "order-banner",
       "disabled": true,
@@ -996,11 +807,7 @@
     "2156df71-f54e-4c02-9cf2-21ca2e6640b3",
     "59cbf865-96b8-4f8e-bbc8-a09e5361bd0a",
     "63ae6bb5-a879-46a7-b71a-11f65c5a7540",
-    "795de943-6d66-469a-a56d-fcb3eae9b719",
     "de4fda5f-1bfb-4e31-bc30-d09f6003b3b0",
-    "1a68b06c-9a8f-424a-828f-27b2a7caa93f",
-    "6f24ef9b-1b0a-4c9f-a933-f24eb5a7519c",
-    "c6039a2c-5205-40be-b384-dc3d8dad5ae5",
     "3444a146-c629-42e2-9633-14507157400c"
   ]
 }
