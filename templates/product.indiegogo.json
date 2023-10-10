@@ -57,7 +57,7 @@
         "abc2bcd5-6191-4bf7-81c0-7bb701779bf7": {
           "type": "heading",
           "settings": {
-            "heading": "Up to 30% OFF",
+            "heading": "",
             "heading_size": "h1"
           }
         },
@@ -71,7 +71,7 @@
         "4e98a2c8-6125-4157-aac1-0789bcaf11bc": {
           "type": "caption",
           "settings": {
-            "caption": "",
+            "caption": "Up to 30% OFF",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
