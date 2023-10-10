@@ -61,26 +61,26 @@
             "heading_size": "h1"
           }
         },
-        "4e98a2c8-6125-4157-aac1-0789bcaf11bc": {
-          "type": "caption",
-          "settings": {
-            "caption": "Save Big on Everything During Prime Day",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
         "3a6e402d-49f0-4ec4-af1c-f09ab7565126": {
           "type": "text",
           "settings": {
-            "text": "<p>Note: This offer cannot be combined with any other discount codes<\/p>",
+            "text": "<p>Save Big on Everything During Prime Day<\/p>",
             "text_style": "body"
+          }
+        },
+        "4e98a2c8-6125-4157-aac1-0789bcaf11bc": {
+          "type": "caption",
+          "settings": {
+            "caption": "Note: This offer cannot be combined with any other discount codes",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
           }
         }
       },
       "block_order": [
         "abc2bcd5-6191-4bf7-81c0-7bb701779bf7",
-        "4e98a2c8-6125-4157-aac1-0789bcaf11bc",
-        "3a6e402d-49f0-4ec4-af1c-f09ab7565126"
+        "3a6e402d-49f0-4ec4-af1c-f09ab7565126",
+        "4e98a2c8-6125-4157-aac1-0789bcaf11bc"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/banner-mb2.jpg",
