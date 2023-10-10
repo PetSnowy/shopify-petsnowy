@@ -64,7 +64,7 @@
         "3a6e402d-49f0-4ec4-af1c-f09ab7565126": {
           "type": "text",
           "settings": {
-            "text": "<p>This offer cannot be combined with any other discount code.<\/p>",
+            "text": "<p>Note: This offer cannot be combined with any other discount code.<\/p>",
             "text_style": "body"
           }
         },
