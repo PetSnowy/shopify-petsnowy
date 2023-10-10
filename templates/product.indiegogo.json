@@ -19,7 +19,7 @@
         "b504c877-67df-4d07-b421-9fac2e31e94f": {
           "type": "text",
           "settings": {
-            "text": "<h1>SNOW<sup>+<\/sup> Self-cleaning Litter Box<\/h1><span><span> Sign up for extra $40 OFF your litter box. <br> <span><span>Note: For discounted prices, remember to use your code at checkout-Order Summary.<\/span><\/span><\/span><\/span>"
+            "text": "<h1>SNOW<sup>+<\/sup> Self-cleaning Litter Box<\/h1><span><\/span>"
           }
         }
       },
@@ -49,6 +49,54 @@
         "urls": "",
         "padding_top": 40,
         "padding_bottom": 12
+      }
+    },
+    "bfc32d8d-f32f-433d-b324-db861a14296b": {
+      "type": "image-with-text",
+      "blocks": {
+        "abc2bcd5-6191-4bf7-81c0-7bb701779bf7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Available to a",
+            "heading_size": "h1"
+          }
+        },
+        "4e98a2c8-6125-4157-aac1-0789bcaf11bc": {
+          "type": "caption",
+          "settings": {
+            "caption": "",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "3a6e402d-49f0-4ec4-af1c-f09ab7565126": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Note: This offer cannot be combined with any other discount codes<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "abc2bcd5-6191-4bf7-81c0-7bb701779bf7",
+        "4e98a2c8-6125-4157-aac1-0789bcaf11bc",
+        "3a6e402d-49f0-4ec4-af1c-f09ab7565126"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/pd_1_1.png",
+        "image_mob": "shopify:\/\/shop_images\/pd_1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "chek_wth": true,
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "b6e45bc2-2133-4106-a9db-61ab406abfe6": {
@@ -632,6 +680,7 @@
     "4d44ea99-36fa-4b09-b6c5-b92fc20bca96",
     "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
     "635deaad-6797-4ca6-9a10-c443617e9573",
+    "bfc32d8d-f32f-433d-b324-db861a14296b",
     "b6e45bc2-2133-4106-a9db-61ab406abfe6",
     "67351f1a-11a8-4ea8-b339-d27d634a1cce",
     "main",

@@ -136,7 +136,7 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "text": "Welcome To Our Store (PetSnowy)",
+              "text": "Save up to 30% During Prime Day",
               "text_alignment": "center",
               "color_scheme": "inverse",
               "link": "#"
