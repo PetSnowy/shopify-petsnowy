@@ -57,12 +57,13 @@
         "abc2bcd5-6191-4bf7-81c0-7bb701779bf7": {
           "type": "heading",
           "settings": {
-            "heading": "Available to a",
+            "heading": "Limited-Time Offer: Save Big on Everything",
             "heading_size": "h1"
           }
         },
         "4e98a2c8-6125-4157-aac1-0789bcaf11bc": {
           "type": "caption",
+          "disabled": true,
           "settings": {
             "caption": "",
             "text_style": "caption-with-letter-spacing",
@@ -82,7 +83,6 @@
         "4e98a2c8-6125-4157-aac1-0789bcaf11bc",
         "3a6e402d-49f0-4ec4-af1c-f09ab7565126"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/pd_1_1.png",
         "image_mob": "shopify:\/\/shop_images\/pd_1.png",
@@ -113,6 +113,7 @@
     },
     "67351f1a-11a8-4ea8-b339-d27d634a1cce": {
       "type": "product-inventory",
+      "disabled": true,
       "settings": {
         "card_title": "First 50 Customers Only",
         "title": "Halloween USA Perk",
