@@ -388,4 +388,8 @@ $item: 5;
 
 #MainContentProduct {
 	background-color: $main-bg-color;
+
+	.banner__box:empty {
+		display: none;
+	}
 }
