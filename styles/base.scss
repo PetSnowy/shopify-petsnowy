@@ -1,6 +1,14 @@
 /* Color custom properties */
 @import "pxToVw.scss", "reset.scss", "font.scss";
 
+$button-bg-color: #7e6e5f;
+$main-bg-color: #e9e1cf;
+$main-font-color: #000000;
+$main-title-color:#45392e;
+$product-price-color:#818181;
+$product-title-color:#504030;
+$product-icon-color: #d75f23;
+
 :root,
 .color-background-1 {
 	--color-foreground: var(--color-base-text);
@@ -1335,47 +1343,6 @@ button.shopify-payment-button__button--unbranded {
 	transition: box-shadow var(--duration-short) ease;
 }
 
-/* .button:not([disabled]):hover::after,
-.shopify-challenge__button:hover::after,
-.customer button:hover::after,
-.shopify-payment-button__button--unbranded:hover::after {
-  --border-offset: 1.3px;
-  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-      rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 calc(var(--buttons-border-width) + 1px)
-      rgba(var(--color-button), var(--alpha-button-background));
-} */
-
-/* .button--secondary:after {
-  --border-opacity: var(--buttons-border-opacity);
-}
-
-.button:focus-visible,
-.button:focus,
-.button.focused,
-.shopify-payment-button__button--unbranded:focus-visible,
-.shopify-payment-button [role="button"]:focus-visible,
-.shopify-payment-button__button--unbranded:focus,
-.shopify-payment-button [role="button"]:focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
-    0 0 0 0.5rem rgba(var(--color-foreground), 0.5),
-    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
-}
-
-.button:focus:not(:focus-visible):not(.focused),
-.shopify-payment-button__button--unbranded:focus:not(:focus-visible):not(.focused),
-.shopify-payment-button
-  [role="button"]:focus:not(:focus-visible):not(.focused) {
-  box-shadow: inherit;
-}
-
-.button::selection,
-.shopify-challenge__button::selection,
-.customer button::selection {
-  background-color: rgba(var(--color-button-text), 0.3);
-} */
-
 .button,
 .button-label,
 .shopify-challenge__button,
@@ -2168,10 +2135,6 @@ input[type="checkbox"] {
 	top: 0;
 }
 
-/*  .shopify-section-header-hidden {
-  transform: translateY(-100%);
-}  */
-
 .shopify-section-header-hidden.menu-open {
 	transform: translateY(0);
 }
@@ -2258,9 +2221,6 @@ sticky-header.Index {
 
 .header__heading-link {
 	display: inline-block;
-	padding: 0.75rem;
-	text-decoration: none;
-	word-break: break-word;
 }
 
 .header__heading-link:hover .h2 {
@@ -2291,9 +2251,6 @@ sticky-header.Index {
 }
 
 @media screen and (min-width: 990px) {
-	.header__heading-link {
-		margin-left: -0.75rem;
-	}
 
 	.header__heading,
 	.header__heading-link {
@@ -2906,8 +2863,8 @@ h5,
 .h4,
 .h5,
 a {
-	font-family: "SUISSE_INT_L_MEDIUM" !important;
-	font-weight: 500 !important;
+	font-family: "SUISSE_INT_L_MEDIUM";
+	font-weight: 500;
 }
 
 body,
@@ -2971,15 +2928,13 @@ html {
 }
 
 .list-menu__item span {
-	font-weight: 500;
-	font-size: 12px;
-	line-height: 21px;
+	font-size: 14px;
 	display: flex;
 	align-items: center;
 	text-transform: uppercase;
 	color: #000;
-	font-family: SUISSE_INT_L_MEDIUM !important;
-	font-weight: 500 !important;
+	font-family: HelveticaBold;
+	font-weight: 900;
 }
 
 .itg_overlap_header .list-menu__item span {
@@ -3011,28 +2966,18 @@ a.list-menu__item span {
   grid-template-columns: 33%;
 } */
 a.headr_odr_now {
-	display: inline-flex;
-	padding: 10px 20px;
-	background: #231f20;
-	border-radius: 100px;
 	text-decoration: none;
-	font-size: 12px;
-	text-transform: uppercase;
-	color: #fff;
 	transition: 0.3s all linear;
 	margin-right: 15px;
-	border: 1px solid transparent;
+	color: #ffffff;
+	padding: 8px 10px;
+	background-color: $button-bg-color;
+	font-family: HelveticaBold;
+	font-weight: 900;
+	font-size: 16px;
+	display: block;
 }
 
-a.headr_odr_now span {
-	margin-top: 3px;
-}
-
-a.headr_odr_now:hover {
-	background: #fff;
-	border: 1px solid #231f20;
-	color: #231f20;
-}
 
 .itg_overlap_header a.headr_odr_now {
 	color: #231f20;
@@ -3217,8 +3162,8 @@ h2.banner__heading span {
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: capitalize;
-	font-family: SUISSE_INT_L_MEDIUM !important;
-	font-weight: 500 !important;
+	font-family: SUISSE_INT_L_MEDIUM;
+	font-weight: 500;
 }
 
 .button.button--primary.order_bannr_btn.liner {
@@ -5590,6 +5535,25 @@ label.productlabel_info,
 $item: 5;
 
 @media screen and (min-width: 901px) {
+	.header-wrapper {
+		height: 90px;
+		display: flex;
+		align-items: center;
+
+		header {
+			width: 1200px;
+		}
+
+		.list-menu__item {
+			font-size: 16px;
+			font-family: HelveticaBold;
+		}
+
+		.header__heading-link {
+			
+		}
+	}
+
 	#Banner-template--20965259084098__d1fccfe1-1016-4d4b-a541-f0f99d64cc37 {
 
 		.banner__richtext,
