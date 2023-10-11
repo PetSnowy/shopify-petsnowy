@@ -3,6 +3,11 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "bf6f40fa-f343-477e-8923-9785728ece91": {
+          "type": "score",
+          "settings": {
+          }
+        },
         "vendor": {
           "type": "text",
           "settings": {
@@ -50,6 +55,7 @@
         }
       },
       "block_order": [
+        "bf6f40fa-f343-477e-8923-9785728ece91",
         "vendor",
         "title",
         "2f02dc72-ba6d-431b-ba9f-b2defc1a0fbf",
