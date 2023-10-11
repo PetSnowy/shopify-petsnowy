@@ -42,7 +42,7 @@
             "show_dynamic_checkout": true
           }
         },
-        "b78e46a8-7859-4e21-a2d7-0c329cdcca62": {
+        "734ea412-e9fe-483e-82e4-0190d5d6cc51": {
           "type": "desc",
           "settings": {
             "desc": "Finally, a litter box that collects all scoop ideas"
@@ -57,7 +57,7 @@
         "quantity_selector",
         "0d30c098-08a5-4f81-b4d9-68932b875783",
         "buy_buttons",
-        "b78e46a8-7859-4e21-a2d7-0c329cdcca62"
+        "734ea412-e9fe-483e-82e4-0190d5d6cc51"
       ],
       "settings": {
         "enable_sticky_info": true,
