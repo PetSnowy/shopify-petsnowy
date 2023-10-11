@@ -34,44 +34,11 @@
         "padding_top": 0,
         "padding_bottom": 36
       }
-    },
-    "5ead79d5-623a-407e-8571-61d1492bc27d": {
-      "type": "shop-all-collection",
-      "disabled": true,
-      "settings": {
-        "collection_id": "Trending",
-        "collection": "accessories",
-        "collection_idtwo": "BestSellers",
-        "collection_two": "smart-pet-products-1",
-        "collection_idthree": "Newest",
-        "collection_three": "smart-pet-products-2",
-        "collection_idfour": "",
-        "collection_four": "",
-        "collection_idfive": "",
-        "collection_five": "",
-        "collection_idsix": "",
-        "collection_six": "",
-        "collection_idseven": "",
-        "collection_seven": "",
-        "collection_ideight": "",
-        "collection_eight": "",
-        "collection_idnine": "",
-        "collection_nine": "",
-        "collection_idten": "",
-        "collection_ten": "",
-        "collection_ideleven": "",
-        "collection_eleven": "",
-        "products_to_show": 10,
-        "columns_desktop": 3,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
     }
   },
   "order": [
     "4b6daf6b-8cfe-4379-ae6c-86aefe76398c",
     "banner",
-    "product-grid",
-    "5ead79d5-623a-407e-8571-61d1492bc27d"
+    "product-grid"
   ]
 }
