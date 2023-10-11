@@ -337,6 +337,13 @@
 
         {%- for block in section.blocks -%}
           {%- case block.type -%}
+            {% when 'score' %}
+              <div
+                class="loox-rating"
+                data-id="{{ product.id }}"
+                data-rating="{{ product.metafields.loox.avg_rating }}"
+                data-raters="{{ product.metafields.loox.num_reviews }}"
+              ></div>
             {%- when '@app' -%}
               {% render block %}
             {%- when 'text' -%}
@@ -1418,6 +1425,11 @@
     {
       "type": "title",
       "name": "t:sections.main-product.blocks.title.name",
+      "limit": 1
+    },
+    {
+      "type": "score",
+      "name": "score",
       "limit": 1
     },
     {
