@@ -356,7 +356,7 @@
                 </a>
               </div>
             {%- when 'desc' -%}
-              <p class="product-desc">{{- block.setting.desc -}}</p>
+              <p class="product-desc">{{- block.settings.desc -}}</p>
             {%- when 'price' -%}
               {% comment %}
                 <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
@@ -1426,7 +1426,7 @@
       "settings": [
         {
           "type": "text",
-          "id": "text",
+          "id": "desc",
           "label": "desc"
         }
       ],
