@@ -323,10 +323,7 @@
     {{ shop.metafields.loox.global_html_head }}
 
     {% render 'gsf-conversion-pixels' %}
-  
-{% render 'digismoothie-giftbox' %}
-</head>
-
+  </head>
 
   {% for item in cart.items %}
     {% assign product_template_cart = item.product.template_suffix %}
