@@ -256,6 +256,7 @@ $item: 5;
 					width: 40px;
 					height: 68px;
 					background-color: red;
+					z-index: 10;
 				}
 
 				.slider-button--next {
@@ -319,6 +320,7 @@ $item: 5;
 			.product-desc {
 				font-family: LeagueSpartanBold;
 				font-size: 20px;
+				margin-bottom: 20px;
 			}
 		}
 
@@ -349,7 +351,6 @@ $item: 5;
 		}
 
 		variant-radios {
-			margin-top: 20px;
 			margin-bottom: 20px;
 
 			.form__label {
