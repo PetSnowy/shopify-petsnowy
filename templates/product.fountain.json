@@ -26,9 +26,27 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "d8cb4867-a2f5-4832-bca9-7dd5e0ac91a0": {
+          "type": "score",
+          "settings": {
+          }
+        },
+        "993aabc2-c247-4fd1-946f-12201b192a83": {
+          "type": "text",
+          "settings": {
+            "text": "Text block",
+            "text_style": "body"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
+          }
+        },
+        "7c23f558-2480-416b-99f1-3132d562e923": {
+          "type": "desc",
+          "settings": {
+            "desc": ""
           }
         },
         "price": {
@@ -47,6 +65,11 @@
           "settings": {
           }
         },
+        "98c5c4e5-1346-4fcd-9d60-3052aca8148b": {
+          "type": "product_acessories",
+          "settings": {
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -57,22 +80,6 @@
           "type": "checkout",
           "settings": {
             "checkout-text": "BUY NOW"
-          }
-        },
-        "description": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
           }
         },
         "collapsible-row-1": {
@@ -114,14 +121,16 @@
         }
       },
       "block_order": [
+        "d8cb4867-a2f5-4832-bca9-7dd5e0ac91a0",
+        "993aabc2-c247-4fd1-946f-12201b192a83",
         "title",
+        "7c23f558-2480-416b-99f1-3132d562e923",
         "price",
         "variant_picker",
         "quantity_selector",
+        "98c5c4e5-1346-4fcd-9d60-3052aca8148b",
         "buy_buttons",
         "4b2f74a7-66cb-41c8-a559-de8983fc05dd",
-        "description",
-        "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
