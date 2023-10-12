@@ -19,7 +19,7 @@
         "b504c877-67df-4d07-b421-9fac2e31e94f": {
           "type": "text",
           "settings": {
-            "text": "<h1>SNOW<sup>+<\/sup> Self-cleaning Litter Box<\/h1><span><span> Cats and a Fresh Home: It's Possible! <\/span><\/span>"
+            "text": "<h1>SNOW<sup>+<\/sup> Self-cleaning Litter Box<\/h1><span><span> Sign up for extra $40 OFF your litter box. <br> <span><span>Note: For discounted prices, remember to use your code at checkout-Order Summary.<\/span><\/span><\/span><\/span>"
           }
         }
       },
@@ -82,6 +82,7 @@
         "3a6e402d-49f0-4ec4-af1c-f09ab7565126",
         "4e98a2c8-6125-4157-aac1-0789bcaf11bc"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/banner-mb2.jpg",
         "image_mob": "shopify:\/\/shop_images\/banner-mb2.jpg",
@@ -112,7 +113,6 @@
     },
     "67351f1a-11a8-4ea8-b339-d27d634a1cce": {
       "type": "product-inventory",
-      "disabled": true,
       "settings": {
         "card_title": "First 50 Customers Only",
         "title": "Halloween USA Perk",
