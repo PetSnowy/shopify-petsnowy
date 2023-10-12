@@ -81,43 +81,6 @@
           "settings": {
             "checkout-text": "BUY NOW"
           }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "disabled": true,
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
@@ -130,11 +93,7 @@
         "quantity_selector",
         "98c5c4e5-1346-4fcd-9d60-3052aca8148b",
         "buy_buttons",
-        "4b2f74a7-66cb-41c8-a559-de8983fc05dd",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "share"
+        "4b2f74a7-66cb-41c8-a559-de8983fc05dd"
       ],
       "settings": {
         "enable_sticky_info": true,
