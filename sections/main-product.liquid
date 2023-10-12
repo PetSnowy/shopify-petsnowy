@@ -1086,22 +1086,10 @@
                       aria-describedby="Thumbnail-{{ section.id }}-0-right"
                     >
                       <img
+                        decoding="async"
                         id="Thumbnail-{{ section.id }}-0-right"
-                        srcset="
-                          {% if featured_media.preview_image.width >= 54 %}{{ featured_media.preview_image | image_url: width: 54 }} 54w,{% endif %}
-                          {% if featured_media.preview_image.width >= 74 %}{{ featured_media.preview_image | image_url: width: 74 }} 74w,{% endif %}
-                          {% if featured_media.preview_image.width >= 104 %}{{ featured_media.preview_image | image_url: width: 104 }} 104w,{% endif %}
-                          {% if featured_media.preview_image.width >= 162 %}{{ featured_media.preview_image | image_url: width: 162 }} 162w,{% endif %}
-                          {% if featured_media.preview_image.width >= 208 %}{{ featured_media.preview_image | image_url: width: 208 }} 208w,{% endif %}
-                          {% if featured_media.preview_image.width >= 324 %}{{ featured_media.preview_image | image_url: width: 324 }} 324w,{% endif %}
-                          {% if featured_media.preview_image.width >= 416 %}{{ featured_media.preview_image | image_url: width: 416 }} 416w,{% endif %},
-                          {{ featured_media.preview_image | image_url }} {{ media.preview_image.width }}w
-                        "
-                        src="{{ featured_media | image_url: width: 416 }}"
-                        sizes="(min-width: {{ settings.page_width }}px) calc(({{ settings.page_width | minus: 100 | times: media_width | round }} - 4rem) / 4), (min-width: 990px) calc(({{ media_width | times: 100 }}vw - 4rem) / 4), (min-width: 750px) calc((100vw - 15rem) / 8), calc((100vw - 14rem) / 3)"
+                        src="{{ featured_media | image_url }}"
                         alt="{{ featured_media.alt | escape }}"
-                        height="208"
-                        width="208"
                         loading="lazy"
                       >
                     </button>
@@ -1150,19 +1138,9 @@
                       >
                         <img
                           id="Thumbnail-{{ section.id }}-{{ forloop.index }}-right"
-                          srcset="
-                            {% if media.preview_image.width >= 59 %}{{ media.preview_image | image_url: width: 59 }} 59w,{% endif %}
-                            {% if media.preview_image.width >= 118 %}{{ media.preview_image | image_url: width: 118 }} 118w,{% endif %}
-                            {% if media.preview_image.width >= 84 %}{{ media.preview_image | image_url: width: 84 }} 84w,{% endif %}
-                            {% if media.preview_image.width >= 168 %}{{ media.preview_image | image_url: width: 168 }} 168w,{% endif %}
-                            {% if media.preview_image.width >= 130 %}{{ media.preview_image | image_url: width: 130 }} 130w,{% endif %}
-                            {% if media.preview_image.width >= 260 %}{{ media.preview_image | image_url: width: 260 }} 260w{% endif %}
-                          "
-                          src="{{ media | image_url: width: 84, height: 84 }}"
-                          sizes="(min-width: 1200px) calc((1200px - 19.5rem) / 12), (min-width: 750px) calc((100vw - 16.5rem) / 8), calc((100vw - 8rem) / 5)"
+                          decoding="async"
+                          src="{{ media | image_url }}"
                           alt="{{ media.alt | escape }}"
-                          height="200"
-                          width="200"
                           loading="lazy"
                         >
                       </button>

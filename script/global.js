@@ -530,30 +530,31 @@ class SliderComponent extends HTMLElement {
 		this.nextButton = this.querySelector('button[name="next"]');
 
 		this.step = 0
+		this.activeLength = this.sliderItems.length - this.initPages().length
 		this.prevButton.addEventListener('click', this.onButtonClick.bind(this));
 		this.nextButton.addEventListener('click', this.onButtonClick.bind(this));
 	}
 
 	initPages() {
-		console.log(this.sliderItems);
+		const result = Array.from(this.querySelectorAll('[id^="Slide-"]')).filter(item => item.classList.contains('thumbnail-list_item--variant')).filter((_, index) => index)
+		return result
 	}
 
 	transformSlider(index) {
-		const offsetLeft = this.sliderItems[index].offsetLeft;
-		this.slider.style.transform = `translateX(-${offsetLeft}px)`
+		const offsetLeft = this.sliderItems[1].offsetLeft;
+		this.slider.style.transform = `translateX(-${offsetLeft * index}px)`
 	}
 
 	onButtonClick(event) {
 		event.preventDefault();
 		if (event.target.name === 'next') {
-			if (this.step >= this.sliderItems.length - 1) return
+			if (this.step >= this.activeLength - 1) return
 			this.step += 1
 		} else {
 			if (this.step <= 0) return
 			this.step -= 1
 		}
 		this.transformSlider(this.step)
-		console.log(event.target.name);
 	}
 }
 

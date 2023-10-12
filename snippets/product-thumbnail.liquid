@@ -84,12 +84,20 @@
   </span>
 
   <div class="product__media media media--transparent gradient global-media-settings" style="padding-top: {{ 1 | divided_by: media.preview_image.aspect_ratio | times: 100 }}%;">
-    {{ media.preview_image | image_url: width: 1946 | image_tag:
+    {% comment %} {{ media.preview_image | image_url: width: 1946 | image_tag:
       loading: lazy,
       sizes: sizes,
       widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946',
       alt: media.preview_image.alt | escape
-    }}
+    }} {% endcomment %}
+		
+		<img
+			decoding="async"
+			id="Thumbnail-{{ section.id }}-0-right"
+			src="{{ media.preview_image | image_url }}"
+			alt="{{ media.preview_image.alt | escape }}"
+			loading="lazy"
+		>
   </div>
   <button class="product__media-toggle quick-add-hidden" type="button" aria-haspopup="dialog" data-media-id="{{ media.id }}">
     <span class="visually-hidden">
