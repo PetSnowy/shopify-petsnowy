@@ -228,22 +228,63 @@ $item: 5;
 	}
 
 	#MainContentProduct {
-		#new-product>div:first-child {
+		.grid__item.product__media-wrapper {
 			width: 640px;
 			max-width: 640px;
-		}
-
-		modal-opener {
-			border-radius: 25px;
-			width: 640px;
 			overflow: hidden;
 
-			img {
+			modal-opener {
+				border-radius: 25px;
 				width: 640px;
-				height: auto;
-				object-fit: contain;
+				overflow: hidden;
+
+				img {
+					width: 640px;
+					height: auto;
+					object-fit: contain;
+				}
+			}
+
+			.thumbnail-slider {
+				background-color: #ffffff;
+				border-radius: 25px;
+
+				.slider-button {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 40px;
+					height: 68px;
+					background-color: red;
+				}
+
+				.slider-button--next {
+					right: 0px;
+				}
+
+				.slider-button--prev {
+					left: 0px;
+				}
+
+				.thumbnail-list {
+					width: fit-content;
+					transition: all 0.3s ease;
+
+					li.thumbnail-list__item {
+						width: 640px;
+						height: 420px;
+
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: contain;
+						}
+					}
+				}
 			}
 		}
+
+
 
 		.global-media-settings {
 			border: none;
@@ -252,10 +293,111 @@ $item: 5;
 		.product__info-wrapper {
 			width: 560px;
 			box-sizing: border-box;
-			padding-left: 40px;
+			padding-left: 25px;
+
+			.font {
+				font-family: LeagueSpartanBold;
+				text-transform: uppercase;
+				color: $main-title-color
+			}
+
+			.product__title,
+			.product__title h1 {
+				@extend .font;
+				font-size: 30px;
+				margin-bottom: 0px;
+				letter-spacing: 1px;
+			}
+
+			.product__text {
+				@extend .font;
+				font-size: 39px;
+				margin-top: 15px;
+				letter-spacing: 2px;
+			}
+
+			.product-desc {
+				font-family: LeagueSpartanBold;
+				font-size: 20px;
+			}
+		}
+
+		.label_style {
+			width: 150px;
+			background: #ffffff;
+			overflow: hidden;
+			box-sizing: border-box;
+			padding: 10px;
+			display: flex;
+			justify-content: center;
+			border-radius: 10px;
+			transition: all 0.3s ease;
+		}
+
+		.add_product_list {
+			display: flex;
+		}
+
+		.price_with_discount {
+			font-family: HelveticaBold;
+			color: #616161;
+			font-size: 12px;
+
+			.money {
+				@extend .price_with_discount
+			}
+		}
+
+		variant-radios {
+			margin-top: 20px;
+			margin-bottom: 20px;
+
+			.form__label {
+				font-family: LeagueSpartanBold;
+				font-size: 20px;
+				margin-bottom: 10px;
+				color: $main-title-color
+			}
+
+			fieldset {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 25px
+			}
+
+			.product-form__input input[type=radio]:checked+label {
+				background-color: red;
+			}
+
+			label {
+				@extend .label_style;
+				flex-direction: column;
+				flex-wrap: wrap;
+				align-content: center;
+				box-sizing: border-box;
+				margin: 0px;
+				border: none;
+
+				img {
+					width: 90px;
+					height: 90px;
+					object-fit: contain;
+					margin-bottom: 10px;
+				}
+
+				p {
+					@extend .price_with_discount;
+
+					.money {
+						@extend .price_with_discount
+					}
+				}
+			}
 		}
 
 		.product_acessories-wrapper {
+			margin-bottom: 20px;
+
 			.product_acessories-title {
 				font-family: LeagueSpartanBold;
 				font-size: 20px;
@@ -270,16 +412,7 @@ $item: 5;
 
 
 			.add_list_product {
-				width: 150px;
-				// height: 150px;
-				background: #ffffff;
-				overflow: hidden;
-				box-sizing: border-box;
-				padding: 10px;
-				display: flex;
-				justify-content: center;
-				border-radius: 10px;
-				transition: all 0.3s ease;
+				@extend .label_style;
 
 				input {
 					width: 0px;
@@ -339,21 +472,9 @@ $item: 5;
 						@extend .price_without_discount
 					}
 				}
-
-				.price_with_discount {
-					font-family: HelveticaBold;
-					color: #616161;
-					font-size: 12px;
-
-					.money {
-						@extend .price_with_discount
-					}
-				}
 			}
 		}
 	}
-
-
 }
 
 @media screen and (min-width: 901px) and (max-width: 1200px) {
