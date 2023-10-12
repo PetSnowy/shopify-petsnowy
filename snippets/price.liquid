@@ -87,8 +87,7 @@
   </div>
   {%- if show_badges -%}
     <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-      {% comment %} {{ 'products.product.on_sale' | t }} {% endcomment %}
-      Prime Day Discount
+      {{ 'products.product.on_sale' | t }}
     </span>
 
     <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
