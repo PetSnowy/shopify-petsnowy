@@ -42,15 +42,15 @@
           "settings": {
           }
         },
+        "0d30c098-08a5-4f81-b4d9-68932b875783": {
+          "type": "product_acessories",
+          "settings": {
+          }
+        },
         "79a9eff9-a764-4477-b313-4bcdb7a8f74a": {
           "type": "product-guarantee",
           "settings": {
             "image_picker": "shopify:\/\/shop_images\/header_logo.png"
-          }
-        },
-        "0d30c098-08a5-4f81-b4d9-68932b875783": {
-          "type": "product_acessories",
-          "settings": {
           }
         },
         "buy_buttons": {
@@ -68,8 +68,8 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "79a9eff9-a764-4477-b313-4bcdb7a8f74a",
         "0d30c098-08a5-4f81-b4d9-68932b875783",
+        "79a9eff9-a764-4477-b313-4bcdb7a8f74a",
         "buy_buttons"
       ],
       "settings": {
