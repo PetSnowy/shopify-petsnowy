@@ -431,6 +431,12 @@
       };
     </script>
 
+    <script type="module">
+      import { clearCart } from '../assets/utils.js';
+      const orderNow = Array.from(document.querySelectorAll('.purchase_btn_first,.headr_odr_now'));
+      orderNow.forEach((item) => item.addEventListener('click', clearCart()));
+    </script>
+
     {%- render 'ecom_footer' -%}
     {{ shop.metafields.loox.global_html_body }}
 
