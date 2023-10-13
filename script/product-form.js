@@ -14,7 +14,7 @@ if (!customElements.get('product-form')) {
 			this.checkoutButton = document.querySelector('.checkout-button');
 			this.checkoutButton && this.checkoutButton.addEventListener('click', this.onCheckoutHandler.bind(this));
 
-			if (document.querySelector('cart-drawer')) this.submitButton.setAttribute('aria-haspopup', 'dialog');
+			if (document.querySelector('cart-drawer')) this.submitButton?.setAttribute('aria-haspopup', 'dialog');
 		}
 
 		async onSubmitHandler(evt) {
