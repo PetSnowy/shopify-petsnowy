@@ -4,7 +4,7 @@ if (!customElements.get('product-form')) {
 			super();
 			this.submitButton = this.querySelector('.product-form__submit');
 
-			this.productId = document.querySelector('product-form').querySelector('input[name="id"]').value
+			this.productId = this.querySelector('input[name="id"]').value
 
 			this.querySelector('[name=id]').disabled = false;
 			this.submitButton.addEventListener('click', this.onSubmitHandler.bind(this));
