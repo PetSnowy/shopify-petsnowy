@@ -270,6 +270,7 @@ $item: 5;
 				.thumbnail-list {
 					width: fit-content;
 					transition: all 0.3s ease;
+					overflow: hidden;
 
 					li.thumbnail-list__item {
 						width: 640px;
@@ -293,6 +294,7 @@ $item: 5;
 
 		.product__info-wrapper {
 			width: 560px;
+			max-width: 560px;
 			box-sizing: border-box;
 			padding-left: 25px;
 
