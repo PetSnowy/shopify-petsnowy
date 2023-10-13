@@ -12,8 +12,8 @@ $(document).ready(function () {
 
 	//获取价格单位
 
-	const currency = $('.price_without_discount')[0].text() || $('.price_without_discount .money')[0].text()
-	const monetaryUnit = currency[0].replace(/[\d.]/g, '')
+	const currency = document.querySelectorAll('.price_without_discount')[0].innerHTML || document.querySelectorAll('.price_without_discount .money')[0].innerHTML || document.querySelectorAll('.price_without_discount')[0].innerText || document.querySelectorAll('.price_without_discount .money')[0].innerText
+	const monetaryUnit = currency.replace(/[\d.]/g, '')
 
 	$(".slide_arrow svg").click(function () {
 		document.querySelectorAll('.banner')[0].scrollIntoView({ behavior: "smooth", block: "center" })
