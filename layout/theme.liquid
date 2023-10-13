@@ -17,7 +17,6 @@
 >
   {% capture max_age %}{{ '1 days' | seconds | append: ', private, must-revalidate' }}{% endcapture %}
   <meta http-equiv="Cache-control" content="max-age={{ max_age }}">
-	<meta name="google-site-verification" content="gY83_jgrXmsrVe2pIu7erDE50iMF-wPhtia4kqAmhTM" />
   <head>
     {% comment %}
       <script id="__st">var __st={"a":68352934210,"offset":-25200,"reqid":"2ae19a08-8708-4976-ac74-623af6219dcb","pageurl":"www.petsnowy.com\/cart?customcart=copy-of-snow-pet-water-fountain","u":"583ee163660d"};</script>
@@ -25,6 +24,7 @@
 
     {%- render 'ecom_header' -%}
     <meta name="facebook-domain-verification" content="93n0ui1v6s8qrkyzga946a18wyfcwf">
+    <meta name="google-site-verification" content="gY83_jgrXmsrVe2pIu7erDE50iMF-wPhtia4kqAmhTM">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -323,10 +323,9 @@
     {{ shop.metafields.loox.global_html_head }}
 
     {% render 'gsf-conversion-pixels' %}
-  
-{% render 'digismoothie-giftbox' %}
-</head>
 
+    {% render 'digismoothie-giftbox' %}
+  </head>
 
   {% for item in cart.items %}
     {% assign product_template_cart = item.product.template_suffix %}
