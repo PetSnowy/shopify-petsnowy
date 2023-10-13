@@ -11,7 +11,7 @@
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
-	{{ 'update-product.css' |  asset_url |  stylesheet_tag }}
+  {{ 'update-product.css' | asset_url | stylesheet_tag }}
 
   {%- style -%}
     .section-{{ section.id }}-padding {
@@ -683,9 +683,54 @@
               >
                 <div class="product-item">ProductRecommendation</div>
               </product-recommendation>
+            {% when 'product-guarantee' %}
+              <div class="product-guarantee">
+                <img
+                  decoding="async"
+                  src="{{ block.settings.image_picker | img_url: 'master' }}"
+                  alt="petsnowy"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
             {%- when 'buy_buttons' -%}
               <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
-              <div {{ block.shopify_attributes }}>
+              <div class="product-add-quantity" {{ block.shopify_attributes }}>
+                {% comment %} 数量选择器 {% endcomment %}
+                <div
+                  class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
+                  {{ block.shopify_attributes }}
+                >
+                  {% comment %}
+                    <label class="form__label" for="Quantity-{{ section.id }}">
+                      {{ 'products.product.quantity.label' | t }}
+                    </label>
+                  {% endcomment %}
+
+                  <quantity-input class="quantity">
+                    <button class="quantity__button no-js-hidden" name="minus" type="button">
+                      <span class="visually-hidden">
+                        {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
+                      </span>
+                      {% render 'icon-minus' %}
+                    </button>
+                    <input
+                      class="quantity__input"
+                      type="number"
+                      name="quantity"
+                      id="Quantity-{{ section.id }}"
+                      min="1"
+                      value="1"
+                      form="{{ product_form_id }}"
+                    >
+                    <button class="quantity__button no-js-hidden" name="plus" type="button">
+                      <span class="visually-hidden">
+                        {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
+                      </span>
+                      {% render 'icon-plus' %}
+                    </button>
+                  </quantity-input>
+                </div>
                 <product-form class="product-form">
                   <div class="product-buttons product-form__error-message-wrapper" role="alert" hidden>
                     <svg
@@ -1445,6 +1490,18 @@
     {
       "type": "product-recommendation",
       "name": "product recommendation",
+      "limit": 1
+    },
+    {
+      "type": "product-guarantee",
+      "name": "product-guarantee",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_picker",
+          "label": "image_picker"
+        }
+      ],
       "limit": 1
     },
     {

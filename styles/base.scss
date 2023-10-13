@@ -2229,7 +2229,6 @@ sticky-header.Index {
 
 .header__heading-link {
 	display: inline-block;
-	padding: 0.75rem;
 	text-decoration: none;
 	word-break: break-word;
 }
@@ -2513,7 +2512,7 @@ details[open]>.header__submenu {
 
 /* Header menu */
 .header__inline-menu {
-	margin-left: -1.2rem;
+	margin-left: 50px;
 	grid-area: navigation;
 	display: none;
 }
@@ -5544,7 +5543,7 @@ $item: 5;
 		align-items: center;
 
 		header-menu summary {
-			padding-right: 20px;
+			padding-right: 25px;
 		}
 
 		header {

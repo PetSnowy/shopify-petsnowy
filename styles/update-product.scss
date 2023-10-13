@@ -5,16 +5,14 @@ $main-title-color:#45392e;
 $product-price-color:#818181;
 $product-title-color:#504030;
 $product-icon-color: #d75f23;
+$product-font-color: #5D5D5D;
 
-@media screen and (max-width: 900px) {
-
-	
-}
+@media screen and (max-width: 900px) {}
 
 
 @media screen and (min-width: 901px) {
 
-	#MainContentProduct {
+	#new-product {
 		.grid__item.product__media-wrapper {
 			width: 640px;
 			max-width: 640px;
@@ -35,6 +33,7 @@ $product-icon-color: #d75f23;
 			.thumbnail-slider {
 				background-color: #ffffff;
 				border-radius: 25px;
+				overflow: hidden;
 
 				.slider-button {
 					position: absolute;
@@ -84,17 +83,22 @@ $product-icon-color: #d75f23;
 			padding-left: 25px;
 
 			.font {
-				font-family: LeagueSpartanBold;
+				font-family: LeagueSpartanBlack;
 				text-transform: uppercase;
-				color: $main-title-color
+				color: $main-title-color;
+				font-weight: 600;
 			}
 
 			.product__title,
 			.product__title h1 {
 				@extend .font;
-				font-size: 30px;
+				font-size: 28px;
 				margin-bottom: 0px;
 				letter-spacing: 1px;
+			}
+
+			.product__title {
+				margin-bottom: 5px;
 			}
 
 			.product__text {
@@ -190,7 +194,7 @@ $product-icon-color: #d75f23;
 				font-family: LeagueSpartanBold;
 				font-size: 20px;
 				color: $main-title-color;
-				margin-bottom: 10px;
+				margin-bottom: 20px;
 			}
 
 			.add_product_list {
@@ -261,6 +265,98 @@ $product-icon-color: #d75f23;
 					}
 				}
 			}
+		}
+
+		.product-add-quantity {
+			margin-bottom: 10px;
+			display: flex;
+			align-items: center;
+			flex-direction: row-reverse;
+			width: fit-content;
+			height: 50px;
+
+			.product-form__input {
+				flex: none;
+			}
+
+			product-form {
+				margin-right: 20px;
+			}
+
+			.product-form__buttons {
+				button {
+					margin: 0px;
+					padding: 0;
+					background: $button-bg-color;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 250px;
+					height: 100%;
+					border: none;
+
+					&:hover {
+						background-color: #ffffff;
+
+						span {
+							color: $button-bg-color;
+						}
+					}
+
+					&::after,
+					&::before {
+						display: none;
+					}
+
+					span {
+						font-family: LeagueSpartanBlack;
+						font-size: 25px;
+						font-weight: 900;
+						color: #ffffff;
+						letter-spacing: 0px;
+						display: block;
+						height: 50px;
+						line-height: 50px;
+						transition: all 0.3s ease;
+					}
+				}
+			}
+
+			.product-form__input {
+				border-radius: 25px;
+				overflow: hidden;
+				background-color: #ffffff;
+
+				.quantity {
+
+					&::after,
+					&::before {
+						display: none;
+					}
+
+					input {
+						font-family: LeagueSpartanBlack;
+						font-size: 15px;
+						font-weight: 600;
+						color: $product-font-color;
+					}
+				}
+
+			}
+
+			.product-guarantee {
+				height: 23px;
+				width: 535px;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+					background-color: red;
+					margin-bottom: 30px;
+				}
+			}
+
 		}
 	}
 }

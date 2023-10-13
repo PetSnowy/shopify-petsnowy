@@ -352,7 +352,7 @@
     {% section 'header' %}
 
     <main
-      id="MainContent{% if template == 'index' %}Index{% endif %}{% if template contains 'product' %}Product{% endif %}"
+      id="MainContent{% if template == 'index' %}Index{% endif %}{% if template contains 'indiegogo' %}Product{% endif %}"
       class="content-for-layout focus-none template-{{ template.name }} {{ product.title | replace: ' ', '-'  }} {{ page.title | replace: ' ', '-'  }}"
       role="main"
       tabindex="-1"
