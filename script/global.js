@@ -786,6 +786,7 @@ class VariantSelects extends HTMLElement {
 				return this.options[index] === option;
 			}).includes(false);
 		});
+		console.log(this.currentVariant, this.dataset);
 	}
 
 	updateMedia() {
@@ -802,13 +803,13 @@ class VariantSelects extends HTMLElement {
 	}
 
 	updateURL() {
-		if (!this.currentVariant || this.dataset.updateUrl === 'false') return;
+		if (!this.currentVariant) return;
 		window.history.replaceState({}, '', `${this.dataset.url}?variant=${this.currentVariant.id}`);
 	}
 
 	updateShareUrl() {
 		const shareButton = document.getElementById(`Share-${this.dataset.section}`);
-		if (!shareButton || !shareButton.updateUrl) return;
+		if (!shareButton) return;
 		shareButton.updateUrl(`${window.shopUrl}${this.dataset.url}?variant=${this.currentVariant.id}`);
 	}
 
