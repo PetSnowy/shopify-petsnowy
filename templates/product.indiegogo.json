@@ -3,6 +3,11 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "44d8c3db-d3e6-491e-a289-bd1303106c00": {
+          "type": "score",
+          "settings": {
+          }
+        },
         "vendor": {
           "type": "text",
           "settings": {
@@ -13,6 +18,12 @@
         "title": {
           "type": "title",
           "settings": {
+          }
+        },
+        "476cce47-7c2a-47b6-bc1b-59be90c460e8": {
+          "type": "desc",
+          "settings": {
+            "desc": "Finally, a litter box that collects all scoop ideas"
           }
         },
         "price": {
@@ -44,8 +55,10 @@
         }
       },
       "block_order": [
+        "44d8c3db-d3e6-491e-a289-bd1303106c00",
         "vendor",
         "title",
+        "476cce47-7c2a-47b6-bc1b-59be90c460e8",
         "price",
         "variant_picker",
         "quantity_selector",
