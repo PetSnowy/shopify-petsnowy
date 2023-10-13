@@ -600,11 +600,6 @@ table:not([class]) th {
 	}
 }
 
-@media screen and (min-width: 990px) {
-	.large-up-hide {
-		display: none !important;
-	}
-}
 
 .left {
 	text-align: left;
@@ -2551,7 +2546,6 @@ details[open]>.header__submenu {
 }
 
 .header__menu-item {
-	padding: 1.2rem;
 	text-decoration: none;
 	color: rgba(var(--color-foreground), 0.75);
 }
@@ -5549,8 +5543,12 @@ $item: 5;
 		display: flex;
 		align-items: center;
 
+		header-menu summary {
+			padding-right: 20px;
+		}
+
 		header {
-			max-width: 1200px;
+			width: 1200px;
 		}
 
 		.list-menu__item {
