@@ -1,0 +1,9 @@
+
+        <script type="text/javascript">
+            {%if product.metafields.giftbox['parent_product-online_store_preview_url'] %}
+                window.location.replace("{{product.metafields.giftbox['parent_product-online_store_preview_url']}}")
+            {%else%}
+                window.location.replace("/")
+            {%endif%}
+        </script>
+        

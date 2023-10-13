@@ -26,6 +26,7 @@
       <h2 class="product-recommendations__heading {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
       <ul class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down" role="list">
         {% for recommendation in recommendations.products %}
+{% if recommendation.type=='giftbox_ghost_product' %}{%continue%}{%endif%}
         
           <li class="grid__item" {% if recommendation.tags contains 'hide_product' %}style="display:none;"{% endif %}>
             {% render 'card-product',
