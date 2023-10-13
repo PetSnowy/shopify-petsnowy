@@ -786,7 +786,6 @@ class VariantSelects extends HTMLElement {
 				return this.options[index] === option;
 			}).includes(false);
 		});
-		console.log(this.currentVariant, this.dataset);
 	}
 
 	updateMedia() {
