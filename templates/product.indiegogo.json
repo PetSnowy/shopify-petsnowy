@@ -44,14 +44,9 @@
         },
         "0d30c098-08a5-4f81-b4d9-68932b875783": {
           "type": "product_acessories",
-          "disabled": true,
           "settings": {
           }
         },
-        "9282e18d-720c-4943-a475-ee6a154261c7": {
-          "type": "product-recommendation",
-          "disabled": true
-				},
         "79a9eff9-a764-4477-b313-4bcdb7a8f74a": {
           "type": "product-guarantee",
           "settings": {
