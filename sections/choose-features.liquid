@@ -313,7 +313,7 @@
                             {% assign inventory_quantity = variant.inventory_quantity %}
                           {% endif %}
                         {% endfor %}
-                      
+
                         <label
                           for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
                           data_var_price="{{ varprice }}"
@@ -805,60 +805,12 @@
 </div>
 
 <script>
-  // $(document).ready(function () {
-    // var pathname = window.location.href;
-
-    // if (pathname == 'https://www.petsnowy.com/cart') {
-    //   $.ajax({
-    //     type: 'POST',
-    //     url: '/cart/clear.js',
-    //     dataType: 'json',
-    //     success: function (res) {
-    //       clear();
-    //     },
-    //     error: function (error) {
-    //       clear();
-    //     },
-    //   }).then(() => {
-    //     $('span.final_order_loader').hide();
-    //   });
-
-    //   function clear() {
-    //     var product_handle = localStorage.getItem('product_handle');
-    //     var addons_data = localStorage.getItem('addons_data');
-    //     if (product_handle != null) {
-    //       var origin = window.location.origin;
-    //       var cart_url_final = origin + '/cart?customcart=' + product_handle;
-    //       var obj = { Title: 'ChangeUrl', Url: cart_url_final };
-    //       history.pushState(obj, obj.Title, obj.Url);
-    //       //window.location.assign(cart_url_final);
-    //     }
-    //     if (addons_data != null) {
-    //       $(document).find('#custom_product_data').html(addons_data);
-    //     }
-    //     $(document).find('span.final_order_loader').hide();
-    //     $(document).find('span.final_order_texts').show();
-    //   }
-    // }
-
-    // var searchParams = new URLSearchParams(window.location.search);
-    // var paramhandle = searchParams.get('customcart');
-    // if(paramhandle != undefined){
-    //    $(".main_prodcut_contain").each(function() {
-    //      var mainhandle = $(this).attr('data-handle');
-    //      if(mainhandle == paramhandle){
-    //        $(this).show().addClass('active');
-    //      }else{
-    //        $(this).hide().removeClass('active');
-    //      }
-    //   });
-    // }
-
-    // $(document).on('click', '.next_four.fourth_step', function () {
-    //   $(document).find('span.final_order_loader').show();
-    //   $(document).find('span.final_order_texts').hide();
-    // });
-  // });
+  $(document).ready(function () {
+    $(document).on('click', '.next_four.fourth_step', function () {
+      $(document).find('span.final_order_loader').show();
+      $(document).find('span.final_order_texts').hide();
+    });
+  });
 </script>
 {% schema %}
 {
