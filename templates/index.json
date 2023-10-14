@@ -140,10 +140,9 @@
         "90c5c671-6144-4072-a4c9-1fd6ee5bc419",
         "3b71a9cc-803e-4d82-b739-2b417950f202"
       ],
-      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/halloween_pc_3done_a.png",
-        "image_mbl": "shopify:\/\/shop_images\/halloween_mobile_aa.png",
+        "image": "shopify:\/\/shop_images\/halloween-front_page1013.jpg",
+        "image_mbl": "shopify:\/\/shop_images\/halloween-pc-_1013.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": true,
@@ -189,6 +188,7 @@
         "2f899692-0c4a-491b-96a0-5f5d68984002",
         "31787a0d-75e1-4637-941e-8db7d97ee2bd"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/halloween-front_page1013.jpg",
         "image_mbl": "shopify:\/\/shop_images\/halloween-pc-_1013.jpg",
