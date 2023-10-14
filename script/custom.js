@@ -13,7 +13,7 @@ $(document).ready(function () {
 	//获取价格单位
 	const currencyTemp = document.querySelectorAll('.price_with_discount .money').length ? document.querySelectorAll('.price_with_discount .money') : document.querySelectorAll('.price_with_discount')
 	const currency = currencyTemp[0]?.innerHTML || currencyTemp[0]?.innerText
-	const monetaryUnit = currency.replace(/[\d.]/g, '')
+	const monetaryUnit = currency && currency.replace(/[\d.]/g, '')
 
 	$(".slide_arrow svg").click(function () {
 		document.querySelectorAll('.banner')[0].scrollIntoView({ behavior: "smooth", block: "center" })

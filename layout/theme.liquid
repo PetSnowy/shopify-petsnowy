@@ -432,15 +432,20 @@
     </script>
 
     <script>
-      const clearCart = async () => await $.post('/cart/clear.js');
-      const getCart = async () => await $.getJSON('/cart.js');
+      const clearCart = async () => {
+        await $.post('/cart/clear.js');
+      };
+
+      const getCart = async () => {
+        await $.getJSON('/cart.js');
+      };
 
       const orderNowButtons = document.querySelectorAll('.purchase_btn_first, .headr_odr_now');
       orderNowButtons.forEach((button) => {
         button.addEventListener('click', async () => {
           await clearCart();
           await getCart();
-          await location.reload();
+          await window.location.href = '/cart?customcart=snow-self-cleaning-litter-box';
         });
       });
     </script>
