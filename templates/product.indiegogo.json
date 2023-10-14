@@ -3,11 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "44d8c3db-d3e6-491e-a289-bd1303106c00": {
-          "type": "score",
-          "settings": {
-          }
-        },
         "vendor": {
           "type": "text",
           "settings": {
@@ -18,12 +13,6 @@
         "title": {
           "type": "title",
           "settings": {
-          }
-        },
-        "476cce47-7c2a-47b6-bc1b-59be90c460e8": {
-          "type": "desc",
-          "settings": {
-            "desc": "Finally, a litter box that collects all scoop ideas"
           }
         },
         "price": {
@@ -47,12 +36,6 @@
           "settings": {
           }
         },
-        "79a9eff9-a764-4477-b313-4bcdb7a8f74a": {
-          "type": "product-guarantee",
-          "settings": {
-            "image_picker": "shopify:\/\/shop_images\/header_logo.png"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -61,15 +44,12 @@
         }
       },
       "block_order": [
-        "44d8c3db-d3e6-491e-a289-bd1303106c00",
         "vendor",
         "title",
-        "476cce47-7c2a-47b6-bc1b-59be90c460e8",
         "price",
         "variant_picker",
         "quantity_selector",
         "0d30c098-08a5-4f81-b4d9-68932b875783",
-        "79a9eff9-a764-4477-b313-4bcdb7a8f74a",
         "buy_buttons"
       ],
       "settings": {
@@ -82,6 +62,20 @@
         "enable_video_looping": true,
         "padding_top": 40,
         "padding_bottom": 12
+      }
+    },
+    "b795a7b8-a6ac-4651-83cd-1e8d0fdcfc8d": {
+      "type": "update-main-product",
+      "settings": {
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "gallery_layout": "stacked",
+        "media_size": "large",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "14dad76e-4e1a-456f-bcf0-cdeafe2ea7f6": {
@@ -305,6 +299,7 @@
   },
   "order": [
     "main",
+    "b795a7b8-a6ac-4651-83cd-1e8d0fdcfc8d",
     "14dad76e-4e1a-456f-bcf0-cdeafe2ea7f6",
     "12a77462-3e98-474a-abc4-10be330a3dc3",
     "17b0b475-d06c-44c3-869e-6a83dc37ee02",
