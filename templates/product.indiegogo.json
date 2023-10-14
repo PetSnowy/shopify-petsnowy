@@ -33,6 +33,7 @@
         },
         "0d30c098-08a5-4f81-b4d9-68932b875783": {
           "type": "product_acessories",
+          "disabled": true,
           "settings": {
           }
         },
