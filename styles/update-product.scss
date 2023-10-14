@@ -13,6 +13,30 @@ $product-font-color: #5D5D5D;
 @media screen and (min-width: 901px) {
 
 	#product-indiegogo {
+
+		.swiper-wrapper {
+			.swiper-slide {
+				display: block;
+				width: 640px;
+				height: 420px;
+				background: #ffffff;
+				overflow: hidden;
+				border-radius: 25px;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+
+		.product__media-list {
+			li:not(.is-active) {
+				display: none;
+			}
+		}
+
 		.grid__item.product__media-wrapper {
 			width: 640px;
 			max-width: 640px;
@@ -284,6 +308,8 @@ $product-font-color: #5D5D5D;
 			}
 
 			.product-form__buttons {
+				margin-right: 30px;
+
 				button {
 					margin: 0px;
 					padding: 0;
@@ -326,6 +352,7 @@ $product-font-color: #5D5D5D;
 				border-radius: 25px;
 				overflow: hidden;
 				background-color: #ffffff;
+				margin-bottom: 0px;
 
 				.quantity {
 

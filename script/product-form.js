@@ -29,8 +29,8 @@ if (!customElements.get('product-form')) {
 			const config = fetchConfig('javascript');
 			config.headers['X-Requested-With'] = 'XMLHttpRequest';
 			delete config.headers['Content-Type'];
-
-			const quantity = document.querySelector('.product-form__input.product-form__quantity').querySelector('input').value
+			const temp = Array.from(document.querySelectorAll('.product-form__input.product-form__quantity')).map(item => parseInt(item.querySelector('input').value))
+			const quantity = Math.max(...temp);
 
 			const formData = new FormData();
 			if (this.cart) {
@@ -106,6 +106,7 @@ if (!customElements.get('product-form')) {
 			}
 		}
 
+		// 配件选择
 		async getAttachmentList() {
 			const productAttachmentWrapper = document.querySelector('.product_acessories-wrapper')
 
