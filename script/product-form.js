@@ -4,17 +4,17 @@ if (!customElements.get('product-form')) {
 			super();
 			this.submitButton = this.querySelector('.product-form__submit');
 
-			this.productId = document.querySelector('product-form').querySelector('input[name="id"]').value
+			this.productId = this.querySelector('input[name="id"]').value
 
 			this.querySelector('[name=id]').disabled = false;
-			this.submitButton.addEventListener('click', this.onSubmitHandler.bind(this));
+			this.submitButton?.addEventListener('click', this.onSubmitHandler.bind(this));
 
 			this.cart = document.querySelector('cart-notification') || document.querySelector('cart-drawer');
 
 			this.checkoutButton = document.querySelector('.checkout-button');
 			this.checkoutButton && this.checkoutButton.addEventListener('click', this.onCheckoutHandler.bind(this));
 
-			if (document.querySelector('cart-drawer')) this.submitButton.setAttribute('aria-haspopup', 'dialog');
+			if (document.querySelector('cart-drawer')) this.submitButton?.setAttribute('aria-haspopup', 'dialog');
 		}
 
 		async onSubmitHandler(evt) {
