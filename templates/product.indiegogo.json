@@ -157,11 +157,13 @@
         },
         "0d30c098-08a5-4f81-b4d9-68932b875783": {
           "type": "product_acessories",
+          "disabled": true,
           "settings": {
           }
         },
         "9282e18d-720c-4943-a475-ee6a154261c7": {
           "type": "product-recommendation",
+          "disabled": true,
           "settings": {
           }
         },
@@ -235,7 +237,6 @@
         "collapsible-row-3",
         "share"
       ],
-      "disabled": true,
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
