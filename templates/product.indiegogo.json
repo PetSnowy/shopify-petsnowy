@@ -76,13 +76,19 @@
         "14560b85-a973-48ed-b54c-521a105a7338": {
           "type": "text",
           "settings": {
-            "text": "Text block",
+            "text": "petsnowy",
             "text_style": "body"
           }
         },
         "6395df9a-b9ba-4c9f-b5f3-b9aa4e066d9a": {
           "type": "title",
           "settings": {
+          }
+        },
+        "db7ae0c8-2164-4aca-af32-842017294d7b": {
+          "type": "desc",
+          "settings": {
+            "desc": "Finolly, a litter bax that collects oll scoop ideas."
           }
         },
         "6a399bde-51fa-4e1b-9d5f-2da76fb78fef": {
@@ -106,6 +112,12 @@
           "settings": {
           }
         },
+        "05cb21c2-0c29-4df1-b74e-eb0cdefdd661": {
+          "type": "product-guarantee",
+          "settings": {
+            "image_picker": "shopify:\/\/shop_images\/litter-box.png"
+          }
+        },
         "8f31d2dd-ef4a-4482-a712-0de24ed18939": {
           "type": "buy_buttons",
           "settings": {
@@ -117,10 +129,12 @@
         "7b11a55c-6ec4-4bc0-abb9-e281750a2438",
         "14560b85-a973-48ed-b54c-521a105a7338",
         "6395df9a-b9ba-4c9f-b5f3-b9aa4e066d9a",
+        "db7ae0c8-2164-4aca-af32-842017294d7b",
         "6a399bde-51fa-4e1b-9d5f-2da76fb78fef",
         "1f9b5977-9f8f-4b69-bdbc-8e0befd75498",
         "6ddce2c3-cc0d-4756-bcc4-8d7683515ce9",
         "a69e55e6-eeec-4c69-8e9a-37430f97f274",
+        "05cb21c2-0c29-4df1-b74e-eb0cdefdd661",
         "8f31d2dd-ef4a-4482-a712-0de24ed18939"
       ],
       "settings": {
