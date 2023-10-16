@@ -296,7 +296,8 @@
     "353b1682-6ed4-47f5-b3c1-eec15917e003": {
       "type": "product-safety",
       "settings": {
-        "image_alt": ""
+        "image_title": "shopify:\/\/shop_images\/product-safety.png",
+        "image_alt": "product-safety"
       }
     },
     "81086820-fa02-40bd-afc9-97d991823309": {
