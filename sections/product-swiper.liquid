@@ -1,0 +1,105 @@
+{{ 'product-swiper.css' | asset_url | stylesheet_tag }}
+
+<div class="product-swiper">
+  <div class="page-width product-swiper-wrapper swiper">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        {% if block.type == 'block' %}
+          <div class="img swiper-slide">
+            <picture>
+              <source media="(min-width: 901px)" srcset="{{ block.settings.image_picker | img_url: 'master' }}">
+              <source media="(max-width: 900px)" srcset="{{ block.settings.mb_image_picker | img_url: 'master' }}">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="{{ block.settings.image_picker | img_url: 'master' }}"
+                alt="{{ block.settings.image_alt }}"
+              >
+            </picture>
+          </div>
+        {% endif %}
+      {% endfor %}
+      <div class="title">
+        <picture>
+          <source media="(min-width: 901px)" srcset="{{ section.settings.image_title | img_url: 'master' }}">
+          <source media="(max-width: 900px)" srcset="{{ section.settings.mb_image_title | img_url: 'master' }}">
+          <img
+            decoding="async"
+            loading="lazy"
+            src="{{ section.settings.image_title | img_url: 'master' }}"
+            alt="{{ section.settings.image_alt }}"
+          >
+        </picture>
+      </div>
+    </div>
+    <div class="swiper-button">
+      <div class="product-swiper-button-next"></div>
+      <div class="product-swiper-button-prev"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const productSwiper = new Swiper(`.product-swiper-wrapper`, {
+    spaceBetween: 20,
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      stopOnLastSlide: false,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    navigation: {
+      nextEl: '.product-swiper-button-next',
+      prevEl: '.product-swiper-button-prev',
+    },
+  });
+</script>
+
+{% schema %}
+{
+  "name": "product-swiper",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_title",
+      "label": "image_title"
+    },
+    {
+      "type": "image_picker",
+      "id": "mb_image_title",
+      "label": "mb_image_title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "video",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_picker",
+          "label": "image picker"
+        },
+        {
+          "type": "image_picker",
+          "id": "mb_image_picker",
+          "label": "mb image picker"
+        },
+        {
+          "type": "text",
+          "id": "image_alt",
+          "label": "image alt"
+        }
+      ]
+    },
+    {}
+  ],
+  "presets": [
+    {
+      "name": "product-swiper"
+    }
+  ]
+}
+{% endschema %}

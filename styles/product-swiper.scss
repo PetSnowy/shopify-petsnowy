@@ -1,0 +1,28 @@
+.product-swiper {
+	background-color: #e0d6c1;
+
+	.product-swiper-wrapper {
+		.swiper-wrapper {
+			.swiper-slide {
+
+				picture,
+				img {
+					width: 906px;
+					height: auto;
+					object-fit: contain;
+					display: block;
+					margin: 0px auto;
+				}
+			}
+		}
+
+		.title {
+
+			picture,
+			img {
+				width: 542px;
+				object-fit: contain;
+			}
+		}
+	}
+}
