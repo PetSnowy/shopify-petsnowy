@@ -88,6 +88,12 @@ $background-color:#f6f3ec;
 		border-radius: 10px;
 		overflow: hidden;
 
+		video {
+			width: 465px;
+			height: 827px;
+			object-fit: contain;
+		}
+
 		.close {
 			width: 20px;
 			height: 20px;
