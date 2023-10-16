@@ -289,7 +289,14 @@
         "2a4cad02-b559-403d-a01f-d669562567d6"
       ],
       "settings": {
-        "image_title": "shopify:\/\/shop_images\/Cat_care_at_your_fingertips.png"
+        "image_title": "shopify:\/\/shop_images\/Cat_care_at_your_fingertips.png",
+        "image_alt": ""
+      }
+    },
+    "353b1682-6ed4-47f5-b3c1-eec15917e003": {
+      "type": "product-safety",
+      "settings": {
+        "image_alt": ""
       }
     },
     "81086820-fa02-40bd-afc9-97d991823309": {
@@ -388,6 +395,7 @@
     "12a77462-3e98-474a-abc4-10be330a3dc3",
     "17b0b475-d06c-44c3-869e-6a83dc37ee02",
     "38c4023c-1b9f-4a34-a306-87932c288c00",
+    "353b1682-6ed4-47f5-b3c1-eec15917e003",
     "81086820-fa02-40bd-afc9-97d991823309",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
