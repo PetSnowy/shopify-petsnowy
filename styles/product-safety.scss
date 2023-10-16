@@ -1,0 +1,16 @@
+@import "pxToVw.scss";
+
+@media screen and (min-width: 901px) {
+	.product-safety {
+
+		picture,
+		img {
+			width: 1200px;
+			height: auto;
+			object-fit: contain;
+			display: block;
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {}
