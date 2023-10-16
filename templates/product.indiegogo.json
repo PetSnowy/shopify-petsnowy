@@ -152,88 +152,24 @@
     "14dad76e-4e1a-456f-bcf0-cdeafe2ea7f6": {
       "type": "video-scroll",
       "blocks": {
-        "e1722235-f3b6-424f-a9a2-5a9a6bae9da1": {
-          "type": "block",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
-        "2217031a-9d40-47a8-9036-fefe27c30597": {
-          "type": "block",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
-        "acd5708e-d556-4125-ad5e-375c273a9e5e": {
-          "type": "block",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
-        "99c56880-0028-4809-9efa-b737b1353d50": {
-          "type": "block",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
-        "de6dfb1c-0eca-40c6-830c-c42e46598380": {
-          "type": "block",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
-        "b9cfda65-88fc-484e-b480-c535582db53e": {
-          "type": "block",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
-        "65d8ab26-89e7-4798-88df-07770835f4cf": {
-          "type": "block",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
-        "8d82600c-1315-4863-9f4f-33d78f6fbb4b": {
-          "type": "block",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
-        "e5e9c8fe-e52e-46b7-9bf0-4d516103bd53": {
-          "type": "block",
-          "settings": {
-            "video_url": "",
-            "image_alt": ""
-          }
-        },
         "bae4eb26-a544-42d8-ad01-b80dc1f21755": {
           "type": "block",
           "settings": {
             "video_url": "",
             "image_alt": ""
           }
+        },
+        "85d73be3-054a-495e-b247-c6541678ff46": {
+          "type": "content",
+          "settings": {
+            "image_picker": "shopify:\/\/shop_images\/video-srcoll.png",
+            "alt": "they all love snow"
+          }
         }
       },
       "block_order": [
-        "e1722235-f3b6-424f-a9a2-5a9a6bae9da1",
-        "2217031a-9d40-47a8-9036-fefe27c30597",
-        "acd5708e-d556-4125-ad5e-375c273a9e5e",
-        "99c56880-0028-4809-9efa-b737b1353d50",
-        "de6dfb1c-0eca-40c6-830c-c42e46598380",
-        "b9cfda65-88fc-484e-b480-c535582db53e",
-        "65d8ab26-89e7-4798-88df-07770835f4cf",
-        "8d82600c-1315-4863-9f4f-33d78f6fbb4b",
-        "e5e9c8fe-e52e-46b7-9bf0-4d516103bd53",
-        "bae4eb26-a544-42d8-ad01-b80dc1f21755"
+        "bae4eb26-a544-42d8-ad01-b80dc1f21755",
+        "85d73be3-054a-495e-b247-c6541678ff46"
       ],
       "settings": {
         "h1": "",
