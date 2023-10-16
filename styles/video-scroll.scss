@@ -66,15 +66,15 @@ $background-color:#f6f3ec;
 			}
 		}
 
-		.video-play {
-			width: 27px;
-			height: 27px;
-			background: url('./play.png') no-repeat center/cover;
-			position: absolute;
-			bottom: 10px;
-			right: 10px;
-			display: block;
-		}
+		// .video-play {
+		// 	width: 27px;
+		// 	height: 27px;
+		// 	background: url('./play.png') no-repeat center/cover;
+		// 	position: absolute;
+		// 	bottom: 10px;
+		// 	right: 10px;
+		// 	display: block;
+		// }
 	}
 
 	.portrait-screen {
@@ -82,10 +82,11 @@ $background-color:#f6f3ec;
 		bottom: 20px;
 		right: 20px;
 		z-index: 100;
-		width: 375px;
-		height: 800px;
-		background-color: red;
+		width: 465px;
+		height: 827px;
 		display: none;
+		border-radius: 10px;
+		overflow: hidden;
 
 		.close {
 			width: 20px;

@@ -7,15 +7,37 @@ function getFocusableElements(container) {
 }
 
 class ProductInventory extends HTMLElement {
-	constructor(yRange = [-5, 5], xRange = [-5, 5]) {
+	constructor() {
 		super();
-		this.yRange = yRange;
-		this.xRange = xRange;
+		this.yRange = [-5, 5];
+		this.xRange = [-5, 5];
 		if (window.innerWidth > 901) {
 			this.addEventListener('mousemove', (e) => this.onmousemove(e));
 			this.addEventListener('mouseout', this.handleMouseout);
 		}
 	}
+
+	static get observedAttributes() {
+		return ['y-range', 'x-range'];
+	}
+
+	attributeChangedCallback(name, oldValue, newValue) {
+		if (name === 'y-range') {
+			this.yRange = newValue.split(',').map(parseFloat);
+		} else if (name === 'x-range') {
+			this.xRange = newValue.split(',').map(parseFloat);
+		}
+	}
+
+	connectedCallback() {
+		if (this.hasAttribute('y-range')) {
+			this.yRange = this.getAttribute('y-range').split(',').map(parseFloat);
+		}
+		if (this.hasAttribute('x-range')) {
+			this.xRange = this.getAttribute('x-range').split(',').map(parseFloat);
+		}
+	}
+
 	getRotate = (range, value, max) => (value / max) * (range[1] - range[0]) + range[0];
 
 	onmousemove(e) {
