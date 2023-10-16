@@ -1,6 +1,21 @@
 {{ 'video-scroll.css' | asset_url | stylesheet_tag }}
 
 <div class="video-scroll-wrapper swiper page-width">
+  <div class="video-scroll-content">
+    {% for block in section.blocks %}
+      {% if block.type == 'content' %}
+        <picture>
+          <source media="(min-width: 901px)" srcset="{{ block.settings.image_picker | img_url: 'master' }}">
+          <source media="(max-width: 900px)" srcset="{{ block.settings.mb_image_picker | img_url: 'master' }}">
+          <img
+            decoding="async"
+            src="{{ block.settings.image_picker | img_url: 'master' }}"
+            alt="{{ block.settings.image_alt }}"
+          >
+        </picture>
+      {% endif %}
+    {% endfor %}
+  </div>
   <div class="video-img-wrapper swiper-wrapper">
     {% for block in section.blocks %}
       <div class="video-img swiper-slide">
@@ -85,6 +100,28 @@
     }
   ],
   "blocks": [
+    {
+      "type": "content",
+      "name": "content",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_picker",
+          "label": "image picker"
+        },
+        {
+          "type": "image_picker",
+          "id": "mb_image_picker",
+          "label": "mb image picker"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "alt"
+        }
+      ],
+      "limit": 1
+    },
     {
       "type": "block",
       "name": "video",
