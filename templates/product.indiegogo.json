@@ -242,6 +242,11 @@
         "text": ""
       }
     },
+    "38c4023c-1b9f-4a34-a306-87932c288c00": {
+      "type": "product-swiper",
+      "settings": {
+      }
+    },
     "81086820-fa02-40bd-afc9-97d991823309": {
       "type": "product-three",
       "disabled": true,
@@ -337,6 +342,7 @@
     "14dad76e-4e1a-456f-bcf0-cdeafe2ea7f6",
     "12a77462-3e98-474a-abc4-10be330a3dc3",
     "17b0b475-d06c-44c3-869e-6a83dc37ee02",
+    "38c4023c-1b9f-4a34-a306-87932c288c00",
     "81086820-fa02-40bd-afc9-97d991823309",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
