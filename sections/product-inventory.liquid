@@ -56,46 +56,12 @@
   </div>
 </div>
 <script>
-  class ProductInventory extends HTMLElement {
-    constructor() {
-      super();
-      this.yRange = [-5, 5];
-      this.xRange = [-5, 5];
-      if (window.innerWidth > 901) {
-        this.addEventListener('mousemove', (e) => this.onmousemove(e));
-        this.addEventListener('mouseout', this.handleMouseout);
-      }
-    }
-    connectedCallback() {
-      const inventory = this.querySelector('.inventory');
-      inventory.innerText = `${this.getCurrentInventory()[0].dataset.quantity}`;
-    }
-    getCurrentInventory() {
-      const quantityElements = Array.from(this.querySelectorAll('.inventory-quantity'));
-      return quantityElements && quantityElements.filter((item) => item.dataset.id === '47114822746434');
-    }
-    getRotate = (range, value, max) => (value / max) * (range[1] - range[0]) + range[0];
-
-    onmousemove(e) {
-      const { offsetX, offsetY } = e;
-      const { offsetWidth, offsetHeight } = this;
-      const ry = -this.getRotate(this.yRange, offsetX, offsetWidth);
-      const rx = this.getRotate(this.xRange, offsetY, offsetHeight);
-      this.style.transform = `perspective(700px) rotateX(${rx}deg) rotateY(${ry}deg)`;
-      this.style.transition = 'none';
-    }
-
-    handleMouseout() {
-      this.style.transition = 'transform 0.3s ease';
-      this.style.transform = 'rotateX(0deg) rotateY(0deg)';
-    }
-
-    disconnectedCallback() {
-      this.removeEventListener('mousemove', this.onmousemove);
-      this.removeEventListener('mouseout', this.handleMouseout);
-    }
-  }
-  customElements.define('product-inventory', ProductInventory);
+  const quantityElements = Array.from(
+    document.querySelector('.product-inventory').querySelectorAll('.inventory-quantity')
+  );
+  quantityElements.filter((item) => item.dataset.id === '47114822746434');
+  const inventory = document.querySelector('.product-inventory .inventory');
+  inventory.innerText = `${quantityElements.dataset.quantity}`;
 </script>
 {% schema %}
 {

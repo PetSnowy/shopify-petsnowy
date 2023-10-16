@@ -6,6 +6,39 @@ function getFocusableElements(container) {
 	);
 }
 
+class ProductInventory extends HTMLElement {
+	constructor(yRange = [-5, 5], xRange = [-5, 5]) {
+		super();
+		this.yRange = yRange;
+		this.xRange = xRange;
+		if (window.innerWidth > 901) {
+			this.addEventListener('mousemove', (e) => this.onmousemove(e));
+			this.addEventListener('mouseout', this.handleMouseout);
+		}
+	}
+	getRotate = (range, value, max) => (value / max) * (range[1] - range[0]) + range[0];
+
+	onmousemove(e) {
+		const { offsetX, offsetY } = e;
+		const { offsetWidth, offsetHeight } = this;
+		const ry = -this.getRotate(this.yRange, offsetX, offsetWidth);
+		const rx = this.getRotate(this.xRange, offsetY, offsetHeight);
+		this.style.transform = `perspective(700px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+		this.style.transition = 'none';
+	}
+
+	handleMouseout() {
+		this.style.transition = 'transform 0.3s ease';
+		this.style.transform = 'rotateX(0deg) rotateY(0deg)';
+	}
+
+	disconnectedCallback() {
+		this.removeEventListener('mousemove', this.onmousemove);
+		this.removeEventListener('mouseout', this.handleMouseout);
+	}
+}
+customElements.define('product-inventory', ProductInventory);
+
 document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
 	summary.setAttribute('role', 'button');
 	summary.setAttribute('aria-expanded', summary.parentNode.hasAttribute('open'));

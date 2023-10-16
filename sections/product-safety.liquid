@@ -1,0 +1,43 @@
+<div class="product-safety-wrapper">
+  <div class="product-safety">
+    <product-inventory y-range="-10,10" x-range="-10,10">
+      <picture>
+        <source media="(min-width: 901px)" srcset="{{ section.settings.image_title | img_url: 'master' }}">
+        <source media="(max-width: 900px)" srcset="{{ section.settings.mb_image_title | img_url: 'master' }}">
+        <img
+          decoding="async"
+          loading="lazy"
+          src="{{ section.settings.image_title | img_url: 'master' }}"
+          alt="{{ section.settings.image_alt }}"
+        >
+      </picture>
+    </product-inventory>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "product-swiper",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_title",
+      "label": "image_title"
+    },
+    {
+      "type": "image_picker",
+      "id": "mb_image_title",
+      "label": "mb_image_title"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "image_alt"
+    }
+  ],
+  "presets": [
+    {
+      "name": "product-swiper"
+    }
+  ]
+}
+{% endschema %}
