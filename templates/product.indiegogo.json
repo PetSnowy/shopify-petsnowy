@@ -152,6 +152,13 @@
     "14dad76e-4e1a-456f-bcf0-cdeafe2ea7f6": {
       "type": "video-scroll",
       "blocks": {
+        "d63b4da5-cd71-462a-89a9-9f31a1c5b75e": {
+          "type": "content",
+          "settings": {
+            "image_picker": "shopify:\/\/shop_images\/video-srcoll.png",
+            "alt": ""
+          }
+        },
         "bae4eb26-a544-42d8-ad01-b80dc1f21755": {
           "type": "block",
           "settings": {
@@ -210,6 +217,7 @@
         }
       },
       "block_order": [
+        "d63b4da5-cd71-462a-89a9-9f31a1c5b75e",
         "bae4eb26-a544-42d8-ad01-b80dc1f21755",
         "12c5243e-5b1e-4213-b004-4a8a4f9bbeab",
         "bd97d9ae-9df4-41d6-b6f6-17eea80a1c47",
