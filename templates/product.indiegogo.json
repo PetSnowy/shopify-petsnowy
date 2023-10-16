@@ -244,7 +244,52 @@
     },
     "38c4023c-1b9f-4a34-a306-87932c288c00": {
       "type": "product-swiper",
+      "blocks": {
+        "66b355ee-8510-470a-b1b9-8d679a139521": {
+          "type": "block",
+          "settings": {
+            "image_picker": "shopify:\/\/shop_images\/mb.png",
+            "image_alt": ""
+          }
+        },
+        "4be37102-0b25-4c8d-bcca-c3902e82df5b": {
+          "type": "block",
+          "settings": {
+            "image_picker": "shopify:\/\/shop_images\/mb2.png",
+            "image_alt": ""
+          }
+        },
+        "3021452c-d00a-4e2c-acb9-8b867b1b654a": {
+          "type": "block",
+          "settings": {
+            "image_picker": "shopify:\/\/shop_images\/mb3.png",
+            "image_alt": ""
+          }
+        },
+        "ca7de1d8-4020-45dc-b002-e6dcb9dd9375": {
+          "type": "block",
+          "settings": {
+            "image_picker": "shopify:\/\/shop_images\/mb4.png",
+            "image_alt": ""
+          }
+        },
+        "2a4cad02-b559-403d-a01f-d669562567d6": {
+          "type": "block",
+          "settings": {
+            "image_picker": "shopify:\/\/shop_images\/mb5.png",
+            "image_alt": ""
+          }
+        }
+      },
+      "block_order": [
+        "66b355ee-8510-470a-b1b9-8d679a139521",
+        "4be37102-0b25-4c8d-bcca-c3902e82df5b",
+        "3021452c-d00a-4e2c-acb9-8b867b1b654a",
+        "ca7de1d8-4020-45dc-b002-e6dcb9dd9375",
+        "2a4cad02-b559-403d-a01f-d669562567d6"
+      ],
       "settings": {
+        "image_title": "shopify:\/\/shop_images\/Cat_care_at_your_fingertips.png"
       }
     },
     "81086820-fa02-40bd-afc9-97d991823309": {
