@@ -159,17 +159,65 @@
             "image_alt": ""
           }
         },
-        "85d73be3-054a-495e-b247-c6541678ff46": {
-          "type": "content",
+        "12c5243e-5b1e-4213-b004-4a8a4f9bbeab": {
+          "type": "block",
           "settings": {
-            "image_picker": "shopify:\/\/shop_images\/video-srcoll.png",
-            "alt": "they all love snow"
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "bd97d9ae-9df4-41d6-b6f6-17eea80a1c47": {
+          "type": "block",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "786ec155-819f-4e8f-93d3-7780d0a13da3": {
+          "type": "block",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "9c370b5f-4f8b-48da-b489-d4b3deffe0f3": {
+          "type": "block",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "df4facca-6c38-4a52-b010-b17da458dd94": {
+          "type": "block",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "c71c1860-b6f9-4267-badd-1e1a0b78d3f0": {
+          "type": "block",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
+          }
+        },
+        "c55f76b0-302b-4d0b-8e71-dda0ecca9eb4": {
+          "type": "block",
+          "settings": {
+            "video_url": "",
+            "image_alt": ""
           }
         }
       },
       "block_order": [
         "bae4eb26-a544-42d8-ad01-b80dc1f21755",
-        "85d73be3-054a-495e-b247-c6541678ff46"
+        "12c5243e-5b1e-4213-b004-4a8a4f9bbeab",
+        "bd97d9ae-9df4-41d6-b6f6-17eea80a1c47",
+        "786ec155-819f-4e8f-93d3-7780d0a13da3",
+        "9c370b5f-4f8b-48da-b489-d4b3deffe0f3",
+        "df4facca-6c38-4a52-b010-b17da458dd94",
+        "c71c1860-b6f9-4267-badd-1e1a0b78d3f0",
+        "c55f76b0-302b-4d0b-8e71-dda0ecca9eb4"
       ],
       "settings": {
         "h1": "",
