@@ -238,14 +238,12 @@
     "17b0b475-d06c-44c3-869e-6a83dc37ee02": {
       "type": "product-details",
       "settings": {
-        "pc_image": "shopify:\/\/shop_images\/details.png",
-        "text": "",
-        "title": "",
-        "desc": ""
+        "text": ""
       }
     },
     "81086820-fa02-40bd-afc9-97d991823309": {
       "type": "product-three",
+      "disabled": true,
       "settings": {
       }
     },
