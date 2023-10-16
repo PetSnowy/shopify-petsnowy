@@ -31,6 +31,10 @@ $product-font-color: #5D5D5D;
 			}
 		}
 
+		.product__info-container {
+			position: static;
+		}
+
 		.product__media-list {
 			li:not(.is-active) {
 				display: none;
