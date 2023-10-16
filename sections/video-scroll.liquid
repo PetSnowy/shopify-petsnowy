@@ -10,20 +10,12 @@
           <img
             decoding="async"
             src="{{ block.settings.image_picker | img_url: 'master' }}"
-            alt="{{ block.settings.text }}"
+            alt="{{ block.settings.image_alt }}"
           >
         </picture>
         <div class="video-play"></div>
       </div>
     {% endfor %}
-  </div>
-  <div class="swiper-button">
-    <div class="swiper-button-prev">
-      {% render 'icon-arrow-comment' %}
-    </div>
-    <div class="swiper-button-next">
-      {% render 'icon-arrow-comment' %}
-    </div>
   </div>
 </div>
 
@@ -45,6 +37,7 @@
   $(function () {
     const abscissaSwiper = new Swiper('.video-scroll-wrapper', {
       spaceBetween: 20,
+      slidesPerView: 'auto',
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -93,8 +86,8 @@
   ],
   "blocks": [
     {
-      "type": "video_img",
-      "name": "video_img",
+      "type": "block",
+      "name": "video",
       "settings": [
         {
           "type": "url",
@@ -115,17 +108,6 @@
           "type": "text",
           "id": "image_alt",
           "label": "image alt"
-        }
-      ]
-    },
-    {
-      "type": "video_url",
-      "name": "video_url",
-      "settings": [
-        {
-          "type": "url",
-          "id": "video_url",
-          "label": "video url"
         }
       ]
     }
