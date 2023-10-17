@@ -167,6 +167,14 @@
             "image_alt": "petsnowy litter box review"
           }
         },
+        "9f69afc5-1826-4562-b4ec-da18a71b215a": {
+          "type": "block",
+          "settings": {
+            "video_url": "",
+            "image_picker": "shopify:\/\/shop_images\/2_754ef3b9-8102-4d99-849b-37d59ab6d5ad.png",
+            "image_alt": "cat litter box"
+          }
+        },
         "12c5243e-5b1e-4213-b004-4a8a4f9bbeab": {
           "type": "block",
           "settings": {
@@ -203,6 +211,7 @@
       "block_order": [
         "d63b4da5-cd71-462a-89a9-9f31a1c5b75e",
         "bae4eb26-a544-42d8-ad01-b80dc1f21755",
+        "9f69afc5-1826-4562-b4ec-da18a71b215a",
         "12c5243e-5b1e-4213-b004-4a8a4f9bbeab",
         "bd97d9ae-9df4-41d6-b6f6-17eea80a1c47",
         "786ec155-819f-4e8f-93d3-7780d0a13da3",
