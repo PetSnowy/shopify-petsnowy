@@ -1,0 +1,48 @@
+<div class="product-quiet page-width">
+  <div class="container">
+    <div class="content">
+      <p class="quiet-title">{{ section.settings.title }}</p>
+      <div class="voice"></div>
+    </div>
+    <div class="quite-img">
+      <picture>
+        <source media="(min-width: 901px)" srcset="{{ section.settings.image | img_url: 'master' }}">
+        <source media="(max-width: 900px)" srcset="{{ section.settings.mb_image | img_url: 'master' }}">
+        <img
+          decoding="async"
+          loading="lazy"
+          src="{{ section.settings.image | img_url: 'master' }}"
+          alt="{{ section.settings.title }}"
+        >
+      </picture>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "product-quiet",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "title"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mb_image",
+      "label": "mb_image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "product-quiet"
+    }
+  ]
+}
+{% endschema %}
