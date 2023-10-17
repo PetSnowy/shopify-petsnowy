@@ -294,6 +294,13 @@
       "settings": {
       }
     },
+    "5ac8a14d-3c18-430e-b4a9-01b548701dff": {
+      "type": "product-quiet",
+      "settings": {
+        "title": "Whisper QuietJoy and only joy",
+        "image": "shopify:\/\/shop_images\/6-2.png"
+      }
+    },
     "16879203322247258f": {
       "type": "apps",
       "blocks": {
@@ -375,13 +382,6 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "5ac8a14d-3c18-430e-b4a9-01b548701dff": {
-      "type": "product-quiet",
-      "settings": {
-        "title": "Whisper QuietJoy and only joy",
-        "image": "shopify:\/\/shop_images\/6-2.png"
-      }
     }
   },
   "order": [
@@ -393,9 +393,9 @@
     "38c4023c-1b9f-4a34-a306-87932c288c00",
     "353b1682-6ed4-47f5-b3c1-eec15917e003",
     "81086820-fa02-40bd-afc9-97d991823309",
+    "5ac8a14d-3c18-430e-b4a9-01b548701dff",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
-    "product-recommendations",
-    "5ac8a14d-3c18-430e-b4a9-01b548701dff"
+    "product-recommendations"
   ]
 }
