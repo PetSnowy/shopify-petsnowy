@@ -1,6 +1,7 @@
 @import "pxToVw.scss";
 $font-emphasize:#d75f23;
-
+$color: #a19488;
+$activeColor:#504030;
 
 @media screen and (min-width: 901px) {
 	.product-quiet {
@@ -8,6 +9,8 @@ $font-emphasize:#d75f23;
 			.quiet-title {
 				font-size: 50px;
 				font-family: HelveticaNowDisplayXBlk;
+				width: 428px;
+				margin-bottom: 26px;
 
 				&::first-letter {
 					color: $font-emphasize;
@@ -16,16 +19,57 @@ $font-emphasize:#d75f23;
 
 			.voice {
 				display: flex;
+				height: 81px;
 
 				.icon {
 					width: 96px;
 					height: 81px;
 					background: url("./voice.png") no-repeat center/cover;
+					display: block;
+					margin-right: 20px;
+				}
+
+				.line {
+					display: flex;
+					align-items: flex-end;
+					column-gap: 5px;
+					height: 81px;
+
+					span {
+						width: 10px;
+						height: 14px;
+						background-color: $color;
+						border-radius: 2px;
+						transition: all 0.3s ease;
+
+						&:nth-child(5n) {
+							height: 20px;
+						}
+					}
+
+					@for $i from 6 through 18 {
+						span:nth-child(#{$i}) {
+							background-color: $activeColor;
+							animation: voice ease 0.5s #{$i * 0.1}s infinite;
+						}
+					}
+
+					@for $i from 10 through 20 {
+						span:nth-child(#{$i}) {
+							background-color: $activeColor;
+							animation: voice_1 ease 0.8s #{$i * 0.1}s infinite;
+						}
+					}
 				}
 			}
 		}
 
-		.content .quite-img {
+		.container {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.quite-img {
 			width: 551px;
 
 			img {
@@ -34,6 +78,26 @@ $font-emphasize:#d75f23;
 				object-fit: contain;
 			}
 		}
+	}
+}
+
+@keyframes voice {
+	0% {
+		height: 14px;
+	}
+
+	100% {
+		height: 60px;
+	}
+}
+
+@keyframes voice_1 {
+	0% {
+		height: 14px;
+	}
+
+	100% {
+		height: 40px;
 	}
 }
 
