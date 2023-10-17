@@ -375,6 +375,13 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "5ac8a14d-3c18-430e-b4a9-01b548701dff": {
+      "type": "product-quiet",
+      "settings": {
+        "title": "Whisper QuietJoy and only joy",
+        "image": "shopify:\/\/shop_images\/6-2.png"
+      }
     }
   },
   "order": [
@@ -388,6 +395,7 @@
     "81086820-fa02-40bd-afc9-97d991823309",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
-    "product-recommendations"
+    "product-recommendations",
+    "5ac8a14d-3c18-430e-b4a9-01b548701dff"
   ]
 }
