@@ -1,5 +1,6 @@
 @import "pxToVw.scss";
 $background-color:#f6f3ec;
+$color:#7e6e5f;
 
 .video-scroll-wrapper {
 	display: flex;
@@ -78,6 +79,10 @@ $background-color:#f6f3ec;
 		// }
 	}
 
+	.swiper {
+		--swiper-theme-color: $color;
+	}
+
 	.portrait-screen {
 		position: fixed;
 		bottom: 20px;
@@ -95,14 +100,15 @@ $background-color:#f6f3ec;
 			object-fit: contain;
 		}
 
+
+
 		.close {
-			width: 20px;
-			height: 20px;
-			background-color: aqua;
+			width: 40px;
+			height: 40px;
+			background: url('./close-product.png') no-repeat center/cover;
 			position: absolute;
-			top: 0px;
-			right: 0px;
-			border-radius: 50%;
+			top: 5px;
+			right: 5px;
 			display: block;
 			z-index: 100;
 			cursor: pointer;
