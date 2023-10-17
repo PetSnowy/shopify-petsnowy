@@ -1,8 +1,13 @@
+{{ 'product-safety.css' | asset_url | stylesheet_tag }}
+
 <div class="product-quiet page-width">
   <div class="container">
     <div class="content">
       <p class="quiet-title">{{ section.settings.title }}</p>
-      <div class="voice"></div>
+      <div class="voice">
+        <div class="icon"></div>
+        <div class="voice-line"></div>
+      </div>
     </div>
     <div class="quite-img">
       <picture>

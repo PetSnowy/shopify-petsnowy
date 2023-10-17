@@ -187,7 +187,7 @@ $product-font-color: #5D5D5D;
 			}
 
 			.product-form__input input[type=radio]:checked+label {
-				background-color: red;
+				border-color: $product-icon-color;
 			}
 
 			label {
@@ -198,6 +198,7 @@ $product-font-color: #5D5D5D;
 				box-sizing: border-box;
 				margin: 0px;
 				border: none;
+				border: 2px solid transparent;
 
 				img {
 					width: 90px;
@@ -234,6 +235,7 @@ $product-font-color: #5D5D5D;
 
 			.add_list_product {
 				@extend .label_style;
+				border: 2px solid transparent;
 
 				input {
 					width: 0px;
@@ -241,8 +243,7 @@ $product-font-color: #5D5D5D;
 				}
 
 				&:has(input[type="checkbox"]:checked) {
-					background-color: red;
-					color: red;
+					border-color: $product-icon-color;
 				}
 
 				.quantity_addons {
