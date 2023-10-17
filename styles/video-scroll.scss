@@ -117,5 +117,9 @@ $color:#7e6e5f;
 }
 
 @media screen and (max-width: 900px) {
-	.video-scroll-wrapper {}
+	.video-scroll-wrapper {
+		.portrait-screen {
+			display: none;
+		}
+	}
 }

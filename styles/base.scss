@@ -5489,6 +5489,10 @@ label.productlabel_info,
 		box-sizing: border-box;
 	}
 
+	.header-wrapper {
+		height: vw(95px);
+	}
+
 	.needsclick {
 		[aria-label="POPUP Form"].needsclick.kl-private-reset-css-Xuajs1 {
 			transform: none !important;

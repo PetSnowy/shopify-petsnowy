@@ -6,13 +6,88 @@ $product-price-color:#818181;
 $product-title-color:#504030;
 $product-icon-color: #d75f23;
 $product-font-color: #5D5D5D;
+@import "pxToVw.scss";
 
-@media screen and (max-width: 900px) {}
+@media screen and (max-width: 900px) {
+	#product-indiegogo {
+		#new-product {}
+
+		slider-component {
+			display: none;
+		}
+
+		.swiper-update-product {
+			.swiper-slide {
+				display: block;
+				background: #ffffff;
+				overflow: hidden;
+				border-radius: vw(20px);
+				height: vw(446px);
+			}
+
+			.product-arrows {
+				width: vw(58px);
+				height: vw(26px);
+				background: url('./product-main-arrows.png') no-repeat center/cover;
+				display: block;
+			}
+
+			[class*='swiper-button-'] {
+				&::after {
+					display: none;
+				}
+			}
+
+			.swiper-button-next .product-arrows {
+				transform: rotate(180deg);
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.product__info-wrapper {
+			width: 100%;
+		}
+
+
+		variant-radios {
+			fieldset {
+				display: flex;
+				flex-wrap: wrap;
+				gap: vw(37px);
+			}
+
+			label {
+				border: vw(4px) solid transparent;
+				border-radius: vw(20px);
+				padding: vw(10px);
+				overflow: hidden;
+
+				img {
+					width: vw(200px);
+					height: auto;
+				}
+			}
+
+			.product-form__input input[type=radio]:checked+label {
+				border-color: $product-icon-color;
+				background: #ffffff;
+			}
+		}
+	}
+}
 
 
 @media screen and (min-width: 901px) {
 
 	#product-indiegogo {
+		.m-swiper-update-product {
+			display: none;
+		}
 
 		.swiper-wrapper {
 			.swiper-slide {
@@ -62,16 +137,6 @@ $product-font-color: #5D5D5D;
 				background-color: #ffffff;
 				border-radius: 25px;
 				overflow: hidden;
-
-				.slider-button {
-					position: absolute;
-					top: 50%;
-					transform: translateY(-50%);
-					width: 40px;
-					height: 68px;
-					background-color: red;
-					z-index: 10;
-				}
 
 				.slider-button--next {
 					right: 0px;
