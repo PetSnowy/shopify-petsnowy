@@ -216,11 +216,9 @@
       "settings": {
       }
     },
-    "17b0b475-d06c-44c3-869e-6a83dc37ee02": {
-      "type": "product-details",
+    "4e093d3d-b091-47db-ad62-81ec088c925c": {
+      "type": "product-litter",
       "settings": {
-        "pc_image": "shopify:\/\/shop_images\/details.png",
-        "text": ""
       }
     },
     "38c4023c-1b9f-4a34-a306-87932c288c00": {
@@ -375,7 +373,7 @@
     "b795a7b8-a6ac-4651-83cd-1e8d0fdcfc8d",
     "14dad76e-4e1a-456f-bcf0-cdeafe2ea7f6",
     "12a77462-3e98-474a-abc4-10be330a3dc3",
-    "17b0b475-d06c-44c3-869e-6a83dc37ee02",
+    "4e093d3d-b091-47db-ad62-81ec088c925c",
     "38c4023c-1b9f-4a34-a306-87932c288c00",
     "353b1682-6ed4-47f5-b3c1-eec15917e003",
     "81086820-fa02-40bd-afc9-97d991823309",
