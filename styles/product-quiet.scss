@@ -7,10 +7,11 @@ $activeColor:#504030;
 	.product-quiet {
 		.content {
 			.quiet-title {
-				font-size: 50px;
 				font-family: HelveticaNowDisplayXBlk;
-				width: 428px;
-				margin-bottom: 26px;
+				font-size: 70px;
+				margin-bottom: 20px;
+				width: 582px;
+				line-height: 84px;
 
 				&::first-letter {
 					color: $font-emphasize;
@@ -47,18 +48,21 @@ $activeColor:#504030;
 						}
 					}
 
-					@for $i from 6 through 18 {
-						span:nth-child(#{$i}) {
-							background-color: $activeColor;
-							animation: voice ease 0.5s #{$i * 0.1}s infinite;
+					@for $i from 6 through 15 {
+						@if $i % 2==0 {
+							span:nth-child(#{$i}) {
+								background-color: $activeColor;
+								animation: voice ease 0.8s #{$i * 0.1}s infinite;
+							}
 						}
-					}
 
-					@for $i from 10 through 20 {
-						span:nth-child(#{$i}) {
-							background-color: $activeColor;
-							animation: voice_1 ease 0.8s #{$i * 0.1}s infinite;
+						@else {
+							span:nth-child(#{$i}) {
+								background-color: $activeColor;
+								animation: voice_1 ease 1.2s #{$i * 0.1}s infinite;
+							}
 						}
+
 					}
 				}
 			}
@@ -87,7 +91,7 @@ $activeColor:#504030;
 	}
 
 	100% {
-		height: 60px;
+		height: 34px;
 	}
 }
 
@@ -97,7 +101,7 @@ $activeColor:#504030;
 	}
 
 	100% {
-		height: 40px;
+		height: 25px;
 	}
 }
 
