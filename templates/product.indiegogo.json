@@ -115,7 +115,9 @@
         "05cb21c2-0c29-4df1-b74e-eb0cdefdd661": {
           "type": "product-guarantee",
           "settings": {
-            "image_picker": "shopify:\/\/shop_images\/litter-box.png"
+            "image_picker": "shopify:\/\/shop_images\/litter-box.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/m_litter-box.png",
+            "alt": ""
           }
         },
         "8f31d2dd-ef4a-4482-a712-0de24ed18939": {
