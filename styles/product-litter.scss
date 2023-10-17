@@ -1,0 +1,178 @@
+@import './font.scss';
+
+$font-color:#504030;
+$font-emphasize:#d75f23;
+
+.product-litter {
+	width: 1200px;
+	margin: auto 0px;
+	background: #e9e1cf;
+
+	picture {
+		display: block;
+		position: absolute;
+	}
+
+	.litter-img img,
+	.litter-img picture {
+		position: static;
+		width: 1200px;
+	}
+
+	.container {
+		position: relative;
+		display: flex;
+	}
+
+	.litter-content {
+		height: 400px;
+
+		.litter-title {
+			color: $font-color;
+			font-family: HelveticaNowDisplayXBlk;
+			line-height: 60px;
+			font-size: 57px;
+
+			&::first-letter {
+				color: $font-emphasize;
+			}
+		}
+
+		.litter-desc {
+			color: #504030;
+			font-family: LeagueSpartan;
+			font-size: 23px;
+			line-height: 35px;
+		}
+
+		.special {
+			font-size: 30px;
+			font-family: HelveticaNowDisplayXBlk;
+			display: block;
+
+			&::first-letter {
+				color: $font-emphasize;
+			}
+		}
+
+		.thick {
+			font-weight: 900;
+		}
+	}
+
+
+	.litter-2 {
+
+		picture,
+		img {
+			width: 504px;
+			top: -107px;
+			right: 58px;
+		}
+
+		.litter-content {
+			margin: 95px 0px 0px 40px;
+
+			.litter-desc {
+				width: 467px;
+				margin-top: 14px;
+			}
+		}
+	}
+
+	.litter-3 {
+
+		picture,
+		img {
+			width: 726px;
+			top: 59px;
+			left: -13px;
+		}
+
+		.litter-content {
+			width: 461px;
+			margin-left: auto;
+			margin-top: 112px;
+			text-align: end;
+		}
+
+		.litter-desc {
+			margin-top: 49px;
+		}
+	}
+
+	.litter-4 {
+
+		picture,
+		img {
+			width: 738px;
+			right: 0px;
+			top: 108px;
+		}
+
+		.litter-content {
+			margin-top: 198px;
+			width: 771px;
+			margin-left: 10px;
+		}
+
+		.litter-desc {
+			margin-top: 20px;
+			width: 500px;
+		}
+	}
+
+	.litter-5 {
+
+		picture,
+		img {
+			width: 516px;
+			top: 200px;
+			left: 20px;
+		}
+
+		.litter-content {
+			margin-left: auto;
+			margin-top: 186px;
+			text-align: end;
+			width: 672px;
+		}
+
+		.litter-title {
+			font-size: 79px;
+			line-height: 90px;
+		}
+
+		.litter-desc {
+			margin-top: 79px;
+			width: 512px;
+			margin-left: auto;
+			font-size: 27px;
+		}
+	}
+
+	.litter-6 {
+		.container {
+			height: 631px;
+		}
+
+		picture,
+		img {
+			width: 516px;
+			top: 256px;
+			left: 20px;
+		}
+
+		.litter-content {
+			margin-left: auto;
+			width: 500px;
+			margin-top: 114px;
+		}
+
+		.litter-desc {
+			margin-top: 178px;
+			text-align: end;
+			font-size: 30px;
+		}
+	}
+}
