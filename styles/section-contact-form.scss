@@ -28,6 +28,34 @@
 }
 
 @media screen and (min-width: 901px) {
+	.contact-us-content {
+		width: 850px;
+
+		h1 {
+			text-align: center;
+			font-size: 48px;
+			font-family: SUISSE_INT_L_MEDIUM;
+			margin-bottom: 30px;
+		}
+
+		p {
+			font-size: 16px;
+			margin-top: 24px;
+
+			a,
+			.desc {
+				text-decoration: underline;
+				color: #000000;
+				font-weight: 600;
+			}
+
+			.desc {
+				text-decoration: none;
+			}
+
+		}
+	}
+
 	.contact-us {
 		max-width: var(--page-width);
 		padding: 60px 0px;
@@ -86,6 +114,33 @@
 }
 
 @media screen and (max-width: 900px) {
+	.contact-us-content {
+
+		h1 {
+			text-align: center;
+			font-size: vw(70px);
+			font-family: SUISSE_INT_L_MEDIUM;
+			margin-bottom: vw(60px);
+		}
+
+		p {
+			font-size: vw(36px);
+			margin-top: vw(48px);
+
+			a,
+			.desc {
+				text-decoration: underline;
+				color: #000000;
+				font-weight: 600;
+			}
+
+			.desc {
+				text-decoration: none;
+			}
+
+		}
+	}
+
 	.contact-us {
 		padding-top: vw(120px);
 		padding-bottom: vw(120px);
