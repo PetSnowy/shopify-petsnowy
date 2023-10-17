@@ -301,6 +301,13 @@
         "image": "shopify:\/\/shop_images\/6-2.png"
       }
     },
+    "366d64d6-8243-4b52-84b2-5b3a1336b500": {
+      "type": "product-details",
+      "settings": {
+        "pc_image": "shopify:\/\/shop_images\/litter-specs.png",
+        "text": "specs"
+      }
+    },
     "16879203322247258f": {
       "type": "apps",
       "blocks": {
@@ -394,6 +401,7 @@
     "353b1682-6ed4-47f5-b3c1-eec15917e003",
     "81086820-fa02-40bd-afc9-97d991823309",
     "5ac8a14d-3c18-430e-b4a9-01b548701dff",
+    "366d64d6-8243-4b52-84b2-5b3a1336b500",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
     "product-recommendations"
