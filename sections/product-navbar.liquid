@@ -4,15 +4,37 @@
       <li>Details</li>
       <li>Specs</li>
       <li>Review</li>
-      <li>FAQ</li>
+      <a href="#faq_qa_main"><li>FAQ</li></a>
     </ul>
+    <div class="line"></div>
   </nav>
 </div>
 
 <style>
+  .product-main .line {
+    height: 2px;
+    background-color: yellow;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: block;
+  }
+  .product-main {
+    background-color: #ffffff;
+    position: fixed;
+    top: 90px;
+    z-index: 500;
+    overflow: hidden;
+    height: 0px;
+    transition: all 0.3s ease;
+    display: flex;
+    width: 100%;
+  }
   .product-navbar {
-    position: sticky;
-    top: var(--main-padding-top);
+    margin: auto;
+    width: 1200px;
+    position: relative;
   }
   .product-navbar .list {
     display: flex;
@@ -25,22 +47,47 @@
     cursor: pointer;
     border-radius: 5px;
   }
-  .product-navbar .list li.active {
-    background-color: chocolate;
-  }
 </style>
 <script>
-  const details = document.querySelector('.product-details');
-  const faq = document.querySelector('#video-scoll');
-  const specs = document.querySelector('.product-three');
-  const review = document.querySelector('#looxReviews');
-  const productEl = [details, specs, review, faq];
-  const list = Array.from(document.querySelectorAll('.product-navbar .list li'));
-  list.forEach((item, index) => {
-    item.addEventListener('click', function () {
-      this.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      this.classList.add('active');
+  window.addEventListener('load', function () {
+    const height =
+      document.querySelector('#product-indiegogo').offsetHeight +
+      document.querySelector('.video-scroll-wrapper').offsetHeight;
+
+    const line = document.querySelector('.product-main .line');
+
+    const details = document.querySelector('.product-litter');
+    const faq = document.querySelector('.faq_qa_main');
+    const specs = document.querySelector('.product-details');
+    const review = document.querySelector('#looxReviews');
+    const productEl = [details, specs, review, faq];
+
+    const navbar = document.querySelector('.product-main');
+    navbar.style.height = 'auto';
+    const tempHeight = window.getComputedStyle(navbar).height;
+    navbar.style.height = '0';
+
+    const list = Array.from(document.querySelectorAll('.product-navbar .list li'));
+
+    line.style.width = list[0].offsetWidth + 'px';
+
+    window.addEventListener('scroll', () => {
+      const scollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      scollTop > height ? (navbar.style.height = `${tempHeight}`) : (navbar.style.height = '0');
+      productEl.forEach((el, index) => {
+        const top = el.offsetTop;
+        if (scollTop > top - 500) {
+          const width = list[index].offsetWidth;
+          const offsetLeft = list[index].offsetLeft;
+          line.style.width = `${width}px`;
+          line.style.transform = `translateX(${offsetLeft}px)`;
+        }
+      });
     });
+
+    list.forEach((item, index) =>
+      item.addEventListener('click', () => productEl[index].scrollIntoView({ behavior: 'instant', block: 'start' }))
+    );
   });
 </script>
 {% schema %}
