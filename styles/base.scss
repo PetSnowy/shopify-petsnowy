@@ -5490,7 +5490,9 @@ label.productlabel_info,
 	}
 
 	.header-wrapper {
-		height: vw(95px);
+		height: vw(105px);
+		display: flex;
+		align-items: center;
 	}
 
 	.needsclick {
@@ -5623,11 +5625,24 @@ $item: 5;
 		}
 	}
 
+	sticky-header {
+		.header {
+			min-width: auto;
+		}
+	}
+
 
 	.page-width {
 		box-sizing: border-box;
 		padding: 0px;
+		min-width: 1200px;
 	}
+
+	footer,
+	main {
+		min-width: 1200px;
+	}
+
 
 	#HeaderMenu-MenuList-1 {
 		overflow: hidden;
@@ -5706,9 +5721,7 @@ $item: 5;
 }
 
 @media screen and (min-width: 901px) and (max-width: 1200px) {
-	.page-width {
-		padding: 0px 20px;
-	}
+	.page-width {}
 }
 
 .Download {

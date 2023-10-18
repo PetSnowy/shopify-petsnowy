@@ -8,15 +8,104 @@ $product-icon-color: #d75f23;
 $product-font-color: #5D5D5D;
 @import "pxToVw.scss";
 
+#product-indiegogo {
+	.form__label {
+		font-family: LeagueSpartanBold;
+		color: $main-title-color
+	}
+}
+
 @media screen and (max-width: 900px) {
+	@mixin font {
+		font-family: LeagueSpartanBlack;
+		text-transform: uppercase;
+		color: $main-title-color;
+		font-weight: 600;
+	}
+
 	#product-indiegogo {
-		#new-product {}
+		.product__info-container {
+			width: 100%;
+			position: static;
+			max-width: 100%;
+		}
+
+		.grid__item.product__media-wrapper {
+			margin-bottom: vw(50px);
+		}
+
+		.product_acessories-wrapper {
+			margin-bottom: vw(30px);
+		}
+
+		padding-top: vw(36px);
+
+		#new-product {
+
+			.loox-rating,
+			.product__text,
+			.product__title,
+			.product-desc {
+				display: none;
+			}
+
+			.update-product-content {
+				margin-bottom: vw(40px);
+
+				.loox-rating,
+				.product__text,
+				.product__title,
+				.product-desc {
+					display: block;
+				}
+
+				.loox-rating {
+					margin-bottom: vw(20px);
+				}
+
+				.product__text {
+					font-size: vw(48px)
+				}
+
+				h1 {
+					font-size: vw(40px);
+				}
+
+				.product__text,
+				h1 {
+					@include font;
+					margin-bottom: vw(20px);
+				}
+
+				.product__title {
+					margin-bottom: 0px;
+				}
+
+				.product-desc {
+					font-family: LeagueSpartanBold;
+					font-size: vw(30px);
+					margin-bottom: vw(20px);
+				}
+			}
+		}
+
+		picture,
+		img {
+			width: 100%;
+			object-fit: cover;
+			display: block;
+		}
 
 		slider-component {
 			display: none;
 		}
 
 		.swiper-update-product {
+			width: 100%;
+			height: vw(446px);
+			padding-bottom: vw(60px);
+			box-sizing: content-box;
+
 			.swiper-slide {
 				display: block;
 				background: #ffffff;
@@ -26,9 +115,9 @@ $product-font-color: #5D5D5D;
 			}
 
 			.product-arrows {
-				width: vw(58px);
-				height: vw(26px);
-				background: url('./product-main-arrows.png') no-repeat center/cover;
+				width: vw(26px);
+				height: vw(58px);
+				background: url('./m_product-main-arrows.png') no-repeat center/cover;
 				display: block;
 			}
 
@@ -36,6 +125,16 @@ $product-font-color: #5D5D5D;
 				&::after {
 					display: none;
 				}
+			}
+
+			.swiper-button-next {
+				right: 0px;
+				top: 45%;
+			}
+
+			.swiper-button-prev {
+				left: 0px;
+				top: 45%;
 			}
 
 			.swiper-button-next .product-arrows {
@@ -47,14 +146,51 @@ $product-font-color: #5D5D5D;
 				height: 100%;
 				object-fit: cover;
 			}
+
+			.swiper-pagination {
+				bottom: 0px;
+
+				.swiper-pagination-bullet {
+					width: vw(20px);
+					height: vw(8px);
+					background-color: #cbb298;
+					border: none;
+					border-radius: vw(4px);
+					margin: 0px;
+					margin-right: vw(16px);
+					transition: all 0.3s ease-in-out;
+
+					&:last-child {
+						margin-right: 0px;
+					}
+				}
+
+				.swiper-pagination-bullet-active {
+					width: vw(84px);
+				}
+			}
 		}
 
 		.product__info-wrapper {
+			padding: 0px;
+			width: 100%;
+		}
+
+		.product-guarantee {
 			width: 100%;
 		}
 
 
 		variant-radios {
+
+			margin-top: 0px;
+			margin-bottom: vw(60px);
+
+			.form__label {
+				font-size: vw(34px);
+				margin-bottom: vw(30px);
+			}
+
 			fieldset {
 				display: flex;
 				flex-wrap: wrap;
@@ -66,6 +202,22 @@ $product-font-color: #5D5D5D;
 				border-radius: vw(20px);
 				padding: vw(10px);
 				overflow: hidden;
+				margin: 0px;
+				position: relative;
+
+				&::before {
+					display: none;
+				}
+
+				.question_mark {
+					display: block;
+					position: absolute;
+					top: vw(10px);
+					right: vw(10px);
+					width: vw(21px);
+					height: vw(21px);
+					background: url('./question_mark.png') no-repeat center/cover;
+				}
 
 				img {
 					width: vw(200px);
@@ -76,6 +228,209 @@ $product-font-color: #5D5D5D;
 			.product-form__input input[type=radio]:checked+label {
 				border-color: $product-icon-color;
 				background: #ffffff;
+				color: #616161;
+			}
+		}
+
+
+		.price_with_discount,
+		.option-price {
+			font-family: HelveticaBold;
+			color: #616161;
+			font-size: vw(24px);
+
+			.money {
+				font-family: HelveticaBold;
+				color: #616161;
+				font-size: vw(24px);
+			}
+		}
+
+		.price_with_discount {
+			margin-right: vw(10px);
+		}
+
+
+		.option-price {
+			margin-top: vw(10px);
+		}
+
+		.product_acessories-wrapper {
+			margin-top: 0px;
+			margin-bottom: vw(40px);
+
+			.product_acessories-title {
+				font-family: LeagueSpartanBold;
+				font-size: vw(34px);
+				color: $main-title-color;
+				margin-bottom: vw(30px);
+			}
+
+			.add_product_list {
+				display: flex;
+				row-gap: vw(24px);
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+
+			.add_list_product {
+				width: 100%;
+				padding: vw(17px) vw(28px);
+				display: flex;
+				background: #f5f3ed;
+				border-radius: vw(12px);
+				flex-direction: row;
+				flex-wrap: wrap;
+				position: relative;
+				padding-left: vw(30px);
+
+				input[type="checkbox"] {
+					width: 0;
+					margin-right: vw(30px);
+				}
+
+				&:has(input[type="checkbox"]:checked) {
+					&::before {
+						background: url('./checkbox.png') no-repeat center/cover;
+						border-color: transparent;
+					}
+				}
+
+				&::before {
+					content: '';
+					width: vw(30px);
+					display: block;
+					height: vw(30px);
+					border: vw(2px) solid #9f9e9b;
+					border-radius: vw(8px);
+					position: absolute;
+					left: vw(20px);
+					top: 50%;
+					transform: translateY(-50%);
+					transition: all 0.3s ease;
+				}
+
+				img {
+					width: vw(60px);
+					height: vw(70px);
+					object-fit: contain;
+				}
+
+				.quantity_addons {
+					display: none;
+				}
+			}
+
+			.productlabel_info {
+				display: flex;
+				align-items: center;
+				flex: 1;
+			}
+
+			.add_list_product_data {
+				flex: 1;
+			}
+
+			.price_title_align {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-left: vw(30px);
+
+				h3 {
+					font-family: Helvetica;
+					text-align: center;
+					color: #616161;
+					font-size: vw(24px);
+				}
+			}
+
+			.price {
+				display: flex;
+				align-items: center;
+				flex-direction: row-reverse;
+
+				.price_without_discount {
+					font-family: Helvetica;
+					color: #616161;
+					text-decoration: line-through;
+					font-size: vw(24px);
+
+					.money {
+						font-family: Helvetica;
+						color: #616161;
+						text-decoration: line-through;
+						font-size: vw(24px);
+					}
+				}
+			}
+		}
+
+		.product-guarantee {
+			margin: vw(40px) 0px;
+		}
+
+		.product-add-quantity {
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+
+			.product-form__input {
+				margin-bottom: 0px;
+				flex: 0;
+				border-radius: vw(60px);
+				overflow: hidden;
+				background-color: #ffffff;
+				margin-bottom: 0px;
+
+				.quantity {
+
+					&::after,
+					&::before {
+						display: none;
+					}
+
+					input {
+						font-family: LeagueSpartanBlack;
+						font-size: vw(30px);
+						font-weight: 600;
+						color: $product-font-color;
+					}
+				}
+			}
+
+			.product-form__buttons {
+
+				margin-right: vw(30px);
+
+				button {
+					margin: 0px;
+					padding: 0;
+					background: $button-bg-color;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: vw(370px);
+					height: vw(58px);
+					border: none;
+
+					&::after,
+					&::before {
+						display: none;
+					}
+
+					span {
+						font-family: LeagueSpartanBlack;
+						font-size: vw(40px);
+						font-weight: 900;
+						color: #ffffff;
+						letter-spacing: 0px;
+						display: block;
+						height: vw(58px);
+						line-height: vw(58px);
+						transition: all 0.3s ease;
+					}
+				}
 			}
 		}
 	}
@@ -83,9 +438,17 @@ $product-font-color: #5D5D5D;
 
 
 @media screen and (min-width: 901px) {
+	@mixin font {
+		font-family: LeagueSpartanBlack;
+		text-transform: uppercase;
+		color: $main-title-color;
+		font-weight: 600;
+	}
 
 	#product-indiegogo {
-		.m-swiper-update-product {
+
+		.update-product-content,
+		.question_mark {
 			display: none;
 		}
 
@@ -175,16 +538,9 @@ $product-font-color: #5D5D5D;
 			box-sizing: border-box;
 			padding-left: 25px;
 
-			.font {
-				font-family: LeagueSpartanBlack;
-				text-transform: uppercase;
-				color: $main-title-color;
-				font-weight: 600;
-			}
-
 			.product__title,
 			.product__title h1 {
-				@extend .font;
+				@include font;
 				font-size: 28px;
 				margin-bottom: 0px;
 				letter-spacing: 1px;
@@ -196,7 +552,7 @@ $product-font-color: #5D5D5D;
 			}
 
 			.product__text {
-				@extend .font;
+				@include font;
 				font-size: 39px;
 				margin-top: 15px;
 				letter-spacing: 2px;
@@ -231,7 +587,9 @@ $product-font-color: #5D5D5D;
 			font-size: 12px;
 
 			.money {
-				@extend .price_with_discount
+				font-family: HelveticaBold;
+				color: #616161;
+				font-size: 12px;
 			}
 		}
 
@@ -239,10 +597,8 @@ $product-font-color: #5D5D5D;
 			margin-bottom: 20px;
 
 			.form__label {
-				font-family: LeagueSpartanBold;
 				font-size: 20px;
 				margin-bottom: 10px;
-				color: $main-title-color
 			}
 
 			fieldset {
@@ -273,10 +629,14 @@ $product-font-color: #5D5D5D;
 				}
 
 				p {
-					@extend .price_with_discount;
+					font-family: HelveticaBold;
+					color: #616161;
+					font-size: 12px;
 
 					.money {
-						@extend .price_with_discount
+						font-family: HelveticaBold;
+						color: #616161;
+						font-size: 12px;
 					}
 				}
 			}
@@ -356,7 +716,10 @@ $product-font-color: #5D5D5D;
 					font-size: 12px;
 
 					.money {
-						@extend .price_without_discount
+						font-family: Helvetica;
+						color: #616161;
+						text-decoration: line-through;
+						font-size: 12px;
 					}
 				}
 			}
@@ -447,6 +810,10 @@ $product-font-color: #5D5D5D;
 		.swiper-update-product {
 			border-radius: 25px;
 			overflow: hidden;
+
+			.swiper-pagination {
+				display: none;
+			}
 
 			.product-arrows {
 				width: 24px;

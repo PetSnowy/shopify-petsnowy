@@ -47,6 +47,29 @@
     <div
       class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}"
     >
+      <div class="update-product-content">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {% when 'score' %}
+              <div
+                class="loox-rating"
+                data-id="{{ product.id }}"
+                data-rating="{{ product.metafields.loox.avg_rating }}"
+                data-raters="{{ product.metafields.loox.num_reviews }}"
+              ></div>
+            {%- when 'text' -%}
+              <p class="product__text">
+                {{- block.settings.text -}}
+              </p>
+            {%- when 'title' -%}
+              <div class="product__title">
+                <h1>{{ product.title | escape }}</h1>
+              </div>
+            {%- when 'desc' -%}
+              <p class="product-desc">{{ block.settings.desc }}</p>
+          {%- endcase -%}
+        {% endfor %}
+      </div>
       <media-gallery
         id="MediaGallery-{{ section.id }}"
         role="region"
@@ -180,6 +203,7 @@
               <div class="product-arrows"></div>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </media-gallery>
     </div>
@@ -307,7 +331,7 @@
 
                         <div class="add_list_product_data">
                           <div class="price_title_align">
-                            <h3>{{ product_addons.title }}</h3>
+                            <h3>{{ product_addons.metafields.custom.product_abbreviation.value }}</h3>
                             <p class="price">
                               <span class="price_without_discount">
                                 {{- product_addons.first_available_variant.price | money -}}
@@ -472,6 +496,7 @@
                                   src="{{ img_src | img_url: 'master' }}"
                                   alt="{{ img_alt }}"
                                 >
+                                <div class="question_mark"></div>
                                 <p class="option-price">{{ price | money }}</p>
                               {% endif %}
                             {% endfor %}
@@ -567,16 +592,16 @@
               </product-recommendation>
             {% when 'product-guarantee' %}
               <div class="product-guarantee">
-								<picture>
-									<source media="(min-width: 901px)" srcset="{{ block.settings.image_picker | img_url: 'master' }}">
-									<source media="(max-width: 900px)" srcset="{{ block.settings.mb_image_picker | img_url: 'master' }}">
-									<img
-										decoding="async"
-										loading="lazy"
-										src="{{ block.settings.image_picker | img_url: 'master' }}"
-										alt="{{ block.settings.image_alt }}"
-									>
-								</picture>
+                <picture>
+                  <source media="(min-width: 901px)" srcset="{{ block.settings.image_picker | img_url: 'master' }}">
+                  <source media="(max-width: 900px)" srcset="{{ block.settings.mb_image_picker | img_url: 'master' }}">
+                  <img
+                    decoding="async"
+                    loading="lazy"
+                    src="{{ block.settings.image_picker | img_url: 'master' }}"
+                    alt="{{ block.settings.image_alt }}"
+                  >
+                </picture>
               </div>
             {%- when 'buy_buttons' -%}
               <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
@@ -1222,6 +1247,9 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      pagination: {
+        el: '.swiper-pagination',
+      },
     });
   </script>
 </section>
@@ -1345,7 +1373,7 @@
       "type": "product-guarantee",
       "name": "product-guarantee",
       "settings": [
-				{
+        {
           "type": "image_picker",
           "id": "image_picker",
           "label": "image picker"
