@@ -376,6 +376,8 @@ $product-font-color: #5D5D5D;
 			justify-content: space-between;
 
 			.product-form__input {
+				display: flex;
+				align-items: center;
 				margin-bottom: 0px;
 				flex: 0;
 				border-radius: vw(60px);
@@ -421,7 +423,7 @@ $product-font-color: #5D5D5D;
 
 					span {
 						font-family: LeagueSpartanBlack;
-						font-size: vw(40px);
+						font-size: vw(21px);
 						font-weight: 900;
 						color: #ffffff;
 						letter-spacing: 0px;
@@ -694,18 +696,25 @@ $product-font-color: #5D5D5D;
 					}
 				}
 
-				.price_title_align h3 {
-					font-size: 12px;
-					font-family: Helvetica;
-					text-align: center;
-					color: #616161;
+				.price_title_align {
+					display: flex;
+					flex-wrap: wrap;
+					flex-direction: row;
+					justify-content: center;
+
+					h3 {
+						font-size: 12px;
+						font-family: Helvetica;
+						text-align: center;
+						color: #616161;
+					}
 				}
 
 				.price {
 					display: flex;
 					flex-direction: row-reverse;
 					justify-content: center;
-					margin-top: 5px;
+					margin-top: auto;
 					column-gap: 5px;
 				}
 

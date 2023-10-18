@@ -1,6 +1,5 @@
 @import "pxToVw.scss";
 $background-color:#f6f3ec;
-$color:#7e6e5f;
 
 .video-scroll-wrapper {
 	display: flex;
@@ -59,6 +58,7 @@ $color:#7e6e5f;
 			justify-content: center;
 			user-select: none;
 			cursor: pointer;
+			margin-right: 32px;
 
 			img {
 				width: 136px;
@@ -80,7 +80,7 @@ $color:#7e6e5f;
 	}
 
 	.swiper {
-		--swiper-theme-color: $color;
+		--swiper-theme-color: #7e6e5f;
 	}
 
 	.portrait-screen {
@@ -118,8 +118,94 @@ $color:#7e6e5f;
 
 @media screen and (max-width: 900px) {
 	.video-scroll-wrapper {
-		.portrait-screen {
-			display: none;
+		margin: vw(60px) auto;
+		padding: vw(20px);
+		background-color: $background-color;
+		column-gap: vw(36px);
+
+		.video-scroll-content {
+			width: vw(248px);
+			height: vw(137px);
+
+			picture,
+			img {
+				width: vw(248px);
+				height: vw(137px);
+				display: block;
+				object-fit: contain;
+			}
+		}
+
+		.img-wrapper {
+			flex: 1;
+			overflow: hidden;
+		}
+
+		.video-img {
+			width: vw(98px);
+			height: vw(119px);
+			background-color: #ffffff;
+			position: relative;
+			border-radius: vw(12px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			user-select: none;
+			cursor: pointer;
+			margin-right: vw(12px);
+
+			img {
+				width: vw(96px);
+				height: vw(117px);
+				display: block;
+				border-radius: vw(12px);
+			}
+		}
+
+		// .video-play {
+		// 	width: 27px;
+		// 	height: 27px;
+		// 	background: url('./play.png') no-repeat center/cover;
+		// 	position: absolute;
+		// 	bottom: 10px;
+		// 	right: 10px;
+		// 	display: block;
+		// }
+	}
+
+	.swiper {
+		--swiper-theme-color: #7e6e5f;
+	}
+
+	.portrait-screen {
+		background-color: #000000;
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 100;
+		width: vw(680px);
+		height: calc(100vh - 100px);
+		display: none;
+		border-radius: vw(20px);
+		overflow: hidden;
+
+		video {
+			width: vw(680px);
+			height: calc(100vh - 100px);
+			object-fit: contain;
+		}
+
+		.close {
+			width: vw(80px);
+			height: vw(80px);
+			background: url('./close-product.png') no-repeat center/cover;
+			position: absolute;
+			top: vw(10px);
+			right: vw(10px);
+			display: block;
+			z-index: 100;
+			cursor: pointer;
 		}
 	}
 }
