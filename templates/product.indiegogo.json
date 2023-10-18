@@ -391,6 +391,47 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "56deef84-d980-4c9f-9540-51306bd2c569": {
+      "type": "Q-and-A",
+      "blocks": {
+        "8b7a5003-244c-4a64-af9c-4a9862ee7e5b": {
+          "type": "block",
+          "settings": {
+            "h3": "Where should I place SNOW+ during installation?",
+            "text": "It is recommended to place SNOW+ near the cat's original litter box to aid in the cat's adaptation. Ensure it is placed on a flat, stable surface near a power outlet, avoiding soft or uneven surfaces. Leave at least 2 inches of space around the device for the safety sensor and avoid placing it against a wall. Do not place the device outdoors or in high heat or humid areas.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "ee02129a-3aa0-424a-a87c-3e2e1ae9d313": {
+          "type": "block",
+          "settings": {
+            "h3": "What type of litter should I use with SNOW+?",
+            "text": "It is recommended to use high-quality clay clumping litter. Avoid using highly absorbent, non-clumping, loosely clumping, or pellet-based litters made of newspaper or wood. If using small beads or crystals, ensure they can pass through the filter and consider mixing them with clay litter in a 7\/3 ratio. When initially introducing SNOW+ to your cat, it is best to use the same brand or type of litter they were previously using.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "3b223a38-8017-4cdf-8b49-6af514062978": {
+          "type": "block",
+          "settings": {
+            "h3": "How should I add litter to SNOW+?",
+            "text": "Lift the cover and pour clumping litter into the litter bed from the\nopening. Be cautious not to exceed the \"maximum fill line\" indicated on the device. The litter bed can hold a maximum of 5.7 pounds (2.6 kg) of litter. If using mineral sand, it can hold a maximum of 5 kg. Spread the litter evenly once it is inside the litter bed. If you accidentally add too much litter, remove the excess to prevent it from falling into the drawer during cleaning.",
+            "youtube_video": "",
+            "video": ""
+          }
+        }
+      },
+      "block_order": [
+        "8b7a5003-244c-4a64-af9c-4a9862ee7e5b",
+        "ee02129a-3aa0-424a-a87c-3e2e1ae9d313",
+        "3b223a38-8017-4cdf-8b49-6af514062978"
+      ],
+      "settings": {
+        "h1": "",
+        "sub_txt": ""
+      }
     }
   },
   "order": [
@@ -406,6 +447,7 @@
     "366d64d6-8243-4b52-84b2-5b3a1336b500",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
-    "product-recommendations"
+    "product-recommendations",
+    "56deef84-d980-4c9f-9540-51306bd2c569"
   ]
 }
