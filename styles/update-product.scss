@@ -198,14 +198,15 @@ $product-font-color: #5D5D5D;
 				bottom: 0px;
 
 				.swiper-pagination-bullet {
-					width: vw(20px);
+					width: vw(13px);
 					height: vw(8px);
-					background-color: #cbb298;
+					background: #CBB298;
 					border: none;
 					border-radius: vw(4px);
 					margin: 0px;
 					margin-right: vw(16px);
 					transition: all 0.3s ease-in-out;
+					opacity: 1;
 
 					&:last-child {
 						margin-right: 0px;
@@ -333,7 +334,7 @@ $product-font-color: #5D5D5D;
 
 				input[type="checkbox"] {
 					width: 0;
-					margin-right: vw(30px);
+					margin-right: vw(40px);
 				}
 
 				&:has(input[type="checkbox"]:checked) {
@@ -345,16 +346,16 @@ $product-font-color: #5D5D5D;
 
 				&::before {
 					content: '';
-					width: vw(30px);
 					display: block;
-					height: vw(30px);
-					border: vw(2px) solid #9f9e9b;
-					border-radius: vw(8px);
 					position: absolute;
-					left: vw(20px);
+					left: vw(32px);
 					top: 50%;
 					transform: translateY(-50%);
 					transition: all 0.3s ease;
+					width: vw(21px);
+					height: vw(21px);
+					border: vw(2px) solid #626262;
+					border-radius: vw(4px);
 				}
 
 				img {
@@ -376,19 +377,22 @@ $product-font-color: #5D5D5D;
 
 			.add_list_product_data {
 				flex: 1;
+				margin-left: vw(20px);
 			}
 
 			.price_title_align {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
-				margin-left: vw(30px);
+				font-size: vw(25px);
+				font-family: Helvetica;
+				color: #616161;
+				flex: 1;
 
 				h3 {
+					font-size: vw(25px);
 					font-family: Helvetica;
-					text-align: center;
 					color: #616161;
-					font-size: vw(24px);
 				}
 			}
 
@@ -414,7 +418,7 @@ $product-font-color: #5D5D5D;
 		}
 
 		.product-guarantee {
-			margin: vw(40px) 0px;
+			margin: vw(52px) 0px;
 		}
 
 		.product-add-quantity {
@@ -453,15 +457,14 @@ $product-font-color: #5D5D5D;
 				margin-right: vw(30px);
 
 				button {
-					margin: 0px;
-					padding: 0;
-					background: $button-bg-color;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					width: vw(370px);
+					width: vw(372px);
 					height: vw(58px);
+					background: #7E6E5F;
+					box-sizing: border-box;
+					padding: vw(19px) vw(83px) vw(18px) vw(82px);
+					background: $button-bg-color;
 					border: none;
+					margin: 0px;
 
 					&::after,
 					&::before {
@@ -470,7 +473,6 @@ $product-font-color: #5D5D5D;
 
 					span {
 						font-family: LeagueSpartanBlack;
-						font-size: vw(21px);
 						font-weight: 900;
 						color: #ffffff;
 						letter-spacing: 0px;
@@ -478,6 +480,7 @@ $product-font-color: #5D5D5D;
 						height: vw(58px);
 						line-height: vw(58px);
 						transition: all 0.3s ease;
+						font-size: vw(29px);
 					}
 				}
 			}
