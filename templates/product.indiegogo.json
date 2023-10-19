@@ -158,6 +158,7 @@
           "type": "content",
           "settings": {
             "image_picker": "shopify:\/\/shop_images\/video-srcoll.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/322.png",
             "alt": ""
           }
         },
@@ -285,6 +286,7 @@
       ],
       "settings": {
         "image_title": "shopify:\/\/shop_images\/Cat_care_at_your_fingertips.png",
+        "mb_image_title": "shopify:\/\/shop_images\/Cat_care_at_your_fingertips__1.png",
         "image_alt": ""
       }
     },
@@ -314,6 +316,7 @@
       "type": "product-details",
       "settings": {
         "pc_image": "shopify:\/\/shop_images\/litter-specs.png",
+        "mb_image": "shopify:\/\/shop_images\/10.png",
         "text": "specs"
       }
     },
