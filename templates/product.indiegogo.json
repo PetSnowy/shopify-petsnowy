@@ -239,6 +239,7 @@
           "type": "block",
           "settings": {
             "image_picker": "shopify:\/\/shop_images\/mb.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/1_6a75e583-839c-4c98-8eb0-a6314f810c50.png",
             "image_alt": ""
           }
         },
@@ -246,6 +247,7 @@
           "type": "block",
           "settings": {
             "image_picker": "shopify:\/\/shop_images\/mb2.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/2_131f47f8-985d-4c49-81a7-e61d21f694e6.png",
             "image_alt": ""
           }
         },
@@ -253,6 +255,7 @@
           "type": "block",
           "settings": {
             "image_picker": "shopify:\/\/shop_images\/mb3.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/3_1963219d-836d-400e-a0d1-ef93c5fce7b6.png",
             "image_alt": ""
           }
         },
@@ -260,6 +263,7 @@
           "type": "block",
           "settings": {
             "image_picker": "shopify:\/\/shop_images\/mb4.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/4_bbbd950a-bdab-4d4c-a60c-946c565a0d65.png",
             "image_alt": ""
           }
         },
@@ -267,6 +271,7 @@
           "type": "block",
           "settings": {
             "image_picker": "shopify:\/\/shop_images\/mb5.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/5_d7b37cc2-d543-438c-ac9d-0c41bf8a9d8f.png",
             "image_alt": ""
           }
         }
@@ -287,6 +292,7 @@
       "type": "product-safety",
       "settings": {
         "image_title": "shopify:\/\/shop_images\/product-safety.png",
+        "mb_image_title": "shopify:\/\/shop_images\/safety.png",
         "image_alt": "product-safety"
       }
     },
@@ -300,7 +306,8 @@
       "type": "product-quiet",
       "settings": {
         "title": "Whisper Quiet Joy and only joy",
-        "image": "shopify:\/\/shop_images\/6-2.png"
+        "image": "shopify:\/\/shop_images\/6-2.png",
+        "mb_image": "shopify:\/\/shop_images\/quiet-m.png"
       }
     },
     "366d64d6-8243-4b52-84b2-5b3a1336b500": {
