@@ -167,6 +167,7 @@
           "settings": {
             "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/ec9a08a5764c47beb88447699b56b704.mp4",
             "image_picker": "shopify:\/\/shop_images\/1_0c748f69-fba6-4639-ba45-232cbdb6ab7f.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/1_1.png",
             "image_alt": "petsnowy litter box review"
           }
         },
@@ -175,6 +176,7 @@
           "settings": {
             "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5f38abcedf0f4825bba962ad8b07013c.mp4",
             "image_picker": "shopify:\/\/shop_images\/2_754ef3b9-8102-4d99-849b-37d59ab6d5ad.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/2_1.png",
             "image_alt": "cat litter box"
           }
         },
@@ -183,6 +185,7 @@
           "settings": {
             "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/cab9e68aabdd40368daf52cc25449744.mp4",
             "image_picker": "shopify:\/\/shop_images\/6_1.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/6_2.png",
             "image_alt": "petsnowy review"
           }
         },
@@ -191,6 +194,7 @@
           "settings": {
             "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/93daf5c9770e4fe797f8f10d160f706e.mp4",
             "image_picker": "shopify:\/\/shop_images\/3_dc74b216-22c6-4427-a33d-a37571277d56.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/3_1.png",
             "image_alt": "petsnowy self-cleaning litter box review"
           }
         },
@@ -199,6 +203,7 @@
           "settings": {
             "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/dfe0987fa314402ba83e72c5b4309c98.mp4",
             "image_picker": "shopify:\/\/shop_images\/4.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/4_1.png",
             "image_alt": "self-cleaning review"
           }
         },
@@ -207,6 +212,7 @@
           "settings": {
             "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/82eefb89f78340e882fb267307d59cbc.mov",
             "image_picker": "shopify:\/\/shop_images\/5.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/5_1.png",
             "image_alt": "litterbox"
           }
         }
