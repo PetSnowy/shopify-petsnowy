@@ -900,15 +900,15 @@ class VariantSelects extends HTMLElement {
 	}
 
 	renderProductInfo() {
-		fetch(`${this.dataset.url}?variant = ${this.currentVariant.id}& section_id=${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section} `)
+		fetch(`${this.dataset.url}?variant=${this.currentVariant.id}&section_id=${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`)
 			.then((response) => response.text())
 			.then((responseText) => {
 				const html = new DOMParser().parseFromString(responseText, 'text/html')
-				const destination = document.getElementById(`price - ${this.dataset.section} `);
-				const source = html.getElementById(`price - ${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section} `);
+				const destination = document.getElementById(`price-${this.dataset.section}`);
+				const source = html.getElementById(`price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
 				if (source && destination) destination.innerHTML = source.innerHTML;
 
-				const price = document.getElementById(`price - ${this.dataset.section} `);
+				const price = document.getElementById(`price-${this.dataset.section}`);
 
 				if (price) price.classList.remove('visibility-hidden');
 				this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
@@ -916,7 +916,7 @@ class VariantSelects extends HTMLElement {
 	}
 
 	toggleAddButton(disable = true, text, modifyClass = true) {
-		const productForm = document.getElementById(`product - form - ${this.dataset.section} `);
+		const productForm = document.getElementById(`product-form-${this.dataset.section}`);
 		if (!productForm) return;
 		const addButton = productForm.querySelector('[name="add"]');
 		const addButtonText = productForm.querySelector('[name="add"] > span');
@@ -934,10 +934,10 @@ class VariantSelects extends HTMLElement {
 	}
 
 	setUnavailable() {
-		const button = document.getElementById(`product - form - ${this.dataset.section} `);
+		const button = document.getElementById(`product-form-${this.dataset.section}`);
 		const addButton = button.querySelector('[name="add"]');
 		const addButtonText = button.querySelector('[name="add"] > span');
-		const price = document.getElementById(`price - ${this.dataset.section} `);
+		const price = document.getElementById(`price-${this.dataset.section}`);
 		if (!addButton) return;
 		addButtonText.textContent = window.variantStrings.unavailable;
 		if (price) price.classList.add('visibility-hidden');
