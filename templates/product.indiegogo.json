@@ -231,6 +231,18 @@
     "4e093d3d-b091-47db-ad62-81ec088c925c": {
       "type": "product-litter",
       "settings": {
+        "image_1": "shopify:\/\/shop_images\/1_cf3d2876-3ee5-4b6a-baa4-161ddb6262f0.png",
+        "m_image_1": "shopify:\/\/shop_images\/m1.png",
+        "image_2": "shopify:\/\/shop_images\/2-2.png",
+        "m_image_2": "shopify:\/\/shop_images\/m2-2.png",
+        "image_3": "shopify:\/\/shop_images\/3-1.png",
+        "m_image_3": "shopify:\/\/shop_images\/m3-1.png",
+        "image_4": "shopify:\/\/shop_images\/4-2.png",
+        "m_image_4": "shopify:\/\/shop_images\/m4-2.png",
+        "image_5": "shopify:\/\/shop_images\/5-1.png",
+        "m_image_5": "shopify:\/\/shop_images\/m5-1.png",
+        "image_6": "shopify:\/\/shop_images\/5-3.png",
+        "m_image_6": "shopify:\/\/shop_images\/m5-3.png"
       }
     },
     "38c4023c-1b9f-4a34-a306-87932c288c00": {
