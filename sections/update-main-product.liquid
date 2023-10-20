@@ -72,7 +72,12 @@
       </div>
       <div class="product-left">
         <div class="product-default">
-          <img src="{{ product.metafields.custom.mega_menu_image | image_url }}" alt="petsnowy" loading="lazy" decoding="async">
+          <img
+            src="{{ product.metafields.custom.mega_menu_image | image_url }}"
+            alt="petsnowy"
+            loading="lazy"
+            decoding="async"
+          >
         </div>
         {% comment %}
           <media-gallery
@@ -192,16 +197,26 @@
         {% endcomment %}
         <div class="swiper swiper-update-product">
           <div class="swiper-wrapper">
-            {%- for media in product.media -%}
-              <div class="swiper-slide">
-                <img
-                  decoding="async"
-                  src="{{ media | image_url }}"
-                  alt="{{ media.alt | escape }}"
-                  loading="lazy"
-                >
-              </div>
-            {%- endfor -%}
+						{% for media in product.media %}
+							{% assign isVariantMedia = false %}
+							{% for variant in product.variants %}
+								{% if variant.featured_media == media %}
+									{% assign isVariantMedia = true %}
+									{% break %}
+								{% endif %}
+							{% endfor %}
+							{% unless isVariantMedia %}
+								<div class="swiper-slide">
+									<img
+										decoding="async"
+										src="{{ media | image_url }}"
+										alt="{{ media.alt | escape }}"
+										loading="lazy"
+									>
+								</div>
+							{% endunless %}
+						{% endfor %}
+						
           </div>
           <div class="swiper-button">
             <div class="swiper-button-prev">
