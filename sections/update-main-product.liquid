@@ -497,6 +497,15 @@
                                   alt="{{ img_alt }}"
                                 >
                                 <div class="question_mark"></div>
+                                <div class="question_mark_popup">
+                                  <div class="popup-wrapper">
+                                    <div class="popup-img">
+                                      <img src="{{ img_src | img_url: 'master' }}" alt="{{ img_alt }}">
+                                    </div>
+                                    <div class="popup-content"></div>
+                                    <div class="popup-close"></div>
+                                  </div>
+                                </div>
                                 <p class="option-price">{{ price | money }}</p>
                               {% endif %}
                             {% endfor %}
@@ -1250,6 +1259,20 @@
       pagination: {
         el: '.swiper-pagination',
       },
+    });
+
+    const question_mark = Array.from(document.querySelectorAll('.question_mark'));
+    const question_mark_popup = Array.from(document.querySelectorAll('.question_mark_popup'));
+    question_mark.forEach((item, index) =>
+      item.addEventListener('click', () => {
+        console.log(111);
+        question_mark_popup[index].style.display = 'block';
+      })
+    );
+    question_mark_popup.forEach((item) => {
+      item.querySelector('.popup-close').addEventListener('click', () => {
+        item.style.display = 'none';
+      });
     });
   </script>
 </section>

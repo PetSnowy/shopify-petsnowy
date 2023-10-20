@@ -1,3 +1,5 @@
+{{ 'product-navbar.css' | asset_url | stylesheet_tag }}
+
 <div class="product-main">
   <nav class="product-navbar">
     <ul class="list page-width">
@@ -10,49 +12,13 @@
   </nav>
 </div>
 
-<style>
-  .product-main .line {
-    height: 2px;
-    background-color: yellow;
-    transition: all 0.3s ease;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    display: block;
-  }
-  .product-main {
-    background-color: #ffffff;
-    position: fixed;
-    top: 90px;
-    z-index: 3;
-    overflow: hidden;
-    height: 0px;
-    transition: all 0.3s ease;
-    display: flex;
-    width: 100%;
-  }
-  .product-navbar {
-    margin: auto;
-    width: 1200px;
-    position: relative;
-  }
-  .product-navbar .list {
-    display: flex;
-    column-gap: 20px;
-  }
-  .product-navbar .list li {
-    padding: 10px 20px;
-    background: red;
-    color: #ffffff;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-</style>
 <script>
   window.addEventListener('load', function () {
     const height =
       document.querySelector('#product-indiegogo').offsetHeight +
       document.querySelector('.video-scroll-wrapper').offsetHeight;
+
+    const paddingTop = window.getComputedStyle(document.querySelector('main')).getPropertyValue('padding-top');
 
     const line = document.querySelector('.product-main .line');
 
@@ -64,16 +30,21 @@
 
     const navbar = document.querySelector('.product-main');
     navbar.style.height = 'auto';
-    const tempHeight = window.getComputedStyle(navbar).height;
+    const tempHeight = navbar.offsetHeight;
     navbar.style.height = '0';
 
     const list = Array.from(document.querySelectorAll('.product-navbar .list li'));
 
     line.style.width = list[0].offsetWidth + 'px';
 
+    document.documentElement.style.scrollPaddingTop = `${tempHeight + parseInt(paddingTop)}px`;
+
     window.addEventListener('scroll', () => {
+      navbar.style.top = paddingTop;
+
       const scollTop = document.documentElement.scrollTop || document.body.scrollTop;
-      scollTop > height ? (navbar.style.height = `${tempHeight}`) : (navbar.style.height = '0');
+      scollTop > height ? (navbar.style.height = `${tempHeight}px`) : (navbar.style.height = '0');
+
       productEl.forEach((el, index) => {
         const top = el.offsetTop;
         if (scollTop > top - 500) {

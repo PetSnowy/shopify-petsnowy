@@ -124,13 +124,13 @@ $background-color:#f6f3ec;
 		column-gap: vw(36px);
 
 		.video-scroll-content {
-			width: vw(248px);
-			height: vw(137px);
+			width: vw(80px);
+			height: auto;
 
 			picture,
 			img {
-				width: vw(248px);
-				height: vw(137px);
+				width: vw(80px);
+				height: auto;
 				display: block;
 				object-fit: contain;
 			}

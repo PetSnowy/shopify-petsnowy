@@ -94,9 +94,9 @@
       <header-drawer data-breakpoint="tablet">
         <details id="Details-menu-drawer-container" class="menu-drawer-container">
           <summary class="header__icon header__icon--menu header__icon--summary link focus-inset" aria-label="{{ 'sections.header.menu' | t }}">
-            <span>
-              {% render 'icon-hamburger' %}
-              {% render 'icon-close' %}
+            <span id="hamburger{% if template == 'index' %}Index{% endif %}">
+              {% comment %} {% render 'icon-hamburger' %}
+              {% render 'icon-close' %} {% endcomment %}
             </span>
           </summary>
           <div id="menu-drawer" class="gradient menu-drawer motion-reduce" tabindex="-1">
@@ -583,7 +583,8 @@
       
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
-          {% render 'icon-account' %}
+          {% comment %} {% render 'icon-account' %} {% endcomment %}
+					<div id="account-icon{% if template == 'index' %}Index{% endif %}"></div>
           <span class="visually-hidden">
             {%- liquid
               if customer
@@ -597,13 +598,14 @@
       {%- endif -%}
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-        {%- liquid
+        {% comment %} {%- liquid
           if cart == empty
             render 'icon-cart-empty'
           else
             render 'icon-cart'
           endif
-        -%}
+        -%} {% endcomment %}
+				<div id="cart-icon{% if template == 'index' %}Index{% endif %}"></div>
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
           <div class="cart-count-bubble">

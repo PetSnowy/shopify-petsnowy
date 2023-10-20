@@ -1,33 +1,28 @@
+@import "pxToVw.scss";
+
 .product-swiper {
 	background-color: #e0d6c1;
 
 	.product-swiper-wrapper {
 		position: relative;
-		padding: 70px 0px 53px;
 
 		.swiper-wrapper {
 			.swiper-slide {
 
 				picture,
 				img {
-					width: auto;
-					height: 565px;
 					object-fit: contain;
 					display: block;
-					margin-left: 70px;
 				}
 			}
 		}
 
 		.title {
 			all: unset;
-			left: 504px;
 			position: absolute;
-			top: 170px;
 
 			picture,
 			img {
-				width: 542px;
 				object-fit: contain;
 			}
 		}
@@ -38,21 +33,107 @@
 			justify-content: space-between;
 			position: absolute;
 			top: 50%;
-			width: 1200px;
 			transform: translateY(-50%);
-			z-index: 99;
+			z-index: 4;
 			cursor: pointer;
 		}
 
 		.arrows-big {
 			display: block;
-			width: 40px;
-			height: 95px;
 			background: url('./arrows-big.png') no-repeat center/cover;
 		}
 
 		.product-swiper-button-next .arrows-big {
 			transform: rotate(180deg);
+		}
+	}
+}
+
+
+
+@media screen and (min-width: 901px) {
+	.product-swiper {
+
+		.product-swiper-wrapper {
+			padding: 70px 0px 53px;
+
+			.swiper-wrapper {
+				.swiper-slide {
+					margin-right: 20px;
+
+					picture,
+					img {
+						width: auto;
+						height: 565px;
+						margin-left: 70px;
+					}
+				}
+			}
+
+			.title {
+				left: 504px;
+				top: 170px;
+
+				picture,
+				img {
+					width: 542px;
+				}
+			}
+
+			.swiper-button {
+				width: 1200px;
+			}
+
+			.arrows-big {
+				width: 40px;
+				height: 95px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.product-swiper {
+
+		.product-swiper-wrapper {
+			padding: vw(257px) 0px vw(104px);
+
+			.swiper-wrapper {
+				.swiper-slide {
+
+					picture,
+					img {
+						width: auto;
+						height: vw(938px);
+						margin: auto;
+					}
+				}
+			}
+
+			.title {
+				top: vw(66px);
+				left: 50%;
+				transform: translateX(-50%);
+				width: vw(543px);
+
+
+				picture,
+				img {
+					width: vw(543px);
+				}
+			}
+
+			.swiper-button {
+				width: vw(600px);
+				left: 50%;
+				transform: translateX(-50%);
+				top: 40%;
+			}
+
+			.arrows-big {
+				width: vw(38px);
+				height: vw(84px);
+			}
 		}
 	}
 }

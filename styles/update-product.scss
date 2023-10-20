@@ -13,6 +13,24 @@ $product-font-color: #5D5D5D;
 		font-family: LeagueSpartanBold;
 		color: $main-title-color
 	}
+
+	.question_mark_popup {
+		display: none;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: 10;
+		background: rgba($color: #000000, $alpha: 0.2);
+		width: 100vw;
+		height: 100vh;
+
+		.popup-wrapper {
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			left: 50%;
+		}
+	}
 }
 
 #MainContentProduct {
@@ -51,15 +69,38 @@ $product-font-color: #5D5D5D;
 
 	#MainContentProduct {
 		.faq_qa_main {
-
-			.ques_title h3 {
-				font-size: vw(40px);
+			.m-sidebar-wrapper {
+				display: none;
 			}
 
-			.answer_txt {
+			.ques_title h3 {
 				font-size: vw(30px);
 			}
 
+			.answer_txt {
+				font-size: vw(20px);
+			}
+
+		}
+	}
+
+	.question_mark_popup {
+		.popup-wrapper {
+			width: 300px;
+			height: 300px;
+			background-color: #ffffff;
+			border-radius: 25px;
+
+			.popup-close {
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				top: 10px;
+				position: absolute;
+				left: 10px;
+				background: url('./close-product.png') no-repeat center/cover;
+				display: block;
+			}
 		}
 	}
 
@@ -242,7 +283,8 @@ $product-font-color: #5D5D5D;
 			fieldset {
 				display: flex;
 				flex-wrap: wrap;
-				gap: vw(37px);
+				row-gap: vw(20px);
+				justify-content: space-between;
 			}
 
 			label {
@@ -252,6 +294,8 @@ $product-font-color: #5D5D5D;
 				overflow: hidden;
 				margin: 0px;
 				position: relative;
+				width: vw(200px);
+				box-sizing: border-box;
 
 				&::before {
 					display: none;
@@ -262,13 +306,13 @@ $product-font-color: #5D5D5D;
 					position: absolute;
 					top: vw(10px);
 					right: vw(10px);
-					width: vw(21px);
-					height: vw(21px);
+					width: vw(30px);
+					height: vw(30px);
 					background: url('./question_mark.png') no-repeat center/cover;
 				}
 
 				img {
-					width: vw(200px);
+					width: 100%;
 					height: auto;
 				}
 			}
@@ -341,6 +385,8 @@ $product-font-color: #5D5D5D;
 					&::before {
 						background: url('./checkbox.png') no-repeat center/cover;
 						border-color: transparent;
+						width: vw(23px);
+						height: vw(23px);
 					}
 				}
 
@@ -351,7 +397,6 @@ $product-font-color: #5D5D5D;
 					left: vw(32px);
 					top: 50%;
 					transform: translateY(-50%);
-					transition: all 0.3s ease;
 					width: vw(21px);
 					height: vw(21px);
 					border: vw(2px) solid #626262;
@@ -499,8 +544,17 @@ $product-font-color: #5D5D5D;
 
 	#product-indiegogo {
 
-		.update-product-content,
 		.question_mark {
+			display: block;
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			width: 20px;
+			height: 20px;
+			background: url('./question_mark.png') no-repeat center/cover;
+		}
+
+		.update-product-content {
 			display: none;
 		}
 
