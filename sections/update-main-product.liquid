@@ -197,26 +197,25 @@
         {% endcomment %}
         <div class="swiper swiper-update-product">
           <div class="swiper-wrapper">
-						{% for media in product.media %}
-							{% assign isVariantMedia = false %}
-							{% for variant in product.variants %}
-								{% if variant.featured_media == media %}
-									{% assign isVariantMedia = true %}
-									{% break %}
-								{% endif %}
-							{% endfor %}
-							{% unless isVariantMedia %}
-								<div class="swiper-slide">
-									<img
-										decoding="async"
-										src="{{ media | image_url }}"
-										alt="{{ media.alt | escape }}"
-										loading="lazy"
-									>
-								</div>
-							{% endunless %}
-						{% endfor %}
-						
+            {% for media in product.media %}
+              {% assign isVariantMedia = false %}
+              {% for variant in product.variants %}
+                {% if variant.featured_media == media %}
+                  {% assign isVariantMedia = true %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              {% unless isVariantMedia %}
+                <div class="swiper-slide">
+                  <img
+                    decoding="async"
+                    src="{{ media | image_url }}"
+                    alt="{{ media.alt | escape }}"
+                    loading="lazy"
+                  >
+                </div>
+              {% endunless %}
+            {% endfor %}
           </div>
           <div class="swiper-button">
             <div class="swiper-button-prev">
@@ -268,15 +267,21 @@
             {%- when 'desc' -%}
               <p class="product-desc">{{ block.settings.desc }}</p>
             {%- when 'price' -%}
+              {% comment %} <div class="product__price" {{ block.shopify_attributes }}></div> {% endcomment %}
+              <div
+                class="no-js-hidden price-wrapper"
+                id="price-{{ section.id }}"
+                role="status"
+                {{ block.shopify_attributes }}
+              >
+                {%- render 'price',
+                  product: product,
+                  use_variant: true,
+                  show_badges: true,
+                  price_class: 'price--large'
+                -%}
+              </div>
               {% comment %}
-                <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                  {%- render 'price',
-                    product: product,
-                    use_variant: true,
-                    show_badges: true,
-                    price_class: 'price--large'
-                  -%}
-                </div>
                 {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                   <div class="product__tax caption rte">
                     {%- if shop.taxes_included -%}
@@ -287,8 +292,6 @@
                     {%- endif -%}
                   </div>
                 {%- endif -%}
-              {% endcomment %}
-              {% comment %}
                 <div {{ block.shopify_attributes }}>
                   {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
                   {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
@@ -533,6 +536,7 @@
                                     <div class="popup-close"></div>
                                   </div>
                                 </div>
+                                <p class="option-title">{{ variant.title }}</p>
                                 <p class="option-price">{{ price | money }}</p>
                               {% endif %}
                             {% endfor %}
@@ -1294,7 +1298,6 @@
     const question_mark_popup = Array.from(document.querySelectorAll('.question_mark_popup'));
     question_mark.forEach((item, index) =>
       item.addEventListener('click', () => {
-        console.log(111);
         question_mark_popup[index].style.display = 'block';
       })
     );
