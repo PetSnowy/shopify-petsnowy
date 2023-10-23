@@ -426,8 +426,8 @@
         "8b7a5003-244c-4a64-af9c-4a9862ee7e5b": {
           "type": "block",
           "settings": {
-            "h3": "Where should I place SNOW+ during installation?",
-            "text": "It is recommended to place SNOW+ near the cat's original litter box to aid in the cat's adaptation. Ensure it is placed on a flat, stable surface near a power outlet, avoiding soft or uneven surfaces. Leave at least 2 inches of space around the device for the safety sensor and avoid placing it against a wall. Do not place the device outdoors or in high heat or humid areas.",
+            "h3": "Does SNOW⁺ require special litter?",
+            "text": "SNOW⁺ operates efficiently with clumping litter. We advise using a premium, standard-weight, clay-based clumping litter. Additionally, you can use certain silica gel litter beads and crystals with SNOW⁺ as long as they can pass through the screen. <br>Plant-based alternatives may also be compatible, but they often produce less compact clumps that might lead to moisture accumulation in the waste drawer. When opting for a plant-based litter with SNOW⁺, consider more frequent waste drawer emptying and cleaning. <br>Litters that are not suitable for SNOW⁺ include those designed solely for absorption, non-clumping or those with loose clumping properties, newspaper-based options, and absorbent wood pellet litter.",
             "youtube_video": "",
             "video": ""
           }
@@ -435,8 +435,8 @@
         "ee02129a-3aa0-424a-a87c-3e2e1ae9d313": {
           "type": "block",
           "settings": {
-            "h3": "What type of litter should I use with SNOW+?",
-            "text": "It is recommended to use high-quality clay clumping litter. Avoid using highly absorbent, non-clumping, loosely clumping, or pellet-based litters made of newspaper or wood. If using small beads or crystals, ensure they can pass through the filter and consider mixing them with clay litter in a 7\/3 ratio. When initially introducing SNOW+ to your cat, it is best to use the same brand or type of litter they were previously using.",
+            "h3": "How many cats can use SNOW⁺?",
+            "text": "We recommend having up to 4 indoor cats using a single SNOW⁺ unit. <br>Here's a general guideline: with one cat using SNOW⁺, you may need to empty the waste drawer every 2 weeks. For two cats, it might be once a week, and for three cats, twice a week, and so forth. SNOW⁺ features an expanded waste drawer for greater waste capacity, reducing the frequency of emptying. SNOW⁺ initiates a cleaning cycle 4 minutes after each use, but if another cat interrupts this period, the timer will reset for another 4 minutes, potentially leaving waste in the litter for more than 4 minutes. Having too many cats per SNOW⁺ unit may result in the litter not being completely clean for the next use.",
             "youtube_video": "",
             "video": ""
           }
@@ -444,8 +444,44 @@
         "3b223a38-8017-4cdf-8b49-6af514062978": {
           "type": "block",
           "settings": {
-            "h3": "How should I add litter to SNOW+?",
-            "text": "Lift the cover and pour clumping litter into the litter bed from the\nopening. Be cautious not to exceed the \"maximum fill line\" indicated on the device. The litter bed can hold a maximum of 5.7 pounds (2.6 kg) of litter. If using mineral sand, it can hold a maximum of 5 kg. Spread the litter evenly once it is inside the litter bed. If you accidentally add too much litter, remove the excess to prevent it from falling into the drawer during cleaning.",
+            "h3": "Will my cat actually go inside the globe?",
+            "text": "Cats are naturally inquisitive and tend to explore new objects. If your cat is accustomed to a covered litter box, they might adapt more quickly to SNOW⁺. We recommend initially keeping SNOW⁺ turned off while your cat gets used to it. Place SNOW⁺ in the same spot as your old litter box. You can keep the old litter box nearby for a short period. Take a cup of litter from the old box and mix it with the clean litter in SNOW⁺. This will provide a familiar scent, encouraging your cat to investigate. Once your cat steps inside and feels the litter, they should instinctively know what to do.For further guidance on acclimating your cat, please refer to our <a href=\"https:\/\/youtu.be\/niHla6NYpn0\"> resources.<\/a>",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "6b1c20fc-4172-4b07-a62a-ee923af5d8e7": {
+          "type": "block",
+          "settings": {
+            "h3": "Can kittens use SNOW⁺ ?",
+            "text": "Kittens weighing 3.3 pounds or more can safely use SNOW⁺ in automatic mode. For kittens below this weight threshold, turn off automatic cleaning and opt for \"semi-automatic\" mode. To do this, deactivate automatic cleaning in the PetSnowy APP and manually initiate the cleaning process pressing the clean button or the App once or twice daily (ensure the kitten is not inside the machine when pressing the button). This approach ensures your kitten's safety during their early encounters with SNOW⁺, while also relieving you of the need to manually scoop the litter box.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "d5e60985-1d58-4cd9-8a79-5c6f23b31051": {
+          "type": "block",
+          "settings": {
+            "h3": "Does SNOW⁺ have a weight limit?",
+            "text": "Literally saying, SNOW⁺ doesn't have a weight limit, but we recommend it for cats weighing less than 20 lbs (9 kg) for the best comfort of your feline friend.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "ca37dc4b-bc8c-4e58-827a-faae3caed0ca": {
+          "type": "block",
+          "settings": {
+            "h3": "How much litter should I add to SNOW⁺?",
+            "text": "Fill the globe with litter until it reaches the max fill line on the rubber globe liner when it's spread flat. This is approximately 10 pounds of clumping litter (4.8 kg), 5 pounds of tofu litter (2.4 kg) by weight, or 1 gallon (4L) by volume. Be cautious not to overfill the globe. Since the waste clumps are removed during each cycle, there's no need to use an excessive amount of litter in the globe.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "13c7a007-bb18-46a1-ae04-f7804a36c73b": {
+          "type": "block",
+          "settings": {
+            "h3": "How frequently should I refill litter in SNOW⁺?",
+            "text": "SNOW⁺ is highly efficient in its litter usage due to its patented sifting system, which only removes the clumps. We suggest verifying the litter level in comparison to the maximum fill line (found on the globe's rubber liner) each time you empty the waste drawer. This typically occurs about once every two weeks for a single cat or once a week for households with multiple cats. Ensure not to overfill the globe.",
             "youtube_video": "",
             "video": ""
           }
@@ -454,7 +490,11 @@
       "block_order": [
         "8b7a5003-244c-4a64-af9c-4a9862ee7e5b",
         "ee02129a-3aa0-424a-a87c-3e2e1ae9d313",
-        "3b223a38-8017-4cdf-8b49-6af514062978"
+        "3b223a38-8017-4cdf-8b49-6af514062978",
+        "6b1c20fc-4172-4b07-a62a-ee923af5d8e7",
+        "d5e60985-1d58-4cd9-8a79-5c6f23b31051",
+        "ca37dc4b-bc8c-4e58-827a-faae3caed0ca",
+        "13c7a007-bb18-46a1-ae04-f7804a36c73b"
       ],
       "settings": {
         "h1": "",
