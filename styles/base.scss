@@ -5510,6 +5510,10 @@ ul#HeaderMenu-MenuList-1 {
 		}
 	}
 
+	.header__icons a.headr_odr_now {
+		display: none;
+	}
+
 	.page-width {
 		width: 100%;
 		padding: vw(0px) vw(40px);
@@ -5651,15 +5655,15 @@ ul#HeaderMenu-MenuList-1 {
 
 @media screen and (max-width: 990px) {
 	#hamburger {
-		width: 21px;
-		height: 20px;
+		width: vw(34px);
+		height: vw(30px);
 		background: url('../assets/hamburger.png') no-repeat center/cover;
 		display: block;
 	}
 
 	#hamburgerIndex {
-		width: 21px;
-		height: 21px;
+		width: vw(34px);
+		height: vw(30px);
 		background: url('../assets/hamburger_w.png') no-repeat center/cover;
 		display: block;
 	}

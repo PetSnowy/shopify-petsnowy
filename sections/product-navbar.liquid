@@ -13,7 +13,7 @@
 </div>
 
 <script>
-  window.addEventListener('load', function () {
+  function init() {
     const height =
       document.querySelector('#product-indiegogo').offsetHeight +
       document.querySelector('.video-scroll-wrapper').offsetHeight;
@@ -59,7 +59,9 @@
     list.forEach((item, index) =>
       item.addEventListener('click', () => productEl[index].scrollIntoView({ behavior: 'instant', block: 'start' }))
     );
-  });
+  }
+  window.addEventListener('load', () => init());
+  window.addEventListener('resize', () => init());
 </script>
 {% schema %}
 {

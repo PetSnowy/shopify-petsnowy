@@ -53,7 +53,7 @@ class CartDrawer extends HTMLElement {
 	getProductsRecommended() {
 		try {
 			this.getCartProduct().then((result) => this.productsRecommended(result)).then((map) => {
-				console.log(map);
+				// console.log(map); 产品推荐数据
 			})
 		} catch (error) {
 			console.log(error);

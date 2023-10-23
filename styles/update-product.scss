@@ -73,13 +73,13 @@ $product-font-color: #5D5D5D;
 		}
 
 		.price-item--regular {
-			font-family: LeagueSpartan;
+			font-family: LeagueSpartanBlack;
 			font-weight: 500;
 			text-decoration: line-through;
 			color: #7E6E5F;
 
 			.money {
-				font-family: LeagueSpartan;
+				font-family: LeagueSpartanBlack;
 				font-weight: 500;
 				text-decoration: line-through;
 				color: #7E6E5F;
@@ -87,12 +87,12 @@ $product-font-color: #5D5D5D;
 		}
 
 		.price-item--last {
-			font-family: LeagueSpartan;
+			font-family: LeagueSpartanBlack;
 			font-weight: 900;
 			color: #D75F23;
 
 			.money {
-				font-family: LeagueSpartan;
+				font-family: LeagueSpartanBlack;
 				font-weight: 900;
 				color: #D75F23;
 				vertical-align: sub;
@@ -123,6 +123,10 @@ $product-font-color: #5D5D5D;
 			font-family: Helvetica;
 			color: #504030;
 			font-size: 30px;
+
+			a {
+				color: #d75f23;
+			}
 		}
 
 
