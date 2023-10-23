@@ -10,5 +10,5 @@
 		"swiper"
 	],
 	"liquid.format.enable": true,
-	"compile-hero.disable-compile-files-on-did-save-code": true
+	"compile-hero.disable-compile-files-on-did-save-code": false
 }
