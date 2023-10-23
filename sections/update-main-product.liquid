@@ -329,6 +329,9 @@
             {% when 'product_acessories' %}
               <div class="product_acessories-wrapper">
                 <p class="product_acessories-title">Add-Ons:</p>
+                {% if template contains 'indiegogo' -%}
+                  <p class="product-desc" style="display: block;">Get 20% Discount On Every Add-On Products</p>
+                {%- endif %}
                 <div class="add_product_list">
                   {% for product_addons in product.metafields.custom.addons_product.value %}
                     {% assign inc_value = product_addons.first_available_variant.price | times: 20 | divided_by: 100 %}
@@ -502,7 +505,7 @@
                                   </div>
                                 </div>
                                 <p class="option-title">{{ variant.title }}</p>
-                                <p class="option-price">{{ price | money }}</p>
+                                {% comment %} <p class="option-price">{{ price | money }}</p> {% endcomment %}
                               {% endif %}
                             {% endfor %}
                           </label>

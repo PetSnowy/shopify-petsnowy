@@ -276,6 +276,12 @@ $product-font-color: #5D5D5D;
 
 		#new-product {
 
+			.product-desc {
+				font-family: LeagueSpartan;
+				font-size: vw(30px);
+				margin-bottom: vw(20px);
+			}
+
 			.loox-rating,
 			.product__text,
 			.product__title,
@@ -447,11 +453,11 @@ $product-font-color: #5D5D5D;
 
 				.option-title {
 					font-size: vw(25px);
-					font-family: LeagueSpartan;
+					font-family: Helvetica;
 					font-weight: 400;
 					color: #777777;
 					line-height: vw(29px);
-					margin-bottom: vw(10px);
+					// margin-bottom: vw(10px);
 					text-align: center;
 				}
 
@@ -989,10 +995,10 @@ $product-font-color: #5D5D5D;
 
 				.option-title {
 					font-size: 12px;
-					font-family: LeagueSpartan;
+					font-family: Helvetica;
 					font-weight: 400;
 					color: #777777;
-					margin-bottom: 7px;
+					// margin-bottom: 7px;
 				}
 
 				img {
