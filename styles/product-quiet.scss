@@ -27,7 +27,7 @@ $activeColor:#504030;
 
 				}
 
-				@for $i from 1 through 15 {
+				@for $i from 1 through 10 {
 					@if $i % 2==0 {
 						span:nth-child(#{$i}) {
 							background-color: $activeColor;

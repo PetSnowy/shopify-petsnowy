@@ -1,7 +1,7 @@
 {{ 'video-scroll.css' | asset_url | stylesheet_tag }}
 
 <div class="video-scroll-wrapper page-width">
-  <div class="video-scroll-content">
+  <div class="video-scroll-content aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
     {% for block in section.blocks %}
       {% if block.type == 'content' %}
         <picture>
