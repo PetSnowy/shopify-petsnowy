@@ -5501,6 +5501,16 @@ ul#HeaderMenu-MenuList-1 {
 	column-gap: 0px;
 }
 
+.cart-item__old-price,
+.cart-item__old-price .money {
+	text-decoration: line-through;
+}
+
+.change_variant_img {
+	display: flex;
+	align-items: center;
+}
+
 
 @media screen and (max-width: 900px) {
 
