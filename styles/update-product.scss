@@ -218,10 +218,11 @@ $product-font-color: #5D5D5D;
 				background-color: #ffffff;
 				border-radius: vw(25px);
 				overflow: hidden;
+				padding: vw(40px);
+				box-sizing: border-box;
 
 				.popup-content {
 					flex: 1;
-					padding: vw(40px) vw(20px);
 				}
 
 				.popup-img {
@@ -754,10 +755,11 @@ $product-font-color: #5D5D5D;
 				border-radius: 25px;
 				overflow: hidden;
 				display: flex;
+				padding: 20px;
 
 				.popup-content {
 					flex: 1;
-					padding: 60px 20px 40px;
+					padding: 40px 0px 20px;
 				}
 
 				.popup-img {
