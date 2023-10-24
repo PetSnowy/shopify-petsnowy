@@ -331,7 +331,9 @@
                               {{ variantdescription }}
                               {% if varid == 47114822746434 %}
                                 <br>
-                                <span class="remaining">Gift stock remaining: {{ inventory_quantity }}</span>
+                                <span class="remaining" style="font-weight: 900;"
+                                  >Gift stock remaining: {{ inventory_quantity -}}
+                                </span>
                               {%- endif %}
                             </p>
                           </div>
