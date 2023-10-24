@@ -3,10 +3,12 @@
 		"acessories",
 		"cssnano",
 		"gulpfile",
+		"indiegogo",
 		"petsnowy",
 		"polyline",
 		"postcss",
 		"swiper"
 	],
-	"liquid.format.enable": true
+	"liquid.format.enable": true,
+	"compile-hero.disable-compile-files-on-did-save-code": false
 }

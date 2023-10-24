@@ -1,0 +1,41 @@
+@import "pxToVw.scss";
+
+.product-safety {
+
+	product-inventory {
+		display: block;
+	}
+
+	picture,
+	img {
+		height: auto;
+		object-fit: contain;
+		display: block;
+	}
+}
+
+@media screen and (min-width: 901px) {
+	.product-safety {
+		margin-bottom: 120px;
+
+		product-inventory {
+			margin-top: 88px;
+		}
+
+		picture,
+		img {
+			width: 1200px;
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.product-safety {
+		padding: vw(40px) vw(35px) vw(53px);
+
+		picture,
+		img {
+			width: 100%;
+		}
+	}
+}

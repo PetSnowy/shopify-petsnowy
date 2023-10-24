@@ -60,9 +60,9 @@ if (!customElements.get('media-gallery')) {
 
 			this.elements.thumbnails.querySelectorAll('button').forEach((element) => element.removeAttribute('aria-current'));
 			thumbnail.querySelector('button').setAttribute('aria-current', true);
-			if (this.elements.thumbnails.isSlideVisible(thumbnail, 10)) return;
+			// if (this.elements.thumbnails.isSlideVisible(thumbnail, 10)) return;
 
-			this.elements.thumbnails.slider.scrollTo({ left: thumbnail.offsetLeft });
+			// this.elements.thumbnails.slider.scrollTo({ left: thumbnail.offsetLeft });
 		}
 
 		announceLiveRegion(activeItem, position) {

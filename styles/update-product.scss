@@ -1,0 +1,1261 @@
+$button-bg-color: #7e6e5f;
+$main-bg-color: #e9e1cf;
+$main-font-color: #000000;
+$main-title-color:#45392e;
+$product-price-color:#818181;
+$product-title-color:#504030;
+$product-icon-color: #d75f23;
+$product-font-color: #5D5D5D;
+@import "pxToVw.scss";
+
+#product-indiegogo {
+	.form__label {
+		font-family: LeagueSpartanBold;
+		color: $main-title-color
+	}
+
+	.question_mark_popup {
+		display: none;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: 10;
+		background: rgba($color: #000000, $alpha: 0.2);
+		width: 100vw;
+		height: 100vh;
+
+		.popup-wrapper {
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			left: 50%;
+		}
+	}
+
+	.add_list_product {
+		label {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			flex-direction: column;
+
+			.add_list_product_data {
+				flex: 1;
+			}
+
+			.price_title_align {
+				height: 100%;
+			}
+
+			.price {
+				margin-top: auto;
+			}
+		}
+	}
+
+	.price-wrapper {
+		margin: 0px;
+	}
+
+	.price {
+		.badge {
+			display: none;
+		}
+
+		.price__container {
+			margin-bottom: 0px;
+		}
+
+		.price__sale {
+			display: flex;
+			flex-direction: row-reverse;
+			align-items: center;
+		}
+
+		.price-item--regular {
+			font-family: LeagueSpartanBlack;
+			font-weight: 500;
+			text-decoration: line-through;
+			color: #7E6E5F;
+
+			.money {
+				font-family: LeagueSpartanBlack;
+				font-weight: 500;
+				text-decoration: line-through;
+				color: #7E6E5F;
+			}
+		}
+
+		.price-item--last {
+			font-family: LeagueSpartanBlack;
+			font-weight: 900;
+			color: #D75F23;
+
+			.money {
+				font-family: LeagueSpartanBlack;
+				font-weight: 900;
+				color: #D75F23;
+				vertical-align: sub;
+			}
+		}
+	}
+}
+
+#MainContentProduct {
+	.faq_qa_main {
+
+		.faq_qa_heading,
+		.page-sidebar {
+			display: none !important;
+		}
+
+		.ques_title h3 {
+			font-family: HelveticaNowDisplayXBlk;
+			color: #504030;
+			font-size: 40px;
+
+			&::first-letter {
+				color: #d75f23;
+			}
+		}
+
+		.answer_txt {
+			font-family: Helvetica;
+			color: #504030;
+			font-size: 30px;
+
+			a {
+				color: #d75f23;
+			}
+		}
+
+
+		.faq_qna_iner {
+			padding-left: 0px;
+			border: none;
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+	#MainContentProduct {
+		.faq_qa_main {
+			.m-sidebar-wrapper {
+				display: none;
+			}
+
+			.ques_title h3 {
+				font-size: vw(30px);
+			}
+
+			.answer_txt {
+				font-size: vw(20px);
+			}
+
+		}
+	}
+
+
+	@mixin font {
+		font-family: LeagueSpartanBlack;
+		text-transform: uppercase;
+		color: $main-title-color;
+		font-weight: 600;
+	}
+
+	#product-indiegogo {
+		.price-wrapper {
+			margin-bottom: vw(20px);
+		}
+
+		.price {
+
+			.price-item--regular {
+				font-size: vw(26px);
+				line-height: vw(44px);
+				display: inline-block;
+
+				.money {
+					font-size: vw(26px);
+					line-height: vw(44px);
+					display: inline-block;
+
+				}
+			}
+
+			.price-item--last {
+				font-size: vw(30px);
+				line-height: vw(44px);
+				display: inline-block;
+
+				.money {
+					font-size: vw(30px);
+					line-height: vw(44px);
+					display: inline-block;
+				}
+			}
+		}
+
+		.product__info-container {
+			width: 100%;
+			position: static;
+			max-width: 100%;
+		}
+
+		.grid__item.product__media-wrapper {
+			margin-bottom: vw(50px);
+		}
+
+		.product-default {
+			display: none;
+		}
+
+
+		.question_mark_popup {
+			.popup-wrapper {
+				width: vw(680px);
+				height: auto;
+				background-color: #ffffff;
+				border-radius: vw(25px);
+				overflow: hidden;
+
+				.popup-content {
+					flex: 1;
+					padding: vw(40px) vw(20px);
+				}
+
+				.popup-img {
+					width: 100%;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: contain;
+						margin: 0px;
+					}
+				}
+
+				.popup-title {
+					color: #504030;
+					font-family: HelveticaNowDisplayXBlk;
+					font-size: vw(55px);
+					margin-bottom: vw(40px);
+
+					&::first-letter {
+						color: #d75f23;
+					}
+				}
+
+				.popup-desc {
+					font-family: LeagueSpartan;
+					color: #504030;
+					font-size: vw(36px);
+					text-align: left;
+					line-height: vw(50px);
+				}
+
+				.popup-close {
+					width: vw(60px);
+					height: vw(60px);
+					border-radius: 50%;
+					top: vw(20px);
+					position: absolute;
+					right: vw(20px);
+					background: url('./close-product.png') no-repeat center/cover;
+					display: block;
+				}
+			}
+		}
+
+		.product_acessories-wrapper {
+			margin-bottom: vw(30px);
+		}
+
+		padding-top: vw(36px);
+
+		#new-product {
+
+			.product-desc {
+				font-family: LeagueSpartan;
+				font-size: vw(30px);
+				margin-bottom: vw(20px);
+			}
+
+			.loox-rating,
+			.product__text,
+			.product__title,
+			.product-desc {
+				display: none;
+			}
+
+			.update-product-content {
+				margin-bottom: vw(40px);
+
+				.loox-rating,
+				.product__text,
+				.product__title,
+				.product-desc {
+					display: block;
+				}
+
+				.loox-rating {
+					margin-bottom: vw(20px);
+				}
+
+				.product__text {
+					font-size: vw(48px)
+				}
+
+				h1 {
+					font-size: vw(40px);
+				}
+
+				.product__text,
+				h1 {
+					@include font;
+					margin-bottom: vw(20px);
+				}
+
+				.product__title {
+					margin-bottom: 0px;
+				}
+
+				.product-desc {
+					font-family: LeagueSpartan;
+					font-size: vw(30px);
+					margin-bottom: vw(20px);
+				}
+			}
+		}
+
+		picture,
+		img {
+			width: 100%;
+			object-fit: cover;
+			display: block;
+		}
+
+		slider-component {
+			display: none;
+		}
+
+		.swiper-update-product {
+			width: 100%;
+			height: vw(446px);
+			padding-bottom: vw(60px);
+			box-sizing: content-box;
+
+			.swiper-slide {
+				display: block;
+				background: #ffffff;
+				overflow: hidden;
+				border-radius: vw(20px);
+				height: vw(446px);
+			}
+
+			.product-arrows {
+				width: vw(26px);
+				height: vw(58px);
+				background: url('./m_product-main-arrows.png') no-repeat center/cover;
+				display: block;
+			}
+
+			[class*='swiper-button-'] {
+				&::after {
+					display: none;
+				}
+			}
+
+			.swiper-button-next {
+				right: 0px;
+				top: 45%;
+			}
+
+			.swiper-button-prev {
+				left: 0px;
+				top: 45%;
+			}
+
+			.swiper-button-next .product-arrows {
+				transform: rotate(180deg);
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			.swiper-pagination {
+				bottom: 0px;
+
+				.swiper-pagination-bullet {
+					width: vw(13px);
+					height: vw(8px);
+					background: #CBB298;
+					border: none;
+					border-radius: vw(4px);
+					margin: 0px;
+					margin-right: vw(16px);
+					transition: all 0.3s ease-in-out;
+					opacity: 1;
+
+					&:last-child {
+						margin-right: 0px;
+					}
+				}
+
+				.swiper-pagination-bullet-active {
+					width: vw(84px);
+				}
+			}
+		}
+
+		.product__info-wrapper {
+			padding: 0px;
+			width: 100%;
+		}
+
+		.product-guarantee {
+			width: 100%;
+		}
+
+
+		variant-radios {
+
+			margin-top: 0px;
+			margin-bottom: vw(60px);
+
+			.form__label {
+				font-size: vw(34px);
+				margin-bottom: vw(30px);
+			}
+
+			fieldset {
+				display: flex;
+				flex-wrap: wrap;
+				row-gap: vw(20px);
+				justify-content: space-between;
+			}
+
+			label {
+				border: vw(4px) solid transparent;
+				border-radius: vw(20px);
+				padding: vw(10px);
+				overflow: hidden;
+				margin: 0px;
+				position: relative;
+				width: vw(200px);
+				box-sizing: border-box;
+				flex-direction: row;
+
+				.option-title {
+					font-size: vw(25px);
+					font-family: Helvetica;
+					font-weight: 400;
+					color: #777777;
+					line-height: vw(29px);
+					// margin-bottom: vw(10px);
+					text-align: center;
+				}
+
+				&::before {
+					display: none;
+				}
+
+				.question_mark {
+					display: block;
+					position: absolute;
+					top: vw(10px);
+					right: vw(10px);
+					width: vw(30px);
+					height: vw(30px);
+					background: url('./question_mark.png') no-repeat center/cover;
+				}
+
+				img {
+					width: 100%;
+					height: auto;
+					margin-bottom: vw(10px);
+				}
+			}
+
+			.product-form__input input[type=radio]:checked+label {
+				border-color: $product-icon-color;
+				// background: #d5cabe;
+				color: #616161;
+			}
+		}
+
+
+		.price_with_discount,
+		.option-price {
+			font-family: HelveticaBold;
+			color: #616161;
+			font-size: vw(24px);
+
+			.money {
+				font-family: HelveticaBold;
+				color: #616161;
+				font-size: vw(24px);
+			}
+		}
+
+		.price_with_discount {
+			margin-right: vw(10px);
+		}
+
+
+		.option-price {
+			margin-top: vw(10px);
+		}
+
+		.product_acessories-wrapper {
+			margin-top: 0px;
+			margin-bottom: vw(40px);
+
+			.product_acessories-title {
+				font-family: LeagueSpartanBold;
+				font-size: vw(34px);
+				color: $main-title-color;
+				margin-bottom: vw(30px);
+			}
+
+			.add_product_list {
+				display: flex;
+				row-gap: vw(24px);
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+
+			.add_list_product {
+				width: 100%;
+				padding: vw(17px) vw(28px);
+				display: flex;
+				background: #f5f3ed;
+				border-radius: vw(12px);
+				flex-direction: row;
+				flex-wrap: wrap;
+				position: relative;
+				padding-left: vw(30px);
+
+				input[type="checkbox"] {
+					width: 0;
+					margin-right: vw(40px);
+				}
+
+				&:has(input[type="checkbox"]:checked) {
+					&::before {
+						background: url('./checkbox.png') no-repeat center/cover;
+						border-color: transparent;
+						width: vw(23px);
+						height: vw(23px);
+					}
+				}
+
+				&::before {
+					content: '';
+					display: block;
+					position: absolute;
+					left: vw(32px);
+					top: 50%;
+					transform: translateY(-50%);
+					width: vw(21px);
+					height: vw(21px);
+					border: vw(2px) solid #626262;
+					border-radius: vw(4px);
+				}
+
+				img {
+					width: vw(60px);
+					height: vw(70px);
+					object-fit: contain;
+				}
+
+				.quantity_addons {
+					display: none;
+				}
+			}
+
+			.productlabel_info {
+				display: flex;
+				align-items: center;
+				flex: 1;
+				flex-direction: row;
+			}
+
+			.add_list_product_data {
+				flex: 1;
+				margin-left: vw(20px);
+			}
+
+			.price_title_align {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				font-size: vw(25px);
+				font-family: Helvetica;
+				color: #616161;
+				flex: 1;
+
+				h3 {
+					font-size: vw(25px);
+					font-family: Helvetica;
+					color: #616161;
+				}
+			}
+
+			.price {
+				display: flex;
+				align-items: center;
+				flex-direction: row-reverse;
+
+				.price_without_discount {
+					font-family: Helvetica;
+					color: #616161;
+					text-decoration: line-through;
+					font-size: vw(24px);
+
+					.money {
+						font-family: Helvetica;
+						color: #616161;
+						text-decoration: line-through;
+						font-size: vw(24px);
+					}
+				}
+			}
+		}
+
+		.product-guarantee {
+			margin: vw(52px) 0px;
+		}
+
+		.product-add-quantity {
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+
+			.product-form__input {
+				display: flex;
+				align-items: center;
+				margin-bottom: 0px;
+				flex: 0;
+				border-radius: vw(60px);
+				overflow: hidden;
+				background-color: #ffffff;
+				margin-bottom: 0px;
+
+				.quantity {
+
+					&::after,
+					&::before {
+						display: none;
+					}
+
+					input {
+						font-family: LeagueSpartanBlack;
+						font-size: vw(30px);
+						font-weight: 600;
+						color: $product-font-color;
+					}
+				}
+			}
+
+			.product-form__buttons {
+
+				margin-right: vw(30px);
+
+				button {
+					width: vw(372px);
+					height: vw(58px);
+					background: #7E6E5F;
+					box-sizing: border-box;
+					padding: vw(19px) vw(83px) vw(18px) vw(82px);
+					background: $button-bg-color;
+					border: none;
+					margin: 0px;
+
+					&::after,
+					&::before {
+						display: none;
+					}
+
+					span {
+						font-family: LeagueSpartanBlack;
+						font-weight: 900;
+						color: #ffffff;
+						letter-spacing: 0px;
+						display: block;
+						height: vw(58px);
+						line-height: vw(58px);
+						transition: all 0.3s ease;
+						font-size: vw(29px);
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 901px) {
+	@mixin font {
+		font-family: LeagueSpartanBlack;
+		text-transform: uppercase;
+		color: $main-title-color;
+		font-weight: 600;
+	}
+
+	#product-indiegogo {
+
+		.price-wrapper {
+			margin: 0px;
+			margin-bottom: 10px;
+		}
+
+		.price {
+
+			.price-item--regular {
+				font-size: 18px;
+				line-height: 22px;
+
+				.money {
+					font-size: 18px;
+					line-height: 22px;
+				}
+			}
+
+			.price-item--last {
+				font-size: 20px;
+				line-height: 22px;
+
+				.money {
+					font-size: 20px;
+					line-height: 22px;
+				}
+			}
+		}
+
+		.question_mark {
+			display: block;
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			width: 20px;
+			height: 20px;
+			background: url('./question_mark.png') no-repeat center/cover;
+		}
+
+		.question_mark_popup {
+			.popup-wrapper {
+				width: 874px;
+				height: 561px;
+				background-color: #ffffff;
+				border-radius: 25px;
+				overflow: hidden;
+				display: flex;
+
+				.popup-content {
+					flex: 1;
+					padding: 60px 20px 40px;
+				}
+
+				.popup-img {
+					width: 561px;
+					height: 561px;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: contain;
+						margin: 0px;
+					}
+				}
+
+				.popup-title {
+					color: #504030;
+					font-family: HelveticaNowDisplayXBlk;
+					font-size: 35px;
+					margin-bottom: 20px;
+
+					&::first-letter {
+						color: #d75f23;
+					}
+				}
+
+				.popup-desc {
+					font-family: LeagueSpartan;
+					color: #504030;
+					font-size: 18px;
+					text-align: left;
+					line-height: 25px;
+				}
+
+				.popup-close {
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+					top: 10px;
+					position: absolute;
+					right: 10px;
+					background: url('./close-product.png') no-repeat center/cover;
+					display: block;
+				}
+			}
+		}
+
+		.update-product-content {
+			display: none;
+		}
+
+		.product-default {
+			width: 640px;
+			border-radius: 25px;
+			overflow: hidden;
+			margin-bottom: 40px;
+
+			img {
+				width: 100%;
+				height: auto;
+				object-fit: contain;
+			}
+		}
+
+		.swiper-wrapper {
+			.swiper-slide {
+				display: block;
+				width: 640px;
+				height: 420px;
+				background: #ffffff;
+				overflow: hidden;
+				border-radius: 25px;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.product__info-container {
+			position: static;
+		}
+
+		.product__media-list {
+			li:not(.is-active) {
+				display: none;
+			}
+		}
+
+		.grid__item.product__media-wrapper {
+			width: 640px;
+			max-width: 640px;
+			overflow: hidden;
+
+			modal-opener {
+				border-radius: 25px;
+				width: 640px;
+				overflow: hidden;
+
+				img {
+					width: 640px;
+					height: auto;
+					object-fit: contain;
+				}
+			}
+
+			.thumbnail-slider {
+				background-color: #ffffff;
+				border-radius: 25px;
+				overflow: hidden;
+
+				.slider-button--next {
+					right: 0px;
+				}
+
+				.slider-button--prev {
+					left: 0px;
+				}
+
+				.thumbnail-list {
+					width: fit-content;
+					transition: all 0.3s ease;
+					overflow: hidden;
+
+					li.thumbnail-list__item {
+						width: 640px;
+						height: 420px;
+
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: contain;
+						}
+					}
+				}
+			}
+		}
+
+		.global-media-settings {
+			border: none;
+		}
+
+		.product__info-wrapper {
+			width: 560px;
+			max-width: 560px;
+			box-sizing: border-box;
+			padding-left: 25px;
+
+			.product__title,
+			.product__title h1 {
+				@include font;
+				font-size: 28px;
+				margin-bottom: 0px;
+				letter-spacing: 1px;
+			}
+
+			.product__title {
+				margin-bottom: 5px;
+				margin-top: 0px
+			}
+
+			.product__text {
+				@include font;
+				font-size: 39px;
+				margin-top: 15px;
+				letter-spacing: 2px;
+			}
+
+			.product-desc {
+				font-family: LeagueSpartan;
+				font-size: 17px;
+				margin: 0px;
+				margin-bottom: 20px;
+			}
+		}
+
+		.label_style {
+			width: 150px;
+			background: #ffffff;
+			overflow: hidden;
+			box-sizing: border-box;
+			padding: 10px;
+			display: flex;
+			justify-content: center;
+			border-radius: 10px;
+			transition: all 0.3s ease;
+		}
+
+		.add_product_list {
+			display: flex;
+		}
+
+		.price_with_discount {
+			font-family: HelveticaBold;
+			color: #616161;
+			font-size: 12px;
+
+			.money {
+				font-family: HelveticaBold;
+				color: #616161;
+				font-size: 12px;
+			}
+		}
+
+		variant-radios {
+			margin-bottom: 20px;
+
+			.form__label {
+				font-size: 20px;
+				margin-bottom: 10px;
+			}
+
+			fieldset {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 25px
+			}
+
+			.product-form__input input[type=radio]:checked+label {
+				border-color: $product-icon-color;
+			}
+
+			label {
+				@extend .label_style;
+				flex-direction: column;
+				flex-wrap: wrap;
+				align-content: center;
+				box-sizing: border-box;
+				margin: 0px;
+				border: none;
+				border: 2px solid transparent;
+				// background: #d5cabe;
+
+				.option-title {
+					font-size: 12px;
+					font-family: Helvetica;
+					font-weight: 400;
+					color: #777777;
+					// margin-bottom: 7px;
+				}
+
+				img {
+					width: 90px;
+					height: 90px;
+					object-fit: contain;
+					margin: 0px auto;
+					margin-bottom: 10px;
+				}
+
+				p {
+					font-family: HelveticaBold;
+					color: #616161;
+					font-size: 12px;
+
+					.money {
+						font-family: HelveticaBold;
+						color: #616161;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+
+		.product_acessories-wrapper {
+			margin-bottom: 20px;
+
+			.product_acessories-title {
+				font-family: LeagueSpartanBold;
+				font-size: 20px;
+				color: $main-title-color;
+				margin-bottom: 20px;
+			}
+
+			.add_product_list {
+				flex-wrap: wrap;
+				gap: 25px;
+			}
+
+
+			.add_list_product {
+				@extend .label_style;
+				border: 2px solid transparent;
+
+				input {
+					width: 0px;
+					position: absolute;
+				}
+
+				&:has(input[type="checkbox"]:checked) {
+					border-color: $product-icon-color;
+				}
+
+				.quantity_addons {
+					display: none;
+				}
+
+				.add_list_product_data {
+					.quantity_addons {
+						display: none;
+					}
+				}
+
+				.add_list_product_image {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-bottom: 10px;
+
+					img {
+						width: 70px;
+						height: 70px;
+						object-fit: contain;
+					}
+				}
+
+				.price_title_align {
+					display: flex;
+					flex-wrap: wrap;
+					flex-direction: row;
+					justify-content: center;
+
+					h3 {
+						font-size: 12px;
+						font-family: Helvetica;
+						text-align: center;
+						color: #616161;
+					}
+				}
+
+				.price {
+					display: flex;
+					flex-direction: row-reverse;
+					justify-content: center;
+					margin-top: auto;
+					column-gap: 5px;
+				}
+
+				.price_without_discount {
+					font-family: Helvetica;
+					color: #616161;
+					text-decoration: line-through;
+					font-size: 12px;
+
+					.money {
+						font-family: Helvetica;
+						color: #616161;
+						text-decoration: line-through;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+
+		.product-add-quantity {
+			margin-bottom: 10px;
+			display: flex;
+			align-items: center;
+			flex-direction: row-reverse;
+			width: fit-content;
+			height: 50px;
+
+			.product-form__input {
+				flex: none;
+			}
+
+			product-form {
+				margin-right: 20px;
+			}
+
+			.product-form__buttons {
+				margin-right: 30px;
+
+				button {
+					margin: 0px;
+					padding: 0;
+					background: $button-bg-color;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 250px;
+					height: 100%;
+					border: none;
+
+					&:hover {
+						background-color: #ffffff;
+
+						span {
+							color: $button-bg-color;
+						}
+					}
+
+					&::after,
+					&::before {
+						display: none;
+					}
+
+					span {
+						font-family: LeagueSpartanBlack;
+						font-size: 25px;
+						font-weight: 900;
+						color: #ffffff;
+						letter-spacing: 0px;
+						display: block;
+						height: 50px;
+						line-height: 50px;
+						transition: all 0.3s ease;
+					}
+				}
+			}
+
+			.product-form__input {
+				border-radius: 25px;
+				overflow: hidden;
+				background-color: #ffffff;
+				margin-bottom: 0px;
+
+				.quantity {
+
+					&::after,
+					&::before {
+						display: none;
+					}
+
+					input {
+						font-family: LeagueSpartanBlack;
+						font-size: 15px;
+						font-weight: 600;
+						color: $product-font-color;
+					}
+				}
+
+			}
+
+		}
+
+		.swiper-update-product {
+			border-radius: 25px;
+			overflow: hidden;
+
+			.swiper-pagination {
+				display: none;
+			}
+
+			.product-arrows {
+				width: 24px;
+				height: 46px;
+				background: url('./product-main-arrows.png') no-repeat center/cover;
+				display: block;
+			}
+
+			[class*='swiper-button-'] {
+				&::after {
+					display: none;
+				}
+			}
+
+			.swiper-button-next .product-arrows {
+				transform: rotate(180deg);
+			}
+		}
+
+		.product-guarantee {
+			height: 30px;
+			width: 500px;
+			margin: 30px 0px;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+	}
+
+	#MainContentProduct {
+		.faq_qa_main {
+
+			.ques_title h3 {
+				font-size: 35px;
+			}
+
+			.answer_txt {
+				font-size: 25px;
+			}
+		}
+	}
+}
+
+#MainContentIndex {
+	padding-top: 0px !important;
+}
+
+#MainContentProduct {
+	background-color: $main-bg-color;
+
+	.banner__box:empty {
+		display: none;
+	}
+}

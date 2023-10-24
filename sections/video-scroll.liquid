@@ -1,70 +1,140 @@
 {{ 'video-scroll.css' | asset_url | stylesheet_tag }}
 
-<div class="video-scroll-wrapper swiper page-width">
-  <div class="video-img-wrapper swiper-wrapper">
+<div class="video-scroll-wrapper page-width">
+  <div class="video-scroll-content aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
     {% for block in section.blocks %}
-      <div class="video-img swiper-slide">
+      {% if block.type == 'content' %}
         <picture>
           <source media="(min-width: 901px)" srcset="{{ block.settings.image_picker | img_url: 'master' }}">
           <source media="(max-width: 900px)" srcset="{{ block.settings.mb_image_picker | img_url: 'master' }}">
           <img
             decoding="async"
+            loading="lazy"
             src="{{ block.settings.image_picker | img_url: 'master' }}"
-            alt="{{ block.settings.text }}"
+            alt="{{ block.settings.alt }}"
           >
         </picture>
-        <div class="video-play"></div>
-      </div>
+      {% endif %}
     {% endfor %}
   </div>
-  <div class="swiper-button">
-    <div class="swiper-button-prev">
-      {% render 'icon-arrow-comment' %}
-    </div>
-    <div class="swiper-button-next">
-      {% render 'icon-arrow-comment' %}
+  <div class="img-wrapper swiper">
+    <div class="video-img-wrapper swiper-wrapper">
+      {% for block in section.blocks %}
+        {% if block.type == 'block' %}
+          <div class="video-img swiper-slide">
+            <picture>
+              <source media="(min-width: 901px)" srcset="{{ block.settings.image_picker | img_url: 'master' }}">
+              <source media="(max-width: 900px)" srcset="{{ block.settings.mb_image_picker | img_url: 'master' }}">
+              <img
+                decoding="async"
+                loading="lazy"
+                src="{{ block.settings.image_picker | img_url: 'master' }}"
+                alt="{{ block.settings.image_alt }}"
+              >
+            </picture>
+            {% comment %} <div class="video-play"></div> {% endcomment %}
+          </div>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </div>
+
+<div class="portrait-screen swiper">
+  <div class="swiper-wrapper">
+    {% for block in section.blocks %}
+      {% if block.type == 'block' %}
+        <div class="video-url-wrapper swiper-slide">
+          <video data-src="{{ block.settings.video_url }}" controls preload="auto"></video>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="close"></div>
+</div>
+
 <script>
   $(function () {
-    const mySwiper = new Swiper('.video-scroll-wrapper', {
-      slidesPerView,
-      spaceBetween: 20,
-      speed: 600,
-      loop: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+    const abscissaSwiper = new Swiper('.img-wrapper', {
+      slidesPerView: 'auto',
+    });
+
+    const portraitSwiper = new Swiper('.portrait-screen', {
+      direction: 'vertical',
+      grabCursor: true,
+      // spaceBetween: 20,
+      mousewheel: true,
+      autoHeight: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      on: {
+        slideChange: function () {
+          loaderVideo(this.activeIndex);
+        },
       },
     });
+
+    const videoList = Array.from(document.querySelectorAll('.video-scroll-wrapper .video-img'));
+    const portraitScreen = document.querySelector('.portrait-screen');
+    const close = document.querySelector('.portrait-screen .close');
+    const video = Array.from(portraitScreen.querySelectorAll('video'));
+    const videoSrc = video.map((item) => item.dataset.src);
+
+    videoList.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        portraitScreen.style.display = 'block';
+        portraitSwiper.slideTo(index, 1000, false);
+        video[index].play();
+      });
+    });
+    close.addEventListener('click', () => {
+      portraitScreen.style.display = 'none';
+      video.forEach((item) => item.pause());
+    });
+
+    function loaderVideo(index) {
+      video.forEach((item) => item.pause());
+      video[index].src = videoSrc[index];
+      video[index].play();
+    }
   });
 </script>
 {% schema %}
 {
   "name": "video-scroll",
-  "settings": [
-    {
-      "type": "text",
-      "id": "h1",
-      "label": "Heading"
-    },
-    {
-      "type": "text",
-      "id": "sub_txt",
-      "label": "Sub Heading"
-    }
-  ],
   "blocks": [
     {
-      "type": "video_url",
-      "name": "video_url",
+      "type": "content",
+      "name": "content",
       "settings": [
         {
-          "type": "video_url",
+          "type": "image_picker",
+          "id": "image_picker",
+          "label": "image picker"
+        },
+        {
+          "type": "image_picker",
+          "id": "mb_image_picker",
+          "label": "mb image picker"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "alt"
+        }
+      ],
+      "limit": 1
+    },
+    {
+      "type": "block",
+      "name": "video",
+      "settings": [
+        {
+          "type": "url",
           "id": "video_url",
-          "label": "video url",
-          "accept": ["youtube", "vimeo"]
+          "label": "video url"
         },
         {
           "type": "image_picker",

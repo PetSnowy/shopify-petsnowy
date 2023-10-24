@@ -1,0 +1,39 @@
+{{ 'product-details.css' | asset_url | stylesheet_tag }}
+<section class="product-details page-width">
+  <div class="container">
+    <picture>
+      <source media="(min-width: 901px)" srcset="{{ section.settings.pc_image | img_url: 'master' }}">
+      <source media="(max-width: 900px)" srcset="{{ section.settings.mb_image | img_url: 'master' }}">
+      <img src="{{ section.settings.pc_image | img_url: 'master' }}" alt="{{ section.settings.text }}" decoding="async">
+    </picture>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "product details",
+  "settings": [
+    {
+      "type": "image_picker",
+      "label": "pc image",
+      "id": "pc_image"
+    },
+    {
+      "type": "image_picker",
+      "label": "mb image",
+      "id": "mb_image"
+    },
+    {
+      "type": "text",
+      "label": "text",
+      "id": "text"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "product details"
+    }
+  ]
+}
+{% endschema %}

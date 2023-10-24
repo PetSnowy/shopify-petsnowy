@@ -1,0 +1,185 @@
+{{ 'product-litter.css' | asset_url | stylesheet_tag }}
+
+<div class="product-litter page-width">
+  <div class="litter-img">
+    <picture>
+      <source media="(min-width: 901px)" srcset="{{ section.settings.image_1 | img_url: 'master' }}">
+      <source media="(max-width: 900px)" srcset="{{ section.settings.m_image_1  | img_url: 'master'}}">
+      <img src="{{ section.settings.image_1 | img_url: 'master'}}" alt="petsnowy" loading="lazy" decoding="async">
+    </picture>
+  </div>
+
+  <div class="litter-2">
+    <div class="container">
+      <div class="litter-content">
+        <p class="litter-title aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+          A Fresh Start to<br>
+          Your Morning Routine
+        </p>
+        <P class="litter-desc aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+          Everyday, PetSnowy filters out unwanted litters and maintains a clean, hygienic place for your cats.Want to
+          change the whole litter bed?With just one click or a tap on your phone,PetSnowy will dump and pack it up for
+          you.
+        </P>
+      </div>
+      <picture>
+        <source media="(min-width: 901px)" srcset="{{ section.settings.image_2 | img_url: 'master'}}">
+        <source media="(max-width: 900px)" srcset="{{ section.settings.m_image_2 | img_url: 'master'}}">
+        <img src="{{ section.settings.image_2 | img_url: 'master'}}" alt="petsnowy" loading="lazy" decoding="async">
+      </picture>
+    </div>
+  </div>
+
+  <div class="litter-3">
+    <div class="container">
+      <picture>
+        <source media="(min-width: 901px)" srcset="{{ section.settings.image_3| img_url: 'master' }}">
+        <source media="(max-width: 900px)" srcset="{{ section.settings.m_image_3 | img_url: 'master'}}">
+        <img src="{{ section.settings.image_3 | img_url: 'master'}}" alt="petsnowy" loading="lazy" decoding="async">
+      </picture>
+      <div class="litter-content">
+        <p class="litter-title aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+          You have cats AND your house smells good!
+        </p>
+        <P class="litter-desc aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+          <span class="special">3-Stage Deodorization</span> TiO2 System <span class="thick">decomposes</span> bacteria
+          and fungi Robertet Fragrance <span class="thick">neutralizes</span> smelly factorsEnclosed structure
+          <span class="thick">contains</span> the odor
+        </P>
+      </div>
+    </div>
+  </div>
+
+  <div class="litter-4">
+    <div class="container">
+      <div class="litter-content">
+        <p class="litter-title aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+          Pull to pack<br>
+          trap in odors and dust
+        </p>
+        <P class="litter-desc aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+          Patented self-packing design automatically pack the waste for you so you can keep your hands and your nose
+          clean.Avoid direct exposure to the harm and the foul!lt's self-pack yet not sealed so you can still check on
+          your cats’ health if you want.
+        </P>
+      </div>
+      <picture>
+        <source media="(min-width: 901px)" srcset="{{ section.settings.image_4 | img_url: 'master'}}">
+        <source media="(max-width: 900px)" srcset="{{ section.settings.m_image_4 | img_url: 'master'}}">
+        <img src="{{ section.settings.image_4 | img_url: 'master'}}" alt="petsnowy" loading="lazy" decoding="async">
+      </picture>
+    </div>
+  </div>
+
+  <div class="litter-5">
+    <div class="container">
+      <picture>
+        <source media="(min-width: 901px)" srcset="{{ section.settings.image_5 | img_url: 'master'}}">
+        <source media="(max-width: 900px)" srcset="{{ section.settings.m_image_5 | img_url: 'master'}}">
+        <img src="{{ section.settings.image_5 | img_url: 'master'}}" alt="petsnowy" loading="lazy" decoding="async">
+      </picture>
+      <div class="litter-content">
+        <p class="litter-title aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+          Max the good,<br>
+          nix the bad.<br>
+          More details <br>
+          Less work
+        </p>
+        <P class="litter-desc aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+          *Anti-tracking curved walkway design,keeps the litter in and your floor clean.Trap litter at its source with
+          the included walkway mat that's gentle on your cats feet.
+        </P>
+      </div>
+    </div>
+  </div>
+
+  <div class="litter-6">
+    <div class="container">
+      <picture>
+        <source media="(min-width: 901px)" srcset="{{ section.settings.image_6 | img_url: 'master'}}">
+        <source media="(max-width: 900px)" srcset="{{ section.settings.m_image_6 | img_url: 'master'}}">
+        <img src="{{ section.settings.image_6 | img_url: 'master'}}" alt="petsnowy" loading="lazy" decoding="async">
+      </picture>
+      <div class="litter-content">
+        <p class="litter-desc aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+          * PetSnowy's magnetic assembly design maxed the good and nixed the bad.Assembling and disassembling could be a
+          breeze.The machine is super low-maintenance,with no need to worry about any components falling off,minimizing
+          wear and tear.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "product-liter",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "image_1"
+    },
+    {
+      "type": "image_picker",
+      "id": "m_image_1",
+      "label": "m_image_1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "image_2"
+    },
+    {
+      "type": "image_picker",
+      "id": "m_image_2",
+      "label": "m_image_2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "image_3"
+    },
+    {
+      "type": "image_picker",
+      "id": "m_image_3",
+      "label": "m_image_3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "image_4"
+    },
+    {
+      "type": "image_picker",
+      "id": "m_image_4",
+      "label": "m_image_4"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_5",
+      "label": "image_5"
+    },
+    {
+      "type": "image_picker",
+      "id": "m_image_5",
+      "label": "m_image_5"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_6",
+      "label": "image_6"
+    },
+    {
+      "type": "image_picker",
+      "id": "m_image_6",
+      "label": "m_image_6"
+    }
+  ],
+  "presets": [
+    {
+      "name": "product-liter"
+    }
+  ]
+}
+{% endschema %}

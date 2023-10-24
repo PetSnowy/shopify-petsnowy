@@ -1,129 +1,5 @@
 {
   "sections": {
-    "4d44ea99-36fa-4b09-b6c5-b92fc20bca96": {
-      "type": "banner-video",
-      "settings": {
-        "vdio_img": "shopify:\/\/shop_images\/video-banner-litter-box.jpg",
-        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e62ade0547cf430bbd64ff3316993dae.mp4",
-        "mobvdio_img": "shopify:\/\/shop_images\/video-banner-litter-box.jpg",
-        "mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e62ade0547cf430bbd64ff3316993dae.mp4",
-        "heading": "",
-        "sub_heading": "",
-        "btn_text": "",
-        "btn_url": ""
-      }
-    },
-    "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8": {
-      "type": "rich-text",
-      "blocks": {
-        "b504c877-67df-4d07-b421-9fac2e31e94f": {
-          "type": "text",
-          "settings": {
-            "text": "<h1>SNOW<sup>+<\/sup> Self-cleaning Litter Box<\/h1><span><span> Sign up for extra $40 OFF your litter box. <br> <span><span>Note: For discounted prices, remember to use your code at checkout-Order Summary.<\/span><\/span><\/span><\/span>"
-          }
-        }
-      },
-      "block_order": [
-        "b504c877-67df-4d07-b421-9fac2e31e94f"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 56,
-        "padding_bottom": 40
-      }
-    },
-    "635deaad-6797-4ca6-9a10-c443617e9573": {
-      "type": "product-collection-list",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Bg_Image.png",
-        "title": "Your Collection Text Here",
-        "text": "Your Text Here",
-        "url": "",
-        "images": "shopify:\/\/shop_images\/Bg_Image_1.png",
-        "titles": "Your Collection Text Here",
-        "texts": "Your Text Here",
-        "urls": "",
-        "padding_top": 40,
-        "padding_bottom": 12
-      }
-    },
-    "bfc32d8d-f32f-433d-b324-db861a14296b": {
-      "type": "image-with-text",
-      "blocks": {
-        "abc2bcd5-6191-4bf7-81c0-7bb701779bf7": {
-          "type": "heading",
-          "settings": {
-            "heading": "Save Big on Everything During Prime Day",
-            "heading_size": "h1"
-          }
-        },
-        "3a6e402d-49f0-4ec4-af1c-f09ab7565126": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Note: This offer cannot be combined with any other discount code.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "4e98a2c8-6125-4157-aac1-0789bcaf11bc": {
-          "type": "caption",
-          "settings": {
-            "caption": "",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "abc2bcd5-6191-4bf7-81c0-7bb701779bf7",
-        "3a6e402d-49f0-4ec4-af1c-f09ab7565126",
-        "4e98a2c8-6125-4157-aac1-0789bcaf11bc"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/banner-mb2.jpg",
-        "image_mob": "shopify:\/\/shop_images\/banner-mb2.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "chek_wth": true,
-        "mobile_content_alignment": "center",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "b6e45bc2-2133-4106-a9db-61ab406abfe6": {
-      "type": "Product-video",
-      "disabled": true,
-      "settings": {
-        "vdio_img": "shopify:\/\/shop_images\/video.png",
-        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/86480277b00d435bbbba6e62c6b5f781.mp4",
-        "heading": "Your Video Text Here",
-        "text": "Your Video Text Here",
-        "padding_top": 20,
-        "padding_bottom": 40
-      }
-    },
-    "67351f1a-11a8-4ea8-b339-d27d634a1cce": {
-      "type": "product-inventory",
-      "settings": {
-        "card_title": "First 50 Customers Only",
-        "title": "Halloween USA Perk",
-        "pc_inventory_image": "shopify:\/\/shop_images\/halloween-pc-_1013.jpg",
-        "mb_inventory_image": "shopify:\/\/shop_images\/halloween-pc-_1013.jpg",
-        "desc": "This offer is currently available to customers in the US only. We apologize for any inconvenience.",
-        "card_text": "Remaining Cat Carrier:",
-        "pc_image": "shopify:\/\/shop_images\/cat_carrier.jpg",
-        "mb_image": "shopify:\/\/shop_images\/cat_carrier_mb.jpg"
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -161,63 +37,10 @@
           "settings": {
           }
         },
-        "9282e18d-720c-4943-a475-ee6a154261c7": {
-          "type": "product-recommendation",
-          "disabled": true,
-          "settings": {
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
           }
         }
       },
@@ -228,370 +51,291 @@
         "variant_picker",
         "quantity_selector",
         "0d30c098-08a5-4f81-b4d9-68932b875783",
-        "9282e18d-720c-4943-a475-ee6a154261c7",
-        "buy_buttons",
-        "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "share"
+        "buy_buttons"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": true,
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "b795a7b8-a6ac-4651-83cd-1e8d0fdcfc8d": {
+      "type": "update-main-product",
+      "blocks": {
+        "7b11a55c-6ec4-4bc0-abb9-e281750a2438": {
+          "type": "score",
+          "settings": {
+          }
+        },
+        "14560b85-a973-48ed-b54c-521a105a7338": {
+          "type": "text",
+          "settings": {
+            "text": "petsnowy",
+            "text_style": "body"
+          }
+        },
+        "6395df9a-b9ba-4c9f-b5f3-b9aa4e066d9a": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "db7ae0c8-2164-4aca-af32-842017294d7b": {
+          "type": "desc",
+          "settings": {
+            "desc": "Finally, a litter box that collects all scoop ideas."
+          }
+        },
+        "6a399bde-51fa-4e1b-9d5f-2da76fb78fef": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "1f9b5977-9f8f-4b69-bdbc-8e0befd75498": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "6ddce2c3-cc0d-4756-bcc4-8d7683515ce9": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "a69e55e6-eeec-4c69-8e9a-37430f97f274": {
+          "type": "product_acessories",
+          "settings": {
+          }
+        },
+        "05cb21c2-0c29-4df1-b74e-eb0cdefdd661": {
+          "type": "product-guarantee",
+          "settings": {
+            "image_picker": "shopify:\/\/shop_images\/litter-box.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/m_litter-box.png",
+            "alt": ""
+          }
+        },
+        "8f31d2dd-ef4a-4482-a712-0de24ed18939": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        }
+      },
+      "block_order": [
+        "7b11a55c-6ec4-4bc0-abb9-e281750a2438",
+        "14560b85-a973-48ed-b54c-521a105a7338",
+        "6395df9a-b9ba-4c9f-b5f3-b9aa4e066d9a",
+        "db7ae0c8-2164-4aca-af32-842017294d7b",
+        "6a399bde-51fa-4e1b-9d5f-2da76fb78fef",
+        "1f9b5977-9f8f-4b69-bdbc-8e0befd75498",
+        "6ddce2c3-cc0d-4756-bcc4-8d7683515ce9",
+        "a69e55e6-eeec-4c69-8e9a-37430f97f274",
+        "05cb21c2-0c29-4df1-b74e-eb0cdefdd661",
+        "8f31d2dd-ef4a-4482-a712-0de24ed18939"
       ],
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
         "gallery_layout": "stacked",
-        "media_size": "small",
+        "media_size": "large",
         "mobile_thumbnails": "hide",
-        "hide_variants": true,
+        "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 12
+        "padding_bottom": 36
       }
     },
-    "599cc0d0-32c9-41d6-a9cc-be074b50f9cd": {
-      "type": "product-inventory",
+    "14dad76e-4e1a-456f-bcf0-cdeafe2ea7f6": {
+      "type": "video-scroll",
+      "blocks": {
+        "d63b4da5-cd71-462a-89a9-9f31a1c5b75e": {
+          "type": "content",
+          "settings": {
+            "image_picker": "shopify:\/\/shop_images\/video-srcoll.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/322.png",
+            "alt": ""
+          }
+        },
+        "bae4eb26-a544-42d8-ad01-b80dc1f21755": {
+          "type": "block",
+          "settings": {
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/ec9a08a5764c47beb88447699b56b704.mp4",
+            "image_picker": "shopify:\/\/shop_images\/1_0c748f69-fba6-4639-ba45-232cbdb6ab7f.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/1_1.png",
+            "image_alt": "petsnowy litter box review"
+          }
+        },
+        "9f69afc5-1826-4562-b4ec-da18a71b215a": {
+          "type": "block",
+          "settings": {
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5f38abcedf0f4825bba962ad8b07013c.mp4",
+            "image_picker": "shopify:\/\/shop_images\/2_754ef3b9-8102-4d99-849b-37d59ab6d5ad.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/2_1.png",
+            "image_alt": "cat litter box"
+          }
+        },
+        "12c5243e-5b1e-4213-b004-4a8a4f9bbeab": {
+          "type": "block",
+          "settings": {
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/cab9e68aabdd40368daf52cc25449744.mp4",
+            "image_picker": "shopify:\/\/shop_images\/6_1.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/6_2.png",
+            "image_alt": "petsnowy review"
+          }
+        },
+        "bd97d9ae-9df4-41d6-b6f6-17eea80a1c47": {
+          "type": "block",
+          "settings": {
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/93daf5c9770e4fe797f8f10d160f706e.mp4",
+            "image_picker": "shopify:\/\/shop_images\/3_dc74b216-22c6-4427-a33d-a37571277d56.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/3_1.png",
+            "image_alt": "petsnowy self-cleaning litter box review"
+          }
+        },
+        "786ec155-819f-4e8f-93d3-7780d0a13da3": {
+          "type": "block",
+          "settings": {
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/dfe0987fa314402ba83e72c5b4309c98.mp4",
+            "image_picker": "shopify:\/\/shop_images\/4.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/4_1.png",
+            "image_alt": "self-cleaning review"
+          }
+        },
+        "9c370b5f-4f8b-48da-b489-d4b3deffe0f3": {
+          "type": "block",
+          "settings": {
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/82eefb89f78340e882fb267307d59cbc.mov",
+            "image_picker": "shopify:\/\/shop_images\/5.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/5_1.png",
+            "image_alt": "litterbox"
+          }
+        }
+      },
+      "block_order": [
+        "d63b4da5-cd71-462a-89a9-9f31a1c5b75e",
+        "bae4eb26-a544-42d8-ad01-b80dc1f21755",
+        "9f69afc5-1826-4562-b4ec-da18a71b215a",
+        "12c5243e-5b1e-4213-b004-4a8a4f9bbeab",
+        "bd97d9ae-9df4-41d6-b6f6-17eea80a1c47",
+        "786ec155-819f-4e8f-93d3-7780d0a13da3",
+        "9c370b5f-4f8b-48da-b489-d4b3deffe0f3"
+      ],
+      "settings": {
+      }
+    },
+    "12a77462-3e98-474a-abc4-10be330a3dc3": {
+      "type": "product-navbar",
+      "settings": {
+      }
+    },
+    "4e093d3d-b091-47db-ad62-81ec088c925c": {
+      "type": "product-litter",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/1_cf3d2876-3ee5-4b6a-baa4-161ddb6262f0.png",
+        "m_image_1": "shopify:\/\/shop_images\/m1.png",
+        "image_2": "shopify:\/\/shop_images\/2-2.png",
+        "m_image_2": "shopify:\/\/shop_images\/m2-2.png",
+        "image_3": "shopify:\/\/shop_images\/3-1.png",
+        "m_image_3": "shopify:\/\/shop_images\/m3-1.png",
+        "image_4": "shopify:\/\/shop_images\/4-2.png",
+        "m_image_4": "shopify:\/\/shop_images\/m4-2.png",
+        "image_5": "shopify:\/\/shop_images\/5-1.png",
+        "m_image_5": "shopify:\/\/shop_images\/m5-1.png",
+        "image_6": "shopify:\/\/shop_images\/5-3.png",
+        "m_image_6": "shopify:\/\/shop_images\/m5-3.png"
+      }
+    },
+    "38c4023c-1b9f-4a34-a306-87932c288c00": {
+      "type": "product-swiper",
+      "blocks": {
+        "66b355ee-8510-470a-b1b9-8d679a139521": {
+          "type": "block",
+          "settings": {
+            "image_picker": "shopify:\/\/shop_images\/mb.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/1_6a75e583-839c-4c98-8eb0-a6314f810c50.png",
+            "image_alt": ""
+          }
+        },
+        "4be37102-0b25-4c8d-bcca-c3902e82df5b": {
+          "type": "block",
+          "settings": {
+            "image_picker": "shopify:\/\/shop_images\/mb2.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/2_131f47f8-985d-4c49-81a7-e61d21f694e6.png",
+            "image_alt": ""
+          }
+        },
+        "3021452c-d00a-4e2c-acb9-8b867b1b654a": {
+          "type": "block",
+          "settings": {
+            "image_picker": "shopify:\/\/shop_images\/mb3.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/3_1963219d-836d-400e-a0d1-ef93c5fce7b6.png",
+            "image_alt": ""
+          }
+        },
+        "ca7de1d8-4020-45dc-b002-e6dcb9dd9375": {
+          "type": "block",
+          "settings": {
+            "image_picker": "shopify:\/\/shop_images\/mb4.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/4_bbbd950a-bdab-4d4c-a60c-946c565a0d65.png",
+            "image_alt": ""
+          }
+        },
+        "2a4cad02-b559-403d-a01f-d669562567d6": {
+          "type": "block",
+          "settings": {
+            "image_picker": "shopify:\/\/shop_images\/mb5.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/5_d7b37cc2-d543-438c-ac9d-0c41bf8a9d8f.png",
+            "image_alt": ""
+          }
+        }
+      },
+      "block_order": [
+        "66b355ee-8510-470a-b1b9-8d679a139521",
+        "4be37102-0b25-4c8d-bcca-c3902e82df5b",
+        "3021452c-d00a-4e2c-acb9-8b867b1b654a",
+        "ca7de1d8-4020-45dc-b002-e6dcb9dd9375",
+        "2a4cad02-b559-403d-a01f-d669562567d6"
+      ],
+      "settings": {
+        "image_title": "shopify:\/\/shop_images\/Cat_care_at_your_fingertips.png",
+        "mb_image_title": "shopify:\/\/shop_images\/Cat_care_at_your_fingertips__1.png",
+        "image_alt": ""
+      }
+    },
+    "353b1682-6ed4-47f5-b3c1-eec15917e003": {
+      "type": "product-safety",
+      "settings": {
+        "image_title": "shopify:\/\/shop_images\/product-safety.png",
+        "mb_image_title": "shopify:\/\/shop_images\/safety.png",
+        "image_alt": "product-safety"
+      }
+    },
+    "81086820-fa02-40bd-afc9-97d991823309": {
+      "type": "product-three",
       "disabled": true,
       "settings": {
-        "card_title": "",
-        "title": "",
-        "desc": "",
-        "card_text": ""
       }
     },
-    "8182050c-943a-4a32-ab7c-994213dca849": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--18597232574786__8182050c-943a-4a32-ab7c-994213dca849-16837919518e59bda4-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Cutting-Edge Triple Deodorization System",
-            "heading_size": "h1"
-          }
-        },
-        "8849905a-14b4-4979-ab7a-5456bfd3ce9f": {
-          "type": "caption",
-          "settings": {
-            "caption": "Odor free • Perfectly safe • Eco friendly",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "template--18597232574786__8182050c-943a-4a32-ab7c-994213dca849-16837919518e59bda4-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Remove the root of unpleasant smell, add a fresh and luscious aroma to your SNOW⁺ litter box.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "template--18597232574786__8182050c-943a-4a32-ab7c-994213dca849-16837919518e59bda4-0",
-        "8849905a-14b4-4979-ab7a-5456bfd3ce9f",
-        "template--18597232574786__8182050c-943a-4a32-ab7c-994213dca849-16837919518e59bda4-1"
-      ],
+    "5ac8a14d-3c18-430e-b4a9-01b548701dff": {
+      "type": "product-quiet",
       "settings": {
-        "image": "shopify:\/\/shop_images\/1_3_b3611787-0b37-4063-973e-d27ad48f3266.jpg",
-        "image_mob": "shopify:\/\/shop_images\/1_3_b3611787-0b37-4063-973e-d27ad48f3266.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "chek_wth": true,
-        "mobile_content_alignment": "center",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "title": "Whisper Quiet Joy and only joy",
+        "image": "shopify:\/\/shop_images\/6-2.png",
+        "mb_image": "shopify:\/\/shop_images\/quiet-m.png"
       }
     },
-    "6c8b3f43-2aa2-4945-be93-92dc90208d43": {
-      "type": "image-with-text",
-      "blocks": {
-        "0a936c4f-1090-460a-84f1-ffc74e2f1fe6": {
-          "type": "heading",
-          "settings": {
-            "heading": "Effortless, Convenient, and Sanitary",
-            "heading_size": "h1"
-          }
-        },
-        "29429228-f2c2-4b01-a351-de3c245dc20f": {
-          "type": "caption",
-          "settings": {
-            "caption": "self-sealing • 2 weeks free of scooping • Patented design",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "10ae94d6-61db-4fa7-9351-767ff351dc71": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Always find an odorless and dry waste bag ready to be disposed of. The cleanest cat waste disposal experience ever.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "0a936c4f-1090-460a-84f1-ffc74e2f1fe6",
-        "29429228-f2c2-4b01-a351-de3c245dc20f",
-        "10ae94d6-61db-4fa7-9351-767ff351dc71"
-      ],
+    "366d64d6-8243-4b52-84b2-5b3a1336b500": {
+      "type": "product-details",
       "settings": {
-        "image": "shopify:\/\/shop_images\/2_3_d6d3015b-46b7-4d0e-8d41-53838683a50e.jpg",
-        "image_mob": "shopify:\/\/shop_images\/2_3_d6d3015b-46b7-4d0e-8d41-53838683a50e.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "chek_wth": true,
-        "mobile_content_alignment": "center",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "58321a20-dbda-462b-98d1-9ac45de56483": {
-      "type": "image-with-text",
-      "blocks": {
-        "ce00eb3e-edc9-415f-a93e-cbaa04039092": {
-          "type": "heading",
-          "settings": {
-            "heading": "The Cleanest Litter Box Yet",
-            "heading_size": "h1"
-          }
-        },
-        "7573ac64-8c42-4866-b56e-e0d394976a62": {
-          "type": "caption",
-          "settings": {
-            "caption": "curved walkway • SNOW⁺ litter mat • side entrance",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "9563dc4c-c660-45f8-a17a-a336b29a4f40": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Designed with intention, the curved walkway with mat was crafted to both leave the litter in and the doorway clean. <\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "ce00eb3e-edc9-415f-a93e-cbaa04039092",
-        "7573ac64-8c42-4866-b56e-e0d394976a62",
-        "9563dc4c-c660-45f8-a17a-a336b29a4f40"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/3_5_8ca7eb0b-8ad1-4a55-9920-4eab9a45b9fb.jpg",
-        "image_mob": "shopify:\/\/shop_images\/3_5_8ca7eb0b-8ad1-4a55-9920-4eab9a45b9fb.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "chek_wth": true,
-        "mobile_content_alignment": "center",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "19e9f25b-39eb-48f1-8c86-9308c2fe2f3d": {
-      "type": "image-with-text",
-      "blocks": {
-        "e81bcd58-b345-4c9a-8f97-e49cddbd08b7": {
-          "type": "heading",
-          "settings": {
-            "heading": "And Safest, Ever",
-            "heading_size": "h1"
-          }
-        },
-        "d22d9df0-d285-4c75-9c31-e1599789dc61": {
-          "type": "caption",
-          "settings": {
-            "caption": "smart sensors • anti-clamp • app notification",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "3ccf5e97-2e62-45c4-816e-faeaab032cec": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Safety is of utmost important, the integrated SnowSafe⁺ System continuously analyzes 4 zones to ensure kitty’s safety.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "e81bcd58-b345-4c9a-8f97-e49cddbd08b7",
-        "d22d9df0-d285-4c75-9c31-e1599789dc61",
-        "3ccf5e97-2e62-45c4-816e-faeaab032cec"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/5_17_5b1f9aec-966f-4c8a-bc06-4cf8a0872bdc.jpg",
-        "image_mob": "shopify:\/\/shop_images\/5_17_5b1f9aec-966f-4c8a-bc06-4cf8a0872bdc.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "chek_wth": true,
-        "mobile_content_alignment": "center",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "58d276f3-46b1-43b3-88fd-33aecbac841a": {
-      "type": "image-with-text",
-      "blocks": {
-        "f2d3099e-7f82-4dfa-adf8-fc126b1de423": {
-          "type": "heading",
-          "settings": {
-            "heading": "Mobile Control",
-            "heading_size": "h1"
-          }
-        },
-        "ae54ae90-8a4a-4842-8254-a8757a667737": {
-          "type": "caption",
-          "settings": {
-            "caption": "Real-Time Tracking • Cat Recognition • Health Insights • Multi-cat friendly",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "e40294b3-aa83-405e-b467-cab4eb3f4c07": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Check kitty’s usage, waste drawer status, and more with just a tap in the PetSnowy app.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "f2d3099e-7f82-4dfa-adf8-fc126b1de423",
-        "ae54ae90-8a4a-4842-8254-a8757a667737",
-        "e40294b3-aa83-405e-b467-cab4eb3f4c07"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/6_1_92c42148-4bb9-404a-9f75-814e30ec2682.jpg",
-        "image_mob": "shopify:\/\/shop_images\/6_1_92c42148-4bb9-404a-9f75-814e30ec2682.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "chek_wth": true,
-        "mobile_content_alignment": "center",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "03727ca6-4d51-464a-9105-edc5bf54883b": {
-      "type": "image-with-text",
-      "blocks": {
-        "d36ec3ea-ef89-42f5-ae3a-d7bd8a425f45": {
-          "type": "heading",
-          "settings": {
-            "heading": "Super Easy to Assemble, Extremely Easy to Clean",
-            "heading_size": "h1"
-          }
-        },
-        "e93e8df0-984c-4842-a211-a828b0b61908": {
-          "type": "caption",
-          "settings": {
-            "caption": "Everything Magnetic • high-grade materials • fine craftsmanship",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "78461c76-059e-4db0-b880-28dd051ceb54": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Each part seamlessly attaches to and detaches from the next one. Effortlessly assemble and disassemble to clean when necessary.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "d36ec3ea-ef89-42f5-ae3a-d7bd8a425f45",
-        "e93e8df0-984c-4842-a211-a828b0b61908",
-        "78461c76-059e-4db0-b880-28dd051ceb54"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/4_11_a945091b-6b52-4ad6-ae88-c8a518eed752.jpg",
-        "image_mob": "shopify:\/\/shop_images\/4_11_a945091b-6b52-4ad6-ae88-c8a518eed752.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "chek_wth": true,
-        "mobile_content_alignment": "center",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "909b5ce5-d2e3-4008-a0a9-f437c0b89bb4": {
-      "type": "collapsible-content",
-      "blocks": {
-        "template--19468281676098__909b5ce5-d2e3-4008-a0a9-f437c0b89bb4-1688697103844d3bed-0": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Specification",
-            "icon": "none",
-            "row_content": "",
-            "page": "dimension"
-          }
-        },
-        "template--19468281676098__909b5ce5-d2e3-4008-a0a9-f437c0b89bb4-1688697103844d3bed-2": {
-          "type": "collapsible_row",
-          "disabled": true,
-          "settings": {
-            "heading": "Warranty",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": "returns-refunds"
-          }
-        },
-        "template--19468281676098__909b5ce5-d2e3-4008-a0a9-f437c0b89bb4-1688697103844d3bed-3": {
-          "type": "collapsible_row",
-          "disabled": true,
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--19468281676098__909b5ce5-d2e3-4008-a0a9-f437c0b89bb4-1688697103844d3bed-0",
-        "template--19468281676098__909b5ce5-d2e3-4008-a0a9-f437c0b89bb4-1688697103844d3bed-2",
-        "template--19468281676098__909b5ce5-d2e3-4008-a0a9-f437c0b89bb4-1688697103844d3bed-3"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "background-1",
-        "container_color_scheme": "background-2",
-        "open_first_collapsible_row": true,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "pc_image": "shopify:\/\/shop_images\/litter-specs.png",
+        "mb_image": "shopify:\/\/shop_images\/10.png",
+        "text": "specs"
       }
     },
     "16879203322247258f": {
@@ -675,26 +419,103 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "56deef84-d980-4c9f-9540-51306bd2c569": {
+      "type": "Q-and-A",
+      "blocks": {
+        "8b7a5003-244c-4a64-af9c-4a9862ee7e5b": {
+          "type": "block",
+          "settings": {
+            "h3": "Does SNOW⁺ require special litter?",
+            "text": "SNOW⁺ operates efficiently with clumping litter. We advise using a premium, standard-weight, clay-based clumping litter. Additionally, you can use certain silica gel litter beads and crystals with SNOW⁺ as long as they can pass through the screen. <br>Plant-based alternatives may also be compatible, but they often produce less compact clumps that might lead to moisture accumulation in the waste drawer. When opting for a plant-based litter with SNOW⁺, consider more frequent waste drawer emptying and cleaning. <br>Litters that are not suitable for SNOW⁺ include those designed solely for absorption, non-clumping or those with loose clumping properties, newspaper-based options, and absorbent wood pellet litter.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "ee02129a-3aa0-424a-a87c-3e2e1ae9d313": {
+          "type": "block",
+          "settings": {
+            "h3": "How many cats can use SNOW⁺?",
+            "text": "We recommend having up to 4 indoor cats using a single SNOW⁺ unit. <br>Here's a general guideline: with one cat using SNOW⁺, you may need to empty the waste drawer every 2 weeks. For two cats, it might be once a week, and for three cats, twice a week, and so forth. SNOW⁺ features an expanded waste drawer for greater waste capacity, reducing the frequency of emptying. SNOW⁺ initiates a cleaning cycle 4 minutes after each use, but if another cat interrupts this period, the timer will reset for another 4 minutes, potentially leaving waste in the litter for more than 4 minutes. Having too many cats per SNOW⁺ unit may result in the litter not being completely clean for the next use.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "3b223a38-8017-4cdf-8b49-6af514062978": {
+          "type": "block",
+          "settings": {
+            "h3": "Will my cat actually go inside the globe?",
+            "text": "Cats are naturally inquisitive and tend to explore new objects. If your cat is accustomed to a covered litter box, they might adapt more quickly to SNOW⁺. We recommend initially keeping SNOW⁺ turned off while your cat gets used to it. Place SNOW⁺ in the same spot as your old litter box. You can keep the old litter box nearby for a short period. Take a cup of litter from the old box and mix it with the clean litter in SNOW⁺. This will provide a familiar scent, encouraging your cat to investigate. Once your cat steps inside and feels the litter, they should instinctively know what to do.For further guidance on acclimating your cat, please refer to our <a href=\"https:\/\/youtu.be\/niHla6NYpn0\"> resources.<\/a>",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "6b1c20fc-4172-4b07-a62a-ee923af5d8e7": {
+          "type": "block",
+          "settings": {
+            "h3": "Can kittens use SNOW⁺ ?",
+            "text": "Kittens weighing 3.3 pounds or more can safely use SNOW⁺ in automatic mode. For kittens below this weight threshold, turn off automatic cleaning and opt for \"semi-automatic\" mode. To do this, deactivate automatic cleaning in the PetSnowy APP and manually initiate the cleaning process pressing the clean button or the App once or twice daily (ensure the kitten is not inside the machine when pressing the button). This approach ensures your kitten's safety during their early encounters with SNOW⁺, while also relieving you of the need to manually scoop the litter box.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "d5e60985-1d58-4cd9-8a79-5c6f23b31051": {
+          "type": "block",
+          "settings": {
+            "h3": "Does SNOW⁺ have a weight limit?",
+            "text": "Literally saying, SNOW⁺ doesn't have a weight limit, but we recommend it for cats weighing less than 20 lbs (9 kg) for the best comfort of your feline friend.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "ca37dc4b-bc8c-4e58-827a-faae3caed0ca": {
+          "type": "block",
+          "settings": {
+            "h3": "How much litter should I add to SNOW⁺?",
+            "text": "Fill the globe with litter until it reaches the max fill line on the rubber globe liner when it's spread flat. This is approximately 10 pounds of clumping litter (4.8 kg), 5 pounds of tofu litter (2.4 kg) by weight, or 1 gallon (4L) by volume. Be cautious not to overfill the globe. Since the waste clumps are removed during each cycle, there's no need to use an excessive amount of litter in the globe.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "13c7a007-bb18-46a1-ae04-f7804a36c73b": {
+          "type": "block",
+          "settings": {
+            "h3": "How frequently should I refill litter in SNOW⁺?",
+            "text": "SNOW⁺ is highly efficient in its litter usage due to its patented sifting system, which only removes the clumps. We suggest verifying the litter level in comparison to the maximum fill line (found on the globe's rubber liner) each time you empty the waste drawer. This typically occurs about once every two weeks for a single cat or once a week for households with multiple cats. Ensure not to overfill the globe.",
+            "youtube_video": "",
+            "video": ""
+          }
+        }
+      },
+      "block_order": [
+        "8b7a5003-244c-4a64-af9c-4a9862ee7e5b",
+        "ee02129a-3aa0-424a-a87c-3e2e1ae9d313",
+        "3b223a38-8017-4cdf-8b49-6af514062978",
+        "6b1c20fc-4172-4b07-a62a-ee923af5d8e7",
+        "d5e60985-1d58-4cd9-8a79-5c6f23b31051",
+        "ca37dc4b-bc8c-4e58-827a-faae3caed0ca",
+        "13c7a007-bb18-46a1-ae04-f7804a36c73b"
+      ],
+      "settings": {
+        "h1": "",
+        "sub_txt": ""
+      }
     }
   },
   "order": [
-    "4d44ea99-36fa-4b09-b6c5-b92fc20bca96",
-    "5f4b16e5-b0f5-4ce8-9f9e-466723a2a6e8",
-    "635deaad-6797-4ca6-9a10-c443617e9573",
-    "bfc32d8d-f32f-433d-b324-db861a14296b",
-    "b6e45bc2-2133-4106-a9db-61ab406abfe6",
-    "67351f1a-11a8-4ea8-b339-d27d634a1cce",
     "main",
-    "599cc0d0-32c9-41d6-a9cc-be074b50f9cd",
-    "8182050c-943a-4a32-ab7c-994213dca849",
-    "6c8b3f43-2aa2-4945-be93-92dc90208d43",
-    "58321a20-dbda-462b-98d1-9ac45de56483",
-    "19e9f25b-39eb-48f1-8c86-9308c2fe2f3d",
-    "58d276f3-46b1-43b3-88fd-33aecbac841a",
-    "03727ca6-4d51-464a-9105-edc5bf54883b",
-    "909b5ce5-d2e3-4008-a0a9-f437c0b89bb4",
+    "b795a7b8-a6ac-4651-83cd-1e8d0fdcfc8d",
+    "14dad76e-4e1a-456f-bcf0-cdeafe2ea7f6",
+    "12a77462-3e98-474a-abc4-10be330a3dc3",
+    "4e093d3d-b091-47db-ad62-81ec088c925c",
+    "38c4023c-1b9f-4a34-a306-87932c288c00",
+    "353b1682-6ed4-47f5-b3c1-eec15917e003",
+    "81086820-fa02-40bd-afc9-97d991823309",
+    "5ac8a14d-3c18-430e-b4a9-01b548701dff",
+    "366d64d6-8243-4b52-84b2-5b3a1336b500",
     "16879203322247258f",
     "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
-    "product-recommendations"
+    "product-recommendations",
+    "56deef84-d980-4c9f-9540-51306bd2c569"
   ]
 }

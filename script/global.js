@@ -6,6 +6,61 @@ function getFocusableElements(container) {
 	);
 }
 
+class ProductInventory extends HTMLElement {
+	constructor() {
+		super();
+		this.yRange = [-5, 5];
+		this.xRange = [-5, 5];
+		if (window.innerWidth > 901) {
+			this.addEventListener('mousemove', (e) => this.onmousemove(e));
+			this.addEventListener('mouseout', this.handleMouseout);
+		}
+	}
+
+	static get observedAttributes() {
+		return ['y-range', 'x-range'];
+	}
+
+	attributeChangedCallback(name, oldValue, newValue) {
+		if (name === 'y-range') {
+			this.yRange = newValue.split(',').map(parseFloat);
+		} else if (name === 'x-range') {
+			this.xRange = newValue.split(',').map(parseFloat);
+		}
+	}
+
+	connectedCallback() {
+		if (this.hasAttribute('y-range')) {
+			this.yRange = this.getAttribute('y-range').split(',').map(parseFloat);
+		}
+		if (this.hasAttribute('x-range')) {
+			this.xRange = this.getAttribute('x-range').split(',').map(parseFloat);
+		}
+	}
+
+	getRotate = (range, value, max) => (value / max) * (range[1] - range[0]) + range[0];
+
+	onmousemove(e) {
+		const { offsetX, offsetY } = e;
+		const { offsetWidth, offsetHeight } = this;
+		const ry = -this.getRotate(this.yRange, offsetX, offsetWidth);
+		const rx = this.getRotate(this.xRange, offsetY, offsetHeight);
+		this.style.transform = `perspective(700px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+		this.style.transition = 'none';
+	}
+
+	handleMouseout() {
+		this.style.transition = 'transform 0.3s ease';
+		this.style.transform = 'rotateX(0deg) rotateY(0deg)';
+	}
+
+	disconnectedCallback() {
+		this.removeEventListener('mousemove', this.onmousemove);
+		this.removeEventListener('mouseout', this.handleMouseout);
+	}
+}
+customElements.define('product-inventory', ProductInventory);
+
 document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
 	summary.setAttribute('role', 'button');
 	summary.setAttribute('aria-expanded', summary.parentNode.hasAttribute('open'));

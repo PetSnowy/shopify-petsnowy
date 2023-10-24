@@ -1,0 +1,88 @@
+{{ 'product-navbar.css' | asset_url | stylesheet_tag }}
+
+<div class="product-main">
+  <nav class="product-navbar">
+    <ul class="list page-width">
+      <li>Details</li>
+      <li>Specs</li>
+      <li>Review</li>
+      <li>FAQ</li>
+    </ul>
+    <div class="line"></div>
+  </nav>
+</div>
+
+<script>
+  $(function () {
+    init();
+    function init() {
+      const height =
+        document.querySelector('#product-indiegogo').offsetHeight +
+        document.querySelector('.video-scroll-wrapper').offsetHeight;
+
+      const paddingTop = window.getComputedStyle(document.querySelector('main')).getPropertyValue('padding-top');
+
+      const line = document.querySelector('.product-main .line');
+
+      const details = document.querySelector('.product-litter');
+      const faq = document.querySelector('.faq_qa_main');
+      const specs = document.querySelector('.product-details');
+      const review = document.querySelector('#looxReviews');
+      const productEl = [details, specs, review, faq];
+
+      const navbar = document.querySelector('.product-main');
+      navbar.style.height = 'auto';
+      const tempHeight = navbar.offsetHeight;
+      navbar.style.height = '0';
+
+      const list = Array.from(document.querySelectorAll('.product-navbar .list li'));
+
+      line.style.width = list[0].offsetWidth + 'px';
+
+      document.documentElement.style.scrollPaddingTop = `${tempHeight + parseInt(paddingTop)}px`;
+
+      window.addEventListener('scroll', () => {
+        navbar.style.top = paddingTop;
+
+        const scollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        scollTop > height ? (navbar.style.height = `${tempHeight}px`) : (navbar.style.height = '0');
+
+        let offsetLeft = 0;
+
+        productEl.forEach((el, index) => {
+          const top = el.offsetTop;
+          if (scollTop > top - 500) {
+            const width = list[index].offsetWidth;
+            offsetLeft = list[index].offsetLeft;
+            line.style.width = `${width}px`;
+            line.style.transform = `translateX(${offsetLeft}px)`;
+          }
+        });
+
+        list.forEach((item, index) => {
+          item.classList.remove('active');
+          if (item.offsetLeft === offsetLeft) {
+            item.classList.add('active');
+          }
+        });
+      });
+
+      list.forEach((item, index) => {
+        item.addEventListener('click', () => productEl[index].scrollIntoView({ behavior: 'instant', block: 'start' }));
+      });
+    }
+    window.addEventListener('resize', () => init());
+  });
+</script>
+{% schema %}
+{
+  "name": "product navbar",
+  "settings": [],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "product navbar"
+    }
+  ]
+}
+{% endschema %}

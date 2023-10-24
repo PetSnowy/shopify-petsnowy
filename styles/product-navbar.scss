@@ -1,0 +1,99 @@
+@import "pxToVw.scss";
+
+.product-main {
+	background-color: #d5c6aa;
+	position: fixed;
+	overflow: hidden;
+	height: 0px;
+	transition: all 0.3s ease;
+	display: flex;
+	width: 100%;
+	z-index: 2;
+
+	.line {
+		background: #9c8977;
+		opacity: 0.9;
+		transition: all 0.3s ease;
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		display: block;
+	}
+
+	.product-navbar {
+		margin: auto;
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+
+	.list {
+		display: flex;
+		justify-content: center;
+
+		li {
+			color: #ffffff;
+			cursor: pointer;
+			font-family: HelveticaBold;
+			transition: all 0.3s ease;
+		}
+
+		.active {
+			color: #d75f23;
+		}
+	}
+}
+
+
+@media screen and (min-width: 901px) {
+	.product-main {
+		.line {
+			height: 4px;
+			border-radius: 5px;
+		}
+
+		height: 0px;
+
+
+		.product-navbar {
+			width: 1200px;
+			height: 50px;
+		}
+
+		.list {
+			column-gap: 200px;
+
+			li {
+				font-size: 22px;
+
+				&:hover {
+					color: #d75f23;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.product-main {
+		.line {
+			height: vw(8px);
+			border-radius: vw(8px);
+		}
+
+		height: 0px;
+
+		.product-navbar {
+			width: 100%;
+			height: vw(100px);
+		}
+
+		.list {
+			justify-content: space-between;
+
+			li {
+				font-size: vw(35px);
+			}
+		}
+	}
+}

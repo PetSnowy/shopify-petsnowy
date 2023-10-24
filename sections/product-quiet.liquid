@@ -1,0 +1,83 @@
+{{ 'product-quiet.css' | asset_url | stylesheet_tag }}
+
+<div class="product-quiet page-width">
+  <div class="container">
+    <div class="content">
+      <p class="quiet-title aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+        {{ section.settings.title }}
+      </p>
+      <div class="voice aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+        <div class="icon"></div>
+        <div class="wrapper">
+          <div class="line">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="scale">
+            <div>40db</div>
+            <div>60db</div>
+            <div>80db</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="quite-img">
+      <picture>
+        <source media="(min-width: 901px)" srcset="{{ section.settings.image | img_url: 'master' }}">
+        <source media="(max-width: 900px)" srcset="{{ section.settings.mb_image | img_url: 'master' }}">
+        <img
+          decoding="async"
+          loading="lazy"
+          src="{{ section.settings.image | img_url: 'master' }}"
+          alt="{{ section.settings.title }}"
+        >
+      </picture>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "product-quiet",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "title"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mb_image",
+      "label": "mb_image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "product-quiet"
+    }
+  ]
+}
+{% endschema %}

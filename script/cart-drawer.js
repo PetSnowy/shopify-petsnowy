@@ -22,25 +22,43 @@ class CartDrawer extends HTMLElement {
 			}
 		});
 	}
-	//update cart data
-	// connectedCallback() {
-	// 	jQuery.getJSON('/cart.js', function ({ items }) {
-	// 		console.log(items);
-	// 		document.dispatchEvent(new CustomEvent('cart:build', { bubbles: true }));
-	// 		document.dispatchEvent(new CustomEvent('cart:refresh', {
-	// 			bubbles: true,
-	// 			detail: items
-	// 		}));
-	// 	});
 
-	// 	document.addEventListener('cart:refresh', event => {
-	// 		const that = this
-	// 		const cartData = event.detail;
-	// 		cartData.forEach(element => {
-	// 			that.renderContents(element)
-	// 		});
-	// 	});
-	// }
+	connectedCallback() {
+		this.getProductsRecommended()
+	}
+
+	//获取当前购物车的全部产品
+	async getCartProduct() {
+		const response = await fetch('/cart.js');
+		const { items } = await response.json();
+		return items
+	}
+	// 产品推荐
+	async productsRecommended(cartProductList) {
+		const result = await Promise.all(cartProductList.map((product) => this.fetchProductRecommendation(product.product_id, 2, 'related')));
+		const map = new Map()
+		for (const item of result.flat(Infinity)) {
+			map.set(item.id, item)
+		}
+		return [...map.values()]
+	}
+
+	//获取当前产品的推荐产品
+	async fetchProductRecommendation(productId, limit, intent) {
+		const response = await fetch(`${window.Shopify.routes.root}recommendations/products.json?product_id=${productId}&limit=${limit}&intent=${intent}`);
+		const { products } = await response.json();
+		return products.length && products;
+	}
+
+	getProductsRecommended() {
+		try {
+			this.getCartProduct().then((result) => this.productsRecommended(result)).then((map) => {
+				// console.log(map); 产品推荐数据
+			})
+		} catch (error) {
+			console.log(error);
+		}
+	}
 
 	open(triggeredBy) {
 		if (triggeredBy) this.setActiveElement(triggeredBy);
@@ -58,6 +76,7 @@ class CartDrawer extends HTMLElement {
 		document.documentElement.classList.add('overflow-hidden');
 		document.body.style.overflowY = 'scroll';
 		document.querySelector('sticky-header').style.overflowY = 'scroll';
+		this.getProductsRecommended()
 	}
 
 	close() {

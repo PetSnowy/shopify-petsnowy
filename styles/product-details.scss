@@ -1,0 +1,26 @@
+.product-details .container {
+	picture {
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+}
+
+@media screen and (min-width: 901px) {
+	.product-details {
+		margin: 75px auto;
+		margin-bottom: 150px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.product-details {
+		margin: vw(70px) auto vw(80px);
+	}
+}

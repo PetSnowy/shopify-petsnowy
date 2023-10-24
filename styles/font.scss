@@ -1,27 +1,39 @@
 @font-face {
 	font-family: "HelveticaBold";
-	src: url('./HelveticaNowDisplay-Bold.ttf') format("truetype");
+	src: url('../assets/HelveticaNowDisplay-Bold.ttf') format("truetype");
 	font-display: swap;
-	font-weight: 800;
+	font-weight: 900;
 }
 
 @font-face {
 	font-family: "Helvetica";
-	src: url('./HelveticaNowDisplay-Regular.ttf') format("truetype");
+	src: url('../assets/HelveticaNowDisplay-Regular.ttf') format("truetype");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "HelveticaNowDisplayXBlk";
+	src: url('../assets/HelveticaNowDisplay-XBlk.ttf') format("truetype");
 	font-display: swap;
 }
 
 @font-face {
 	font-family: "LeagueSpartan";
-	src: url('./LeagueSpartan-Regular.otf') format("truetype");
+	src: url('../assets/LeagueSpartan-Regular.otf') format("truetype");
 	font-display: swap;
 }
 
 @font-face {
 	font-family: "LeagueSpartanBold";
-	src: url('./LeagueSpartan-Bold.otf') format("truetype");
+	src: url('../assets/LeagueSpartan-Bold.otf') format("truetype");
 	font-display: swap;
-	font-weight: 800;
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: "LeagueSpartanBlack";
+	src: url('../assets/LeagueSpartan-Black.otf') format("truetype");
+	font-display: swap;
 }
 
 @font-face {
