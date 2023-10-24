@@ -5534,6 +5534,13 @@ ul#HeaderMenu-MenuList-1 {
 	}
 }
 
+.changed_variant_price_compare,
+.replace_product_pricecompare {
+	color: #666 !important;
+	font-size: 12px;
+	text-decoration: line-through;
+}
+
 @media screen and (max-width: 900px) {
 
 	footer {
