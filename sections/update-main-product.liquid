@@ -505,7 +505,15 @@
                                     <div class="popup-close"></div>
                                   </div>
                                 </div>
-                                <p class="option-title">{{ variant.title }}</p>
+                                <p class="option-title">
+                                  {{ variant.title }}
+                                  {% if variant.id == 47114822746434 %}
+                                    <span class="remaining"
+                                      >Now<span style="color: #d75f23;"> {{ variant.inventory_quantity }} </span
+                                      >Left</span
+                                    >
+                                  {%- endif %}
+                                </p>
                                 {% comment %} <p class="option-price">{{ price | money }}</p> {% endcomment %}
                               {% endif %}
                             {% endfor %}

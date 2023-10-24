@@ -449,7 +449,6 @@ $product-font-color: #5D5D5D;
 				width: vw(200px);
 				box-sizing: border-box;
 				flex-direction: row;
-				background-color: #d5cabe;
 
 				.option-title {
 					font-size: vw(25px);
@@ -484,7 +483,7 @@ $product-font-color: #5D5D5D;
 
 			.product-form__input input[type=radio]:checked+label {
 				border-color: $product-icon-color;
-				background: #d5cabe;
+				// background: #d5cabe;
 				color: #616161;
 			}
 		}
@@ -992,7 +991,7 @@ $product-font-color: #5D5D5D;
 				margin: 0px;
 				border: none;
 				border: 2px solid transparent;
-				background: #d5cabe;
+				// background: #d5cabe;
 
 				.option-title {
 					font-size: 12px;
