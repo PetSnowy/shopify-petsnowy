@@ -763,14 +763,13 @@ $product-font-color: #5D5D5D;
 				}
 
 				.popup-img {
-					width: 561px;
-					height: 561px;
 
 					img {
 						width: 100%;
 						height: 100%;
 						object-fit: contain;
 						margin: 0px;
+						margin-right: 10px;
 					}
 				}
 
