@@ -69,8 +69,7 @@
       item.addEventListener('click', () => productEl[index].scrollIntoView({ behavior: 'instant', block: 'start' }));
     });
   }
-  // window.addEventListener('load', () => init());
-  init();
+  window.addEventListener('DOMContentLoaded ', () => init());
   window.addEventListener('resize', () => init());
 </script>
 {% schema %}
