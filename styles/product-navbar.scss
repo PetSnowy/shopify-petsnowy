@@ -35,7 +35,11 @@
 			color: #ffffff;
 			cursor: pointer;
 			font-family: HelveticaBold;
-			font-size: 22px;
+			transition: all 0.3s ease;
+		}
+
+		.active {
+			color: #d75f23;
 		}
 	}
 }
@@ -57,10 +61,14 @@
 		}
 
 		.list {
-			column-gap: 220px;
+			column-gap: 200px;
 
 			li {
 				font-size: 22px;
+
+				&:hover {
+					color: #d75f23;
+				}
 			}
 		}
 	}

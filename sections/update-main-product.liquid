@@ -281,6 +281,7 @@
                   price_class: 'price--large'
                 -%}
               </div>
+              <span id="product_price" style="display: none;">{{ product.price | money }}</span>
               {% comment %}
                 {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                   <div class="product__tax caption rte">
@@ -732,7 +733,6 @@
                   </template>
                 </pickup-availability>
               </div>
-              <span id="product_price" style="display: none;">{{ product.price | money }}</span>
             {% when 'checkout' %}
               <button
                 class="checkout-button"
@@ -1082,6 +1082,11 @@
         el: '.swiper-pagination',
       },
     });
+
+    // 判断是否是移动端
+    if (window.innerWidth >= 901) {
+      mySwiper.removeSlide(0);
+    }
 
     const question_mark = Array.from(document.querySelectorAll('.question_mark'));
     const question_mark_popup = Array.from(document.querySelectorAll('.question_mark_popup'));

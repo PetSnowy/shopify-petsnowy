@@ -166,7 +166,7 @@ $product-font-color: #5D5D5D;
 
 	#product-indiegogo {
 		.price-wrapper {
-			margin-bottom: vw(30px);
+			margin-bottom: vw(20px);
 		}
 
 		.price {
@@ -712,7 +712,7 @@ $product-font-color: #5D5D5D;
 
 		.price-wrapper {
 			margin: 0px;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 		}
 
 		.price {
@@ -932,6 +932,7 @@ $product-font-color: #5D5D5D;
 			.product-desc {
 				font-family: LeagueSpartan;
 				font-size: 17px;
+				margin: 0px;
 				margin-bottom: 20px;
 			}
 		}

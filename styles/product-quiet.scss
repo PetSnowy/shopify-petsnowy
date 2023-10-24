@@ -27,7 +27,7 @@ $activeColor:#504030;
 
 				}
 
-				@for $i from 1 through 10 {
+				@for $i from 1 through 6 {
 					@if $i % 2==0 {
 						span:nth-child(#{$i}) {
 							background-color: $activeColor;
@@ -138,7 +138,7 @@ $activeColor:#504030;
 	.scale {
 		display: flex;
 		margin-left: 50px;
-		column-gap: 15px;
+		column-gap: 45px;
 		font-family: Helvetica;
 		font-size: 14px;
 		margin-top: 10px;
@@ -196,11 +196,11 @@ $activeColor:#504030;
 
 					span {
 						width: vw(10px);
-						height: vw(7px);
+						height: vw(10px);
 						border-radius: vw(2px);
 
 						&:nth-child(5n) {
-							height: vw(10px);
+							height: vw(15px);
 						}
 					}
 				}
@@ -214,8 +214,8 @@ $activeColor:#504030;
 
 	.scale {
 		display: flex;
-		margin-left: vw(25px);
-		column-gap: vw(15px);
+		margin-left: vw(40px);
+		column-gap: vw(45px);
 		font-size: vw(20px);
 	}
 }

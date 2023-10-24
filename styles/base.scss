@@ -5511,6 +5511,28 @@ ul#HeaderMenu-MenuList-1 {
 	align-items: center;
 }
 
+.affirm-as-low-as {
+	margin: 10px 0px;
+
+	.affirm-modal-trigger {
+		display: inline-flex;
+		align-items: center;
+		transition: all 0.3s ease;
+
+		&::after {
+			content: '';
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			background: url('./question_mark.png') no-repeat center/cover;
+			margin-left: 2px;
+		}
+
+		&:hover {
+			color: #d75f23;
+		}
+	}
+}
 
 @media screen and (max-width: 900px) {
 
