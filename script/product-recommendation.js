@@ -2,20 +2,21 @@ class ProductRecommendation extends HTMLElement {
 	constructor() {
 		super();
 		this.productId = this.getAttribute('product-id');
-		this.fetchProductRecommendation(this.productId, 1, 'related').then((productRecommendationList) => {
-			console.log(productRecommendationList);
-		})
+		this.cartDrawer = document.querySelector('cart-drawer')
 	}
 
-	async fetchProductRecommendation(productId, limit, intent) {
-		try {
-			const response = await fetch(window.Shopify.routes.root + `recommendations/products.json?product_id=${productId}&limit=${limit}&intent=${intent}`);
-			const { products } = await response.json();
-			return products.length && products;
-		} catch (error) {
-			console.log(error);
-		}
+	connectedCallback() {
+		console.log(this.getProductsRecommend());
 	}
+
+	async getProductsRecommend() {
+		const { map } = await this.cartDrawer.getProductsRecommended();
+		console.log(map);
+	}
+
+
+
+
 }
 
 customElements.define('product-recommendation', ProductRecommendation);

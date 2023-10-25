@@ -23,10 +23,6 @@ class CartDrawer extends HTMLElement {
 		});
 	}
 
-	connectedCallback() {
-		this.getProductsRecommended()
-	}
-
 	//获取当前购物车的全部产品
 	async getCartProduct() {
 		const response = await fetch('/cart.js');
@@ -50,14 +46,8 @@ class CartDrawer extends HTMLElement {
 		return products.length && products;
 	}
 
-	getProductsRecommended() {
-		try {
-			this.getCartProduct().then((result) => this.productsRecommended(result)).then((map) => {
-				// console.log(map); 产品推荐数据
-			})
-		} catch (error) {
-			console.log(error);
-		}
+	async getProductsRecommended() {
+		return this.getCartProduct().then((result) => this.productsRecommended(result)).then((map) => map)
 	}
 
 	open(triggeredBy) {
