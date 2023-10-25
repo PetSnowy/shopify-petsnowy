@@ -11,10 +11,6 @@ $product-font-color: #5D5D5D;
 #product-indiegogo {
 	.rollback-add-cart {
 		display: none;
-		background: $button-bg-color;
-		color: #fff;
-		font-family: LeagueSpartanBlack;
-		text-align: center;
 		position: fixed;
 		z-index: 2;
 		cursor: pointer;
@@ -176,12 +172,16 @@ $product-font-color: #5D5D5D;
 
 	#product-indiegogo {
 		.rollback-add-cart {
-			width: 100%;
-			height: vw(100px);
-			line-height: vw(100px);
-			font-size: vw(50px);
+			width: vw(463px);
+			height: vw(91px);
 			bottom: 0px;
-			left: 0px;
+			left: 50%;
+			transform: translateX(-50%);
+			background: url('./add-cart.png') no-repeat center/cover;
+
+			span {
+				display: none;
+			}
 		}
 
 		.price-wrapper {
@@ -339,6 +339,7 @@ $product-font-color: #5D5D5D;
 
 				.product__title {
 					margin-bottom: 0px;
+					font-size: vw(38px);
 				}
 
 				.product-desc {
@@ -732,11 +733,22 @@ $product-font-color: #5D5D5D;
 		.rollback-add-cart {
 			width: 250px;
 			height: 50px;
-			line-height: 50px;
-			font-size: 25px;
 			bottom: 10px;
 			right: 10px;
 			border-radius: 10px;
+			background: $button-bg-color;
+
+			span {
+				color: #fff;
+				font-family: LeagueSpartanBlack;
+				text-align: center;
+				font-size: 25px;
+				display: flex;
+				width: 100%;
+				height: 100%;
+				align-items: center;
+				justify-content: center;
+			}
 		}
 
 		.price-wrapper {

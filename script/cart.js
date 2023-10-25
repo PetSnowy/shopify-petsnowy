@@ -7,11 +7,6 @@ class CartRemoveButton extends HTMLElement {
 			cartItems.updateQuantity(this.dataset.index, 0);
 		});
 	}
-
-	// 设置猫砂盆addons购买套餐打折问题
-	setProductLitter() {
-		const litterProductIdList = []
-	}
 }
 
 customElements.define('cart-remove-button', CartRemoveButton);

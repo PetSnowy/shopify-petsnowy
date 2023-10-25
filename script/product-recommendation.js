@@ -22,7 +22,7 @@ class ProductRecommendation extends HTMLElement {
 					<p class='price'>${price}</p>
 					<button>Add To Cart</button>
 				</div>`;
-			// console.log(this.appendChild(recommendationItem));
+			console.log(this.appendChild(recommendationItem));
 			// resultItem && this.appendChild(recommendationItem)
 		});
 	}

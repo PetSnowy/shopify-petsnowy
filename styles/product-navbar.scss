@@ -77,22 +77,22 @@
 @media screen and (max-width: 900px) {
 	.product-main {
 		.line {
-			height: vw(8px);
-			border-radius: vw(8px);
+			height: vw(4px);
+			border-radius: vw(2px);
 		}
 
 		height: 0px;
 
 		.product-navbar {
-			width: 100%;
-			height: vw(100px);
+			width: vw(610px);
+			height: vw(42px);
 		}
 
 		.list {
 			justify-content: space-between;
 
 			li {
-				font-size: vw(35px);
+				font-size: vw(21px);
 			}
 		}
 	}
