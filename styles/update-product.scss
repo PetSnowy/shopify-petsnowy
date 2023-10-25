@@ -339,7 +339,10 @@ $product-font-color: #5D5D5D;
 
 				.product__title {
 					margin-bottom: 0px;
-					font-size: vw(38px);
+
+					h1 {
+						font-size: vw(38px);
+					}
 				}
 
 				.product-desc {
