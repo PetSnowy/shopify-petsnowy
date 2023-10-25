@@ -9,6 +9,17 @@ $product-font-color: #5D5D5D;
 @import "pxToVw.scss";
 
 #product-indiegogo {
+	.rollback-add-cart {
+		display: none;
+		background: $button-bg-color;
+		color: #fff;
+		font-family: LeagueSpartanBlack;
+		text-align: center;
+		position: fixed;
+		z-index: 2;
+		cursor: pointer;
+	}
+
 	.form__label {
 		font-family: LeagueSpartanBold;
 		color: $main-title-color
@@ -164,6 +175,15 @@ $product-font-color: #5D5D5D;
 	}
 
 	#product-indiegogo {
+		.rollback-add-cart {
+			width: 100%;
+			height: vw(100px);
+			line-height: vw(100px);
+			font-size: vw(50px);
+			bottom: 0px;
+			left: 0px;
+		}
+
 		.price-wrapper {
 			margin-bottom: vw(20px);
 		}
@@ -708,6 +728,16 @@ $product-font-color: #5D5D5D;
 	}
 
 	#product-indiegogo {
+
+		.rollback-add-cart {
+			width: 250px;
+			height: 50px;
+			line-height: 50px;
+			font-size: 25px;
+			bottom: 10px;
+			right: 10px;
+			border-radius: 10px;
+		}
 
 		.price-wrapper {
 			margin: 0px;

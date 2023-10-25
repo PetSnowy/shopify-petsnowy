@@ -44,7 +44,7 @@
     class="itg_mobile_{{ template.suffix }} product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}"
     id="new-product"
   >
-    <div class="rollback-add-cart"></div>
+    <div class="rollback-add-cart">Add to cart</div>
     <div
       class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}"
     >
@@ -231,7 +231,7 @@
         {% comment %} </media-gallery> {% endcomment %}
       </div>
     </div>
-    <div class="product__info-wrapper">
+    <div class="product__info-wrapper product-add-cart">
       <div
         id="ProductInfo-{{ section.id }}"
         class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}"
@@ -1108,6 +1108,22 @@
       item.querySelector('.popup-close').addEventListener('click', () => {
         item.style.display = 'none';
       });
+    });
+
+    const rollbackAddCart = document.querySelector('.rollback-add-cart');
+    const newProductHeight = document.querySelector('#product-indiegogo').offsetHeight;
+    const infoWrapper = document.querySelector('.product-add-cart');
+
+    window.addEventListener('scroll', () => {
+      const scollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      if (scollTop >= newProductHeight) {
+        rollbackAddCart.style.display = 'block';
+      } else {
+        rollbackAddCart.style.display = 'none';
+      }
+    });
+    rollbackAddCart.addEventListener('click', () => {
+      infoWrapper.scrollIntoView({ behavior: 'instant', block: 'start' });
     });
   </script>
 </section>
