@@ -1255,18 +1255,6 @@
 	}
 }
 
-button.needsclick.kl-teaser-SyCsSf.undefined {
-	width: fit-content !important;
-	left: 0px !important;
-	transform: none !important;
-
-	.needsclick.go1596356512.kl-private-reset-css-Xuajs1 {
-		p span {
-			color: #fff !important;
-			font-family: "SUISSE_INT_L_MEDIUM";
-		}
-	}
-}
 
 @media screen and (max-width: 749px) {
 	.image-with-text__content {
@@ -1383,14 +1371,8 @@ button.needsclick.kl-teaser-SyCsSf.undefined {
 	}
 
 	button.needsclick.kl-teaser-SyCsSf.undefined {
-		left: 0px !important;
-		transform: none !important;
-		margin: 0px !important;
-		width: 100% !important;
-
-		&>div>button {
-			right: 5px !important;
-			top: -30px !important;
+		span {
+			writing-mode: tb;
 		}
 	}
 

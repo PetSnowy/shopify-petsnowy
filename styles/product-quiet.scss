@@ -7,7 +7,7 @@ $activeColor:#504030;
 	.content {
 		.quiet-title {
 			font-family: HelveticaNowDisplayXBlk;
-			color: #45392e;
+			color: $activeColor;
 
 			&::first-letter {
 				color: $font-emphasize;
