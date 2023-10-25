@@ -5,6 +5,8 @@ class CartDrawer extends HTMLElement {
 		this.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.close());
 		this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
 		this.setHeaderCartIconAccessibility();
+
+		this.productRecommendation = document.querySelector('product-recommendation');
 	}
 
 	setHeaderCartIconAccessibility() {
@@ -50,7 +52,7 @@ class CartDrawer extends HTMLElement {
 		return this.getCartProduct().then((result) => this.productsRecommended(result)).then((map) => map)
 	}
 
-	open(triggeredBy) {
+	async open(triggeredBy) {
 		if (triggeredBy) this.setActiveElement(triggeredBy);
 		const cartDrawerNote = this.querySelector('[id^="Details-"] summary');
 		if (cartDrawerNote && !cartDrawerNote.hasAttribute('role')) this.setSummaryAccessibility(cartDrawerNote);
@@ -66,7 +68,13 @@ class CartDrawer extends HTMLElement {
 		document.documentElement.classList.add('overflow-hidden');
 		document.body.style.overflowY = 'scroll';
 		document.querySelector('sticky-header').style.overflowY = 'scroll';
-		this.getProductsRecommended()
+
+		this.getProductsRecommended().then(result => {
+			requestAnimationFrame(() => {
+				this.productRecommendation?.renderRecommendations(result);
+			});
+		});
+
 	}
 
 	close() {

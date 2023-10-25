@@ -5541,6 +5541,29 @@ ul#HeaderMenu-MenuList-1 {
 	text-decoration: line-through;
 }
 
+product-recommendation {
+	display: flex;
+	column-gap: 10px;
+	flex-direction: column;
+
+	recommendation-item {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.img {
+		width: 100px;
+		margin-right: 10px;
+
+		img {
+			width: 100%;
+			height: auto;
+			object-fit: contain;
+		}
+	}
+
+}
+
 @media screen and (max-width: 900px) {
 
 	footer {
