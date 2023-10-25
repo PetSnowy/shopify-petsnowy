@@ -341,8 +341,12 @@ $product-font-color: #5D5D5D;
 					margin-bottom: 0px;
 
 					h1 {
-						font-size: vw(32px);
+						font-size: vw(36px);
 					}
+				}
+
+				.product__text {
+					margin-bottom: vw(8px);
 				}
 
 				.product-desc {
