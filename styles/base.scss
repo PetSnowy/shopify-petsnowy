@@ -2916,6 +2916,7 @@ p,
 .rte {
 	font-family: "FS_JOEY-REGULAR";
 	font-weight: 400;
+	line-height: calc(1 + 0.8 / var(--font-body-scale));
 }
 
 .announcement-bar {
