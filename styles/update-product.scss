@@ -9,6 +9,10 @@ $product-font-color: #5D5D5D;
 @import "pxToVw.scss";
 
 #product-indiegogo {
+	p {
+		line-height: normal;
+	}
+
 	.rollback-add-cart {
 		display: none;
 		position: fixed;
