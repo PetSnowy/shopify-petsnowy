@@ -52,6 +52,7 @@
     {% endif %}
 
     {% render 'meta-tags' %}
+    <script src="{{ 'product-recommendation.js' | asset_url }}"></script>
     <script src="{{ 'jquery.min.js' | asset_url }}"></script>
     <script src="{{ 'global.js' | asset_url }}" defer></script>
     <script src="{{ 'aos-animation.js' | asset_url }}"></script>
@@ -359,6 +360,7 @@
     >
       {{ content_for_layout }}
     </main>
+    <product-recommendation></product-recommendation>
     {% section 'footer' %}
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
@@ -434,19 +436,18 @@
         handleMonitorVideo();
       };
     </script>
-
     <script>
       const orderNowButtons = Array.from(document.querySelectorAll('.purchase_btn_first, .headr_odr_now'));
       orderNowButtons.forEach((button) => {
         button.addEventListener('click', async () => {
-					$.ajax({
-           	type: 'POST',
-           	url: '/cart/clear.js',
-           	dataType: 'json',
-						success: function(){
-							window.location.href = '/cart?customcart=snow-self-cleaning-litter-box';
-						}
-         	})
+          $.ajax({
+            type: 'POST',
+            url: '/cart/clear.js',
+            dataType: 'json',
+            success: function () {
+              window.location.href = '/cart?customcart=snow-self-cleaning-litter-box';
+            },
+          });
         });
       });
     </script>

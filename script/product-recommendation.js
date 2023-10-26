@@ -1,39 +1,35 @@
 class ProductRecommendation extends HTMLElement {
 	constructor() {
-		super()
-		this.cart = document.querySelector('cart-drawer').querySelector('.drawer__inner')
+		super();
+		this.cartItems = document.querySelector('cart-items') || document.querySelector('cart-drawer-items');
+		this.cartDrawer = document.querySelector('cart-drawer')
 	}
-	renderRecommendations(result) {
-		if (!result.length) {
-			return;
+
+	//点击添加按钮将产品加入购物车
+	recommendationAddCart() {
+		const button = Array.from(this.querySelectorAll('button'))
+		button.forEach((item) => item.addEventListener('click', async (event) => {
+			item.style.pointerEvents = "none";
+			item.querySelector('.loading-overlay__spinner').classList.remove('hidden')
+			await this.addToCart(item.dataset.id)
+			await this.cartItems.updateQuantity(0, 1)
+			await this.cartDrawer.renderRecommendations(await this.cartDrawer.getProductsRecommended())
+		}))
+	}
+
+	async addToCart(id, quantity = 1) {
+		const data = {
+			id,
+			quantity
 		}
-
-		const item = Array.from(this.querySelectorAll('recommendation-item'));
-		item.length && item.forEach((item) => item.remove());
-		result.forEach(resultItem => {
-			// const { title, price, featured_image, url } = resultItem;
-			// const recommendationItem = document.createElement('recommendation-item');
-			// recommendationItem.innerHTML =
-			// 	`<div class='img'>
-			// 		<img src=${featured_image}>
-			// 	</div>
-			// 	<div class='content'>
-			// 		<a href=${url} class='title'>${title}</a>
-			// 		<p class='price'>${price}</p>
-			// 		<button>Add To Cart</button>
-			// 	</div>`;
-			// console.log(this.appendChild(recommendationItem));
-			// resultItem && this.appendChild(recommendationItem)
-		});
-	}
-
-}
-
-class RecommendationItem extends ProductRecommendation {
-	constructor() {
-		super()
+		await fetch('/cart/add.js', {
+			method: 'POST',
+			body: JSON.stringify(data),
+			headers: {
+				'Content-Type': 'application/json',
+			},
+		})
 	}
 }
 
 customElements.define('product-recommendation', ProductRecommendation);
-customElements.define('recommendation-item', RecommendationItem);

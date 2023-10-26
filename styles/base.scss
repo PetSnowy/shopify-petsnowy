@@ -5542,19 +5542,47 @@ ul#HeaderMenu-MenuList-1 {
 	text-decoration: line-through;
 }
 
-product-recommendation {
+cart-drawer.active~product-recommendation {
 	display: flex;
-	column-gap: 10px;
-	flex-direction: column;
+}
 
-	recommendation-item {
+product-recommendation {
+	display: none;
+	flex-direction: column;
+	background-color: #7e6c5e;
+	width: 400px;
+	column-gap: 10px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 99999;
+
+
+	.recommendations-wrapper {
+		padding: 10px;
 		display: flex;
 		flex-direction: row;
+
+		.img {
+			width: 100px;
+			margin-right: 10px;
+		}
+	}
+
+	.close-drawer {
+		display: block;
+		border-radius: 50%;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 30px;
+		height: 30px;
+		background-color: red;
 	}
 
 	.img {
-		width: 100px;
-		margin-right: 10px;
 
 		img {
 			width: 100%;
