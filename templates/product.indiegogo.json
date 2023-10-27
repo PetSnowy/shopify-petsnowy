@@ -68,9 +68,18 @@
     "b795a7b8-a6ac-4651-83cd-1e8d0fdcfc8d": {
       "type": "update-main-product",
       "blocks": {
-        "7b11a55c-6ec4-4bc0-abb9-e281750a2438": {
-          "type": "score",
+        "b601d784-14f3-4abd-b763-d4a04350eaf9": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
+            "contentSize": 16,
+            "pattern": "([rating]\/5.0)  [count] Reviews",
+            "hideText": false,
+            "alignment": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
           }
         },
         "14560b85-a973-48ed-b54c-521a105a7338": {
@@ -128,7 +137,7 @@
         }
       },
       "block_order": [
-        "7b11a55c-6ec4-4bc0-abb9-e281750a2438",
+        "b601d784-14f3-4abd-b763-d4a04350eaf9",
         "14560b85-a973-48ed-b54c-521a105a7338",
         "6395df9a-b9ba-4c9f-b5f3-b9aa4e066d9a",
         "db7ae0c8-2164-4aca-af32-842017294d7b",
@@ -350,10 +359,26 @@
             "hide_thumbnails": false,
             "maxwidth": 1080
           }
+        },
+        "0421a3e2-20e9-481d-8a19-57f5be9206cd": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
+          "settings": {
+            "contentSize": 16,
+            "pattern": "([rating]\/5.0)  [count] Reviews",
+            "hideText": false,
+            "alignment": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
+          }
         }
       },
       "block_order": [
-        "042ecd86-3111-463a-a041-b74ad0850cad"
+        "042ecd86-3111-463a-a041-b74ad0850cad",
+        "0421a3e2-20e9-481d-8a19-57f5be9206cd"
       ],
       "settings": {
         "include_margins": true
