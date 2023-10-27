@@ -2919,6 +2919,10 @@ p,
 	line-height: calc(1 + 0.8 / var(--font-body-scale));
 }
 
+.affirm-as-low-as:nth-of-type(2) {
+	display: none;
+}
+
 .announcement-bar {
 	background: #231f20;
 	position: relative;
