@@ -53,6 +53,7 @@
         "0d30c098-08a5-4f81-b4d9-68932b875783",
         "buy_buttons"
       ],
+      "disabled": true,
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
@@ -316,12 +317,6 @@
         "image_alt": "product-safety"
       }
     },
-    "81086820-fa02-40bd-afc9-97d991823309": {
-      "type": "product-three",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "5ac8a14d-3c18-430e-b4a9-01b548701dff": {
       "type": "product-quiet",
       "settings": {
@@ -510,7 +505,6 @@
     "4e093d3d-b091-47db-ad62-81ec088c925c",
     "38c4023c-1b9f-4a34-a306-87932c288c00",
     "353b1682-6ed4-47f5-b3c1-eec15917e003",
-    "81086820-fa02-40bd-afc9-97d991823309",
     "5ac8a14d-3c18-430e-b4a9-01b548701dff",
     "366d64d6-8243-4b52-84b2-5b3a1336b500",
     "16879203322247258f",
