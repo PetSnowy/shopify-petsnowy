@@ -53,7 +53,6 @@
         "0d30c098-08a5-4f81-b4d9-68932b875783",
         "buy_buttons"
       ],
-      "disabled": true,
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
@@ -350,7 +349,6 @@
       "block_order": [
         "042ecd86-3111-463a-a041-b74ad0850cad"
       ],
-      "disabled": true,
       "settings": {
         "include_margins": true
       }
