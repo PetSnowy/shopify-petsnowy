@@ -27,7 +27,7 @@
         <div class="social_img_large">
           {% if section.settings.img != blank %}
             <div class="social_animation_zoom">
-              <img decoding="async" src="{{ section.settings.img | img_url: 'master' }}" alt="petsnowy" loading="lazy">
+              <img decoding="async" src="{{ section.settings.img | img_url: 'master' }}" alt="petsnowy">
             </div>
           {% endif %}
         </div>
@@ -40,7 +40,6 @@
                     decoding="async"
                     src="{{ block.settings.blk_img | img_url: 'master' }}"
                     alt="petsnowy"
-                    loading="lazy"
                   >
                 </div>
               {% endif %}
