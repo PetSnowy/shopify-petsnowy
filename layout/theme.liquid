@@ -52,7 +52,7 @@
     {% endif %}
 
     {% render 'meta-tags' %}
-    <script src="{{ 'product-recommendation.js' | asset_url }}"></script>
+    {% comment %} <script src="{{ 'product-recommendation.js' | asset_url }}"></script> {% endcomment %}
     <script src="{{ 'jquery.min.js' | asset_url }}"></script>
     <script src="{{ 'global.js' | asset_url }}" defer></script>
     <script src="{{ 'aos-animation.js' | asset_url }}"></script>
@@ -362,7 +362,7 @@
     >
       {{ content_for_layout }}
     </main>
-    <product-recommendation></product-recommendation>
+    {% comment %} <product-recommendation></product-recommendation> {% endcomment %}
     {% section 'footer' %}
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
