@@ -5,12 +5,13 @@ class CartRemoveButton extends HTMLElement {
 			event.preventDefault();
 			const cartItems = this.closest('cart-items') || this.closest('cart-drawer-items');
 			cartItems.updateQuantity(this.dataset.index, 0);
+			this.updateProductsRecommended()
 		});
 	}
-
-	// 设置猫砂盆addons购买套餐打折问题
-	setProductLitter() {
-		const litterProductIdList = []
+	// 更新产品推荐逻辑
+	async updateProductsRecommended() {
+		const cartRecommendation = this.closest('cart-drawer');
+		cartRecommendation.renderRecommendations(await cartRecommendation.getProductsRecommended())
 	}
 }
 

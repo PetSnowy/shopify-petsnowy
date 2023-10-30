@@ -1,5 +1,5 @@
 $button-bg-color: #7e6e5f;
-$main-bg-color: #e9e1cf;
+$main-bg-color: #e9e0cf;
 $main-font-color: #000000;
 $main-title-color:#45392e;
 $product-price-color:#818181;
@@ -9,6 +9,17 @@ $product-font-color: #5D5D5D;
 @import "pxToVw.scss";
 
 #product-indiegogo {
+	p {
+		line-height: 100%;
+	}
+
+	.rollback-add-cart {
+		display: none;
+		position: fixed;
+		z-index: 2;
+		cursor: pointer;
+	}
+
 	.form__label {
 		font-family: LeagueSpartanBold;
 		color: $main-title-color
@@ -164,6 +175,19 @@ $product-font-color: #5D5D5D;
 	}
 
 	#product-indiegogo {
+		.rollback-add-cart {
+			width: vw(463px);
+			height: vw(91px);
+			bottom: 0px;
+			left: 50%;
+			transform: translateX(-50%);
+			background: url('./add-cart.png') no-repeat center/cover;
+
+			span {
+				display: none;
+			}
+		}
+
 		.price-wrapper {
 			margin-bottom: vw(20px);
 		}
@@ -319,6 +343,14 @@ $product-font-color: #5D5D5D;
 
 				.product__title {
 					margin-bottom: 0px;
+
+					h1 {
+						font-size: vw(36px);
+					}
+				}
+
+				.product__text {
+					margin-bottom: vw(8px);
 				}
 
 				.product-desc {
@@ -667,7 +699,6 @@ $product-font-color: #5D5D5D;
 				margin-right: vw(30px);
 
 				button {
-					width: vw(372px);
 					height: vw(58px);
 					background: #7E6E5F;
 					box-sizing: border-box;
@@ -709,9 +740,30 @@ $product-font-color: #5D5D5D;
 
 	#product-indiegogo {
 
+		.rollback-add-cart {
+			width: 250px;
+			height: 50px;
+			bottom: 10px;
+			right: 10px;
+			border-radius: 10px;
+			background: $button-bg-color;
+
+			span {
+				color: #fff;
+				font-family: LeagueSpartanBlack;
+				text-align: center;
+				font-size: 25px;
+				display: flex;
+				width: 100%;
+				height: 100%;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+
 		.price-wrapper {
 			margin: 0px;
-			margin-bottom: 10px;
+			margin-bottom: 5px;
 		}
 
 		.price {
@@ -763,14 +815,13 @@ $product-font-color: #5D5D5D;
 				}
 
 				.popup-img {
-					width: 561px;
-					height: 561px;
 
 					img {
 						width: 100%;
 						height: 100%;
 						object-fit: contain;
 						margin: 0px;
+						margin-right: 10px;
 					}
 				}
 
@@ -812,6 +863,7 @@ $product-font-color: #5D5D5D;
 
 		.product-default {
 			width: 640px;
+			height: 420px;
 			border-radius: 25px;
 			overflow: hidden;
 			margin-bottom: 40px;
@@ -998,6 +1050,7 @@ $product-font-color: #5D5D5D;
 					font-size: 12px;
 					font-family: Helvetica;
 					font-weight: 400;
+					line-height: 18px;
 					color: #777777;
 					// margin-bottom: 7px;
 				}
@@ -1165,7 +1218,7 @@ $product-font-color: #5D5D5D;
 						letter-spacing: 0px;
 						display: block;
 						height: 50px;
-						line-height: 50px;
+						line-height: 55px;
 						transition: all 0.3s ease;
 					}
 				}

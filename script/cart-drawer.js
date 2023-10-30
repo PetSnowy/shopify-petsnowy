@@ -5,6 +5,8 @@ class CartDrawer extends HTMLElement {
 		this.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.close());
 		this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
 		this.setHeaderCartIconAccessibility();
+
+		this.productRecommendation = document.querySelector('product-recommendation');
 	}
 
 	setHeaderCartIconAccessibility() {
@@ -21,10 +23,6 @@ class CartDrawer extends HTMLElement {
 				this.open(cartLink);
 			}
 		});
-	}
-
-	connectedCallback() {
-		this.getProductsRecommended()
 	}
 
 	//获取当前购物车的全部产品
@@ -50,17 +48,18 @@ class CartDrawer extends HTMLElement {
 		return products.length && products;
 	}
 
-	getProductsRecommended() {
-		try {
-			this.getCartProduct().then((result) => this.productsRecommended(result)).then((map) => {
-				// console.log(map); 产品推荐数据
-			})
-		} catch (error) {
-			console.log(error);
-		}
+	async getProductsRecommended() {
+		return this.getCartProduct().then((result) => this.productsRecommended(result)).then((map) => map)
 	}
 
 	open(triggeredBy) {
+
+		// this.getProductsRecommended().then(result => {
+		// 	requestAnimationFrame(() => {
+		// 		this.renderRecommendations(result);
+		// 	});
+		// });
+
 		if (triggeredBy) this.setActiveElement(triggeredBy);
 		const cartDrawerNote = this.querySelector('[id^="Details-"] summary');
 		if (cartDrawerNote && !cartDrawerNote.hasAttribute('role')) this.setSummaryAccessibility(cartDrawerNote);
@@ -76,7 +75,61 @@ class CartDrawer extends HTMLElement {
 		document.documentElement.classList.add('overflow-hidden');
 		document.body.style.overflowY = 'scroll';
 		document.querySelector('sticky-header').style.overflowY = 'scroll';
-		this.getProductsRecommended()
+	}
+
+	removeRecommendations() {
+		const item = Array.from(this.productRecommendation.querySelectorAll('div'));
+		item.length && item.forEach((item) => item.remove());
+	}
+
+	// cart 产品推荐
+	renderRecommendations(result) {
+		if (!result.length) {
+			return;
+		}
+		this.removeRecommendations()
+
+		for (let i = 0; i < result.length; i++) {
+			const resultItem = result[i];
+			if (!resultItem) continue;
+			const { title, price, featured_image, url, variants } = resultItem;
+			const recommendationItem = document.createElement('div');
+
+			const formattingPrice = `$${price.toString().slice(0, price.toString().length - 2)},${price.toString().slice(-2)}`
+			recommendationItem.classList.add('recommendations-wrapper');
+
+			recommendationItem.innerHTML =
+				`<div class='img'>
+						<img src=${featured_image}>
+					</div>
+					<div class='content'>
+						<a href=${url} class='title'>${title}</a>
+						<p class='price'>${formattingPrice}</p>
+						<button data-id=${variants[0].id}>
+							<span>Add To Cart</span>
+							<div class="loading-overlay__spinner hidden">
+							<svg
+								aria-hidden="true"
+								focusable="false"
+								role="presentation"
+								class="spinner"
+								viewBox="0 0 66 66"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+							</svg>
+						</div>
+						</button>
+					</div>`;
+			resultItem && this.productRecommendation.appendChild(recommendationItem)
+		}
+
+		const closeDrawer = document.createElement('div');
+		closeDrawer.classList.add('close-drawer');
+		this.productRecommendation.appendChild(closeDrawer)
+		this.productRecommendation?.recommendationAddCart()
+		const activeCloseDrawer = document.querySelector('product-recommendation .close-drawer')
+		activeCloseDrawer.addEventListener('click', () => this.removeRecommendations())
 	}
 
 	close() {
@@ -85,6 +138,7 @@ class CartDrawer extends HTMLElement {
 		document.documentElement.classList.remove('overflow-hidden');
 		document.body.style.overflowY = 'auto';
 		document.querySelector('sticky-header').style.overflowY = ''
+		this.removeRecommendations()
 	}
 
 	hasScrollbar() {

@@ -5,12 +5,18 @@ $activeColor:#504030;
 
 .product-quiet {
 	.content {
-		.quiet-title {
+		p.quiet-title {
 			font-family: HelveticaNowDisplayXBlk;
+			color: $activeColor;
 
 			&::first-letter {
 				color: $font-emphasize;
 			}
+		}
+
+		span.quiet-title {
+			font-family: HelveticaNowDisplayXBlk;
+			color: $activeColor;
 		}
 
 		.voice {
@@ -94,12 +100,14 @@ $activeColor:#504030;
 
 	.product-quiet {
 		.content {
+			.title-wrapper {
+				margin-bottom: 20px;
+			}
+
 			.quiet-title {
 				font-size: 70px;
-				margin-bottom: 20px;
 				width: 582px;
 				line-height: 84px;
-
 			}
 
 			.voice {
@@ -173,9 +181,17 @@ $activeColor:#504030;
 		margin: vw(53px) 0px vw(71px);
 
 		.content {
+			.title-wrapper {
+				margin-bottom: vw(15px);
+			}
+
 			.quiet-title {
 				font-size: vw(37px);
 				line-height: vw(40px);
+			}
+
+			p.quiet-title {
+				font-size: vw(40px);
 				margin-bottom: vw(10px);
 			}
 
@@ -209,6 +225,7 @@ $activeColor:#504030;
 
 		.quite-img {
 			width: vw(364px);
+			margin-top: vw(-15px);
 		}
 	}
 

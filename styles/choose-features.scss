@@ -125,7 +125,7 @@ legend.form__label span.variant-label__value {
 
 .variant_data_loop img {
 	width: 100%;
-	background: #ece2da;
+	// background: #ece2da;
 	object-fit: cover;
 }
 
@@ -957,10 +957,6 @@ label.hide_change_mainproduct {
 			width: vw(360px);
 			margin: 0 auto;
 			padding-bottom: vw(20px);
-		}
-
-		.prod_cus_images {
-			height: 100%;
 		}
 
 		.listed_main_data {

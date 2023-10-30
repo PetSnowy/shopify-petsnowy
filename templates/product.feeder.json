@@ -600,6 +600,7 @@
       "blocks": {
         "9d1a8320-c08d-488b-b6a9-6b345c1a66e5": {
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
           "settings": {
             "contentSize": 16,
             "pattern": "",
