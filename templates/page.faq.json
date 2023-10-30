@@ -535,7 +535,34 @@
           "type": "block",
           "settings": {
             "h3": "Where does litter box ship from?",
-            "text": "",
+            "text": "Our products are shipped from warehouses located in the United States, Europe, the United Kingdom, Canada, and Australia.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "cf744cd3-3a15-4663-ac19-ff199f536d1d": {
+          "type": "block",
+          "settings": {
+            "h3": "Do you ship to PO Boxes or APO\/FPO\/DPO addresses?",
+            "text": "Unfortunately, we are unable to deliver orders to PO Boxes or APO\/FPO\/DPO addresses.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "a311532a-9ade-4fa1-897a-948a2604dd91": {
+          "type": "block",
+          "settings": {
+            "h3": "How do I update my billing or shipping address?",
+            "text": "To correct an incorrect billing or shipping address for an order, it's best to cancel the existing order and place a new one with the correct information on our website. You can also contact our customer service at support@petsnowy.com for further assistance.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "f645190a-8d91-48d6-9cb8-0647d1060e3d": {
+          "type": "block",
+          "settings": {
+            "h3": "How can I find tracking information on my order?",
+            "text": "Once your order has been shipped, you can expect to receive an email containing the tracking information. Alternatively, if you log into your account and click on \"More Actions,\" navigate to the \"View Order Page\" where you will find the tracking details for each of your orders.",
             "youtube_video": "",
             "video": ""
           }
@@ -567,7 +594,10 @@
         "2822091e-5208-4d78-b91f-0ec28ea89267",
         "cd9542d5-9edf-4249-aef3-b85439e835b8",
         "26da2b64-1426-4882-82b2-3f1f26171100",
-        "00f69da0-9085-453d-ad0e-2762fa929fd7"
+        "00f69da0-9085-453d-ad0e-2762fa929fd7",
+        "cf744cd3-3a15-4663-ac19-ff199f536d1d",
+        "a311532a-9ade-4fa1-897a-948a2604dd91",
+        "f645190a-8d91-48d6-9cb8-0647d1060e3d"
       ],
       "settings": {
         "h1": "",
