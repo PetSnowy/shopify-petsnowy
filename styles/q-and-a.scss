@@ -3,6 +3,17 @@
 }
 
 .faq_qa_main {
+	.video-click {
+		display: inline-block;
+		color: #d75f23;
+		cursor: pointer;
+	}
+
+	.answer_txt {
+		color: #d75f23;
+		cursor: pointer;
+	}
+
 	.video-popup {
 		width: 100vw;
 		height: 100vh;
@@ -13,12 +24,22 @@
 		left: 0px;
 		z-index: 10000;
 
-		.iframe {
+		.video-wrapper {
 			position: absolute;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
+
+		video {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	.video-popup.active {
+		display: block;
 	}
 
 	h1,
@@ -35,20 +56,19 @@
 		padding-bottom: vw(40px);
 
 		.video-popup {
-			.iframe {
-				width: vw(680px);
-				height: vw(400px);
+			.video-wrapper {
 				border-radius: vw(20px);
-			}
-
-			iframe {
-				width: 100%;
-				height: 100%;
 				overflow: hidden;
+				width: vw(680px);
+			}
+
+			video {
+				width: 100%;
+				height: auto;
 				border-radius: vw(20px);
 			}
 
-			.close {
+			.video-close {
 				width: vw(40px);
 				height: vw(40px);
 				position: absolute;
@@ -56,7 +76,7 @@
 				display: block !important;
 				cursor: pointer;
 				right: 0px;
-				top: vw(-70px);
+				top: 0px;
 			}
 		}
 
@@ -227,19 +247,24 @@
 		}
 
 		.video-popup {
-			iframe {
+			video {
 				border-radius: 10px;
 				overflow: hidden;
 			}
 
-			.close {
+			.video-wrapper {
+				width: 800px;
+				height: 800px;
+			}
+
+			.video-close {
 				width: 40px;
 				height: 40px;
 				background: url('./close.png') no-repeat center/cover;
 				position: absolute;
 				display: block !important;
 				cursor: pointer;
-				top: -48px;
+				top: 0px;
 				right: 0px;
 				transition: all 0.3s ease;
 
