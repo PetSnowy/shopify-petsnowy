@@ -39,7 +39,16 @@
           "type": "block",
           "settings": {
             "h3": "How many cats can use SNOW⁺?",
-            "text": "",
+            "text": "We recommend having up to 4 indoor cats using a single SNOW⁺ unit; however, some of our customers have more cats and still use just one unit. Here's a general guideline: with one cat using SNOW⁺, you may need to empty the waste drawer every 2 weeks. For two cats, it might be once a week, and for three cats, twice a week, and so forth. SNOW⁺ features an expanded waste drawer for greater waste capacity, reducing the frequency of emptying. SNOW⁺ initiates a cleaning cycle 4 minutes after each use, but if another cat interrupts this period, the timer will reset for another 4 minutes, potentially leaving waste in the litter for more than 4 minutes. Having too many cats per SNOW⁺ unit may result in the litter not being completely clean for the next use.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "cbd33b0a-ae86-4826-83f2-f77088cb14d0": {
+          "type": "block",
+          "settings": {
+            "h3": "Will my cat actually go inside the globe?",
+            "text": "Cats are naturally inquisitive and tend to explore new objects. If your cat is accustomed to a covered litter box, they might adapt more quickly to SNOW⁺. We recommend initially keeping SNOW⁺ turned off while your cat gets used to it. Place SNOW⁺ in the same spot as your old litter box. You can keep the old litter box nearby for a short period. Take a cup of litter from the old box and mix it with the clean litter in SNOW⁺. This will provide a familiar scent, encouraging your cat to investigate. Once your cat steps inside and feels the litter, they should instinctively know what to do. For further guidance on acclimating your cat (超链接到引导小猫使用专属页面）, please refer to our resources.",
             "youtube_video": "",
             "video": ""
           }
@@ -48,7 +57,8 @@
       "block_order": [
         "e2e78636-34f6-462a-a82e-29cf9ff21c1c",
         "460f717c-9073-4726-bb20-5a189975cb38",
-        "79c72a77-0c71-46a2-8832-e427e10fb79f"
+        "79c72a77-0c71-46a2-8832-e427e10fb79f",
+        "cbd33b0a-ae86-4826-83f2-f77088cb14d0"
       ],
       "settings": {
         "h1": "",
