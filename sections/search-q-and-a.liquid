@@ -20,63 +20,1532 @@
     <div class="faq-wrapper">
       <aside class="page-sidebar">
         <div class="sidebar-wrapper">
-          {% for aside in section.blocks %}
-            {% if aside.type == 'title' %}
-              <div class="aside-item">{{ aside.settings.h2 }}</div>
-            {% endif %}
-          {% endfor %}
         </div>
       </aside>
       <div class="faq_qna_iner">
-        {% for block in section.blocks %}
-          <div class="option">
-            {% if block.type == 'title' %}
-              <h2 class="title">{{ block.settings.h2 }}</h2>
-            {% endif %}
-            {% if block.type == 'block' %}
-              <div class="qn_group_main">
-                <div class="ques_title">
-                  {% if block.settings.h3 != blank %}
-                    <h3>{{ block.settings.h3 }}</h3>
-                    <span class="onc_arrow">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-chevron-up"
-                      >
-                        <polyline points="18 15 12 9 6 15"></polyline>
-                      </svg>
-                    </span>
-                  {% endif %}
-                </div>
-                <div class="answer_txt">
-                  {% if block.settings.text %}
-                    {{ block.settings.text }}
-                  {% endif %}
-                  {% if block.settings.video %}
-                    <video
-                      class="desk_video custom_videoss"
-                      width="100%"
-                      height="100%"
-                      muted
-                      autoplay
-                      playsinline
-                    >
-                      <source src="{{ block.settings.video }}" type="video/mp4">
-                    </video>
-                  {% endif %}
-                </div>
-                <hr class="qna_hr">
-              </div>
-            {% endif %}
+        <div class="option">
+          <h2 class="title">Pre-purchase （SNOW⁺ Self-Cleaning Litter Box)</h2>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Does SNOW⁺ require special litter?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              SNOW⁺ operates efficiently with clumping litter. We advise using a premium, standard-weight, clay-based
+              clumping litter. Additionally, you can use certain silica gel litter beads and crystals with SNOW⁺ as long
+              as they can pass through the screen. Plant-based alternatives may also be compatible, but they often
+              produce less compact clumps that might lead to moisture accumulation in the waste drawer. When opting for
+              a plant-based litter with SNOW⁺, consider more frequent waste drawer emptying and cleaning. Litters that
+              are not suitable for SNOW⁺ include those designed solely for absorption, non-clumping or those with loose
+              clumping properties, newspaper-based options, and absorbent wood pellet litter.
+            </div>
+            <hr class="qna_hr">
           </div>
-        {% endfor %}
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>How many cats can use SNOW⁺?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              We recommend having up to 4 indoor cats using a single SNOW⁺ unit; however, some of our customers have
+              more cats and still use just one unit. Here's a general guideline: with one cat using SNOW⁺, you may need
+              to empty the waste drawer every 2 weeks. For two cats, it might be once a week, and for three cats, twice
+              a week, and so forth. SNOW⁺ features an expanded waste drawer for greater waste capacity, reducing the
+              frequency of emptying. SNOW⁺ initiates a cleaning cycle 4 minutes after each use, but if another cat
+              interrupts this period, the timer will reset for another 4 minutes, potentially leaving waste in the
+              litter for more than 4 minutes. Having too many cats per SNOW⁺ unit may result in the litter not being
+              completely clean for the next use.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Will my cat actually go inside the globe?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Cats are naturally inquisitive and tend to explore new objects. If your cat is accustomed to a covered
+              litter box, they might adapt more quickly to SNOW⁺. We recommend initially keeping SNOW⁺ turned off while
+              your cat gets used to it. Place SNOW⁺ in the same spot as your old litter box. You can keep the old litter
+              box nearby for a short period. Take a cup of litter from the old box and mix it with the clean litter in
+              SNOW⁺. This will provide a familiar scent, encouraging your cat to investigate. Once your cat steps inside
+              and feels the litter, they should instinctively know what to do. For further guidance on acclimating your
+              cat (超链接到引导小猫使用专属页面）, please refer to our resources.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Can kittens use SNOW⁺ ?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Kittens weighing 3.3 pounds or more can safely use SNOW⁺ in automatic mode. For kittens below this weight
+              threshold, turn off automatic cleaning and opt for "semi-automatic" mode. To do this, deactivate automatic
+              cleaning in the PetSnowy APP and manually initiate the cleaning process pressing the clean button or the
+              App once or twice daily (ensure the kitten is not inside the machine when pressing the button). This
+              approach ensures your kitten's safety during their early encounters with SNOW⁺, while also relieving you
+              of the need to manually scoop the litter box.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>What are the dimensions for the litter box?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Product name：SNOW+ Self Cleaning Litter Box Size: 29.5'' in length, 20'' in width, and 25.6'' in height
+              (75 x 50.8 x 65cm). Entryway, inclusive of the ramp: 14.9’’ in height and 9.05’’ in length (38 x 23cm).
+              Internal capacity: 2.9ft3 or 83L. Waste drawer: 2.6 gallons or 10L. Globe: a capacity of 2ft3 with a
+              diameter of 19.68'' (56L, 50 cm in diameter).
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Does SNOW⁺ assist with cats that spray very high?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Yes, SNOW⁺ is an excellent solution for cats that spray or have high-aiming habits. The design of the unit
+              is well-suited to handle such situations. The globe is protected by a durable, impermeable flexible liner.
+              If any liquid manages to reach above the halfway mark, it will simply drip or drain down to the liner and
+              then into the litter, without collecting or pooling. This will result in a clump forming at the edge of
+              the litter bed, which will be removed during the cleaning cycle when the globe liner peels off. If your
+              cat consistently sprays, you may need to clean the interior of the globe more frequently to remove any
+              residue. For a thorough cleaning, you can easily remove the entire globe. Our globe is designed with a
+              magnetic attachment, making it a quick one-second process to take it out for cleaning.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Does SNOW⁺ have a weight limit?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Literally saying, SNOW⁺ doesn't have a weight limit, but we recommend it for cats weighing less than 20
+              lbs (9 kg) for the best comfort of your feline friend.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>What is the TiO2 deodorization system?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              The combination of a TiO2 system and UV light is commonly referred to as a photocatalyst. TiO2 is an
+              initials for photocatalyst, a nano-scale semiconductor material that deodorizes and dissolves hazardous
+              compounds in the air while remaining kitten-safe. UV light is used in conjunction with our TiO2 system to
+              improve bacteria and virus deodorization and breakdown. The duel will begin only once the cat has left
+              after using the toilet. The UV light is used to activate TiO2 and sterilize. It only works when cat leaves
+              and is never directly exposed to the walkway, making it completely safe for the cat.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Does SNOW⁺ require special trash bags?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              The self-sealing feature is just one of the numerous advantages our device offers. While there are
+              alternative options (such as diy bags), we suggest using our SNOW⁺ Waste Drawer Liners for optimal
+              performance. These liners are engineered for use with the waste drawer and its self-sealing function,
+              ensuring durability and strength to handle various types of cat waste.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>How frequently should I empty the waste drawer?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              The frequency of emptying the waste drawer depends on the number and size of your cats. SNOW⁺ features an
+              enlarged waste drawer, so you may only need to empty it once every two weeks for one cat, once a week for
+              two cats, twice a week for three cats, and so forth.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Can SNOW⁺ help minimize litter tracking?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Absolutely, SNOW⁺ comes with a litter mat that will be placed at the walkway of the litter box's entrance.
+              With SNOW⁺'s unique entrance design and the assistance of the litter mat, it can significantly reduce most
+              litter tracking issues. The litter mat is easily removable and easy to clean, or you can choose to pour
+              the litter from the mat back into the globe for continued use.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>How much litter should I add to SNOW⁺?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Fill the globe with litter until it reaches the max fill line on the rubber globe liner when it's spread
+              flat. This is approximately 10 pounds of clumping litter (4.8 kg), 5 pounds of tofu litter (2.4 kg) by
+              weight, or 1 gallon (4L) by volume. Be cautious not to overfill the globe. Since the waste clumps are
+              removed during each cycle, there's no need to use an excessive amount of litter in the globe.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>How frequently should I refill litter in SNOW⁺?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              SNOW⁺ is highly efficient in its litter usage due to its patented sifting system, which only removes the
+              clumps. We suggest verifying the litter level in comparison to the maximum fill line (found on the globe's
+              rubber liner) each time you empty the waste drawer. This typically occurs about once every two weeks for a
+              single cat or once a week for households with multiple cats. Ensure not to overfill the globe.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Is Pretty Litter compatible with SNOW⁺?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Litter beads and crystals, as long as they are small enough to pass through the screen, like Pretty
+              Litter, can be used with SNOW⁺. Nevertheless, we recommend utilizing a high-quality, clay-based clumping
+              litter for optimal performance.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>How long will a Robertet® fragrance box last?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              One Robertet® fragrance box（超链接到产品） is designed to last for 30 days. When it is depleted, the app
+              will send a notification to switch fragrances.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Is it possible to use SNOW+ without the fragrance box?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              The Robertet® fragrance box（超链接到产品) we offer is specifically formulated to neutralize thiols and
+              cyclohexylamine found in cat urine without generating any ozone. However, if you are sensitive to smells,
+              you have the option to remove the fragrance. In fact, even if you choose to use it, the scent is barely
+              noticeable unless you bring your nose close to the entrance. To remove the fragrance, simply detach the
+              fragrance box from the deodorizer box cover.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Will the globe rotate while my cat is inside?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              No, the globe will remain stationary while your cat is inside. SNOW⁺ features SnowSafe⁺ technology,
+              including a weight sensor, an anti-pinch system, and safety app notifications, which detect your cat each
+              time they enter or re-enter the globe. This resets the countdown timer, ensuring that the cleaning cycle
+              won't start for another 4 minutes.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Are there any rakes or wires inside the globe?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              No, there are no rakes or wires inside the globe that could potentially harm your cat. SNOW⁺ has been
+              carefully designed with your cat's safety as a top priority.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>What happens if my cat tries to enter the globe while it is rotating?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              SnowSafe⁺ technology will detect your cat, causing the globe to stop immediately. The cycle will not
+              resume until 15 seconds after the cat is no longer detected. If your cat or another object continues to
+              trigger the sensor, SNOW⁺ will not restart the cleaning cycle. Instead, a series of lights will flash, and
+              the app will send notifications to indicate the issue. You can refer to the Instruction Manual for
+              troubleshooting common problems, and our Customer Experience team is available to assist as needed.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>If I have multiple cats, how do I know which cat is using the SNOW⁺?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Inside the PetSnowy app, you have the option to set a unique Pet ID for each cat. SNOW+ will be able to
+              distinguish between the cats by recording their weight readings.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>What type of power supply does SNOW⁺ require? How much power does SNOW⁺ consume?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              SNOW⁺ is compatible with both 110V and 220V currents. Please use the included power supply with the unit.
+              SNOW⁺ has a very low power consumption, using only 1.83 kWh per month.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>How to clean SNOW⁺?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Kindly refer to our video clips(点击播放清洗视频） for cleaning instructions. Cleaning the entire
+              equipment should take no more than 15 minutes. It is important to note that this thorough cleaning process
+              is generally not required on a daily basis, but rather every few months. SNOW+ is designed for easy
+              disassembly, featuring a magnetic attachment system that simplifies the process. We suggest cleaning the
+              litter box every two months when using clay clumping litter. For silica gel and crystal litter, it is
+              recommended to clean the litter box on a monthly basis.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>What is the difference between a new SNOW⁺ and a reconditioned SNOW⁺? *(二手未售时不放）</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Reconditioned SNOW⁺ units are typically SNOW⁺ units that were originally sold as new and then returned
+              during our 30-day in-home trial. These units are carefully reconditioned and tested to ensure they meet
+              the original factory specifications. PetSnowy stands behind reconditioned SNOW⁺ units with the same 30-day
+              in-home trial and a 1-Year Warranty. Opting for a reconditioned SNOW⁺ can offer excellent value as you
+              receive a manufacturer-approved product at a reduced price. However, it's essential to note that
+              reconditioned units are technically used products. While we thoroughly clean them before shipping, there
+              may be minor cosmetic imperfections or signs of previous use. If you have concerns about these factors, we
+              recommend considering a new SNOW⁺ instead.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Where can I purchase?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              SNOW⁺ and all its accessories are available for purchase on petsnowy.com. If you have any questions about
+              alternative purchasing options, please don't hesitate to reach out to info@petsnowy.com for more details.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>What countries do you ship to?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              The SNOW+ is currently available in the following countries: United States, Canada, the United Kingdom,
+              Belgium, France, Italy, Netherlands, Austria, Poland, Portugal, Sweden, Slovenia, Spain, Czech Republic,
+              Hungary, Denmark, Ireland, Finland, Lithuania, Luxembourg, Monaco, Bulgaria, Estonia, Greece, Croatia,
+              Latvia, Romania, Germany, Switzerland, and Slovakia. If your country is not included in this list, please
+              contact us(超链接到联系我们页面） to inquire about its eligibility for shipping.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>What methods of payment do you accept?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              We accept Visa, MasterCard, American Express, and PayPal. Additionally, we provide payment plan
+              alternatives through Affirm. Please note that we do not accept checks or money orders as forms of payment.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <h2 class="title">Post-purchase</h2>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>How do I set up my SNOW⁺?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              When you receive the SNOW⁺, it comes already assembled. You just need to place the fragrance box and
+              litter mat into the litter box. Then, follow the quick guide to connect the litter box with the PetSnowy
+              app, and you and your furry friend are ready to use it.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>My cat doesn't use a litter box, what should I do?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              If your cat is having trouble adapting to using the SNOW⁺, it can be frustrating. Don't worry, here are
+              some tips to help your cat adjust to the new litter box:
+              <br>
+              · Place the SNOW⁺ in the same location as the old litter box and arrange the surroundings accordingly.
+              <br>
+              · Power off the SNOW⁺ and use it as a regular open litter box by removing its top cover until your cat
+              makes more attempts.<br>
+              ·Add all the used litter from the old litter box into the new SNOW⁺ to help familiarize your cat with it.<br>
+              ·Reduce the frequency of cleaning the old litter box to make it less appealing. If you need more tips, we
+              also have a transition guide video (超链接到引导猫适应SNOW⁺的视频) to assist your furry baby in adapting
+              to the SNOW⁺.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>How do I set the automatic cleaning time?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              The automatic cleaning time refers to the waiting period after the cat exits the SNOW⁺ before the
+              automatic cleaning starts. By default, this time is set to 4 minutes. The automatic cleaning time setting
+              depends on the clumping time of the litter you are using. It is recommended to adjust the waiting time
+              based on the specific clumping characteristics of your litter. This will ensure that the clumps have
+              enough time to form before the automatic cleaning process begins. By customizing the waiting time, you can
+              optimize the cleaning performance of SNOW⁺.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>How long does the manual deodorization last?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              The manual deodorization function lasts for 30 minutes and cannot be interrupted unless the device is
+              powered off. If you prefer a shorter deodorization time, you can use the PetSnowy app to set the
+              deodorization cycle to at least 1 minute. This customized feature allows you to adjust the deodorization
+              time according to your preferences.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Why is there waste left behind after the SNOW⁺ automatic cleaning?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              To ensure that the waste has enough time to harden and form larger clumps, you can adjust the automatic
+              cleaning time to a longer duration. While our standard filter works well for most adult cats, if your cat
+              or its waste size is particularly small, small clumps may escape through the filtering holes. In such
+              cases, our mini-mesh filter(链接到产品） can provide you with the best cleaning experience. This
+              additional accessory will help prevent any clumps from bypassing the filtration system and improve the
+              overall performance of the SNOW⁺.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <h2 class="title">SNOW⁺ automatic Pet Feeder</h2>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>What are the dimensions for the feeder?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Product Name: PetSnowy Feeder Dimensions: 12.5" x 7.9" x 13.2" (31.75cm x 20.06cm x 33.53cm) Weight:
+              3.6lbs (1.63kg) Food container capacity: 4 quarts (3.79 liters) Feeder bowl capacity: 0.7 quarts (0.66
+              liters)
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>How much food does SNOW⁺ feeder dispense every time?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              In the app, you have the option to customize the amount of food dispensed by the feeder. You can dispense
+              food between 1 and 20 portion. Each portion of the food is approximately equivalent to one-third of an
+              ounce or 8 grams. It’s important to note that the actual weight of each portion may vary depending on the
+              density of the cat food, you can dispense a portion and weigh it for a more precise measurement of the
+              amount of food being dispensed by the feeder.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>What size of food can be dispensed from the feeder?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              The feeder is designed to dispense food ranging from 5mm to 15mm in size. This ensures compatibility with
+              a variety of kibble sizes and shapes, providing flexibility in the types of food that can be used with the
+              feeder.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>How to clean SNOW⁺ feeder?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              To clean the SNOW⁺ feeder(超链接到喂食器清洗视频), you can easily remove the food bucket and bowl for
+              washing. These parts can be easily detached from the feeder and washed with soap and water. Additionally,
+              the interior of the feeder can be wiped down. Regular cleaning ensures that it remains hygienic and safe
+              for your cats to use.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Will the feeder still dispense food if the power is cut off?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              The feeder is designed to operate using 4 AA batteries, therefore it can function independently without
+              the power cord being plugged in. This feature enables you to use the feeder even if a power socket is not
+              readily available, making it convenient for outdoor and travel situations.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>How should I set feed schedule for my cat?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Within the app, you have the ability to create multiple feeding schedules for each day. It's important to
+              ensure that you set each schedule to run daily, as failure to do so will result in missed feedings on the
+              days you haven't selected.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Can SNOW⁺ feeder hold wet food?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Please note that our feeder is specifically designed to accommodate dry food only. Using wet food may
+              result in the food sticking to the rotor, which can adversely affect the functionality of the feeder. We
+              recommend using dry food to ensure optimal performance and prevent any issues with food dispensing.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Will I receive a notification when there isn’t enough food in the feeder?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Yes, when there isn't enough food in the feeder, the light on the feeder will blink, and you will also
+              receive a notification on the app. This ensures that you are aware of the low food level and can refill
+              the feeder in a timely manner.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <h2 class="title">SNOW⁺ Pet Water Fountain</h2>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>What are the dimensions for the Water fountain?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Product name：SNOW+ Automatic Pet Water Fountain Size: 7.48*7.48*6.1 in Total weight: 2.29 lbs Rated
+              voltage: DC 5V Rated power: 1.2W
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>How frequently should I clean the fountain?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              It is recommended to clean the fountain (超链接到饮水机清洗视频) every 5-7 days. It’s important to note
+              that the base of the fountain can’t be washed with water, the remaining parts can be water washed.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Does the fountain require special filter?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Yes, the SNOW⁺ fountain requires a specific size of filter to ensure proper functioning and maintain the
+              cleanliness and hygiene of the water. The special filter uses multiple purification methods to remove
+              impurities from the water, including adsorption of particles, deodorization, and removal of harmful
+              substances. Additionally, it utilizes plasma exchange resin biological filtration technology to soften
+              hard water, making it more palatable for your pets. Regular replacement of the filter ensures that the
+              fountain continues to provide clean and fresh water for your cats to drink.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>How long will one filter last?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              One filter is designed to last for one month. When replacing a new filter, remember to soak the filter in
+              water for five minutes and rinse it lightly before using it again. This helps maintain the cleanliness and
+              effectiveness of the filter in providing clean and fresh water for your cats.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Will I receive a notification when there isn’t enough water in the fountain?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Yes, you will receive a notification when there isn't enough water in the fountain. The indicator light on
+              the fountain will flash, and you will also receive a notification on your app indicating that the water
+              level is low. This helps you ensure that your pet always have an adequate supply of water and allows you
+              to refill the fountain in a timely manner.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <h2 class="title">Shipping</h2>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>What is the estimated shipping time?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Expected Shipping Time: Contiguous U.S.: 1-4 business days Canada: 1-4 business days EU: 1-4 business days
+              UK: 1-4 business days AU: 1-4 business days
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>What countries do you ship to?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              The SNOW+ is currently available in the following countries: United States, Canada, the United Kingdom,
+              Belgium, France, Italy, Netherlands, Austria, Poland, Portugal, Sweden, Slovenia, Spain, Czech Republic,
+              Hungary, Denmark, Ireland, Finland, Lithuania, Luxembourg, Monaco, Bulgaria, Estonia, Greece, Croatia,
+              Latvia, Romania, Germany, Switzerland, and Slovakia. If your country is not included in this list, please
+              contact us to inquire about its eligibility for shipping.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Do you offer free shipping?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Free shipping is available for all orders totaling $49 or more within the contiguous United States.
+              However, please note that this offer does not apply to orders shipped to Alaska, Hawaii, or Puerto Rico.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>What are shipping costs outside the contiguous U.S.?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              When shipping a litter box unit outside the contiguous United States, the following shipping costs apply:
+              $150 for Hawaii and Alaska, and $200 for Puerto Rico, American Samoa, Guam, Northern Mariana Islands, and
+              U.S. Virgin Islands.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Where does litter box ship from?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Our products are shipped from warehouses located in the United States, Europe, the United Kingdom, Canada,
+              and Australia.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="qn_group_main">
+            <div class="ques_title">
+              <h3>Do you ship to PO Boxes or APO/FPO/DPO addresses?</h3>
+              <span class="onc_arrow" style="transform: rotate(180deg);">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-up"
+                >
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="answer_txt" style="display: none;">
+              Unfortunately, we are unable to deliver orders to PO Boxes or APO/FPO/DPO addresses.
+            </div>
+            <hr class="qna_hr">
+          </div>
+        </div>
       </div>
     </div>
     <div class="search-result"></div>

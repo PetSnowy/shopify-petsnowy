@@ -94,6 +94,15 @@ $(function () {
 		}
 	}
 
+	const asideItemWrapper = document.querySelector('.sidebar-wrapper');
+
+	for (let i = 0; i < title.length; i++) {
+		const createElement = document.createElement('div')
+		createElement.classList.add('aside-item')
+		createElement.innerHTML = title[i].innerHTML
+		asideItemWrapper.appendChild(createElement)
+	}
+
 	const asideItem = document.querySelectorAll('.aside-item');
 
 	for (let i = 0; i < asideItem.length; i++) {
