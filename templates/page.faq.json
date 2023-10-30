@@ -160,6 +160,15 @@
             "youtube_video": "",
             "video": ""
           }
+        },
+        "a5b57f7f-47e3-497b-aeac-dcfb2c2a796b": {
+          "type": "block",
+          "settings": {
+            "h3": "Is it possible to use SNOW+ without the fragrance box?",
+            "text": "The Robertet® fragrance box（超链接到产品) we offer is specifically formulated to neutralize thiols and cyclohexylamine found in cat urine without generating any ozone. However, if you are sensitive to smells, you have the option to remove the fragrance. In fact, even if you choose to use it, the scent is barely noticeable unless you bring your nose close to the entrance. To remove the fragrance, simply detach the fragrance box from the deodorizer box cover.",
+            "youtube_video": "",
+            "video": ""
+          }
         }
       },
       "block_order": [
@@ -178,7 +187,8 @@
         "e160ecb0-02e7-4b3b-bb9b-5f6ab53d1ae9",
         "1c32897d-7ee3-4c77-a789-91f931c08482",
         "e2778907-0483-46e9-ab75-b9643545ef12",
-        "974de21d-eb0a-4ea0-a95f-00e60e7101db"
+        "974de21d-eb0a-4ea0-a95f-00e60e7101db",
+        "a5b57f7f-47e3-497b-aeac-dcfb2c2a796b"
       ],
       "settings": {
         "h1": "",
