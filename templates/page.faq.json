@@ -19,6 +19,27 @@
     },
     "b1f11e75-3bd6-4b33-95ea-68c880af1b72": {
       "type": "search-q-and-a",
+      "blocks": {
+        "e2e78636-34f6-462a-a82e-29cf9ff21c1c": {
+          "type": "title",
+          "settings": {
+            "h2": "Pre-purchase （SNOW⁺ Self-Cleaning Litter Box)"
+          }
+        },
+        "460f717c-9073-4726-bb20-5a189975cb38": {
+          "type": "block",
+          "settings": {
+            "h3": "Does SNOW⁺ require special litter?",
+            "text": "SNOW⁺ operates efficiently with clumping litter. We advise using a premium, standard-weight, clay-based clumping litter. Additionally, you can use certain silica gel litter beads and crystals with SNOW⁺ as long as they can pass through the screen. Plant-based alternatives may also be compatible, but they often produce less compact clumps that might lead to moisture accumulation in the waste drawer. When opting for a plant-based litter with SNOW⁺, consider more frequent waste drawer emptying and cleaning. Litters that are not suitable for SNOW⁺ include those designed solely for absorption, non-clumping or those with loose clumping properties, newspaper-based options, and absorbent wood pellet litter.",
+            "youtube_video": "",
+            "video": ""
+          }
+        }
+      },
+      "block_order": [
+        "e2e78636-34f6-462a-a82e-29cf9ff21c1c",
+        "460f717c-9073-4726-bb20-5a189975cb38"
+      ],
       "settings": {
         "h1": "",
         "sub_txt": ""
