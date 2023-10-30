@@ -488,6 +488,57 @@
             "youtube_video": "",
             "video": ""
           }
+        },
+        "c6df87be-5766-443d-bbe8-8e57bb4db21e": {
+          "type": "title",
+          "settings": {
+            "h2": "Shipping"
+          }
+        },
+        "f425f9cd-6a7f-4857-8afe-c38c05f96306": {
+          "type": "block",
+          "settings": {
+            "h3": "What is the estimated shipping time?",
+            "text": "Expected Shipping Time:\nContiguous U.S.: 1-4 business days\nCanada: 1-4 business days\nEU: 1-4 business days\nUK: 1-4 business days\nAU: 1-4 business days",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "2822091e-5208-4d78-b91f-0ec28ea89267": {
+          "type": "block",
+          "settings": {
+            "h3": "What countries do you ship to?",
+            "text": "The SNOW+ is currently available in the following countries:  United States, Canada, the United Kingdom, Belgium, France, Italy, Netherlands, Austria, Poland, Portugal, Sweden, Slovenia, Spain, Czech Republic, Hungary, Denmark, Ireland, Finland, Lithuania, Luxembourg, Monaco, Bulgaria, Estonia, Greece, Croatia, Latvia, Romania, Germany, Switzerland, and Slovakia. If your country is not included in this list, please contact us to inquire about its eligibility for shipping.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "cd9542d5-9edf-4249-aef3-b85439e835b8": {
+          "type": "block",
+          "settings": {
+            "h3": "Do you offer free shipping?",
+            "text": "Free shipping is available for all orders totaling $49 or more within the contiguous United States. However, please note that this offer does not apply to orders shipped to Alaska, Hawaii, or Puerto Rico.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "26da2b64-1426-4882-82b2-3f1f26171100": {
+          "type": "block",
+          "settings": {
+            "h3": "What are shipping costs outside the contiguous U.S.?",
+            "text": "When shipping a litter box unit outside the contiguous United States, the following shipping costs apply: $150 for Hawaii and Alaska, and $200 for Puerto Rico, American Samoa, Guam, Northern Mariana Islands, and U.S. Virgin Islands.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "00f69da0-9085-453d-ad0e-2762fa929fd7": {
+          "type": "block",
+          "settings": {
+            "h3": "Where does litter box ship from?",
+            "text": "",
+            "youtube_video": "",
+            "video": ""
+          }
         }
       },
       "block_order": [
@@ -510,7 +561,13 @@
         "9e003e73-6048-4378-9f72-75218dcc43a5",
         "44a1ea8c-0634-4819-891c-a68c3b46c928",
         "3c437c2b-cefd-48d9-bd55-c3fde38304e8",
-        "84bc61f3-ca49-4ead-9328-386f2f0093aa"
+        "84bc61f3-ca49-4ead-9328-386f2f0093aa",
+        "c6df87be-5766-443d-bbe8-8e57bb4db21e",
+        "f425f9cd-6a7f-4857-8afe-c38c05f96306",
+        "2822091e-5208-4d78-b91f-0ec28ea89267",
+        "cd9542d5-9edf-4249-aef3-b85439e835b8",
+        "26da2b64-1426-4882-82b2-3f1f26171100",
+        "00f69da0-9085-453d-ad0e-2762fa929fd7"
       ],
       "settings": {
         "h1": "",
