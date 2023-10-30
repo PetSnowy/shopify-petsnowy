@@ -61,6 +61,15 @@
             "youtube_video": "",
             "video": ""
           }
+        },
+        "48c63f61-d876-4013-b6b4-a6ef19296eba": {
+          "type": "block",
+          "settings": {
+            "h3": "What are the dimensions for the litter box?",
+            "text": "Product name：SNOW+ Self Cleaning Litter Box\nSize: 29.5'' in length, 20'' in width, and 25.6'' in height (75 x 50.8 x 65cm). \nEntryway, inclusive of the ramp: 14.9’’ in height and 9.05’’ in length (38 x 23cm). \nInternal capacity: 2.9ft3 or 83L. \nWaste drawer: 2.6 gallons or 10L. \nGlobe: a capacity of 2ft3 with a diameter of 19.68'' (56L, 50 cm in diameter).",
+            "youtube_video": "",
+            "video": ""
+          }
         }
       },
       "block_order": [
@@ -68,7 +77,8 @@
         "460f717c-9073-4726-bb20-5a189975cb38",
         "79c72a77-0c71-46a2-8832-e427e10fb79f",
         "cbd33b0a-ae86-4826-83f2-f77088cb14d0",
-        "f3d304ce-c182-4bb2-b290-7f8f8665e58e"
+        "f3d304ce-c182-4bb2-b290-7f8f8665e58e",
+        "48c63f61-d876-4013-b6b4-a6ef19296eba"
       ],
       "settings": {
         "h1": "",
