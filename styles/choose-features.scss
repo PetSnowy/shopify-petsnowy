@@ -3,6 +3,8 @@
 .remaining {
 	color: #d66022;
 	font-weight: 500;
+	text-align: left;
+	display: block;
 }
 
 .itg_drop_var::-webkit-scrollbar,
@@ -27,11 +29,18 @@
 }
 
 .itg_drop_var label {
-	ul li {
-		text-align: left;
-		font-family: FS_JOEY-REGULAR;
-		font-weight: 400;
-		font-size: 14px;
+	ul {
+		margin-top: 5px;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		row-gap: 5px;
+
+		li {
+			text-align: left;
+			font-family: FS_JOEY-REGULAR;
+			font-weight: 400;
+			font-size: 14px;
+		}
 	}
 
 	cursor: pointer;
