@@ -167,6 +167,8 @@
 		}
 
 		.search-result {
+			margin-bottom: vw(40px);
+
 			p:nth-child(1) {
 				font-size: vw(35px);
 				font-weight: 500;
@@ -291,6 +293,7 @@
 
 		.search-result {
 			flex: 1;
+			margin-bottom: 20px;
 
 			p:nth-child(1) {
 				font-size: 20px;
