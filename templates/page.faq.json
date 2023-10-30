@@ -106,6 +106,60 @@
             "youtube_video": "",
             "video": ""
           }
+        },
+        "20fdf6aa-54ca-4843-bb7e-16d7ebce959b": {
+          "type": "block",
+          "settings": {
+            "h3": "How frequently should I empty the waste drawer?",
+            "text": "The frequency of emptying the waste drawer depends on the number and size of your cats. SNOW⁺ features an enlarged waste drawer, so you may only need to empty it once every two weeks for one cat, once a week for two cats, twice a week for three cats, and so forth.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "0ca84fe0-d8f5-4efe-a22b-6a840f4ae3f4": {
+          "type": "block",
+          "settings": {
+            "h3": "Can SNOW⁺ help minimize litter tracking?",
+            "text": "Absolutely, SNOW⁺ comes with a litter mat that will be placed at the walkway of the litter box's entrance. With SNOW⁺'s unique entrance design and the assistance of the litter mat, it can significantly reduce most litter tracking issues. The litter mat is easily removable and easy to clean, or you can choose to pour the litter from the mat back into the globe for continued use.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "e160ecb0-02e7-4b3b-bb9b-5f6ab53d1ae9": {
+          "type": "block",
+          "settings": {
+            "h3": "How much litter should I add to SNOW⁺?",
+            "text": "Fill the globe with litter until it reaches the max fill line on the rubber globe liner when it's spread flat. This is approximately 10 pounds of clumping litter (4.8 kg), 5 pounds of tofu litter (2.4 kg) by weight, or 1 gallon (4L) by volume. Be cautious not to overfill the globe. Since the waste clumps are removed during each cycle, there's no need to use an excessive amount of litter in the globe.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "1c32897d-7ee3-4c77-a789-91f931c08482": {
+          "type": "block",
+          "settings": {
+            "h3": "How frequently should I refill litter in SNOW⁺?",
+            "text": "SNOW⁺ is highly efficient in its litter usage due to its patented sifting system, which only removes the clumps. We suggest verifying the litter level in comparison to the maximum fill line (found on the globe's rubber liner) each time you empty the waste drawer. This typically occurs about once every two weeks for a single cat or once a week for households with multiple cats. Ensure not to overfill the globe.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "e2778907-0483-46e9-ab75-b9643545ef12": {
+          "type": "block",
+          "settings": {
+            "h3": "Is Pretty Litter compatible with SNOW⁺?",
+            "text": "Litter beads and crystals, as long as they are small enough to pass through the screen, like Pretty Litter, can be used with SNOW⁺. Nevertheless, we recommend utilizing a high-quality, clay-based clumping litter for optimal performance.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "974de21d-eb0a-4ea0-a95f-00e60e7101db": {
+          "type": "block",
+          "settings": {
+            "h3": "How long will a Robertet® fragrance box last?",
+            "text": "One Robertet® fragrance box（超链接到产品） is designed to last for 30 days. When it is depleted, the app will send a notification to switch fragrances.",
+            "youtube_video": "",
+            "video": ""
+          }
         }
       },
       "block_order": [
@@ -118,7 +172,13 @@
         "61e1bebb-080b-4f92-811f-b446452bce49",
         "02beb07d-d68d-45ab-ab7c-a599ada7dab4",
         "fb038e49-4574-48d6-9aa8-500b163c9a64",
-        "72fc1f59-6f5a-4d13-a6a0-b09ca0eb7688"
+        "72fc1f59-6f5a-4d13-a6a0-b09ca0eb7688",
+        "20fdf6aa-54ca-4843-bb7e-16d7ebce959b",
+        "0ca84fe0-d8f5-4efe-a22b-6a840f4ae3f4",
+        "e160ecb0-02e7-4b3b-bb9b-5f6ab53d1ae9",
+        "1c32897d-7ee3-4c77-a789-91f931c08482",
+        "e2778907-0483-46e9-ab75-b9643545ef12",
+        "974de21d-eb0a-4ea0-a95f-00e60e7101db"
       ],
       "settings": {
         "h1": "",
