@@ -52,13 +52,23 @@
             "youtube_video": "",
             "video": ""
           }
+        },
+        "f3d304ce-c182-4bb2-b290-7f8f8665e58e": {
+          "type": "block",
+          "settings": {
+            "h3": "Can kittens use SNOW⁺ ?",
+            "text": "Kittens weighing 3.3 pounds or more can safely use SNOW⁺ in automatic mode. For kittens below this weight threshold, turn off automatic cleaning and opt for \"semi-automatic\" mode. To do this, deactivate automatic cleaning in the PetSnowy APP and manually initiate the cleaning process pressing the clean button or the App once or twice daily (ensure the kitten is not inside the machine when pressing the button). This approach ensures your kitten's safety during their early encounters with SNOW⁺, while also relieving you of the need to manually scoop the litter box.",
+            "youtube_video": "",
+            "video": ""
+          }
         }
       },
       "block_order": [
         "e2e78636-34f6-462a-a82e-29cf9ff21c1c",
         "460f717c-9073-4726-bb20-5a189975cb38",
         "79c72a77-0c71-46a2-8832-e427e10fb79f",
-        "cbd33b0a-ae86-4826-83f2-f77088cb14d0"
+        "cbd33b0a-ae86-4826-83f2-f77088cb14d0",
+        "f3d304ce-c182-4bb2-b290-7f8f8665e58e"
       ],
       "settings": {
         "h1": "",
