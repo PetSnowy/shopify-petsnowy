@@ -27,6 +27,13 @@
 }
 
 .itg_drop_var label {
+	ul li {
+		text-align: left;
+		font-family: FS_JOEY-REGULAR;
+		font-weight: 400;
+		font-size: 14px;
+	}
+
 	cursor: pointer;
 	flex: 1;
 	position: relative;
