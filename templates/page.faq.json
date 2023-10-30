@@ -70,6 +70,42 @@
             "youtube_video": "",
             "video": ""
           }
+        },
+        "61e1bebb-080b-4f92-811f-b446452bce49": {
+          "type": "block",
+          "settings": {
+            "h3": "Does SNOW⁺ assist with cats that spray very high?",
+            "text": "Yes, SNOW⁺ is an excellent solution for cats that spray or have high-aiming habits. The design of the unit is well-suited to handle such situations. The globe is protected by a durable, impermeable flexible liner. If any liquid manages to reach above the halfway mark, it will simply drip or drain down to the liner and then into the litter, without collecting or pooling. This will result in a clump forming at the edge of the litter bed, which will be removed during the cleaning cycle when the globe liner peels off. If your cat consistently sprays, you may need to clean the interior of the globe more frequently to remove any residue. For a thorough cleaning, you can easily remove the entire globe. Our globe is designed with a magnetic attachment, making it a quick one-second process to take it out for cleaning.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "02beb07d-d68d-45ab-ab7c-a599ada7dab4": {
+          "type": "block",
+          "settings": {
+            "h3": "Does SNOW⁺ have a weight limit?",
+            "text": "Literally saying, SNOW⁺ doesn't have a weight limit, but we recommend it for cats weighing less than 20 lbs (9 kg) for the best comfort of your feline friend.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "fb038e49-4574-48d6-9aa8-500b163c9a64": {
+          "type": "block",
+          "settings": {
+            "h3": "What is the TiO2 deodorization system?",
+            "text": "The combination of a TiO2 system and UV light is commonly referred to as a photocatalyst. TiO2 is an initials for photocatalyst, a nano-scale semiconductor material that deodorizes and dissolves hazardous compounds in the air while remaining kitten-safe. UV light is used in conjunction with our TiO2 system to improve bacteria and virus deodorization and breakdown. The duel will begin only once the cat has left after using the toilet. The UV light is used to activate TiO2 and sterilize. It only works when cat leaves and is never directly exposed to the walkway, making it completely safe for the cat.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "72fc1f59-6f5a-4d13-a6a0-b09ca0eb7688": {
+          "type": "block",
+          "settings": {
+            "h3": "Does SNOW⁺ require special trash bags?",
+            "text": "The self-sealing feature is just one of the numerous advantages our device offers. While there are alternative options (such as diy bags), we suggest using our SNOW⁺ Waste Drawer Liners for optimal performance. These liners are engineered for use with the waste drawer and its self-sealing function, ensuring durability and strength to handle various types of cat waste.",
+            "youtube_video": "",
+            "video": ""
+          }
         }
       },
       "block_order": [
@@ -78,7 +114,11 @@
         "79c72a77-0c71-46a2-8832-e427e10fb79f",
         "cbd33b0a-ae86-4826-83f2-f77088cb14d0",
         "f3d304ce-c182-4bb2-b290-7f8f8665e58e",
-        "48c63f61-d876-4013-b6b4-a6ef19296eba"
+        "48c63f61-d876-4013-b6b4-a6ef19296eba",
+        "61e1bebb-080b-4f92-811f-b446452bce49",
+        "02beb07d-d68d-45ab-ab7c-a599ada7dab4",
+        "fb038e49-4574-48d6-9aa8-500b163c9a64",
+        "72fc1f59-6f5a-4d13-a6a0-b09ca0eb7688"
       ],
       "settings": {
         "h1": "",
