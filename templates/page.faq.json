@@ -34,11 +34,21 @@
             "youtube_video": "",
             "video": ""
           }
+        },
+        "79c72a77-0c71-46a2-8832-e427e10fb79f": {
+          "type": "block",
+          "settings": {
+            "h3": "How many cats can use SNOW⁺?",
+            "text": "",
+            "youtube_video": "",
+            "video": ""
+          }
         }
       },
       "block_order": [
         "e2e78636-34f6-462a-a82e-29cf9ff21c1c",
-        "460f717c-9073-4726-bb20-5a189975cb38"
+        "460f717c-9073-4726-bb20-5a189975cb38",
+        "79c72a77-0c71-46a2-8832-e427e10fb79f"
       ],
       "settings": {
         "h1": "",
