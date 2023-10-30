@@ -270,7 +270,7 @@
           "type": "block",
           "settings": {
             "h3": "How do I set up my SNOW⁺?",
-            "text": "",
+            "text": "When you receive the SNOW⁺, it comes already assembled. You just need to place the fragrance box and litter mat into the litter box. Then, follow the quick guide to connect the litter box with the PetSnowy app, and you and your furry friend are ready to use it.",
             "youtube_video": "",
             "video": ""
           }
@@ -311,11 +311,217 @@
         "h1": "",
         "sub_txt": ""
       }
+    },
+    "8d9b0399-94bb-4e48-a293-901152435cb4": {
+      "type": "Q-and-A",
+      "blocks": {
+        "706195ae-e33d-46a0-a12c-5dd6c4de10d3": {
+          "type": "block",
+          "settings": {
+            "h3": "My cat doesn't use a litter box, what should I do?",
+            "text": "If your cat is having trouble adapting to using the SNOW⁺, it can be frustrating. Don't worry, here are some tips to help your cat adjust to the new litter box:\n<br>\n· Place the SNOW⁺ in the same location as the old litter box and arrange the surroundings accordingly. <br>\n· Power off the SNOW⁺ and use it as a regular open litter box by removing its top cover until your cat makes more attempts.<br>\n·Add all the used litter from the old litter box into the new SNOW⁺ to help familiarize your cat with it.<br>\n·Reduce the frequency of cleaning the old litter box to make it less appealing.\nIf you need more tips, we also have a transition guide video (超链接到引导猫适应SNOW⁺的视频) to assist your furry baby in adapting to the SNOW⁺.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "9e9590ca-c37f-45c1-b813-d8d0a35843cf": {
+          "type": "block",
+          "settings": {
+            "h3": "How do I set the automatic cleaning time?",
+            "text": "The automatic cleaning time refers to the waiting period after the cat exits the SNOW⁺ before the automatic cleaning starts. By default, this time is set to 4 minutes. The automatic cleaning time setting depends on the clumping time of the litter you are using. It is recommended to adjust the waiting time based on the specific clumping characteristics of your litter. This will ensure that the clumps have enough time to form before the automatic cleaning process begins. By customizing the waiting time, you can optimize the cleaning performance of SNOW⁺.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "ab8c5ba4-5a43-408b-83da-8b8f1df159b9": {
+          "type": "block",
+          "settings": {
+            "h3": "How long does the manual deodorization last?",
+            "text": "The manual deodorization function lasts for 30 minutes and cannot be interrupted unless the device is powered off. If you prefer a shorter deodorization time, you can use the PetSnowy app to set the deodorization cycle to at least 1 minute. This customized feature allows you to adjust the deodorization time according to your preferences.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "a2e88b4e-1b06-4477-93ca-35a574604353": {
+          "type": "block",
+          "settings": {
+            "h3": "Why is there waste left behind after the SNOW⁺ automatic cleaning?",
+            "text": "To ensure that the waste has enough time to harden and form larger clumps, you can adjust the automatic cleaning time to a longer duration. While our standard filter works well for most adult cats, if your cat or its waste size is particularly small, small clumps may escape through the filtering holes. In such cases, our mini-mesh filter(链接到产品） can provide you with the best cleaning experience. This additional accessory will help prevent any clumps from bypassing the filtration system and improve the overall performance of the SNOW⁺.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "46742ff0-84cd-4abb-8029-f79bdee66794": {
+          "type": "title",
+          "settings": {
+            "h2": "SNOW⁺ automatic Pet Feeder"
+          }
+        },
+        "c097c152-4f35-45ee-9690-33914f560309": {
+          "type": "block",
+          "settings": {
+            "h3": "What are the dimensions for the feeder?",
+            "text": "Product Name: PetSnowy Feeder\nDimensions: 12.5\" x 7.9\" x 13.2\" (31.75cm x 20.06cm x 33.53cm)\nWeight: 3.6lbs (1.63kg)\nFood container capacity: 4 quarts (3.79 liters)\nFeeder bowl capacity: 0.7 quarts (0.66 liters)",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "f30d68e7-7681-4923-af0c-40bab58da009": {
+          "type": "block",
+          "settings": {
+            "h3": "How much food does SNOW⁺ feeder dispense every time?",
+            "text": "In the app, you have the option to customize the amount of food dispensed by the feeder. You can dispense food between 1 and 20 portion. Each portion of the food is approximately equivalent to one-third of an ounce or 8 grams. It’s important to note that the actual weight of each portion may vary depending on the density of the cat food, you can dispense a portion and weigh it for a more precise measurement of the amount of food being dispensed by the feeder.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "f0969fcb-baf0-4476-b5f7-19881eb45eac": {
+          "type": "block",
+          "settings": {
+            "h3": "What size of food can be dispensed from the feeder?",
+            "text": "The feeder is designed to dispense food ranging from 5mm to 15mm in size. This ensures compatibility with a variety of kibble sizes and shapes, providing flexibility in the types of food that can be used with the feeder.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "38694676-10e0-4a9e-a388-347d39f65dbd": {
+          "type": "block",
+          "settings": {
+            "h3": "How to clean SNOW⁺ feeder?",
+            "text": "To clean the SNOW⁺ feeder(超链接到喂食器清洗视频), you can easily remove the food bucket and bowl for washing. These parts can be easily detached from the feeder and washed with soap and water. Additionally, the interior of the feeder can be wiped down. Regular cleaning ensures that it remains hygienic and safe for your cats to use.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "b3991abd-4c3c-4d1b-8942-d6604132bba1": {
+          "type": "block",
+          "settings": {
+            "h3": "Will the feeder still dispense food if the power is cut off?",
+            "text": "The feeder is designed to operate using 4 AA batteries, therefore it can function independently without the power cord being plugged in. This feature enables you to use the feeder even if a power socket is not readily available, making it convenient for outdoor and travel situations.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "605589df-27f5-4a2d-aae5-14a458f1c08e": {
+          "type": "block",
+          "settings": {
+            "h3": "How should I set feed schedule for my cat?",
+            "text": "Within the app, you have the ability to create multiple feeding schedules for each day. It's important to ensure that you set each schedule to run daily, as failure to do so will result in missed feedings on the days you haven't selected.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "25031376-3709-4ab9-b554-ea068f112cba": {
+          "type": "block",
+          "settings": {
+            "h3": "Can SNOW⁺ feeder hold wet food?",
+            "text": "Please note that our feeder is specifically designed to accommodate dry food only. Using wet food may result in the food sticking to the rotor, which can adversely affect the functionality of the feeder. We recommend using dry food to ensure optimal performance and prevent any issues with food dispensing.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "c720ae38-383c-40e8-91a0-c4c5f862c3d4": {
+          "type": "block",
+          "settings": {
+            "h3": "Will I receive a notification when there isn’t enough food in the feeder?",
+            "text": "Yes, when there isn't enough food in the feeder, the light on the feeder will blink, and you will also receive a notification on the app. This ensures that you are aware of the low food level and can refill the feeder in a timely manner.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "42aa12f7-1c7d-4639-91ba-68eeb28346e2": {
+          "type": "title",
+          "settings": {
+            "h2": "SNOW⁺ Pet Water Fountain"
+          }
+        },
+        "3d0624ba-3805-476d-b012-f09531c14e9a": {
+          "type": "block",
+          "settings": {
+            "h3": "What are the dimensions for the Water fountain?",
+            "text": "Product name：SNOW+ Automatic Pet Water Fountain\nSize: 7.48*7.48*6.1 in\nTotal weight: 2.29 lbs\nRated voltage: DC 5V\nRated power: 1.2W",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "a52c64ff-5561-4427-9d2b-e36c7650c3cb": {
+          "type": "block",
+          "settings": {
+            "h3": "How frequently should I clean the fountain?",
+            "text": "It is recommended to clean the fountain (超链接到饮水机清洗视频) every 5-7 days. It’s important to note that the base of the fountain can’t be washed with water, the remaining parts can be water washed.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "9e003e73-6048-4378-9f72-75218dcc43a5": {
+          "type": "block",
+          "settings": {
+            "h3": "",
+            "text": "",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "44a1ea8c-0634-4819-891c-a68c3b46c928": {
+          "type": "block",
+          "settings": {
+            "h3": "Does the fountain require special filter?",
+            "text": "Yes, the SNOW⁺ fountain requires a specific size of filter to ensure proper functioning and maintain the cleanliness and hygiene of the water. The special filter uses multiple purification methods to remove impurities from the water, including adsorption of particles, deodorization, and removal of harmful substances. Additionally, it utilizes plasma exchange resin biological filtration technology to soften hard water, making it more palatable for your pets. Regular replacement of the filter ensures that the fountain continues to provide clean and fresh water for your cats to drink.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "3c437c2b-cefd-48d9-bd55-c3fde38304e8": {
+          "type": "block",
+          "settings": {
+            "h3": "How long will one filter last?",
+            "text": "One filter is designed to last for one month. When replacing a new filter, remember to soak the filter in water for five minutes and rinse it lightly before using it again. This helps maintain the cleanliness and effectiveness of the filter in providing clean and fresh water for your cats.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "84bc61f3-ca49-4ead-9328-386f2f0093aa": {
+          "type": "block",
+          "settings": {
+            "h3": "Will I receive a notification when there isn’t enough water in the fountain?",
+            "text": "Yes, you will receive a notification when there isn't enough water in the fountain. The indicator light on the fountain will flash, and you will also receive a notification on your app indicating that the water level is low. This helps you ensure that your pet always have an adequate supply of water and allows you to refill the fountain in a timely manner.",
+            "youtube_video": "",
+            "video": ""
+          }
+        }
+      },
+      "block_order": [
+        "706195ae-e33d-46a0-a12c-5dd6c4de10d3",
+        "9e9590ca-c37f-45c1-b813-d8d0a35843cf",
+        "ab8c5ba4-5a43-408b-83da-8b8f1df159b9",
+        "a2e88b4e-1b06-4477-93ca-35a574604353",
+        "46742ff0-84cd-4abb-8029-f79bdee66794",
+        "c097c152-4f35-45ee-9690-33914f560309",
+        "f30d68e7-7681-4923-af0c-40bab58da009",
+        "f0969fcb-baf0-4476-b5f7-19881eb45eac",
+        "38694676-10e0-4a9e-a388-347d39f65dbd",
+        "b3991abd-4c3c-4d1b-8942-d6604132bba1",
+        "605589df-27f5-4a2d-aae5-14a458f1c08e",
+        "25031376-3709-4ab9-b554-ea068f112cba",
+        "c720ae38-383c-40e8-91a0-c4c5f862c3d4",
+        "42aa12f7-1c7d-4639-91ba-68eeb28346e2",
+        "3d0624ba-3805-476d-b012-f09531c14e9a",
+        "a52c64ff-5561-4427-9d2b-e36c7650c3cb",
+        "9e003e73-6048-4378-9f72-75218dcc43a5",
+        "44a1ea8c-0634-4819-891c-a68c3b46c928",
+        "3c437c2b-cefd-48d9-bd55-c3fde38304e8",
+        "84bc61f3-ca49-4ead-9328-386f2f0093aa"
+      ],
+      "settings": {
+        "h1": "",
+        "sub_txt": ""
+      }
     }
   },
   "order": [
     "main",
     "a2987480-c65a-4a67-bbfd-ec89bb7a9812",
-    "b1f11e75-3bd6-4b33-95ea-68c880af1b72"
+    "b1f11e75-3bd6-4b33-95ea-68c880af1b72",
+    "8d9b0399-94bb-4e48-a293-901152435cb4"
   ]
 }
