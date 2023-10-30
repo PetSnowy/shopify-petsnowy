@@ -169,6 +169,96 @@
             "youtube_video": "",
             "video": ""
           }
+        },
+        "d7944688-2d3d-453b-9078-d8cc61fdf59e": {
+          "type": "block",
+          "settings": {
+            "h3": "Will the globe rotate while my cat is inside?",
+            "text": "No, the globe will remain stationary while your cat is inside. SNOW⁺ features SnowSafe⁺ technology, including a weight sensor, an anti-pinch system, and safety app notifications, which detect your cat each time they enter or re-enter the globe. This resets the countdown timer, ensuring that the cleaning cycle won't start for another 4 minutes.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "f1cb5fe9-be74-4f65-b36c-9b2e117cba25": {
+          "type": "block",
+          "settings": {
+            "h3": "Are there any rakes or wires inside the globe?",
+            "text": "No, there are no rakes or wires inside the globe that could potentially harm your cat. SNOW⁺ has been carefully designed with your cat's safety as a top priority.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "255bf14d-de8b-4d54-af97-928dc98b0b93": {
+          "type": "block",
+          "settings": {
+            "h3": "What happens if my cat tries to enter the globe while it is rotating?",
+            "text": "SnowSafe⁺ technology will detect your cat, causing the globe to stop immediately. The cycle will not resume until 15 seconds after the cat is no longer detected. If your cat or another object continues to trigger the sensor, SNOW⁺ will not restart the cleaning cycle. Instead, a series of lights will flash, and the app will send notifications to indicate the issue. You can refer to the Instruction Manual for troubleshooting common problems, and our Customer Experience team is available to assist as needed.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "1572cd17-e689-446a-981c-2739f679e55d": {
+          "type": "block",
+          "settings": {
+            "h3": "If I have multiple cats, how do I know which cat is using the SNOW⁺?",
+            "text": "Inside the PetSnowy app, you have the option to set a unique Pet ID for each cat. SNOW+ will be able to distinguish between the cats by recording their weight readings.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "31dddb83-2fed-46ec-b9ba-73c0908a576a": {
+          "type": "block",
+          "settings": {
+            "h3": "What type of power supply does SNOW⁺ require? How much power does SNOW⁺ consume?",
+            "text": "SNOW⁺ is compatible with both 110V and 220V currents. Please use the included power supply with the unit. SNOW⁺ has a very low power consumption, using only 1.83 kWh per month.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "aec7e4a8-515a-427d-9cf4-48df36f95c1e": {
+          "type": "block",
+          "settings": {
+            "h3": "How to clean SNOW⁺?",
+            "text": "Kindly refer to our video clips(点击播放清洗视频） for cleaning instructions. Cleaning the entire equipment should take no more than 15 minutes. It is important to note that this thorough cleaning process is generally not required on a daily basis, but rather every few months. SNOW+ is designed for easy disassembly, featuring a magnetic attachment system that simplifies the process. We suggest cleaning the litter box every two months when using clay clumping litter. For silica gel and crystal litter, it is recommended to clean the litter box on a monthly basis.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "8e61a338-1c12-41e8-b5da-6e8e0050e250": {
+          "type": "block",
+          "settings": {
+            "h3": "What is the difference between a new SNOW⁺ and a reconditioned SNOW⁺? *(二手未售时不放）",
+            "text": "Reconditioned SNOW⁺ units are typically SNOW⁺ units that were originally sold as new and then returned during our 30-day in-home trial. These units are carefully reconditioned and tested to ensure they meet the original factory specifications. PetSnowy stands behind reconditioned SNOW⁺ units with the same 30-day in-home trial and a 1-Year Warranty. Opting for a reconditioned SNOW⁺ can offer excellent value as you receive a manufacturer-approved product at a reduced price. However, it's essential to note that reconditioned units are technically used products. While we thoroughly clean them before shipping, there may be minor cosmetic imperfections or signs of previous use. If you have concerns about these factors, we recommend considering a new SNOW⁺ instead.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "26b76aba-5afa-483a-b6cf-e70cdc85723c": {
+          "type": "block",
+          "settings": {
+            "h3": "Where can I purchase?",
+            "text": "SNOW⁺ and all its accessories are available for purchase on petsnowy.com. If you have any questions about alternative purchasing options, please don't hesitate to reach out to info@petsnowy.com for more details.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "73e72f34-c09e-4479-bc5d-5d3177ff35d8": {
+          "type": "block",
+          "settings": {
+            "h3": "What countries do you ship to?",
+            "text": "The SNOW+ is currently available in the following countries:  United States, Canada, the United Kingdom, Belgium, France, Italy, Netherlands, Austria, Poland, Portugal, Sweden, Slovenia, Spain, Czech Republic, Hungary, Denmark, Ireland, Finland, Lithuania, Luxembourg, Monaco, Bulgaria, Estonia, Greece, Croatia, Latvia, Romania, Germany, Switzerland, and Slovakia. If your country is not included in this list, please contact us(超链接到联系我们页面） to inquire about its eligibility for shipping.",
+            "youtube_video": "",
+            "video": ""
+          }
+        },
+        "20356106-3784-4f47-ba7e-698b57292efe": {
+          "type": "block",
+          "settings": {
+            "h3": "What methods of payment do you accept?",
+            "text": "We accept Visa, MasterCard, American Express, and PayPal. Additionally, we provide payment plan alternatives through Affirm. Please note that we do not accept checks or money orders as forms of payment.",
+            "youtube_video": "",
+            "video": ""
+          }
         }
       },
       "block_order": [
@@ -188,7 +278,17 @@
         "1c32897d-7ee3-4c77-a789-91f931c08482",
         "e2778907-0483-46e9-ab75-b9643545ef12",
         "974de21d-eb0a-4ea0-a95f-00e60e7101db",
-        "a5b57f7f-47e3-497b-aeac-dcfb2c2a796b"
+        "a5b57f7f-47e3-497b-aeac-dcfb2c2a796b",
+        "d7944688-2d3d-453b-9078-d8cc61fdf59e",
+        "f1cb5fe9-be74-4f65-b36c-9b2e117cba25",
+        "255bf14d-de8b-4d54-af97-928dc98b0b93",
+        "1572cd17-e689-446a-981c-2739f679e55d",
+        "31dddb83-2fed-46ec-b9ba-73c0908a576a",
+        "aec7e4a8-515a-427d-9cf4-48df36f95c1e",
+        "8e61a338-1c12-41e8-b5da-6e8e0050e250",
+        "26b76aba-5afa-483a-b6cf-e70cdc85723c",
+        "73e72f34-c09e-4479-bc5d-5d3177ff35d8",
+        "20356106-3784-4f47-ba7e-698b57292efe"
       ],
       "settings": {
         "h1": "",
