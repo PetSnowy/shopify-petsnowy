@@ -259,6 +259,21 @@
             "youtube_video": "",
             "video": ""
           }
+        },
+        "b1485bfa-c9cb-4f27-a92c-fd9e9f0fc5ea": {
+          "type": "title",
+          "settings": {
+            "h2": "Post-purchase"
+          }
+        },
+        "84602497-0d6c-4705-983c-49d72a5f0200": {
+          "type": "block",
+          "settings": {
+            "h3": "How do I set up my SNOW⁺?",
+            "text": "",
+            "youtube_video": "",
+            "video": ""
+          }
         }
       },
       "block_order": [
@@ -288,7 +303,9 @@
         "8e61a338-1c12-41e8-b5da-6e8e0050e250",
         "26b76aba-5afa-483a-b6cf-e70cdc85723c",
         "73e72f34-c09e-4479-bc5d-5d3177ff35d8",
-        "20356106-3784-4f47-ba7e-698b57292efe"
+        "20356106-3784-4f47-ba7e-698b57292efe",
+        "b1485bfa-c9cb-4f27-a92c-fd9e9f0fc5ea",
+        "84602497-0d6c-4705-983c-49d72a5f0200"
       ],
       "settings": {
         "h1": "",
