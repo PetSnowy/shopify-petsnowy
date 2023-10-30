@@ -12,7 +12,7 @@ $(function () {
 	const descText = document.querySelectorAll('.answer_txt');
 	const content = [];
 	for (let i = 0; i < descTitle.length; i++) {
-		content.push({ title: descTitle[i].innerText.trim(), text: descText[i].innerText.trim() });
+		content.push({ title: descTitle[i].innerText.trim(), text: descText[i].innerHTML.trim() });
 	}
 	let searchResult = [];
 
