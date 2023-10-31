@@ -317,10 +317,18 @@
         "settings": {
         }
       },
-      "307358510521862081": {
-        "type": "shopify:\/\/apps\/white-christmas\/blocks\/app-embed-block\/9a1cb93e-128d-4ccb-9a1a-5331eb34c165",
+      "2000394776269087929": {
+        "type": "shopify:\/\/apps\/sfx-snow-christmas-effect\/blocks\/app-block\/3f2c0443-facd-4715-9387-dcceca132b78",
         "disabled": false,
         "settings": {
+          "count": 300,
+          "count_mobile": 150,
+          "speed": 2.5,
+          "drift": 2,
+          "snow_color": "snow",
+          "snow_shape": "real",
+          "snow_size": "normal",
+          "disable_mobile": false
         }
       }
     }
