@@ -4,12 +4,12 @@
   <div class="product-safety page-width">
     <product-inventory y-range="-5,5" x-range="-5,5">
       <picture>
-        <source media="(min-width: 901px)" srcset="{{ section.settings.image_title | img_url: 'master' }}">
-        <source media="(max-width: 900px)" srcset="{{ section.settings.mb_image_title | img_url: 'master' }}">
+        <source media="(min-width: 901px)" data-srcset="{{ section.settings.image_title | img_url: 'master' }}">
+        <source media="(max-width: 900px)" data-srcset="{{ section.settings.mb_image_title | img_url: 'master' }}">
         <img
           decoding="async"
-          src="{{ section.settings.image_title | img_url: 'master' }}"
           alt="{{ section.settings.image_alt }}"
+          loading="lazy"
         >
       </picture>
     </product-inventory>

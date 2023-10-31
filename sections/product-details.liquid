@@ -2,12 +2,12 @@
 <section class="product-details page-width">
   <div class="container">
     <picture>
-      <source media="(min-width: 901px)" srcset="{{ section.settings.pc_image | img_url: 'master' }}">
-      <source media="(max-width: 900px)" srcset="{{ section.settings.mb_image | img_url: 'master' }}">
+      <source media="(min-width: 901px)" data-srcset="{{ section.settings.pc_image | img_url: 'master' }}">
+      <source media="(max-width: 900px)" data-srcset="{{ section.settings.mb_image | img_url: 'master' }}">
       <img
-        src="{{ section.settings.pc_image | img_url: 'master' }}"
         alt="{{ section.settings.text }}"
         decoding="async"
+        loading="lazy"
       >
     </picture>
   </div>

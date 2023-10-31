@@ -43,12 +43,11 @@
     </div>
     <div class="quite-img">
       <picture>
-        <source media="(min-width: 901px)" srcset="{{ section.settings.image | img_url: 'master' }}">
-        <source media="(max-width: 900px)" srcset="{{ section.settings.mb_image | img_url: 'master' }}">
+        <source media="(min-width: 901px)" data-srcset="{{ section.settings.image | img_url: 'master' }}">
+        <source media="(max-width: 900px)" data-srcset="{{ section.settings.mb_image | img_url: 'master' }}">
         <img
           decoding="async"
           loading="lazy"
-          src="{{ section.settings.image | img_url: 'master' }}"
           alt="{{ section.settings.title }}"
         >
       </picture>

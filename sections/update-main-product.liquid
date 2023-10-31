@@ -69,10 +69,10 @@
       <div class="product-left">
         <div class="product-default">
           <img
-            src="{{ product.metafields.custom.mega_menu_image | image_url }}"
             alt="petsnowy"
             loading="lazy"
             decoding="async"
+            data-src="{{ product.metafields.custom.mega_menu_image | image_url }}"
           >
         </div>
         <div class="swiper swiper-update-product">
@@ -233,7 +233,7 @@
                       >
                         <div class="add_list_product_image">
                           <img
-                            src="{{  product_addons.featured_image | img_url: '100X100' }}"
+                            data-src="{{  product_addons.featured_image | img_url: '100X100' }}"
                             alt="petsnowy"
                             loading="lazy"
                           >
@@ -368,14 +368,14 @@
                                 {% assign img_alt = variant.title %}
                                 {% assign price = variant.price %}
                                 <img
-                                  src="{{ img_src | img_url: 'master' }}"
                                   alt="{{ img_alt }}"
+                                  data-src="{{ img_src | img_url: 'master' }}"
                                 >
                                 <div class="question_mark"></div>
                                 <div class="question_mark_popup">
                                   <div class="popup-wrapper">
                                     <div class="popup-img">
-                                      <img src="{{ img_src | img_url: 'master' }}" alt="{{ img_alt }}">
+                                      <img alt="{{ img_alt }}" data-src="{{ img_src | img_url: 'master' }}">
                                     </div>
                                     <div class="popup-content">
                                       <p class="popup-title">{{ img_alt }}</p>
@@ -489,8 +489,14 @@
             {% when 'product-guarantee' %}
               <div class="product-guarantee">
                 <picture>
-                  <source media="(min-width: 901px)" srcset="{{ block.settings.image_picker | img_url: 'master' }}">
-                  <source media="(max-width: 900px)" srcset="{{ block.settings.mb_image_picker | img_url: 'master' }}">
+                  <source
+                    media="(min-width: 901px)"
+                    data-srcset="{{ block.settings.image_picker | img_url: 'master' }}"
+                  >
+                  <source
+                    media="(max-width: 900px)"
+                    data-srcset="{{ block.settings.mb_image_picker | img_url: 'master' }}"
+                  >
                   <img
                     decoding="async"
                     loading="lazy"

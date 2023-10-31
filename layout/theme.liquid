@@ -452,6 +452,46 @@
           });
         });
       });
+
+      const lazyImages = document.querySelectorAll('img[data-src]');
+      const lazyPictureSources = document.querySelectorAll('picture > source[data-srcset]');
+
+      const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 1,
+      };
+
+      const attributesByTagName = {
+        IMG: 'data-src',
+        SOURCE: 'data-srcset',
+      };
+
+      const loadImage = (el, attribute) => {
+        const value = el.getAttribute(attribute);
+        if (value) {
+          if (attribute === 'data-src') {
+            el.setAttribute('src', value);
+          } else if (attribute === 'data-srcset') {
+            el.setAttribute('srcset', value);
+          }
+        }
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const attribute = attributesByTagName[el.tagName];
+            loadImage(el, attribute);
+            observer.unobserve(el);
+          }
+        });
+      }, options);
+
+      [...lazyImages, ...lazyPictureSources].forEach((el) => {
+        observer.observe(el);
+      });
     </script>
 
     {%- render 'ecom_footer' -%}
