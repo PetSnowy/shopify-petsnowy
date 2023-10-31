@@ -113,14 +113,14 @@
         "2850c635-ed2d-4214-9ecf-0ba4e13c4b44": {
           "type": "heading",
           "settings": {
-            "heading": "It's Halloween !",
+            "heading": "The Most Funded Pet Project On IndieGoGo",
             "heading_size": "h1"
           }
         },
         "90c5c671-6144-4072-a4c9-1fd6ee5bc419": {
           "type": "richtext",
           "settings": {
-            "richtext": "<p>First 50 Customers Get Extra Free Cat Carrier<\/p>"
+            "richtext": ""
           }
         },
         "3b71a9cc-803e-4d82-b739-2b417950f202": {
@@ -141,106 +141,8 @@
         "3b71a9cc-803e-4d82-b739-2b417950f202"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/halloween-front_page1013.jpg",
-        "image_mbl": "shopify:\/\/shop_images\/halloween-pc-_1013.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "adapt_height_first_image": true,
-        "desktop_content_position": "top-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "dea0767f-bd6e-499d-9dbe-cb80b317644a": {
-      "type": "image-banner",
-      "blocks": {
-        "8db469ad-408b-4878-be69-0f7c115a1ecf": {
-          "type": "heading",
-          "settings": {
-            "heading": "It's Halloween !",
-            "heading_size": "h1"
-          }
-        },
-        "2f899692-0c4a-491b-96a0-5f5d68984002": {
-          "type": "richtext",
-          "settings": {
-            "richtext": "<p>First 50 Customers Get Extra Free Cat Carrier<\/p>"
-          }
-        },
-        "31787a0d-75e1-4637-941e-8db7d97ee2bd": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop Now",
-            "button_link_1": "shopify:\/\/products\/snow-self-cleaning-litter-box",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "8db469ad-408b-4878-be69-0f7c115a1ecf",
-        "2f899692-0c4a-491b-96a0-5f5d68984002",
-        "31787a0d-75e1-4637-941e-8db7d97ee2bd"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/halloween-front_page1013.jpg",
-        "image_mbl": "shopify:\/\/shop_images\/halloween-pc-_1013.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "adapt_height_first_image": true,
-        "desktop_content_position": "top-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "d1fccfe1-1016-4d4b-a541-f0f99d64cc37": {
-      "type": "image-banner",
-      "blocks": {
-        "6cc02bf0-0319-413e-a22e-26853a2339c3": {
-          "type": "heading",
-          "settings": {
-            "heading": "Save Big on Everything",
-            "heading_size": "h1"
-          }
-        },
-        "b56ec3c0-06eb-40ad-937d-acbc66bc4384": {
-          "type": "richtext",
-          "settings": {
-            "richtext": "<p>Note: This offer cannot be combined with any other discount codes.<\/p>"
-          }
-        },
-        "b63b44fd-1392-4f1d-bb42-78d716d0d2a7": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop Now and Save",
-            "button_link_1": "shopify:\/\/products\/snow-self-cleaning-litter-box",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "6cc02bf0-0319-413e-a22e-26853a2339c3",
-        "b56ec3c0-06eb-40ad-937d-acbc66bc4384",
-        "b63b44fd-1392-4f1d-bb42-78d716d0d2a7"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/index.jpg",
-        "image_mbl": "shopify:\/\/shop_images\/pd_1.png",
+        "image": "shopify:\/\/shop_images\/10000_fb799e03-3787-4c4e-9355-a8f582edaaa9.jpg",
+        "image_mbl": "shopify:\/\/shop_images\/10000_72725537-cbd2-433e-a76e-d2588f2889c1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": true,
@@ -809,63 +711,6 @@
         "padding_bottom": 12
       }
     },
-    "de4fda5f-1bfb-4e31-bc30-d09f6003b3b0": {
-      "type": "image-with-text",
-      "blocks": {
-        "1a8d2345-4373-4343-8389-ca6eadafe472": {
-          "type": "heading",
-          "settings": {
-            "heading": "And Safest, Ever",
-            "heading_size": "h1"
-          }
-        },
-        "1c9554fc-6ac9-4d4a-b7e8-b891ce8dbd53": {
-          "type": "caption",
-          "settings": {
-            "caption": "smart sensors • anti-clamp • app notification",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "64de43ac-ab84-4ae8-adf0-c08ae5756c4c": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Safety is of utmost important, the integrated SnowSafe⁺ System continuously analyzes 4 zones to ensure kitty’s safety.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "a3be7240-58d5-42a2-bfc0-20072efd72c4": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1a8d2345-4373-4343-8389-ca6eadafe472",
-        "1c9554fc-6ac9-4d4a-b7e8-b891ce8dbd53",
-        "64de43ac-ab84-4ae8-adf0-c08ae5756c4c",
-        "a3be7240-58d5-42a2-bfc0-20072efd72c4"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/5_17_e5407a1a-2006-4aa7-87a8-59fcfbdca28f.jpg",
-        "image_mob": "shopify:\/\/shop_images\/5_17_5b1f9aec-966f-4c8a-bc06-4cf8a0872bdc.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "chek_wth": true,
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "3444a146-c629-42e2-9633-14507157400c": {
       "type": "order-banner",
       "disabled": true,
@@ -893,8 +738,6 @@
     "587d7593-4e25-4243-8dae-eca9c97405ff",
     "e99f3d28-6eeb-4201-a162-82c8ea639dbd",
     "5adf9f25-788e-4bc2-9df4-6dd4b70dcd25",
-    "dea0767f-bd6e-499d-9dbe-cb80b317644a",
-    "d1fccfe1-1016-4d4b-a541-f0f99d64cc37",
     "9d073bf4-1f1f-4ef2-9353-1ab70e3af03f",
     "df50b571-6844-460d-9370-da015c04fe08",
     "4353e4b5-17b8-45b2-854b-23a61108cc1d",
@@ -907,7 +750,6 @@
     "2156df71-f54e-4c02-9cf2-21ca2e6640b3",
     "59cbf865-96b8-4f8e-bbc8-a09e5361bd0a",
     "63ae6bb5-a879-46a7-b71a-11f65c5a7540",
-    "de4fda5f-1bfb-4e31-bc30-d09f6003b3b0",
     "3444a146-c629-42e2-9633-14507157400c"
   ]
 }
