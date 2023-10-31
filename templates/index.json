@@ -140,54 +140,6 @@
         "90c5c671-6144-4072-a4c9-1fd6ee5bc419",
         "3b71a9cc-803e-4d82-b739-2b417950f202"
       ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/halloween-front_page1013.jpg",
-        "image_mbl": "shopify:\/\/shop_images\/halloween-pc-_1013.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "adapt_height_first_image": true,
-        "desktop_content_position": "top-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "dea0767f-bd6e-499d-9dbe-cb80b317644a": {
-      "type": "image-banner",
-      "blocks": {
-        "8db469ad-408b-4878-be69-0f7c115a1ecf": {
-          "type": "heading",
-          "settings": {
-            "heading": "It's Halloween !",
-            "heading_size": "h1"
-          }
-        },
-        "2f899692-0c4a-491b-96a0-5f5d68984002": {
-          "type": "richtext",
-          "settings": {
-            "richtext": "<p>First 50 Customers Get Extra Free Cat Carrier<\/p>"
-          }
-        },
-        "31787a0d-75e1-4637-941e-8db7d97ee2bd": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop Now",
-            "button_link_1": "shopify:\/\/products\/snow-self-cleaning-litter-box",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "8db469ad-408b-4878-be69-0f7c115a1ecf",
-        "2f899692-0c4a-491b-96a0-5f5d68984002",
-        "31787a0d-75e1-4637-941e-8db7d97ee2bd"
-      ],
       "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/halloween-front_page1013.jpg",
@@ -893,7 +845,6 @@
     "587d7593-4e25-4243-8dae-eca9c97405ff",
     "e99f3d28-6eeb-4201-a162-82c8ea639dbd",
     "5adf9f25-788e-4bc2-9df4-6dd4b70dcd25",
-    "dea0767f-bd6e-499d-9dbe-cb80b317644a",
     "d1fccfe1-1016-4d4b-a541-f0f99d64cc37",
     "9d073bf4-1f1f-4ef2-9353-1ab70e3af03f",
     "df50b571-6844-460d-9370-da015c04fe08",
