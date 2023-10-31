@@ -113,14 +113,14 @@
         "2850c635-ed2d-4214-9ecf-0ba4e13c4b44": {
           "type": "heading",
           "settings": {
-            "heading": "It's Halloween !",
+            "heading": "The Most Funded Pet Project On IndieGoGo",
             "heading_size": "h1"
           }
         },
         "90c5c671-6144-4072-a4c9-1fd6ee5bc419": {
           "type": "richtext",
           "settings": {
-            "richtext": "<p>First 50 Customers Get Extra Free Cat Carrier<\/p>"
+            "richtext": ""
           }
         },
         "3b71a9cc-803e-4d82-b739-2b417950f202": {
@@ -140,10 +140,9 @@
         "90c5c671-6144-4072-a4c9-1fd6ee5bc419",
         "3b71a9cc-803e-4d82-b739-2b417950f202"
       ],
-      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/halloween-front_page1013.jpg",
-        "image_mbl": "shopify:\/\/shop_images\/halloween-pc-_1013.jpg",
+        "image": "shopify:\/\/shop_images\/10000_fb799e03-3787-4c4e-9355-a8f582edaaa9.jpg",
+        "image_mbl": "shopify:\/\/shop_images\/10000_72725537-cbd2-433e-a76e-d2588f2889c1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": true,
