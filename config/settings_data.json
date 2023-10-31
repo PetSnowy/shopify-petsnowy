@@ -316,6 +316,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "307358510521862081": {
+        "type": "shopify:\/\/apps\/white-christmas\/blocks\/app-embed-block\/9a1cb93e-128d-4ccb-9a1a-5331eb34c165",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
