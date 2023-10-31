@@ -35,34 +35,6 @@
 >
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %} {% if section.settings.image_mbl != blank %}banner_desktop{% endif %}">
-      {% comment %}
-        {%- liquid
-          assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
-          if section.settings.image_2 != blank
-            assign image_class = 'banner__media-image-half'
-          endif
-          if section.settings.image_2 != blank and section.settings.stack_images_on_mobile
-            assign sizes = '(min-width: 750px) 50vw, 100vw'
-          elsif section.settings.image_2 != blank
-            assign sizes = '50vw'
-          else
-            assign sizes = '100vw'
-          endif
-        -%}
-        {{
-          section.settings.image
-          | image_url: width: 1500
-          | image_tag:
-            loading: 'lazy',
-            width: section.settings.image.width,
-            height: image_height,
-            class: image_class,
-            sizes: sizes,
-            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-            alt: 'petsnowy'
-          | escape
-        }}
-      {% endcomment %}
       <img decoding="async" src="{{ section.settings.image | img_url: 'master' }}" loading="lazy" alt="petsnowy">
     </div>
     {% if section.settings.image_mbl != blank %}

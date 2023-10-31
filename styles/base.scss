@@ -3143,7 +3143,7 @@ h2.banner__heading span {
 }
 
 .banner__buttons a.button {
-	font-size: 14px;
+	font-size: 17px;
 	line-height: 18px;
 	color: #231f20;
 	width: fit-content;
@@ -5770,14 +5770,6 @@ $item: 5;
 		}
 	}
 
-	#Banner-template--20965259084098__5adf9f25-788e-4bc2-9df4-6dd4b70dcd25 {
-
-		.banner__richtext,
-		h2 {
-			display: none;
-		}
-	}
-
 	.header-wrapper {
 		height: 90px;
 		display: flex;
@@ -5947,9 +5939,7 @@ $item: 5;
 }
 
 
-@media screen and (min-width: 901px) and (max-width: 1200px) {
-	.page-width {}
-}
+@media screen and (min-width: 901px) and (max-width: 1200px) {}
 
 .Download {
 	display: flex;
@@ -5976,4 +5966,36 @@ $item: 5;
 
 .collection .product-indiegogo {
 	display: block;
+}
+
+// 猫砂盆产品页面 因出现navBar 需要点击定位 但图片采用懒加载优化 需添加图片的高度 来防止定位不准确
+.SNOW⁺-Self-Cleaning-Litter-Box {
+	@media screen and (max-width: 900px) {
+		.product-details .container {
+			height: vw(1422px);
+		}
+
+		.social_main_div {
+			height: vw(2210px);
+		}
+
+		.product-safety {
+			height: vw(658px);
+		}
+	}
+
+	@media screen and (min-width: 901px) {
+		.product-details .container {
+			height: 1450px;
+		}
+
+		.social_main_div {
+			height: 650px;
+		}
+
+		.product-safety {
+			height: 488px;
+		}
+	}
+
 }

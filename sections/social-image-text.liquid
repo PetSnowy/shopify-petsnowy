@@ -27,7 +27,12 @@
         <div class="social_img_large">
           {% if section.settings.img != blank %}
             <div class="social_animation_zoom">
-              <img decoding="async" src="{{ section.settings.img | img_url: 'master' }}" alt="petsnowy">
+              <img
+                decoding="async"
+                data-src="{{ section.settings.img | img_url: 'master' }}"
+                alt="petsnowy"
+                loading="lazy"
+              >
             </div>
           {% endif %}
         </div>
@@ -38,8 +43,9 @@
                 <div class="social_animation_zoom">
                   <img
                     decoding="async"
-                    src="{{ block.settings.blk_img | img_url: 'master' }}"
+                    data-src="{{ block.settings.blk_img | img_url: 'master' }}"
                     alt="petsnowy"
+                    loading="lazy"
                   >
                 </div>
               {% endif %}
