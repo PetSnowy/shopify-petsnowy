@@ -210,7 +210,9 @@
               <div class="product_acessories-wrapper">
                 <p class="product_acessories-title">Add-Ons:</p>
                 {% if template contains 'indiegogo' -%}
-                  <p class="product-desc" style="display: block;">Get 20% Discount On Every Add-On Products</p>
+                  <p class="product-desc" style="display: block;">
+                    <span style="color: #d75f23;">Get 20% Discount</span> On Every Add-On Products
+                  </p>
                 {%- endif %}
                 <div class="add_product_list">
                   {% for product_addons in product.metafields.custom.addons_product.value %}
