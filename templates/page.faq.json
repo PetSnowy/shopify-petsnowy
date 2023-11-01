@@ -17,74 +17,6 @@
         "text": "<p>View our most frequently asked questions about the PetSnowy<\/p>"
       }
     },
-    "f55999bd-2041-4ebc-9dfd-b86fd4f1ff9e": {
-      "type": "Q-and-A",
-      "blocks": {
-        "f221d4f7-dd2a-4f32-9250-a47810c589d5": {
-          "type": "title",
-          "settings": {
-            "h2": "Returns & Refunds"
-          }
-        },
-        "261e3a5e-8554-41eb-8e96-cc6a58ea0eae": {
-          "type": "block",
-          "settings": {
-            "h3": "If I need to return my PetSnowy product, how do I get a refund",
-            "text": "PetSnowy products purchased directly through petsnowy.com may be returned within thirty (30) days of receipt for a full refund. Kindly note that there will be shipping costs.\nIf you shop on a different website. Please comply with the website policy. \nIf you’ve purchased your PetSnowy product through a third-party retailer, you must coordinate the return directly with that retailer.\nClick to our Return & Refunds page (超链接到https:\/\/www.petsnowy.com\/pages\/returns-refunds) for more details.",
-            "youtube_video": "",
-            "video": ""
-          }
-        },
-        "a9507797-856f-4f8d-baa1-0aa4de92fb3e": {
-          "type": "block",
-          "settings": {
-            "h3": "How do I obtain a Return Merchandise Authorization (RMA) number?",
-            "text": "We offer a return shipping service. We can provide you with a return shipping label and the shipping cost will be deducted from your refund. The specific shipping cost varies by region, please contact our support team at: support@petsnowy.com for more details.",
-            "youtube_video": "",
-            "video": ""
-          }
-        },
-        "ce48ee0b-b131-497b-b80a-252fe03c96c4": {
-          "type": "block",
-          "settings": {
-            "h3": "Do I need to clean my PetSnowy product before returning it?",
-            "text": "Before returning your PetSnowy product, please give it a good cleaning. You can watch a  video(超链接到猫砂盆清洗视频) on how to clean the SNOW⁺ for return.(视频还没有这句可以You....for return可以不加上) Please note that products returned in an unclean state within the 30-day trial period may incur a $75 cleaning fee deducted from your refund.",
-            "youtube_video": "",
-            "video": ""
-          }
-        },
-        "7e226524-5cdd-40ff-82b5-b2a496f2dcd7": {
-          "type": "block",
-          "settings": {
-            "h3": "when will  I receive my refund?",
-            "text": "After our warehouse receives your return and checks that everything is fine, we will apply for a refund for you. Refunds will be issued based on the payment method used to make the contribution. It may take 3-5 business days to process for US payment methods, or 7-10 business days for international payment methods.",
-            "youtube_video": "",
-            "video": ""
-          }
-        },
-        "fc678dd1-d778-40bf-becc-ac794358ccb7": {
-          "type": "block",
-          "settings": {
-            "h3": "What is your return policy on all items other than the litter box?",
-            "text": "",
-            "youtube_video": "",
-            "video": ""
-          }
-        }
-      },
-      "block_order": [
-        "f221d4f7-dd2a-4f32-9250-a47810c589d5",
-        "261e3a5e-8554-41eb-8e96-cc6a58ea0eae",
-        "a9507797-856f-4f8d-baa1-0aa4de92fb3e",
-        "ce48ee0b-b131-497b-b80a-252fe03c96c4",
-        "7e226524-5cdd-40ff-82b5-b2a496f2dcd7",
-        "fc678dd1-d778-40bf-becc-ac794358ccb7"
-      ],
-      "settings": {
-        "h1": "",
-        "sub_txt": ""
-      }
-    },
     "a78d31f2-ae0e-4642-9838-7c07734dd5da": {
       "type": "search-q-and-a",
       "settings": {
@@ -96,7 +28,6 @@
   "order": [
     "main",
     "a2987480-c65a-4a67-bbfd-ec89bb7a9812",
-    "f55999bd-2041-4ebc-9dfd-b86fd4f1ff9e",
     "a78d31f2-ae0e-4642-9838-7c07734dd5da"
   ]
 }
