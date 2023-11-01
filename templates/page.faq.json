@@ -17,16 +17,16 @@
         "text": "<p>View our most frequently asked questions about the PetSnowy<\/p>"
       }
     },
-    "b1f11e75-3bd6-4b33-95ea-68c880af1b72": {
-      "type": "search-q-and-a",
+    "f55999bd-2041-4ebc-9dfd-b86fd4f1ff9e": {
+      "type": "Q-and-A",
       "blocks": {
-        "dae4c379-136c-4ea5-adad-4521c91499d9": {
+        "f221d4f7-dd2a-4f32-9250-a47810c589d5": {
           "type": "title",
           "settings": {
             "h2": "Returns & Refunds"
           }
         },
-        "3ad390b0-96e7-41cd-b564-1078f27bac4f": {
+        "261e3a5e-8554-41eb-8e96-cc6a58ea0eae": {
           "type": "block",
           "settings": {
             "h3": "If I need to return my PetSnowy product, how do I get a refund",
@@ -35,7 +35,7 @@
             "video": ""
           }
         },
-        "9ea3b12a-395c-4843-bcd7-81a191c8587f": {
+        "a9507797-856f-4f8d-baa1-0aa4de92fb3e": {
           "type": "block",
           "settings": {
             "h3": "How do I obtain a Return Merchandise Authorization (RMA) number?",
@@ -44,7 +44,7 @@
             "video": ""
           }
         },
-        "7756fde6-16c5-41e2-88b5-0c36d871a90a": {
+        "ce48ee0b-b131-497b-b80a-252fe03c96c4": {
           "type": "block",
           "settings": {
             "h3": "Do I need to clean my PetSnowy product before returning it?",
@@ -53,7 +53,7 @@
             "video": ""
           }
         },
-        "752892ca-2283-4cd5-89bd-d9e5a2d3c5da": {
+        "7e226524-5cdd-40ff-82b5-b2a496f2dcd7": {
           "type": "block",
           "settings": {
             "h3": "when will  I receive my refund?",
@@ -61,25 +61,22 @@
             "youtube_video": "",
             "video": ""
           }
-        },
-        "f36069a9-4421-409b-ba5d-40495a81c966": {
-          "type": "block",
-          "settings": {
-            "h3": "What is your return policy on all items other than the litter box?",
-            "text": "For products such as water fountains, pet feeders, pet toy, accessories, and consumable items (litter bags, fragrance boxes, water filters, etc.), you can apply for a return as long as they are in brand new, unopened condition. Opened water fountains, pet feeders, pet toy, accessories, and consumable items (litter bags, fragrance boxes, water filters, etc.) are non-returnable. The buyer is responsible for covering the expenses associated with the return shipping.",
-            "youtube_video": "",
-            "video": ""
-          }
         }
       },
       "block_order": [
-        "dae4c379-136c-4ea5-adad-4521c91499d9",
-        "3ad390b0-96e7-41cd-b564-1078f27bac4f",
-        "9ea3b12a-395c-4843-bcd7-81a191c8587f",
-        "7756fde6-16c5-41e2-88b5-0c36d871a90a",
-        "752892ca-2283-4cd5-89bd-d9e5a2d3c5da",
-        "f36069a9-4421-409b-ba5d-40495a81c966"
+        "f221d4f7-dd2a-4f32-9250-a47810c589d5",
+        "261e3a5e-8554-41eb-8e96-cc6a58ea0eae",
+        "a9507797-856f-4f8d-baa1-0aa4de92fb3e",
+        "ce48ee0b-b131-497b-b80a-252fe03c96c4",
+        "7e226524-5cdd-40ff-82b5-b2a496f2dcd7"
       ],
+      "settings": {
+        "h1": "",
+        "sub_txt": ""
+      }
+    },
+    "a78d31f2-ae0e-4642-9838-7c07734dd5da": {
+      "type": "search-q-and-a",
       "settings": {
         "h1": "",
         "sub_txt": ""
@@ -89,6 +86,7 @@
   "order": [
     "main",
     "a2987480-c65a-4a67-bbfd-ec89bb7a9812",
-    "b1f11e75-3bd6-4b33-95ea-68c880af1b72"
+    "f55999bd-2041-4ebc-9dfd-b86fd4f1ff9e",
+    "a78d31f2-ae0e-4642-9838-7c07734dd5da"
   ]
 }
