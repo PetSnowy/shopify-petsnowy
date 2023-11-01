@@ -2209,6 +2209,55 @@ sticky-header.Index {
 	border: none;
 }
 
+.list-payment {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: -0.5rem 0;
+	padding-top: 1rem;
+	padding-left: 0;
+}
+
+@media screen and (min-width: 750px) {
+	.list-payment {
+		justify-content: flex-end;
+		margin: -0.5rem;
+		padding-top: 0;
+	}
+}
+
+.list-payment__item {
+	align-items: center;
+	display: flex;
+	padding: 0.5rem;
+}
+
+.list-social {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+@media only screen and (max-width: 749px) {
+	.list-social {
+		justify-content: center;
+	}
+}
+
+.list-social__item .icon {
+	height: 1.8rem;
+	width: 1.8rem;
+}
+
+.list-social__link {
+	align-items: center;
+	display: flex;
+	padding: 1.3rem;
+	color: rgb(var(--color-foreground));
+}
+
+
+
 @media screen and (min-width: 990px) {
 
 	.header--top-left,
