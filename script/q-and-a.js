@@ -118,8 +118,8 @@ $(function () {
 
 	function mobileSelect() {
 		const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-		const headerTop = document.querySelector('header').offsetHeight;
-		mSidebarWrapper.style.top = `${headerTop}px`
+		const headerTop = getComputedStyle(document.documentElement).getPropertyValue('--main-padding-top')
+		mSidebarWrapper.style.top = `${headerTop}`
 	}
 
 	// function sidebarScroll() {
