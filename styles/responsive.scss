@@ -91,7 +91,7 @@
 
 @media screen and (min-width: 990px) and (max-width: 1023px) {
 	body.itg_index {
-		overflow: visible;
+		overflow: unset;
 	}
 
 	.section--app {
@@ -206,7 +206,7 @@
 	}
 
 	body.itg_index {
-		overflow: visible;
+		overflow: unset;
 	}
 
 	.section--app {

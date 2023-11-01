@@ -483,8 +483,13 @@ $product-font-color: #5D5D5D;
 			fieldset {
 				display: flex;
 				flex-wrap: wrap;
-				row-gap: vw(20px);
 				justify-content: space-between;
+			}
+
+			.select-option {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: vw(20px);
 			}
 
 			label {
@@ -1060,7 +1065,12 @@ $product-font-color: #5D5D5D;
 			fieldset {
 				display: flex;
 				flex-wrap: wrap;
-				gap: 25px
+			}
+
+			.select-option {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 25px;
 			}
 
 			.product-form__input input[type=radio]:checked+label {
@@ -1166,6 +1176,10 @@ $product-font-color: #5D5D5D;
 					flex-wrap: wrap;
 					flex-direction: row;
 					justify-content: center;
+
+					p:first-child {
+						margin-bottom: 10px;
+					}
 
 					p {
 						font-size: 12px;

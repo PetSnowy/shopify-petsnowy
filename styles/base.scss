@@ -2817,7 +2817,7 @@ details-disclosure>details {
 	position: relative;
 	border: var(--media-border-width) solid rgba(var(--color-foreground), var(--media-border-opacity));
 	border-radius: var(--media-radius);
-	overflow: visible !important;
+	overflow: unset !important;
 	background-color: rgb(var(--color-background));
 }
 
@@ -6047,4 +6047,8 @@ $item: 5;
 		}
 	}
 
+}
+
+.needsclick.kl-teaser-SyCsSf.undefined.kl-private-reset-css-Xuajs1 {
+	width: 100px !important;
 }
