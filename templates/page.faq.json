@@ -61,6 +61,15 @@
             "youtube_video": "",
             "video": ""
           }
+        },
+        "fc678dd1-d778-40bf-becc-ac794358ccb7": {
+          "type": "block",
+          "settings": {
+            "h3": "What is your return policy on all items other than the litter box?",
+            "text": "",
+            "youtube_video": "",
+            "video": ""
+          }
         }
       },
       "block_order": [
@@ -68,7 +77,8 @@
         "261e3a5e-8554-41eb-8e96-cc6a58ea0eae",
         "a9507797-856f-4f8d-baa1-0aa4de92fb3e",
         "ce48ee0b-b131-497b-b80a-252fe03c96c4",
-        "7e226524-5cdd-40ff-82b5-b2a496f2dcd7"
+        "7e226524-5cdd-40ff-82b5-b2a496f2dcd7",
+        "fc678dd1-d778-40bf-becc-ac794358ccb7"
       ],
       "settings": {
         "h1": "",
