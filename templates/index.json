@@ -58,11 +58,29 @@
       ],
       "settings": {
       }
+    },
+    "57323351-c8bb-43c6-9e83-801448ba306a": {
+      "type": "video-scroll",
+      "blocks": {
+        "18791eef-68a7-4d05-9dfd-3181b40a9563": {
+          "type": "content",
+          "settings": {
+            "image_picker": "shopify:\/\/shop_images\/loving.png",
+            "alt": ""
+          }
+        }
+      },
+      "block_order": [
+        "18791eef-68a7-4d05-9dfd-3181b40a9563"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "ec8a39b8-e172-48e1-97d9-303c35a74add",
     "995b856f-22eb-499c-bdd7-0ce77bf53fe6",
-    "3e84f43e-0ece-41e3-b36c-4ca84219ba41"
+    "3e84f43e-0ece-41e3-b36c-4ca84219ba41",
+    "57323351-c8bb-43c6-9e83-801448ba306a"
   ]
 }
