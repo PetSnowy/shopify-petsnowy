@@ -130,6 +130,71 @@
       "settings": {
         "pc_image": "shopify:\/\/shop_images\/inventory.png"
       }
+    },
+    "0d9901b2-9941-48a6-a862-91dce67fc0c0": {
+      "type": "new-index-swiper",
+      "blocks": {
+        "97197060-bf46-4980-830c-78f6802b0e3e": {
+          "type": "block",
+          "settings": {
+            "pc_image": "shopify:\/\/shop_images\/1_dcb65e52-de38-41aa-915c-8f7653e88b42.png"
+          }
+        },
+        "b39158c6-99b8-4fc3-9472-0d82e8dbb44c": {
+          "type": "block",
+          "settings": {
+            "pc_image": "shopify:\/\/shop_images\/2_14c40741-aafa-4d3e-9ecb-caf0010ade13.png"
+          }
+        },
+        "8172610a-5d35-4bd1-b139-56cad6348ab9": {
+          "type": "block",
+          "settings": {
+            "pc_image": "shopify:\/\/shop_images\/3_38dd0534-b7f5-4304-98ae-4953f0583f0c.png"
+          }
+        },
+        "fd296d4b-7d8b-4358-a72f-1b3505035a93": {
+          "type": "block",
+          "settings": {
+            "pc_image": "shopify:\/\/shop_images\/4_baecb762-8a80-47ca-ba28-5f32adcfef5b.png"
+          }
+        },
+        "f792740f-1110-4144-acd1-57648007e26f": {
+          "type": "block",
+          "settings": {
+            "pc_image": "shopify:\/\/shop_images\/5_494cfe3f-d102-4a00-b282-7ace304d8df6.png"
+          }
+        },
+        "9f609673-b38d-49ed-a110-3283e834dac9": {
+          "type": "block",
+          "settings": {
+            "pc_image": "shopify:\/\/shop_images\/6_eea0877e-864e-483b-b1dd-be370391a772.png"
+          }
+        },
+        "c4acf4bd-fd74-4fe7-aa29-857b25e59df7": {
+          "type": "block",
+          "settings": {
+            "pc_image": "shopify:\/\/shop_images\/7_c6dc9916-8aca-4fec-bc2f-12989f70aa54.png"
+          }
+        },
+        "03b1c6e8-e875-47e9-91e8-3a86782cff54": {
+          "type": "block",
+          "settings": {
+            "pc_image": "shopify:\/\/shop_images\/8.png"
+          }
+        }
+      },
+      "block_order": [
+        "97197060-bf46-4980-830c-78f6802b0e3e",
+        "b39158c6-99b8-4fc3-9472-0d82e8dbb44c",
+        "8172610a-5d35-4bd1-b139-56cad6348ab9",
+        "fd296d4b-7d8b-4358-a72f-1b3505035a93",
+        "f792740f-1110-4144-acd1-57648007e26f",
+        "9f609673-b38d-49ed-a110-3283e834dac9",
+        "c4acf4bd-fd74-4fe7-aa29-857b25e59df7",
+        "03b1c6e8-e875-47e9-91e8-3a86782cff54"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -139,6 +204,7 @@
     "57323351-c8bb-43c6-9e83-801448ba306a",
     "22c48336-56bc-4ccb-8a86-00d422ec2119",
     "a5d1cabc-a28c-4d6f-8f48-ab1dd463ac7f",
-    "9ac20be1-bf22-4b34-86f4-ad6c5722358b"
+    "9ac20be1-bf22-4b34-86f4-ad6c5722358b",
+    "0d9901b2-9941-48a6-a862-91dce67fc0c0"
   ]
 }
