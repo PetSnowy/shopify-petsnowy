@@ -5,67 +5,27 @@
         <source media="(min-width: 901px)" data-srcset="{{ section.settings.pc_image | img_url: 'master' }}">
         <source media="(max-width: 900px)" data-srcset="{{ section.settings.mb_image | img_url: 'master' }}">
         <img
-          alt="{{ section.settings.title }}"
+          alt="Litter Box"
           decoding="async"
           loading="lazy"
         >
       </picture>
     </div>
     <div class="litter-content">
-      <p class="sub-title">{{ section.settings.sub_title }}</p>
-      <p class="sub-title">{{ section.settings.title }}</p>
+      <p class="sub-title">SNOW+ Self-cleaning Litter Box</p>
+      <p class="sub-title">
+        <span>Finally, a Litter Box </span><span>That Collects All</span> <span>Scoop Ideas</span>
+      </p>
       <div class="options">
-        {% for block in section.blocks %}
-          <div class="item">{{ block.settings.text }}</div>
-        {% endfor %}
+        <div class="item"></div>
       </div>
+      <a target="_blank" href="/products/snow-self-cleaning-litter-box" class="button">Order Now</a>
     </div>
   </div>
 </div>
 {% schema %}
 {
   "name": "new-index-litter",
-  "settings": [
-    {
-      "type": "text",
-      "id": "sub_title",
-      "label": "sub_title"
-    },
-    {
-      "type": "text",
-      "id": "title",
-      "label": "title"
-    },
-    {
-      "type": "text",
-      "id": "button",
-      "label": "button"
-    },
-    {
-      "type": "image_picker",
-      "id": "pc_image",
-      "label": "pc_image"
-    },
-    {
-      "type": "image_picker",
-      "id": "mb_image",
-      "label": "mb_image"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "option",
-      "name": "option",
-      "settings": [
-        {
-          "type": "text",
-          "id": "text",
-          "label": "text"
-        }
-      ],
-      "limit": 3
-    }
-  ],
   "presets": [
     {
       "name": "new-index-litter"
