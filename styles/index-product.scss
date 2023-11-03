@@ -6,10 +6,21 @@
 	.new-index-product {
 		padding: 94px 0px 88px;
 
-		.path-width {
+		.page-width {
 			display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			column-gap: 50px;
+			grid-template-columns: repeat(4, 268px);
+			justify-content: space-between;
+		}
+
+		a {
+			display: block;
+			border: 2px solid transparent;
+			border-radius: 42px;
+			transition: all 0.3s ease;
+
+			&:hover {
+				border-color: #D75F23;
+			}
 		}
 
 
@@ -18,6 +29,7 @@
 			width: 264px;
 			height: 346px;
 			object-fit: contain;
+			display: block;
 		}
 	}
 }

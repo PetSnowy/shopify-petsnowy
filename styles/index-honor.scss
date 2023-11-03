@@ -1,0 +1,62 @@
+@import "pxToVw.scss";
+
+.new-index-honor {}
+
+@media screen and (min-width: 901px) {
+	.new-index-honor {
+		.honor-inner {
+			position: relative;
+
+			picture:first-child {
+				display: block;
+				width: 1200px;
+
+				img {
+					height: auto;
+					width: 1200px;
+					object-fit: contain;
+				}
+			}
+		}
+
+		.honor-content {
+			width: 700px;
+			display: block;
+			position: absolute;
+
+			img {
+				width: 700px;
+				display: block;
+				object-fit: contain;
+				height: auto;
+			}
+		}
+
+		.honor-options {
+			display: flex;
+			align-items: center;
+
+			picture {
+				display: block;
+
+				&::after {
+					content: '';
+					display: block;
+					width: 2px;
+					height: 45px;
+					background: #C7BCB1;
+					margin: auto 45px 43px;
+
+				}
+
+				img {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.new-index-honor {}
+}

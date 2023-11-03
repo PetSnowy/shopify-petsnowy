@@ -1,9 +1,9 @@
 {{ 'index-product.css' | asset_url | stylesheet_tag }}
 
 <div class="new-index-product">
-  <div class="path-width">
+  <div class="page-width">
     {% for blocks in section.blocks %}
-      <a href="{{ blocks.link }}" target="_blank">
+      <a href="{{ blocks.settings.link }}" target="_blank">
         <picture>
           <source media="(min-width: 901px)" data-srcset="{{ blocks.settings.pc_image | img_url: 'master' }}">
           <source media="(max-width: 900px)" data-srcset="{{ blocks.settings.mb_image | img_url: 'master' }}">

@@ -1,16 +1,19 @@
 @import "pxToVw.scss";
 
 .new-index-litter {
+	background: #E0D5C1;
 
 	p,
 	span {
 		line-height: normal;
 	}
 
+	picture,
 	img {
 		width: 100%;
 		height: 100%;
 		object-fit: contain;
+		display: block;
 	}
 
 	.litter-content {
