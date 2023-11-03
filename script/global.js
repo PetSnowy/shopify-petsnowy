@@ -15,6 +15,7 @@ class ProductInventory extends HTMLElement {
 			this.addEventListener('mousemove', (e) => this.onmousemove(e));
 			this.addEventListener('mouseout', this.handleMouseout);
 		}
+		this.that = this
 	}
 
 	static get observedAttributes() {
@@ -41,7 +42,9 @@ class ProductInventory extends HTMLElement {
 	getRotate = (range, value, max) => (value / max) * (range[1] - range[0]) + range[0];
 
 	onmousemove(e) {
-		const { offsetX, offsetY } = e;
+		const rect = this.getBoundingClientRect();
+		const offsetX = e.clientX - rect.left;
+		const offsetY = e.clientY - rect.top;
 		const { offsetWidth, offsetHeight } = this;
 		const ry = -this.getRotate(this.yRange, offsetX, offsetWidth);
 		const rx = this.getRotate(this.xRange, offsetY, offsetHeight);

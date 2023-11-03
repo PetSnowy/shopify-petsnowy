@@ -1,6 +1,6 @@
 <div class="new-index-inventory">
   <div class="page-width">
-    <product-inventory>
+    <product-inventory y-range="-2,2" x-range="-2,2">
       <picture>
         <source media="(min-width: 901px)" data-srcset="{{ section.settings.pc_image | img_url: 'master' }}">
         <source media="(max-width: 900px)" data-srcset="{{ section.settings.mb_image | img_url: 'master' }}">
@@ -15,6 +15,9 @@
   </div>
 </div>
 <style>
+  .new-index-inventory {
+    margin-bottom: 100px;
+  }
   .new-index-inventory product-inventory {
     display: block;
     position: relative;
