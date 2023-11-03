@@ -1,20 +1,22 @@
 {{ 'index-swiper.css' | asset_url | stylesheet_tag }}
 
-<div class="swiper new-index-swiper">
-  <div class="swiper-wrapper page-width">
-    {% for blocks in section.blocks %}
-      <div class="swiper-slide">
-        <picture>
-          <source media="(min-width: 901px)" data-srcset="{{ blocks.settings.pc_image | img_url: 'master' }}">
-          <source media="(max-width: 900px)" data-srcset="{{ blocks.settings.mb_image | img_url: 'master' }}">
-          <img
-            alt="petsnowy"
-            decoding="async"
-            loading="lazy"
-          >
-        </picture>
-      </div>
-    {% endfor %}
+<div class="new-index-swiper-wrapper page-width">
+  <div class="swiper new-index-swiper">
+    <div class="swiper-wrapper">
+      {% for blocks in section.blocks %}
+        <div class="swiper-slide">
+          <picture>
+            <source media="(min-width: 901px)" srcset="{{ blocks.settings.pc_image | img_url: 'master' }}">
+            <source media="(max-width: 900px)" srcset="{{ blocks.settings.mb_image | img_url: 'master' }}">
+            <img
+              alt="petsnowy"
+              decoding="async"
+              loading="lazy"
+            >
+          </picture>
+        </div>
+      {% endfor %}
+    </div>
   </div>
   <div class="swiper-button">
     <div class="swiper-button-prev">
@@ -28,7 +30,7 @@
 
 <script>
   const mySwiper = new Swiper('.new-index-swiper', {
-    slidesPerView: 'auto',
+    slidesPerView: 4,
     spaceBetween: 40,
     speed: 600,
     loop: true,

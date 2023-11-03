@@ -1,9 +1,15 @@
 @import "pxToVw.scss";
 
-.new-index-swiper {}
+.new-index-swiper-wrapper {}
 
 @media screen and (min-width: 901px) {
-	.new-index-swiper {
+	.new-index-swiper-wrapper {
+		position: relative;
+		width: 1200px;
+
+		.new-index-swiper {
+			width: 1059px;
+		}
 
 		picture,
 		img {
@@ -16,5 +22,5 @@
 }
 
 @media screen and (max-width: 900px) {
-	.new-index-swiper {}
+	.new-index-swiper-wrapper {}
 }
