@@ -1,0 +1,71 @@
+<div class="new-index-inventory">
+  <div class="page-width">
+    <product-inventory>
+      <picture>
+        <source media="(min-width: 901px)" data-srcset="{{ section.settings.pc_image | img_url: 'master' }}">
+        <source media="(max-width: 900px)" data-srcset="{{ section.settings.mb_image | img_url: 'master' }}">
+        <img
+          alt="petsnowy"
+          decoding="async"
+          loading="lazy"
+        >
+      </picture>
+      <a href="/products/snow-self-cleaning-litter-box" target="_blank">Order Now</a>
+    </product-inventory>
+  </div>
+</div>
+<style>
+  .new-index-inventory product-inventory {
+    display: block;
+    position: relative;
+  }
+  .new-index-inventory picture {
+    width: 1200px;
+    display: block;
+  }
+  .new-index-inventory img {
+    width: 1200px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+  .new-index-inventory a {
+    display: block;
+    position: absolute;
+    bottom: 48px;
+    right: 48px;
+    width: 314px;
+    height: 79px;
+    background: #504030;
+    border-radius: 39px;
+    text-align: center;
+    line-height: 79px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: LeagueSpartanBold;
+    font-size: 36px;
+    font-weight: 800;
+  }
+</style>
+{% schema %}
+{
+  "name": "new-index-inventory",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "pc_image",
+      "label": "pc image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mb_image",
+      "label": "mb image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "new-index-inventory"
+    }
+  ]
+}
+{% endschema %}
