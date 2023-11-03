@@ -1,0 +1,42 @@
+{{ 'index-our.css' | asset_url | stylesheet_tag }}
+
+<div class="new-index-our">
+  <div class="page-width">
+    <picture>
+      <source media="(min-width: 901px)" srcset="{{ section.settings.pc_image | img_url: 'master' }}">
+      <source media="(max-width: 900px)" srcset="{{ section.settings.mb_image | img_url: 'master' }}">
+      <img
+        alt="petsnowy"
+        decoding="async"
+        loading="lazy"
+      >
+    </picture>
+    <div class="btn">
+      <span>OUR STORY</span>
+      <i></i>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "new-index-swiper",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "pc_image",
+      "label": "pc card image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mb_image",
+      "label": "mb card image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "new-index-swiper"
+    }
+  ]
+}
+{% endschema %}

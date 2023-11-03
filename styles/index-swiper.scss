@@ -7,24 +7,30 @@
 .new-index-swiper-wrapper {}
 
 @media screen and (min-width: 901px) {
-
-
-	.new-index-swiper-wrapper {
-		position: relative;
-		width: 1200px;
+	.swiper-index-wrapper {
+		padding: 60px 0px 65px;
 
 		.title {
-			all: unset;
 			font-size: 70px;
 			font-family: LeagueSpartanBlack;
 			font-weight: 900;
 			line-height: 66px;
+			margin: 0px;
 			margin-bottom: 48px;
+			color: #504030;
+			text-align: center;
 
 			&::first-letter {
 				color: #D75F23;
 			}
 		}
+	}
+
+	.new-index-swiper-wrapper {
+		position: relative;
+		width: 1200px;
+
+
 
 		.new-index-swiper {
 			width: 1059px;
@@ -37,7 +43,37 @@
 			height: 533px;
 			object-fit: contain;
 		}
+
+		.swiper-button {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 4;
+			cursor: pointer;
+			width: 100%;
+			height: 100px;
+
+			&>div {
+				width: 40px;
+				height: 95px;
+				display: block;
+				background: url('./arrows-big.png') no-repeat center/cover;
+
+				&::after,
+				&::before {
+					display: none;
+				}
+			}
+		}
+
+		.swiper-button-next {
+			transform: rotate(180deg);
+		}
 	}
+
 }
 
 @media screen and (max-width: 900px) {

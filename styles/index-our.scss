@@ -1,0 +1,55 @@
+@import "pxToVw.scss";
+
+.new-index-our {}
+
+@media screen and (min-width: 901px) {
+	.new-index-our {
+		.page-width {
+			display: block;
+			position: relative;
+			width: 1200px;
+
+			picture,
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+
+			.button {
+				width: 286px;
+				height: 54px;
+				background: #96816B;
+				border-radius: 24px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				span {
+					font-size: 31px;
+					font-family: LeagueSpartanBold;
+					font-weight: 800;
+					color: #FFFFFF;
+				}
+
+				i {
+					display: block;
+					background: url('./mouse.png') no-repeat center/cover;
+					margin-left: 5px;
+					transition: all 0.3s ease;
+				}
+
+				&:hover {
+					i {
+						transform: translate(-5px, -5px);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.new-index-our {}
+
+}
