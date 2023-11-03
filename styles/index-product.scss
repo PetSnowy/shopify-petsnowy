@@ -1,0 +1,27 @@
+@import "pxToVw.scss";
+
+.new-index-product {}
+
+@media screen and (min-width: 901px) {
+	.new-index-product {
+		padding: 94px 0px 88px;
+
+		.path-width {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			column-gap: 50px;
+		}
+
+
+		picture,
+		img {
+			width: 264px;
+			height: 346px;
+			object-fit: contain;
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.new-index-product {}
+}
