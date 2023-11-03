@@ -118,6 +118,12 @@
         "pc_inner": "shopify:\/\/shop_images\/honor.png",
         "pc_content": "shopify:\/\/shop_images\/honor-content.png"
       }
+    },
+    "a5d1cabc-a28c-4d6f-8f48-ab1dd463ac7f": {
+      "type": "new-index-reported",
+      "settings": {
+        "pc_image": "shopify:\/\/shop_images\/reported.png"
+      }
     }
   },
   "order": [
@@ -125,6 +131,7 @@
     "995b856f-22eb-499c-bdd7-0ce77bf53fe6",
     "3e84f43e-0ece-41e3-b36c-4ca84219ba41",
     "57323351-c8bb-43c6-9e83-801448ba306a",
-    "22c48336-56bc-4ccb-8a86-00d422ec2119"
+    "22c48336-56bc-4ccb-8a86-00d422ec2119",
+    "a5d1cabc-a28c-4d6f-8f48-ab1dd463ac7f"
   ]
 }
