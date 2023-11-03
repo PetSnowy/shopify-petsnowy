@@ -14,11 +14,53 @@
       }
     },
     "995b856f-22eb-499c-bdd7-0ce77bf53fe6": {
-      "type": "new-index-litter"
+      "type": "new-index-litter",
+      "settings": {
+      }
+    },
+    "3e84f43e-0ece-41e3-b36c-4ca84219ba41": {
+      "type": "new-index-product",
+      "blocks": {
+        "a7398cdb-acb2-459e-9c8e-6228b92ea9ba": {
+          "type": "block",
+          "settings": {
+            "pc_image": "shopify:\/\/shop_images\/product-1.png",
+            "link": "\/products\/snow-water-fountain"
+          }
+        },
+        "8e341b84-996a-45a7-a1f3-2a1ae4e947e5": {
+          "type": "block",
+          "settings": {
+            "pc_image": "shopify:\/\/shop_images\/product-2.png",
+            "link": "\/products\/snow-pet-feeder"
+          }
+        },
+        "4ce3906c-76c2-4aff-8688-3973f2b10fa1": {
+          "type": "block",
+          "settings": {
+            "link": ""
+          }
+        },
+        "fe43a75a-e672-4a9a-90cf-c3636a79ea36": {
+          "type": "block",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "a7398cdb-acb2-459e-9c8e-6228b92ea9ba",
+        "8e341b84-996a-45a7-a1f3-2a1ae4e947e5",
+        "4ce3906c-76c2-4aff-8688-3973f2b10fa1",
+        "fe43a75a-e672-4a9a-90cf-c3636a79ea36"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "ec8a39b8-e172-48e1-97d9-303c35a74add",
-    "995b856f-22eb-499c-bdd7-0ce77bf53fe6"
+    "995b856f-22eb-499c-bdd7-0ce77bf53fe6",
+    "3e84f43e-0ece-41e3-b36c-4ca84219ba41"
   ]
 }
