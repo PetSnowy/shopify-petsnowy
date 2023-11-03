@@ -6067,6 +6067,10 @@ $item: 5;
 #MainContentIndex {
 	background-color: #e9e0cf;
 
+	img {
+		-webkit-user-drag: none;
+	}
+
 	.video-scroll-wrapper {
 		margin-top: 0px;
 		margin-bottom: 94px;

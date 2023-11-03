@@ -1,0 +1,55 @@
+<div class="new-index-reported">
+  <div class="page-width">
+    <picture>
+      <source media="(min-width: 901px)" data-srcset="{{ section.settings.pc_image | img_url: 'master' }}">
+      <source media="(max-width: 900px)" data-srcset="{{ section.settings.mb_image | img_url: 'master' }}">
+      <img
+        alt="petsnowy"
+        decoding="async"
+        loading="lazy"
+      >
+    </picture>
+  </div>
+</div>
+<style>
+  .new-index-reported {
+    padding: 20px 0px;
+  }
+  .new-index-reported .page-width {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .new-index-reported .page-width picture {
+    display: block;
+    width: 489px;
+  }
+  .new-index-reported .page-width picture img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+</style>
+{% schema %}
+{
+  "name": "new-index-reported",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "pc_image",
+      "label": "pc image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mb_image",
+      "label": "mb image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "new-index-reported"
+    }
+  ]
+}
+{% endschema %}
