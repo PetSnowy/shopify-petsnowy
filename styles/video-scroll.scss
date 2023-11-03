@@ -59,7 +59,7 @@ $background-color:#f6f3ec;
 			user-select: none;
 			cursor: pointer;
 			margin-right: 32px;
-			transition: all 0.3s ease;
+			overflow: hidden;
 
 			img {
 				width: 136px;
@@ -68,8 +68,9 @@ $background-color:#f6f3ec;
 				border-radius: 12px;
 			}
 
-			&:hover {
-				transform: scale(1.05);
+			&:hover img {
+				transform: scale(1.1);
+				transition: all 0.3s ease;
 			}
 		}
 
