@@ -125,8 +125,8 @@
         "pc_image": "shopify:\/\/shop_images\/reported.png"
       }
     },
-    "359456b2-7780-434a-9e08-fd18c97f8fbf": {
-      "type": "new-index-reported",
+    "9ac20be1-bf22-4b34-86f4-ad6c5722358b": {
+      "type": "new-index-inventory",
       "settings": {
         "pc_image": "shopify:\/\/shop_images\/inventory.png"
       }
@@ -139,6 +139,6 @@
     "57323351-c8bb-43c6-9e83-801448ba306a",
     "22c48336-56bc-4ccb-8a86-00d422ec2119",
     "a5d1cabc-a28c-4d6f-8f48-ab1dd463ac7f",
-    "359456b2-7780-434a-9e08-fd18c97f8fbf"
+    "9ac20be1-bf22-4b34-86f4-ad6c5722358b"
   ]
 }
