@@ -196,6 +196,12 @@
       "settings": {
         "title": "Join 30,000+ happy pet parents"
       }
+    },
+    "04516345-fc49-4d46-b435-73d5ef1cf21c": {
+      "type": "new-index-our",
+      "settings": {
+        "pc_image": "shopify:\/\/shop_images\/our.png"
+      }
     }
   },
   "order": [
@@ -206,6 +212,7 @@
     "22c48336-56bc-4ccb-8a86-00d422ec2119",
     "a5d1cabc-a28c-4d6f-8f48-ab1dd463ac7f",
     "9ac20be1-bf22-4b34-86f4-ad6c5722358b",
-    "0d9901b2-9941-48a6-a862-91dce67fc0c0"
+    "0d9901b2-9941-48a6-a862-91dce67fc0c0",
+    "04516345-fc49-4d46-b435-73d5ef1cf21c"
   ]
 }
