@@ -45,7 +45,8 @@
         "fe43a75a-e672-4a9a-90cf-c3636a79ea36": {
           "type": "block",
           "settings": {
-            "link": ""
+            "pc_image": "shopify:\/\/shop_images\/product-4.png",
+            "link": "\/collections\/accessories"
           }
         }
       },
