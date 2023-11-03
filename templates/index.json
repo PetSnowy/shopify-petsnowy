@@ -12,9 +12,43 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "995b856f-22eb-499c-bdd7-0ce77bf53fe6": {
+      "type": "new-index-litter",
+      "blocks": {
+        "f04e27a3-a991-4261-a511-f607b12f509c": {
+          "type": "option",
+          "settings": {
+            "text": "Hands -free"
+          }
+        },
+        "ece6855e-2d16-4a84-b6a4-a633efdd4d17": {
+          "type": "option",
+          "settings": {
+            "text": "Zero Odor"
+          }
+        },
+        "4b1a8849-8703-49bb-b3ce-a43aed8d6ad8": {
+          "type": "option",
+          "settings": {
+            "text": "Less Mess"
+          }
+        }
+      },
+      "block_order": [
+        "f04e27a3-a991-4261-a511-f607b12f509c",
+        "ece6855e-2d16-4a84-b6a4-a633efdd4d17",
+        "4b1a8849-8703-49bb-b3ce-a43aed8d6ad8"
+      ],
+      "settings": {
+        "sub_title": "SNOW+ Self-cleaning Litter Box",
+        "title": "Finally, a Litter Box That Collects All Scoop Ideas",
+        "button": "Order Now"
+      }
     }
   },
   "order": [
-    "ec8a39b8-e172-48e1-97d9-303c35a74add"
+    "ec8a39b8-e172-48e1-97d9-303c35a74add",
+    "995b856f-22eb-499c-bdd7-0ce77bf53fe6"
   ]
 }
