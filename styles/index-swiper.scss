@@ -1,11 +1,30 @@
 @import "pxToVw.scss";
 
+.swiper-index-wrapper {
+	background-color: #E0D5C1;
+}
+
 .new-index-swiper-wrapper {}
 
 @media screen and (min-width: 901px) {
+
+
 	.new-index-swiper-wrapper {
 		position: relative;
 		width: 1200px;
+
+		.title {
+			all: unset;
+			font-size: 70px;
+			font-family: LeagueSpartanBlack;
+			font-weight: 900;
+			line-height: 66px;
+			margin-bottom: 48px;
+
+			&::first-letter {
+				color: #D75F23;
+			}
+		}
 
 		.new-index-swiper {
 			width: 1059px;

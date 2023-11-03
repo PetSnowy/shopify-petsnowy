@@ -1,29 +1,36 @@
 {{ 'index-swiper.css' | asset_url | stylesheet_tag }}
 
-<div class="new-index-swiper-wrapper page-width">
-  <div class="swiper new-index-swiper">
-    <div class="swiper-wrapper">
-      {% for blocks in section.blocks %}
-        <div class="swiper-slide">
-          <picture>
-            <source media="(min-width: 901px)" srcset="{{ blocks.settings.pc_image | img_url: 'master' }}">
-            <source media="(max-width: 900px)" srcset="{{ blocks.settings.mb_image | img_url: 'master' }}">
-            <img
-              alt="petsnowy"
-              decoding="async"
-              loading="lazy"
-            >
-          </picture>
+<div class="swiper-index-wrapper">
+  <div class="new-index-swiper-wrapper page-width">
+    <p class="title">{{ section.settings.title }}</p>
+    <div class="swiper new-index-swiper">
+      <div class="swiper-wrapper">
+        {% for blocks in section.blocks %}
+          <div class="swiper-slide">
+            <picture>
+              <source media="(min-width: 901px)" srcset="{{ blocks.settings.pc_image | img_url: 'master' }}">
+              <source media="(max-width: 900px)" srcset="{{ blocks.settings.mb_image | img_url: 'master' }}">
+              <img
+                alt="petsnowy"
+                decoding="async"
+                loading="lazy"
+              >
+            </picture>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="swiper-button">
+      <div class="swiper-button-prev">
+        <div class="product-arrows">
+          <div class="arrows-big"></div>
         </div>
-      {% endfor %}
-    </div>
-  </div>
-  <div class="swiper-button">
-    <div class="swiper-button-prev">
-      <div class="product-arrows"></div>
-    </div>
-    <div class="swiper-button-next">
-      <div class="product-arrows"></div>
+      </div>
+      <div class="swiper-button-next">
+        <div class="product-arrows">
+          <div class="arrows-big"></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -53,6 +60,13 @@
 {% schema %}
 {
   "name": "new-index-swiper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "title"
+    }
+  ],
   "blocks": [
     {
       "name": "img",
