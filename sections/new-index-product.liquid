@@ -3,15 +3,17 @@
 <div class="new-index-product">
   <div class="path-width">
     {% for blocks in section.blocks %}
-      <picture>
-        <source media="(min-width: 901px)" data-srcset="{{ blocks.settings.pc_image | img_url: 'master' }}">
-        <source media="(max-width: 900px)" data-srcset="{{ blocks.settings.mb_image | img_url: 'master' }}">
-        <img
-          alt="Litter Box"
-          decoding="async"
-          loading="lazy"
-        >
-      </picture>
+      <a href="{{ blocks.link }}" target="_blank">
+        <picture>
+          <source media="(min-width: 901px)" data-srcset="{{ blocks.settings.pc_image | img_url: 'master' }}">
+          <source media="(max-width: 900px)" data-srcset="{{ blocks.settings.mb_image | img_url: 'master' }}">
+          <img
+            alt="Litter Box"
+            decoding="async"
+            loading="lazy"
+          >
+        </picture>
+      </a>
     {% endfor %}
   </div>
 </div>
@@ -33,6 +35,11 @@
           "type": "image_picker",
           "id": "mb_image",
           "label": "mb card image"
+        },
+        {
+          "type": "text",
+          "id": "link",
+          "label": "link"
         }
       ],
       "limit": 4
