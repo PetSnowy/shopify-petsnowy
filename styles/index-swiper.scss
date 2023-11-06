@@ -4,7 +4,6 @@
 	background-color: #E0D5C1;
 }
 
-.new-index-swiper-wrapper {}
 
 @media screen and (min-width: 901px) {
 	.swiper-index-wrapper {
@@ -42,10 +41,6 @@
 			object-fit: contain;
 		}
 
-		.swiper-slide {
-			margin-right: 40px;
-		}
-
 		.swiper-button {
 			display: flex;
 			align-items: center;
@@ -79,6 +74,22 @@
 
 @media screen and (max-width: 900px) {
 	.new-index-swiper-wrapper {
+		padding: vw(35px) 0px vw(44px);
+
+		.title {
+			font-size: vw(45px);
+			font-family: LeagueSpartanBlack;
+			font-weight: 900;
+			line-height: vw(43px);
+			margin: 0px;
+			margin-bottom: vw(30px);
+			color: #504030;
+			text-align: center;
+
+			&::first-letter {
+				color: #D75F23;
+			}
+		}
 
 		picture,
 		img {
@@ -93,7 +104,8 @@
 		}
 
 		.swiper-slide {
-			margin-right: vw(40px);
+			margin-right: vw(20px);
+			width: vw(186px) !important;
 		}
 	}
 }

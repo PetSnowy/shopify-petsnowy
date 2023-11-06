@@ -60,6 +60,15 @@
 }
 
 @media screen and (max-width: 900px) {
-	.new-index-our {}
+	.new-index-our {
+
+		img,
+		picture {
+			display: block;
+			width: 100%;
+			height: auto;
+			object-fit: contain;
+		}
+	}
 
 }

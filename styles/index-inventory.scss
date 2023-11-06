@@ -60,7 +60,6 @@
 		}
 
 		a {
-			display: block;
 			position: absolute;
 			bottom: vw(30px);
 			right: vw(26px);
@@ -69,8 +68,10 @@
 			background: #504030;
 			border-radius: vw(29px);
 			text-align: center;
-			line-height: vw(68px);
 			color: #ffffff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			text-transform: uppercase;
 			font-family: LeagueSpartanBold;
 			font-size: vw(26px);
