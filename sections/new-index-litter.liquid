@@ -3,14 +3,30 @@
 <div class="new-index-litter">
   <div class="page-width">
     <div class="container">
-      <p class="title"><span>Finally, a Litter Box </span><span>That Collects All</span> <span>Scoop Ideas</span></p>
+      <p class="title aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+        <span>Finally, a Litter Box </span><span>That Collects All</span> <span>Scoop Ideas</span>
+      </p>
       <div class="play">
-        <img src="./img/honor-1.png" alt="">
+        <picture>
+          <source media="(min-width: 901px)" data-srcset="{{ section.settings.pc_image | img_url: 'master' }}">
+          <source media="(max-width: 900px)" data-srcset="{{ section.settings.mb_image | img_url: 'master' }}">
+          <img
+            alt="petsnowy"
+            decoding="async"
+            loading="lazy"
+          >
+        </picture>
       </div>
-      <p class="sub-title">SNOW+ Self-cleaning Litter Box</p>
+      <p class="sub-title aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+        SNOW+ Self-cleaning Litter Box
+      </p>
       <div class="litter-content">
-        <p class="sub-title">SNOW+ Self-cleaning Litter Box</p>
-        <p class="title"><span>Finally, a Litter Box </span><span>That Collects All</span> <span>Scoop Ideas</span></p>
+        <p class="sub-title aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+          SNOW+ Self-cleaning Litter Box
+        </p>
+        <p class="title aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+          <span>Finally, a Litter Box </span><span>That Collects All</span> <span>Scoop Ideas</span>
+        </p>
         <div class="options">
           <div class="item">
             <p>Hands</p>
@@ -49,42 +65,19 @@
   </div>
 </div>
 <script>
-  const imgSrcMap = ['./img/honor-1.png', './img/honor-2.png', './img/honor-3.png', './img/honor-4.png'];
+  const container = document.querySelector('.new-index-litter');
+  const topVideo = document.querySelector('.custom-banr-main');
+  const target = container.querySelector('img');
+  window.addEventListener('scroll', () => {
+    const scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+    const top = topVideo.offsetHeight;
 
-  const container = document.querySelector('.new-index-litter .container');
-
-  const target = document.querySelector('.new-index-litter .play img');
-
-  const viewportHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-
-  let currentIndex = 0;
-
-  function init() {
-    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    const containerHeight = document.querySelector('.new-index-litter .container').offsetHeight;
-    const playContainer = document.querySelector('.new-index-litter .play');
-    const playContainerTop = playContainer.offsetTop;
-    const scrollPercentage = (playContainerTop / (containerHeight - playContainer.offsetHeight)) * 100;
-    const currentIndex = Math.floor((scrollPercentage / 100) * imgSrcMap.length);
-
-    const headerHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--main-padding-top'));
-    container.style.top = `${(viewportHeight - container.offsetHeight - headerHeight) / 2 + headerHeight}px `;
-
-    if (currentIndex > imgSrcMap.length - 1) return;
-    target.src = imgSrcMap[currentIndex];
-  }
-
-  const observerLitter = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        window.addEventListener('scroll', init, { passive: true });
-      } else {
-        window.removeEventListener('scroll', init, { passive: true });
-      }
-    });
+    if (scrollTop >= top) {
+      target.style.transform = 'scale(1)';
+    } else {
+      target.style.transform = 'scale(0.9)';
+    }
   });
-
-  observerLitter.observe(container);
 </script>
 {% schema %}
 {
