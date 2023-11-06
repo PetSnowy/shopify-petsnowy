@@ -52,7 +52,7 @@
 			}
 		}
 
-		height: 2400px;
+		height: 690px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -60,13 +60,10 @@
 		.page-width {
 			display: flex;
 			position: relative;
-			height: 2400px;
+			height: 690px;
 
 			.container {
 				width: 1200px;
-				position: sticky;
-				top: 150px;
-				left: 0px;
 				display: flex;
 				padding: 93px 0 111px;
 				height: 690px;
@@ -173,13 +170,9 @@
 @media screen and (max-width: 900px) {
 	.new-index-litter {
 		padding: vw(124px) 0px vw(78px);
-		height: vw(2400px);
 		box-sizing: border-box;
 		position: relative;
 
-		.page-width {
-			height: 100%;
-		}
 
 		.litter-content {
 
@@ -194,8 +187,6 @@
 			flex-wrap: wrap;
 			justify-content: center;
 			flex-direction: column;
-			position: sticky;
-			top: var(--main-padding-top);
 		}
 
 		.title {

@@ -25,7 +25,7 @@
       {% for blocks in section.blocks %}
         {% if blocks.type == 'mb_content' %}
           <img
-            data-src="{{ blocks.settings.mb_content | img_url: 'master' }}"
+            data-src="{{ blocks.settings.mb_content_desc | img_url: 'master' }}"
             alt="petsnowy"
             decoding="async"
             loading="lazy"
@@ -55,7 +55,7 @@
       {% for blocks in section.blocks %}
         {% if blocks.type == 'mb_options' %}
           <picture>
-            <source media="(min-width: 901px)" data-srcset="{{ blocks.settings.mb_options | img_url: 'master' }}">
+            <source media="(min-width: 901px)" data-srcset="{{ blocks.settings.mb_options_desc | img_url: 'master' }}">
             <img
               alt="petsnowy"
               decoding="async"
@@ -112,25 +112,25 @@
       "limit": 4
     },
     {
-      "name": "img",
+      "name": "mb_content",
       "type": "mb_content",
       "settings": [
         {
           "type": "image_picker",
-          "id": "mb_content",
-          "label": "mb_content"
+          "id": "mb_content_desc",
+          "label": "mb content desc"
         }
       ],
       "limit": 3
     },
     {
-      "name": "img",
+      "name": "mb_options",
       "type": "mb_options",
       "settings": [
         {
           "type": "image_picker",
-          "id": "mb_options",
-          "label": "mb_options"
+          "id": "mb_options_desc",
+          "label": "mb options desc"
         }
       ],
       "limit": 3
