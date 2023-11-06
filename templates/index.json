@@ -25,6 +25,7 @@
           "type": "block",
           "settings": {
             "pc_image": "shopify:\/\/shop_images\/product-1.png",
+            "mb_image": "shopify:\/\/shop_images\/1_e07865f4-c8cf-4d86-a62f-7ed4ba2f48b5.png",
             "link": "\/products\/snow-water-fountain"
           }
         },
@@ -32,6 +33,7 @@
           "type": "block",
           "settings": {
             "pc_image": "shopify:\/\/shop_images\/product-2.png",
+            "mb_image": "shopify:\/\/shop_images\/2_9295d324-bae8-45e4-baf1-28a3702528b8.png",
             "link": "\/products\/snow-pet-feeder"
           }
         },
@@ -39,6 +41,7 @@
           "type": "block",
           "settings": {
             "pc_image": "shopify:\/\/shop_images\/product-3.png",
+            "mb_image": "shopify:\/\/shop_images\/3_a5e5b7b6-a1c6-4992-80e6-1fa97449ece3.png",
             "link": "\/snow-roly-poly-cat-toy"
           }
         },
@@ -46,6 +49,7 @@
           "type": "block",
           "settings": {
             "pc_image": "shopify:\/\/shop_images\/product-4.png",
+            "mb_image": "shopify:\/\/shop_images\/4_57335b70-dc7b-416c-a2fe-309bd1443e38.png",
             "link": "\/collections\/accessories"
           }
         }
@@ -128,7 +132,8 @@
     "9ac20be1-bf22-4b34-86f4-ad6c5722358b": {
       "type": "new-index-inventory",
       "settings": {
-        "pc_image": "shopify:\/\/shop_images\/inventory.png"
+        "pc_image": "shopify:\/\/shop_images\/inventory.png",
+        "mb_image": "shopify:\/\/shop_images\/15.png"
       }
     },
     "0d9901b2-9941-48a6-a862-91dce67fc0c0": {
