@@ -70,6 +70,7 @@
           "type": "content",
           "settings": {
             "image_picker": "shopify:\/\/shop_images\/loving.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/5_c2fc540e-4d56-4af7-9dbb-2d87bbfd2b15.png",
             "alt": ""
           }
         }
