@@ -16,6 +16,8 @@
     "995b856f-22eb-499c-bdd7-0ce77bf53fe6": {
       "type": "new-index-litter",
       "settings": {
+        "pc_image": "shopify:\/\/shop_images\/cat-pc.png",
+        "mb_image": "shopify:\/\/shop_images\/cat-mb.png"
       }
     },
     "3e84f43e-0ece-41e3-b36c-4ca84219ba41": {
