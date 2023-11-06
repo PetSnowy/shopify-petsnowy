@@ -6071,8 +6071,10 @@ $item: 5;
 		-webkit-user-drag: none;
 	}
 
-	.video-scroll-wrapper {
-		margin-top: 0px;
-		margin-bottom: 94px;
+	@media screen and (min-width: 901px) {
+		.video-scroll-wrapper {
+			margin-top: 0px;
+			margin-bottom: 94px;
+		}
 	}
 }

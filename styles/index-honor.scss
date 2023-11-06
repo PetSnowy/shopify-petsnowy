@@ -36,6 +36,12 @@
 			}
 		}
 
+		.mb-honor-content,
+		.mb-honor-desc,
+		.mb-honor-options {
+			display: none;
+		}
+
 		.honor-options {
 			display: flex;
 			align-items: center;
@@ -80,5 +86,49 @@
 }
 
 @media screen and (max-width: 900px) {
-	.new-index-honor {}
+	.new-index-honor {
+		padding: vw(58px) 0px vw(62px);
+
+		.honor-content {
+			display: none;
+		}
+
+		.honor-inner {
+			margin-bottom: vw(37px);
+
+			picture,
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.mb-honor-content img {
+			width: 100%;
+			margin-bottom: vw(40px);
+		}
+
+		.mb-honor-desc {
+			display: flex;
+
+			img {
+				width: vw(313px);
+				height: auto;
+				display: block;
+			}
+		}
+
+		.mb-honor-options {
+			display: flex;
+
+			img {
+				width: vw(205px);
+				height: vw(294px);
+				background: #A79886;
+				border-radius: vw(23px);
+				column-gap: vw(30px);
+			}
+		}
+	}
 }

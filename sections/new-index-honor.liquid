@@ -12,27 +12,57 @@
           loading="lazy"
         >
       </picture>
-      <picture class="honor-content">
-        <source media="(min-width: 901px)" data-srcset="{{ section.settings.pc_content | img_url: 'master' }}">
-        <source media="(max-width: 900px)" data-srcset="{{ section.settings.mb_content | img_url: 'master' }}">
+      <div class="honor-content">
         <img
           alt="petsnowy"
           decoding="async"
           loading="lazy"
+          data-src="{{ section.settings.pc_content | img_url: 'master'  }}"
         >
-      </picture>
+      </div>
     </div>
-    <div class="honor-options">
+    <div class="mb-honor-content">
       {% for blocks in section.blocks %}
-        <picture>
-          <source media="(min-width: 901px)" data-srcset="{{ blocks.settings.pc_image | img_url: 'master' }}">
-          <source media="(max-width: 900px)" data-srcset="{{ blocks.settings.mb_image | img_url: 'master' }}">
+        {% if blocks.type == 'mb_content' %}
           <img
+            data-src="{{ blocks.settings.mb_content | img_url: 'master' }}"
             alt="petsnowy"
             decoding="async"
             loading="lazy"
           >
-        </picture>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="mb-honor-desc">
+      <img data-src="{{ section.settings.mb_honor_desc_left }}" alt="petsnowy">
+      <img data-src="{{ section.settings.mb_honor_desc_right }}" alt="petsnowy">
+    </div>
+    <div class="honor-options">
+      {% for blocks in section.blocks %}
+        {% if blocks.type == 'block' %}
+          <picture>
+            <source media="(min-width: 901px)" data-srcset="{{ blocks.settings.pc_image | img_url: 'master' }}">
+            <img
+              alt="petsnowy"
+              decoding="async"
+              loading="lazy"
+            >
+          </picture>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="mb-honor-options">
+      {% for blocks in section.blocks %}
+        {% if blocks.type == 'mb_options' %}
+          <picture>
+            <source media="(min-width: 901px)" data-srcset="{{ blocks.settings.mb_options | img_url: 'master' }}">
+            <img
+              alt="petsnowy"
+              decoding="async"
+              loading="lazy"
+            >
+          </picture>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
@@ -59,8 +89,13 @@
     },
     {
       "type": "image_picker",
-      "id": "mb_content",
-      "label": "mb_content"
+      "id": "mb_honor_desc_left",
+      "label": "mb_honor_desc_left"
+    },
+    {
+      "type": "image_picker",
+      "id": "mb_honor_desc_right",
+      "label": "mb_honor_desc_right"
     }
   ],
   "blocks": [
@@ -72,19 +107,33 @@
           "type": "image_picker",
           "id": "pc_image",
           "label": "pc card image"
-        },
-        {
-          "type": "image_picker",
-          "id": "mb_image",
-          "label": "mb card image"
-        },
-        {
-          "type": "text",
-          "id": "link",
-          "label": "link"
         }
       ],
       "limit": 4
+    },
+    {
+      "name": "img",
+      "type": "mb_content",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "mb_content",
+          "label": "mb_content"
+        }
+      ],
+      "limit": 3
+    },
+    {
+      "name": "img",
+      "type": "mb_options",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "mb_options",
+          "label": "mb_options"
+        }
+      ],
+      "limit": 3
     }
   ],
   "presets": [
