@@ -35,18 +35,39 @@
 }
 
 @media screen and (min-width: 901px) {
+
 	.new-index-litter {
+		height: 2400px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
 		.page-width {
 			display: flex;
-		}
+			position: relative;
+			height: 2400px;
 
-		.litter-content {
-			padding: 93px 0px 111px;
-		}
+			.container {
+				width: 1200px;
+				position: sticky;
+				top: 150px;
+				left: 0px;
+				display: flex;
+				padding: 93px 0 111px;
+				height: 690px;
+				box-sizing: border-box;
+				justify-content: space-between;
+			}
 
-		.img {
-			width: 612px;
-			height: auto;
+			.play {
+				background-color: red;
+			}
+
+			img {
+				width: 612px;
+				height: auto;
+				object-fit: contain;
+			}
 		}
 
 		.options {
