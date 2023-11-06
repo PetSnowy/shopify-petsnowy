@@ -1,3 +1,5 @@
+{{ 'index-inventory.css' | asset_url | stylesheet_tag }}
+
 <div class="new-index-inventory">
   <div class="page-width">
     <product-inventory y-range="-2,2" x-range="-2,2">
@@ -14,42 +16,7 @@
     </product-inventory>
   </div>
 </div>
-<style>
-  .new-index-inventory {
-    margin-bottom: 100px;
-  }
-  .new-index-inventory product-inventory {
-    display: block;
-    position: relative;
-  }
-  .new-index-inventory picture {
-    width: 1200px;
-    display: block;
-  }
-  .new-index-inventory img {
-    width: 1200px;
-    height: auto;
-    object-fit: contain;
-    display: block;
-  }
-  .new-index-inventory a {
-    display: block;
-    position: absolute;
-    bottom: 48px;
-    right: 48px;
-    width: 314px;
-    height: 79px;
-    background: #504030;
-    border-radius: 39px;
-    text-align: center;
-    line-height: 79px;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: LeagueSpartanBold;
-    font-size: 36px;
-    font-weight: 800;
-  }
-</style>
+
 {% schema %}
 {
   "name": "new-index-inventory",

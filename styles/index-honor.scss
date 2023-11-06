@@ -1,7 +1,5 @@
 @import "pxToVw.scss";
 
-.new-index-honor {}
-
 @media screen and (min-width: 901px) {
 	.new-index-honor {
 		margin-bottom: 72px;
@@ -89,7 +87,8 @@
 	.new-index-honor {
 		padding: vw(58px) 0px vw(62px);
 
-		.honor-content {
+		.honor-content,
+		.honor-options {
 			display: none;
 		}
 
@@ -111,6 +110,7 @@
 
 		.mb-honor-desc {
 			display: flex;
+			justify-content: space-between;
 
 			img {
 				width: vw(313px);
@@ -121,6 +121,8 @@
 
 		.mb-honor-options {
 			display: flex;
+			justify-content: space-between;
+			margin-top: vw(34px);
 
 			img {
 				width: vw(205px);

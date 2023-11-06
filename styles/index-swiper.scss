@@ -30,8 +30,6 @@
 		position: relative;
 		width: 1200px;
 
-
-
 		.new-index-swiper {
 			width: 1059px;
 		}
@@ -42,6 +40,10 @@
 			width: 227px;
 			height: 533px;
 			object-fit: contain;
+		}
+
+		.swiper-slide {
+			margin-right: 40px;
 		}
 
 		.swiper-button {
@@ -76,5 +78,22 @@
 }
 
 @media screen and (max-width: 900px) {
-	.new-index-swiper-wrapper {}
+	.new-index-swiper-wrapper {
+
+		picture,
+		img {
+			width: vw(186px);
+			display: block;
+			height: auto;
+			object-fit: contain;
+		}
+
+		.swiper-button {
+			display: none;
+		}
+
+		.swiper-slide {
+			margin-right: vw(40px);
+		}
+	}
 }

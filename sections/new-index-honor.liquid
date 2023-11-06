@@ -34,8 +34,8 @@
       {% endfor %}
     </div>
     <div class="mb-honor-desc">
-      <img data-src="{{ section.settings.mb_honor_desc_left }}" alt="petsnowy">
-      <img data-src="{{ section.settings.mb_honor_desc_right }}" alt="petsnowy">
+      <img data-src="{{ section.settings.mb_honor_desc_left | img_url: 'master'}}" alt="petsnowy">
+      <img data-src="{{ section.settings.mb_honor_desc_right | img_url: 'master'}}" alt="petsnowy">
     </div>
     <div class="honor-options">
       {% for blocks in section.blocks %}
@@ -54,14 +54,12 @@
     <div class="mb-honor-options">
       {% for blocks in section.blocks %}
         {% if blocks.type == 'mb_options' %}
-          <picture>
-            <source media="(min-width: 901px)" data-srcset="{{ blocks.settings.mb_options_desc | img_url: 'master' }}">
-            <img
-              alt="petsnowy"
-              decoding="async"
-              loading="lazy"
-            >
-          </picture>
+          <img
+            data-src="{{ blocks.settings.mb_options_desc | img_url: 'master' }}"
+            alt="petsnowy"
+            decoding="async"
+            loading="lazy"
+          >
         {% endif %}
       {% endfor %}
     </div>
