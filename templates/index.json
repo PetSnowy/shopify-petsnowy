@@ -87,29 +87,61 @@
         "adf9a0cd-d6c3-4713-92bd-6a31c707d781": {
           "type": "block",
           "settings": {
-            "pc_image": "shopify:\/\/shop_images\/honor-1.png",
-            "link": ""
+            "pc_image": "shopify:\/\/shop_images\/honor-1.png"
           }
         },
         "7c214261-984a-4b27-aa52-e4d7532d2a17": {
           "type": "block",
           "settings": {
-            "pc_image": "shopify:\/\/shop_images\/honor-2.png",
-            "link": ""
+            "pc_image": "shopify:\/\/shop_images\/honor-2.png"
           }
         },
         "8fb9daa5-217c-454f-b85f-79ff00eab74a": {
           "type": "block",
           "settings": {
-            "pc_image": "shopify:\/\/shop_images\/honor-3.png",
-            "link": ""
+            "pc_image": "shopify:\/\/shop_images\/honor-3.png"
           }
         },
         "6d7e89a4-6433-44d3-8aa5-5f99f1cc2dd1": {
           "type": "block",
           "settings": {
-            "pc_image": "shopify:\/\/shop_images\/honor-4.png",
-            "link": ""
+            "pc_image": "shopify:\/\/shop_images\/honor-4.png"
+          }
+        },
+        "7cad8270-cf40-40eb-a6f0-3bda30cfd4ef": {
+          "type": "mb_content",
+          "settings": {
+            "mb_content_desc": "shopify:\/\/shop_images\/7_8be8b6b8-6f93-4a59-a59c-f4150ec87230.png"
+          }
+        },
+        "11f5cb2f-88f2-41cb-9cea-d8709774d096": {
+          "type": "mb_content",
+          "settings": {
+            "mb_content_desc": "shopify:\/\/shop_images\/8_42f0dadb-b755-4afc-bf7f-7f49120ec0cb.png"
+          }
+        },
+        "e7d1ead2-e948-42e3-b467-07f45b2504ab": {
+          "type": "mb_content",
+          "settings": {
+            "mb_content_desc": "shopify:\/\/shop_images\/8_42f0dadb-b755-4afc-bf7f-7f49120ec0cb.png"
+          }
+        },
+        "eae42e78-b267-4a1b-b94e-d001f9843930": {
+          "type": "mb_options",
+          "settings": {
+            "mb_options_desc": "shopify:\/\/shop_images\/12.png"
+          }
+        },
+        "b2df2ac4-dc96-45c9-8d5e-f29100ae6c5c": {
+          "type": "mb_options",
+          "settings": {
+            "mb_options_desc": "shopify:\/\/shop_images\/13.png"
+          }
+        },
+        "e56802ff-261c-4201-8dfc-9e1b9255775a": {
+          "type": "mb_options",
+          "settings": {
+            "mb_options_desc": "shopify:\/\/shop_images\/14.png"
           }
         }
       },
@@ -117,11 +149,20 @@
         "adf9a0cd-d6c3-4713-92bd-6a31c707d781",
         "7c214261-984a-4b27-aa52-e4d7532d2a17",
         "8fb9daa5-217c-454f-b85f-79ff00eab74a",
-        "6d7e89a4-6433-44d3-8aa5-5f99f1cc2dd1"
+        "6d7e89a4-6433-44d3-8aa5-5f99f1cc2dd1",
+        "7cad8270-cf40-40eb-a6f0-3bda30cfd4ef",
+        "11f5cb2f-88f2-41cb-9cea-d8709774d096",
+        "e7d1ead2-e948-42e3-b467-07f45b2504ab",
+        "eae42e78-b267-4a1b-b94e-d001f9843930",
+        "b2df2ac4-dc96-45c9-8d5e-f29100ae6c5c",
+        "e56802ff-261c-4201-8dfc-9e1b9255775a"
       ],
       "settings": {
         "pc_inner": "shopify:\/\/shop_images\/honor.png",
-        "pc_content": "shopify:\/\/shop_images\/honor-content.png"
+        "mb_inner": "shopify:\/\/shop_images\/6_7ae5080b-299b-4ba0-9af9-6a2d7297625a.png",
+        "pc_content": "shopify:\/\/shop_images\/honor-content.png",
+        "mb_honor_desc_left": "shopify:\/\/shop_images\/11_17806baf-9cb4-4e8d-8c42-042bd662472d.png",
+        "mb_honor_desc_right": "shopify:\/\/shop_images\/10_b6d4bcab-4103-459b-aad1-d2a5df165a9b.png"
       }
     },
     "a5d1cabc-a28c-4d6f-8f48-ab1dd463ac7f": {
