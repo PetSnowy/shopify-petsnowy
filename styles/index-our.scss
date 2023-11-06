@@ -61,6 +61,37 @@
 
 @media screen and (max-width: 900px) {
 	.new-index-our {
+		padding: vw(50px) 0px;
+
+		.page-width {
+			display: block;
+			position: relative;
+		}
+
+		.btn {
+			width: vw(232px);
+			height: vw(44px);
+			background: #96816B;
+			border-radius: vw(21px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: vw(25px);
+			font-family: LeagueSpartanBold;
+			font-weight: 800;
+			color: #FFFFFF;
+			position: absolute;
+			left: vw(84px);
+			bottom: vw(43px);
+
+			i {
+				display: block;
+				margin-left: vw(8px);
+				background: url('./mouse.png') no-repeat center/cover;
+				width: vw(16px);
+				height: vw(16px);
+			}
+		}
 
 		img,
 		picture {
@@ -68,6 +99,7 @@
 			width: 100%;
 			height: auto;
 			object-fit: contain;
+			border-radius: vw(25px);
 		}
 	}
 
