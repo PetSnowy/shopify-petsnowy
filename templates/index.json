@@ -255,7 +255,8 @@
     "281960de-940f-4a2f-9aba-853977758906": {
       "type": "new-index-our",
       "settings": {
-        "pc_image": "shopify:\/\/shop_images\/our.png"
+        "pc_image": "shopify:\/\/shop_images\/our.png",
+        "mb_image": "shopify:\/\/shop_images\/mb-honor.png"
       }
     }
   },
