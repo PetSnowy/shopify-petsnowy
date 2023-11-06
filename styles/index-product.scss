@@ -35,5 +35,26 @@
 }
 
 @media screen and (max-width: 900px) {
-	.new-index-product {}
+	.new-index-product {
+		padding: vw(41px) 0px vw(57px);
+
+		.page-width {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: vw(46px);
+		}
+
+		a {
+			width: vw(316px);
+			height: vw(282px);
+			background: #E0D5C1;
+			border-radius: vw(42px);
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+	}
 }

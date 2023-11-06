@@ -16,19 +16,25 @@
 		display: block;
 	}
 
-	.litter-content {
-		.sub-title {
-			font-family: LeagueSpartan;
-		}
 
-		.title {
-			span {
-				display: block;
-				font-family: LeagueSpartanBlack;
 
-				&:first-child::first-letter {
-					color: #D75F23;
-				}
+	.sub-title,
+	.title {
+		display: none;
+	}
+
+
+	.sub-title {
+		font-family: LeagueSpartan;
+	}
+
+	.title {
+		span {
+			display: block;
+			font-family: LeagueSpartanBlack;
+
+			&:first-child::first-letter {
+				color: #D75F23;
 			}
 		}
 	}
@@ -37,6 +43,15 @@
 @media screen and (min-width: 901px) {
 
 	.new-index-litter {
+
+		.litter-content {
+
+			.sub-title,
+			.title {
+				display: block;
+			}
+		}
+
 		height: 2400px;
 		display: flex;
 		align-items: center;
@@ -112,6 +127,7 @@
 				font-weight: 900;
 				line-height: 60px;
 				text-align: right;
+				color: #504030;
 			}
 		}
 
@@ -146,11 +162,120 @@
 			}
 		}
 
+		.mb-options {
+			display: none;
+		}
 
 	}
 }
 
 
 @media screen and (max-width: 900px) {
-	.new-index-litter {}
+	.new-index-litter {
+		padding: vw(124px) 0px vw(78px);
+		height: vw(2400px);
+		box-sizing: border-box;
+		position: relative;
+
+		.page-width {
+			height: 100%;
+		}
+
+		.litter-content {
+
+			.sub-title,
+			.title {
+				display: none;
+			}
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			flex-direction: column;
+			position: sticky;
+			top: var(--main-padding-top);
+		}
+
+		.title {
+			font-size: vw(62px);
+			font-weight: 900;
+			line-height: 58px;
+			width: vw(600px);
+			text-align: right;
+			margin: 0px;
+			margin-bottom: vw(70px);
+			display: block;
+
+			&::first-letter {
+				color: #D75F23;
+			}
+		}
+
+		.play {
+			width: vw(522px);
+			height: vw(432px);
+			margin: 0px auto vw(70px);
+		}
+
+		.sub-title {
+			font-size: vw(29px);
+			font-weight: 400;
+			color: #504030;
+			line-height: vw(31px);
+			text-align: center;
+			margin-bottom: vw(55px);
+			display: block;
+		}
+
+		.button {
+			all: unset;
+			display: block;
+			text-transform: uppercase;
+
+			&::after,
+			&::before {
+				display: none;
+			}
+
+			width: vw(280px);
+			height: vw(79px);
+			background: #504030;
+			border-radius: vw(39px);
+			font-size: vw(36px);
+			font-family: LeagueSpartanBold;
+			font-weight: 800;
+			color: #FFFFFF;
+			line-height: vw(79px);
+			text-align: center;
+			margin: 0px auto vw(77px);
+		}
+
+		.options {
+			display: none;
+		}
+
+		.mb-options {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			p {
+				font-size: vw(28px);
+				font-family: LeagueSpartanBold;
+				font-weight: 800;
+				color: #504030;
+				line-height: vw(32px);
+			}
+
+			.line {
+				width: vw(1px);
+				height: vw(53px);
+				background: #504030;
+				margin: 0px vw(32px);
+				display: block;
+			}
+		}
+	}
 }
