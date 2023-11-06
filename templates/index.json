@@ -1,276 +1,334 @@
 {
-  "sections": {
-    "ec8a39b8-e172-48e1-97d9-303c35a74add": {
-      "type": "custom-banner",
-      "settings": {
-        "vdio_img": "shopify:\/\/shop_images\/1_0175_2.jpg",
-        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6a66fde5ecf844cb8c4260f81e879f8d.mp4",
-        "mobvdio_img": "shopify:\/\/shop_images\/banner-video-mb.jpg",
-        "mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/befa39c0bb4e4d188d8a7107b4739431.mp4",
-        "heading": "meet the SNOW<sup><sup>+<\/sup><\/sup>",
-        "url": "#",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "995b856f-22eb-499c-bdd7-0ce77bf53fe6": {
-      "type": "new-index-litter",
-      "settings": {
-        "pc_image": "shopify:\/\/shop_images\/cat-pc.png",
-        "mb_image": "shopify:\/\/shop_images\/cat-mb.png"
-      }
-    },
-    "3e84f43e-0ece-41e3-b36c-4ca84219ba41": {
-      "type": "new-index-product",
-      "blocks": {
-        "a7398cdb-acb2-459e-9c8e-6228b92ea9ba": {
-          "type": "block",
-          "settings": {
-            "pc_image": "shopify:\/\/shop_images\/product-1.png",
-            "mb_image": "shopify:\/\/shop_images\/1_e07865f4-c8cf-4d86-a62f-7ed4ba2f48b5.png",
-            "link": "\/products\/snow-water-fountain"
-          }
-        },
-        "8e341b84-996a-45a7-a1f3-2a1ae4e947e5": {
-          "type": "block",
-          "settings": {
-            "pc_image": "shopify:\/\/shop_images\/product-2.png",
-            "mb_image": "shopify:\/\/shop_images\/2_9295d324-bae8-45e4-baf1-28a3702528b8.png",
-            "link": "\/products\/snow-pet-feeder"
-          }
-        },
-        "4ce3906c-76c2-4aff-8688-3973f2b10fa1": {
-          "type": "block",
-          "settings": {
-            "pc_image": "shopify:\/\/shop_images\/product-3.png",
-            "mb_image": "shopify:\/\/shop_images\/3_a5e5b7b6-a1c6-4992-80e6-1fa97449ece3.png",
-            "link": "\/snow-roly-poly-cat-toy"
-          }
-        },
-        "fe43a75a-e672-4a9a-90cf-c3636a79ea36": {
-          "type": "block",
-          "settings": {
-            "pc_image": "shopify:\/\/shop_images\/product-4.png",
-            "mb_image": "shopify:\/\/shop_images\/4_57335b70-dc7b-416c-a2fe-309bd1443e38.png",
-            "link": "\/collections\/accessories"
-          }
-        }
-      },
-      "block_order": [
-        "a7398cdb-acb2-459e-9c8e-6228b92ea9ba",
-        "8e341b84-996a-45a7-a1f3-2a1ae4e947e5",
-        "4ce3906c-76c2-4aff-8688-3973f2b10fa1",
-        "fe43a75a-e672-4a9a-90cf-c3636a79ea36"
-      ],
-      "settings": {
-      }
-    },
-    "57323351-c8bb-43c6-9e83-801448ba306a": {
-      "type": "video-scroll",
-      "blocks": {
-        "18791eef-68a7-4d05-9dfd-3181b40a9563": {
-          "type": "content",
-          "settings": {
-            "image_picker": "shopify:\/\/shop_images\/loving.png",
-            "mb_image_picker": "shopify:\/\/shop_images\/5_c2fc540e-4d56-4af7-9dbb-2d87bbfd2b15.png",
-            "alt": ""
-          }
-        }
-      },
-      "block_order": [
-        "18791eef-68a7-4d05-9dfd-3181b40a9563"
-      ],
-      "settings": {
-      }
-    },
-    "22c48336-56bc-4ccb-8a86-00d422ec2119": {
-      "type": "new-index-honor",
-      "blocks": {
-        "adf9a0cd-d6c3-4713-92bd-6a31c707d781": {
-          "type": "block",
-          "settings": {
-            "pc_image": "shopify:\/\/shop_images\/honor-1.png"
-          }
-        },
-        "7c214261-984a-4b27-aa52-e4d7532d2a17": {
-          "type": "block",
-          "settings": {
-            "pc_image": "shopify:\/\/shop_images\/honor-2.png"
-          }
-        },
-        "8fb9daa5-217c-454f-b85f-79ff00eab74a": {
-          "type": "block",
-          "settings": {
-            "pc_image": "shopify:\/\/shop_images\/honor-3.png"
-          }
-        },
-        "6d7e89a4-6433-44d3-8aa5-5f99f1cc2dd1": {
-          "type": "block",
-          "settings": {
-            "pc_image": "shopify:\/\/shop_images\/honor-4.png"
-          }
-        },
-        "7cad8270-cf40-40eb-a6f0-3bda30cfd4ef": {
-          "type": "mb_content",
-          "settings": {
-            "mb_content_desc": "shopify:\/\/shop_images\/7_8be8b6b8-6f93-4a59-a59c-f4150ec87230.png"
-          }
-        },
-        "11f5cb2f-88f2-41cb-9cea-d8709774d096": {
-          "type": "mb_content",
-          "settings": {
-            "mb_content_desc": "shopify:\/\/shop_images\/8_42f0dadb-b755-4afc-bf7f-7f49120ec0cb.png"
-          }
-        },
-        "e7d1ead2-e948-42e3-b467-07f45b2504ab": {
-          "type": "mb_content",
-          "settings": {
-            "mb_content_desc": "shopify:\/\/shop_images\/9_6f52995f-3353-4439-bd8e-8a63ae91198b.png"
-          }
-        },
-        "eae42e78-b267-4a1b-b94e-d001f9843930": {
-          "type": "mb_options",
-          "settings": {
-            "mb_options_desc": "shopify:\/\/shop_images\/12.png"
-          }
-        },
-        "b2df2ac4-dc96-45c9-8d5e-f29100ae6c5c": {
-          "type": "mb_options",
-          "settings": {
-            "mb_options_desc": "shopify:\/\/shop_images\/13.png"
-          }
-        },
-        "e56802ff-261c-4201-8dfc-9e1b9255775a": {
-          "type": "mb_options",
-          "settings": {
-            "mb_options_desc": "shopify:\/\/shop_images\/14.png"
-          }
-        }
-      },
-      "block_order": [
-        "adf9a0cd-d6c3-4713-92bd-6a31c707d781",
-        "7c214261-984a-4b27-aa52-e4d7532d2a17",
-        "8fb9daa5-217c-454f-b85f-79ff00eab74a",
-        "6d7e89a4-6433-44d3-8aa5-5f99f1cc2dd1",
-        "7cad8270-cf40-40eb-a6f0-3bda30cfd4ef",
-        "11f5cb2f-88f2-41cb-9cea-d8709774d096",
-        "e7d1ead2-e948-42e3-b467-07f45b2504ab",
-        "eae42e78-b267-4a1b-b94e-d001f9843930",
-        "b2df2ac4-dc96-45c9-8d5e-f29100ae6c5c",
-        "e56802ff-261c-4201-8dfc-9e1b9255775a"
-      ],
-      "settings": {
-        "pc_inner": "shopify:\/\/shop_images\/honor.png",
-        "mb_inner": "shopify:\/\/shop_images\/6_7ae5080b-299b-4ba0-9af9-6a2d7297625a.png",
-        "pc_content": "shopify:\/\/shop_images\/honor-content.png",
-        "mb_honor_desc_left": "shopify:\/\/shop_images\/11_17806baf-9cb4-4e8d-8c42-042bd662472d.png",
-        "mb_honor_desc_right": "shopify:\/\/shop_images\/10_b6d4bcab-4103-459b-aad1-d2a5df165a9b.png"
-      }
-    },
-    "a5d1cabc-a28c-4d6f-8f48-ab1dd463ac7f": {
-      "type": "new-index-reported",
-      "settings": {
-        "pc_image": "shopify:\/\/shop_images\/reported.png"
-      }
-    },
-    "9ac20be1-bf22-4b34-86f4-ad6c5722358b": {
-      "type": "new-index-inventory",
-      "settings": {
-        "pc_image": "shopify:\/\/shop_images\/inventory.png",
-        "mb_image": "shopify:\/\/shop_images\/15.png"
-      }
-    },
-    "0d9901b2-9941-48a6-a862-91dce67fc0c0": {
-      "type": "new-index-swiper",
-      "blocks": {
-        "97197060-bf46-4980-830c-78f6802b0e3e": {
-          "type": "block",
-          "settings": {
-            "pc_image": "shopify:\/\/shop_images\/1_dcb65e52-de38-41aa-915c-8f7653e88b42.png",
-            "mb_image": "shopify:\/\/shop_images\/16.png"
-          }
-        },
-        "b39158c6-99b8-4fc3-9472-0d82e8dbb44c": {
-          "type": "block",
-          "settings": {
-            "pc_image": "shopify:\/\/shop_images\/2_14c40741-aafa-4d3e-9ecb-caf0010ade13.png",
-            "mb_image": "shopify:\/\/shop_images\/20.png"
-          }
-        },
-        "8172610a-5d35-4bd1-b139-56cad6348ab9": {
-          "type": "block",
-          "settings": {
-            "pc_image": "shopify:\/\/shop_images\/3_38dd0534-b7f5-4304-98ae-4953f0583f0c.png",
-            "mb_image": "shopify:\/\/shop_images\/18.png"
-          }
-        },
-        "fd296d4b-7d8b-4358-a72f-1b3505035a93": {
-          "type": "block",
-          "settings": {
-            "pc_image": "shopify:\/\/shop_images\/4_baecb762-8a80-47ca-ba28-5f32adcfef5b.png",
-            "mb_image": "shopify:\/\/shop_images\/19.png"
-          }
-        },
-        "f792740f-1110-4144-acd1-57648007e26f": {
-          "type": "block",
-          "settings": {
-            "pc_image": "shopify:\/\/shop_images\/5_494cfe3f-d102-4a00-b282-7ace304d8df6.png",
-            "mb_image": "shopify:\/\/shop_images\/21_16f0aee4-b68b-4f26-9c1b-07489fe92332.png"
-          }
-        },
-        "9f609673-b38d-49ed-a110-3283e834dac9": {
-          "type": "block",
-          "settings": {
-            "pc_image": "shopify:\/\/shop_images\/6_eea0877e-864e-483b-b1dd-be370391a772.png",
-            "mb_image": "shopify:\/\/shop_images\/22.png"
-          }
-        },
-        "c4acf4bd-fd74-4fe7-aa29-857b25e59df7": {
-          "type": "block",
-          "settings": {
-            "pc_image": "shopify:\/\/shop_images\/7_c6dc9916-8aca-4fec-bc2f-12989f70aa54.png",
-            "mb_image": "shopify:\/\/shop_images\/23.png"
-          }
-        },
-        "03b1c6e8-e875-47e9-91e8-3a86782cff54": {
-          "type": "block",
-          "settings": {
-            "pc_image": "shopify:\/\/shop_images\/8.png",
-            "mb_image": "shopify:\/\/shop_images\/17.png"
-          }
-        }
-      },
-      "block_order": [
-        "97197060-bf46-4980-830c-78f6802b0e3e",
-        "b39158c6-99b8-4fc3-9472-0d82e8dbb44c",
-        "8172610a-5d35-4bd1-b139-56cad6348ab9",
-        "fd296d4b-7d8b-4358-a72f-1b3505035a93",
-        "f792740f-1110-4144-acd1-57648007e26f",
-        "9f609673-b38d-49ed-a110-3283e834dac9",
-        "c4acf4bd-fd74-4fe7-aa29-857b25e59df7",
-        "03b1c6e8-e875-47e9-91e8-3a86782cff54"
-      ],
-      "settings": {
-        "title": "Join 30,000+ happy pet parents"
-      }
-    },
-    "281960de-940f-4a2f-9aba-853977758906": {
-      "type": "new-index-our",
-      "settings": {
-        "pc_image": "shopify:\/\/shop_images\/our.png",
-        "mb_image": "shopify:\/\/shop_images\/mb-honor.png"
-      }
-    }
-  },
-  "order": [
-    "ec8a39b8-e172-48e1-97d9-303c35a74add",
-    "995b856f-22eb-499c-bdd7-0ce77bf53fe6",
-    "3e84f43e-0ece-41e3-b36c-4ca84219ba41",
-    "57323351-c8bb-43c6-9e83-801448ba306a",
-    "22c48336-56bc-4ccb-8a86-00d422ec2119",
-    "a5d1cabc-a28c-4d6f-8f48-ab1dd463ac7f",
-    "9ac20be1-bf22-4b34-86f4-ad6c5722358b",
-    "0d9901b2-9941-48a6-a862-91dce67fc0c0",
-    "281960de-940f-4a2f-9aba-853977758906"
-  ]
+	"sections": {
+		"ec8a39b8-e172-48e1-97d9-303c35a74add": {
+			"type": "custom-banner",
+			"settings": {
+				"vdio_img": "shopify:\/\/shop_images\/1_0175_2.jpg",
+				"vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6a66fde5ecf844cb8c4260f81e879f8d.mp4",
+				"mobvdio_img": "shopify:\/\/shop_images\/banner-video-mb.jpg",
+				"mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/befa39c0bb4e4d188d8a7107b4739431.mp4",
+				"heading": "meet the SNOW<sup><sup>+<\/sup><\/sup>",
+				"url": "#",
+				"padding_top": 0,
+				"padding_bottom": 0
+			}
+		},
+		"995b856f-22eb-499c-bdd7-0ce77bf53fe6": {
+			"type": "new-index-litter",
+			"settings": {
+				"pc_image": "shopify:\/\/shop_images\/cat-pc.png",
+				"mb_image": "shopify:\/\/shop_images\/cat-mb.png"
+			}
+		},
+		"3e84f43e-0ece-41e3-b36c-4ca84219ba41": {
+			"type": "new-index-product",
+			"blocks": {
+				"a7398cdb-acb2-459e-9c8e-6228b92ea9ba": {
+					"type": "block",
+					"settings": {
+						"pc_image": "shopify:\/\/shop_images\/product-1.png",
+						"mb_image": "shopify:\/\/shop_images\/1_e07865f4-c8cf-4d86-a62f-7ed4ba2f48b5.png",
+						"link": "\/products\/snow-water-fountain"
+					}
+				},
+				"8e341b84-996a-45a7-a1f3-2a1ae4e947e5": {
+					"type": "block",
+					"settings": {
+						"pc_image": "shopify:\/\/shop_images\/product-2.png",
+						"mb_image": "shopify:\/\/shop_images\/2_9295d324-bae8-45e4-baf1-28a3702528b8.png",
+						"link": "\/products\/snow-pet-feeder"
+					}
+				},
+				"4ce3906c-76c2-4aff-8688-3973f2b10fa1": {
+					"type": "block",
+					"settings": {
+						"pc_image": "shopify:\/\/shop_images\/product-3.png",
+						"mb_image": "shopify:\/\/shop_images\/3_a5e5b7b6-a1c6-4992-80e6-1fa97449ece3.png",
+						"link": "\/snow-roly-poly-cat-toy"
+					}
+				},
+				"fe43a75a-e672-4a9a-90cf-c3636a79ea36": {
+					"type": "block",
+					"settings": {
+						"pc_image": "shopify:\/\/shop_images\/product-4.png",
+						"mb_image": "shopify:\/\/shop_images\/4_57335b70-dc7b-416c-a2fe-309bd1443e38.png",
+						"link": "\/collections\/accessories"
+					}
+				}
+			},
+			"block_order": [
+				"a7398cdb-acb2-459e-9c8e-6228b92ea9ba",
+				"8e341b84-996a-45a7-a1f3-2a1ae4e947e5",
+				"4ce3906c-76c2-4aff-8688-3973f2b10fa1",
+				"fe43a75a-e672-4a9a-90cf-c3636a79ea36"
+			],
+			"settings": {}
+		},
+		"57323351-c8bb-43c6-9e83-801448ba306a": {
+			"type": "video-scroll",
+			"blocks": {
+				"d63b4da5-cd71-462a-89a9-9f31a1c5b75e": {
+					"type": "content",
+					"settings": {
+						"image_picker": "shopify:\/\/shop_images\/video-srcoll.png",
+						"mb_image_picker": "shopify:\/\/shop_images\/322.png",
+						"alt": ""
+					}
+				},
+				"bae4eb26-a544-42d8-ad01-b80dc1f21755": {
+					"type": "block",
+					"settings": {
+						"video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/ec9a08a5764c47beb88447699b56b704.mp4",
+						"image_picker": "shopify:\/\/shop_images\/1_0c748f69-fba6-4639-ba45-232cbdb6ab7f.png",
+						"mb_image_picker": "shopify:\/\/shop_images\/1_1.png",
+						"image_alt": "petsnowy litter box review"
+					}
+				},
+				"9f69afc5-1826-4562-b4ec-da18a71b215a": {
+					"type": "block",
+					"settings": {
+						"video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5f38abcedf0f4825bba962ad8b07013c.mp4",
+						"image_picker": "shopify:\/\/shop_images\/2_754ef3b9-8102-4d99-849b-37d59ab6d5ad.png",
+						"mb_image_picker": "shopify:\/\/shop_images\/2_1.png",
+						"image_alt": "cat litter box"
+					}
+				},
+				"12c5243e-5b1e-4213-b004-4a8a4f9bbeab": {
+					"type": "block",
+					"settings": {
+						"video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/cab9e68aabdd40368daf52cc25449744.mp4",
+						"image_picker": "shopify:\/\/shop_images\/6_1.png",
+						"mb_image_picker": "shopify:\/\/shop_images\/6_2.png",
+						"image_alt": "petsnowy review"
+					}
+				},
+				"bd97d9ae-9df4-41d6-b6f6-17eea80a1c47": {
+					"type": "block",
+					"settings": {
+						"video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/93daf5c9770e4fe797f8f10d160f706e.mp4",
+						"image_picker": "shopify:\/\/shop_images\/3_dc74b216-22c6-4427-a33d-a37571277d56.png",
+						"mb_image_picker": "shopify:\/\/shop_images\/3_1.png",
+						"image_alt": "petsnowy self-cleaning litter box review"
+					}
+				},
+				"786ec155-819f-4e8f-93d3-7780d0a13da3": {
+					"type": "block",
+					"settings": {
+						"video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/dfe0987fa314402ba83e72c5b4309c98.mp4",
+						"image_picker": "shopify:\/\/shop_images\/4.png",
+						"mb_image_picker": "shopify:\/\/shop_images\/4_1.png",
+						"image_alt": "self-cleaning review"
+					}
+				},
+				"9c370b5f-4f8b-48da-b489-d4b3deffe0f3": {
+					"type": "block",
+					"settings": {
+						"video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/82eefb89f78340e882fb267307d59cbc.mov",
+						"image_picker": "shopify:\/\/shop_images\/5.png",
+						"mb_image_picker": "shopify:\/\/shop_images\/5_1.png",
+						"image_alt": "litterbox"
+					}
+				}
+			},
+			"block_order": [
+				"d63b4da5-cd71-462a-89a9-9f31a1c5b75e",
+				"bae4eb26-a544-42d8-ad01-b80dc1f21755",
+				"9f69afc5-1826-4562-b4ec-da18a71b215a",
+				"12c5243e-5b1e-4213-b004-4a8a4f9bbeab",
+				"bd97d9ae-9df4-41d6-b6f6-17eea80a1c47",
+				"786ec155-819f-4e8f-93d3-7780d0a13da3",
+				"9c370b5f-4f8b-48da-b489-d4b3deffe0f3"
+			],
+			"settings": {}
+		},
+		"22c48336-56bc-4ccb-8a86-00d422ec2119": {
+			"type": "new-index-honor",
+			"blocks": {
+				"adf9a0cd-d6c3-4713-92bd-6a31c707d781": {
+					"type": "block",
+					"settings": {
+						"pc_image": "shopify:\/\/shop_images\/honor-1.png"
+					}
+				},
+				"7c214261-984a-4b27-aa52-e4d7532d2a17": {
+					"type": "block",
+					"settings": {
+						"pc_image": "shopify:\/\/shop_images\/honor-2.png"
+					}
+				},
+				"8fb9daa5-217c-454f-b85f-79ff00eab74a": {
+					"type": "block",
+					"settings": {
+						"pc_image": "shopify:\/\/shop_images\/honor-3.png"
+					}
+				},
+				"6d7e89a4-6433-44d3-8aa5-5f99f1cc2dd1": {
+					"type": "block",
+					"settings": {
+						"pc_image": "shopify:\/\/shop_images\/honor-4.png"
+					}
+				},
+				"7cad8270-cf40-40eb-a6f0-3bda30cfd4ef": {
+					"type": "mb_content",
+					"settings": {
+						"mb_content_desc": "shopify:\/\/shop_images\/7_8be8b6b8-6f93-4a59-a59c-f4150ec87230.png"
+					}
+				},
+				"11f5cb2f-88f2-41cb-9cea-d8709774d096": {
+					"type": "mb_content",
+					"settings": {
+						"mb_content_desc": "shopify:\/\/shop_images\/8_42f0dadb-b755-4afc-bf7f-7f49120ec0cb.png"
+					}
+				},
+				"e7d1ead2-e948-42e3-b467-07f45b2504ab": {
+					"type": "mb_content",
+					"settings": {
+						"mb_content_desc": "shopify:\/\/shop_images\/9_6f52995f-3353-4439-bd8e-8a63ae91198b.png"
+					}
+				},
+				"eae42e78-b267-4a1b-b94e-d001f9843930": {
+					"type": "mb_options",
+					"settings": {
+						"mb_options_desc": "shopify:\/\/shop_images\/12.png"
+					}
+				},
+				"b2df2ac4-dc96-45c9-8d5e-f29100ae6c5c": {
+					"type": "mb_options",
+					"settings": {
+						"mb_options_desc": "shopify:\/\/shop_images\/13.png"
+					}
+				},
+				"e56802ff-261c-4201-8dfc-9e1b9255775a": {
+					"type": "mb_options",
+					"settings": {
+						"mb_options_desc": "shopify:\/\/shop_images\/14.png"
+					}
+				}
+			},
+			"block_order": [
+				"adf9a0cd-d6c3-4713-92bd-6a31c707d781",
+				"7c214261-984a-4b27-aa52-e4d7532d2a17",
+				"8fb9daa5-217c-454f-b85f-79ff00eab74a",
+				"6d7e89a4-6433-44d3-8aa5-5f99f1cc2dd1",
+				"7cad8270-cf40-40eb-a6f0-3bda30cfd4ef",
+				"11f5cb2f-88f2-41cb-9cea-d8709774d096",
+				"e7d1ead2-e948-42e3-b467-07f45b2504ab",
+				"eae42e78-b267-4a1b-b94e-d001f9843930",
+				"b2df2ac4-dc96-45c9-8d5e-f29100ae6c5c",
+				"e56802ff-261c-4201-8dfc-9e1b9255775a"
+			],
+			"settings": {
+				"pc_inner": "shopify:\/\/shop_images\/honor.png",
+				"mb_inner": "shopify:\/\/shop_images\/6_7ae5080b-299b-4ba0-9af9-6a2d7297625a.png",
+				"pc_content": "shopify:\/\/shop_images\/honor-content.png",
+				"mb_honor_desc_left": "shopify:\/\/shop_images\/11_17806baf-9cb4-4e8d-8c42-042bd662472d.png",
+				"mb_honor_desc_right": "shopify:\/\/shop_images\/10_b6d4bcab-4103-459b-aad1-d2a5df165a9b.png"
+			}
+		},
+		"a5d1cabc-a28c-4d6f-8f48-ab1dd463ac7f": {
+			"type": "new-index-reported",
+			"settings": {
+				"pc_image": "shopify:\/\/shop_images\/reported.png"
+			}
+		},
+		"9ac20be1-bf22-4b34-86f4-ad6c5722358b": {
+			"type": "new-index-inventory",
+			"settings": {
+				"pc_image": "shopify:\/\/shop_images\/inventory.png",
+				"mb_image": "shopify:\/\/shop_images\/15.png"
+			}
+		},
+		"0d9901b2-9941-48a6-a862-91dce67fc0c0": {
+			"type": "new-index-swiper",
+			"blocks": {
+				"97197060-bf46-4980-830c-78f6802b0e3e": {
+					"type": "block",
+					"settings": {
+						"pc_image": "shopify:\/\/shop_images\/1_dcb65e52-de38-41aa-915c-8f7653e88b42.png",
+						"mb_image": "shopify:\/\/shop_images\/16.png"
+					}
+				},
+				"b39158c6-99b8-4fc3-9472-0d82e8dbb44c": {
+					"type": "block",
+					"settings": {
+						"pc_image": "shopify:\/\/shop_images\/2_14c40741-aafa-4d3e-9ecb-caf0010ade13.png",
+						"mb_image": "shopify:\/\/shop_images\/20.png"
+					}
+				},
+				"8172610a-5d35-4bd1-b139-56cad6348ab9": {
+					"type": "block",
+					"settings": {
+						"pc_image": "shopify:\/\/shop_images\/3_38dd0534-b7f5-4304-98ae-4953f0583f0c.png",
+						"mb_image": "shopify:\/\/shop_images\/18.png"
+					}
+				},
+				"fd296d4b-7d8b-4358-a72f-1b3505035a93": {
+					"type": "block",
+					"settings": {
+						"pc_image": "shopify:\/\/shop_images\/4_baecb762-8a80-47ca-ba28-5f32adcfef5b.png",
+						"mb_image": "shopify:\/\/shop_images\/19.png"
+					}
+				},
+				"f792740f-1110-4144-acd1-57648007e26f": {
+					"type": "block",
+					"settings": {
+						"pc_image": "shopify:\/\/shop_images\/5_494cfe3f-d102-4a00-b282-7ace304d8df6.png",
+						"mb_image": "shopify:\/\/shop_images\/21_16f0aee4-b68b-4f26-9c1b-07489fe92332.png"
+					}
+				},
+				"9f609673-b38d-49ed-a110-3283e834dac9": {
+					"type": "block",
+					"settings": {
+						"pc_image": "shopify:\/\/shop_images\/6_eea0877e-864e-483b-b1dd-be370391a772.png",
+						"mb_image": "shopify:\/\/shop_images\/22.png"
+					}
+				},
+				"c4acf4bd-fd74-4fe7-aa29-857b25e59df7": {
+					"type": "block",
+					"settings": {
+						"pc_image": "shopify:\/\/shop_images\/7_c6dc9916-8aca-4fec-bc2f-12989f70aa54.png",
+						"mb_image": "shopify:\/\/shop_images\/23.png"
+					}
+				},
+				"03b1c6e8-e875-47e9-91e8-3a86782cff54": {
+					"type": "block",
+					"settings": {
+						"pc_image": "shopify:\/\/shop_images\/8.png",
+						"mb_image": "shopify:\/\/shop_images\/17.png"
+					}
+				}
+			},
+			"block_order": [
+				"97197060-bf46-4980-830c-78f6802b0e3e",
+				"b39158c6-99b8-4fc3-9472-0d82e8dbb44c",
+				"8172610a-5d35-4bd1-b139-56cad6348ab9",
+				"fd296d4b-7d8b-4358-a72f-1b3505035a93",
+				"f792740f-1110-4144-acd1-57648007e26f",
+				"9f609673-b38d-49ed-a110-3283e834dac9",
+				"c4acf4bd-fd74-4fe7-aa29-857b25e59df7",
+				"03b1c6e8-e875-47e9-91e8-3a86782cff54"
+			],
+			"settings": {
+				"title": "Join 30,000+ happy pet parents"
+			}
+		},
+		"281960de-940f-4a2f-9aba-853977758906": {
+			"type": "new-index-our",
+			"settings": {
+				"pc_image": "shopify:\/\/shop_images\/our.png",
+				"mb_image": "shopify:\/\/shop_images\/mb-honor.png"
+			}
+		}
+	},
+	"order": [
+		"ec8a39b8-e172-48e1-97d9-303c35a74add",
+		"995b856f-22eb-499c-bdd7-0ce77bf53fe6",
+		"3e84f43e-0ece-41e3-b36c-4ca84219ba41",
+		"57323351-c8bb-43c6-9e83-801448ba306a",
+		"22c48336-56bc-4ccb-8a86-00d422ec2119",
+		"a5d1cabc-a28c-4d6f-8f48-ab1dd463ac7f",
+		"9ac20be1-bf22-4b34-86f4-ad6c5722358b",
+		"0d9901b2-9941-48a6-a862-91dce67fc0c0",
+		"281960de-940f-4a2f-9aba-853977758906"
+	]
 }
