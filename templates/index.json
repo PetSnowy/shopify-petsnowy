@@ -13,11 +13,12 @@
         "padding_bottom": 0
       }
     },
-    "de89b567-0558-48d3-82fe-4bdad98223b4": {
-      "type": "lazy-img",
+    "6c7d6d2c-3311-49de-91df-02ee6a301f6c": {
+      "type": "product-safety",
       "settings": {
-        "pc_image": "shopify:\/\/shop_images\/bf.png",
-        "mb_image": "shopify:\/\/shop_images\/xmas.png"
+        "image_title": "shopify:\/\/shop_images\/bf.png",
+        "mb_image_title": "shopify:\/\/shop_images\/xmas.png",
+        "image_alt": "petsnowy"
       }
     },
     "995b856f-22eb-499c-bdd7-0ce77bf53fe6": {
@@ -331,7 +332,7 @@
   },
   "order": [
     "ec8a39b8-e172-48e1-97d9-303c35a74add",
-    "de89b567-0558-48d3-82fe-4bdad98223b4",
+    "6c7d6d2c-3311-49de-91df-02ee6a301f6c",
     "995b856f-22eb-499c-bdd7-0ce77bf53fe6",
     "3e84f43e-0ece-41e3-b36c-4ca84219ba41",
     "57323351-c8bb-43c6-9e83-801448ba306a",
