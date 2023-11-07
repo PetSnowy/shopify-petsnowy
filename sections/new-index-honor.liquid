@@ -17,7 +17,7 @@
           alt="petsnowy"
           decoding="async"
           loading="lazy"
-          data-src="{{ section.settings.pc_content | img_url: 'master'  }}"
+          src="{{ section.settings.pc_content | img_url: 'master'  }}"
         >
       </div>
     </div>
@@ -58,18 +58,16 @@
       {% for blocks in section.blocks %}
         {% if blocks.type == 'block' %}
           {% assign index = forloop.index %}
-          <picture>
-            <source media="(min-width: 901px)" data-srcset="{{ blocks.settings.pc_image | img_url: 'master' }}">
-            <img
-              alt="petsnowy"
-              decoding="async"
-              loading="lazy"
-              class="aos-init aos-animate"
-              data-aos="fade-up"
-              data-aos-duration="{{ 800 }}"
-              data-aos-delay="{{ 200 | times: index }}"
-            >
-          </picture>
+          <img
+            alt="petsnowy"
+            decoding="async"
+            loading="lazy"
+            class="aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-duration="{{ 800 }}"
+            data-aos-delay="{{ 100 | times: index }}"
+            src="{{ blocks.settings.pc_image | img_url: 'master' }}"
+          >
         {% endif %}
       {% endfor %}
     </div>
