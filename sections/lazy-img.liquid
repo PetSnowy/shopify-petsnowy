@@ -1,0 +1,40 @@
+<div class="lazy-img">
+  <picture>
+    <source media="(min-width: 901px)" data-srcset="{{ section.settings.pc_image | img_url: 'master' }}">
+    <source media="(max-width: 900px)" data-srcset="{{ section.settings.mb_image | img_url: 'master' }}">
+    <img
+      alt="petsnowy"
+      decoding="async"
+      loading="lazy"
+    >
+  </picture>
+</div>
+<style>
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+</style>
+{% schema %}
+{
+  "name": "lazy-img",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "pc_image",
+      "label": "pc image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mb_image",
+      "label": "mb image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "lazy-img"
+    }
+  ]
+}
+{% endschema %}
