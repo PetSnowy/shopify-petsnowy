@@ -73,7 +73,7 @@
 				padding: 93px 0 111px;
 				height: 690px;
 				box-sizing: border-box;
-				justify-content: space-between;
+				justify-content: center;
 			}
 
 
@@ -96,6 +96,7 @@
 					font-weight: 800;
 					color: #837464;
 					text-transform: uppercase;
+					text-align: center;
 				}
 			}
 
@@ -239,7 +240,9 @@
 			font-family: LeagueSpartanBold;
 			font-weight: 800;
 			color: #FFFFFF;
-			line-height: vw(79px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			text-align: center;
 			margin: 0px auto vw(77px);
 		}
@@ -259,6 +262,7 @@
 				font-weight: 800;
 				color: #504030;
 				line-height: vw(32px);
+				text-align: center;
 			}
 
 			.line {

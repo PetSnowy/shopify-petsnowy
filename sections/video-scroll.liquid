@@ -22,8 +22,8 @@
         {% if block.type == 'block' %}
           <div class="video-img swiper-slide">
             <picture>
-              <source media="(min-width: 901px)" data-srcset="{{ block.settings.image_picker | img_url: 'master' }}">
-              <source media="(max-width: 900px)" data-srcset="{{ block.settings.mb_image_picker | img_url: 'master' }}">
+              <source media="(min-width: 901px)" srcset="{{ block.settings.image_picker | img_url: 'master' }}">
+              <source media="(max-width: 900px)" srcset="{{ block.settings.mb_image_picker | img_url: 'master' }}">
               <img
                 decoding="async"
                 loading="lazy"
