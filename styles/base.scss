@@ -3070,12 +3070,19 @@ a.headr_odr_now {
 	text-decoration: none;
 	height: fit-content;
 	border-radius: 25px;
+	border: 1px solid transparent;
+	opacity: 1;
+	transition: 0.3s all ease;
+
+	&:hover {
+		opacity: 0.7;
+	}
 }
 
 .itg_overlap_header a.headr_odr_now {
 	color: #231f20;
 	background: #fff;
-	transition: 0.3s all linear;
+	transition: 0.3s all ease;
 }
 
 .itg_overlap_header a.headr_odr_now:hover {
@@ -3111,7 +3118,7 @@ a.headr_odr_now svg path {
 
 .baner_contain {
 	position: absolute;
-	bottom: 25%;
+	bottom: 30%;
 	left: 50%;
 	transform: translate(-50%, 0%);
 }
