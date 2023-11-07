@@ -91,7 +91,7 @@
 
 			.item {
 				p {
-					font-family: LeagueSpartanBold;
+					font-family: LeagueSpartanBlack;
 					font-size: 35px;
 					font-weight: 800;
 					color: #837464;
@@ -144,7 +144,7 @@
 			line-height: 84px;
 			margin-top: 65px;
 			font-size: 36px;
-			font-family: LeagueSpartanBold;
+			font-family: LeagueSpartanBlack;
 			font-weight: 800;
 			color: #FFFFFF;
 			text-transform: uppercase;
@@ -237,12 +237,10 @@
 			background: #504030;
 			border-radius: vw(39px);
 			font-size: vw(36px);
-			font-family: LeagueSpartanBold;
+			font-family: LeagueSpartanBlack;
 			font-weight: 800;
 			color: #FFFFFF;
-			display: flex;
-			align-items: center;
-			justify-content: center;
+			line-height: vw(85px);
 			text-align: center;
 			margin: 0px auto vw(77px);
 		}
@@ -258,11 +256,12 @@
 
 			p {
 				font-size: vw(28px);
-				font-family: LeagueSpartanBold;
+				font-family: LeagueSpartanBlack;
 				font-weight: 800;
 				color: #504030;
 				line-height: vw(32px);
 				text-align: center;
+				text-transform: uppercase;
 			}
 
 			.line {

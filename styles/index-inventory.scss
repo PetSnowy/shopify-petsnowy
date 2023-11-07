@@ -34,7 +34,7 @@
 			line-height: 84px;
 			color: #ffffff;
 			text-transform: uppercase;
-			font-family: LeagueSpartanBold;
+			font-family: LeagueSpartanBlack;
 			font-size: 36px;
 			font-weight: 800;
 			transition: all 0.3s ease;
@@ -75,11 +75,9 @@
 			border-radius: vw(29px);
 			text-align: center;
 			color: #ffffff;
-			display: flex;
-			align-items: center;
-			justify-content: center;
+			line-height: vw(85px);
 			text-transform: uppercase;
-			font-family: LeagueSpartanBold;
+			font-family: LeagueSpartanBlack;
 			font-size: vw(26px);
 			font-weight: 800;
 		}
