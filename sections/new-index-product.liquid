@@ -3,6 +3,7 @@
 <div class="new-index-product">
   <div class="page-width">
     {% for blocks in section.blocks %}
+      {% assign index = forloop.index %}
       <a href="{{ blocks.settings.link }}" target="_blank">
         <picture>
           <source media="(min-width: 901px)" data-srcset="{{ blocks.settings.pc_image | img_url: 'master' }}">
@@ -11,6 +12,10 @@
             alt="Litter Box"
             decoding="async"
             loading="lazy"
+            class="aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-duration="{{ 800 }}"
+            data-aos-delay="{{ 100 | times: index }}"
           >
         </picture>
       </a>
