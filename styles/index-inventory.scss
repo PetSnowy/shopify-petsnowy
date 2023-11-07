@@ -31,7 +31,9 @@
 			background: #504030;
 			border-radius: 39px;
 			text-align: center;
-			line-height: 79px;
+			display: flex;
+			align-items: center;
+			justify-self: center;
 			color: #ffffff;
 			text-transform: uppercase;
 			font-family: LeagueSpartanBold;
