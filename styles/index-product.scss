@@ -1,0 +1,60 @@
+@import "pxToVw.scss";
+
+.new-index-product {}
+
+@media screen and (min-width: 901px) {
+	.new-index-product {
+		padding: 94px 0px 88px;
+
+		.page-width {
+			display: grid;
+			grid-template-columns: repeat(4, 268px);
+			justify-content: space-between;
+		}
+
+		a {
+			display: block;
+			border: 2px solid transparent;
+			border-radius: 42px;
+			transition: all 0.3s ease;
+
+			&:hover {
+				border-color: #D75F23;
+			}
+		}
+
+
+		picture,
+		img {
+			width: 264px;
+			height: 346px;
+			object-fit: contain;
+			display: block;
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.new-index-product {
+		padding: vw(41px) 0px vw(57px);
+
+		.page-width {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: vw(46px);
+		}
+
+		a {
+			width: vw(316px);
+			height: vw(282px);
+			background: #E0D5C1;
+			border-radius: vw(42px);
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+{{ 'index-product.css' | asset_url | stylesheet_tag }}
+
+<div class="new-index-product">
+  <div class="page-width">
+    {% for blocks in section.blocks %}
+      {% assign index = forloop.index %}
+      <a href="{{ blocks.settings.link }}" target="_blank">
+        <picture>
+          <source media="(min-width: 901px)" data-srcset="{{ blocks.settings.pc_image | img_url: 'master' }}">
+          <source media="(max-width: 900px)" data-srcset="{{ blocks.settings.mb_image | img_url: 'master' }}">
+          <img
+            alt="Litter Box"
+            decoding="async"
+            loading="lazy"
+            class="aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-duration="{{ 800 }}"
+            data-aos-delay="{{ 100 | times: index }}"
+          >
+        </picture>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "new-index-prodoct",
+  "blocks": [
+    {
+      "name": "img",
+      "type": "block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "pc_image",
+          "label": "pc card image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mb_image",
+          "label": "mb card image"
+        },
+        {
+          "type": "text",
+          "id": "link",
+          "label": "link"
+        }
+      ],
+      "limit": 4
+    }
+  ],
+  "presets": [
+    {
+      "name": "new-index-product"
+    }
+  ]
+}
+{% endschema %}

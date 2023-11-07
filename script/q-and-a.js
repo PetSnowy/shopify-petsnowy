@@ -12,7 +12,7 @@ $(function () {
 	const descText = document.querySelectorAll('.answer_txt');
 	const content = [];
 	for (let i = 0; i < descTitle.length; i++) {
-		content.push({ title: descTitle[i].innerText.trim(), text: descText[i].innerText.trim() });
+		content.push({ title: descTitle[i].innerText.trim(), text: descText[i].innerHTML.trim() });
 	}
 	let searchResult = [];
 
@@ -92,6 +92,17 @@ $(function () {
 			faqItem.appendChild(a);
 			search_result.appendChild(faqItem);
 		}
+
+		videoPopUp()
+	}
+
+	const asideItemWrapper = document.querySelector('.sidebar-wrapper');
+
+	for (let i = 0; i < title.length; i++) {
+		const createElement = document.createElement('div')
+		createElement.classList.add('aside-item')
+		createElement.innerHTML = title[i].innerHTML || title[i].textContent
+		asideItemWrapper.appendChild(createElement)
 	}
 
 	const asideItem = document.querySelectorAll('.aside-item');
@@ -107,16 +118,16 @@ $(function () {
 
 	function mobileSelect() {
 		const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-		const headerTop = document.querySelector('header').offsetHeight;
-		mSidebarWrapper.style.top = `${headerTop}px`
+		const headerTop = getComputedStyle(document.documentElement).getPropertyValue('--main-padding-top')
+		mSidebarWrapper.style.top = `${headerTop}`
 	}
 
-	function sidebarScroll() {
-		const active = document.querySelector('.active');
-		for (let i = 0; i < pageSidebar.length; i++) {
-			active && (pageSidebar[i].scrollTop = active.offsetTop);
-		}
-	}
+	// function sidebarScroll() {
+	// 	const active = document.querySelector('.active');
+	// 	for (let i = 0; i < pageSidebar.length; i++) {
+	// 		active && (pageSidebar[i].scrollTop = active.offsetTop);
+	// 	}
+	// }
 	const scroll = () => {
 		const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
 		for (let index = 0; index < title.length; index++) {
@@ -126,11 +137,11 @@ $(function () {
 				title[index].innerText ? select.value = title[index].innerText : select.value = title[index].textContent;
 			}
 		}
-		sidebarScroll();
+		// sidebarScroll();
 		mobileSelect();
 	};
 
-	window.addEventListener('scroll', debounce(scroll, 100), { passive: true });
+	window.addEventListener('scroll', () => scroll(), { passive: true });
 
 
 	$('select').empty();
@@ -160,27 +171,25 @@ $(function () {
 
 	// video 视频弹出窗口
 
-	const answer = document.querySelectorAll('.answer_txt')
 
-	for (let index = 0; index < answer.length; index++) {
-		const item = answer[index];
-		const video = item.querySelector('.video')
-		if (!video) continue
-		const videoPopup = item.querySelector('.video-popup')
-		const close = item.querySelector('.close')
+	function videoPopUp() {
+		const videoBtn = Array.from(document.querySelectorAll('.faq_qa_main .video-click'))
+		const video = document.querySelector('.faq_qa_main .video-popup')
+		const videoClose = document.querySelector('.faq_qa_main .video-close')
 
-		video.addEventListener('click', () => {
-			videoPopup.style.display = 'block'
-		})
-		close.addEventListener('click', () => {
-			videoPopup.style.display = 'none'
+		videoBtn.forEach((item) => {
+			item.addEventListener('click', function () {
+				video.classList.add('active')
+				video.querySelector('video').src = this.dataset.path
+				video.querySelector('video').play()
+			})
 		})
 
-		videoPopup.addEventListener('click', function (event) {
-			if (event.target !== this) {
-				return;
-			}
-			this.style.display = 'none'
-		});
+		videoClose.addEventListener('click', function () {
+			video.classList.remove('active')
+			video.querySelector('video').pause()
+		})
 	}
+
+	videoPopUp()
 });

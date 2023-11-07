@@ -1,0 +1,87 @@
+@import "pxToVw.scss";
+
+@media screen and (min-width: 901px) {
+	.new-index-inventory {
+		margin-bottom: 100px;
+
+		product-inventory {
+			display: block;
+			position: relative;
+		}
+
+		picture {
+			width: 1200px;
+			display: block;
+		}
+
+		img {
+			width: 1200px;
+			height: auto;
+			object-fit: contain;
+			display: block;
+		}
+
+		a {
+			display: block;
+			position: absolute;
+			bottom: 48px;
+			right: 48px;
+			width: 314px;
+			height: 79px;
+			background: #504030;
+			border-radius: 39px;
+			text-align: center;
+			line-height: 79px;
+			color: #ffffff;
+			text-transform: uppercase;
+			font-family: LeagueSpartanBold;
+			font-size: 36px;
+			font-weight: 800;
+			transition: all 0.3s ease;
+
+			&:hover {
+				color: #504030;
+				background: #ffffff;
+			}
+		}
+
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.new-index-inventory {
+		margin-bottom: vw(70px);
+
+		product-inventory {
+			display: block;
+			position: relative;
+		}
+
+		picture,
+		img {
+			width: 100%;
+			height: auto;
+			object-fit: contain;
+			display: block;
+		}
+
+		a {
+			position: absolute;
+			bottom: vw(30px);
+			right: vw(26px);
+			width: vw(230px);
+			height: vw(58px);
+			background: #504030;
+			border-radius: vw(29px);
+			text-align: center;
+			color: #ffffff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-transform: uppercase;
+			font-family: LeagueSpartanBold;
+			font-size: vw(26px);
+			font-weight: 800;
+		}
+	}
+}

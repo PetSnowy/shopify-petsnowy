@@ -1,0 +1,171 @@
+{{ 'index-honor.css' | asset_url | stylesheet_tag }}
+
+<div class="new-index-honor">
+  <div class="page-width">
+    <div class="honor-inner">
+      <picture>
+        <source media="(min-width: 901px)" data-srcset="{{ section.settings.pc_inner | img_url: 'master' }}">
+        <source media="(max-width: 900px)" data-srcset="{{ section.settings.mb_inner | img_url: 'master' }}">
+        <img
+          alt="petsnowy"
+          decoding="async"
+          loading="lazy"
+        >
+      </picture>
+      <div class="honor-content aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+        <img
+          alt="petsnowy"
+          decoding="async"
+          loading="lazy"
+          src="{{ section.settings.pc_content | img_url: 'master'  }}"
+        >
+      </div>
+    </div>
+    <div class="mb-honor-content">
+      {% for blocks in section.blocks %}
+        {% if blocks.type == 'mb_content' %}
+          {% assign index = forloop.index %}
+          <img
+            data-src="{{ blocks.settings.mb_content_desc | img_url: 'master' }}"
+            alt="petsnowy"
+            decoding="async"
+            loading="lazy"
+            class="aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-duration="{{ 800 }}"
+            data-aos-delay="{{ 100 | times: index }}"
+          >
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="mb-honor-desc">
+      <img
+        class="aos-init aos-animate"
+        data-aos="fade-up"
+        data-aos-duration="{{ 800 }}"
+        data-src="{{ section.settings.mb_honor_desc_left | img_url: 'master'}}"
+        alt="petsnowy"
+      >
+      <img
+        class="aos-init aos-animate"
+        data-aos="fade-up"
+        data-aos-duration="{{ 800 }}"
+        data-src="{{ section.settings.mb_honor_desc_right | img_url: 'master'}}"
+        alt="petsnowy"
+      >
+    </div>
+    <div class="honor-options">
+      {% for blocks in section.blocks %}
+        {% if blocks.type == 'block' %}
+          {% assign index = forloop.index %}
+          <picture>
+            <source media="(min-width: 901px)" srcset="{{ blocks.settings.pc_image | img_url: 'master' }}">
+            <img
+              alt="petsnowy"
+              decoding="async"
+              loading="lazy"
+              class="aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-duration="{{ 800 }}"
+              data-aos-delay="{{ 100 | times: index }}"
+              src="{{ blocks.settings.pc_image | img_url: 'master' }}"
+            >
+          </picture>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="mb-honor-options">
+      {% for blocks in section.blocks %}
+        {% if blocks.type == 'mb_options' %}
+          {% assign index = forloop.index %}
+          <img
+            data-src="{{ blocks.settings.mb_options_desc | img_url: 'master' }}"
+            alt="petsnowy"
+            decoding="async"
+            loading="lazy"
+            class="aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-duration="{{ 800 }}"
+            data-aos-delay="{{ 100 | times: index }}"
+          >
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "new-index-honor",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "pc_inner",
+      "label": "pc_inner"
+    },
+    {
+      "type": "image_picker",
+      "id": "mb_inner",
+      "label": "mb_inner"
+    },
+    {
+      "type": "image_picker",
+      "id": "pc_content",
+      "label": "pc_content"
+    },
+    {
+      "type": "image_picker",
+      "id": "mb_honor_desc_left",
+      "label": "mb_honor_desc_left"
+    },
+    {
+      "type": "image_picker",
+      "id": "mb_honor_desc_right",
+      "label": "mb_honor_desc_right"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "img",
+      "type": "block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "pc_image",
+          "label": "pc card image"
+        }
+      ],
+      "limit": 4
+    },
+    {
+      "name": "mb_content",
+      "type": "mb_content",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "mb_content_desc",
+          "label": "mb content desc"
+        }
+      ],
+      "limit": 3
+    },
+    {
+      "name": "mb_options",
+      "type": "mb_options",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "mb_options_desc",
+          "label": "mb options desc"
+        }
+      ],
+      "limit": 3
+    }
+  ],
+  "presets": [
+    {
+      "name": "new-index-honor"
+    }
+  ]
+}
+{% endschema %}

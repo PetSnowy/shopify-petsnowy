@@ -1,0 +1,111 @@
+@import "pxToVw.scss";
+
+.swiper-index-wrapper {
+	background-color: #E0D5C1;
+}
+
+
+@media screen and (min-width: 901px) {
+	.swiper-index-wrapper {
+		padding: 60px 0px 65px;
+
+		.title {
+			font-size: 70px;
+			font-family: LeagueSpartanBlack;
+			font-weight: 900;
+			line-height: 66px;
+			margin: 0px;
+			margin-bottom: 48px;
+			color: #504030;
+			text-align: center;
+
+			&::first-letter {
+				color: #D75F23;
+			}
+		}
+	}
+
+	.new-index-swiper-wrapper {
+		position: relative;
+		width: 1200px;
+
+		.new-index-swiper {
+			width: 1059px;
+		}
+
+		picture,
+		img {
+			display: block;
+			width: 227px;
+			height: 533px;
+			object-fit: contain;
+		}
+
+		.swiper-button {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			cursor: pointer;
+			width: 100%;
+			height: 100px;
+
+			&>div {
+				width: 40px;
+				height: 95px;
+				display: block;
+				background: url('./arrows-big.png') no-repeat center/cover;
+
+				&::after,
+				&::before {
+					display: none;
+				}
+			}
+		}
+
+		.swiper-button-next {
+			transform: rotate(180deg);
+		}
+	}
+
+}
+
+@media screen and (max-width: 900px) {
+	.new-index-swiper-wrapper {
+		padding: vw(35px) 0px vw(44px);
+
+		.title {
+			font-size: vw(45px);
+			font-family: LeagueSpartanBlack;
+			font-weight: 900;
+			line-height: vw(43px);
+			margin: 0px;
+			margin-bottom: vw(30px);
+			color: #504030;
+			text-align: center;
+
+			&::first-letter {
+				color: #D75F23;
+			}
+		}
+
+		picture,
+		img {
+			width: vw(186px);
+			display: block;
+			height: auto;
+			object-fit: contain;
+		}
+
+		.swiper-button {
+			display: none;
+		}
+
+		.swiper-slide {
+			margin-right: 20px !important;
+			width: vw(186px) !important;
+		}
+	}
+}

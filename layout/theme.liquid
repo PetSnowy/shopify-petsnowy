@@ -409,7 +409,7 @@
       AOS.init();
       function mainTop() {
         const newHeaderHeight = document.querySelector('.header-wrapper').offsetHeight;
-        const main = document.querySelector('main');
+        const main = document.documentElement;
         main.style.setProperty('--main-padding-top', `${newHeaderHeight}px`);
       }
       mainTop();

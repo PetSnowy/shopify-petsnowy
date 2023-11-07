@@ -2209,6 +2209,55 @@ sticky-header.Index {
 	border: none;
 }
 
+.list-payment {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: -0.5rem 0;
+	padding-top: 1rem;
+	padding-left: 0;
+}
+
+@media screen and (min-width: 750px) {
+	.list-payment {
+		justify-content: flex-end;
+		margin: -0.5rem;
+		padding-top: 0;
+	}
+}
+
+.list-payment__item {
+	align-items: center;
+	display: flex;
+	padding: 0.5rem;
+}
+
+.list-social {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+@media only screen and (max-width: 749px) {
+	.list-social {
+		justify-content: center;
+	}
+}
+
+.list-social__item .icon {
+	height: 1.8rem;
+	width: 1.8rem;
+}
+
+.list-social__link {
+	align-items: center;
+	display: flex;
+	padding: 1.3rem;
+	color: rgb(var(--color-foreground));
+}
+
+
+
 @media screen and (min-width: 990px) {
 
 	.header--top-left,
@@ -3021,12 +3070,19 @@ a.headr_odr_now {
 	text-decoration: none;
 	height: fit-content;
 	border-radius: 25px;
+	border: 1px solid transparent;
+	opacity: 1;
+	transition: 0.3s all ease;
+
+	&:hover {
+		opacity: 0.7;
+	}
 }
 
 .itg_overlap_header a.headr_odr_now {
 	color: #231f20;
 	background: #fff;
-	transition: 0.3s all linear;
+	transition: 0.3s all ease;
 }
 
 .itg_overlap_header a.headr_odr_now:hover {
@@ -3062,7 +3118,7 @@ a.headr_odr_now svg path {
 
 .baner_contain {
 	position: absolute;
-	bottom: 25%;
+	bottom: 30%;
 	left: 50%;
 	transform: translate(-50%, 0%);
 }
@@ -3393,6 +3449,8 @@ ul.footer-block__details-content li a {
 	font-size: 14px;
 	line-height: 15px;
 	color: #ffffff;
+	font-family: SUISSE_INT_L_MEDIUM;
+	margin: 10px 0px;
 }
 
 .footer-block--newsletter.grid__item {
@@ -5598,6 +5656,39 @@ product-recommendation {
 
 }
 
+@media screen and (max-width: 990px) {
+	summary.header__icon.header__icon--menu {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	#hamburger {
+		width: 20px;
+		height: 20px;
+		background: url('../assets/hamburger.png') no-repeat center/cover;
+		display: block;
+	}
+
+	#hamburgerIndex {
+		width: 20px;
+		height: 20px;
+		background: url('../assets/hamburger_w.png') no-repeat center/cover;
+		display: block;
+	}
+
+	details[open] {
+		#hamburger {
+			background: url('../assets/fork.png') no-repeat center/cover;
+		}
+
+		#hamburgerIndex {
+			background: url('../assets/fork_w.png') no-repeat center/cover;
+		}
+	}
+}
+
+
 @media screen and (max-width: 900px) {
 
 	footer {
@@ -5612,7 +5703,7 @@ product-recommendation {
 
 	.page-width {
 		width: 100%;
-		padding: vw(0px) vw(40px);
+		padding: vw(0px) vw(35px);
 		box-sizing: border-box;
 	}
 
@@ -5728,31 +5819,6 @@ product-recommendation {
 
 }
 
-@media screen and (max-width: 990px) {
-	#hamburger {
-		width: vw(34px);
-		height: vw(30px);
-		background: url('../assets/hamburger.png') no-repeat center/cover;
-		display: block;
-	}
-
-	#hamburgerIndex {
-		width: vw(34px);
-		height: vw(30px);
-		background: url('../assets/hamburger_w.png') no-repeat center/cover;
-		display: block;
-	}
-
-	details[open] {
-		#hamburger {
-			background: url('../assets/fork.png') no-repeat center/cover;
-		}
-
-		#hamburgerIndex {
-			background: url('../assets/fork_w.png') no-repeat center/cover;
-		}
-	}
-}
 
 $item: 5;
 
@@ -5994,7 +6060,7 @@ $item: 5;
 		}
 
 		.product-safety {
-			height: 488px;
+			height: 670px;
 		}
 	}
 
@@ -6002,4 +6068,24 @@ $item: 5;
 
 .needsclick.kl-teaser-SyCsSf.undefined.kl-private-reset-css-Xuajs1 {
 	width: 100px !important;
+}
+
+// 首页更新
+#MainContentIndex {
+	background-color: #e9e0cf;
+
+	img {
+		-webkit-user-drag: none;
+	}
+
+	@media screen and (min-width: 901px) {
+		.video-scroll-wrapper {
+			margin-top: 0px;
+			margin-bottom: 94px;
+		}
+	}
+}
+
+#shopify-installments {
+	font-size: 12px;
 }

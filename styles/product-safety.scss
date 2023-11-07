@@ -16,15 +16,12 @@
 
 @media screen and (min-width: 901px) {
 	.product-safety {
-		margin-bottom: 120px;
-
-		product-inventory {
-			margin-top: 88px;
-		}
+		padding: 88px 0px;
 
 		picture,
 		img {
 			width: 1200px;
+			border-radius: 40px;
 		}
 	}
 }
@@ -36,6 +33,7 @@
 		picture,
 		img {
 			width: 100%;
+			border-radius: vw(20px);
 		}
 	}
 }

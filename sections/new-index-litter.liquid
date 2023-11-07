@@ -1,0 +1,104 @@
+{{ 'index-litter.css' | asset_url | stylesheet_tag }}
+
+<div class="new-index-litter">
+  <div class="page-width">
+    <div class="container">
+      <p class="title aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+        <span>Finally, a Litter Box </span><span>That Collects All</span> <span>Scoop Ideas</span>
+      </p>
+      <div class="play">
+        <picture>
+          <source media="(min-width: 901px)" data-srcset="{{ section.settings.pc_image | img_url: 'master' }}">
+          <source media="(max-width: 900px)" data-srcset="{{ section.settings.mb_image | img_url: 'master' }}">
+          <img
+            alt="petsnowy"
+            decoding="async"
+            loading="lazy"
+          >
+        </picture>
+      </div>
+      <p class="sub-title aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+        SNOW+ Self-cleaning Litter Box
+      </p>
+      <div class="litter-content">
+        <p class="sub-title aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+          SNOW+ Self-cleaning Litter Box
+        </p>
+        <p class="title aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+          <span>Finally, a Litter Box </span><span>That Collects All</span> <span>Scoop Ideas</span>
+        </p>
+        <div class="options">
+          <div class="item">
+            <p>Hands</p>
+            <p>-free</p>
+          </div>
+          <i class="line"></i>
+          <div class="item">
+            <p>Zero</p>
+            <p>Odor</p>
+          </div>
+          <i class="line"></i>
+          <div class="item">
+            <p>Less</p>
+            <p>Mess</p>
+          </div>
+        </div>
+        <a target="_blank" href="/products/snow-self-cleaning-litter-box" class="button">Order Now</a>
+        <div class="mb-options">
+          <div class="item">
+            <p>Hands</p>
+            <p>-free</p>
+          </div>
+          <i class="line"></i>
+          <div class="item">
+            <p>Zero</p>
+            <p>Odor</p>
+          </div>
+          <i class="line"></i>
+          <div class="item">
+            <p>Less</p>
+            <p>Mess</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const container = document.querySelector('.new-index-litter');
+  const topVideo = document.querySelector('.custom-banr-main');
+  const target = container.querySelector('img');
+  const bannerImg = document.querySelector('.lazy-img');
+  window.addEventListener('scroll', () => {
+    const scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+    const top = topVideo?.offsetHeight + bannerImg?.offsetHeight - topVideo?.offsetHeight / 3;
+
+    if (scrollTop >= top) {
+      target.style.transform = 'scale(1)';
+    } else {
+      target.style.transform = 'scale(0.9)';
+    }
+  });
+</script>
+{% schema %}
+{
+  "name": "new-index-litter",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "pc_image",
+      "label": "pc card image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mb_image",
+      "label": "mb card image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "new-index-litter"
+    }
+  ]
+}
+{% endschema %}
