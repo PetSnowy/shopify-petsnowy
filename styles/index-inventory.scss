@@ -37,6 +37,12 @@
 			font-family: LeagueSpartanBold;
 			font-size: 36px;
 			font-weight: 800;
+			transition: all 0.3s ease;
+
+			&:hover {
+				color: #504030;
+				background: #ffffff;
+			}
 		}
 
 	}
