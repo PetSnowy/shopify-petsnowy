@@ -13,21 +13,11 @@
         "padding_bottom": 0
       }
     },
-    "082477b7-28d4-48c8-a731-3d6698bb71cf": {
-      "type": "image-banner",
+    "de89b567-0558-48d3-82fe-4bdad98223b4": {
+      "type": "lazy-img",
       "settings": {
-        "image": "shopify:\/\/shop_images\/bf.png",
-        "image_mbl": "shopify:\/\/shop_images\/xmas.png",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "pc_image": "shopify:\/\/shop_images\/bf.png",
+        "mb_image": "shopify:\/\/shop_images\/xmas.png"
       }
     },
     "995b856f-22eb-499c-bdd7-0ce77bf53fe6": {
@@ -341,7 +331,7 @@
   },
   "order": [
     "ec8a39b8-e172-48e1-97d9-303c35a74add",
-    "082477b7-28d4-48c8-a731-3d6698bb71cf",
+    "de89b567-0558-48d3-82fe-4bdad98223b4",
     "995b856f-22eb-499c-bdd7-0ce77bf53fe6",
     "3e84f43e-0ece-41e3-b36c-4ca84219ba41",
     "57323351-c8bb-43c6-9e83-801448ba306a",
