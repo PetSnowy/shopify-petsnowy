@@ -68,11 +68,10 @@
   const container = document.querySelector('.new-index-litter');
   const topVideo = document.querySelector('.custom-banr-main');
   const target = container.querySelector('img');
-  const bannerImg = document.querySelector('.banner__media.media.banner_desktop');
+  const bannerImg = document.querySelector('.lazy-img');
   window.addEventListener('scroll', () => {
     const scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-    const top = topVideo.offsetHeight + bannerImg.offsetHeight - topVideo.offsetHeight / 3;
-    console.log(top);
+    const top = topVideo?.offsetHeight + bannerImg?.offsetHeight - topVideo?.offsetHeight / 3;
 
     if (scrollTop >= top) {
       target.style.transform = 'scale(1)';
