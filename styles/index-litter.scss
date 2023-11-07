@@ -195,9 +195,10 @@
 			font-weight: 900;
 			line-height: 58px;
 			width: vw(565px);
-			margin: 0px;
+			margin: 0px auto;
 			margin-bottom: vw(70px);
 			display: block;
+			text-align: right;
 
 			&::first-letter {
 				color: #D75F23;
