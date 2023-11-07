@@ -35,6 +35,7 @@
 		span {
 			display: block;
 			font-family: LeagueSpartanBlack;
+			color: #504030;
 
 			&:first-child::first-letter {
 				color: #D75F23;
@@ -193,7 +194,7 @@
 			font-size: vw(62px);
 			font-weight: 900;
 			line-height: 58px;
-			width: vw(600px);
+			width: vw(400px);
 			text-align: right;
 			margin: 0px;
 			margin-bottom: vw(70px);
