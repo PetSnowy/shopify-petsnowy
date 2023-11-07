@@ -6070,11 +6070,13 @@ $item: 5;
 	width: 100px !important;
 }
 
+html:has(#MainContentIndex) {
+	scroll-padding-top: var(--main-padding-top);
+}
+
 // 首页更新
 #MainContentIndex {
-	html {
-		scroll-padding-top: var(--main-padding-top);
-	}
+
 
 	background-color: #e9e0cf;
 
