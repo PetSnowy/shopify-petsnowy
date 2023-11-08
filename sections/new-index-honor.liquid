@@ -32,8 +32,8 @@
             loading="lazy"
             class="aos-init aos-animate"
             data-aos="fade-up"
-            data-aos-duration="{{ 800 }}"
-            data-aos-delay="{{ 100 | times: index }}"
+            data-aos-duration="800"
+            data-aos-delay="{{ 50 | times: index }}"
           >
         {% endif %}
       {% endfor %}
@@ -69,7 +69,7 @@
               class="aos-init aos-animate"
               data-aos="fade-up"
               data-aos-duration="{{ 800 }}"
-              data-aos-offset="200"
+              data-aos-offset="500"
               data-aos-delay="{{ 100 | times: index }}"
               src="{{ blocks.settings.pc_image | img_url: 'master' }}"
             >
@@ -89,7 +89,7 @@
             class="aos-init aos-animate"
             data-aos="fade-up"
             data-aos-duration="{{ 800 }}"
-            data-aos-delay="{{ 100 | times: index }}"
+            data-aos-delay="{{ 50 | times: index }}"
           >
         {% endif %}
       {% endfor %}

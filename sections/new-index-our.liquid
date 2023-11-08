@@ -1,7 +1,7 @@
 {{ 'index-our.css' | asset_url | stylesheet_tag }}
 
 <div class="new-index-our">
-  <product-inventory class="page-width" y-range="-2,2" x-range="-2,2">
+  <div class="page-width" y-range="-2,2" x-range="-2,2">
     <picture>
       <source media="(min-width: 901px)" srcset="{{ section.settings.pc_image | img_url: 'master' }}">
       <source media="(max-width: 900px)" srcset="{{ section.settings.mb_image | img_url: 'master' }}">
@@ -15,7 +15,7 @@
       <span>OUR STORY</span>
       <i></i>
     </a>
-  </product-inventory>
+  </div>
 </div>
 
 {% schema %}
