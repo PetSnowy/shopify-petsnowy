@@ -52,7 +52,7 @@
     {% endif %}
 
     {% render 'meta-tags' %}
-		<script src="{{ 'aos-animation.js' | asset_url }}"></script>
+    <script src="{{ 'aos-animation.js' | asset_url }}"></script>
     {% comment %} <script src="{{ 'product-recommendation.js' | asset_url }}"></script> {% endcomment %}
     <script src="{{ 'jquery.min.js' | asset_url }}"></script>
     <script src="{{ 'global.js' | asset_url }}" defer></script>
@@ -407,6 +407,8 @@
 
     <script>
       AOS.init();
+      AOS.refresh();
+      AOS.refreshHard();
       function mainTop() {
         const newHeaderHeight = document.querySelector('.header-wrapper').offsetHeight;
         const main = document.documentElement;
