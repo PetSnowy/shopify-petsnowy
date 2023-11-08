@@ -6110,3 +6110,16 @@ html:has(#MainContentIndex) {
 	font-size: 12px;
 }
 
+.all_product {
+	background: #231f20;
+
+	a,
+	span {
+		color: #fff;
+	}
+
+	.quick-add__submit {
+		background-color: #231f20;
+		color: #fff;
+	}
+}
