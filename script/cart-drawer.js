@@ -78,7 +78,7 @@ class CartDrawer extends HTMLElement {
 	}
 
 	removeRecommendations() {
-		const item = Array.from(this.productRecommendation.querySelectorAll('div'));
+		const item = Array.from(this.productRecommendation?.querySelectorAll('div'));
 		item.length && item.forEach((item) => item.remove());
 	}
 
