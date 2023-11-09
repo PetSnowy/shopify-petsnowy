@@ -1,5 +1,7 @@
-<div class="lazy-img">
-  <picture>
+{{ 'active-img.css' | asset_url | stylesheet_tag }}
+
+<div class="active-img">
+  <picture class="page-width">
     <source media="(min-width: 901px)" data-srcset="{{ section.settings.pc_image | img_url: 'master' }}">
     <source media="(max-width: 900px)" data-srcset="{{ section.settings.mb_image | img_url: 'master' }}">
     <img
@@ -9,18 +11,10 @@
     >
   </picture>
 </div>
-<style>
-  .lazy-img img,
-  .lazy-img picture {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-  }
-</style>
+
 {% schema %}
 {
-  "name": "lazy-img",
+  "name": "active-img",
   "settings": [
     {
       "type": "image_picker",
@@ -35,7 +29,7 @@
   ],
   "presets": [
     {
-      "name": "lazy-img"
+      "name": "active-img"
     }
   ]
 }

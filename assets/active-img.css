@@ -1,0 +1,1 @@
+.active-img{padding-top:var(--main-padding-top)}.active-img img,.active-img picture{display:block;height:auto;width:100%}@media screen and (min-width:901px){.active-img{border-radius:40px;overflow:hidden}.active-img .page-width{padding:50px 0}}@media screen and (max-width:900px){.active-img{overflow:hidden}.active-img .page-width{padding:13.3333333333vw 0}}
