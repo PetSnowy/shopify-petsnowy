@@ -1,12 +1,5 @@
 {
   "sections": {
-    "a97ab8fc-c65b-42d2-8184-f562a86217e4": {
-      "type": "lazy-img",
-      "settings": {
-        "pc_image": "shopify:\/\/shop_images\/banner_-pc_1.png",
-        "mb_image": "shopify:\/\/shop_images\/banner_-_1.png"
-      }
-    },
     "ec8a39b8-e172-48e1-97d9-303c35a74add": {
       "type": "custom-banner",
       "disabled": true,
@@ -19,23 +12,6 @@
         "url": "#",
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "6c7d6d2c-3311-49de-91df-02ee6a301f6c": {
-      "type": "product-safety",
-      "disabled": true,
-      "settings": {
-        "image_title": "shopify:\/\/shop_images\/bf.png",
-        "mb_image_title": "shopify:\/\/shop_images\/xmas.png",
-        "image_alt": "petsnowy"
-      }
-    },
-    "cb61f7c1-2812-43d4-8b88-c9b5d552b685": {
-      "type": "product-safety",
-      "settings": {
-        "image_title": "shopify:\/\/shop_images\/banner_-pc_1.png",
-        "mb_image_title": "shopify:\/\/shop_images\/banner_-_1.png",
-        "image_alt": "petsnowy"
       }
     },
     "995b856f-22eb-499c-bdd7-0ce77bf53fe6": {
@@ -348,10 +324,7 @@
     }
   },
   "order": [
-    "a97ab8fc-c65b-42d2-8184-f562a86217e4",
     "ec8a39b8-e172-48e1-97d9-303c35a74add",
-    "6c7d6d2c-3311-49de-91df-02ee6a301f6c",
-    "cb61f7c1-2812-43d4-8b88-c9b5d552b685",
     "995b856f-22eb-499c-bdd7-0ce77bf53fe6",
     "3e84f43e-0ece-41e3-b36c-4ca84219ba41",
     "57323351-c8bb-43c6-9e83-801448ba306a",
