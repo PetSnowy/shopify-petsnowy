@@ -55,8 +55,12 @@
 			height: 66px;
 			border-radius: 21px;
 			font-size: 36px;
-			bottom: -27px;
+			bottom: 102px;
 			left: 552px;
+
+			span {
+				margin-top: 10px;
+			}
 
 			&::after {
 				width: 26px;
@@ -72,17 +76,21 @@
 		overflow: hidden;
 
 		.page-width {
-			padding: vw(50px) 0px;
+			padding: 0px;
 		}
 
 		a {
 			width: vw(173px);
 			height: vw(41px);
 			background: #E9E1CF;
-			border-radius: VW(11px);
-			left: VW(334px);
-			bottom: vw(-24px);
+			border-radius: vw(11px);
+			left: vw(334px);
+			bottom: vw(74px);
 			font-size: vw(23px);
+
+			span {
+				margin-top: vw(10px);
+			}
 
 			&::after {
 				width: vw(16px);
