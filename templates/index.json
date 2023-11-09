@@ -2,7 +2,6 @@
   "sections": {
     "ec8a39b8-e172-48e1-97d9-303c35a74add": {
       "type": "custom-banner",
-      "disabled": true,
       "settings": {
         "vdio_img": "shopify:\/\/shop_images\/1_0175_2.jpg",
         "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6a66fde5ecf844cb8c4260f81e879f8d.mp4",
@@ -16,11 +15,20 @@
     },
     "444f4270-414d-47b5-824b-913682bf49c0": {
       "type": "active-img",
+      "disabled": true,
       "settings": {
         "pc_image": "shopify:\/\/shop_images\/Christmas_pc.png",
         "mb_image": "shopify:\/\/shop_images\/Christmas_mb.png",
         "btn_link": "https:\/\/www.petsnowy.com\/products\/snow-self-cleaning-litter-box",
         "btn_text": "GO,GO,GO!"
+      }
+    },
+    "ab5be67e-7d46-46f0-9f1e-56a5f5953c07": {
+      "type": "product-safety",
+      "settings": {
+        "image_title": "shopify:\/\/shop_images\/bf.png",
+        "mb_image_title": "shopify:\/\/shop_images\/xmas.png",
+        "image_alt": ""
       }
     },
     "995b856f-22eb-499c-bdd7-0ce77bf53fe6": {
@@ -335,6 +343,7 @@
   "order": [
     "ec8a39b8-e172-48e1-97d9-303c35a74add",
     "444f4270-414d-47b5-824b-913682bf49c0",
+    "ab5be67e-7d46-46f0-9f1e-56a5f5953c07",
     "995b856f-22eb-499c-bdd7-0ce77bf53fe6",
     "3e84f43e-0ece-41e3-b36c-4ca84219ba41",
     "57323351-c8bb-43c6-9e83-801448ba306a",
