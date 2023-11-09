@@ -17,8 +17,10 @@
     "444f4270-414d-47b5-824b-913682bf49c0": {
       "type": "active-img",
       "settings": {
-        "pc_image": "shopify:\/\/shop_images\/banner_-pc_1.png",
-        "mb_image": "shopify:\/\/shop_images\/banner_-_1.png"
+        "pc_image": "shopify:\/\/shop_images\/Christmas_pc.png",
+        "mb_image": "shopify:\/\/shop_images\/Christmas_mb.png",
+        "btn_link": "",
+        "btn_text": ""
       }
     },
     "995b856f-22eb-499c-bdd7-0ce77bf53fe6": {
