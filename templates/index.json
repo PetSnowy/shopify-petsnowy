@@ -14,6 +14,13 @@
         "padding_bottom": 0
       }
     },
+    "444f4270-414d-47b5-824b-913682bf49c0": {
+      "type": "active-img",
+      "settings": {
+        "pc_image": "shopify:\/\/shop_images\/banner_-pc_1.png",
+        "mb_image": "shopify:\/\/shop_images\/banner_-_1.png"
+      }
+    },
     "995b856f-22eb-499c-bdd7-0ce77bf53fe6": {
       "type": "new-index-litter",
       "settings": {
@@ -325,6 +332,7 @@
   },
   "order": [
     "ec8a39b8-e172-48e1-97d9-303c35a74add",
+    "444f4270-414d-47b5-824b-913682bf49c0",
     "995b856f-22eb-499c-bdd7-0ce77bf53fe6",
     "3e84f43e-0ece-41e3-b36c-4ca84219ba41",
     "57323351-c8bb-43c6-9e83-801448ba306a",
