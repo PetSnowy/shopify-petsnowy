@@ -2,6 +2,7 @@
   "sections": {
     "ec8a39b8-e172-48e1-97d9-303c35a74add": {
       "type": "custom-banner",
+      "disabled": true,
       "settings": {
         "vdio_img": "shopify:\/\/shop_images\/1_0175_2.jpg",
         "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6a66fde5ecf844cb8c4260f81e879f8d.mp4",
@@ -15,6 +16,7 @@
     },
     "6c7d6d2c-3311-49de-91df-02ee6a301f6c": {
       "type": "product-safety",
+      "disabled": true,
       "settings": {
         "image_title": "shopify:\/\/shop_images\/bf.png",
         "mb_image_title": "shopify:\/\/shop_images\/xmas.png",
