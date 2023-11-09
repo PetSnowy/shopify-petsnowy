@@ -1,7 +1,15 @@
 @import "pxToVw.scss";
 
+.Index.itg_overlap_header {
+	background-color: rgb(35, 31, 32) !important;
+}
+
 .active-img {
 	padding-top: var(--main-padding-top);
+
+	.page-width {
+		position: relative;
+	}
 
 	img,
 	picture {
@@ -9,16 +17,52 @@
 		width: 100%;
 		height: auto;
 	}
+
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #E9E1CF;
+		font-family: LeagueSpartanBlack;
+		font-weight: 900;
+		color: #983B30;
+		position: absolute;
+
+		&::after {
+			content: "";
+			display: block;
+			background: #3D8658;
+			background: url('./Christmas.png') no-repeat center/cover;
+		}
+	}
 }
 
 
 @media screen and (min-width: 901px) {
 	.active-img {
-		border-radius: 40px;
 		overflow: hidden;
 
 		.page-width {
-			padding: 50px 0px;
+			padding: 70px 0px;
+		}
+
+		img {
+			border-radius: 40px;
+		}
+
+		a {
+			width: 278px;
+			height: 66px;
+			border-radius: 21px;
+			font-size: 36px;
+			bottom: -27px;
+			left: 552px;
+
+			&::after {
+				width: 26px;
+				height: 27px;
+				margin-left: 5px;
+			}
 		}
 	}
 }
@@ -28,7 +72,23 @@
 		overflow: hidden;
 
 		.page-width {
-			padding: vw(100px) 0px;
+			padding: vw(50px) 0px;
+		}
+
+		a {
+			width: vw(173px);
+			height: vw(41px);
+			background: #E9E1CF;
+			border-radius: VW(11px);
+			left: VW(334px);
+			bottom: vw(-24px);
+			font-size: vw(23px);
+
+			&::after {
+				width: vw(16px);
+				height: vw(17px);
+				margin-left: vw(8px);
+			}
 		}
 	}
 }

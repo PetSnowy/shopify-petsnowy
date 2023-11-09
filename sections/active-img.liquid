@@ -1,15 +1,20 @@
 {{ 'active-img.css' | asset_url | stylesheet_tag }}
 
 <div class="active-img">
-  <picture class="page-width">
-    <source media="(min-width: 901px)" data-srcset="{{ section.settings.pc_image | img_url: 'master' }}">
-    <source media="(max-width: 900px)" data-srcset="{{ section.settings.mb_image | img_url: 'master' }}">
-    <img
-      alt="petsnowy"
-      decoding="async"
-      loading="lazy"
-    >
-  </picture>
+  <div class="page-width">
+    <picture>
+      <source media="(min-width: 901px)" data-srcset="{{ section.settings.pc_image | img_url: 'master' }}">
+      <source media="(max-width: 900px)" data-srcset="{{ section.settings.mb_image | img_url: 'master' }}">
+      <img
+        alt="petsnowy"
+        decoding="async"
+        loading="lazy"
+      >
+    </picture>
+    <a class="btn" href="{{ section.settings.btn_link }}" target="_blank">
+      {{ section.settings.btn_text }}
+    </a>
+  </div>
 </div>
 
 {% schema %}
@@ -25,6 +30,16 @@
       "type": "image_picker",
       "id": "mb_image",
       "label": "mb image"
+    },
+    {
+      "type": "text",
+      "id": "btn_link",
+      "label": "btn link"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "btn text"
     }
   ],
   "presets": [
