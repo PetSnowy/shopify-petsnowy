@@ -16,7 +16,7 @@ $(document).ready(function () {
 	const monetaryUnit = currency && currency.replace(/[\d.]/g, '')
 
 	$(".slide_arrow svg").click(function () {
-		document.querySelector('.product-safety-wrapper').scrollIntoView({ behavior: "smooth", block: "start" })
+		document.querySelector('.active-img').scrollIntoView({ behavior: "smooth", block: "start" })
 	});
 
 	function onCloseButtonClick(event) {
