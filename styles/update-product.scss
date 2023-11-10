@@ -189,7 +189,7 @@ $product-font-color: #5D5D5D;
 		}
 
 		.price-wrapper {
-			margin-bottom: vw(20px);
+			margin-bottom: vw(15px);
 		}
 
 		.price {
@@ -227,7 +227,7 @@ $product-font-color: #5D5D5D;
 		}
 
 		.grid__item.product__media-wrapper {
-			margin-bottom: vw(50px);
+			margin-bottom: vw(25px);
 		}
 
 		.product-default {
@@ -490,15 +490,16 @@ $product-font-color: #5D5D5D;
 			.select-option {
 				display: grid;
 				grid-template-columns: repeat(3, 1fr);
-				gap: vw(20px);
+				gap: vw(40px);
+				width: vw(680px);
 
 				input[type=radio]:checked+label:has(.remaining) {
 					border: vw(4px) solid #f0b42d;
-					background: url('./mb-christmas-1.png') no-repeat center/vw(640px) vw(207px);
+					background: url('./mb-christmas-1.png') no-repeat center/vw(680px) vw(207px);
 				}
 
 				label:nth-of-type(1) {
-					background: url('./mb-christmas-1.png') no-repeat center/vw(640px) vw(207px);
+					background: url('./mb-christmas-1.png') no-repeat center/vw(680px) vw(207px);
 					position: relative;
 					border-radius: 0px;
 					grid-column: 1/4;
@@ -506,7 +507,7 @@ $product-font-color: #5D5D5D;
 					flex-direction: row;
 					justify-content: flex-start;
 					padding: 0px;
-					width: vw(640px);
+					width: vw(680px);
 					height: vw(207px);
 					border-radius: vw(20px);
 					border-color: #e9e0cf;
