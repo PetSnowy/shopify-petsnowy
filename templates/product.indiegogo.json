@@ -71,7 +71,7 @@
         "b601d784-14f3-4abd-b763-d4a04350eaf9": {
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
-            "contentSize": 16,
+            "contentSize": 11,
             "pattern": "([rating]\/5.0)  [count] Reviews",
             "hideText": false,
             "alignment": "",
