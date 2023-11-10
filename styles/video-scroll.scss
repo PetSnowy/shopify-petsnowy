@@ -96,15 +96,17 @@ $background-color:#f6f3ec;
 		right: 20px;
 		z-index: 100;
 		width: 465px;
-		height: 827px;
+		height: 80vh;
+		max-height: 764px;
 		display: none;
 		border-radius: 10px;
 		overflow: hidden;
 
 		video {
 			width: 465px;
-			height: 827px;
-			object-fit: contain;
+			height: 80vh;
+			object-fit: cover;
+			max-height: 764px;
 		}
 
 
