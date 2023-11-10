@@ -71,6 +71,10 @@
 			background: url('./FAQ_play.png') no-repeat center/cover;
 			margin-right: 5px;
 			flex-shrink: 0;
+			position: absolute;
+			left: 0px;
+			top: 50%;
+			transform: translateY(-50%);
 		}
 	}
 
@@ -97,6 +101,8 @@
 		}
 
 		.video-click {
+			position: relative;
+			padding-left: vw(30px);
 			@include faqPlay(vw(20px), vw(20px), 1)
 		}
 
@@ -302,6 +308,8 @@
 		}
 
 		.video-click {
+			position: relative;
+			padding-left: 17px;
 			@include faqPlay(12px, 12px, 1)
 		}
 
