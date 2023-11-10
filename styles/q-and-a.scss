@@ -59,8 +59,8 @@
 
 @mixin faqPlay($w, $h, $active) {
 	display: inline-flex;
-	align-items: center;
 	line-height: normal;
+	align-items: baseline;
 
 	@if $active==1 {
 		&::before {
@@ -302,7 +302,7 @@
 		}
 
 		.video-click {
-			@include faqPlay(10px, 10px, 1)
+			@include faqPlay(12px, 12px, 1)
 		}
 
 		.option:has(.video-click) .ques_title h3 {
