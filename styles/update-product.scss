@@ -241,9 +241,10 @@ $product-font-color: #5D5D5D;
 				height: auto;
 				background-color: #ffffff;
 				border-radius: vw(25px);
-				overflow: hidden;
+				overflow: auto;
 				padding: vw(40px);
 				box-sizing: border-box;
+				height: vw(1200px);
 
 				.popup-content {
 					flex: 1;
@@ -516,6 +517,10 @@ $product-font-color: #5D5D5D;
 
 					.option-title {
 						display: none;
+					}
+
+					.question_mark {
+						left: vw(150px);
 					}
 
 					.img-wrapper {
@@ -1199,6 +1204,10 @@ $product-font-color: #5D5D5D;
 
 					.option-title {
 						display: none;
+					}
+
+					.question_mark {
+						left: 120px;
 					}
 
 					.popup-desc {
