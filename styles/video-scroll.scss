@@ -126,17 +126,18 @@ $background-color:#f6f3ec;
 @media screen and (max-width: 900px) {
 	.video-scroll-wrapper {
 		margin: vw(55px) auto;
+		margin-top: vw(25px);
 		padding: vw(30px) vw(47px);
 		background-color: $background-color;
 		column-gap: vw(36px);
 
 		.video-scroll-content {
-			width: vw(80px);
+			width: vw(148px);
 			height: auto;
 
 			picture,
 			img {
-				width: vw(80px);
+				width: vw(148px);
 				height: auto;
 				display: block;
 				object-fit: contain;

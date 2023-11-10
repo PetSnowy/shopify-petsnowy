@@ -6092,14 +6092,6 @@ html:has(#MainContentIndex) {
 	}
 
 	@media screen and (max-width: 900px) {
-		.video-scroll-content {
-			width: vw(148px);
-
-			img {
-				width: vw(148px);
-			}
-		}
-
 		.video-scroll-wrapper {
 			margin: 0px;
 		}
