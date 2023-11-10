@@ -95,11 +95,11 @@
 		}
 
 		.video-click {
-			@include faqPlay(vw(20px), vw(10px), 1)
+			@include faqPlay(vw(20px), vw(20px), 1)
 		}
 
 		.option:has(.video-click) .ques_title h3 {
-			@include faqPlay(vw(20px), vw(20px), 0)
+			@include faqPlay(vw(30px), vw(30px), 0)
 		}
 
 		.video-popup {
