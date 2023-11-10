@@ -490,6 +490,111 @@ $product-font-color: #5D5D5D;
 				display: grid;
 				grid-template-columns: repeat(3, 1fr);
 				gap: vw(20px);
+
+				input[type=radio]:checked+label:has(.remaining) {
+					border: vw(4px) solid #f0b42d;
+				}
+
+				label:nth-of-type(1) {
+					background: url('./mb-christmas-1.png') no-repeat center/vw(640px) vw(207px);
+					position: relative;
+					border-radius: 0px;
+					grid-column: 1/4;
+					width: 100%;
+					flex-direction: row;
+					justify-content: flex-start;
+					padding: 0px;
+					width: vw(640px);
+					height: vw(207px);
+					border-radius: vw(20px);
+					border-color: #e9e0cf;
+
+					.popup-desc {
+						display: none;
+					}
+
+					.option-title {
+						display: none;
+					}
+
+					.img-wrapper {
+						width: vw(200px);
+						height: vw(203px);
+						background: #FFFFFF;
+						border-radius: vw(16px);
+						display: flex;
+						position: absolute;
+						left: 0px;
+						top: 0px;
+
+						img {
+							width: vw(162px);
+							height: vw(162px);
+							object-fit: contain;
+							margin: auto;
+						}
+					}
+
+					.remaining {
+						font-size: vw(28px);
+						font-family: LeagueSpartanBold;
+						font-weight: bold;
+						color: #E9E1CF;
+						line-height: vw(40px);
+						position: absolute;
+						left: vw(220px);
+						bottom: vw(23px);
+
+						span {
+							margin-left: vw(8px);
+						}
+					}
+
+					.option-price {
+						position: absolute;
+						right: vw(19px);
+						bottom: vw(23px);
+
+						p {
+							text-align: right;
+						}
+
+						p:nth-child(1) {
+							font-size: vw(22px);
+							font-family: LeagueSpartan;
+							font-weight: 400;
+							text-decoration: line-through;
+							color: #FFFFFF;
+							line-height: vw(19px);
+							margin-bottom: vw(10px);
+
+							span {
+								font-size: vw(22px);
+								font-family: LeagueSpartan;
+								font-weight: 400;
+								text-decoration: line-through;
+								color: #FFFFFF;
+								line-height: vw(19px);
+							}
+						}
+
+						p:nth-child(2) {
+							font-size: vw(31px);
+							font-family: LeagueSpartanBold;
+							font-weight: bold;
+							color: #FFFFFF;
+							line-height: vw(27px);
+
+							span {
+								font-size: vw(31px);
+								font-family: LeagueSpartanBold;
+								font-weight: bold;
+								color: #FFFFFF;
+								line-height: vw(27px);
+							}
+						}
+					}
+				}
 			}
 
 			label {
@@ -1071,6 +1176,111 @@ $product-font-color: #5D5D5D;
 				display: grid;
 				grid-template-columns: repeat(3, 1fr);
 				gap: 25px;
+
+				input[type=radio]:checked+label:has(.remaining) {
+					border: 2px solid #f0b42d;
+				}
+
+				label:nth-of-type(1) {
+					background: url('./pc-christmas.png') no-repeat center/500px 150px;
+					position: relative;
+					border-radius: 0px;
+					grid-column: 1/4;
+					width: 100%;
+					flex-direction: row;
+					justify-content: flex-start;
+					padding: 0px;
+					width: 500px;
+					height: 150px;
+					border-radius: 12px;
+					border-color: #e9e0cf;
+
+					.option-title {
+						display: none;
+					}
+
+					.popup-desc {
+						display: none;
+					}
+
+					.img-wrapper {
+						width: 148px;
+						height: 146px;
+						background: #FFFFFF;
+						border-radius: 10px;
+						display: flex;
+						position: absolute;
+						left: 0px;
+						top: 0px;
+
+						img {
+							width: 102px;
+							height: 103px;
+							object-fit: contain;
+							margin: auto;
+						}
+					}
+
+					.remaining {
+						position: absolute;
+						font-size: 16px;
+						font-family: LeagueSpartanBold;
+						font-weight: bold;
+						color: #E9E1CF;
+						line-height: 23px;
+						left: 168px;
+						bottom: 13px;
+
+						span {
+							margin-left: 5px;
+						}
+					}
+
+					.option-price {
+						position: absolute;
+						right: 15px;
+						bottom: 18px;
+
+						p {
+							text-align: right;
+						}
+
+						p:nth-child(1) {
+							font-size: 16px;
+							font-family: LeagueSpartan;
+							font-weight: 400;
+							text-decoration: line-through;
+							color: #FFFFFF;
+							line-height: 15px;
+							margin-bottom: 10px;
+
+							span {
+								font-size: 16px;
+								font-family: LeagueSpartan;
+								font-weight: 400;
+								text-decoration: line-through;
+								color: #FFFFFF;
+								line-height: 15px;
+							}
+						}
+
+						p:nth-child(2) {
+							font-size: 23px;
+							font-family: LeagueSpartanBold;
+							font-weight: bold;
+							color: #FFFFFF;
+							line-height: 21px;
+
+							span {
+								font-size: 23px;
+								font-family: LeagueSpartanBold;
+								font-weight: bold;
+								color: #FFFFFF;
+								line-height: 21px;
+							}
+						}
+					}
+				}
 			}
 
 			.product-form__input input[type=radio]:checked+label {
@@ -1086,6 +1296,13 @@ $product-font-color: #5D5D5D;
 				margin: 0px;
 				border: none;
 				border: 2px solid transparent;
+				width: 150px;
+				height: 150px;
+
+				&::before {
+					display: none;
+				}
+
 				// background: #d5cabe;
 
 				.option-title {
@@ -1098,11 +1315,9 @@ $product-font-color: #5D5D5D;
 				}
 
 				img {
-					width: 90px;
-					height: 90px;
+					width: 103px;
+					height: 103px;
 					object-fit: contain;
-					margin: 0px auto;
-					margin-bottom: 10px;
 				}
 
 				p {
