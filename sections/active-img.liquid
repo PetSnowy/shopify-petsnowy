@@ -1,7 +1,7 @@
 {{ 'active-img.css' | asset_url | stylesheet_tag }}
 
 <div class="active-img">
-  <div class="page-width">
+  <product-inventory class="page-width">
     <picture>
       <source media="(min-width: 901px)" data-srcset="{{ section.settings.pc_image | img_url: 'master' }}">
       <source media="(max-width: 900px)" data-srcset="{{ section.settings.mb_image | img_url: 'master' }}">
@@ -14,7 +14,7 @@
     <a class="btn" href="{{ section.settings.btn_link }}" target="_blank">
       <span>{{ section.settings.btn_text }}</span>
     </a>
-  </div>
+  </product-inventory>
 </div>
 
 {% schema %}
