@@ -493,7 +493,7 @@ $product-font-color: #5D5D5D;
 
 				input[type=radio]:checked+label:has(.remaining) {
 					border: vw(4px) solid #f0b42d;
-					background-color: transparent;
+					background: url('./question_mark.png') no-repeat center/cover;
 				}
 
 				label:nth-of-type(1) {
