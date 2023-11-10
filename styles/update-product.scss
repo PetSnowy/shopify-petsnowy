@@ -493,6 +493,7 @@ $product-font-color: #5D5D5D;
 
 				input[type=radio]:checked+label:has(.remaining) {
 					border: vw(4px) solid #f0b42d;
+					background-color: transparent;
 				}
 
 				label:nth-of-type(1) {
