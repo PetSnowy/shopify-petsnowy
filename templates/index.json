@@ -2,6 +2,7 @@
   "sections": {
     "ec8a39b8-e172-48e1-97d9-303c35a74add": {
       "type": "custom-banner",
+      "disabled": true,
       "settings": {
         "vdio_img": "shopify:\/\/shop_images\/1_0175_2.jpg",
         "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6a66fde5ecf844cb8c4260f81e879f8d.mp4",
