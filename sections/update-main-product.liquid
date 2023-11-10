@@ -637,7 +637,7 @@
                   </template>
                 </pickup-availability>
               </div>
-              <span id="product_price" style="display: none;">{{ product.price | money }}</span>
+              {% comment %} <span id="product_price" style="display: none;">{{ product.price | money }}</span> {% endcomment %}
               <!-- product price -->
               {% form 'product', product %}
                 <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
