@@ -57,6 +57,34 @@
 	}
 }
 
+@mixin faqPlay($w, $h, $active) {
+	display: inline-flex;
+	align-items: center;
+	line-height: normal;
+
+	@if $active==1 {
+		&::before {
+			content: '';
+			display: block;
+			width: $w;
+			height: $h;
+			background: url('./FAQ_play.png') no-repeat center/cover;
+			margin-right: 5px;
+		}
+	}
+
+	@else {
+		&::after {
+			content: '';
+			display: block;
+			width: $w;
+			height: $h;
+			background: url('./FAQ_play.png') no-repeat center/cover;
+			margin-left: 5px;
+		}
+	}
+}
+
 @media screen and (max-width: 900px) {
 	.faq_qa_main {
 		padding-top: vw(20px);
@@ -64,6 +92,14 @@
 
 		ul {
 			padding-left: vw(40px);
+		}
+
+		.video-click {
+			@include faqPlay(vw(20px), vw(10px), 1)
+		}
+
+		.option:has(.video-click) .ques_title h3 {
+			@include faqPlay(vw(20px), vw(20px), 0)
 		}
 
 		.video-popup {
@@ -261,6 +297,14 @@
 
 		ul {
 			padding-left: 20px;
+		}
+
+		.video-click {
+			@include faqPlay(10px, 10px, 1)
+		}
+
+		.option:has(.video-click) .ques_title h3 {
+			@include faqPlay(20px, 20px, 0)
 		}
 
 		.video-popup {
