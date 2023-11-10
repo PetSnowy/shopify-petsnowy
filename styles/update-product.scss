@@ -493,7 +493,7 @@ $product-font-color: #5D5D5D;
 
 				input[type=radio]:checked+label:has(.remaining) {
 					border: vw(4px) solid #f0b42d;
-					background: url('./question_mark.png') no-repeat center/cover;
+					background: url('./mb-christmas-1.png') no-repeat center/vw(640px) vw(207px);
 				}
 
 				label:nth-of-type(1) {
@@ -542,7 +542,6 @@ $product-font-color: #5D5D5D;
 						font-family: LeagueSpartanBold;
 						font-weight: bold;
 						color: #E9E1CF;
-						line-height: vw(40px);
 						position: absolute;
 						left: vw(220px);
 						bottom: vw(23px);
