@@ -6,6 +6,7 @@ $product-price-color:#818181;
 $product-title-color:#504030;
 $product-icon-color: #d75f23;
 $product-font-color: #5D5D5D;
+$product-select-color:#f0b42d;
 @import "pxToVw.scss";
 
 #product-indiegogo {
@@ -494,12 +495,12 @@ $product-font-color: #5D5D5D;
 				width: vw(680px);
 
 				input[type=radio]:checked+label:has(.remaining) {
-					border: vw(4px) solid #f0b42d;
-					background: url('./mb-christmas-1.png') no-repeat center/vw(680px) vw(207px);
+					border: vw(4px) solid $product-select-color;
+					background: url('./mb-christmas.png') no-repeat center/vw(680px) vw(207px);
 				}
 
 				label:last-child {
-					background: url('./mb-christmas-1.png') no-repeat center/vw(680px) vw(207px);
+					background: url('./mb-christmas.png') no-repeat center/vw(680px) vw(207px);
 					position: relative;
 					border-radius: 0px;
 					grid-column: 1/4;
@@ -648,7 +649,7 @@ $product-font-color: #5D5D5D;
 			}
 
 			.product-form__input input[type=radio]:checked+label {
-				border-color: $product-icon-color;
+				border-color: $product-select-color;
 				background: #ffffff;
 				color: #616161;
 			}
@@ -1186,7 +1187,7 @@ $product-font-color: #5D5D5D;
 				gap: 25px;
 
 				input[type=radio]:checked+label:has(.remaining) {
-					border: 2px solid #f0b42d;
+					border: 2px solid $product-select-color;
 				}
 
 				label:last-child {
@@ -1297,7 +1298,7 @@ $product-font-color: #5D5D5D;
 			}
 
 			.product-form__input input[type=radio]:checked+label {
-				border-color: $product-icon-color;
+				border-color: $product-select-color;
 			}
 
 			label {

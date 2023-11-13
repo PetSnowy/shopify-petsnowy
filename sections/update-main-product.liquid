@@ -399,10 +399,10 @@
                                       </span>
                                     </span>
 
-                                    <div class="option-price">
+                                    {% comment %} <div class="option-price">
                                       <p>{{ variant.compare_at_price | money }}</p>
                                       <p>{{ price | money }}</p>
-                                    </div>
+                                    </div> {% endcomment %}
                                   {%- endif %}
                                 {% endif %}
                               {% endfor %}
