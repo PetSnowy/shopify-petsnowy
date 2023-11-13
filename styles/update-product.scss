@@ -1367,7 +1367,7 @@ $product-select-color:#f0b42d;
 				}
 
 				&:has(input[type="checkbox"]:checked) {
-					border-color: $product-icon-color;
+					border-color: $product-select-color;
 				}
 
 				.quantity_addons {
