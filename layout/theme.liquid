@@ -504,7 +504,6 @@
         var width = masthead.clientWidth;
         var height = masthead.clientHeight;
         var i = 0;
-        var active = false;
 
         function onResize() {
           width = masthead.clientWidth;
@@ -513,10 +512,7 @@
           canvas.height = height;
           ctx.fillStyle = '#FFF';
 
-          var wasActive = active;
-          active = width > 600;
-
-          if (!wasActive && active) requestAnimFrame(update);
+          requestAnimFrame(update);
         }
 
         var Snowflake = function () {
@@ -551,8 +547,6 @@
 
         function update() {
           ctx.clearRect(0, 0, width, height);
-
-          if (!active) return;
 
           for (i = 0; i < COUNT; i++) {
             snowflake = snowflakes[i];
