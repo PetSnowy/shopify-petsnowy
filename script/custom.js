@@ -15,10 +15,13 @@ $(document).ready(function () {
 	const currency = currencyTemp[0]?.innerHTML || currencyTemp[0]?.innerText
 	const monetaryUnit = currency && currency.replace(/[\d.]/g, '')
 
+	const paddingTop = getComputedStyle(document.documentElement).getPropertyValue('--main-padding-top')
+
 	$(".slide_arrow svg").click(function () {
-		const paddingTop = window.getComputedStyle(document.querySelector('main')).getPropertyValue('padding-top');
-		document.querySelector('#product-indiegogo') && document.documentElement.style.scrollPaddingTop = `${parseInt(paddingTop)}px`;
-		(document.querySelector('.active-img') || document.querySelector('#product-indiegogo')).scrollIntoView({ behavior: "smooth", block: "start" })
+		const el = document.querySelector('.active-img') || document.querySelector('#product-indiegogo')
+		document.documentElement.style.scrollPaddingTop = paddingTop;
+		console.log(paddingTop);
+		el.scrollIntoView({ behavior: "smooth", block: "start" })
 	});
 
 	function onCloseButtonClick(event) {
