@@ -16,6 +16,8 @@ $(document).ready(function () {
 	const monetaryUnit = currency && currency.replace(/[\d.]/g, '')
 
 	$(".slide_arrow svg").click(function () {
+		const paddingTop = window.getComputedStyle(document.querySelector('main')).getPropertyValue('padding-top');
+		document.querySelector('#product-indiegogo') && document.documentElement.style.scrollPaddingTop = `${parseInt(paddingTop)}px`;
 		(document.querySelector('.active-img') || document.querySelector('#product-indiegogo')).scrollIntoView({ behavior: "smooth", block: "start" })
 	});
 
