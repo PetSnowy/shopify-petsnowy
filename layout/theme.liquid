@@ -528,7 +528,7 @@
         Snowflake.prototype.reset = function () {
           this.x = Math.random() * width;
           this.y = Math.random() * -height;
-          this.vy = 1 + Math.random() * 3;
+          this.vy = Math.random();
           this.vx = 0.5 - Math.random();
           this.r = 1 + Math.random() * 2;
           this.o = 0.5 + Math.random() * 0.5;
@@ -574,7 +574,7 @@
             window.webkitRequestAnimationFrame ||
             window.mozRequestAnimationFrame ||
             function (callback) {
-              window.setTimeout(callback, 1000 / 60);
+              window.setTimeout(callback, 10000 / 60);
             }
           );
         })();
