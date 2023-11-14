@@ -6083,6 +6083,15 @@ $item: 5;
 			margin-top: 0px;
 			margin-bottom: 94px;
 		}
+
+		.custom-banr-main {
+			video {
+				width: 100%;
+				height: 100vh;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
 	}
 
 	@media screen and (max-width: 900px) {
@@ -6122,6 +6131,13 @@ $item: 5;
 #MainContentProduct .custom-banr-main {
 	canvas {
 		top: var(--main-padding-top) !important;
+	}
+
+	@media screen and (min-width: 901px) {
+		video {
+			width: 100%;
+			height: calc(100vh - var(--main-padding-top));
+		}
 	}
 
 	@media screen and (max-width: 900px) {
