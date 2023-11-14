@@ -3121,6 +3121,7 @@ a.headr_odr_now svg path {
 	bottom: 30%;
 	left: 50%;
 	transform: translate(-50%, 0%);
+	z-index: 1;
 }
 
 .slide_arrow {
@@ -4862,12 +4863,7 @@ video.mob_video {
 	object-fit: cover;
 }
 
-.custom-banr-main.about_video_section .baner_contain {
-	left: 0;
-	transform: none;
-	text-align: left;
-	top: 40%;
-}
+
 
 .custom-banr-main.about_video_section .baner_contain h1.cstm_banner_title,
 .custom-banr-main.about_video_section .baner_contain h1.cstm_banner_title span {

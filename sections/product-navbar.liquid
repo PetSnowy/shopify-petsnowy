@@ -39,7 +39,7 @@
 
       line.style.width = list[0].offsetWidth + 'px';
 
-      document.documentElement.style.scrollPaddingTop = `${tempHeight + parseInt(paddingTop)}px`;
+      document.documentElement.style.scrollPaddingTop = `${parseInt(paddingTop)}px`;
 
       window.addEventListener('scroll', () => {
         navbar.style.top = paddingTop;
@@ -68,7 +68,10 @@
       });
 
       list.forEach((item, index) => {
-        item.addEventListener('click', () => productEl[index].scrollIntoView({ behavior: 'instant', block: 'start' }));
+        item.addEventListener('click', () => {
+          document.documentElement.style.scrollPaddingTop = `${tempHeight + parseInt(paddingTop)}px`;
+          productEl[index].scrollIntoView({ behavior: 'instant', block: 'start' });
+        });
       });
     }
     window.addEventListener('resize', () => init());
