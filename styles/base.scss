@@ -6127,5 +6127,5 @@ html:has(#MainContentIndex) {
 // canvas 下雪
 
 #MainContentProduct .custom-banr-main canvas {
-	top: var(--main-padding-top);
+	top: var(--main-padding-top) !important;
 }
