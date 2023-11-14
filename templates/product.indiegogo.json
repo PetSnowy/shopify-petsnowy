@@ -1,5 +1,18 @@
 {
   "sections": {
+    "b87a6842-9845-4479-a31e-c0367787eb18": {
+      "type": "banner-video",
+      "settings": {
+        "vdio_img": "shopify:\/\/shop_images\/video-banner-litter-box.jpg",
+        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/9922252ba3cd4c79aa3c23c6aeb5e46b.mp4",
+        "mobvdio_img": "shopify:\/\/shop_images\/video-banner-litter-box.jpg",
+        "mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/9922252ba3cd4c79aa3c23c6aeb5e46b.mp4",
+        "heading": "",
+        "sub_heading": "",
+        "btn_text": "",
+        "btn_url": ""
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -522,6 +535,7 @@
     }
   },
   "order": [
+    "b87a6842-9845-4479-a31e-c0367787eb18",
     "main",
     "b795a7b8-a6ac-4651-83cd-1e8d0fdcfc8d",
     "14dad76e-4e1a-456f-bcf0-cdeafe2ea7f6",
