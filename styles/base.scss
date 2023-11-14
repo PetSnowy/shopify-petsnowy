@@ -6119,6 +6119,14 @@ $item: 5;
 
 // canvas 下雪
 
-#MainContentProduct .custom-banr-main canvas {
-	top: var(--main-padding-top) !important;
+#MainContentProduct .custom-banr-main {
+	canvas {
+		top: var(--main-padding-top) !important;
+	}
+
+	@media screen and (max-width: 900px) {
+		.slide_arrow {
+			display: none;
+		}
+	}
 }
