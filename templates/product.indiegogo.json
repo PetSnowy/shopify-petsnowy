@@ -2,6 +2,7 @@
   "sections": {
     "b87a6842-9845-4479-a31e-c0367787eb18": {
       "type": "banner-video",
+      "disabled": true,
       "settings": {
         "vdio_img": "shopify:\/\/shop_images\/video-banner-litter-box.jpg",
         "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/381a1235a3c04d6b8786c623dc6c7eea.mp4",
