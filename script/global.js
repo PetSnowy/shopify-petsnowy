@@ -6,6 +6,31 @@ function getFocusableElements(container) {
 	);
 }
 
+class ActiveBar extends HTMLElement {
+	constructor() {
+		super()
+		this.time = this.countDown(this.dataset.times)
+	}
+
+	countDown(time) {
+		let nowTime = +new Date();
+		let inputTime = +new Date(time);
+		let times = (inputTime - nowTime) / 1000;
+		let d = parseInt(times / 60 / 60 / 24);
+		d = d < 10 ? '0' + d : d;
+		let h = parseInt(times / 60 / 60 % 24);
+		h = h < 10 ? '0' + h : h;
+		let m = parseInt(times / 60 % 60);
+		m = m < 10 ? '0' + m : m;
+		let s = parseInt(times % 60);
+		s = s < 10 ? '0' + s : s;
+		return d + 'day' + h + 'h' + m + 'm' + s + 's';
+	}
+}
+
+customElements.define('active-bar', ActiveBar)
+
+
 class ProductInventory extends HTMLElement {
 	constructor() {
 		super();
