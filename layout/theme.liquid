@@ -512,7 +512,7 @@
           canvas.height = height;
           ctx.fillStyle = '#FFF';
 
-          requestAnimFrame(update);
+          // requestAnimFrame(update);
         }
 
         var Snowflake = function () {
@@ -582,13 +582,7 @@
 
         // 更新canvas 尺寸
 
-        function updateSize() {
-          width = masthead.clientWidth;
-          height = masthead.clientHeight;
-          canvas.width = width;
-          canvas.height = height;
-        }
-        window.addEventListener('resize', updateSize, false);
+        window.addEventListener('resize', onResize, false);
 
         masthead.appendChild(canvas);
       })();
