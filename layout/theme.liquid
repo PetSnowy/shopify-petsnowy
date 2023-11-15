@@ -409,13 +409,23 @@
     <script src="{{ 'affirmShopify.js' | asset_url }}" defer="defer"></script>
 
     <script>
-      function mainTop() {
-        const newHeaderHeight = document.querySelector('.header-wrapper').offsetHeight;
+      const targetElement = document.querySelector('sticky-header');
+
+      function mainTop(newHeaderHeight = targetElement.offsetHeight) {
         const main = document.documentElement;
         main.style.setProperty('--main-padding-top', `${newHeaderHeight}px`);
       }
       mainTop();
       window.addEventListener('resize', mainTop, { passive: true });
+
+      const observer = new ResizeObserver((entries) => {
+        for (const entry of entries) {
+          const height = entry.contentRect.height;
+          mainTop(height);
+        }
+      });
+
+      observer.observe(targetElement);
 
       function handleMonitorVideo() {
         const videoLink = document.querySelector('.video_link');

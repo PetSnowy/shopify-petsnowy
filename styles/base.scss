@@ -2191,7 +2191,7 @@ input[type="checkbox"] {
 	width: 100%;
 	background-color: #fff;
 	z-index: 999;
-	height: 90px;
+	height: fit-content;
 }
 
 .header-wrapper--border-bottom {
@@ -5705,9 +5705,14 @@ product-recommendation {
 	}
 
 	.header-wrapper {
-		height: vw(105px);
 		display: flex;
 		align-items: center;
+		height: fit-content;
+		flex-direction: column;
+
+		header {
+			height: vw(105px);
+		}
 	}
 
 	.SNOW⁺-Roly-Poly-Cat-Toy {
@@ -5823,6 +5828,7 @@ $item: 5;
 	#update-header {
 		display: flex;
 		justify-content: space-between;
+		height: 90px;
 
 		.header__inline-menu a {
 			padding: 0px;
@@ -5834,9 +5840,10 @@ $item: 5;
 	}
 
 	.header-wrapper {
-		height: 90px;
+		height: fit-content;
 		display: flex;
 		align-items: center;
+		flex-direction: column;
 
 		header-menu summary {
 			padding-right: 25px;
@@ -6150,5 +6157,8 @@ $item: 5;
 // ActiveBar style 
 
 active-bar {
-	display: block;
+	display: flex;
+	height: 100px;
+	background-color: red;
+	width: 100%;
 }
