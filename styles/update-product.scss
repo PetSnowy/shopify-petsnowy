@@ -1092,6 +1092,9 @@ $product-select-color:#f0b42d;
 			width: 640px;
 			max-width: 640px;
 			overflow: hidden;
+			height: fit-content;
+			position: sticky;
+			top: calc(var(--main-padding-top) + 40px);
 
 			modal-opener {
 				border-radius: 25px;
