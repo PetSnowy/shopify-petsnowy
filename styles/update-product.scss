@@ -6,6 +6,7 @@ $product-price-color:#818181;
 $product-title-color:#504030;
 $product-icon-color: #d75f23;
 $product-font-color: #5D5D5D;
+$product-select-color:#f0b42d;
 @import "pxToVw.scss";
 
 #product-indiegogo {
@@ -189,7 +190,7 @@ $product-font-color: #5D5D5D;
 		}
 
 		.price-wrapper {
-			margin-bottom: vw(20px);
+			margin-bottom: vw(15px);
 		}
 
 		.price {
@@ -227,7 +228,7 @@ $product-font-color: #5D5D5D;
 		}
 
 		.grid__item.product__media-wrapper {
-			margin-bottom: vw(50px);
+			margin-bottom: vw(25px);
 		}
 
 		.product-default {
@@ -241,9 +242,10 @@ $product-font-color: #5D5D5D;
 				height: auto;
 				background-color: #ffffff;
 				border-radius: vw(25px);
-				overflow: hidden;
+				overflow: auto;
 				padding: vw(40px);
 				box-sizing: border-box;
+				height: vw(1200px);
 
 				.popup-content {
 					flex: 1;
@@ -489,15 +491,16 @@ $product-font-color: #5D5D5D;
 			.select-option {
 				display: grid;
 				grid-template-columns: repeat(3, 1fr);
-				gap: vw(20px);
+				gap: vw(40px);
+				width: vw(680px);
 
 				input[type=radio]:checked+label:has(.remaining) {
-					border: vw(4px) solid #f0b42d;
-					background: url('./mb-christmas-1.png') no-repeat center/vw(640px) vw(207px);
+					border: vw(4px) solid $product-select-color;
+					background: url('./mb-christmas.png') no-repeat center/vw(680px) vw(207px);
 				}
 
-				label:nth-of-type(1) {
-					background: url('./mb-christmas-1.png') no-repeat center/vw(640px) vw(207px);
+				label:last-child {
+					background: url('./mb-christmas.png') no-repeat center/vw(680px) vw(207px);
 					position: relative;
 					border-radius: 0px;
 					grid-column: 1/4;
@@ -505,7 +508,7 @@ $product-font-color: #5D5D5D;
 					flex-direction: row;
 					justify-content: flex-start;
 					padding: 0px;
-					width: vw(640px);
+					width: vw(680px);
 					height: vw(207px);
 					border-radius: vw(20px);
 					border-color: #e9e0cf;
@@ -516,6 +519,10 @@ $product-font-color: #5D5D5D;
 
 					.option-title {
 						display: none;
+					}
+
+					.question_mark {
+						left: vw(150px);
 					}
 
 					.img-wrapper {
@@ -546,10 +553,7 @@ $product-font-color: #5D5D5D;
 						left: vw(220px);
 						bottom: vw(23px);
 						line-height: normal;
-
-						span {
-							margin-left: vw(8px);
-						}
+						letter-spacing: vw(1.4px);
 					}
 
 					.option-price {
@@ -642,7 +646,7 @@ $product-font-color: #5D5D5D;
 			}
 
 			.product-form__input input[type=radio]:checked+label {
-				border-color: $product-icon-color;
+				border-color: $product-select-color;
 				background: #ffffff;
 				color: #616161;
 			}
@@ -1180,11 +1184,11 @@ $product-font-color: #5D5D5D;
 				gap: 25px;
 
 				input[type=radio]:checked+label:has(.remaining) {
-					border: 2px solid #f0b42d;
+					border: 2px solid $product-select-color;
 				}
 
-				label:nth-of-type(1) {
-					background: url('./pc-christmas.png') no-repeat center/500px 150px;
+				label:last-child {
+					background: url('./pc-christmas-1.png') no-repeat center/500px 150px;
 					position: relative;
 					border-radius: 0px;
 					grid-column: 1/4;
@@ -1201,13 +1205,17 @@ $product-font-color: #5D5D5D;
 						display: none;
 					}
 
+					.question_mark {
+						left: 120px;
+					}
+
 					.popup-desc {
 						display: none;
 					}
 
 					.img-wrapper {
-						width: 148px;
-						height: 146px;
+						width: 150px;
+						height: 147px;
 						background: #FFFFFF;
 						border-top-right-radius: 10px;
 						border-bottom-right-radius: 10px;
@@ -1233,10 +1241,6 @@ $product-font-color: #5D5D5D;
 						line-height: 23px;
 						left: 168px;
 						bottom: 13px;
-
-						span {
-							margin-left: 5px;
-						}
 					}
 
 					.option-price {
@@ -1287,7 +1291,7 @@ $product-font-color: #5D5D5D;
 			}
 
 			.product-form__input input[type=radio]:checked+label {
-				border-color: $product-icon-color;
+				border-color: $product-select-color;
 			}
 
 			label {
@@ -1363,7 +1367,7 @@ $product-font-color: #5D5D5D;
 				}
 
 				&:has(input[type="checkbox"]:checked) {
-					border-color: $product-icon-color;
+					border-color: $product-select-color;
 				}
 
 				.quantity_addons {

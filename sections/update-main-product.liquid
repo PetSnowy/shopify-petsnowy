@@ -160,13 +160,6 @@
                   price_class: 'price--large'
                 -%}
               </div>
-              <span id="product_price" style="display: none;">{{ product.price | money }}</span>
-              <!-- product price -->
-              {% form 'product', product %}
-                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                {{ form | payment_terms }}
-              {% endform %}
-
               {% comment %}
                 {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                   <div class="product__tax caption rte">
@@ -400,16 +393,16 @@
                                   </p>
                                   {% if variant.id == 47336754151746 %}
                                     <span class="remaining" style="font-weight: 900;">
-                                      Remaing Gifts:
+                                      Remaining Gifts:
                                       <span style="color: #F0B42D;">
                                         {{ variant.inventory_quantity }}
                                       </span>
                                     </span>
 
-                                    <div class="option-price">
-                                      <p>{{ price | money }}</p>
+                                    {% comment %} <div class="option-price">
                                       <p>{{ variant.compare_at_price | money }}</p>
-                                    </div>
+                                      <p>{{ price | money }}</p>
+                                    </div> {% endcomment %}
                                   {%- endif %}
                                 {% endif %}
                               {% endfor %}
@@ -644,6 +637,12 @@
                   </template>
                 </pickup-availability>
               </div>
+              {% comment %} <span id="product_price" style="display: none;">{{ product.price | money }}</span> {% endcomment %}
+              <!-- product price -->
+              {% form 'product', product %}
+                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                {{ form | payment_terms }}
+              {% endform %}
             {% when 'checkout' %}
               <button
                 class="checkout-button"

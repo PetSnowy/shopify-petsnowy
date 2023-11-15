@@ -4,9 +4,9 @@
       "type": "custom-banner",
       "settings": {
         "vdio_img": "shopify:\/\/shop_images\/1_0175_2.jpg",
-        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6a66fde5ecf844cb8c4260f81e879f8d.mp4",
+        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/85c7ad8fc6e74e3fa6f8961f103ba778.mp4",
         "mobvdio_img": "shopify:\/\/shop_images\/banner-video-mb.jpg",
-        "mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/befa39c0bb4e4d188d8a7107b4739431.mp4",
+        "mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/1746fd8ffc9248a78d697693f1f94958.mp4",
         "heading": "meet the SNOW<sup><sup>+<\/sup><\/sup>",
         "url": "#",
         "padding_top": 0,
@@ -15,7 +15,6 @@
     },
     "444f4270-414d-47b5-824b-913682bf49c0": {
       "type": "active-img",
-      "disabled": true,
       "settings": {
         "pc_image": "shopify:\/\/shop_images\/Christmas_pc.png",
         "mb_image": "shopify:\/\/shop_images\/Christmas_mb.png",
@@ -25,6 +24,7 @@
     },
     "ab5be67e-7d46-46f0-9f1e-56a5f5953c07": {
       "type": "product-safety",
+      "disabled": true,
       "settings": {
         "image_title": "shopify:\/\/shop_images\/bf.png",
         "mb_image_title": "shopify:\/\/shop_images\/xmas.png",

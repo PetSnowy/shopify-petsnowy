@@ -3121,6 +3121,7 @@ a.headr_odr_now svg path {
 	bottom: 30%;
 	left: 50%;
 	transform: translate(-50%, 0%);
+	z-index: 1;
 }
 
 .slide_arrow {
@@ -3128,6 +3129,7 @@ a.headr_odr_now svg path {
 	bottom: 15%;
 	left: 50%;
 	transform: translate(-50%);
+	z-index: 1;
 }
 
 h1.cstm_banner_title span {
@@ -4861,12 +4863,7 @@ video.mob_video {
 	object-fit: cover;
 }
 
-.custom-banr-main.about_video_section .baner_contain {
-	left: 0;
-	transform: none;
-	text-align: left;
-	top: 40%;
-}
+
 
 .custom-banr-main.about_video_section .baner_contain h1.cstm_banner_title,
 .custom-banr-main.about_video_section .baner_contain h1.cstm_banner_title span {
@@ -6070,9 +6067,6 @@ $item: 5;
 	width: 100px !important;
 }
 
-html:has(#MainContentIndex) {
-	scroll-padding-top: var(--main-padding-top);
-}
 
 // 首页更新
 #MainContentIndex {
@@ -6089,17 +6083,18 @@ html:has(#MainContentIndex) {
 			margin-top: 0px;
 			margin-bottom: 94px;
 		}
+
+		.custom-banr-main {
+			video {
+				width: 100%;
+				height: 100vh;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
 	}
 
 	@media screen and (max-width: 900px) {
-		.video-scroll-content {
-			width: vw(148px);
-
-			img {
-				width: vw(148px);
-			}
-		}
-
 		.video-scroll-wrapper {
 			margin: 0px;
 		}
@@ -6126,6 +6121,28 @@ html:has(#MainContentIndex) {
 	.price {
 		span {
 			color: #fff;
+		}
+	}
+}
+
+
+// canvas 下雪
+
+#MainContentProduct .custom-banr-main {
+	canvas {
+		top: var(--main-padding-top) !important;
+	}
+
+	@media screen and (min-width: 901px) {
+		video {
+			width: 100%;
+			height: calc(100vh - var(--main-padding-top));
+		}
+	}
+
+	@media screen and (max-width: 900px) {
+		.slide_arrow {
+			display: none;
 		}
 	}
 }

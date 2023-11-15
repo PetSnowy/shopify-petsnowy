@@ -57,6 +57,40 @@
 	}
 }
 
+@mixin faqPlay($w, $h, $active) {
+	display: inline-flex;
+	line-height: normal;
+	align-items: baseline;
+
+	@if $active==1 {
+		&::before {
+			content: '';
+			display: block;
+			width: $w;
+			height: $h;
+			background: url('./FAQ_play.png') no-repeat center/cover;
+			margin-right: 5px;
+			flex-shrink: 0;
+			position: absolute;
+			left: 0px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	@else {
+		&::after {
+			content: '';
+			display: block;
+			width: $w;
+			height: $h;
+			background: url('./FAQ_play.png') no-repeat center/cover;
+			margin-left: 5px;
+			flex-shrink: 0;
+		}
+	}
+}
+
 @media screen and (max-width: 900px) {
 	.faq_qa_main {
 		padding-top: vw(20px);
@@ -64,6 +98,16 @@
 
 		ul {
 			padding-left: vw(40px);
+		}
+
+		.video-click {
+			position: relative;
+			padding-left: vw(30px);
+			@include faqPlay(vw(20px), vw(20px), 1)
+		}
+
+		.option:has(.video-click) .ques_title h3 {
+			@include faqPlay(vw(30px), vw(30px), 0)
 		}
 
 		.video-popup {
@@ -261,6 +305,16 @@
 
 		ul {
 			padding-left: 20px;
+		}
+
+		.video-click {
+			position: relative;
+			padding-left: 17px;
+			@include faqPlay(12px, 12px, 1)
+		}
+
+		.option:has(.video-click) .ques_title h3 {
+			@include faqPlay(20px, 20px, 0)
 		}
 
 		.video-popup {

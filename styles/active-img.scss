@@ -1,11 +1,6 @@
 @import "pxToVw.scss";
 
-.Index.itg_overlap_header {
-	background-color: rgb(35, 31, 32) !important;
-}
-
 .active-img {
-	padding-top: var(--main-padding-top);
 
 	.page-width {
 		position: relative;
@@ -44,6 +39,7 @@
 
 		.page-width {
 			padding: 70px 0px;
+			display: block;
 		}
 
 		img {
@@ -76,7 +72,13 @@
 		overflow: hidden;
 
 		.page-width {
-			padding: 0px;
+			padding-top: vw(70px);
+			padding-bottom: vw(70px);
+			display: block;
+		}
+
+		img {
+			border-radius: vw(20px);
 		}
 
 		a {
@@ -85,7 +87,7 @@
 			background: #E9E1CF;
 			border-radius: vw(11px);
 			left: vw(334px);
-			bottom: vw(74px);
+			bottom: vw(96px);
 			font-size: vw(23px);
 
 			span {
