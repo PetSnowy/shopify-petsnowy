@@ -134,6 +134,7 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Save up to 30% During Prime Day",
               "text_alignment": "center",
