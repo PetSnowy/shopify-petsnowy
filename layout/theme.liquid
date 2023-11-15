@@ -418,14 +418,14 @@
       mainTop();
       window.addEventListener('resize', mainTop, { passive: true });
 
-      const observer = new ResizeObserver((entries) => {
+      const resizeObserver = new ResizeObserver((entries) => {
         for (const entry of entries) {
           const height = entry.contentRect.height;
           mainTop(height);
         }
       });
 
-      observer.observe(targetElement);
+      resizeObserver.observe(targetElement);
 
       function handleMonitorVideo() {
         const videoLink = document.querySelector('.video_link');
