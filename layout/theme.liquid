@@ -567,7 +567,6 @@
           requestAnimFrame(update);
         }
 
-        // shim layer with setTimeout fallback
         window.requestAnimFrame = (function () {
           return (
             window.requestAnimationFrame ||
@@ -580,7 +579,16 @@
         })();
 
         onResize();
-        // window.addEventListener('resize', onResize, false);
+
+        // 更新canvas 尺寸
+
+        function updateSize() {
+          width = masthead.clientWidth;
+          height = masthead.clientHeight;
+          canvas.width = width;
+          canvas.height = height;
+        }
+        window.addEventListener('resize', updateSize, false);
 
         masthead.appendChild(canvas);
       })();
