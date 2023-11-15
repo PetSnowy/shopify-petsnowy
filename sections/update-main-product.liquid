@@ -391,7 +391,7 @@
                                   <p class="option-title">
                                     {{ variant.title }}
                                   </p>
-                                  {% if variant.id == 47336754151746 %}
+                                  {% comment %} {% if variant.id == 47336754151746 %}
                                     <div class="grab">
                                       <i></i>
                                       <span>Grab Now!</span>
@@ -407,7 +407,7 @@
                                         <p>{{ variant.compare_at_price | money }}</p>
                                         <p>{{ price | money }}</p>
                                       </div>
-                                  {%- endif %}
+                                  {%- endif %} {% endcomment %}
                                 {% endif %}
                               {% endfor %}
                             </label>
