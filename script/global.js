@@ -9,7 +9,36 @@ function getFocusableElements(container) {
 class ActiveBar extends HTMLElement {
 	constructor() {
 		super()
-		this.time = this.countDown(this.dataset.times)
+		this.timer = null
+	}
+	connectedCallback() {
+		const height = this.offsetHeight
+		this.setTimer()
+
+		this.scroll = window.addEventListener('scroll', () => {
+
+			const scrollTop = document.body.scrollTop || document.documentElement.scrollTop
+
+			if (scrollTop > 0) {
+				this.style.height = '0px'
+				clearInterval(this.timer)
+			} else {
+				this.style.height = height
+				this.setTimer()
+			}
+		}, { passive: true })
+
+	}
+
+	disconnectedCallback() {
+		window.removeEventListener('scroll', this.scroll)
+	}
+
+	setTimer() {
+		const text = this.querySelector('.time')
+		this.timer = setInterval(() => {
+			text.innerHTML = this.countDown(this.dataset.times)
+		}, 1000)
 	}
 
 	countDown(time) {

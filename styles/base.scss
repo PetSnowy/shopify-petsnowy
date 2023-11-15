@@ -6158,7 +6158,8 @@ $item: 5;
 
 active-bar {
 	display: flex;
-	height: 100px;
 	background-color: red;
 	width: 100%;
+	transition: all 0.3s ease;
+	overflow: hidden;
 }
