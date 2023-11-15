@@ -21,8 +21,7 @@
         document.querySelector('.video-scroll-wrapper').offsetHeight +
         document.querySelector('.custom-banr-main').offsetHeight;
 
-      const paddingTop = window.getComputedStyle(document.querySelector('main')).getPropertyValue('padding-top');
-
+      let paddingTop = null;
       const line = document.querySelector('.product-main .line');
 
       const details = document.querySelector('.product-litter');
@@ -41,6 +40,8 @@
       line.style.width = list[0].offsetWidth + 'px';
 
       window.addEventListener('scroll', () => {
+        paddingTop = getComputedStyle(document.documentElement).getPropertyValue('--main-padding-top');
+
         navbar.style.top = paddingTop;
 
         const scollTop = document.documentElement.scrollTop || document.body.scrollTop;

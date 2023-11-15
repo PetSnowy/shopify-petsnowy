@@ -12,18 +12,17 @@ class ActiveBar extends HTMLElement {
 		this.timer = null
 	}
 	connectedCallback() {
-		const height = this.offsetHeight
 		this.setTimer()
-
+		const height = this.offsetHeight
 		this.scroll = window.addEventListener('scroll', () => {
-
 			const scrollTop = document.body.scrollTop || document.documentElement.scrollTop
 
 			if (scrollTop > 0) {
 				this.style.height = '0px'
 				clearInterval(this.timer)
 			} else {
-				this.style.height = height
+				this.style.height = `${height}px`
+				console.log(height, 'height', this);
 				this.setTimer()
 			}
 		}, { passive: true })

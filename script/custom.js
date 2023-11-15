@@ -15,11 +15,11 @@ $(document).ready(function () {
 	const currency = currencyTemp[0]?.innerHTML || currencyTemp[0]?.innerText
 	const monetaryUnit = currency && currency.replace(/[\d.]/g, '')
 
-	const paddingTop = getComputedStyle(document.documentElement).getPropertyValue('--main-padding-top')
+	const paddingTop = window.innerWidth > 900 ? '90px' : '14vw'
 
 	$(".slide_arrow svg").click(function () {
-		const el = document.querySelector('.active-img') || document.querySelector('#product-indiegogo')
 		document.documentElement.style.scrollPaddingTop = paddingTop
+		const el = document.querySelector('.active-img') || document.querySelector('#product-indiegogo')
 		el.scrollIntoView({ behavior: "smooth", block: "start" })
 	});
 

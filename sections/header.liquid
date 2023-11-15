@@ -91,7 +91,9 @@
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="{% if template == 'index' %} Index {% endif %} {% if template == 'index' or template == 'product' %}itg_overlap_header{% endif %} header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
 	{% comment %} 活动栏 {% endcomment %}
 	<active-bar class="active" data-times="2023-11-28 00:00:00">
-		<div class="discounts"></div>
+		<div class="discounts">
+			<p>	Up to S125 off LOWEST PRICE EVER</p>
+		</div>
 		<div class="count-down">
 			<p class="time"></p> 
 		</div>
