@@ -496,11 +496,11 @@ $product-select-color:#f0b42d;
 
 				input[type=radio]:checked+label:has(.remaining) {
 					border: vw(4px) solid $product-select-color;
-					background: url('./mb-christmas.png') no-repeat center/vw(680px) vw(207px);
+					background: url('./mb-christmas-1.png') no-repeat center/vw(680px) vw(207px);
 				}
 
 				label:last-child {
-					background: url('./mb-christmas.png') no-repeat center/vw(680px) vw(207px);
+					background: url('./mb-christmas-1.png') no-repeat center/vw(680px) vw(207px);
 					position: relative;
 					border-radius: 0px;
 					grid-column: 1/4;
@@ -550,11 +550,49 @@ $product-select-color:#f0b42d;
 						font-weight: bold;
 						color: #E9E1CF;
 						position: absolute;
-						left: vw(220px);
+						right: vw(10px);
 						bottom: vw(23px);
 						line-height: normal;
 						letter-spacing: vw(1.4px);
 					}
+
+					.grab {
+						position: absolute;
+						bottom: vw(18px);
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						left: vw(220px);
+						font-size: vw(28px);
+						font-family: LeagueSpartanBold;
+						color: #fff;
+						column-gap: vw(10px);
+
+						i {
+							display: block;
+							width: vw(30px);
+							height: vw(30px);
+							background: url('./christmas-arrows.png') no-repeat center/cover;
+							animation: move 1s infinite;
+							transition: all 0.3s ease;
+						}
+					}
+
+					@keyframes move {
+						0% {
+							transform: translate(0, 0);
+						}
+
+						50% {
+							transform: translate(-3px, -3px);
+
+						}
+
+						100% {
+							transform: translate(0, 0);
+						}
+					}
+
 
 					.option-price {
 						position: absolute;
@@ -1188,7 +1226,7 @@ $product-select-color:#f0b42d;
 				}
 
 				label:last-child {
-					background: url('./pc-christmas-1.png') no-repeat center/500px 150px;
+					background: url('./pc-christmas.png') no-repeat center/500px 150px;
 					position: relative;
 					border-radius: 0px;
 					grid-column: 1/4;
@@ -1232,6 +1270,43 @@ $product-select-color:#f0b42d;
 						}
 					}
 
+					.grab {
+						position: absolute;
+						bottom: 15px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						left: 168px;
+						font-size: 20px;
+						font-family: LeagueSpartanBold;
+						color: #fff;
+						column-gap: 8px;
+
+						i {
+							display: block;
+							width: 20px;
+							height: 20px;
+							background: url('./christmas-arrows.png') no-repeat center/cover;
+							animation: move 1s infinite;
+							transition: all 0.3s ease;
+						}
+					}
+
+					@keyframes move {
+						0% {
+							transform: translate(0, 0);
+						}
+
+						50% {
+							transform: translate(-5px, -5px);
+
+						}
+
+						100% {
+							transform: translate(0, 0);
+						}
+					}
+
 					.remaining {
 						position: absolute;
 						font-size: 16px;
@@ -1239,7 +1314,7 @@ $product-select-color:#f0b42d;
 						font-weight: bold;
 						color: #E9E1CF;
 						line-height: 23px;
-						left: 168px;
+						right: 15px;
 						bottom: 13px;
 					}
 
