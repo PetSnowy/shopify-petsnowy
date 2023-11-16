@@ -22,7 +22,6 @@ class ActiveBar extends HTMLElement {
 				clearInterval(this.timer)
 			} else {
 				this.style.height = `${height}px`
-				console.log(height, 'height', this);
 				this.setTimer()
 			}
 		}, { passive: true })
