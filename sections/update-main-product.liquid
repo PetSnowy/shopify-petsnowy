@@ -391,23 +391,29 @@
                                   <p class="option-title">
                                     {{ variant.title }}
                                   </p>
-                                  {% comment %} {% if variant.id == 47336754151746 %}
-                                    <div class="grab">
-                                      <i></i>
-                                      <span>Grab Now!</span>
-                                    </div>
-                                    <span class="remaining" style="font-weight: 900;">
-                                      Remaining Gifts:
-                                      <span style="color: #F0B42D;">
-                                        {{ variant.inventory_quantity }}
-                                      </span>
-                                    </span>
-
-                                      <div class="option-price">
-                                        <p>{{ variant.compare_at_price | money }}</p>
-                                        <p>{{ price | money }}</p>
+                                  {% if variant.id == 47336754151746 or variant.id == 47367460815170 %}
+                                    <div class="christmas-wrapper">
+																			<div class="bg"></div>
+																			<i class="line"></i>
+                                      <div class="grab">
+                                        <i></i>
+                                        <span>Grab Now!</span>
                                       </div>
-                                  {%- endif %} {% endcomment %}
+                                      <span class="remaining" style="font-weight: 900;">
+                                        Remaining Gifts:
+                                        <span style="color: #F0B42D;">
+                                          {{ variant.inventory_quantity }}
+                                        </span>
+                                      </span>
+
+                                      {% comment %}
+                                        <div class="option-price">
+                                          <p>{{ variant.compare_at_price | money }}</p>
+                                          <p>{{ price | money }}</p>
+                                        </div>
+                                      {% endcomment %}
+                                    </div>
+                                  {%- endif %}
                                 {% endif %}
                               {% endfor %}
                             </label>
