@@ -14,8 +14,11 @@ class ActiveBar extends HTMLElement {
 	connectedCallback() {
 		this.setTimer()
 		const height = this.offsetHeight
+		const showDown = document.querySelector('#HeaderMenu-MenuList-1');
+
 		this.scroll = window.addEventListener('scroll', () => {
 			const scrollTop = document.body.scrollTop || document.documentElement.scrollTop
+			scrollTop === 0 ? showDown.style.top = `175px` : showDown.style.top = `75px`
 
 			if (scrollTop > 0) {
 				this.style.height = '0px'
@@ -51,7 +54,22 @@ class ActiveBar extends HTMLElement {
 		m = m < 10 ? '0' + m : m;
 		let s = parseInt(times % 60);
 		s = s < 10 ? '0' + s : s;
-		return d + 'day' + h + 'h' + m + 'm' + s + 's';
+		return `<div>
+							<p>${d}</p>
+							<p>Day</p>
+						</div>
+						<div>
+							<p>${h}</p>
+							<p>Hours</p>
+						</div>
+						<div>
+							<p>${m}</p>
+							<p>Minutes</p>
+						</div>
+						<div>
+							<p>${s}</p>
+							<p>Seconds</p>
+						</div>`
 	}
 }
 
