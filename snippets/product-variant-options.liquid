@@ -21,7 +21,6 @@
 
   assign product_form_id = 'product-form-' | append: section.id
 -%}
-
 {%- for value in option.values -%}
   {%- liquid
     assign option_disabled = true
@@ -61,7 +60,17 @@
         >
 
         <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-          {% comment %} <img src="{{ product.metafields.custom.product_match_colors[forloop.index0] | img_url: 'master' }}" alt=""> {% endcomment %}
+          {% liquid
+            assign label_index = forloop.index0
+          %}
+          {% for img_src in product.metafields.custom.product_match_colors.value %}
+            {% if label_index == forloop.index0 %}
+              <img src="{{ img_src.preview_image.src |  img_url: 'master' }}" alt="petsnowy">
+            {% endif %}
+          {% endfor %}
+          <p class="option-title">
+            {{ value }}
+          </p>
         </label>
       </div>
     {% endif %}
@@ -105,9 +114,13 @@
                     <div class="popup-close"></div>
                   </div>
                 </div>
-                <p class="option-title">
+                <p class="desc" style="display: none;">
                   {{ variant.title }}
                 </p>
+                <div class="option-title">
+                  {{ value }}
+                  <span class="off">30% OFF</span>
+                </div>
               </div>
             {% endif %}
           {% endfor %}
@@ -138,7 +151,7 @@
       getProduct.forEach(function (item) {
         const variants = Array.from(item.querySelectorAll('.variants'));
         variants.forEach(function (i) {
-          const text = i.querySelector('.option-title').innerHTML || i.querySelector('.option-title').innerText;
+          const text = i.querySelector('.desc').innerHTML || i.querySelector('.desc').innerText;
           i.style.display = 'none';
           if (text.includes(result)) {
             i.style.display = 'block';
