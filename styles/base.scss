@@ -6144,6 +6144,7 @@ $item: 5;
 		video {
 			width: 100%;
 			height: calc(100vh - var(--main-padding-top));
+			object-fit: cover;
 		}
 
 		.slide_arrow {
