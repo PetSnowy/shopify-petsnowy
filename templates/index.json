@@ -3,9 +3,9 @@
     "ec8a39b8-e172-48e1-97d9-303c35a74add": {
       "type": "custom-banner",
       "settings": {
-        "vdio_img": "shopify:\/\/shop_images\/1_0175_2.jpg",
+        "vdio_img": "shopify:\/\/shop_images\/index-video-poster.jpg",
         "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/85c7ad8fc6e74e3fa6f8961f103ba778.mp4",
-        "mobvdio_img": "shopify:\/\/shop_images\/banner-video-mb.jpg",
+        "mobvdio_img": "shopify:\/\/shop_images\/mb-index-video-poster.png",
         "mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/1746fd8ffc9248a78d697693f1f94958.mp4",
         "heading": "meet the SNOW<sup><sup>+<\/sup><\/sup>",
         "url": "#",
