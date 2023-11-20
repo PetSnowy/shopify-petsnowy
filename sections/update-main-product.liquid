@@ -219,12 +219,13 @@
                           <div class="price_title_align">
                             <p>{{ product_addons.metafields.custom.product_abbreviation.value }}</p>
                             <p class="price">
-                              {% comment %}
-                                <span class="price_without_discount">
+                              <span class="price_without_discount">
+                                {% comment %}
                                   {{- product_addons.first_available_variant.price | money -}}
                                   {{ final_inc | money | remove: '-' }}
-                                </span>
-                              {% endcomment %}
+                                {% endcomment %}
+                                {{- product_addons.compare_at_price | money -}}
+                              </span>
                               <span class="price_with_discount">
                                 {{- product_addons.first_available_variant.price | money -}}
                               </span>
