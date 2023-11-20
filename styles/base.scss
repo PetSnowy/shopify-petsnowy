@@ -6141,8 +6141,13 @@ $item: 5;
 	}
 
 	@media screen and (max-width: 900px) {
+		video {
+			width: 100%;
+			height: calc(100vh - var(--main-padding-top));
+		}
+
 		.slide_arrow {
-			display: none;
+			bottom: -120px;
 		}
 	}
 }
