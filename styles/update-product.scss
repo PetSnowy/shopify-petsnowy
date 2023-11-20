@@ -380,6 +380,8 @@ $product-select-color:#f0b42d;
 			}
 		}
 
+
+
 		picture,
 		img {
 			width: 100%;
@@ -728,6 +730,10 @@ $product-select-color:#f0b42d;
 					font-family: LeagueSpartanBold;
 					font-weight: bold;
 					color: #616161;
+					justify-content: center;
+					flex-direction: column;
+					row-gap: vw(10px);
+					align-items: center;
 
 					.off {
 						padding: vw(8px);
