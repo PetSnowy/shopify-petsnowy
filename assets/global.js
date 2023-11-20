@@ -1,6 +1,6 @@
 function getFocusableElements(e){return Array.from(e.querySelectorAll("summary, a[href], button:enabled, [tabindex]:not([tabindex^='-']), [draggable], area, input:not([type=hidden]):enabled, select:enabled, textarea:enabled, object, iframe"))}class ActiveBar extends HTMLElement{constructor(){super(),this.timer=null}connectedCallback(){this.setTimer();const t=this.offsetHeight,i=document.querySelector("#HeaderMenu-MenuList-1");this.scroll=window.addEventListener("scroll",()=>{var e=document.body.scrollTop||document.documentElement.scrollTop;i.style.top=0===e?"175px":"75px",0<e?(this.style.height="0px",clearInterval(this.timer)):(this.style.height=t+"px",this.setTimer())},{passive:!0})}disconnectedCallback(){window.removeEventListener("scroll",this.scroll)}setTimer(){const e=this.querySelector(".time");this.timer=setInterval(()=>{e.innerHTML=this.countDown(this.dataset.times)},1e3)}countDown(e){var t=+new Date,e=(+new Date(e)-t)/1e3,t=(t=parseInt(e/60/60/24))<10?"0"+t:t,i=(i=parseInt(e/60/60%24))<10?"0"+i:i,s=(s=parseInt(e/60%60))<10?"0"+s:s,e=parseInt(e%60);return`<div>
 							<p>${t}</p>
-							<p>Day</p>
+							<p>Days</p>
 						</div>
 						<div>
 							<p>${i}</p>

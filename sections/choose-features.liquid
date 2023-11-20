@@ -402,9 +402,11 @@
                           <h3>{{ product_addons.title }}</h3>
                           <div class="price_wrapper">
                             <span class="price_without_discount">
+                              {{- product_addons.compare_at_price | money -}}
+                            </span>
+                            <span class="price_with_discount">
                               {{- product_addons.first_available_variant.price | money -}}
                             </span>
-                            <span class="price_with_discount">{{- final_inc | money | remove: '-' -}}</span>
                           </div>
                         </div>
                         <div class="add_descriptions">

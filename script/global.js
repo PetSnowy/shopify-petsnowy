@@ -56,7 +56,7 @@ class ActiveBar extends HTMLElement {
 		s = s < 10 ? '0' + s : s;
 		return `<div>
 							<p>${d}</p>
-							<p>Day</p>
+							<p>Days</p>
 						</div>
 						<div>
 							<p>${h}</p>
