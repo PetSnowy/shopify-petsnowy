@@ -2,18 +2,22 @@
 
 <div class="active-img">
   <product-inventory class="page-width" y-range="-5,5" x-range="-5,5">
-    <picture>
-      <source media="(min-width: 901px)" data-srcset="{{ section.settings.pc_image | img_url: 'master' }}">
-      <source media="(max-width: 900px)" data-srcset="{{ section.settings.mb_image | img_url: 'master' }}">
-      <img
-        alt="petsnowy"
-        decoding="async"
-        loading="lazy"
-      >
-    </picture>
-    <a class="btn" href="{{ section.settings.btn_link }}">
-      <span>{{ section.settings.btn_text }}</span>
+    <a href="{{ section.settings.btn_link }}">
+      <picture>
+        <source media="(min-width: 901px)" data-srcset="{{ section.settings.pc_image | img_url: 'master' }}">
+        <source media="(max-width: 900px)" data-srcset="{{ section.settings.mb_image | img_url: 'master' }}">
+        <img
+          alt="petsnowy"
+          decoding="async"
+          loading="lazy"
+        >
+      </picture>
     </a>
+    {% comment %}
+      <a class="btn" href="{{ section.settings.btn_link }}">
+        <span>{{ section.settings.btn_text }}</span>
+      </a>
+    {% endcomment %}
   </product-inventory>
 </div>
 

@@ -13,23 +13,23 @@
 		height: auto;
 	}
 
-	a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background: #E9E1CF;
-		font-family: LeagueSpartanBlack;
-		font-weight: 900;
-		color: #983B30;
-		position: absolute;
+	// a {
+	// 	display: flex;
+	// 	align-items: center;
+	// 	justify-content: center;
+	// 	background: #E9E1CF;
+	// 	font-family: LeagueSpartanBlack;
+	// 	font-weight: 900;
+	// 	color: #983B30;
+	// 	position: absolute;
 
-		&::after {
-			content: "";
-			display: block;
-			background: #3D8658;
-			background: url('./Christmas.png') no-repeat center/cover;
-		}
-	}
+	// 	&::after {
+	// 		content: "";
+	// 		display: block;
+	// 		background: #3D8658;
+	// 		background: url('./Christmas.png') no-repeat center/cover;
+	// 	}
+	// }
 }
 
 
@@ -46,24 +46,24 @@
 			border-radius: 40px;
 		}
 
-		a {
-			width: 278px;
-			height: 66px;
-			border-radius: 21px;
-			font-size: 36px;
-			bottom: 102px;
-			left: 552px;
+		// a {
+		// 	width: 278px;
+		// 	height: 66px;
+		// 	border-radius: 21px;
+		// 	font-size: 36px;
+		// 	bottom: 102px;
+		// 	left: 552px;
 
-			span {
-				margin-top: 10px;
-			}
+		// 	span {
+		// 		margin-top: 10px;
+		// 	}
 
-			&::after {
-				width: 26px;
-				height: 27px;
-				margin-left: 5px;
-			}
-		}
+		// 	&::after {
+		// 		width: 26px;
+		// 		height: 27px;
+		// 		margin-left: 5px;
+		// 	}
+		// }
 	}
 }
 
@@ -81,24 +81,24 @@
 			border-radius: vw(20px);
 		}
 
-		a {
-			width: vw(173px);
-			height: vw(41px);
-			background: #E9E1CF;
-			border-radius: vw(11px);
-			left: vw(334px);
-			bottom: vw(96px);
-			font-size: vw(23px);
+		// a {
+		// 	width: vw(173px);
+		// 	height: vw(41px);
+		// 	background: #E9E1CF;
+		// 	border-radius: vw(11px);
+		// 	left: vw(334px);
+		// 	bottom: vw(96px);
+		// 	font-size: vw(23px);
 
-			span {
-				margin-top: vw(10px);
-			}
+		// 	span {
+		// 		margin-top: vw(10px);
+		// 	}
 
-			&::after {
-				width: vw(16px);
-				height: vw(17px);
-				margin-left: vw(8px);
-			}
-		}
+		// 	&::after {
+		// 		width: vw(16px);
+		// 		height: vw(17px);
+		// 		margin-left: vw(8px);
+		// 	}
+		// }
 	}
 }
