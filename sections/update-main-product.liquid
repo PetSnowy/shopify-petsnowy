@@ -48,7 +48,12 @@
     <div
       class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}"
     >
-      {% render 'product-media-gallery', variant_images: variant_images %}
+      {% comment %} {% render 'product-media-gallery', variant_images: variant_images %} {% endcomment %}
+      <div class="product-default">
+        {% for img_src in product.metafields.custom.product_color_active_img.value %}
+          <img src="{{ img_src.preview_image.src |  img_url: 'master' }}" alt="petsnowy">
+        {% endfor %}
+      </div>
 
       <div class="update-product-content">
         {%- for block in section.blocks -%}
@@ -177,9 +182,11 @@
               <div class="product_acessories-wrapper">
                 <p class="product_acessories-title">Add-Ons:</p>
                 {% if template contains 'indiegogo' -%}
-                  <p class="product-desc" style="display: block;">
-                    <span style="color: #d75f23;">Get 20% Discount</span> On Every Add-On Products
-                  </p>
+                  {% comment %}
+                    <p class="product-desc" style="display: block;">
+                      <span style="color: #d75f23;">Get 20% Discount</span> On Every Add-On Products
+                    </p>
+                  {% endcomment %}
                 {%- endif %}
                 <div class="add_product_list">
                   {% for product_addons in product.metafields.custom.addons_product.value %}
@@ -212,10 +219,15 @@
                           <div class="price_title_align">
                             <p>{{ product_addons.metafields.custom.product_abbreviation.value }}</p>
                             <p class="price">
-                              <span class="price_without_discount">
+                              {% comment %}
+                                <span class="price_without_discount">
+                                  {{- product_addons.first_available_variant.price | money -}}
+                                  {{ final_inc | money | remove: '-' }}
+                                </span>
+                              {% endcomment %}
+                              <span class="price_with_discount">
                                 {{- product_addons.first_available_variant.price | money -}}
                               </span>
-                              <span class="price_with_discount">{{ final_inc | money | remove: '-' }}</span>
                             </p>
                           </div>
                           {% comment %} <div class="add_descriptions"></div> {% endcomment %}

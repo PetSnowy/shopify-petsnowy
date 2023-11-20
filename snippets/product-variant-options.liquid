@@ -162,18 +162,23 @@
 
     let result = '';
     const getSelectColor = Array.from(document.querySelectorAll('.product-form__input .color'));
+    const productDefault = Array.from(document.querySelectorAll('.product-default img'));
     getSelectColor.forEach(function (item, index) {
       const radioButton = item.querySelector('input');
+      productDefault[index].style.display = 'none';
 
       if (radioButton.checked) {
         result = radioButton.value;
         showProduct(result);
+        productDefault[index].style.display = 'block';
       }
 
       item.addEventListener('click', function () {
+        productDefault.forEach((item) => (item.style.display = 'none'));
         if (radioButton.checked) {
           result = radioButton.value;
           showProduct(result);
+          productDefault[index].style.display = 'block';
         }
       });
     });
