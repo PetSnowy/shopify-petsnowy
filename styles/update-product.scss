@@ -227,9 +227,9 @@ $product-select-color:#f0b42d;
 			max-width: 100%;
 		}
 
-		.grid__item.product__media-wrapper {
-			margin-bottom: vw(25px);
-		}
+		// .grid__item.product__media-wrapper {
+		// 	margin-bottom: vw(25px);
+		// }
 
 		.product-default {
 			display: none;
@@ -476,11 +476,11 @@ $product-select-color:#f0b42d;
 		variant-radios {
 
 			margin-top: 0px;
-			margin-bottom: vw(60px);
+			margin-bottom: vw(30px);
 
 			.form__label {
 				font-size: vw(34px);
-				margin-bottom: vw(30px);
+				margin-bottom: vw(20px);
 			}
 
 			fieldset {
