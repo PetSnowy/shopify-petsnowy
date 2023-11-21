@@ -271,92 +271,70 @@
                   data-first="{{ main_product_detail.selected_or_first_available_variant.id }}"
                 ></span>
               {% else %}
-                {% for option in main_product_detail.options_with_values %}
-                  <legend class="form__label">
-                    {{ option.name }}
-                    <span class="variant-label__value" data-color-label="{{ option.selected_value }}">
-                      {{- option.selected_value -}}
-                    </span>
-                  </legend>
-                  <div class="itg_drop_var">
-                    {%- for value in option.values -%}
-                      <div class="itg_drop_var_align_div">
-                        <input
-                          type="radio"
-                          id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                          name="{{ option.name }}"
-                          data-value="{{ value | handleize }}"
-                          value="{{ value | escape }}"
-                          form="{{ product_form_id }}"
-                          {% if option.selected_value == value %}
-                            checked
-                          {% endif %}
-                          {% if option_disabled %}
-                            class="disabled"
-                          {% endif %}
-                        >
-                        {% assign varimg = '' %}
-                        {% assign varprice = '' %}
-                        {% assign compareprice = '' %}
-                        {% assign variantdescription = '' %}
-                        {% assign inventory_quantity = '' %}
-                        {% for variant in main_product_detail.variants %}
-                          {% if variant.title contains value %}
-                            {% assign varimg = variant.image | img_url: 'master' %}
-                            {% assign varprice = variant.price | money_without_currency %}
-                            {% assign varid = variant.id %}
-                            {% assign variantdescription = variant.metafields.custom.variant_description %}
-                            {% if variant.compare_at_price > variant.price %}
-                              {% assign compareprice = variant.compare_at_price | money_without_currency %}
-                            {% endif %}
-                            {% assign inventory_quantity = variant.inventory_quantity %}
-                          {% endif %}
-                        {% endfor %}
+                <div class="itg_drop_var">
+                  {% for variant in main_product_detail.variants %}
+                    {% assign varimg = variant.image | img_url: 'master' %}
+                    {% assign varprice = variant.price | money_without_currency %}
+                    {% assign varid = variant.id %}
+                    {% assign variantdescription = variant.metafields.custom.variant_description %}
+                    {% if variant.compare_at_price > variant.price %}
+                      {% assign compareprice = variant.compare_at_price | money_without_currency %}
+                    {% endif %}
+                    {% assign inventory_quantity = variant.inventory_quantity %}
 
-                        <label
-                          for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                          data_var_price="{{ varprice }}"
-                          main-id="{{ varid }}"
-                          main-compare="{{ compareprice }}"
-                        >
-                          <div class="itg_drop_var_align_img">
-                            {% if varimg != blank %}
-                              <img decoding="async" src="{{ varimg }}" alt="petsnowy" loading="lazy">
-                            {% else %}
-                              <p>{{ value }}</p>
-                            {% endif %}
-                          </div>
-                          <div class="itg_drop_var_align_content">
-                            <p>
-                              {{ variantdescription }}
-                              {% if varid == 47336754151746 %}
-                                <br>
-                                <span class="remaining">Gift stock remaining: {{ inventory_quantity -}}</span>
-                              {%- endif %}
-                            </p>
-                          </div>
+                    <div class="itg_drop_var_align_div">
+                      <input
+                        type="radio"
+                        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                        name="radio"
+                        data-value="{{ value | handleize }}"
+                        value="{{ value | escape }}"
+                        form="{{ product_form_id }}"
+                      >
 
-                          <div class="check_product_variant">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="#231f20"
-                              stroke-width="2.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              class="feather feather-check"
-                            >
-                              <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                          </div>
-                        </label>
-                      </div>
-                    {%- endfor -%}
-                  </div>
-                {% endfor %}
+                      <label
+                        for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                        data_var_price="{{ varprice }}"
+                        main-id="{{ varid }}"
+                        main-compare="{{ compareprice }}"
+                      >
+                        <div class="itg_drop_var_align_img">
+                          {% if varimg != blank %}
+                            <img decoding="async" src="{{ varimg }}" alt="petsnowy" loading="lazy">
+                          {% else %}
+                            <p>{{ value }}</p>
+                          {% endif %}
+                        </div>
+                        <div class="itg_drop_var_align_content">
+                          <p>
+                            {{ variantdescription }}
+                            {% if varid == 47336754151746 %}
+                              <br>
+                              <span class="remaining">Gift stock remaining: {{ inventory_quantity -}}</span>
+                            {%- endif %}
+                          </p>
+                        </div>
+
+                        <div class="check_product_variant">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#231f20"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="feather feather-check"
+                          >
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                          </svg>
+                        </div>
+                      </label>
+                    </div>
+                  {% endfor %}
+                </div>
               {% endif %}
             </div>
           {% endfor %}
@@ -380,6 +358,11 @@
                   {% assign product_price = product_addons.first_available_variant.price %}
                   {% assign final_inc = inc_value | minus: product_price %}
 
+                  {% assign price = product_addons.price %}
+                  {% if product_addons.compare_at_price > product_addons.price %}
+                    {% assign price = product_addons.compare_at_price %}
+                  {% endif %}
+
                   <div class="add_list_product first_addons_qty">
                     <input
                       class="addons_input"
@@ -387,8 +370,12 @@
                       id="{{ product_addons.title }}"
                       value="{{ product_addons.first_available_variant.id }}"
                       data-addonprice="{{ final_inc | money_without_currency | remove: '-' }}"
+                      data-price_without_discount="{{ price |  money_without_currency}}"
                     >
-                    <label class="productlabel_info" for="{{ product_addons.title }}">
+                    <label
+                      class="productlabel_info"
+                      for="{{ product_addons.title }}"
+                    >
                       <div class="add_list_product_image">
                         <img
                           src="{{  product_addons.featured_image | img_url: '100X100' }}"
@@ -757,15 +744,26 @@
                 data-handle="{{ main_product_detail.handle }}"
                 style="display:none;"
               >
-                {% assign varmainprice = '' %}
-                {% assign varmainprice = main_product_detail.first_available_variant.price %}
+                {% assign originalCost = main_product_detail.price | money %}
+                {% assign varmainprice = main_product_detail.compare_at_price | money %}
                 <span
                   class="total_price_add"
                   data-addon="{{ varmainprice | money_without_currency }}"
                   data_price="{{ varmainprice | money_without_currency }}"
+                  data-originalCost="{{ originalCost }}"
                 >
-                  {{- varmainprice | money -}}
+                  {{ 0.00 | money }}
                 </span>
+                {% comment %}
+                  <span
+                    class="total_original_cost"
+                    data-addon="{{ varmainprice | money_without_currency }}"
+                    data_price="{{ varmainprice | money_without_currency }}"
+                    data-originalCost="{{ originalCost }}"
+                  >
+                    {{ 0.00 | money -}}
+                  </span>
+                {% endcomment %}
               </strong>
             {% endfor %}
           </div>
