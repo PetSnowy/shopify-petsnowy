@@ -68,7 +68,9 @@
         {{ money_price }}
       </span>
     </div>
-    <span class="Black_Friday">Black Friday</span>
+    {% if compare_at_price > price and price != empty %}
+      <span class="Black_Friday">Black Friday</span>
+    {% endif %}
     <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
       <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
       <span class="price-item price-item--last">
@@ -85,9 +87,11 @@
     </small>
   </div>
   {%- if show_badges -%}
-    {% comment %} <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-      {{ 'products.product.on_sale' | t }}
-    </span> {% endcomment %}
+    {% comment %}
+      <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
+        {{ 'products.product.on_sale' | t }}
+      </span>
+    {% endcomment %}
 
     <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
       {{ 'products.product.sold_out' | t }}
