@@ -208,7 +208,6 @@
         "template--20172440174914__6e49d3e7-25d2-4666-a7fa-5471ae234bc7-column-2",
         "template--20172440174914__6e49d3e7-25d2-4666-a7fa-5471ae234bc7-column-3"
       ],
-      "disabled": true,
       "settings": {
         "title": "Litter Box",
         "heading_size": "h1",
@@ -265,7 +264,6 @@
         "eeb4e708-f48f-4568-826a-45939026fe60",
         "02f71b77-7ecc-47ea-88d1-405e9ddc1c0b"
       ],
-      "disabled": true,
       "settings": {
         "title": "Water Fountain",
         "heading_size": "h1",
@@ -322,7 +320,6 @@
         "048fa562-4a5c-4c24-9d0a-c404ea0516cb",
         "77534d40-7003-4432-9d62-8d219dbcd361"
       ],
-      "disabled": true,
       "settings": {
         "title": "Pet Feeder",
         "heading_size": "h1",
@@ -379,7 +376,6 @@
         "adddd2ec-a997-48ba-8535-d8a9c7f6aca4",
         "94f53e53-2fce-4347-9591-a47c61b874ac"
       ],
-      "disabled": true,
       "settings": {
         "title": "Cat Toy",
         "heading_size": "h1",
@@ -511,7 +507,6 @@
       "blocks": {
         "042ecd86-3111-463a-a041-b74ad0850cad": {
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "disabled": true,
           "settings": {
             "only_photos": false,
             "aggregated": true,
