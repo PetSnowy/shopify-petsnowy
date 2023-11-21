@@ -1,0 +1,186 @@
+{% comment %}
+  Renders product variant options
+
+  Accepts:
+  - product: {Object} product object.
+  - option: {Object} current product_option object.
+  - block: {Object} block object.
+
+  Usage:
+  {% render 'product-variant-options',
+    product: product,
+    option: option,
+    block: block
+  %}
+{% endcomment %}
+{%- liquid
+  assign variants_available_arr = product.variants | map: 'available'
+  assign variants_option1_arr = product.variants | map: 'option1'
+  assign variants_option2_arr = product.variants | map: 'option2'
+  assign variants_option3_arr = product.variants | map: 'option3'
+
+  assign product_form_id = 'product-form-' | append: section.id
+-%}
+{%- for value in option.values -%}
+  {%- liquid
+    assign option_disabled = true
+
+    for option1_name in variants_option1_arr
+      case option.position
+        when 1
+          if variants_option1_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+            assign option_disabled = false
+          endif
+        when 2
+          if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+            assign option_disabled = false
+          endif
+        when 3
+          if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+            assign option_disabled = false
+          endif
+      endcase
+    endfor
+  -%}
+  {%- if block.settings.picker_type == 'button' -%}
+    {% if option.name contains 'Color' %}
+      <div class="color">
+        <input
+          type="radio"
+          id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+          name="{{ option.name }}"
+          value="{{ value | escape }}"
+          form="{{ product_form_id }}"
+          {% if option.selected_value == value %}
+            checked
+          {% endif %}
+          {% if option_disabled %}
+            class="disabled"
+          {% endif %}
+        >
+
+        <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+          {% liquid
+            assign label_index = forloop.index0
+          %}
+          {% for img_src in product.metafields.custom.product_match_colors.value %}
+            {% if label_index == forloop.index0 %}
+              <img src="{{ img_src.preview_image.src |  img_url: 'master' }}" alt="petsnowy">
+            {% endif %}
+          {% endfor %}
+          <p class="option-title">
+            {{ value }}
+          </p>
+        </label>
+      </div>
+    {% endif %}
+    {% if option.name contains 'Product Set' %}
+      <div class="product-set">
+        <input
+          type="radio"
+          id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+          name="{{ option.name }}"
+          value="{{ value | escape }}"
+          form="{{ product_form_id }}"
+          {% if option.selected_value == value %}
+            checked
+          {% endif %}
+          {% if option_disabled %}
+            class="disabled"
+          {% endif %}
+        >
+        <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+          {% for variant in product.variants %}
+            {% if variant.title contains value %}
+              {% assign img_src = variant.featured_image.src %}
+              {% assign img_alt = variant.title %}
+              <div class="variants" style="display: none;">
+                <div class="img-wrapper">
+                  <img
+                    alt="{{ img_alt }}"
+                    data-src="{{ img_src | img_url: 'master' }}"
+                  >
+                </div>
+                <div class="question_mark"></div>
+                <div class="question_mark_popup">
+                  <div class="popup-wrapper">
+                    <div class="popup-img">
+                      <img alt="{{ img_alt }}" data-src="{{ img_src | img_url: 'master' }}">
+                    </div>
+                    <div class="popup-content">
+                      <p class="popup-title">{{ img_alt }}</p>
+                      <p class="popup-desc">{{ variant.metafields.custom.variant_description }}</p>
+                    </div>
+                    <div class="popup-close"></div>
+                  </div>
+                </div>
+                <p class="desc" style="display: none;">
+                  {{ variant.title }}
+                </p>
+                <div class="option-title">
+                  {{ value }}
+                  <span class="off">30% OFF</span>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </label>
+      </div>
+    {%- endif %}
+
+  {%- elsif block.settings.picker_type == 'dropdown' -%}
+    <option
+      value="{{ value | escape }}"
+      {% if option.selected_value == value %}
+        selected="selected"
+      {% endif %}
+    >
+      {% if option_disabled -%}
+        {{- 'products.product.value_unavailable' | t: option_value: value -}}
+      {%- else -%}
+        {{- value -}}
+      {%- endif %}
+    </option>
+  {%- endif -%}
+{%- endfor -%}
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    function showProduct(result) {
+      const getProduct = Array.from(document.querySelectorAll('.product-form__input .product-set'));
+
+      getProduct.forEach(function (item) {
+        const variants = Array.from(item.querySelectorAll('.variants'));
+        variants.forEach(function (i) {
+          const text = i.querySelector('.desc').innerHTML || i.querySelector('.desc').innerText;
+          i.style.display = 'none';
+          if (text.includes(result)) {
+            i.style.display = 'block';
+          }
+        });
+      });
+    }
+
+    let result = '';
+    const getSelectColor = Array.from(document.querySelectorAll('.product-form__input .color'));
+    const productDefault = Array.from(document.querySelectorAll('.product-default img'));
+    getSelectColor.forEach(function (item, index) {
+      const radioButton = item.querySelector('input');
+      productDefault[index].style.display = 'none';
+
+      if (radioButton.checked) {
+        result = radioButton.value;
+        showProduct(result);
+        productDefault[index].style.display = 'block';
+      }
+
+      item.addEventListener('click', function () {
+        productDefault.forEach((item) => (item.style.display = 'none'));
+        if (radioButton.checked) {
+          result = radioButton.value;
+          showProduct(result);
+          productDefault[index].style.display = 'block';
+        }
+      });
+    });
+  });
+</script>

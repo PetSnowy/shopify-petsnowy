@@ -42,92 +42,25 @@
       endcase
     endfor
   -%}
+
   {%- if block.settings.picker_type == 'button' -%}
-    {% if option.name contains 'Color' %}
-      <div class="color">
-        <input
-          type="radio"
-          id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-          name="{{ option.name }}"
-          value="{{ value | escape }}"
-          form="{{ product_form_id }}"
-          {% if option.selected_value == value %}
-            checked
-          {% endif %}
-          {% if option_disabled %}
-            class="disabled"
-          {% endif %}
-        >
-
-        <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-          {% liquid
-            assign label_index = forloop.index0
-          %}
-          {% for img_src in product.metafields.custom.product_match_colors.value %}
-            {% if label_index == forloop.index0 %}
-              <img src="{{ img_src.preview_image.src |  img_url: 'master' }}" alt="petsnowy">
-            {% endif %}
-          {% endfor %}
-          <p class="option-title">
-            {{ value }}
-          </p>
-        </label>
-      </div>
-    {% endif %}
-    {% if option.name contains 'Product Set' %}
-      <div class="product-set">
-        <input
-          type="radio"
-          id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-          name="{{ option.name }}"
-          value="{{ value | escape }}"
-          form="{{ product_form_id }}"
-          {% if option.selected_value == value %}
-            checked
-          {% endif %}
-          {% if option_disabled %}
-            class="disabled"
-          {% endif %}
-        >
-        <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-          {% for variant in product.variants %}
-            {% if variant.title contains value %}
-              {% assign img_src = variant.featured_image.src %}
-              {% assign img_alt = variant.title %}
-              <div class="variants" style="display: none;">
-                <div class="img-wrapper">
-                  <img
-                    alt="{{ img_alt }}"
-                    data-src="{{ img_src | img_url: 'master' }}"
-                  >
-                </div>
-                <div class="question_mark"></div>
-                <div class="question_mark_popup">
-                  <div class="popup-wrapper">
-                    <div class="popup-img">
-                      <img alt="{{ img_alt }}" data-src="{{ img_src | img_url: 'master' }}">
-                    </div>
-                    <div class="popup-content">
-                      <p class="popup-title">{{ img_alt }}</p>
-                      <p class="popup-desc">{{ variant.metafields.custom.variant_description }}</p>
-                    </div>
-                    <div class="popup-close"></div>
-                  </div>
-                </div>
-                <p class="desc" style="display: none;">
-                  {{ variant.title }}
-                </p>
-                <div class="option-title">
-                  {{ value }}
-                  <span class="off">30% OFF</span>
-                </div>
-              </div>
-            {% endif %}
-          {% endfor %}
-        </label>
-      </div>
-    {%- endif %}
-
+    <input
+      type="radio"
+      id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+      name="{{ option.name }}"
+      value="{{ value | escape }}"
+      form="{{ product_form_id }}"
+      {% if option.selected_value == value %}
+        checked
+      {% endif %}
+      {% if option_disabled %}
+        class="disabled"
+      {% endif %}
+    >
+    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+      {{ value -}}
+      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+    </label>
   {%- elsif block.settings.picker_type == 'dropdown' -%}
     <option
       value="{{ value | escape }}"
@@ -143,44 +76,3 @@
     </option>
   {%- endif -%}
 {%- endfor -%}
-<script>
-  window.addEventListener('DOMContentLoaded', function () {
-    function showProduct(result) {
-      const getProduct = Array.from(document.querySelectorAll('.product-form__input .product-set'));
-
-      getProduct.forEach(function (item) {
-        const variants = Array.from(item.querySelectorAll('.variants'));
-        variants.forEach(function (i) {
-          const text = i.querySelector('.desc').innerHTML || i.querySelector('.desc').innerText;
-          i.style.display = 'none';
-          if (text.includes(result)) {
-            i.style.display = 'block';
-          }
-        });
-      });
-    }
-
-    let result = '';
-    const getSelectColor = Array.from(document.querySelectorAll('.product-form__input .color'));
-    const productDefault = Array.from(document.querySelectorAll('.product-default img'));
-    getSelectColor.forEach(function (item, index) {
-      const radioButton = item.querySelector('input');
-      productDefault[index].style.display = 'none';
-
-      if (radioButton.checked) {
-        result = radioButton.value;
-        showProduct(result);
-        productDefault[index].style.display = 'block';
-      }
-
-      item.addEventListener('click', function () {
-        productDefault.forEach((item) => (item.style.display = 'none'));
-        if (radioButton.checked) {
-          result = radioButton.value;
-          showProduct(result);
-          productDefault[index].style.display = 'block';
-        }
-      });
-    });
-  });
-</script>

@@ -319,7 +319,11 @@
               </share-button>
               <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
             {%- when 'variant_picker' -%}
-              {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+              {% render 'litter-product-variant-picker',
+                product: product,
+                block: block,
+                product_form_id: product_form_id
+              %}
             {% when 'product-recommendation' %}
               <script src="{{ 'product-recommendation.js' | asset_url }}" defer="defer"></script>
               <product-recommendation
