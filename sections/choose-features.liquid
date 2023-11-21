@@ -747,7 +747,7 @@
                 data-handle="{{ main_product_detail.handle }}"
                 style="display:none;"
               >
-                {% assign originalCost = main_product_detail.price | money %}
+                {% assign originalCost = main_product_detail.price %}
                 {% assign varmainprice = main_product_detail.compare_at_price | money %}
                 <span
                   class="total_price_add"
@@ -755,7 +755,7 @@
                   data_price="{{ varmainprice | money_without_currency }}"
                   data-originalCost="{{ originalCost }}"
                 >
-                  {{- varmainprice | money -}}
+                  {{- originalCost | money -}}
                 </span>
                 {% comment %}
                   <span
