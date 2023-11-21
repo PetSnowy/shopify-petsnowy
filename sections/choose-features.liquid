@@ -755,7 +755,7 @@
                   data_price="{{ varmainprice | money_without_currency }}"
                   data-originalCost="{{ originalCost }}"
                 >
-                  {{ 0.00 | money }}
+                  {{- varmainprice | money -}}
                 </span>
                 {% comment %}
                   <span
