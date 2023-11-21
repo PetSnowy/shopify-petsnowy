@@ -37,8 +37,10 @@ class ActiveBar extends HTMLElement {
 
 	setTimer() {
 		const text = this.querySelector('.time')
+		text.style.display = 'none'
 		this.timer = setInterval(() => {
-			text.innerHTML = this.countDown(this.dataset.times)
+			text.style.display = 'block'
+			text.innerHTML ? text.innerHTML = this.countDown(this.dataset.times) : text.innerText = this.countDown(this.dataset.times)
 		}, 1000)
 	}
 
