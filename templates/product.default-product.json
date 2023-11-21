@@ -1,0 +1,844 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "eb58e1aa-2636-4b9a-a364-393bda439d81": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Text block",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "463df5a4-44f8-46b9-bcd4-988f445263e5": {
+          "type": "checkout",
+          "settings": {
+            "checkout-text": "BUY NOW"
+          }
+        }
+      },
+      "block_order": [
+        "eb58e1aa-2636-4b9a-a364-393bda439d81",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "463df5a4-44f8-46b9-bcd4-988f445263e5"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "medium",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": true,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "1c3069a6-7e70-4ded-b084-6cba9e5ae822": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--20025902432578__1c3069a6-7e70-4ded-b084-6cba9e5ae822-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "row_content": "<ul><li>【Smooth and Silent Playtime】PetSnowy automatic cat toy features an ultra-quiet motor that can ensure your kitty friend's playtime without any buzzing noise. Keep your kitty friend accompanied and your work uninterrupted, even on busy days.<\/li><li>【Convenient One-button Switch】No need to fiddle with complicated controls. With just one button, you can turn the cat toys on and off easily. Plus, Type-C charging port provides a convenient and efficient way to charge.<\/li><li>【Stylish Roly-poly!】This isn't just any cat toys - it's also cat furniture! Playful yet fashionable, this interactive cat toy has a unique shape of roly-poly, which makes sure that it won't topple over during the kitty's playtime. With our sleek, modern design, this is also a perfect addition to any home decor.<\/li><li>【15-Minute Auto Shutdown】Overplaying may damage kitty's heart. Our interactive cat toys has a 15-minute auto shutdown trait to promote cat wellness. Moderate playing keeps your kitty pal from overworking and provides you peace of mind.<\/li><li>【Step Up the Fun】Perfect for active cats. This automatic cat toy rotates its feather quickly for 360° randomized play, and the feathers atop the wand are easily replaceable for long-lasting use. With our innovative and interactive cat toys for indoor cats, your fur baby will never have a dull moment.<\/li><\/ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20025902432578__1c3069a6-7e70-4ded-b084-6cba9e5ae822-collapsible_row-2"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "a21a1560-db1e-403e-921c-96a00ef641a2": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Specification",
+            "icon": "none",
+            "row_content": "",
+            "page": "cat-toy-specification"
+          }
+        }
+      },
+      "block_order": [
+        "template--19468281774402__a21a1560-db1e-403e-921c-96a00ef641a2-1688704221a0f360d2-0"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "791f1fc8-f2ee-402a-919b-0cbf3a977591": {
+      "type": "image-banner",
+      "blocks": {
+        "fa5ae380-3239-47b0-89c8-1a4aca5d46f9": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "13efe8f0-9713-4b3d-bf91-a0bedeaa8be1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "aa65b87b-3f38-4af9-bf7f-7fbdc2c5e868": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "fa5ae380-3239-47b0-89c8-1a4aca5d46f9",
+        "13efe8f0-9713-4b3d-bf91-a0bedeaa8be1",
+        "aa65b87b-3f38-4af9-bf7f-7fbdc2c5e868"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/petsnowy_cat_toy_a7d0732f-8292-4b55-8e5f-c93738deedba.jpg",
+        "image_mbl": "shopify:\/\/shop_images\/interactivecattoy_452a603e-ae9f-480a-b7e1-911f405ad678.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "6f887e38-8539-4eb2-a2f7-a77aa8af4c79": {
+      "type": "image-banner",
+      "blocks": {
+        "f8a4996d-b1ea-41a2-8615-e77a69fbbec5": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "7709bcd6-bad6-44b8-a97c-5b6f43764e8a": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "5593f882-eb69-48de-8b31-2c802c57aed5": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "f8a4996d-b1ea-41a2-8615-e77a69fbbec5",
+        "7709bcd6-bad6-44b8-a97c-5b6f43764e8a",
+        "5593f882-eb69-48de-8b31-2c802c57aed5"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/automatic_cat_toy_fa8e365e-5ba4-458b-a56b-2d6f64583dd1.jpg",
+        "image_mbl": "shopify:\/\/shop_images\/cattoys_33f557c1-e5b4-4d8a-bdaf-276c3816d50d.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "86f268b1-4ea4-46d2-8097-7d8c56290906": {
+      "type": "text",
+      "blocks": {
+        "a91d875c-089c-48ba-bcd1-1bb87bd7ce18": {
+          "type": "block",
+          "settings": {
+            "text": "Your feline friends are born hunters. They need regular exercise to keep their energetic spirits thriving. As a devoted pet parent, you deserve peace of mind, knowing that your beloved cat is thriving and content, even when time is limited. That's why we created PetSnowy automatic cat toys, offering a delightful solution to keep your cat engaged and entertained without ever leaving your couch."
+          }
+        },
+        "03778c80-9c93-4a6a-9aa9-486a72fcfb8c": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Random Rotation Feature:<\/b> Mimic the movements of prey and trigger hunting instincts"
+          }
+        },
+        "e332baf4-fb16-48a3-9dc6-fd5f531be84b": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Healthy Playtime:<\/b>15-Minute Auto Shutdown"
+          }
+        },
+        "4590cdd4-be04-4cbd-a2ae-0b52d2265bb3": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Safe Entertainment: <\/b>ABS Material & Natural Feathers"
+          }
+        },
+        "bd952546-c4f2-493b-9ffb-e890b4feb932": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Peaceful Playtime:<\/b> Ultra-Quiet Motor"
+          }
+        }
+      },
+      "block_order": [
+        "a91d875c-089c-48ba-bcd1-1bb87bd7ce18",
+        "03778c80-9c93-4a6a-9aa9-486a72fcfb8c",
+        "e332baf4-fb16-48a3-9dc6-fd5f531be84b",
+        "4590cdd4-be04-4cbd-a2ae-0b52d2265bb3",
+        "bd952546-c4f2-493b-9ffb-e890b4feb932"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "c18c2ce5-43e9-4215-9b4d-44b3c5e0a512": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_2.jpg",
+            "title": "Charge & Play in a Snap!",
+            "text": "<p>With our Type-C Charging and One-Touch Activation, bonding with your furry friends has never been easier or more delightful!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_3_81be9e96-6364-4ef6-8667-68405c4bfc92.jpg",
+            "title": "Let their inner hunter shine.",
+            "text": "<p>Random Rotation feature will provide your furry friends with the excitement and stimulation they crave.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_3_1eae9e6a-6d08-4479-89c2-4af0a2127504.jpg",
+            "title": "Safety is our top priority.",
+            "text": "<p>Made from durable ABS Safe Material and natural feathers, our interactive cat toys ensure a safe and engaging entertainment experience.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-1",
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-2",
+        "template--20025902432578__c18c2ce5-43e9-4215-9b4d-44b3c5e0a512-column-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "6eb9d775-77d4-40be-937a-ab2748a2cf87": {
+      "type": "image-banner",
+      "blocks": {
+        "58d7e9cc-7e24-46ca-b0cd-ae19faec5bf7": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "174179d1-a71b-4c6a-9482-59d897db6b7a": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "6a8a72c3-def1-4741-a147-9ebe49788a78": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "58d7e9cc-7e24-46ca-b0cd-ae19faec5bf7",
+        "174179d1-a71b-4c6a-9482-59d897db6b7a",
+        "6a8a72c3-def1-4741-a147-9ebe49788a78"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/interactive_cat_toys_4895e26f-e318-42a9-8c8c-306f97a37a26.jpg",
+        "image_mbl": "shopify:\/\/shop_images\/automaticcattoy.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "e8b01c70-ef62-496d-a645-ad65e3430e3a": {
+      "type": "text",
+      "blocks": {
+        "cd8f115d-f74a-46f9-8e6d-f3d699a4d6fb": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Peaceful & Undisturbed<\/b>"
+          }
+        },
+        "6dec3fe1-2c7d-448c-8727-c44ccea9873c": {
+          "type": "block",
+          "settings": {
+            "text": "Playtime!Boasting a whisper-quiet motor, our cat toys create a harmonious environment where your feline friend can happily engage in play. Without worrying about any jarring noises, you and your beloved friend can enjoy uninterrupted moments of bliss and contentment."
+          }
+        },
+        "30c75eaa-8a92-4b26-b54b-dbc655530609": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "text": "Healthy Playtime:15-Minute Auto Shutdown"
+          }
+        },
+        "f7573043-2d1e-4803-acc6-6eaee4b26101": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "text": "Safe Entertainment: ABS Material & Natural Feathers"
+          }
+        },
+        "f9055db0-d519-4717-9bea-269235ca9653": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "text": "Peaceful Playtime: Ultra-Quiet Motor"
+          }
+        }
+      },
+      "block_order": [
+        "cd8f115d-f74a-46f9-8e6d-f3d699a4d6fb",
+        "6dec3fe1-2c7d-448c-8727-c44ccea9873c",
+        "30c75eaa-8a92-4b26-b54b-dbc655530609",
+        "f7573043-2d1e-4803-acc6-6eaee4b26101",
+        "f9055db0-d519-4717-9bea-269235ca9653"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "6bbb9f5f-efc8-428f-9807-f54235735aad": {
+      "type": "image-banner",
+      "blocks": {
+        "0b63cf3d-54e5-4f39-a228-0afd4bbf4283": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "03af7df8-808f-4399-b676-f5f08db57180": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "ab506b5c-59bd-4be4-a587-03dbd901293b": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "0b63cf3d-54e5-4f39-a228-0afd4bbf4283",
+        "03af7df8-808f-4399-b676-f5f08db57180",
+        "ab506b5c-59bd-4be4-a587-03dbd901293b"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cat_toys_049396c5-2d64-4595-a1cf-faee322d7638.jpg",
+        "image_mbl": "shopify:\/\/shop_images\/petsnowy_cat_toys_1633b393-14ef-49af-92e6-141105d04bb1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "fba5d096-d072-4f5d-8268-2861ab6a48ec": {
+      "type": "image-banner",
+      "blocks": {
+        "c7af4ac5-2c02-4e60-b21e-dc0a076cbe7f": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "46f10221-7176-41ea-9c59-c7837a74cea1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "f68115e5-d531-4668-8c6b-562b81a828c2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "c7af4ac5-2c02-4e60-b21e-dc0a076cbe7f",
+        "46f10221-7176-41ea-9c59-c7837a74cea1",
+        "f68115e5-d531-4668-8c6b-562b81a828c2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cat_toys_049396c5-2d64-4595-a1cf-faee322d7638.jpg",
+        "image_mbl": "shopify:\/\/shop_images\/interactive_cat_toy_84281429-0e13-4da0-ba92-733063a2355c.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "815a64f2-a2d1-497f-9dac-1cabc60918d0": {
+      "type": "Explore-products",
+      "blocks": {
+        "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        }
+      },
+      "block_order": [
+        "template--17467598012738__815a64f2-a2d1-497f-9dac-1cabc60918d0-16742210707609c111-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "description": "<p>Cannot foresee Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal.<\/p>",
+        "product": "petsnowy-indiegogo-launch-discount-30-off",
+        "padding_top": 0,
+        "padding_bottom": 80
+      }
+    },
+    "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8": {
+      "type": "product-grid-collection",
+      "disabled": true,
+      "settings": {
+        "richtext": "",
+        "images": "shopify:\/\/shop_images\/2-ZERO-OROR_04.gif",
+        "titles": "Your Collection Text Here",
+        "texts": "Your Text Here",
+        "urls": "",
+        "half_img": "shopify:\/\/shop_images\/11_5d9b5548-f0cc-4f26-bc86-b0468a725a83.jpg",
+        "image": "shopify:\/\/shop_images\/3_20b9b2cb-b93c-488c-9d7c-341b75f7f603.jpg",
+        "title": "The Ultimate Solution for Odor-Free Living",
+        "text": "Your Text Here",
+        "url": "",
+        "title2": "",
+        "text2": "",
+        "url2": "",
+        "titles2": "",
+        "texts2": "",
+        "urls2": "",
+        "btns": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b": {
+      "type": "product-grid-image",
+      "disabled": true,
+      "settings": {
+        "flex_data": false,
+        "heading": "Your Text Here",
+        "richtext": "<p>Ban not foresee of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
+        "link": "",
+        "btn_title": "",
+        "img_pet": "shopify:\/\/shop_images\/Bg_Image_7.png",
+        "title2": "",
+        "text2": "",
+        "url2": "",
+        "titles2": "Your Text Here",
+        "texts2": "<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the.<\/p>",
+        "urls2": "",
+        "btns": "Explore accessories",
+        "padding_top": 50,
+        "padding_bottom": 0
+      }
+    },
+    "f594996b-4dbf-425f-9059-9821e6ea4e6b": {
+      "type": "Information-video",
+      "disabled": true,
+      "settings": {
+        "richtext": "<p>pleasure of the moment, cannot foresee so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.<\/p>",
+        "vdio_img": "shopify:\/\/shop_images\/Rectangle_14_1.png",
+        "vdio": "",
+        "heading": "The power you need",
+        "text": "Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs.",
+        "padding_top": 20,
+        "padding_bottom": 60
+      }
+    },
+    "7956ec82-bee1-4347-a954-e5194f282217": {
+      "type": "product-grid-image",
+      "disabled": true,
+      "settings": {
+        "flex_data": false,
+        "heading": "The Ultimate Solution for Odor-Free Living",
+        "richtext": "<p>Cutting-Edge Triple Deodorization System with TiO2<\/p>",
+        "link": "#",
+        "btn_title": "",
+        "image2": "shopify:\/\/shop_images\/3_20b9b2cb-b93c-488c-9d7c-341b75f7f603.jpg",
+        "title2": "",
+        "text2": "",
+        "url2": "",
+        "images2": "shopify:\/\/shop_images\/2-ZERO-OROR_04.gif",
+        "titles2": "Your Text Here",
+        "texts2": "<p>Demoralized by the charms of pleasure of the moment by desire, that they cannot foresee the pain and trouble.<\/p>",
+        "urls2": "#",
+        "btns": "Explore accessories",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "a01e7f6a-6040-4334-97af-966598236644": {
+      "type": "extra-text-blocks",
+      "blocks": {
+        "03d34236-6eee-4408-bf76-43f3607fd691": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+          }
+        },
+        "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+          }
+        },
+        "c59af14b-539c-4fa1-a0de-8fd8435255cf": {
+          "type": "title",
+          "settings": {
+            "title": "Your Text Here",
+            "description": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "03d34236-6eee-4408-bf76-43f3607fd691",
+        "d9fd7b38-8267-42a7-8a7a-2e99c2cfaf74",
+        "c59af14b-539c-4fa1-a0de-8fd8435255cf"
+      ],
+      "disabled": true,
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cat_toys.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "a7d781da-2db9-4e93-a537-ae36cc05295f": {
+      "type": "image-text-block",
+      "disabled": true,
+      "settings": {
+        "img": "shopify:\/\/shop_images\/automatic_cat_toy_8edcb098-899c-4c20-b735-42ce9c6f6580.jpg",
+        "mobimg": "shopify:\/\/shop_images\/automatic_cat_toy_cc94a365-bf87-46cb-8b5b-690602652fe5.jpg",
+        "heading": "",
+        "richtext": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1": {
+      "type": "grid-image-text",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "texts": "",
+        "title1": "",
+        "texts1": "",
+        "title2": "",
+        "textss2": "",
+        "flex_data": true,
+        "richtexxt": "<p> <\/p>",
+        "images2": "shopify:\/\/shop_images\/petsnowy_cat_toys_86999795-5621-4770-a5fe-4604878a0302.jpg",
+        "vdioses": "",
+        "im_age": "shopify:\/\/shop_images\/cat_toys_interactive_for_indoor_cats_34b2d45e-4830-40f8-afe6-8ba908a19090.jpg",
+        "vdios": "",
+        "texts2": "",
+        "titles2": "",
+        "textext": "",
+        "urls2": "#",
+        "btns": "",
+        "image2": "shopify:\/\/shop_images\/interactive_cat_toy_a170df04-b650-4c28-9edc-ef6ddde47886.jpg",
+        "vdio": "",
+        "url2": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1696142533e9c758f5": {
+      "type": "apps",
+      "blocks": {
+        "aa9ecbe0-978e-4dbb-9b74-0b9a431ff89e": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "aa9ecbe0-978e-4dbb-9b74-0b9a431ff89e"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "d14f1052-f0b1-4254-8d9a-a84aeb986bdd": {
+      "type": "social-image-text",
+      "blocks": {
+        "12ee67c8-1af4-46ca-9aa7-64db4191e694": {
+          "type": "image",
+          "settings": {
+            "blk_img": "shopify:\/\/shop_images\/bf9062f8-2d73-4fa1-968e-5b2b5c129374_2080aa67-f5d8-49d2-a6e1-a1ef4903cedc.jpg"
+          }
+        },
+        "ef490cd3-7a6b-4bf9-9fd9-5ecef72a2214": {
+          "type": "image",
+          "settings": {
+            "blk_img": "shopify:\/\/shop_images\/download_d2572d92-4413-4d2a-8347-3219d2b6d698.jpg"
+          }
+        },
+        "25153b1b-e008-4818-bb39-f716431c24e4": {
+          "type": "image",
+          "settings": {
+            "blk_img": "shopify:\/\/shop_images\/20230313195840.png"
+          }
+        },
+        "2cad361c-19e5-4f4b-a613-ac6890e2dafe": {
+          "type": "image",
+          "settings": {
+            "blk_img": "shopify:\/\/shop_images\/4185.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "12ee67c8-1af4-46ca-9aa7-64db4191e694",
+        "ef490cd3-7a6b-4bf9-9fd9-5ecef72a2214",
+        "25153b1b-e008-4818-bb39-f716431c24e4",
+        "2cad361c-19e5-4f4b-a613-ac6890e2dafe"
+      ],
+      "settings": {
+        "heading": "",
+        "insta_txt": "Follow us on Instagram",
+        "app_url": "http:\/\/instagram.com\/petsnowy_official",
+        "img": "shopify:\/\/shop_images\/10062103_10_2_e9884dde-77ed-4967-ab03-4a0dfc4db4b8.jpg",
+        "space_top": 60,
+        "space_bottom": 40
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1c3069a6-7e70-4ded-b084-6cba9e5ae822",
+    "a21a1560-db1e-403e-921c-96a00ef641a2",
+    "791f1fc8-f2ee-402a-919b-0cbf3a977591",
+    "6f887e38-8539-4eb2-a2f7-a77aa8af4c79",
+    "86f268b1-4ea4-46d2-8097-7d8c56290906",
+    "c18c2ce5-43e9-4215-9b4d-44b3c5e0a512",
+    "6eb9d775-77d4-40be-937a-ab2748a2cf87",
+    "e8b01c70-ef62-496d-a645-ad65e3430e3a",
+    "6bbb9f5f-efc8-428f-9807-f54235735aad",
+    "fba5d096-d072-4f5d-8268-2861ab6a48ec",
+    "815a64f2-a2d1-497f-9dac-1cabc60918d0",
+    "58c1ef5c-9a8e-4828-bb16-32d90f0bb8b8",
+    "5a1eb516-51d8-4cc0-9f2a-0acb7e2a146b",
+    "f594996b-4dbf-425f-9059-9821e6ea4e6b",
+    "7956ec82-bee1-4347-a954-e5194f282217",
+    "a01e7f6a-6040-4334-97af-966598236644",
+    "9718b22d-dd4e-4d76-a533-e0e3a5b36a2a",
+    "a7d781da-2db9-4e93-a537-ae36cc05295f",
+    "3ed7b3b9-42cf-4857-b2b8-e8f8869cefb1",
+    "1696142533e9c758f5",
+    "d14f1052-f0b1-4254-8d9a-a84aeb986bdd",
+    "product-recommendations"
+  ]
+}
