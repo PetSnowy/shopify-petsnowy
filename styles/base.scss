@@ -6276,6 +6276,12 @@ active-bar {
 	}
 }
 
+.card-information {
+	.Black_Friday {
+		display: none !important;
+	}
+}
+
 @media screen and (max-width: 900px) {
 	.Black_Friday {
 		font-size: vw(24px);
