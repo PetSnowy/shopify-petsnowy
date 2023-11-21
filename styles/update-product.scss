@@ -118,12 +118,8 @@ $product-select-color:#f0b42d;
 		&::after {
 			content: '';
 			display: block;
-			width: 20px;
-			height: 20px;
 			background: url('./usaOnly.png') no-repeat center/cover;
 			position: absolute;
-			left: 10px;
-			top: 10px;
 		}
 	}
 }
@@ -518,7 +514,7 @@ $product-select-color:#f0b42d;
 				&::after {
 					width: vw(84px);
 					height: vw(32px);
-					left: vw(10px);
+					right: vw(10px);
 					top: vw(10px);
 				}
 			}
@@ -1518,9 +1514,9 @@ $product-select-color:#f0b42d;
 			.color:nth-child(3) {
 
 				&::after {
-					width: 115px;
-					height: 44px;
-					left: 10px;
+					width: 58px;
+					height: 22px;
+					right: 10px;
 					top: 10px;
 				}
 			}
