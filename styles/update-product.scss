@@ -111,6 +111,21 @@ $product-select-color:#f0b42d;
 			}
 		}
 	}
+
+	.color:nth-child(3) {
+		position: relative;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 20px;
+			height: 20px;
+			background: url('./usaOnly.png') no-repeat center/cover;
+			position: absolute;
+			left: 10px;
+			top: 10px;
+		}
+	}
 }
 
 #MainContentProduct {
@@ -496,6 +511,15 @@ $product-select-color:#f0b42d;
 					width: vw(320px);
 					background: #FFFFFF;
 					border-radius: vw(12px);
+				}
+			}
+
+			.color:nth-child(3) {
+				&::after {
+					width: vw(84px);
+					height: vw(32px);
+					left: vw(10px);
+					top: vw(10px);
 				}
 			}
 
@@ -1488,6 +1512,16 @@ $product-select-color:#f0b42d;
 					flex-direction: row;
 					align-items: center;
 					column-gap: 20px;
+				}
+			}
+
+			.color:nth-child(3) {
+
+				&::after {
+					width: 115px;
+					height: 44px;
+					left: 10px;
+					top: 10px;
 				}
 			}
 

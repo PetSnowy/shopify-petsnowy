@@ -645,7 +645,10 @@
     });
 
     const rollbackAddCart = document.querySelector('.rollback-add-cart');
-    const newProductHeight = document.querySelector('#product-indiegogo').offsetHeight;
+    const newProductHeight =
+      document.querySelector('#product-indiegogo').offsetHeight +
+      document.querySelector('.custom-banr-main').offsetHeight +
+      parseInt(getComputedStyle(document.documentElement).getPropertyValue('--main-padding-top'));
     const infoWrapper = document.querySelector('.product-add-cart');
 
     window.addEventListener('scroll', () => {
@@ -658,6 +661,14 @@
     });
     rollbackAddCart.addEventListener('click', () => {
       infoWrapper.scrollIntoView({ behavior: 'instant', block: 'start' });
+    });
+
+    const add_list_product = Array.from(document.querySelectorAll('.add_list_product'));
+    add_list_product.forEach((item) => {
+      item.addEventListener('click', () => {
+        const input = item.querySelector('input');
+        input.checked = !input.checked;
+      });
     });
   </script>
 </section>
