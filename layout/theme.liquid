@@ -336,6 +336,7 @@
  
 
 
+ 
  {% comment %} Start Pricing by country {% endcomment %}  
 <style id="priceBlock">
 	 .product-grid .grid__item .price{
@@ -345,7 +346,7 @@
 <script>
 try {
 	 document.addEventListener("DOMSubtreeModified", function(){
-		 var labels1 = document.querySelectorAll(".product-form__input");
+		 var labels1 = document.querySelectorAll("fieldset.product-form__input ");
 		 for(let i =0; i<labels1.length; i++) {
 			 let ele = labels1[i]; 
 			 if(ele.innerHTML.toLowerCase().includes("currencycountry") && ele.style.display != "none"){
@@ -376,6 +377,7 @@ try {
       {% endif %}
     </script>	 <script defer type="text/javascript" src="https://pricing-by-country-api.webrexstudio.com/pricingbycountry.js?id=643cf7e76f1c88a55872149f" ></script> 
 {% comment %} End Pricing by country {% endcomment %}
+
 </head>
 
   {% for item in cart.items %}
