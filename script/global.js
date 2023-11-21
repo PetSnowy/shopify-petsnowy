@@ -43,16 +43,16 @@ class ActiveBar extends HTMLElement {
 	}
 
 	countDown(time) {
-		let nowTime = +new Date();
-		let inputTime = +new Date(time);
+		let nowTime = new Date().getTime();
+		let inputTime = new Date(time).getTime();
 		let times = (inputTime - nowTime) / 1000;
-		let d = parseInt(times / 60 / 60 / 24);
+		let d = Math.floor(times / (60 * 60 * 24));
 		d = d < 10 ? '0' + d : d;
-		let h = parseInt(times / 60 / 60 % 24);
+		let h = Math.floor((times % (60 * 60 * 24)) / (60 * 60));
 		h = h < 10 ? '0' + h : h;
-		let m = parseInt(times / 60 % 60);
+		let m = Math.floor((times % (60 * 60)) / 60);
 		m = m < 10 ? '0' + m : m;
-		let s = parseInt(times % 60);
+		let s = Math.floor(times % 60);
 		s = s < 10 ? '0' + s : s;
 		return `<div>
 							<p>${d}</p>
@@ -69,7 +69,7 @@ class ActiveBar extends HTMLElement {
 						<div>
 							<p>${s}</p>
 							<p>Seconds</p>
-						</div>`
+						</div>`;
 	}
 }
 
