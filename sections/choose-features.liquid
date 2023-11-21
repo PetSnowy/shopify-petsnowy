@@ -290,6 +290,9 @@
                         data-value="{{ value | handleize }}"
                         value="{{ value | escape }}"
                         form="{{ product_form_id }}"
+                        {% if forloop.index0 == 0 %}
+                          checked
+                        {% endif %}
                       >
 
                       <label
@@ -354,7 +357,7 @@
                 style="display:none;"
               >
                 {% for product_addons in product_list %}
-                  {% assign inc_value = product_addons.first_available_variant.price | times: 20 | divided_by: 100 %}
+                  {% assign inc_value = product_addons.first_available_variant.price %}
                   {% assign product_price = product_addons.first_available_variant.price %}
                   {% assign final_inc = inc_value | minus: product_price %}
 
@@ -369,7 +372,7 @@
                       type="checkbox"
                       id="{{ product_addons.title }}"
                       value="{{ product_addons.first_available_variant.id }}"
-                      data-addonprice="{{ final_inc | money_without_currency | remove: '-' }}"
+                      data-addonprice="{{ product_addons.first_available_variant.price | money_without_currency | remove: '-' }}"
                       data-price_without_discount="{{ price |  money_without_currency}}"
                     >
                     <label
