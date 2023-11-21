@@ -332,6 +332,7 @@
 
     {% render 'digismoothie-giftbox' %}
   
+ 
  {% comment %} Start Pricing by country {% endcomment %}  
 <style id="priceBlock">
 	 .product-grid .grid__item .price{
@@ -352,7 +353,7 @@ try {
 }catch(error){
 	 console.log("Pricing by country -->",error); 
 	 let ele = document.getElementById("priceBlock"); 
-	 ele.innerHTML = ".product-grid .grid__item .price{visibility: visible;}.product .price{visibility: visible;}" 
+	 ele.innerHTML = ".product-grid .grid__item .price{visibility: visible;}.product__info-wrapper .price__container{visibility: visible;}" 
 }
 </script>
 
@@ -372,6 +373,7 @@ try {
       {% endif %}
     </script>	 <script defer type="text/javascript" src="https://pricing-by-country-api.webrexstudio.com/pricingbycountry.js?id=643cf7e76f1c88a55872149f" ></script> 
 {% comment %} End Pricing by country {% endcomment %}
+
 </head>
 
   {% for item in cart.items %}
