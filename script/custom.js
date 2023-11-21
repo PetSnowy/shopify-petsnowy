@@ -17,6 +17,10 @@ $(document).ready(function () {
 
 	const paddingTop = window.innerWidth > 900 ? '90px' : '14vw'
 
+	const itg_drop_var_align_div = $('.itg_drop_var_align_div').eq(0).children('label').attr('data_var_price')
+	$('.total-price').eq(0).children('.total_price_add').text(monetaryUnit + itg_drop_var_align_div)
+
+
 	$(".slide_arrow svg").click(function () {
 		document.documentElement.style.scrollPaddingTop = paddingTop
 		const el = document.querySelector('.active-img') || document.querySelector('#product-indiegogo')
