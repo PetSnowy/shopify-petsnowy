@@ -16,7 +16,7 @@
 		display: block;
 		transform: scale(0.9);
 		transform-origin: bottom;
-		transition: all 0.3s ease-in-out;
+		transition: 1.4s cubic-bezier(.42, 0, .002, 1) .3s;
 	}
 
 
