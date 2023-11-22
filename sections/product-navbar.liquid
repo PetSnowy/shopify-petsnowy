@@ -70,7 +70,7 @@
       list.forEach((item, index) => {
         item.addEventListener('click', () => {
           document.documentElement.style.scrollPaddingTop = `${tempHeight + parseInt(paddingTop)}px`;
-          productEl[index].scrollIntoView({ behavior: 'instant', block: 'start' });
+          productEl[index].scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
       });
     }
