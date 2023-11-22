@@ -236,6 +236,10 @@ $product-icon-color: #d75f23;
 	display: none !important;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 html.no-js .no-js:not(html) {
 	display: block !important;
 }
