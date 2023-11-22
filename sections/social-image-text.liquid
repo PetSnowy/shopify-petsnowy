@@ -55,8 +55,45 @@
       </div>
     </div>
   </div>
+  <div class="img_popup">
+    <img src="" alt="petsnowy">
+  </div>
 </div>
-
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const img = Array.from(document.querySelectorAll('.social_main_div img'));
+    const imgPopup = document.querySelector('.img_popup');
+    img.forEach((item) => {
+      item.addEventListener('click', () => {
+        imgPopup.style.display = 'block';
+        imgPopup.querySelector('img').src = item.src;
+      });
+    });
+    imgPopup.addEventListener('click', () => (imgPopup.style.display = 'none'));
+  });
+</script>
+<style>
+  .social_main_div .img_popup {
+    cursor: pointer;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 100;
+  }
+  .social_main_div .img_popup img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 90vh;
+    width: auto;
+    object-fit: contain;
+  }
+</style>
 {% schema %}
 {
   "name": "Social Image Text",
