@@ -1,24 +1,24 @@
 $(function () {
 	const visibleHeight = document.documentElement.clientHeight / 2;
-	const title = document.querySelectorAll('.title');
-	const select = document.querySelectorAll('select')[0];
+	const title = document.querySelectorAll('.faq_qa_main .title');
+	const select = document.querySelectorAll('.faq_qa_main select')[0];
 
 	let value = '';
 	$('.search input').on('input', function () {
 		value = $(this).val().trim();
 	});
 
-	const descTitle = document.querySelectorAll('.ques_title');
-	const descText = document.querySelectorAll('.answer_txt');
+	const descTitle = document.querySelectorAll('.faq_qa_main .ques_title');
+	const descText = document.querySelectorAll('.faq_qa_main .answer_txt');
 	const content = [];
 	for (let i = 0; i < descTitle.length; i++) {
 		content.push({ title: descTitle[i].innerText.trim(), text: descText[i].innerHTML.trim() });
 	}
 	let searchResult = [];
 
-	$('.search button').click(debounce(seek, 500));
+	$('.faq_qa_main .search button').click(debounce(seek, 500));
 
-	$('.search input').on('keydown', function (event) {
+	$('.faq_qa_main .search input').on('keydown', function (event) {
 		if (event.keyCode === 13) {
 			event.preventDefault();
 			debounce(seek, 500)();
@@ -105,7 +105,7 @@ $(function () {
 		asideItemWrapper.appendChild(createElement)
 	}
 
-	const asideItem = document.querySelectorAll('.aside-item');
+	const asideItem = document.querySelectorAll('.faq_qa_main .aside-item');
 
 	for (let i = 0; i < asideItem.length; i++) {
 		asideItem[i].addEventListener('click', function () {
