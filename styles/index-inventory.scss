@@ -4,13 +4,10 @@
 	.new-index-inventory {
 		margin-bottom: 100px;
 
-		.page-width {
-			position: relative;
-		}
-
 		picture {
 			width: 1200px;
 			display: block;
+			position: relative;
 		}
 
 		img {
@@ -51,22 +48,19 @@
 	.new-index-inventory {
 		margin-bottom: vw(70px);
 
-		.page-width {
-			position: relative;
-		}
-
 		picture,
 		img {
 			width: 100%;
 			height: auto;
 			object-fit: contain;
 			display: block;
+			position: relative;
 		}
 
 		a {
 			position: absolute;
 			bottom: vw(30px);
-			right: vw(50px);
+			right: vw(30px);
 			width: vw(230px);
 			height: vw(58px);
 			background: #504030;
