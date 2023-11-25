@@ -164,8 +164,7 @@
                         <div class="price_title_align">
                           <h3>{{ product_change.title }}</h3>
                           <div class="replace_product_pricealign">
-                            {{ product_change.compare_at_price_min }}
-                            {% if product_change.compare_at_price_min != 000 %}
+                            {% if product_change.compare_at_price_min != 0 %}
                               <span class="replace_product_pricecompare">
                                 {{- product_change.compare_at_price_min | money -}}
                               </span>
