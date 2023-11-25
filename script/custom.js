@@ -342,7 +342,7 @@ $(document).ready(function () {
 		var option_image = $(this).find('img').attr('src');
 		$(this).closest('.product_details_show').find(".prod_cus_images img").attr('src', option_image);
 
-		var price_option = parseFloat($(this).attr('data_var_price').replace(/,/g, '.'));
+		var price_option = parseFloat($(this).attr('data_var_price').replace(/,/g, ''));
 		var comapre_price_option = parseFloat($(this).attr('main-compare').replace(/,/g, ''));
 
 		console.log('price_option', price_option);

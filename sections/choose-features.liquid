@@ -299,7 +299,7 @@
 
                       <label
                         for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                        data_var_price="{{ varprice }}"
+                        data_var_price="{{ varprice |  replace: ',','.' }}"
                         main-id="{{ varid }}"
                         main-compare="{{ compareprice }}"
                       >
