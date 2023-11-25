@@ -390,7 +390,17 @@ $(document).ready(function () {
 	// second-tab-Qty-click
 	$(document).on("click", ".first_addons input", function () {
 
-		var main_product = parseFloat($(document).find(".main_prodcut_contain.active .total_price_add").attr('data_price'));
+		const data_price = $(document).find(".main_prodcut_contain.active .total_price_add").attr('data_price')
+
+		var price_option = parseFloat($(this).attr('data-price_without_discount').replace(/,/g, ''));
+
+
+		$('.main_prodcut_contain.active .total_price_add').attr('data_price', price_option);
+		$('.main_prodcut_contain.active .total_price_add').attr('data-addon', price_option);
+
+		var main_product = parseFloat(data_price === '' ? '0.00' : data_price);
+
+
 		var sum_data = 0;
 
 		$('.main_addons_product.main_prodcut_contain.active input[type=checkbox]').each(function () {

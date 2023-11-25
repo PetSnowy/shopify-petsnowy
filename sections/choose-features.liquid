@@ -374,8 +374,8 @@
                       type="checkbox"
                       id="{{ product_addons.title }}"
                       value="{{ product_addons.first_available_variant.id }}"
-                      data-addonprice="{{ product_addons.first_available_variant.price | money_without_currency | remove: '-' }}"
-                      data-price_without_discount="{{ price |  money_without_currency}}"
+                      data-addonprice="{{ product_addons.first_available_variant.price | money_without_currency | remove: '-'  |  replace: ',','.' }}"
+                      data-price_without_discount="{{ price |  money_without_currency |  replace: ',','.'}}"
                     >
                     <label
                       class="productlabel_info"
