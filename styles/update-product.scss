@@ -100,7 +100,8 @@ $product-select-color:#f0b42d;
 		}
 
 		.price-item--last,
-		.price__regular {
+		.price__regular,
+		.price__regular .price-item--regular {
 			font-family: LeagueSpartanBlack;
 			font-weight: 900;
 			color: #D75F23;
@@ -222,7 +223,8 @@ $product-select-color:#f0b42d;
 			}
 
 			.price-item--last,
-			.price__regular {
+			.price__regular,
+			.price__regular .price-item--regular {
 				font-size: vw(30px);
 				line-height: vw(44px);
 				display: inline-block;
@@ -1046,7 +1048,8 @@ $product-select-color:#f0b42d;
 			}
 
 			.price-item--last,
-			.price__regular {
+			.price__regular,
+			.price__regular .price-item--regular {
 				font-size: 20px;
 				line-height: 22px;
 
