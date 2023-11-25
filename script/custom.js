@@ -398,7 +398,7 @@ $(document).ready(function () {
 		$('.main_prodcut_contain.active .total_price_add').attr('data_price', price_option);
 		$('.main_prodcut_contain.active .total_price_add').attr('data-addon', price_option);
 
-		var main_product = parseFloat(data_price === '' ? '0.00' : data_price);
+		var main_product = parseFloat(data_price === '' ? '0.00' : data_price) + price_option;
 
 
 		var sum_data = 0;
