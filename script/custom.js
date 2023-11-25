@@ -345,6 +345,8 @@ $(document).ready(function () {
 		var price_option = parseFloat($(this).attr('data_var_price').replace(/,/g, ''));
 		var comapre_price_option = parseFloat($(this).attr('main-compare').replace(/,/g, ''));
 
+		console.log('price_option', price_option);
+
 		$('.main_prodcut_contain.active .total_price_add').text(monetaryUnit + price_option);
 		$('.main_prodcut_contain.active .total_price_add').attr('data_price', price_option);
 		$('.main_prodcut_contain.active .total_price_add').attr('data-addon', price_option);
