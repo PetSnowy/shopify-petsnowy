@@ -749,26 +749,15 @@
                 data-handle="{{ main_product_detail.handle }}"
                 style="display:none;"
               >
-                {% assign originalCost = main_product_detail.price %}
-                {% assign varmainprice = main_product_detail.compare_at_price | money %}
+                {% assign varmainprice = '' %}
+                {% assign varmainprice = main_product_detail.first_available_variant.price %}
                 <span
                   class="total_price_add"
                   data-addon="{{ varmainprice | money_without_currency }}"
                   data_price="{{ varmainprice | money_without_currency }}"
-                  data-originalCost="{{ originalCost }}"
                 >
-                  {{- originalCost | money -}}
+                  {{- varmainprice | money -}}
                 </span>
-                {% comment %}
-                  <span
-                    class="total_original_cost"
-                    data-addon="{{ varmainprice | money_without_currency }}"
-                    data_price="{{ varmainprice | money_without_currency }}"
-                    data-originalCost="{{ originalCost }}"
-                  >
-                    {{ 0.00 | money -}}
-                  </span>
-                {% endcomment %}
               </strong>
             {% endfor %}
           </div>
