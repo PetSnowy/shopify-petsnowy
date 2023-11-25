@@ -345,8 +345,6 @@ $(document).ready(function () {
 		var price_option = parseFloat($(this).attr('data_var_price').replace(/,/g, ''));
 		var comapre_price_option = parseFloat($(this).attr('main-compare').replace(/,/g, ''));
 
-		console.log('price_option', price_option);
-
 		$('.main_prodcut_contain.active .total_price_add').text(monetaryUnit + price_option);
 		$('.main_prodcut_contain.active .total_price_add').attr('data_price', price_option);
 		$('.main_prodcut_contain.active .total_price_add').attr('data-addon', price_option);
@@ -413,11 +411,8 @@ $(document).ready(function () {
 				sum_data += price;
 			}
 		});
-
 		var mina_qty = $(document).find(".finalproduct_qty").val();
-		var main_product = (main_product ? main_product : 0) * mina_qty;
-
-		// console.log(main_product, 'main_product');
+		var main_product = main_product * mina_qty;
 
 		var final_price = main_product + sum_data;
 		var final_price = final_price.toFixed(2);
@@ -900,5 +895,4 @@ $(document).ready(function () {
 	//Custom_addToCart
 	$(document).on("click", "ul.addons_pagination li#final_order", debounce(addToCart, 1000))
 });
-
 
