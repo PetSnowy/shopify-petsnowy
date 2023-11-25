@@ -78,12 +78,12 @@ $product-select-color:#f0b42d;
 			margin-bottom: 0px;
 		}
 
-		.price__sale {
-			display: flex;
-			flex-direction: row-reverse;
-			align-items: center;
-			justify-content: flex-end;
-		}
+		// .price__sale {
+		// 	display: flex;
+		// 	flex-direction: row-reverse;
+		// 	align-items: center;
+		// 	justify-content: flex-end;
+		// }
 
 		.price-item--regular {
 			font-family: LeagueSpartanBlack;
@@ -99,7 +99,8 @@ $product-select-color:#f0b42d;
 			}
 		}
 
-		.price-item--last {
+		.price-item--last,
+		.price__regular {
 			font-family: LeagueSpartanBlack;
 			font-weight: 900;
 			color: #D75F23;
@@ -220,7 +221,8 @@ $product-select-color:#f0b42d;
 				}
 			}
 
-			.price-item--last {
+			.price-item--last,
+			.price__regular {
 				font-size: vw(30px);
 				line-height: vw(44px);
 				display: inline-block;
@@ -1043,7 +1045,8 @@ $product-select-color:#f0b42d;
 				}
 			}
 
-			.price-item--last {
+			.price-item--last,
+			.price__regular {
 				font-size: 20px;
 				line-height: 22px;
 
