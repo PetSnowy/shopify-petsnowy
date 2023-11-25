@@ -413,8 +413,12 @@ $(document).ready(function () {
 				sum_data += price;
 			}
 		});
+		console.log(main_product, 'main_product');
+
 		var mina_qty = $(document).find(".finalproduct_qty").val();
 		var main_product = (main_product ?? 0) * mina_qty;
+
+		console.log(main_product, 'main_product');
 
 		var final_price = main_product + sum_data;
 		var final_price = final_price.toFixed(2);
