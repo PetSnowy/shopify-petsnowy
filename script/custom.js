@@ -414,7 +414,7 @@ $(document).ready(function () {
 			}
 		});
 		var mina_qty = $(document).find(".finalproduct_qty").val();
-		var main_product = main_product * mina_qty;
+		var main_product = (main_product ?? 0) * mina_qty;
 
 		var final_price = main_product + sum_data;
 		var final_price = final_price.toFixed(2);
