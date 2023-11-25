@@ -292,7 +292,7 @@ $(document).ready(function () {
 		var sum_data = 0;
 		$('.main_addons_product.main_prodcut_contain.active input[type=checkbox]').each(function () {
 			if (this.checked) {
-				var price = parseFloat($(this).attr('data-addonprice'));
+				var price = parseFloat($(this).attr('data-addonprice').replace(/,/g, '.'));
 				var qty = $(this).closest('.first_addons_qty').find('.quantity__input').val();
 				var finalPrice = price * qty;
 				sum_data += finalPrice;
@@ -370,7 +370,7 @@ $(document).ready(function () {
 		var sum_data = 0;
 		$('.main_addons_product.main_prodcut_contain.active input[type=checkbox]').each(function () {
 			if (this.checked) {
-				var price = parseFloat($(this).attr('data-addonprice'));
+				var price = parseFloat($(this).attr('data-addonprice').replace(/,/g, '.'));
 				var qty = $(this).closest('.first_addons_qty').find('.quantity__input').val();
 				var finalPrice = price * qty;
 				sum_data += finalPrice;
@@ -401,7 +401,7 @@ $(document).ready(function () {
 
 		$('.main_addons_product.main_prodcut_contain.active input[type=checkbox]').each(function () {
 			if (this.checked) {
-				var price = parseFloat($(this).attr('data-addonprice'));
+				var price = parseFloat($(this).attr('data-addonprice').replace(/,/g, '.'));
 				var qty = $(this).closest('.first_addons_qty').find('.quantity__input').val();
 				var finalPrice = price * qty;
 				sum_data += finalPrice;
@@ -439,7 +439,7 @@ $(document).ready(function () {
 
 		$('.main_addons_product.main_prodcut_contain.active input[type=checkbox]').each(function () {
 			if (this.checked) {
-				var price = parseFloat($(this).attr('data-addonprice'));
+				var price = parseFloat($(this).attr('data-addonprice').replace(/,/g, '.'));
 				var qty = $(this).closest('.first_addons_qty').find('.quantity__input').val();
 				var finalPrice = price * qty;
 				sum_data += finalPrice;
@@ -488,7 +488,7 @@ $(document).ready(function () {
 			var sum_data = 0;
 			$('.first_addons input[type=checkbox]').each(function () {
 				if (this.checked) {
-					var price = parseFloat($(this).attr('data-addonprice'));
+					var price = parseFloat($(this).attr('data-addonprice').replace(/,/g, '.'));
 					var qty = $(this).closest('.first_addons_qty').find('.quantity__input').val();
 					var finalPrice = price * qty;
 					sum_data += finalPrice;
@@ -523,7 +523,7 @@ $(document).ready(function () {
 			var sum_data = 0;
 			$('.main_addons_product.main_prodcut_contain.active input[type=checkbox]').each(function () {
 				if (this.checked) {
-					var price = parseFloat($(this).attr('data-addonprice'));
+					var price = parseFloat($(this).attr('data-addonprice').replace(/,/g, '.'));
 					var qty = $(this).closest('.first_addons_qty').find('.quantity__input').val();
 					var finalPrice = price * qty;
 					sum_data += finalPrice;
@@ -557,7 +557,7 @@ $(document).ready(function () {
 			var sum_data = 0;
 			$('.main_addons_product.main_prodcut_contain.active input[type=checkbox]').each(function () {
 				if (this.checked) {
-					var price = parseFloat($(this).attr('data-addonprice'));
+					var price = parseFloat($(this).attr('data-addonprice').replace(/,/g, '.'));
 					var qty = $(this).closest('.first_addons_qty').find('.quantity__input').val();
 					var finalPrice = price * qty;
 					sum_data += finalPrice;
@@ -760,7 +760,7 @@ $(document).ready(function () {
 				var sum_data = 0;
 				$('.main_addons_product.main_prodcut_contain.active input[type=checkbox]').each(function () {
 					if (this.checked) {
-						var price = parseFloat($(this).attr('data-addonprice'));
+						var price = parseFloat($(this).attr('data-addonprice').replace(/,/g, '.'));
 						var qty = $(this).closest('.first_addons_qty').find('.quantity__input').val();
 						var finalPrice = price * qty;
 						sum_data += finalPrice;
@@ -796,7 +796,7 @@ $(document).ready(function () {
 				var sum_data = 0;
 				$('.first_addons input[type=checkbox]').each(function () {
 					if (this.checked) {
-						var price = parseFloat($(this).attr('data-addonprice'));
+						var price = parseFloat($(this).attr('data-addonprice').replace(/,/g, '.'));
 						var qty = $(this).closest('.first_addons_qty').find('.quantity__input').val();
 						var finalPrice = price * qty;
 						sum_data += finalPrice;
