@@ -82,7 +82,7 @@
       "type": "update-main-product",
       "blocks": {
         "b601d784-14f3-4abd-b763-d4a04350eaf9": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "contentSize": 11,
             "pattern": "([rating]\/5.0)  [count] Reviews",
@@ -184,6 +184,15 @@
             "alt": ""
           }
         },
+        "3e9f6f60-be5c-44c1-9c22-98ca1d6bb1e4": {
+          "type": "block",
+          "settings": {
+            "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0683\/5293\/4210\/files\/IG_-_Derya_00_00_08_20231127-004446_1.png?v=1701075833",
+            "image_picker": "shopify:\/\/shop_images\/pc-11.27_1.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/mb-11.27_1.png",
+            "image_alt": "litterbox"
+          }
+        },
         "bae4eb26-a544-42d8-ad01-b80dc1f21755": {
           "type": "block",
           "settings": {
@@ -200,15 +209,6 @@
             "image_picker": "shopify:\/\/shop_images\/2_754ef3b9-8102-4d99-849b-37d59ab6d5ad.png",
             "mb_image_picker": "shopify:\/\/shop_images\/2_1.png",
             "image_alt": "cat litter box"
-          }
-        },
-        "12c5243e-5b1e-4213-b004-4a8a4f9bbeab": {
-          "type": "block",
-          "settings": {
-            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/cab9e68aabdd40368daf52cc25449744.mp4",
-            "image_picker": "shopify:\/\/shop_images\/6_1.png",
-            "mb_image_picker": "shopify:\/\/shop_images\/6_2.png",
-            "image_alt": "petsnowy review"
           }
         },
         "bd97d9ae-9df4-41d6-b6f6-17eea80a1c47": {
@@ -237,16 +237,26 @@
             "mb_image_picker": "shopify:\/\/shop_images\/5_1.png",
             "image_alt": "litterbox"
           }
+        },
+        "12c5243e-5b1e-4213-b004-4a8a4f9bbeab": {
+          "type": "block",
+          "settings": {
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/cab9e68aabdd40368daf52cc25449744.mp4",
+            "image_picker": "shopify:\/\/shop_images\/6_1.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/6_2.png",
+            "image_alt": "petsnowy review"
+          }
         }
       },
       "block_order": [
         "d63b4da5-cd71-462a-89a9-9f31a1c5b75e",
+        "3e9f6f60-be5c-44c1-9c22-98ca1d6bb1e4",
         "bae4eb26-a544-42d8-ad01-b80dc1f21755",
         "9f69afc5-1826-4562-b4ec-da18a71b215a",
-        "12c5243e-5b1e-4213-b004-4a8a4f9bbeab",
         "bd97d9ae-9df4-41d6-b6f6-17eea80a1c47",
         "786ec155-819f-4e8f-93d3-7780d0a13da3",
-        "9c370b5f-4f8b-48da-b489-d4b3deffe0f3"
+        "9c370b5f-4f8b-48da-b489-d4b3deffe0f3",
+        "12c5243e-5b1e-4213-b004-4a8a4f9bbeab"
       ],
       "settings": {
       }
@@ -358,7 +368,7 @@
       "type": "apps",
       "blocks": {
         "042ecd86-3111-463a-a041-b74ad0850cad": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "aggregated": false,
@@ -368,7 +378,7 @@
           }
         },
         "0421a3e2-20e9-481d-8a19-57f5be9206cd": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "disabled": true,
           "settings": {
             "contentSize": 16,
