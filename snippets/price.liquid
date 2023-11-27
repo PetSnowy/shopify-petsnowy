@@ -116,6 +116,9 @@
       </span>
     </small>
   </div>
+  {% if compare_at_price > price and price != empty %}
+    <span class="Black_Friday">Black Friday</span>
+  {% endif %}
   {%- if show_badges -%}
     <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
       {{ 'products.product.on_sale' | t }}
