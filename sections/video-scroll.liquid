@@ -84,7 +84,7 @@
       item.addEventListener('click', () => {
         portraitScreen.style.display = 'block';
         portraitSwiper.slideTo(index, 1000, false);
-        video[index].play();
+        loaderVideo(index);
       });
     });
     close.addEventListener('click', () => {
