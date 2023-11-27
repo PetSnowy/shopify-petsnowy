@@ -104,6 +104,15 @@
             "alt": ""
           }
         },
+        "20126b35-52c5-4a48-9ef2-afe12a739fbc": {
+          "type": "block",
+          "settings": {
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/356ba8a50bb547e3ab6e80529cf2f47e.mp4",
+            "image_picker": "shopify:\/\/shop_images\/pc-11.27_1.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/mb-11.27_1.png",
+            "image_alt": "litterbox"
+          }
+        },
         "bae4eb26-a544-42d8-ad01-b80dc1f21755": {
           "type": "block",
           "settings": {
@@ -120,15 +129,6 @@
             "image_picker": "shopify:\/\/shop_images\/2_754ef3b9-8102-4d99-849b-37d59ab6d5ad.png",
             "mb_image_picker": "shopify:\/\/shop_images\/2_1.png",
             "image_alt": "cat litter box"
-          }
-        },
-        "12c5243e-5b1e-4213-b004-4a8a4f9bbeab": {
-          "type": "block",
-          "settings": {
-            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/cab9e68aabdd40368daf52cc25449744.mp4",
-            "image_picker": "shopify:\/\/shop_images\/6_1.png",
-            "mb_image_picker": "shopify:\/\/shop_images\/6_2.png",
-            "image_alt": "petsnowy review"
           }
         },
         "bd97d9ae-9df4-41d6-b6f6-17eea80a1c47": {
@@ -149,6 +149,15 @@
             "image_alt": "self-cleaning review"
           }
         },
+        "12c5243e-5b1e-4213-b004-4a8a4f9bbeab": {
+          "type": "block",
+          "settings": {
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/cab9e68aabdd40368daf52cc25449744.mp4",
+            "image_picker": "shopify:\/\/shop_images\/6_1.png",
+            "mb_image_picker": "shopify:\/\/shop_images\/6_2.png",
+            "image_alt": "petsnowy review"
+          }
+        },
         "9c370b5f-4f8b-48da-b489-d4b3deffe0f3": {
           "type": "block",
           "settings": {
@@ -161,11 +170,12 @@
       },
       "block_order": [
         "d63b4da5-cd71-462a-89a9-9f31a1c5b75e",
+        "20126b35-52c5-4a48-9ef2-afe12a739fbc",
         "bae4eb26-a544-42d8-ad01-b80dc1f21755",
         "9f69afc5-1826-4562-b4ec-da18a71b215a",
-        "12c5243e-5b1e-4213-b004-4a8a4f9bbeab",
         "bd97d9ae-9df4-41d6-b6f6-17eea80a1c47",
         "786ec155-819f-4e8f-93d3-7780d0a13da3",
+        "12c5243e-5b1e-4213-b004-4a8a4f9bbeab",
         "9c370b5f-4f8b-48da-b489-d4b3deffe0f3"
       ],
       "settings": {
