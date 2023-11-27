@@ -734,6 +734,11 @@ $product-select-color:#f0b42d;
 					text-align: center;
 				}
 
+				.option-desc {
+					font-size: vw(20px);
+					color: #E4A41A;
+				}
+
 				&::before {
 					display: none;
 				}
@@ -1570,6 +1575,11 @@ $product-select-color:#f0b42d;
 					align-items: center;
 					justify-content: center;
 					column-gap: 5px;
+				}
+
+				.option-desc {
+					font-size: 12px;
+					color: #E4A41A;
 				}
 
 				.off {
