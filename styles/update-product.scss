@@ -14,6 +14,11 @@ $product-select-color:#f0b42d;
 		line-height: 100%;
 	}
 
+	.img-wrapper {
+		display: flex;
+		align-items: center;
+	}
+
 	.rollback-add-cart {
 		display: none;
 		position: fixed;
@@ -508,6 +513,13 @@ $product-select-color:#f0b42d;
 					width: vw(320px);
 					background: #FFFFFF;
 					border-radius: vw(12px);
+					flex-wrap: wrap;
+					justify-content: center;
+				}
+
+				.img-wrapper {
+					flex: 1;
+					justify-content: space-between;
 				}
 			}
 
@@ -710,7 +722,8 @@ $product-select-color:#f0b42d;
 				box-sizing: border-box;
 				flex-direction: row;
 
-				.option-title {
+				.option-title,
+				.option-desc {
 					font-size: vw(25px);
 					font-family: Helvetica;
 					font-weight: 400;
@@ -1511,6 +1524,9 @@ $product-select-color:#f0b42d;
 					flex-wrap: wrap;
 					flex-direction: row;
 					align-items: center;
+				}
+
+				.img-wrapper {
 					column-gap: 20px;
 				}
 			}
@@ -1543,7 +1559,8 @@ $product-select-color:#f0b42d;
 					display: none;
 				}
 
-				.option-title {
+				.option-title,
+				.option-desc {
 					font-size: 16px;
 					font-family: LeagueSpartanBold;
 					font-weight: 600;

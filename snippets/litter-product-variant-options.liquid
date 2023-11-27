@@ -63,14 +63,24 @@
           {% liquid
             assign label_index = forloop.index0
           %}
-          {% for img_src in product.metafields.custom.product_match_colors.value %}
-            {% if label_index == forloop.index0 %}
-              <img src="{{ img_src.preview_image.src |  img_url: 'master' }}" alt="petsnowy">
+          <div class="img-wrapper">
+            {% for img_src in product.metafields.custom.product_match_colors.value %}
+              {% if label_index == forloop.index0 %}
+                <img src="{{ img_src.preview_image.src |  img_url: 'master' }}" alt="petsnowy">
+              {% endif %}
+            {% endfor %}
+            <p class="option-title">
+              {{ value }}
+            </p>
+          </div>
+          <div class="desc-wrapper">
+            {% if label_index == 0 %}
+              <p class="option-desc">Ships in 1-3 Days</p>
             {% endif %}
-          {% endfor %}
-          <p class="option-title">
-            {{ value }}
-          </p>
+            {% if label_index == 1 %}
+              <p class="option-desc">Ships in 30 Days</p>
+            {% endif %}
+          </div>
         </label>
       </div>
     {% endif %}
