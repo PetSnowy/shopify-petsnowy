@@ -296,13 +296,6 @@ $product-select-color:#f0b42d;
 					}
 				}
 
-				.popup-desc {
-					font-family: LeagueSpartan;
-					color: #504030;
-					font-size: vw(40px);
-					text-align: left;
-					line-height: vw(50px);
-				}
 
 				ul {
 					display: grid;
@@ -317,6 +310,15 @@ $product-select-color:#f0b42d;
 						font-family: LeagueSpartan;
 						color: #504030;
 						font-size: vw(36px);
+					}
+
+					b {
+						font-family: LeagueSpartan;
+						color: #504030;
+						font-size: vw(40px);
+						text-align: left;
+						line-height: vw(50px);
+						margin: vw(5px) 0px;
 					}
 				}
 
@@ -579,9 +581,6 @@ $product-select-color:#f0b42d;
 					border-color: #e9e0cf;
 					display: flex;
 
-					.popup-desc {
-						display: none;
-					}
 
 					.option-title {
 						display: none;
@@ -1143,13 +1142,6 @@ $product-select-color:#f0b42d;
 					}
 				}
 
-				.popup-desc {
-					font-family: LeagueSpartan;
-					color: #504030;
-					font-size: 22px;
-					text-align: left;
-					line-height: 25px;
-				}
 
 				ul {
 					display: grid;
@@ -1164,6 +1156,15 @@ $product-select-color:#f0b42d;
 						font-family: LeagueSpartan;
 						color: #504030;
 						font-size: 18px;
+					}
+
+					b {
+						font-family: LeagueSpartan;
+						color: #504030;
+						font-size: 22px;
+						text-align: left;
+						line-height: 25px;
+						margin: 5px 0px;
 					}
 				}
 
@@ -1398,11 +1399,6 @@ $product-select-color:#f0b42d;
 					column-gap: 10px;
 
 					.option-title {
-						display: none;
-					}
-
-
-					.popup-desc {
 						display: none;
 					}
 
