@@ -14,6 +14,10 @@ $product-select-color:#f0b42d;
 		line-height: 100%;
 	}
 
+	.grab span {
+		text-transform: uppercase;
+	}
+
 
 	.img-wrapper {
 		display: flex;
@@ -1449,7 +1453,6 @@ $product-select-color:#f0b42d;
 						font-family: LeagueSpartanBold;
 						color: #A34141;
 						column-gap: 8px;
-						text-transform: uppercase;
 
 						i {
 							display: block;
