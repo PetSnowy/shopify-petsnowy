@@ -46,8 +46,12 @@
               </div>
               <div id="product_price" data-aos="fade-up" class="aos-init aos-animate" data-aos-duration="800">
                 {% comment %} <div class="icon">Cyber Monday</div> {% endcomment %}
-                <span>{{ product.compare_at_price | money }}</span>
-                <span>{{- product.price | money -}}</span>
+                {% if product.compare_at_price %}
+                  <span>{{ product.compare_at_price | money }}</span>
+                {% endif %}
+                {% if product.price %}
+                  <span>{{- product.price | money -}}</span>
+                {% endif %}
               </div>
               <div class="purchase_data_btns">
                 {% if product.template_suffix == 'purchase-product' %}
