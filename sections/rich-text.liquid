@@ -45,7 +45,7 @@
                 {{ block.settings.text }}
               </div>
               <div id="product_price" data-aos="fade-up" class="aos-init aos-animate" data-aos-duration="800">
-                <div class="icon">Cyber Monday</div>
+                {% comment %} <div class="icon">Cyber Monday</div> {% endcomment %}
                 <span>{{ product.compare_at_price | money }}</span>
                 <span>{{- product.price | money -}}</span>
               </div>
