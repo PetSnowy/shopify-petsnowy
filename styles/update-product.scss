@@ -121,16 +121,16 @@ $product-select-color:#f0b42d;
 		}
 	}
 
-	.color:nth-child(3) {
-		position: relative;
+	// .color:nth-child(3) {
+	// 	position: relative;
 
-		&::after {
-			content: '';
-			display: block;
-			background: url('./usaOnly.png') no-repeat center/cover;
-			position: absolute;
-		}
-	}
+	// 	&::after {
+	// 		content: '';
+	// 		display: block;
+	// 		background: url('./usaOnly.png') no-repeat center/cover;
+	// 		position: absolute;
+	// 	}
+	// }
 }
 
 #MainContentProduct {
@@ -524,14 +524,14 @@ $product-select-color:#f0b42d;
 				}
 			}
 
-			.color:nth-child(3) {
-				&::after {
-					width: vw(84px);
-					height: vw(32px);
-					right: vw(20px);
-					top: vw(20px);
-				}
-			}
+			// .color:nth-child(3) {
+			// 	&::after {
+			// 		width: vw(84px);
+			// 		height: vw(32px);
+			// 		right: vw(20px);
+			// 		top: vw(20px);
+			// 	}
+			// }
 
 			// .select-option {
 			// 	display: grid;
@@ -1537,15 +1537,15 @@ $product-select-color:#f0b42d;
 				}
 			}
 
-			.color:nth-child(3) {
+			// .color:nth-child(3) {
 
-				&::after {
-					width: 58px;
-					height: 22px;
-					right: 10px;
-					top: 10px;
-				}
-			}
+			// 	&::after {
+			// 		width: 58px;
+			// 		height: 22px;
+			// 		right: 10px;
+			// 		top: 10px;
+			// 	}
+			// }
 
 
 
@@ -1580,7 +1580,13 @@ $product-select-color:#f0b42d;
 
 				.option-desc {
 					font-size: 12px;
-					color: #E4A41A;
+					color: #616161;
+					font-family: LeagueSpartanBlack;
+
+					span {
+						color: #d58527;
+						font-family: LeagueSpartan;
+					}
 				}
 
 				.off {
