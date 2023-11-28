@@ -57,7 +57,7 @@ class ActiveBar extends HTMLElement {
 		s = s < 10 ? '0' + s : s;
 		if (times <= 0) {
 			clearInterval(this.timer)
-			return
+			return '<div></div>'
 		}
 		return `<div>
 							<p>${d}</p>
