@@ -104,13 +104,17 @@
             {% if variant.title contains value %}
               {% assign img_src = variant.featured_image.src %}
               {% assign img_alt = variant.title %}
-              <div class="variants" style="display: none;">
+              <div
+                class="variants"
+                style="display: none; flex-wrap: wrap; justify-content: center;"
+              >
                 <div class="img-wrapper">
                   <img
                     alt="{{ img_alt }}"
                     data-src="{{ img_src | img_url: 'master' }}"
                   >
                 </div>
+                <div class="bg"></div>
                 <div class="question_mark"></div>
                 <div class="question_mark_popup">
                   <div class="popup-wrapper">
@@ -131,6 +135,22 @@
                   {{ value }}
                   {% comment %} <span class="off">30% OFF</span> {% endcomment %}
                 </div>
+                {% if variant.id == 47428240736578
+                  or variant.id == 47428240769346
+                  or variant.id == 47428240802114
+                  or variant.id == 47428240834882
+                %}
+                  <div class="grab">
+                    <i></i>
+                    <span>Grab Now!</span>
+                  </div>
+                  <span class="remaining" style="font-weight: 900;">
+                    Remaining Gifts:
+                    <span style="color: #F0B42D;">
+                      {{ variant.inventory_quantity }}
+                    </span>
+                  </span>
+                {%- endif %}
               </div>
             {% endif %}
           {% endfor %}
@@ -155,16 +175,16 @@
 {%- endfor -%}
 <script>
   window.addEventListener('DOMContentLoaded', function () {
-    function showProduct(result) {
-      const getProduct = Array.from(document.querySelectorAll('.product-form__input .product-set'));
+    const getProduct = Array.from(document.querySelectorAll('.product-form__input .product-set'));
 
+    function showProduct(result) {
       getProduct.forEach(function (item) {
         const variants = Array.from(item.querySelectorAll('.variants'));
         variants.forEach(function (i) {
           const text = i.querySelector('.desc').innerHTML || i.querySelector('.desc').innerText;
           i.style.display = 'none';
           if (text.includes(result)) {
-            i.style.display = 'block';
+            i.style.display = 'flex';
           }
         });
       });
@@ -184,12 +204,21 @@
       }
 
       item.addEventListener('click', function () {
+        getProduct.forEach((item) => (item.style.display = 'block'));
         productDefault.forEach((item) => (item.style.display = 'none'));
         if (radioButton.checked) {
           result = radioButton.value;
           showProduct(result);
           productDefault[index].style.display = 'block';
         }
+        if (!index) return;
+        getProduct.forEach((v, sub) => {
+          if (sub > 2) {
+            v.style.display = 'none';
+          } else {
+            v.style.display = 'block';
+          }
+        });
       });
     });
   });

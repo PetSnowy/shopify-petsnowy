@@ -22,7 +22,7 @@
       {{ block.shopify_attributes }}
     >
       {%- for option in product.options_with_values -%}
-        <fieldset class="js product-form__input">
+        <fieldset class="js product-form__input select-option">
           <legend class="form__label">{{ option.name }}</legend>
           {% render 'litter-product-variant-options', product: product, option: option, block: block %}
         </fieldset>
