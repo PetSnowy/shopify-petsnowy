@@ -331,41 +331,34 @@
     {% render 'gsf-conversion-pixels' %}
 
     {% render 'digismoothie-giftbox' %}
-  
- 
- 
 
-
- 
- 
-
-
- {% comment %} Start Pricing by country {% endcomment %}  
-<style id="priceBlock">
-	 .product-grid .grid__item .price{
-		 visibility: hidden;
-	} 
-</style>
-<script>
-try {
-	 document.addEventListener("DOMSubtreeModified", function(){
-		 var labels1 = document.querySelectorAll("fieldset.product-form__input ");
-		 for(let i =0; i<labels1.length; i++) {
-			 let ele = labels1[i]; 
-			 if(ele.innerHTML.toLowerCase().includes("currencycountry") && ele.style.display != "none"){
-				 ele.style.display = "none";
-			 }
-		}
-	});
-}catch(error){
-	 console.log("Pricing by country -->",error); 
-	 let ele = document.getElementById("priceBlock"); 
-	 ele.innerHTML = ".product-grid .grid__item .price{visibility: visible;}.product__info-wrapper .price__container{visibility: visible;}" 
-}
-</script>
+    {% comment %} Start Pricing by country {% endcomment %}
+    <style id="priceBlock">
+      .product-grid .grid__item .price {
+        visibility: hidden;
+      }
+    </style>
+    <script>
+      try {
+        document.addEventListener('DOMSubtreeModified', function () {
+          var labels1 = document.querySelectorAll('fieldset.product-form__input ');
+          for (let i = 0; i < labels1.length; i++) {
+            let ele = labels1[i];
+            if (ele.innerHTML.toLowerCase().includes('currencycountry') && ele.style.display != 'none') {
+              ele.style.display = 'none';
+            }
+          }
+        });
+      } catch (error) {
+        console.log('Pricing by country -->', error);
+        let ele = document.getElementById('priceBlock');
+        ele.innerHTML =
+          '.product-grid .grid__item .price{visibility: visible;}.product__info-wrapper .price__container{visibility: visible;}';
+      }
+    </script>
 
     <script>
-      var wsShop = "{{shop.permanent_domain}}" 
+      var wsShop = "{{shop.permanent_domain}}"
       window.wscc_markets = [];
       {% if localization.available_countries.size > 1 %}
         window.wscc_markets = [];
@@ -378,9 +371,14 @@ try {
           });
         {% endfor %}
       {% endif %}
-    </script>	 <script defer type="text/javascript" src="https://pricing-by-country-api.webrexstudio.com/pricingbycountry.js?id=643cf7e76f1c88a55872149f" ></script> 
-{% comment %} End Pricing by country {% endcomment %}
-</head>
+    </script>
+    <script
+      defer
+      type="text/javascript"
+      src="https://pricing-by-country-api.webrexstudio.com/pricingbycountry.js?id=643cf7e76f1c88a55872149f"
+    ></script>
+    {% comment %} End Pricing by country {% endcomment %}
+  </head>
 
   {% for item in cart.items %}
     {% assign product_template_cart = item.product.template_suffix %}
@@ -460,7 +458,7 @@ try {
     <script>
       const targetElement = document.querySelector('sticky-header');
       const showDown = document.querySelector('#HeaderMenu-MenuList-1');
-      showDown.style.top = `175px`;
+      showDown.style.top = `75px`;
 
       function mainTop(newHeaderHeight = targetElement.offsetHeight) {
         const main = document.documentElement;
