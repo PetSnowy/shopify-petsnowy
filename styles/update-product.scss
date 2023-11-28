@@ -737,7 +737,13 @@ $product-select-color:#f0b42d;
 
 				.option-desc {
 					font-size: vw(20px);
-					color: #E4A41A;
+					color: #616161;
+					font-family: LeagueSpartanBlack;
+
+					span {
+						color: #d58527;
+						font-family: LeagueSpartan;
+					}
 				}
 
 				&::before {
