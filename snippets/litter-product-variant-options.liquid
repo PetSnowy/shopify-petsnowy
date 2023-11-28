@@ -190,6 +190,16 @@
       });
     }
 
+    function hidden() {
+      getProduct.forEach((v, sub) => {
+        if (sub > 2) {
+          v.style.display = 'none';
+        } else {
+          v.style.display = 'block';
+        }
+      });
+    }
+
     let result = '';
     const getSelectColor = Array.from(document.querySelectorAll('.product-form__input .color'));
     const productDefault = Array.from(document.querySelectorAll('.product-default img'));
@@ -201,6 +211,8 @@
         result = radioButton.value;
         showProduct(result);
         productDefault[index].style.display = 'block';
+        if (index) return;
+        hidden();
       }
 
       item.addEventListener('click', function () {
@@ -212,13 +224,7 @@
           productDefault[index].style.display = 'block';
         }
         if (!index) return;
-        getProduct.forEach((v, sub) => {
-          if (sub > 2) {
-            v.style.display = 'none';
-          } else {
-            v.style.display = 'block';
-          }
-        });
+        hidden();
       });
     });
   });
