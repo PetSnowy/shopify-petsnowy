@@ -55,6 +55,7 @@ class ActiveBar extends HTMLElement {
 		m = m < 10 ? '0' + m : m;
 		let s = Math.floor(times % 60);
 		s = s < 10 ? '0' + s : s;
+		if (times <= 0) return
 		return `<div>
 							<p>${d}</p>
 							<p>Days</p>
