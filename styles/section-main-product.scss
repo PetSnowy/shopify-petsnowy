@@ -248,6 +248,10 @@ fieldset.product-form__input .form__label {
 	border-color: rgba(var(--color-foreground), 0.1);
 	color: rgba(var(--color-foreground), 0.4);
 	text-decoration: line-through;
+	opacity: 0.7;
+	border: transparent !important;
+	cursor: no-drop;
+	transition: all 0.3s ease;
 }
 
 .product-form__input input[type='radio']:focus-visible+label {

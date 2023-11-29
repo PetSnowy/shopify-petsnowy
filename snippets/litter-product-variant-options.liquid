@@ -198,6 +198,9 @@
           v.style.display = 'block';
         }
       });
+      setProductAvailability().then((result) => {
+        if (result) getStockProduct(result);
+      });
     }
 
     let result = '';
@@ -217,7 +220,10 @@
       }
 
       item.addEventListener('click', function () {
-        getProduct.forEach((item) => (item.style.display = 'block'));
+        getProduct.forEach((item) => {
+          item.style.display = 'block';
+          item.querySelector('input').disabled = false;
+        });
         productDefault.forEach((item) => (item.style.display = 'none'));
         if (radioButton.checked) {
           result = radioButton.value;
@@ -228,5 +234,54 @@
         hidden();
       });
     });
+
+    async function getProductDetails(handle) {
+      const response = await fetch(`/products/${handle}.js`);
+      const data = await response.json();
+      return data;
+    }
+
+    async function setProductAvailability() {
+      const productHandle = 'snow-self-cleaning-litter-box';
+      const { variants } = await getProductDetails(productHandle);
+
+      let left = 0,
+        right = variants.length - 1;
+
+      while (left < right) {
+        if (!variants[left].available) {
+          return variants[left].title;
+        }
+        if (!variants[right].available) {
+          return variants[right].title;
+        }
+        left++;
+        right--;
+      }
+      if (left === right && !variants[left].available) {
+        return variants[right].title;
+      }
+      return null;
+    }
+
+    function getStockProduct(target) {
+      const variants = document.querySelectorAll('.variants');
+
+      let left = 0,
+        right = getProduct.length - 1;
+      while (left < right) {
+        if (target === variants[left].querySelector('.popup-title').innerText) {
+          variants[left].parentNode.previousElementSibling.disabled = true;
+        }
+        if (target === variants[right].querySelector('.popup-title').innerText) {
+          variants[right].parentNode.previousElementSibling.disabled = true;
+        }
+        left++;
+        right--;
+      }
+      if (left === right && target === variants[left].querySelector('.popup-title').innerText) {
+        variants[left].parentNode.previousElementSibling.disabled = true;
+      }
+    }
   });
 </script>
