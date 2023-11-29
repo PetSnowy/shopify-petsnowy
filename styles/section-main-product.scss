@@ -249,7 +249,7 @@ fieldset.product-form__input .form__label {
 	color: rgba(var(--color-foreground), 0.4);
 	// text-decoration: line-through;
 	opacity: 0.7;
-	border: transparent !important;
+	border-color: transparent !important;
 	cursor: no-drop;
 	transition: all 0.3s ease;
 }
