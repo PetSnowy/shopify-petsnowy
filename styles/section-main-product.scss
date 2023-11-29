@@ -252,6 +252,7 @@ fieldset.product-form__input .form__label {
 	border-color: transparent !important;
 	cursor: no-drop;
 	transition: all 0.3s ease;
+	pointer-events: none;
 }
 
 .product-form__input input[type='radio']:focus-visible+label {
