@@ -121,7 +121,7 @@ if (!customElements.get('product-form')) {
 			const selectedProduct = product.querySelectorAll('.product-set')
 			for (let i = 0; i < selectedProduct.length; i++) {
 				if (selectedProduct[i].querySelector('input').checked) {
-					result = true
+					return true
 				}
 				if (!selectedProduct[i].querySelector('input').checked) {
 					result = false
