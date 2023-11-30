@@ -22,9 +22,12 @@
       {{ block.shopify_attributes }}
     >
       {%- for option in product.options_with_values -%}
-        <fieldset class="js product-form__input select-option">
+        <fieldset class="js product-form__input select-option {% if forloop.index0 == 1 %} product-fieldset {% endif %}">
           <legend class="form__label">{{ option.name }}</legend>
           {% render 'litter-product-variant-options', product: product, option: option, block: block %}
+          {% if forloop.index0 == 1 %}
+            <p class="required" style="display: none; color:#e02b27; font-size: 12px;">This is a required field.</p>
+          {% endif %}
         </fieldset>
       {%- endfor -%}
       <script type="application/json">

@@ -335,7 +335,8 @@ $product-select-color:#f0b42d;
 			}
 		}
 
-		.product_acessories-wrapper {
+		.product_acessories-wrapper,
+		.product-gift {
 			margin-bottom: vw(30px);
 		}
 
@@ -540,187 +541,187 @@ $product-select-color:#f0b42d;
 			// 	}
 			// }
 
-			.select-option:nth-child(2) {
-				display: grid;
-				grid-template-columns: repeat(3, 1fr);
-				gap: vw(40px);
-				width: vw(680px);
+			// .select-option:nth-child(2) {
+			// 	display: grid;
+			// 	grid-template-columns: repeat(3, 1fr);
+			// 	gap: vw(40px);
+			// 	width: vw(680px);
 
-				input[type=radio]:checked+label:has(.remaining) {
-					border: vw(4px) solid $product-select-color;
-					background-color: #ffffff;
-				}
+			// 	input[type=radio]:checked+label:has(.remaining) {
+			// 		border: vw(4px) solid $product-select-color;
+			// 		background-color: #ffffff;
+			// 	}
 
-				.product-set:nth-last-of-type(2) label {
-					.bg {
-						background: url('./mb-2.png') no-repeat center/cover !important;
-					}
+			// 	.product-set:nth-last-of-type(2) label {
+			// 		.bg {
+			// 			background: url('./mb-2.png') no-repeat center/cover !important;
+			// 		}
 
-					.grab {
-						color: #5F7F54 !important;
-					}
-				}
+			// 		.grab {
+			// 			color: #5F7F54 !important;
+			// 		}
+			// 	}
 
-				.product-set:last-of-type,
-				.product-set:nth-last-of-type(2) {
-					grid-column: 1/4;
-				}
+			// 	.product-set:last-of-type,
+			// 	.product-set:nth-last-of-type(2) {
+			// 		grid-column: 1/4;
+			// 	}
 
-				.product-set:last-of-type label,
-				.product-set:nth-last-of-type(2) label {
-					position: relative;
-					border-radius: 0px;
-					grid-column: 1/4;
-					width: 100%;
-					flex-direction: row;
-					justify-content: flex-start;
-					padding: 0px;
-					width: vw(680px);
-					height: vw(207px);
-					border-radius: vw(12px);
-					border-color: #e9e0cf;
-					display: flex;
-
-
-					.option-title {
-						display: none;
-					}
+			// 	.product-set:last-of-type label,
+			// 	.product-set:nth-last-of-type(2) label {
+			// 		position: relative;
+			// 		border-radius: 0px;
+			// 		grid-column: 1/4;
+			// 		width: 100%;
+			// 		flex-direction: row;
+			// 		justify-content: flex-start;
+			// 		padding: 0px;
+			// 		width: vw(680px);
+			// 		height: vw(207px);
+			// 		border-radius: vw(12px);
+			// 		border-color: #e9e0cf;
+			// 		display: flex;
 
 
-					.img-wrapper {
-						width: vw(190px);
-						height: vw(203px);
-						background: #FFFFFF;
-						border-top-right-radius: vw(16px);
-						border-bottom-right-radius: vw(16px);
-						display: flex;
-						flex-shrink: 0;
-
-						img {
-							width: vw(162px);
-							height: vw(162px);
-							object-fit: contain;
-							margin: auto;
-						}
-					}
-
-					.christmas-wrapper {
-						flex: 1;
-					}
-
-					.bg {
-						margin-top: vw(40px);
-						width: vw(415px);
-						height: vw(111px);
-						background: url('./mb-1.png') no-repeat center/cover;
-						display: block;
-					}
-
-					.remaining {
-						font-size: vw(24px);
-						font-family: LeagueSpartanBold;
-						font-weight: bold;
-						color: #616161;
-						position: absolute;
-						line-height: normal;
-						letter-spacing: vw(1.4px);
-						right: vw(28px);
-						top: vw(126px);
-					}
-
-					.line {
-						width: vw(450px);
-						height: vw(1px);
-						background: #DCDCDC;
-						display: block;
-						margin-top: vw(10px);
-					}
-
-					.grab {
-						position: absolute;
-						bottom: vw(18px);
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						left: vw(320px);
-						font-size: vw(28px);
-						font-family: LeagueSpartanBold;
-						color: #A34141;
-						column-gap: vw(10px);
-						text-transform: uppercase;
-
-						i {
-							display: block;
-							width: vw(30px);
-							height: vw(30px);
-							background: url('./christmas-arrows.png') no-repeat center/cover;
-							animation: move 1s infinite;
-							transition: all 0.3s ease;
-						}
-					}
-
-					@keyframes move {
-						0% {
-							transform: translate(0, 0);
-						}
-
-						50% {
-							transform: translate(-3px, -3px);
-
-						}
-
-						100% {
-							transform: translate(0, 0);
-						}
-					}
+			// 		.option-title {
+			// 			display: none;
+			// 		}
 
 
-					.option-price {
-						position: absolute;
-						right: vw(19px);
-						bottom: vw(23px);
+			// 		.img-wrapper {
+			// 			width: vw(190px);
+			// 			height: vw(203px);
+			// 			background: #FFFFFF;
+			// 			border-top-right-radius: vw(16px);
+			// 			border-bottom-right-radius: vw(16px);
+			// 			display: flex;
+			// 			flex-shrink: 0;
 
-						p {
-							text-align: right;
-						}
+			// 			img {
+			// 				width: vw(162px);
+			// 				height: vw(162px);
+			// 				object-fit: contain;
+			// 				margin: auto;
+			// 			}
+			// 		}
 
-						p:nth-child(1) {
-							font-size: vw(22px);
-							font-family: LeagueSpartan;
-							font-weight: 400;
-							text-decoration: line-through;
-							color: #FFFFFF;
-							line-height: vw(19px);
-							margin-bottom: vw(10px);
+			// 		.christmas-wrapper {
+			// 			flex: 1;
+			// 		}
 
-							span {
-								font-size: vw(22px);
-								font-family: LeagueSpartan;
-								font-weight: 400;
-								text-decoration: line-through;
-								color: #FFFFFF;
-								line-height: vw(19px);
-							}
-						}
+			// 		.bg {
+			// 			margin-top: vw(40px);
+			// 			width: vw(415px);
+			// 			height: vw(111px);
+			// 			background: url('./mb-1.png') no-repeat center/cover;
+			// 			display: block;
+			// 		}
 
-						p:nth-child(2) {
-							font-size: vw(28px);
-							font-family: LeagueSpartanBold;
-							font-weight: bold;
-							color: #FFFFFF;
-							line-height: vw(27px);
+			// 		.remaining {
+			// 			font-size: vw(24px);
+			// 			font-family: LeagueSpartanBold;
+			// 			font-weight: bold;
+			// 			color: #616161;
+			// 			position: absolute;
+			// 			line-height: normal;
+			// 			letter-spacing: vw(1.4px);
+			// 			right: vw(28px);
+			// 			top: vw(126px);
+			// 		}
 
-							span {
-								font-size: vw(28px);
-								font-family: LeagueSpartanBold;
-								font-weight: bold;
-								color: #FFFFFF;
-								line-height: vw(27px);
-							}
-						}
-					}
-				}
-			}
+			// 		.line {
+			// 			width: vw(450px);
+			// 			height: vw(1px);
+			// 			background: #DCDCDC;
+			// 			display: block;
+			// 			margin-top: vw(10px);
+			// 		}
+
+			// 		.grab {
+			// 			position: absolute;
+			// 			bottom: vw(18px);
+			// 			display: flex;
+			// 			align-items: center;
+			// 			justify-content: center;
+			// 			left: vw(320px);
+			// 			font-size: vw(28px);
+			// 			font-family: LeagueSpartanBold;
+			// 			color: #A34141;
+			// 			column-gap: vw(10px);
+			// 			text-transform: uppercase;
+
+			// 			i {
+			// 				display: block;
+			// 				width: vw(30px);
+			// 				height: vw(30px);
+			// 				background: url('./christmas-arrows.png') no-repeat center/cover;
+			// 				animation: move 1s infinite;
+			// 				transition: all 0.3s ease;
+			// 			}
+			// 		}
+
+			// 		@keyframes move {
+			// 			0% {
+			// 				transform: translate(0, 0);
+			// 			}
+
+			// 			50% {
+			// 				transform: translate(-3px, -3px);
+
+			// 			}
+
+			// 			100% {
+			// 				transform: translate(0, 0);
+			// 			}
+			// 		}
+
+
+			// 		.option-price {
+			// 			position: absolute;
+			// 			right: vw(19px);
+			// 			bottom: vw(23px);
+
+			// 			p {
+			// 				text-align: right;
+			// 			}
+
+			// 			p:nth-child(1) {
+			// 				font-size: vw(22px);
+			// 				font-family: LeagueSpartan;
+			// 				font-weight: 400;
+			// 				text-decoration: line-through;
+			// 				color: #FFFFFF;
+			// 				line-height: vw(19px);
+			// 				margin-bottom: vw(10px);
+
+			// 				span {
+			// 					font-size: vw(22px);
+			// 					font-family: LeagueSpartan;
+			// 					font-weight: 400;
+			// 					text-decoration: line-through;
+			// 					color: #FFFFFF;
+			// 					line-height: vw(19px);
+			// 				}
+			// 			}
+
+			// 			p:nth-child(2) {
+			// 				font-size: vw(28px);
+			// 				font-family: LeagueSpartanBold;
+			// 				font-weight: bold;
+			// 				color: #FFFFFF;
+			// 				line-height: vw(27px);
+
+			// 				span {
+			// 					font-size: vw(28px);
+			// 					font-family: LeagueSpartanBold;
+			// 					font-weight: bold;
+			// 					color: #FFFFFF;
+			// 					line-height: vw(27px);
+			// 				}
+			// 			}
+			// 		}
+			// 	}
+			// }
 
 			label {
 				border: vw(4px) solid transparent;
@@ -844,7 +845,8 @@ $product-select-color:#f0b42d;
 			margin-top: vw(10px);
 		}
 
-		.product_acessories-wrapper {
+		.product_acessories-wrapper,
+		.product-gift {
 			margin-top: 0px;
 			margin-bottom: vw(40px);
 
@@ -873,12 +875,14 @@ $product-select-color:#f0b42d;
 				position: relative;
 				padding-left: vw(30px);
 
+				input[type="radio"],
 				input[type="checkbox"] {
 					width: 0;
 					margin-right: vw(40px);
 				}
 
-				&:has(input[type="checkbox"]:checked) {
+				&:has(input[type="checkbox"]:checked),
+				&:has(input[type="radio"]:checked) {
 					&::before {
 						background: url('./checkbox.png') no-repeat center/cover;
 						border-color: transparent;
@@ -959,6 +963,43 @@ $product-select-color:#f0b42d;
 				}
 			}
 		}
+
+		.product-gift {
+			.add_list_product {
+				padding: 0px;
+				background-color: #ffffff;
+				width: vw(678px);
+				height: vw(150px);
+				background: url('./mb-gift-1.png') no-repeat center/cover;
+				overflow: hidden;
+
+				input {
+					margin: 0px;
+				}
+			}
+
+			.add_list_product:nth-child(2) {
+				background: url('./mb-gift-2.png') no-repeat center/cover;
+			}
+
+			.productlabel_info {
+				justify-content: flex-start;
+
+				.add_list_product_image {
+					width: vw(224px);
+					height: vw(151px);
+					background: #FFFFFF;
+					margin-bottom: 0px;
+				}
+			}
+
+			.productlabel_info .add_list_product_image img {
+				width: vw(172px);
+				height: vw(150px);
+				margin-left: vw(50px);
+			}
+		}
+
 
 		.product-guarantee {
 			margin: vw(52px) 0px;
@@ -1359,179 +1400,179 @@ $product-select-color:#f0b42d;
 				gap: 25px;
 			}
 
-			.select-option:nth-child(2) {
-				display: grid;
-				grid-template-columns: repeat(3, 1fr);
-				gap: 25px;
+			// .select-option:nth-child(2) {
+			// 	display: grid;
+			// 	grid-template-columns: repeat(3, 1fr);
+			// 	gap: 25px;
 
-				input[type=radio]:checked+label:has(.remaining) {
-					border: 2px solid $product-select-color;
-				}
+			// 	input[type=radio]:checked+label:has(.remaining) {
+			// 		border: 2px solid $product-select-color;
+			// 	}
 
-				.product-set:nth-last-of-type(2) label {
-					.bg {
-						background: url('./pc-2.png') no-repeat center/cover !important;
-					}
+			// 	.product-set:nth-last-of-type(2) label {
+			// 		.bg {
+			// 			background: url('./pc-2.png') no-repeat center/cover !important;
+			// 		}
 
-					.grab {
-						color: #5F7F54 !important;
-					}
-				}
+			// 		.grab {
+			// 			color: #5F7F54 !important;
+			// 		}
+			// 	}
 
-				.product-set:last-of-type,
-				.product-set:nth-last-of-type(2) {
-					grid-column: 1/4;
-				}
+			// 	.product-set:last-of-type,
+			// 	.product-set:nth-last-of-type(2) {
+			// 		grid-column: 1/4;
+			// 	}
 
-				.product-set:last-of-type label,
-				.product-set:nth-last-of-type(2) label {
-					position: relative;
-					border-radius: 0px;
-					grid-column: 1/4;
-					width: 100%;
-					flex-direction: row;
-					justify-content: flex-start;
-					padding: 0px;
-					width: 500px;
-					height: 150px;
-					border-radius: 12px;
-					border-color: #e9e0cf;
-					column-gap: 10px;
+			// 	.product-set:last-of-type label,
+			// 	.product-set:nth-last-of-type(2) label {
+			// 		position: relative;
+			// 		border-radius: 0px;
+			// 		grid-column: 1/4;
+			// 		width: 100%;
+			// 		flex-direction: row;
+			// 		justify-content: flex-start;
+			// 		padding: 0px;
+			// 		width: 500px;
+			// 		height: 150px;
+			// 		border-radius: 12px;
+			// 		border-color: #e9e0cf;
+			// 		column-gap: 10px;
 
-					.option-title {
-						display: none;
-					}
+			// 		.option-title {
+			// 			display: none;
+			// 		}
 
-					.img-wrapper {
-						width: 150px;
-						height: 147px;
-						background: #FFFFFF;
-						border-top-right-radius: 10px;
-						border-bottom-right-radius: 10px;
-						display: flex;
+			// 		.img-wrapper {
+			// 			width: 150px;
+			// 			height: 147px;
+			// 			background: #FFFFFF;
+			// 			border-top-right-radius: 10px;
+			// 			border-bottom-right-radius: 10px;
+			// 			display: flex;
 
-						img {
-							width: 102px;
-							height: 103px;
-							object-fit: contain;
-							margin: auto;
-						}
-					}
+			// 			img {
+			// 				width: 102px;
+			// 				height: 103px;
+			// 				object-fit: contain;
+			// 				margin: auto;
+			// 			}
+			// 		}
 
-					.christmas-wrapper {
-						flex: 1;
-					}
+			// 		.christmas-wrapper {
+			// 			flex: 1;
+			// 		}
 
-					.bg {
-						width: 307px;
-						height: 82px;
-						margin-top: 37px;
-						background: url('./pc-1.png') no-repeat center/cover;
-						display: block;
-					}
+			// 		.bg {
+			// 			width: 307px;
+			// 			height: 82px;
+			// 			margin-top: 37px;
+			// 			background: url('./pc-1.png') no-repeat center/cover;
+			// 			display: block;
+			// 		}
 
-					// .line {
-					// 	display: block;
-					// 	width: 310px;
-					// 	height: 1px;
-					// 	background: #DCDCDC;
-					// 	margin-top: 16px;
-					// }
+			// 		// .line {
+			// 		// 	display: block;
+			// 		// 	width: 310px;
+			// 		// 	height: 1px;
+			// 		// 	background: #DCDCDC;
+			// 		// 	margin-top: 16px;
+			// 		// }
 
-					.grab {
-						position: absolute;
-						bottom: 15px;
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						left: 240px;
-						font-size: 20px;
-						font-family: LeagueSpartanBold;
-						color: #A34141;
-						column-gap: 8px;
+			// 		.grab {
+			// 			position: absolute;
+			// 			bottom: 15px;
+			// 			display: flex;
+			// 			align-items: center;
+			// 			justify-content: center;
+			// 			left: 240px;
+			// 			font-size: 20px;
+			// 			font-family: LeagueSpartanBold;
+			// 			color: #A34141;
+			// 			column-gap: 8px;
 
-						i {
-							display: block;
-							width: 20px;
-							height: 20px;
-							background: url('./christmas-arrows.png') no-repeat center/cover;
-							animation: move 1s infinite;
-							transition: all 0.3s ease;
-						}
-					}
+			// 			i {
+			// 				display: block;
+			// 				width: 20px;
+			// 				height: 20px;
+			// 				background: url('./christmas-arrows.png') no-repeat center/cover;
+			// 				animation: move 1s infinite;
+			// 				transition: all 0.3s ease;
+			// 			}
+			// 		}
 
-					@keyframes move {
-						0% {
-							transform: translate(0, 0);
-						}
+			// 		@keyframes move {
+			// 			0% {
+			// 				transform: translate(0, 0);
+			// 			}
 
-						50% {
-							transform: translate(-5px, -5px);
+			// 			50% {
+			// 				transform: translate(-5px, -5px);
 
-						}
+			// 			}
 
-						100% {
-							transform: translate(0, 0);
-						}
-					}
+			// 			100% {
+			// 				transform: translate(0, 0);
+			// 			}
+			// 		}
 
-					.remaining {
-						position: absolute;
-						font-size: 16px;
-						font-family: LeagueSpartanBold;
-						font-weight: bold;
-						color: #616161;
-						line-height: 23px;
-						right: 25px;
-						top: 95px;
-					}
+			// 		.remaining {
+			// 			position: absolute;
+			// 			font-size: 16px;
+			// 			font-family: LeagueSpartanBold;
+			// 			font-weight: bold;
+			// 			color: #616161;
+			// 			line-height: 23px;
+			// 			right: 25px;
+			// 			top: 95px;
+			// 		}
 
-					.option-price {
-						position: absolute;
-						right: 15px;
-						bottom: 18px;
+			// 		.option-price {
+			// 			position: absolute;
+			// 			right: 15px;
+			// 			bottom: 18px;
 
-						p {
-							text-align: right;
-						}
+			// 			p {
+			// 				text-align: right;
+			// 			}
 
-						p:nth-child(1) {
-							font-size: 16px;
-							font-family: LeagueSpartan;
-							font-weight: 400;
-							text-decoration: line-through;
-							color: #FFFFFF;
-							line-height: 15px;
-							margin-bottom: 10px;
+			// 			p:nth-child(1) {
+			// 				font-size: 16px;
+			// 				font-family: LeagueSpartan;
+			// 				font-weight: 400;
+			// 				text-decoration: line-through;
+			// 				color: #FFFFFF;
+			// 				line-height: 15px;
+			// 				margin-bottom: 10px;
 
-							span {
-								font-size: 16px;
-								font-family: LeagueSpartan;
-								font-weight: 400;
-								text-decoration: line-through;
-								color: #FFFFFF;
-								line-height: 15px;
-							}
-						}
+			// 				span {
+			// 					font-size: 16px;
+			// 					font-family: LeagueSpartan;
+			// 					font-weight: 400;
+			// 					text-decoration: line-through;
+			// 					color: #FFFFFF;
+			// 					line-height: 15px;
+			// 				}
+			// 			}
 
-						p:nth-child(2) {
-							font-size: 23px;
-							font-family: LeagueSpartanBold;
-							font-weight: bold;
-							color: #FFFFFF;
-							line-height: 21px;
+			// 			p:nth-child(2) {
+			// 				font-size: 23px;
+			// 				font-family: LeagueSpartanBold;
+			// 				font-weight: bold;
+			// 				color: #FFFFFF;
+			// 				line-height: 21px;
 
-							span {
-								font-size: 23px;
-								font-family: LeagueSpartanBold;
-								font-weight: bold;
-								color: #FFFFFF;
-								line-height: 21px;
-							}
-						}
-					}
-				}
-			}
+			// 				span {
+			// 					font-size: 23px;
+			// 					font-family: LeagueSpartanBold;
+			// 					font-weight: bold;
+			// 					color: #FFFFFF;
+			// 					line-height: 21px;
+			// 				}
+			// 			}
+			// 		}
+			// 	}
+			// }
 
 			.product-form__input input[type=radio]:checked+label {
 				border-color: $product-select-color;
@@ -1641,7 +1682,8 @@ $product-select-color:#f0b42d;
 			}
 		}
 
-		.product_acessories-wrapper {
+		.product_acessories-wrapper,
+		.product-gift {
 			margin-bottom: 20px;
 
 			.product_acessories-title {
@@ -1666,7 +1708,8 @@ $product-select-color:#f0b42d;
 					position: absolute;
 				}
 
-				&:has(input[type="checkbox"]:checked) {
+				&:has(input[type="checkbox"]:checked),
+				&:has(input[type="radio"]:checked) {
 					border-color: $product-select-color;
 				}
 
@@ -1732,6 +1775,35 @@ $product-select-color:#f0b42d;
 						font-size: 12px;
 					}
 				}
+			}
+		}
+
+		.product-gift {
+			.add_list_product {
+				cursor: pointer;
+				padding: 0px;
+				width: 520px;
+				height: 115px;
+				justify-content: flex-start;
+				background: url('./pc-gift-1.png') no-repeat center/cover;
+				border-color: #e9e0cf;
+			}
+
+			.add_list_product:nth-child(2) {
+				background: url('./pc-gift-2.png') no-repeat center/cover;
+			}
+
+
+			.productlabel_info .add_list_product_image.add_list_product_image {
+				width: 155px;
+				height: 115px;
+				background-color: #ffffff;
+				margin-bottom: 0px;
+			}
+
+			.productlabel_info .add_list_product_image img {
+				width: 103px;
+				height: 103px;
 			}
 		}
 

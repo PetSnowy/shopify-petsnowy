@@ -20,6 +20,13 @@ if (!customElements.get('product-form')) {
 		async onSubmitHandler(evt) {
 			if (this.submitButton.getAttribute('aria-disabled') === 'true') return;
 
+			if (!this.inspectSelectedProduct()) {
+				document.querySelector('.product-fieldset').scrollIntoView({ behavior: "smooth", block: "start" })
+				document.querySelector('.required').style.display = 'block';
+				return
+			}
+			document.querySelector('.required').style.display = 'none';
+
 			this.handleErrorMessage();
 
 			this.submitButton.setAttribute('aria-disabled', true);
@@ -44,6 +51,7 @@ if (!customElements.get('product-form')) {
 
 			try {
 				await this.getAttachmentList()
+				await this.getGiftProduct()
 			} catch (error) {
 				console.log(error);
 			}
@@ -106,10 +114,43 @@ if (!customElements.get('product-form')) {
 			}
 		}
 
+		inspectSelectedProduct() {
+			const product = document.querySelector('variant-radios .product-fieldset')
+			if (!product) return
+			const selectedProduct = product.querySelectorAll('.product-set')
+			for (let i = 0; i < selectedProduct.length; i++) {
+				if (selectedProduct[i].querySelector('input').checked) {
+					return true
+				}
+				if (!selectedProduct[i].querySelector('input').checked) {
+					return false
+				}
+			}
+			return true
+		}
+
 		// 赠送产品选择
 
 		async getGiftProduct() {
 			const giftProduct = document.querySelector('.product-gift');
+			if (!giftProduct) return
+			const productGift = Array.from(giftProduct.querySelectorAll('.add_list_product'))
+			const config = fetchConfig('javascript');
+			config.headers['X-Requested-With'] = 'XMLHttpRequest';
+			delete config.headers['Content-Type'];
+
+			for (const girt of productGift) {
+				if (girt.querySelector('.addons_input').checked) {
+					const formData = new FormData();
+					formData.append('id', girt.querySelector('.addons_input').value);
+					formData.append('quantity', 1);
+					formData.append('form_type', 'product');
+					await fetch(`${routes.cart_add_url}`, {
+						...config,
+						body: formData,
+					});
+				}
+			}
 		}
 
 		// 配件选择
