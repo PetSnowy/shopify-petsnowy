@@ -26,7 +26,9 @@
           <legend class="form__label">{{ option.name }}</legend>
           {% render 'litter-product-variant-options', product: product, option: option, block: block %}
           {% if forloop.index0 == 1 %}
-            <p class="required" style="display: none; color:#e02b27; font-size: 12px;">This is a required field.</p>
+            <p class="required" style="display: none; color:#e02b27; font-size: 14px;  margin-top: -15px;">
+              This is a required field.
+            </p>
           {% endif %}
         </fieldset>
       {%- endfor -%}
