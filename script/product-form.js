@@ -115,7 +115,7 @@ if (!customElements.get('product-form')) {
 		}
 
 		inspectSelectedProduct() {
-			const result = true
+			let result = true
 			const product = document.querySelector('variant-radios .product-fieldset')
 			if (!product) return
 			const selectedProduct = product.querySelectorAll('.product-set')
