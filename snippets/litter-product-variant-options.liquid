@@ -267,7 +267,7 @@
       const variants = document.querySelectorAll('.variants');
 
       let left = 0,
-        right = getProduct.length - 1;
+        right = variants.length - 1;
       while (left < right) {
         if (target === variants[left].querySelector('.popup-title').innerText) {
           variants[left].parentNode.previousElementSibling.disabled = true;
