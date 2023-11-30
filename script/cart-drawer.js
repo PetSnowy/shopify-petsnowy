@@ -121,12 +121,12 @@ class CartDrawer extends HTMLElement {
 						</div>
 						</button>
 					</div>`;
-			resultItem && this.productRecommendation.appendChild(recommendationItem)
+			resultItem && this.productRecommendation?.appendChild(recommendationItem)
 		}
 
 		const closeDrawer = document.createElement('div');
 		closeDrawer.classList.add('close-drawer');
-		this.productRecommendation.appendChild(closeDrawer)
+		this.productRecommendation?.appendChild(closeDrawer)
 		this.productRecommendation?.recommendationAddCart()
 		const activeCloseDrawer = document.querySelector('product-recommendation .close-drawer')
 		activeCloseDrawer.addEventListener('click', () => this.removeRecommendations())

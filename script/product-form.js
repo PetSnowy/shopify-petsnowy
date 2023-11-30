@@ -106,6 +106,12 @@ if (!customElements.get('product-form')) {
 			}
 		}
 
+		// 赠送产品选择
+
+		async getGiftProduct() {
+			const giftProduct = document.querySelector('.product-gift');
+		}
+
 		// 配件选择
 		async getAttachmentList() {
 			const productAttachmentWrapper = document.querySelector('.product_acessories-wrapper')

@@ -178,6 +178,51 @@
                   </div>
                 </details>
               </div>
+            {% when 'product_gift' %}
+              <div class="product-gift">
+                <p class="product_acessories-title">Choose Gift</p>
+                {% for product_addons in product.metafields.custom.gift.value %}
+                  {% assign inc_value = product_addons.first_available_variant.price | times: 20 | divided_by: 100 %}
+                  {% assign product_price = product_addons.first_available_variant.price %}
+                  {% assign final_inc = inc_value | minus: product_price %}
+
+                  <div class="add_list_product">
+                    <input
+                      class="addons_input"
+                      type="radio"
+                      id="{{ product_addons.title }}"
+                      value="{{ product_addons.first_available_variant.id }}"
+                      data-addonprice="{{ final_inc | money_without_currency | remove: '-' }}"
+                    >
+                    <label
+                      class="productlabel_info"
+                      for="{{ product_addons.title }}"
+                      title="{{ product_addons.metafields.custom.product_description.value }}"
+                    >
+                      <div class="add_list_product_image">
+                        <img
+                          data-src="{{  product_addons.featured_image | image_url  }}"
+                          alt="petsnowy"
+                          loading="lazy"
+                        >
+                      </div>
+                      <div class="add_list_product_data">
+                        <div class="price_title_align">
+                          <p>{{ product_addons.metafields.custom.product_abbreviation.value }}</p>
+                          <p class="price">
+                            <span class="price_without_discount">
+                              {{- product_addons.compare_at_price | money -}}
+                            </span>
+                            <span class="price_with_discount">
+                              {{- product_addons.first_available_variant.price | money -}}
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                {% endfor %}
+              </div>
             {% when 'product_acessories' %}
               <div class="product_acessories-wrapper">
                 <p class="product_acessories-title">Add-Ons</p>
@@ -830,6 +875,11 @@
     {
       "type": "product_acessories",
       "name": "product acessories",
+      "limit": 1
+    },
+    {
+      "type": "product_gift",
+      "name": "product girt",
       "limit": 1
     },
     {
