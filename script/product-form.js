@@ -115,18 +115,19 @@ if (!customElements.get('product-form')) {
 		}
 
 		inspectSelectedProduct() {
+			const result = true
 			const product = document.querySelector('variant-radios .product-fieldset')
 			if (!product) return
 			const selectedProduct = product.querySelectorAll('.product-set')
 			for (let i = 0; i < selectedProduct.length; i++) {
 				if (selectedProduct[i].querySelector('input').checked) {
-					return true
+					result = true
 				}
 				if (!selectedProduct[i].querySelector('input').checked) {
-					return false
+					result = false
 				}
 			}
-			return true
+			return result
 		}
 
 		// 赠送产品选择

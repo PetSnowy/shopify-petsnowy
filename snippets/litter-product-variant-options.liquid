@@ -93,7 +93,7 @@
           value="{{ value | escape }}"
           form="{{ product_form_id }}"
           {% if option_disabled %}
-            class="disabled"
+            disabled
           {% endif %}
         >
         <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
