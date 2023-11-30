@@ -129,6 +129,11 @@
           "settings": {
           }
         },
+        "97e879f9-8b3c-42dc-8707-025590af17f3": {
+          "type": "product_gift",
+          "settings": {
+          }
+        },
         "a69e55e6-eeec-4c69-8e9a-37430f97f274": {
           "type": "product_acessories",
           "settings": {
@@ -157,6 +162,7 @@
         "6a399bde-51fa-4e1b-9d5f-2da76fb78fef",
         "1f9b5977-9f8f-4b69-bdbc-8e0befd75498",
         "6ddce2c3-cc0d-4756-bcc4-8d7683515ce9",
+        "97e879f9-8b3c-42dc-8707-025590af17f3",
         "a69e55e6-eeec-4c69-8e9a-37430f97f274",
         "05cb21c2-0c29-4df1-b74e-eb0cdefdd661",
         "8f31d2dd-ef4a-4482-a712-0de24ed18939"
