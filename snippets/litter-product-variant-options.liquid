@@ -176,6 +176,9 @@
   window.addEventListener('DOMContentLoaded', function () {
     const getProduct = Array.from(document.querySelectorAll('.product-form__input .product-set'));
 
+    const paddingTop = window.innerWidth > 900 ? '90px' : '14vw';
+    document.documentElement.style.scrollPaddingTop = paddingTop;
+
     function showProduct(result) {
       getProduct.forEach(function (item) {
         const variants = Array.from(item.querySelectorAll('.variants'));
