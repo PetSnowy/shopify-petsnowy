@@ -56,6 +56,8 @@ class CartDrawer extends HTMLElement {
 			const result = astrictProductId.includes(item.getAttribute('product-id'))
 			if (result) {
 				item.querySelector('.quantity').querySelector('button[name="plus"]').disabled = true
+				item.querySelector('.quantity').querySelector('button[name="plus"]').style.cursor = 'no-drop'
+				item.querySelector('.quantity').querySelector('button[name="plus"]').style.opacity = '0.5'
 			}
 		})
 	}
