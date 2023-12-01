@@ -42,10 +42,22 @@ class CartDrawer extends HTMLElement {
 	}
 
 	//获取当前产品的推荐产品
-	async fetchProductRecommendation(productId, limit, intent) {
-		const response = await fetch(`${window.Shopify.routes.root}recommendations/products.json?product_id=${productId}&limit=${limit}&intent=${intent}`);
-		const { products } = await response.json();
-		return products.length && products;
+	// async fetchProductRecommendation(productId, limit, intent) {
+	// 	const response = await fetch(`${window.Shopify.routes.root}recommendations/products.json?product_id=${productId}&limit=${limit}&intent=${intent}`);
+	// 	const { products } = await response.json();
+	// 	return products.length && products;
+	// }
+
+	// 产品购买限制
+	astrictGiftQuantity() {
+		const astrictProductId = ['47436771885378', '47436772475202']
+		const carItem = Array.from(document.querySelectorAll('cart-drawer .cart-item'))
+		carItem.forEach((item, index) => {
+			const result = astrictProductId.includes(item.getAttribute('product-id'))
+			if (result) {
+				item.querySelector('.quantity').querySelector('button[name="plus"]').disabled = true
+			}
+		})
 	}
 
 	async getProductsRecommended() {
@@ -59,6 +71,9 @@ class CartDrawer extends HTMLElement {
 		// 		this.renderRecommendations(result);
 		// 	});
 		// });
+
+		// 赠品购买限制
+		this.astrictGiftQuantity()
 
 		if (triggeredBy) this.setActiveElement(triggeredBy);
 		const cartDrawerNote = this.querySelector('[id^="Details-"] summary');
@@ -77,60 +92,60 @@ class CartDrawer extends HTMLElement {
 		document.querySelector('sticky-header').style.overflowY = 'scroll';
 	}
 
-	removeRecommendations() {
-		const item = Array.from(this.productRecommendation?.querySelectorAll('div'));
-		item.length && item.forEach((item) => item.remove());
-	}
+	// removeRecommendations() {
+	// 	const item = Array.from(this.productRecommendation?.querySelectorAll('div'));
+	// 	item.length && item.forEach((item) => item.remove());
+	// }
 
 	// cart 产品推荐
-	renderRecommendations(result) {
-		if (!result.length) {
-			return;
-		}
-		this.removeRecommendations()
+	// renderRecommendations(result) {
+	// 	if (!result.length) {
+	// 		return;
+	// 	}
+	// 	// this.removeRecommendations()
 
-		for (let i = 0; i < result.length; i++) {
-			const resultItem = result[i];
-			if (!resultItem) continue;
-			const { title, price, featured_image, url, variants } = resultItem;
-			const recommendationItem = document.createElement('div');
+	// 	for (let i = 0; i < result.length; i++) {
+	// 		const resultItem = result[i];
+	// 		if (!resultItem) continue;
+	// 		const { title, price, featured_image, url, variants } = resultItem;
+	// 		const recommendationItem = document.createElement('div');
 
-			const formattingPrice = `$${price.toString().slice(0, price.toString().length - 2)},${price.toString().slice(-2)}`
-			recommendationItem.classList.add('recommendations-wrapper');
+	// 		const formattingPrice = `$${price.toString().slice(0, price.toString().length - 2)},${price.toString().slice(-2)}`
+	// 		recommendationItem.classList.add('recommendations-wrapper');
 
-			recommendationItem.innerHTML =
-				`<div class='img'>
-						<img src=${featured_image}>
-					</div>
-					<div class='content'>
-						<a href=${url} class='title'>${title}</a>
-						<p class='price'>${formattingPrice}</p>
-						<button data-id=${variants[0].id}>
-							<span>Add To Cart</span>
-							<div class="loading-overlay__spinner hidden">
-							<svg
-								aria-hidden="true"
-								focusable="false"
-								role="presentation"
-								class="spinner"
-								viewBox="0 0 66 66"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-							</svg>
-						</div>
-						</button>
-					</div>`;
-			resultItem && this.productRecommendation?.appendChild(recommendationItem)
-		}
+	// 		recommendationItem.innerHTML =
+	// 			`<div class='img'>
+	// 					<img src=${featured_image}>
+	// 				</div>
+	// 				<div class='content'>
+	// 					<a href=${url} class='title'>${title}</a>
+	// 					<p class='price'>${formattingPrice}</p>
+	// 					<button data-id=${variants[0].id}>
+	// 						<span>Add To Cart</span>
+	// 						<div class="loading-overlay__spinner hidden">
+	// 						<svg
+	// 							aria-hidden="true"
+	// 							focusable="false"
+	// 							role="presentation"
+	// 							class="spinner"
+	// 							viewBox="0 0 66 66"
+	// 							xmlns="http://www.w3.org/2000/svg"
+	// 						>
+	// 							<circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+	// 						</svg>
+	// 					</div>
+	// 					</button>
+	// 				</div>`;
+	// 		resultItem && this.productRecommendation?.appendChild(recommendationItem)
+	// 	}
 
-		const closeDrawer = document.createElement('div');
-		closeDrawer.classList.add('close-drawer');
-		this.productRecommendation?.appendChild(closeDrawer)
-		this.productRecommendation?.recommendationAddCart()
-		const activeCloseDrawer = document.querySelector('product-recommendation .close-drawer')
-		activeCloseDrawer.addEventListener('click', () => this.removeRecommendations())
-	}
+	// 	const closeDrawer = document.createElement('div');
+	// 	closeDrawer.classList.add('close-drawer');
+	// 	this.productRecommendation?.appendChild(closeDrawer)
+	// 	this.productRecommendation?.recommendationAddCart()
+	// 	const activeCloseDrawer = document.querySelector('product-recommendation .close-drawer')
+	// 	activeCloseDrawer.addEventListener('click', () => this.removeRecommendations())
+	// }
 
 	close() {
 		this.classList.remove('active');
