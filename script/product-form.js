@@ -25,7 +25,9 @@ if (!customElements.get('product-form')) {
 				document.querySelector('.required').style.display = 'block';
 				return
 			}
-			document.querySelector('.required')?.style.display = 'none';
+			if (document.querySelector('.required')) {
+				document.querySelector('.required').style.display = 'none';
+			}
 
 			this.handleErrorMessage();
 
