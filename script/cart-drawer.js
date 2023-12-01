@@ -58,6 +58,9 @@ class CartDrawer extends HTMLElement {
 				item.querySelector('.quantity').querySelector('button[name="plus"]').disabled = true
 				item.querySelector('.quantity').querySelector('button[name="plus"]').style.cursor = 'no-drop'
 				item.querySelector('.quantity').querySelector('button[name="plus"]').style.opacity = '0.5'
+				item.querySelector('.quantity').querySelector('input').disabled = true
+				item.querySelector('.quantity').querySelector('input').style.cursor = 'no-drop'
+				item.querySelector('.quantity').querySelector('input').style.opacity = '0.5'
 			}
 		})
 	}
