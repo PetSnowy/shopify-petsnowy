@@ -20,7 +20,7 @@ if (!customElements.get('product-form')) {
 		async onSubmitHandler(evt) {
 			if (this.submitButton.getAttribute('aria-disabled') === 'true') return;
 
-			if (!this.inspectSelectedProduct()) {
+			if (!this.inspectSelectedProduct() && document.querySelector('.product-fieldset')) {
 				document.querySelector('.product-fieldset').scrollIntoView({ behavior: "smooth", block: "start" })
 				document.querySelector('.required').style.display = 'block';
 				return
