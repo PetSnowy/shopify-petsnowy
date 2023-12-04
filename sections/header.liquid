@@ -90,20 +90,20 @@
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="{% if template == 'index' %} Index {% endif %} {% if template == 'index' or template == 'product' %}itg_overlap_header{% endif %} header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
 	{% comment %} 活动栏 {% endcomment %}
-	{% comment %} <active-bar class="active" data-times="2023-11-28 00:00:00"> 
+<active-bar class="active" data-times="2023-12-10 00:00:00"> 
 		<div class="page-width">
 			<div class="discounts">
-				<p class="title">Cyber Monday</p>
-				<div class="left-button">Up to $160 OFF</div>
+				<p class="title">Gifts & 25% OFF.</p>
 			</div>
 			<div class="count-down">
+				<p class="desc">Deals End In</p>
 				<div class="time"></div>
 				<a class="count-down-button" href='/products/snow-self-cleaning-litter-box'>
-					Unlock 30% off
+					Shop Now
 				</a> 
 			</div>
 		</div>
-	</active-bar> {% endcomment %}
+	</active-bar>
   <header id="update-header" class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
