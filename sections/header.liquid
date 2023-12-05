@@ -658,6 +658,8 @@
 
 {% javascript %}
  	const header =	document.querySelector('.itg_overlap_header')
+	const screenWidth = window.innerWidth;
+
 	function scroll () {
 		const scrollTop = document.documentElement.scrollTop || document.body.scrollTop
 		if(scrollTop > 0)	header.style.backgroundColor = '#231f20'
@@ -667,6 +669,20 @@
 		window.addEventListener('scroll', scroll, { passive: true});
 		scroll();
 	}
+	
+	if(header && screenWidth < 901) {
+		window.addEventListener('wheel', function(event) {
+			const scrollTop = document.documentElement.scrollTop || document.body.scrollTop
+  		if (event.deltaY > 0 && scrollTop > 100) {
+  		  header.style.opacity = 0
+				header.style.transform = 'translateY(-100%)'
+  		} else {
+				header.style.opacity = 1
+				header.style.transform = 'translateY(0)'
+  		}
+		});
+	}
+
 {% endjavascript %}
 
 <script type="application/ld+json">

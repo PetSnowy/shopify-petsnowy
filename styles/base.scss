@@ -5801,6 +5801,7 @@ product-recommendation {
 	sticky-header {
 		display: flex !important;
 		align-items: center;
+		transition: transform .35s cubic-bezier(.42, 0, .002, 1), opacity .15s cubic-bezier(.42, 0, .002, 1);
 	}
 
 	details[open] {
