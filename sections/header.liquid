@@ -660,6 +660,7 @@
  	const headerIndex =	document.querySelector('.itg_overlap_header')
 	const header = document.querySelector('sticky-header')
 	const screenWidth = window.innerWidth; 
+	const productMain = document.querySelector('.product-main')
 
 	function scroll () {
 		const scrollTop = document.documentElement.scrollTop || document.body.scrollTop
@@ -684,28 +685,31 @@
 		});
 	}
 
-	let startY = 0;
-
-	window.addEventListener('touchstart', function(event) {
-	  startY = event.touches[0].clientY;
-	});
-	
-	window.addEventListener('touchmove', function(event) {
-	  let currentY = event.touches[0].clientY;
-	  let deltaY = currentY - startY;
-		const scrollTop = document.documentElement.scrollTop || document.body.scrollTop
-
-	  if (deltaY > 0 && scrollTop > 100) {
+	mouseScrollDirection(function(direction) {
+		if(direction == 'up'){ 
 			header.style.opacity = 1
 			header.style.transform = 'translateY(0)'
-	    console.log('向下滚动');
-	  } else {
+			productMain.style.display = 'block'
+			console.log('鼠标向上滚动');
+		}else{
+			console.log('鼠标向下滚动');
 			header.style.opacity = 0
 			header.style.transform = 'translateY(-100%)'
-	    console.log('向上滚动');
-	  }
-	},{ passive: true});
-	 
+			productMain.style.display = 'none'
+		}      
+	});
+
+	function mouseScrollDirection ( fn ) {
+    var beforeScrollTop = document.documentElement.scrollTop || document.body.scrollTop,
+    fn = fn || function() {};
+    window.addEventListener('scroll', function() {
+        var afterScrollTop = document.documentElement.scrollTop || document.body.scrollTop,
+            delta = afterScrollTop - beforeScrollTop;
+        if( delta === 0 ) return false;
+        fn( delta > 0 ? 'down' : 'up' );
+        beforeScrollTop = afterScrollTop;
+    }, false);
+	}
 
 {% endjavascript %}
 
