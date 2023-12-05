@@ -660,7 +660,6 @@
  	const headerIndex =	document.querySelector('.itg_overlap_header')
 	const header = document.querySelector('sticky-header')
 	const screenWidth = window.innerWidth; 
-	const productMain = document.querySelector('.product-main')
 
 	function scroll () {
 		const scrollTop = document.documentElement.scrollTop || document.body.scrollTop
@@ -690,7 +689,8 @@
 	window.addEventListener('scroll', function() {
 		const currentScrollPosition = window.scrollY;
 		const scrollDirection = currentScrollPosition > lastScrollPosition ? 'down' : 'up';
-		console.log(scrollDirection);
+		const productMain = document.querySelector('.product-main')
+
 		if(scrollDirection ==="down"){
 			header.style.opacity = 0
 			header.style.transform = 'translateY(-100%)'
