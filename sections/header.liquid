@@ -689,13 +689,15 @@
 		if(direction == 'up'){ 
 			header.style.opacity = 1
 			header.style.transform = 'translateY(0)'
-			productMain?.style.display = 'block'
-			console.log('鼠标向上滚动');
+			if(productMain){
+				productMain?.style.display = 'block'
+			}
 		}else{
-			console.log('鼠标向下滚动');
 			header.style.opacity = 0
 			header.style.transform = 'translateY(-100%)'
-			productMain?.style.display = 'none' 
+			if(productMain){
+				productMain.style.display = 'none' 
+			}
 		}      
 	});
 
