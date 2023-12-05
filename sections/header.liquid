@@ -685,33 +685,33 @@
 	// 	});
 	// }
 
-	mouseScrollDirection(function(direction) {
-		if(direction == 'up'){ 
-			header.style.opacity = 1
-			header.style.transform = 'translateY(0)'
-			if(productMain){
-				productMain?.style.display = 'block'
-			}
-		}else{
-			header.style.opacity = 0
-			header.style.transform = 'translateY(-100%)'
-			if(productMain){
-				productMain.style.display = 'none' 
-			}
-		}      
-	});
+	// mouseScrollDirection(function(direction) {
+	// 	if(direction == 'up'){ 
+	// 		header.style.opacity = 1
+	// 		header.style.transform = 'translateY(0)'
+	// 		if(productMain){
+	// 			productMain?.style.display = 'block'
+	// 		}
+	// 	}else{
+	// 		header.style.opacity = 0
+	// 		header.style.transform = 'translateY(-100%)'
+	// 		if(productMain){
+	// 			productMain.style.display = 'none' 
+	// 		}
+	// 	}      
+	// });
 
-	function mouseScrollDirection ( fn ) {
-    var beforeScrollTop = document.documentElement.scrollTop || document.body.scrollTop,
-    fn = fn || function() {};
-    window.addEventListener('scroll', function() {
-        var afterScrollTop = document.documentElement.scrollTop || document.body.scrollTop,
-            delta = afterScrollTop - beforeScrollTop;
-        if( delta === 0 ) return false;
-        fn( delta > 0 ? 'down' : 'up' );
-        beforeScrollTop = afterScrollTop;
-    }, false);
-	}
+	// function mouseScrollDirection ( fn ) {
+  //   var beforeScrollTop = document.documentElement.scrollTop || document.body.scrollTop,
+  //   fn = fn || function() {};
+  //   window.addEventListener('scroll', function() {
+  //       var afterScrollTop = document.documentElement.scrollTop || document.body.scrollTop,
+  //           delta = afterScrollTop - beforeScrollTop;
+  //       if( delta === 0 ) return false;
+  //       fn( delta > 0 ? 'down' : 'up' );
+  //       beforeScrollTop = afterScrollTop;
+  //   }, false);
+	// }
 
 {% endjavascript %}
 
