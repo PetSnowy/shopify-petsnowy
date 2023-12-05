@@ -685,27 +685,29 @@
 	// }
 
 
-	let lastScrollPosition = window.innerHeight;
+	let lastScrollPosition = 0;
+	const innerHeight = window.innerHeight
 
 	window.addEventListener('scroll', function() {
 		const currentScrollPosition = Math.abs(window.scrollY);
 		const scrollDirection = currentScrollPosition > lastScrollPosition ? 'down' : 'up';
 		const productMain = document.querySelector('.product-main')
-
-		if(scrollDirection ==="down" && screenWidth < 901){
-			header.style.opacity = 0
-			header.style.transform = 'translateY(-100%)'
-			if(productMain) {
-				productMain.style.display = 'none'
+		if(currentScrollPosition >= innerHeight){		
+			if(scrollDirection ==="down" && screenWidth < 901){ 
+				header.style.opacity = 0
+				header.style.transform = 'translateY(-100%)'
+				if(productMain) {
+					productMain.style.display = 'none'
+				}
+			}else if(scrollDirection ==="up" && screenWidth < 901) {
+				header.style.opacity = 1
+				header.style.transform = 'translateY(0)'
+				if(productMain) {
+					productMain.style.display = 'block'
+				}
 			}
-		}else if(scrollDirection ==="up" && screenWidth < 901) {
-			header.style.opacity = 1
-			header.style.transform = 'translateY(0)'
-			if(productMain) {
-				productMain.style.display = 'block'
+				lastScrollPosition = currentScrollPosition;
 			}
-		}
-		lastScrollPosition = currentScrollPosition;
 	});
 
 </script>
