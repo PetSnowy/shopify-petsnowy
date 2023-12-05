@@ -688,7 +688,7 @@
 	let lastScrollPosition = 0;
 
 	window.addEventListener('scroll', function() {
-		const currentScrollPosition = window.scrollY;
+		const currentScrollPosition = Math.abs(window.scrollY);
 		const scrollDirection = currentScrollPosition > lastScrollPosition ? 'down' : 'up';
 		const productMain = document.querySelector('.product-main')
 
