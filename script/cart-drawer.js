@@ -158,7 +158,7 @@ class CartDrawer extends HTMLElement {
 		document.documentElement.classList.remove('overflow-hidden');
 		document.body.style.overflowY = 'auto';
 		document.querySelector('sticky-header').style.overflowY = ''
-		this.removeRecommendations()
+		// this.removeRecommendations()
 	}
 
 	hasScrollbar() {
