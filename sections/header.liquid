@@ -696,12 +696,12 @@
 		const scrollTop = document.documentElement.scrollTop || document.body.scrollTop
 
 	  if (deltaY > 0 && scrollTop > 100) {
-	    header.style.opacity = 0
-			header.style.transform = 'translateY(-100%)'
-	    console.log('向下滚动');
-	  } else {
 			header.style.opacity = 1
 			header.style.transform = 'translateY(0)'
+	    console.log('向下滚动');
+	  } else {
+			header.style.opacity = 0
+			header.style.transform = 'translateY(-100%)'
 	    console.log('向上滚动');
 	  }
 	},{ passive: true});
