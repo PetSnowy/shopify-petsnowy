@@ -684,6 +684,7 @@
 	// 	});
 	// }
 
+
 	let lastScrollPosition = 0;
 
 	window.addEventListener('scroll', function() {
@@ -691,13 +692,13 @@
 		const scrollDirection = currentScrollPosition > lastScrollPosition ? 'down' : 'up';
 		const productMain = document.querySelector('.product-main')
 
-		if(scrollDirection ==="down"){
+		if(scrollDirection ==="down" && screenWidth < 901){
 			header.style.opacity = 0
 			header.style.transform = 'translateY(-100%)'
 			if(productMain) {
 				productMain.style.display = 'none'
 			}
-		}else {
+		}else if(scrollDirection ==="up" && screenWidth < 901) {
 			header.style.opacity = 1
 			header.style.transform = 'translateY(0)'
 			if(productMain) {
