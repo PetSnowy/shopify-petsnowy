@@ -657,15 +657,16 @@
 {%- endif -%}
 
 {% javascript %}
- 	const header =	document.querySelector('.itg_overlap_header')
-	const screenWidth = window.innerWidth;
+ 	const headerIndex =	document.querySelector('.itg_overlap_header')
+	const header = document.querySelector('sticky-header')
+	const screenWidth = window.innerWidth; 
 
 	function scroll () {
 		const scrollTop = document.documentElement.scrollTop || document.body.scrollTop
-		if(scrollTop > 0)	header.style.backgroundColor = '#231f20'
-		else header.style.backgroundColor = 'transparent'
+		if(scrollTop > 0)	headerIndex.style.backgroundColor = '#231f20'
+		else headerIndex.style.backgroundColor = 'transparent'
 	}
-	if(header) {
+	if(headerIndex) {
 		window.addEventListener('scroll', scroll, { passive: true});
 		scroll();
 	}
@@ -703,11 +704,8 @@
 			header.style.transform = 'translateY(0)'
 	    console.log('向上滚动');
 	  }
-	
-	  // 阻止默认的滚动行为
-	  event.preventDefault();
-	});
-	
+	},{ passive: true});
+	 
 
 {% endjavascript %}
 
