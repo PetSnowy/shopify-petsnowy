@@ -177,6 +177,10 @@ $product-select-color:#f0b42d;
 @media screen and (max-width: 900px) {
 
 	#MainContentProduct {
+		.price-item.price-item--regular {
+			margin-right: vw(10px);
+		}
+
 		.indiegogo_target {
 			background: #7E6E5F;
 			border-radius: vw(5px);
@@ -1093,6 +1097,9 @@ $product-select-color:#f0b42d;
 	}
 
 	#product-indiegogo {
+		.price-item.price-item--regular {
+			margin-right: 10px;
+		}
 
 		.indiegogo_target {
 			background: #7E6E5F;
