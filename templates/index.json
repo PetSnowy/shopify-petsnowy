@@ -41,6 +41,11 @@
         "image_alt": ""
       }
     },
+    "94099bc0-30da-436b-a1b0-981f09f8b8c1": {
+      "type": "new-index-active-bar",
+      "settings": {
+      }
+    },
     "995b856f-22eb-499c-bdd7-0ce77bf53fe6": {
       "type": "new-index-litter",
       "settings": {
@@ -365,6 +370,7 @@
     "444f4270-414d-47b5-824b-913682bf49c0",
     "23090f1b-091d-4504-ae6e-29e2ddeff04f",
     "ab5be67e-7d46-46f0-9f1e-56a5f5953c07",
+    "94099bc0-30da-436b-a1b0-981f09f8b8c1",
     "995b856f-22eb-499c-bdd7-0ce77bf53fe6",
     "3e84f43e-0ece-41e3-b36c-4ca84219ba41",
     "57323351-c8bb-43c6-9e83-801448ba306a",
