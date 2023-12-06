@@ -177,6 +177,17 @@ $product-select-color:#f0b42d;
 @media screen and (max-width: 900px) {
 
 	#MainContentProduct {
+		.indiegogo_target {
+			background: #7E6E5F;
+			border-radius: 5px;
+			font-size: 17px;
+			font-family: LeagueSpartan;
+			font-weight: 400;
+			color: #FFFFFF;
+			text-align: center;
+			padding: 5px;
+		}
+
 		.faq_qa_main {
 			.m-sidebar-wrapper {
 				display: none;
@@ -1081,6 +1092,17 @@ $product-select-color:#f0b42d;
 	}
 
 	#product-indiegogo {
+
+		.indiegogo_target {
+			background: #7E6E5F;
+			border-radius: vw(5px);
+			font-size: vw(17px);
+			font-family: LeagueSpartan;
+			font-weight: 400;
+			color: #FFFFFF;
+			padding: vw(5px);
+			text-align: center;
+		}
 
 		.rollback-add-cart {
 			width: 250px;

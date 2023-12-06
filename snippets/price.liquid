@@ -120,6 +120,9 @@
   {% if compare_at_price > price and price != empty %}
     {% comment %} <span class="Black_Friday">Cyber Monday</span> {% endcomment %}
   {% endif %}
+  {% if template contains 'indiegogo' %}
+    <div class="indiegogo_target">*Limited Time 25% OFF</div>
+  {% endif %}
   {% comment %}
     {%- if show_badges -%}
       <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
