@@ -6,7 +6,7 @@
 	align-items: center;
 	justify-content: center;
 
-	.container {
+	.page-width {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -60,11 +60,11 @@
 		height: 189px;
 		margin: 80px 0px;
 
-		.container {
+		.page-width {
 			column-gap: 80px;
 			height: 100%;
 			height: 150px;
-			background: url('~/assets/index/active-bar.png') no-repeat center/cover;
+			background: url('./active-bar.png') no-repeat center/cover;
 		}
 
 		p {
@@ -90,7 +90,7 @@
 			&::after {
 				width: 312px;
 				height: 45px;
-				background: url('~/assets/index/active-btn.png') no-repeat center/cover;
+				background: url('./active-btn.png') no-repeat center/cover;
 				left: -2px;
 				top: -15px;
 			}
@@ -103,11 +103,11 @@
 		height: vw(133px);
 		margin: vw(80px) 0px;
 
-		.container {
+		.page-width {
 			column-gap: vw(24px);
 			height: vw(86px);
 			box-sizing: border-box;
-			background: url('~/assets/index/mb_active-bar.png') no-repeat center/vw(680px) vw(86px);
+			background: url('./mb_active-bar.png') no-repeat center/vw(680px) vw(86px);
 		}
 
 		p {
@@ -133,7 +133,7 @@
 			&::after {
 				width: vw(187px);
 				height: vw(27px);
-				background: url('~/assets/index/mb_active-btn.png') no-repeat center/cover;
+				background: url('./mb_active-btn.png') no-repeat center/cover;
 				left: vw(-4px);
 				top: vw(-10px);
 			}
