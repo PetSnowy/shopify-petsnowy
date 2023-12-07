@@ -378,7 +378,8 @@
       src="https://pricing-by-country-api.webrexstudio.com/pricingbycountry.js?id=643cf7e76f1c88a55872149f"
     ></script>
     {% comment %} End Pricing by country {% endcomment %}
-  </head>
+  {% include 'referralyard' %}
+</head>
 
   {% for item in cart.items %}
     {% assign product_template_cart = item.product.template_suffix %}
