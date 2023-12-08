@@ -113,9 +113,11 @@
       <div class="tab_button_contents">
         <div id="tab1" class="tabcontent tabcontent_first" data-content="first_step">
           <h3 class="choose_configure_product">{{ section.settings.configure_head }}</h3>
-          {% if section.settings.text_tb_1 != blank %}
-            <div class="tabs_extradata">{{ section.settings.text_tb_1 }}</div>
-          {% endif %}
+          {% comment %}
+            {% if section.settings.text_tb_1 != blank %}
+              <div class="tabs_extradata">{{ section.settings.text_tb_1 }}</div>
+            {% endif %}
+          {% endcomment %}
 
           <div class="chs_align_div">
             {% for main_product_detail in main_collection.products %}
@@ -346,9 +348,11 @@
         </div>
 
         <div id="tab2" class="tabcontent tabcontent_second" data-content="second_step">
-          {% if section.settings.text_tb_2 != blank %}
-            <div class="tabs_extradata">{{ section.settings.text_tb_2 }}</div>
-          {% endif %}
+          {% comment %}
+            {% if section.settings.text_tb_2 != blank %}
+              <div class="tabs_extradata">{{ section.settings.text_tb_2 }}</div>
+            {% endif %}
+          {% endcomment %}
           <div class="addons_productlist first_addons">
             {% for main_product_detail in main_collection.products %}
               {%- assign product_list = main_product_detail.metafields.custom.addons_product.value -%}
@@ -671,11 +675,15 @@
                       </div>
                       <div class="main_price_compare_arrange">
                         <span class="cart_add_spanprice price_without_discount">
-                          <span class="summary_price" data-summary="">
-                            {{- product_addons.first_available_variant.price | money -}}
-                          </span>
+                          {% comment %}
+                            <span class="summary_price" data-summary="">
+                              {{- product_addons.first_available_variant.price | money -}}
+                            </span>
+                          {% endcomment %}
                         </span>
-                        <span class="price_with_discount">{{ final_inc | money | remove: '-' }}</span>
+                        <span class="price_with_discount">
+                          {{- product_addons.first_available_variant.price | money -}}
+                        </span>
                       </div>
                     </div>
                   </div>
