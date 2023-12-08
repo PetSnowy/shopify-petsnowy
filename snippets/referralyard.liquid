@@ -1,0 +1,15 @@
+{% if customer %}
+    {% assign referralyard_customer_id = customer.id %}
+    {% assign referralyard_customer_email = customer.email %}
+    {% assign referralyard_customer_name = customer.name %}
+{% endif %}
+
+<script>
+	window.ReferralYard = {
+		provider: 'https://referralyard.com',
+		api_key: 'RBUDUpIj0nnYZihJJYOtJGfHdFgrjVAApTHSFCEmd7wBXouYdsfYcuq96HcX',
+		customer_id: '{{ referralyard_customer_id }}',
+		customer_name: '{{ referralyard_customer_name }}',
+		customer_email: '{{ referralyard_customer_email }}'
+	}
+</script>
