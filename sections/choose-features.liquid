@@ -664,10 +664,7 @@
                         </quantity-input>
                       </div>
 
-                      {% assign inc_value = product_addons.first_available_variant.price
-                        | times: 20
-                        | divided_by: 100
-                      %}
+                      {% assign inc_value = product_addons.first_available_variant.price %}
                       {% assign product_price = product_addons.first_available_variant.price %}
                       {% assign final_inc = inc_value | minus: product_price %}
                       <div class="second_adones_price" style="display:none;">
@@ -682,7 +679,7 @@
                           {% endcomment %}
                         </span>
                         <span class="price_with_discount">
-                          {{- product_addons.first_available_variant.price | money -}}
+                          {{- product_addons.price | money -}}
                         </span>
                       </div>
                     </div>
