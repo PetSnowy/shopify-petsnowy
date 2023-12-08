@@ -2196,6 +2196,11 @@ input[type="checkbox"] {
 	top: 0px;
 }
 
+main.template-cart {
+	margin: 0px;
+	padding-top: var(--main-padding-top);
+}
+
 .header-wrapper--border-bottom {
 	border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
