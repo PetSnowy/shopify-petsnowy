@@ -42,6 +42,7 @@
     },
     "94099bc0-30da-436b-a1b0-981f09f8b8c1": {
       "type": "new-index-active-bar",
+      "disabled": true,
       "settings": {
       }
     },
