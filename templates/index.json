@@ -27,8 +27,6 @@
       "type": "active-img",
       "disabled": true,
       "settings": {
-        "pc_image": "shopify:\/\/shop_images\/xmasbanner-pc.png",
-        "mb_image": "shopify:\/\/shop_images\/xmasbanner-mb.png",
         "btn_link": "https:\/\/www.petsnowy.com\/products\/snow-self-cleaning-litter-box",
         "btn_text": ""
       }
@@ -361,8 +359,8 @@
     "281960de-940f-4a2f-9aba-853977758906": {
       "type": "new-index-our",
       "settings": {
-        "pc_image": "shopify:\/\/shop_images\/our.png",
-        "mb_image": "shopify:\/\/shop_images\/mb-honor.png"
+        "pc_image": "shopify:\/\/shop_images\/our_75289954-ea3f-484d-8d5d-5e7ddf229b96.png",
+        "mb_image": "shopify:\/\/shop_images\/mb-honor_c3005cc4-f300-493b-8b2d-de376255cee3.png"
       }
     }
   },
