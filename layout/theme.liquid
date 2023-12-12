@@ -379,6 +379,7 @@
     ></script>
     {% comment %} End Pricing by country {% endcomment %}
   {% include 'referralyard' %}
+{% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
 </head>
 
   {% for item in cart.items %}
