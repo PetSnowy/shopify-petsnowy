@@ -1,5 +1,28 @@
 {
   "sections": {
+    "0f9f1a8c-e652-4d37-8341-60a4bd44de97": {
+      "type": "custom-rich-text",
+      "blocks": {
+        "template--21782003122498__0f9f1a8c-e652-4d37-8341-60a4bd44de97-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>Refer PetSnowy to a friend<\/strong><\/p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--21782003122498__0f9f1a8c-e652-4d37-8341-60a4bd44de97-heading-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -8,49 +31,18 @@
         "padding_bottom": 60
       }
     },
-    "5eaba778-0d53-40d3-8e94-e0bfee8dbaac": {
-      "type": "rich-text",
-      "blocks": {
-        "template--21782003122498__5eaba778-0d53-40d3-8e94-e0bfee8dbaac-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Refer PetSnowy to a friend<\/p>",
-            "heading_size": "h1"
-          }
-        },
-        "template--21782003122498__5eaba778-0d53-40d3-8e94-e0bfee8dbaac-text-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--21782003122498__5eaba778-0d53-40d3-8e94-e0bfee8dbaac-heading-1",
-        "template--21782003122498__5eaba778-0d53-40d3-8e94-e0bfee8dbaac-text-1"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "17024407085bd89b31": {
       "type": "apps",
       "blocks": {
         "d86c6bff-2ecd-4c0e-87c5-13ddd5bf70de": {
           "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-referrals-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
-            "max_width": 1100,
+            "max_width": 850,
             "layout": "with-photo",
             "photo": "shopify:\/\/shop_images\/8.9_22700_1.jpg",
             "primary_color": "",
-            "text_color": "#000000",
-            "text_field_border_color": "#C9CDD4",
+            "text_color": "#504030",
+            "text_field_border_color": "#a89172",
             "background": ""
           }
         }
@@ -61,11 +53,34 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "8e1f6dc2-f3c3-4ed6-a8f1-8fa36af3c6ec": {
+      "type": "social-image-text",
+      "blocks": {
+        "f9ccf9b1-1605-4c4e-8172-341059b7424a": {
+          "type": "image",
+          "settings": {
+            "blk_img": "shopify:\/\/shop_images\/cat.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "f9ccf9b1-1605-4c4e-8172-341059b7424a"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "insta_txt": "",
+        "app_url": "",
+        "space_top": 20,
+        "space_bottom": 20
+      }
     }
   },
   "order": [
+    "0f9f1a8c-e652-4d37-8341-60a4bd44de97",
     "main",
-    "5eaba778-0d53-40d3-8e94-e0bfee8dbaac",
-    "17024407085bd89b31"
+    "17024407085bd89b31",
+    "8e1f6dc2-f3c3-4ed6-a8f1-8fa36af3c6ec"
   ]
 }
