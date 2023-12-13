@@ -2,13 +2,70 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "5eaba778-0d53-40d3-8e94-e0bfee8dbaac": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21782003122498__5eaba778-0d53-40d3-8e94-e0bfee8dbaac-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Refer PetSnowy to a friend<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--21782003122498__5eaba778-0d53-40d3-8e94-e0bfee8dbaac-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21782003122498__5eaba778-0d53-40d3-8e94-e0bfee8dbaac-heading-1",
+        "template--21782003122498__5eaba778-0d53-40d3-8e94-e0bfee8dbaac-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "17024407085bd89b31": {
+      "type": "apps",
+      "blocks": {
+        "d86c6bff-2ecd-4c0e-87c5-13ddd5bf70de": {
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-referrals-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "max_width": 1100,
+            "layout": "with-photo",
+            "photo": "shopify:\/\/shop_images\/8.9_22700_1.jpg",
+            "primary_color": "",
+            "text_color": "#000000",
+            "text_field_border_color": "#C9CDD4",
+            "background": ""
+          }
+        }
+      },
+      "block_order": [
+        "d86c6bff-2ecd-4c0e-87c5-13ddd5bf70de"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "5eaba778-0d53-40d3-8e94-e0bfee8dbaac",
+    "17024407085bd89b31"
   ]
 }
