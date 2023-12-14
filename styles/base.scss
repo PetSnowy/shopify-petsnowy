@@ -6238,6 +6238,10 @@ active-bar {
 .isolate .rich-text__heading.rte strong {
 	color: #504030;
 	font-family: HelveticaNowDisplayXBlk;
+
+	&::first-letter {
+		color: #d75f23;
+	}
 }
 
 @media screen and (min-width: 901px) {
