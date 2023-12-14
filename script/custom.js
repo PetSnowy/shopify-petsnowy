@@ -19,7 +19,7 @@ $(document).ready(function () {
 
 	$(".slide_arrow svg").click(function () {
 		document.documentElement.style.scrollPaddingTop = paddingTop
-		const el = document.querySelector('.active-index') || document.querySelector('#product-indiegogo')
+		const el = document.querySelector('.new-index-litter') || document.querySelector('#product-indiegogo')
 		el.scrollIntoView({ behavior: "smooth", block: "start" })
 	});
 

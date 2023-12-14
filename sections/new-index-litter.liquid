@@ -71,7 +71,7 @@
   const bannerImg = document.querySelector('.active-img');
   window.addEventListener('scroll', () => {
     const scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-    const top = topVideo?.offsetHeight + bannerImg?.offsetHeight - topVideo?.offsetHeight / 3;
+    const top = topVideo?.offsetHeight - topVideo?.offsetHeight / 3;
 
     if (scrollTop >= top) {
       target.style.transform = 'scale(1)';
