@@ -6235,6 +6235,11 @@ active-bar {
 
 }
 
+.isolate .rich-text__heading.rte strong {
+	color: #504030;
+	font-family: HelveticaNowDisplayXBlk;
+}
+
 @media screen and (min-width: 901px) {
 	.Black_Friday {
 		background: #E4A41A;
@@ -6248,6 +6253,10 @@ active-bar {
 		white-space: nowrap;
 		text-align: center;
 		line-height: normal;
+	}
+
+	.isolate .rich-text__heading.rte strong {
+		font-size: 57px;
 	}
 
 	active-bar {
@@ -6312,6 +6321,10 @@ active-bar {
 }
 
 @media screen and (max-width: 900px) {
+	.isolate .rich-text__heading.rte strong {
+		font-size: vw(57px);
+	}
+
 	.Black_Friday {
 		font-size: vw(24px);
 		padding: vw(8px);
