@@ -81,7 +81,7 @@
 	@else {
 		&::after {
 			content: '';
-			display: block;
+			display: inline-block;
 			width: $w;
 			height: $h;
 			background: url('./FAQ_play.png') no-repeat center/cover;
@@ -107,7 +107,8 @@
 		}
 
 		.option:has(.video-click) .ques_title h3 {
-			@include faqPlay(vw(30px), vw(30px), 0)
+			display: inline-block;
+			@include faqPlay(vw(20px), vw(20px), 0)
 		}
 
 		.video-popup {
