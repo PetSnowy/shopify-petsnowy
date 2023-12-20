@@ -139,9 +139,9 @@
     let discountCodeWrapper = document.querySelector('#applied-discount-code .applied-discount-code-wrapper');
     let discountCodeValue = document.querySelector('#applied-discount-code .applied-discount-code-value');
     let discountCodeInput = document.querySelector('#discount-code-input');
-    let totalCartSelector = document.querySelector('.cart__subtotal .money'); // Total Cart Selector to update the total amount.
+    let totalCartSelector = document.querySelector('.cart__subtotal .money');
     let authorization_token;
-    const getDiscount = document.querySelector('.discounts__discount span');
+    const getDiscount = document.querySelector('.discounts__discount span'); // 获取已经生效的discount code
 
     let checkoutContainer = document.createElement('div');
     document.body.appendChild(checkoutContainer);
