@@ -241,6 +241,13 @@
               "menu": "information"
             }
           },
+          "20a5eab3-46b0-4d30-b1fa-3f2b7459209a": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Program",
+              "menu": "program"
+            }
+          },
           "ae7b3c63-3d29-4da8-9527-e7e82a04cea8": {
             "type": "text",
             "settings": {
@@ -253,6 +260,7 @@
           "footer-0",
           "eeed92f9-0a1b-462e-b704-a9538aeb0dbe",
           "footer-1",
+          "20a5eab3-46b0-4d30-b1fa-3f2b7459209a",
           "ae7b3c63-3d29-4da8-9527-e7e82a04cea8"
         ],
         "settings": {
