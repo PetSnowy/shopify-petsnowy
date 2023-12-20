@@ -141,11 +141,17 @@
     let discountCodeInput = document.querySelector('#discount-code-input');
     let totalCartSelector = document.querySelector('.cart__subtotal .money'); // Total Cart Selector to update the total amount.
     let authorization_token;
+    const getDiscount = document.querySelector('.discounts__discount span');
 
     let checkoutContainer = document.createElement('div');
     document.body.appendChild(checkoutContainer);
+
+    if (getDiscount && !localStorage.discountCode) {
+      console.log(getDiscount.innerHTML);
+      applyDiscount(getDiscount.innerHTML);
+    }
+
     if (localStorage.discountCode) applyDiscount(JSON.parse(localStorage.discountCode).code);
-    console.log('localStorage.discountCode', localStorage.discountCode);
 
     if (applyBtn)
       applyBtn.addEventListener('click', function (e) {
