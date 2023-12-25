@@ -40,6 +40,7 @@
         "b504c877-67df-4d07-b421-9fac2e31e94f",
         "e41cef55-a297-4c09-a549-24d35be2b565"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -51,6 +52,7 @@
     },
     "a01ea6b4-6ac5-4f90-8922-bd36ec52a26d": {
       "type": "image-text-block",
+      "disabled": true,
       "settings": {
         "img": "shopify:\/\/shop_images\/automatic_pet_feeder_petsnowy_cat_feeder_c81159d8-f3a8-483c-99db-e052d90e81ee.jpg",
         "mobimg": "shopify:\/\/shop_images\/pet_feeder_7a4388a2-05ea-44cc-93d4-054484ed93af.jpg",
