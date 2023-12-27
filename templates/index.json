@@ -3,10 +3,10 @@
     "ec8a39b8-e172-48e1-97d9-303c35a74add": {
       "type": "custom-banner",
       "settings": {
-        "vdio_img": "shopify:\/\/shop_images\/index-video-poster.jpg",
-        "vdio": "https:\/\/cdn.shopify.com\/s\/files\/1\/0683\/5293\/4210\/files\/index-video-poster.jpg?v=1700102434",
-        "mobvdio_img": "shopify:\/\/shop_images\/mb-index-video-poster.png",
-        "mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/32756edc2e034814acf84bb745879f2e.mp4",
+        "vdio_img": "shopify:\/\/shop_images\/1_0175.jpg",
+        "vdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/742833df5e4b4953a85b38e1cf3e3825.mp4",
+        "mobvdio_img": "shopify:\/\/shop_images\/banner-video-mb.jpg",
+        "mobvdio": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/4e5aad126c5645c18bc0eecbb8e79824.mp4",
         "heading": "meet the SNOW<sup><sup>+<\/sup><\/sup>",
         "url": "#",
         "padding_top": 0,
