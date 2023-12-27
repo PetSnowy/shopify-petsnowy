@@ -42,9 +42,9 @@
 
     <title>
       {{ page_title }}
-      {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
-      {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
-      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+      {%- if current_tags %} &verbar; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
+      {%- if current_page != 1 %} &verbar; Page {{ current_page }}{% endif -%}
+      {%- unless page_title contains shop.name %} &verbar; {{ shop.name }}{% endunless -%}
     </title>
 
     {% if page_description %}
