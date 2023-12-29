@@ -3,6 +3,44 @@
 }
 
 .faq_qa_main {
+	position: relative;
+
+
+	.commentPopUp {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100vw;
+		height: 100vh;
+		background: rgba($color: #000000, $alpha: 0.6);
+		z-index: 10;
+
+		.comment {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: #f1f1f1;
+
+			p {
+				font-family: 'SUISSE_INT_L_MEDIUM';
+			}
+
+			a {
+				color: #d75f23;
+				text-decoration: none;
+			}
+
+			.comment-button {
+				color: #f1f1f1;
+				background-color: #d75f23;
+				margin-left: auto;
+				cursor: pointer;
+			}
+		}
+	}
+
+
 	.video-click {
 		display: inline;
 		color: #d75f23;
@@ -95,6 +133,27 @@
 	.faq_qa_main {
 		padding-top: vw(20px);
 		padding-bottom: vw(40px);
+
+		.commentPopUp {
+			.comment {
+				padding: vw(30px);
+				border-radius: vw(20px);
+				width: vw(600px);
+
+				p {
+					font-size: vw(30px);
+				}
+
+				.comment-button {
+					padding: vw(10px) vw(20px);
+					font-size: vw(30px);
+					border-radius: vw(12px);
+					margin-top: vw(10px);
+					width: fit-content;
+					line-height: normal;
+				}
+			}
+		}
 
 		ul {
 			padding-left: vw(40px);
@@ -299,6 +358,28 @@
 
 @media screen and (min-width: 901px) {
 	.faq_qa_main {
+		.commentPopUp {
+
+			.comment {
+				padding: 15px;
+				width: 400px;
+				border-radius: 10px;
+
+				p {
+					font-size: 18px;
+				}
+
+				.comment-button {
+					padding: 8px 15px;
+					font-size: 15px;
+					width: fit-content;
+					border-radius: 8px;
+					margin-top: 5px;
+					line-height: normal;
+				}
+			}
+		}
+
 		.page-width {
 			display: flex;
 			flex-direction: column;

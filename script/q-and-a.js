@@ -192,4 +192,12 @@ $(function () {
 	}
 
 	videoPopUp()
+
+
+	//评论弹窗
+	const commentPopUp = document.querySelector('.commentPopUp')
+	const commentBtn = document.querySelector('.comment-button')
+	commentBtn.addEventListener('click', () => {
+		commentPopUp.style.display = 'none'
+	})
 });
