@@ -293,6 +293,24 @@
     },
     "page": {
       "title": "ページタイトル"
+    },
+    "ecom-default-template-quickview": {
+      "textcontent_hej9vk0uggt_html": "(評価100以上)",
+      "product_single_sale_text_igi21p1nxm_html": "{価格}% オフ",
+      "product_single_sold_text_igi21p1nxm_html": "完売",
+      "instock_text_phpd2kxein8_html": "在庫残り 26 個",
+      "outstock_text_phpd2kxein8_html": "売り切れ",
+      "inventory_text_phpd2kxein8_html": "{quantity} 個の在庫が残っています",
+      "preorder_text_phpd2kxein8_html": "予約注文テキスト",
+      "product_option_swatch_mopm0qumv6_html": "色",
+      "add_to_cart_boa4cnsk0z_html": "カートに追加",
+      "pre_order_boa4cnsk0z_html": "予約注文",
+      "product_unavailable_boa4cnsk0z_html": "利用不可",
+      "out_stock_boa4cnsk0z_html": "売り切れ",
+      "added_cart_text_boa4cnsk0z_html": "カートに追加されました",
+      "added_cart_message_boa4cnsk0z_html": "カートに追加されました",
+      "headingtext_ke5l5ure39_html": "安全<i>かつ確実なチェックアウト<\/i><b>を保証<\/b>",
+      "headingtext_qx9733j8ss_html": "共有："
     }
   },
   "localization": {
@@ -423,6 +441,89 @@
       "expired": "期限切れ",
       "copy_code_success": "コードは正常にコピーされました",
       "print_gift_card": "印刷する"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "errors": {
+          "payment": {
+            "shop_cash_unsupported_subscriptions": "Shop Cash はサブスクリプションをサポートしていません。",
+            "shop_cash_unsupported_shipping": "Shop Cash は送料無料の商品には対応していません。",
+            "invalid_address_type": "指定された住所の種類は、この支払い方法では無効です。",
+            "missing_retail_attributions": "手動で入力したクレジット カード支払いには小売属性が必要です。",
+            "unexpected_retail_attributions": "小売属性がクレジット カード支払いに対して予期せず提供されました。",
+            "invalid_card_source": "このセッションには、このカード ソースを使用する権限がありません。",
+            "wallet_content_missing": "ウォレットのコンテンツがありません。",
+            "payment_instrument_not_found": "支払い方法が見つかりませんでした",
+            "unauthorized_capture_method": "支払いキャプチャ方法の構成は許可されていません。",
+            "saved_payment_methods_not_allowed": "保存された支払い方法は使用できません。",
+            "saved_payment_methods_not_enabled": "保存されたお支払い方法はこのショップでは有効になっていません。",
+            "store_credit_not_enabled": "このショップではストア クレジットが有効になっていません。",
+            "store_credit_account_not_found": "ストア クレジット アカウントが見つかりません。",
+            "store_credit_account_mismatch": "ストア クレジット アカウントが購入者の ID と一致しません。",
+            "store_credit_mismatched_currency": "ストア クレジット アカウントの通貨がチェックアウト通貨と一致しません。",
+            "store_credit_insufficient_funds": "ストア クレジット アカウントの残高が不足しています。",
+            "store_credit_buying_gift_card": "ギフトカードの購入にストア クレジットを使用することはできません。",
+            "gift_cards_not_allowed_for_b2b": "ギフトカードは B2B 店舗では使用できません。",
+            "method_required": "支払い方法を提案する必要があります。",
+            "paypal_express_address_invalid": "PayPal から無効なアドレスが返されました。",
+            "shop_cash_unsupported_currency": "Shop Cash はこの通貨をサポートしていません。",
+            "market_manager_blocks_wallet_payments": "マーケットマネージャーは支払い方法をサポートしていません。"
+          },
+          "tip": {
+            "not_accepted_by_shop": "当店ではチップは受け付けておりません。",
+            "only_one_tip_line_allowed": "複数のヒント行はサポートされていません。",
+            "tips_not_allowed_for_b2b": "B2B ストアではチップは禁止されています。",
+            "currency_change_reset": "通貨の変更によりチップがリセットされました。",
+            "tips_not_allowed_for_deferred_purchase_options": "遅延購入オプションではチップはまだサポートされていません。"
+          },
+          "sale_attribution": {
+            "draft_order_not_exist": "このドラフト注文は現在のショップに存在しません。",
+            "staff_member_not_exist": "現在の店舗にはこのスタッフは存在しません。",
+            "location_not_exist": "この場所は現在の店舗には存在しません。",
+            "point_of_sale_device_not_exist": "この POS デバイスは現在のショップには存在しません。",
+            "unresolvable_target_merchandise_lines": "現在の交渉状況を考慮すると、提案されている販売帰属は解決できません。"
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "購入者の提案には、交渉不可の条件を含める必要があります。",
+            "invalid_signature": "{{target_terms}}の署名が無効です。"
+          },
+          "inventory": {
+            "missing_quantity_value": "購入者の在庫明細行に数量フィールドがありません。",
+            "changing_behavior_not_allowed": "このクライアントにはインベントリの動作を変更する権限がありません。",
+            "only_one_inventory_behavior_allowed": "現在、チェックアウトごとに許可される在庫動作は 1 つだけです。"
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "このチェックアウトでは関税を拒否することはできません。"
+          },
+          "attribution": {
+            "retail_attribution_not_allowed": "このチェックアウトでは小売店の帰属は許可されていません。",
+            "retail_attribution_required": "このチェックアウトには小売店の帰属が必要です。"
+          },
+          "captcha": {
+            "metadata_missing": "このチェックアウトにはキャプチャを完了する必要があります。",
+            "metadata_mismatch": "指定されたキャプチャ プロバイダーとタイプが予期された値と一致しません。",
+            "token_missing": "このチェックアウトを完了するには、キャプチャ トークンを提供する必要があります。",
+            "job_enqueue_failed": "キャプチャ検証ジョブをキューに入れることができませんでした。",
+            "job_already_queued": "このキャプチャ トークンのキャプチャ検証はすでにキューに入れられています。",
+            "token_expired": "提供されたキャプチャ トークンの有効期限が切れています。チェックアウトを続行するには、新しいキャプチャを完了してください。",
+            "token_invalid": "提供されたキャプチャ トークンが無効でした。チェックアウトを続行するには、新しいキャプチャを完了してください。",
+            "token_not_valid_for_session": "提供されたキャプチャはこのチェックアウトでは使用できません。"
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "受け取る金額はストア通貨でなければなりません。"
+          }
+        }
+      }
+    }
+  },
+  "customer_accounts": {
+    "order_details": {
+      "fees": {
+        "restocking_fee": "返品手数料",
+        "return_shipping_fee": "返品送料"
+      }
     }
   }
 }
