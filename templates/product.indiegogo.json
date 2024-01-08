@@ -132,6 +132,7 @@
         },
         "97e879f9-8b3c-42dc-8707-025590af17f3": {
           "type": "product_gift",
+          "disabled": true,
           "settings": {
           }
         },
